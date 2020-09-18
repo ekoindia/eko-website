@@ -1,0 +1,29 @@
+{% set align = "right" %}
+
+{% for item in product.alternating_steps %}
+    <div class="container">
+    {% if align == "left" %}
+        <div class="row">
+            <div class="col">
+                <h3>{{ item.title }}</h3>
+                <p>{{ item.text }}</p>
+            </div>
+            <div class="col">
+                <img src="{{ item.image }}">
+            </div>
+        </div>
+        {% set align = "right" %}
+    {% elif align == "right" %}
+    <div class="row">
+        <div class="col-6">
+            <img src="{{ item.image }}">
+        </div>
+        <div class="col-6">
+            <h3>{{ item.title }}</h3>
+            <p>{{ item.text }}</p>
+        </div>
+    </div>
+    {% set align = "left" %}
+    {% endif %} 
+    </div> 
+{% endfor %}

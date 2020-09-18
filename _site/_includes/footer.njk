@@ -1,0 +1,44 @@
+<style>
+.footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: grey;
+  color: white;
+  padding-top: 50px;
+  padding-bottom: 40px;
+}
+</style>
+
+<div class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-4">
+        <h3>{{ footer.title }}</h3>
+        <p>{{ footer.text }}</h4>
+        <p>insert social icons</p>
+      </div>
+      <div class="col-3">
+        <h5>{{ footer.column1[0].header }}</h5>
+        {% for link in footer.column1 %}
+          <a href="{{ link.url }}">{{link.text}}</a>
+          <br>
+        {% endfor %}
+      </div>
+      <div class="col-3">
+        <h5>{{ footer.column2[0].header }}</h5>
+          {% for link in footer.column2 %}
+            <a href="{{ link.url }}">{{link.text}}</a>
+            <br>
+          {% endfor %}
+      </div>
+      <div class="col">
+        <br><br><br><br>
+        <a href="{{ footer.button_link }}" class="btn btn-secondary">{{ footer.button_text }}</a>
+        <br><br>
+        <a href="{{ footer.contact_link }}">{{ footer.contact_text }}</a>
+      </div>
+    </div>
+  </div>
+</div>
+

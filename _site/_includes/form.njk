@@ -1,0 +1,26 @@
+<center>
+    <h1>{{ product.form.header }}</h1>
+    <div class="row"><br></div>
+    <p>{{ product.form.explanation }}</p>
+    <form action="">
+</center>
+
+<form action="">
+    <center>
+        <input type="text" size="75" id="entry1" name="{{ product.form.entry_boxes[0] }}" value="{{ product.form.entry_boxes[0] }}"><br>
+    </center>
+    <div class="row">
+        <div class="col"></div>
+        <div class="col">
+            <br><input type="text" size="35" id="entry2" name="{{ product.form.entry_boxes[1] }}" value="{{ product.form.entry_boxes[1] }}"><br>
+        </div>
+        <div class="col">
+            <br><input type="text" size="35" id="entry3" name="{{ product.form.entry_boxes[2] }}" value="{{ product.form.entry_boxes[2] }}"><br>
+        </div>
+        <div class="col"></div>
+    </div>
+    <center>
+        <br><input type="text" size="75" height="400px" id="entry4" name="{{ product.form.entry_boxes[3] }}" value="{{ product.form.entry_boxes[3] }}"><br>
+        <br><br><input type="submit" value="Submit">
+    <center>
+</form>

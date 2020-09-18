@@ -1,0 +1,16 @@
+{
+  "name": "jamstack",
+  "version": "1.0.0",
+  "description": "Eko's website",
+  "scripts": {
+    "start": "eleventy --serve --quiet"
+  },
+  "author": "Nisha Chatwani",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.11.0",
+    "@11ty/eleventy-navigation": "^0.1.6",
+    "js-yaml": "^3.13.1",
+    "luxon": "^1.22.0",
+    "node-fetch": "^2.6.0"
+  }
+}

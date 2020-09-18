@@ -1,0 +1,12 @@
+<center>
+    <h1>{{ product.small_heros_section[0].header}}
+</center>
+<p><br><br><br></p>
+<div class="row">
+    {% for i in range (1, product.small_heros_section | length) %}
+        {% set item=product.small_heros_section[i]%}
+        <div class="col">
+            <img src="{{ item.image }}">
+        </div>
+    {% endfor %}
+</div>

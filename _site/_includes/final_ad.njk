@@ -1,0 +1,18 @@
+<div class="row">
+    <div class="col-8">
+    <div class="row"><br><br><br></div>
+        <h3>{{ product.final_ad.small_header }}</h3>
+        <h1>{{ product.final_ad.main_header }}<h1>
+        <div class="row">
+            <div class="col-3">
+                <a href="{{ product.final_ad.button1_link }}" class="btn btn-secondary">{{ product.final_ad.button1_text }}</a>
+            </div>
+            <div class="col-3">
+                <a href="{{ product.final_ad.button2_link }}" class="btn btn-secondary">{{ product.final_ad.button2_text }}</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-4">
+        <img src="{{ product.final_ad.image }}">
+    </div>
+</div>

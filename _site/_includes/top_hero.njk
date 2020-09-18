@@ -1,0 +1,28 @@
+<div class="container">
+  <div class="row">
+    <div class="col-4">
+      <h5>{{ product.name }}</h5>
+    </div>
+    <div class="col align-self-start">
+        <img src="{{ product.top_hero.icon }}" alt="">
+    </div>
+  </div>
+  
+  <div class="row">
+    <div class="col">
+      <h1>{{ product.top_hero.description }}</h1>
+      <p>{{ product.top_hero.summary }}</p>
+      <div class="row">
+        <div class="col-4">
+          <a href="https://eko.in/sign-up" class="btn btn-secondary">{{ product.top_hero.button }}</a>
+        </div>
+        <div class="col-4">
+          <a href=" {{ product.top_hero.video_link }}" target="_blank">{{ product.top_hero.video_text }}</a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <img src="{{ product.top_hero.image }}" alt="{{ product.name }} image">
+    </div>
+  </div>
+</div>

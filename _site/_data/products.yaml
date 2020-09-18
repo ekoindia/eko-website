@@ -1,0 +1,192 @@
+- name: 'Money Transfer'
+  # disabled: true
+  # # html file exists but not shown in menu
+  # hidden: 
+  top_hero:
+    image: '/images/money-transfer/hero.png'
+    description: 'Easiest way to transfer cash to anyone'
+    summary: 'A simple and highly secure direct money transfer ability for your customers using cash with industry-leading success rates'
+    button: 'Sign Up'
+  mid_summary:
+    small_descrip: 'Money Transfer'
+    header: 'Instant money transfer, anytime & anywhere'
+    big_summary: 'Eko’s remittance service gives you the feature to turn your own shop into a bank. Customers who do not have bank accounts but still want to transfer money using cash can visit your shop. You can take the cash and transfer digital money to the bank account specified by them. Easy and effective!'
+  alternating_steps:
+    - step1:
+      title: Easy Cash transfer
+      text: 'Customers can transfer cash to anyone by specifying their bank details right at your doorstep'
+      image: /images/money-transfer/item1.png
+    - step2:
+      title: Transaction-assurance
+      text: Assure your customers that their money is safe using our transaction assurance option
+      image: /images/money-transfer/item2.png
+    - step3:
+      title: Transaction receipt
+      text: Print transaction-receipt for your customers to give them a sense of safety
+      image: /images/money-transfer/item3.png
+  heros_main_section:
+    - header: Benefits
+    - line1: 
+      # Benefit 1
+      title_left: Earn Commission
+      text_left: Earn commission for every cash-deposit, cash-withdrawal or balance-inquiry that your customer does at your shop. More transaction is more commission for you.
+      image_left: /images/money-transfer/benefit1.png
+      # Benefit 2
+      title_right: Best Success Rate
+      text_right: Transaction failures occur rarely with our services. We ensure that you get the best success rate for every transaction. We are as reliable as banks themselves
+      image_right: /images/money-transfer/benefit2.png
+      # Checks if 2 benefits are side by side
+      single_hero: false
+    - line2:
+      # Benefit 3 (center)
+      title: Turn your shop into a mini bank
+      text: Since money transfer is the most commonly used banking service, this feature will turn your shop into a mini bank for customers! Consequently, more customers will visit your shop
+      image: /images/money-transfer/benefit3.png
+      single_hero: true
+    - line3:
+      # Benefit 4 (left side)
+      title_left: Avoid Bank Queues
+      text_left: Customers would no longer need to stand in queues for banking services. They can simply visit your shop and use these services.
+      image_left: /images/money-transfer/benefit4.png
+      # Benefit 5 (right side)
+      title_right: Save Travel Money
+      text_right: Customers can save time and money by not having to travel to bank branches. They can use all these basic banking services at your shop.
+      image_right: /images/money-transfer/benefit5.png
+      single_hero: false
+  one_liner:
+    icon: /images/one_liner_icon.png
+    title: Eko's Trust
+    text: You can assure your customers that their money and data is safe. Eko’s trust is unparalleled
+  step_section:
+    - header: How money transfer works
+    - box1:
+      title: 'Step 1:'
+      text: Sign Up on Connect
+      link: https://connect.eko.in/
+    - box2:
+      title: 'Step 2:'
+      text: Enter customer mobile number
+    - box3:
+      title: 'Step 3:'
+      text: Enter amount and bank details
+    - box4:
+      title: 'Step 4:'
+      text: Click send and collect cash
+  message:
+    text: A customer who wishes to use your service would simply need to provide his mobile number and details of the bank account to transfer money to. 
+    main_line: For all issues, we provide 24x7 support.
+    button_text: Contact Support
+    button_link: 'https://eko.in/contact-us'
+  final_ad:
+    small_header: Ready to get started?
+    main_header: Become Eko Partner & Earn More
+    image: /images/final_ad.png
+    button1_text: Get Started
+    button1_link: 'https://eko.in/sign-up'
+    button2_text: Contact Sales
+    button3_link: 'https://eko.in/contact-us'
+  form:
+    header: Still got a question?
+    explanation: Write to us for more information
+    entry_boxes: [Name, Email, Phone, Your Message]
+
+- name: 'Aadhaar Banking / Cash-out'
+  top_hero:
+    image: '/images/aadhaar-banking/hero.png'
+    description: 'AePS - Aadhaar Enabled Payment System'
+    summary: 'A simple and highly secure cash withdrawing ability for your customers using Aadhaar and ensuring that you earn more with every transaction.'
+    button: 'Try for free'
+    icon: '/images/aadhaar-banking/icon.png'
+    video_link: https://www.youtube.com/watch?time_continue=1&v=y-zLDNRPnBs&feature=emb_logo
+    video_text: Learn more
+  mid_summary:
+    small_descrip: 'Earn with Aadhaar Banking (AePS)'
+    header: 'Turn your shop into an ATM'
+    big_summary: 'Aadhar banking (AePS) helps you turn your own shop into an ATM. It provides you the ability to deliver services such as cash deposit, cash withdrawal, and balance check to your customers. This is particularly useful for customers who do not trust themselves to be able to use an ATM properly. Help them out, help yourself out!'
+  single_hero:
+    title: Easy Cash Withdrawal
+    text: AePS allows you to turn your shop into an ATM and lets your customers withdraw cash using their fingerprint.
+    image: '/images/aadhaar-banking/one_liner.png'
+  short_ad:
+    title: Jan Dhan Government Benefit
+    text: AePS allows your customers to withdraw their DBT (Direct Benefit Transfers) from government in their Jan Dhan account.
+    image: '/images/aadhaar-banking/short_ad.png'
+  alternating_steps:
+    - step1:
+      title: Easy Cash Deposit
+      text: AePS also allows you to turn your shop into a cash deposit machine. Your customers can then deposit cash at your shop with ease.
+      image: /images/aadhaar-banking/item1.png
+    - step2:
+      title: Quick Fund Transfer
+      text: With AePS you will never have to go to a Bank or an ATM and you will not need a debit card also. Just transfer funds using your fingerprint.
+      image: /images/aadhaar-banking/item1.png
+    - step3:
+      title: Instant Balance-inquiry
+      text: AePS allows your customers to check their bank balance at your shop instantly.
+      image: /images/aadhaar-banking/item1.png
+    - step4:
+      title: Mini Statement
+      text: AePS will also let your customers take the mini statement of their account at your shop
+      image: /images/aadhaar-banking/item1.png
+  heros_main_section:
+    - header: Benefits
+    - line1:
+      # Benefit 1
+      title_left: Earn Commission
+      text_left: Earn commission for every cash-deposit, cash-withdrawal or balance-inquiry that your customer does at your shop. More transaction is more commission for you.
+      image_left: /images/aadhaar-banking/benefit1.png
+      # Benefit 2
+      title_right: Best Success Rate
+      text_right: Transaction failures occur rarely with our services. We ensure that you get the best success rate for every transaction. We are as reliable as banks themselves
+      image_right: /images/aadhaar-banking/benefit2.png
+      # Checks if 2 benefits are side by side
+      single_hero: false
+  one_liner:
+    icon: /images/one_liner_icon.png
+    title: Eko's Trust
+    text: You can assure your customers that their money and data is safe. Eko’s trust is unparalleled
+  step_section:
+    - header: How to use Aadhaar Banking
+    - box1:
+      title: 'Step 1:'
+      text: Sign Up on Connect
+      link: https://connect.eko.in/
+    - box2:
+      title: 'Step 2:'
+      text: Enable AePS using the Connect app
+    - box3:
+      title: 'Step 3:'
+      text: Register your biometric device
+    - box4:
+      title: 'Step 4:'
+      text: Start serving your customers
+  message:
+    text: A customer who wishes to use your service would simply need to provide his mobile number and details of the bank account to transfer money to. 
+    main_line: For all issues, we provide 24x7 support.
+    button_text: Contact Support
+    button_link: 'https://eko.in/contact-us'
+  small_heros_section:
+    - header: Our Partners
+    - partner1:
+      image: /images/aadhaar-banking/partner1.png
+    - partner2:
+      image: /images/aadhaar-banking/partner2.png
+    - partner3:
+      image: /images/aadhaar-banking/partner3.png
+    - partner4:
+      image: /images/aadhaar-banking/partner4.png
+    - partner5:
+      image: /images/aadhaar-banking/partner5.png
+  final_ad:
+    small_header: Ready to get started?
+    main_header: Use Aadhaar Banking & Earn More
+    image: /images/final_ad.png
+    button1_text: Get Started
+    button1_link: 'https://eko.in/sign-up'
+    button2_text: Contact Sales
+    button3_link: 'https://eko.in/contact-us'
+  form:
+    header: Still got a question?
+    explanation: Write to us for more information
+    entry_boxes: [Name, Email, Phone, Your Message]
+

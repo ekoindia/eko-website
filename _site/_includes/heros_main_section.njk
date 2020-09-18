@@ -1,0 +1,29 @@
+<center>
+    <h1>{{ product.heros_main_section[0].header }}</h1>
+</center>
+
+{% for i in range(1, product.heros_main_section | length) %}
+    {% set item=product.heros_main_section[i] %}
+    {% if item.single_hero %}
+        <center>
+            <img class="mw-100" style="width: 500px; height: 300px; background-color: rgba(0,0,255,0.1);" src="{{ item.image }}" alt="{{ item.title }}">
+            <h3>{{ item.title }}</h3>
+            <p>{{ item.text }}</p>
+        </center>
+    {% else %}
+        <center>
+        <div class="row">
+            <div class="col-6">
+                <img class="mw-100" style="width: 300px; height: 300px; background-color: rgba(0,0,255,0.1);" src="{{ item.image_left }}" alt="{{ item.title_left }}">
+                <h3>{{ item.title_left }}</h3>
+                <p>{{ item.text_left }}</p>
+            </div>
+            <div class="col-6">
+                <img class="mw-100" style="width: 300px; height: 300px; background-color: rgba(0,0,255,0.1);" src=" {{ item.image_right }}" alt="{{ item.title_right }}">
+                <h3>{{ item.title_right }}</h3>
+                <p>{{ item.text_right }}</p>
+            </div>
+        </div>
+        </center>
+    {% endif %}
+{% endfor %}
