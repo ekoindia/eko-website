@@ -1,5 +1,6 @@
 <center>
     <h1>{{ product.heros_main_section[0].header }}</h1>
+    <div class="h2-border"></div>
 </center>
 
 {% for i in range(1, product.heros_main_section | length) %}
@@ -12,14 +13,14 @@
         </center>
     {% else %}
         <center>
-        <div class="row">
-            <div class="col-6">
-                <img class="mw-100" style="width: 300px; height: 300px; background-color: rgba(0,0,255,0.1);" src="{{ item.image_left }}" alt="{{ item.title_left }}">
+        <div class="pure-g">
+            <div class="pure-u-1 pure-u-md-1-2">
+                <img src="{{ item.image_left }}" alt="{{ item.title_left }}">
                 <h3>{{ item.title_left }}</h3>
                 <p>{{ item.text_left }}</p>
             </div>
-            <div class="col-6">
-                <img class="mw-100" style="width: 300px; height: 300px; background-color: rgba(0,0,255,0.1);" src=" {{ item.image_right }}" alt="{{ item.title_right }}">
+            <div class="pure-u-1 pure-u-md-1-2">
+                <img src=" {{ item.image_right }}" alt="{{ item.title_right }}">
                 <h3>{{ item.title_right }}</h3>
                 <p>{{ item.text_right }}</p>
             </div>
