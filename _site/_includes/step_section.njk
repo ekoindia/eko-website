@@ -1,13 +1,13 @@
-<div class="section">
+<div class="step_section">
     <h1>{{ product.step_section[0].header }}</h1>
-    {# <span class="h2-border"></span> #}
-    <p><br><br><br></p>
-    <div class="row justify-content-around">
+    <span class="h2-border"></span>
+    <p><br><br></p>
+    <div class="pure-g">
         {% for i in range(1, product.step_section | length) %}
-            <div class="col-{{ 12/(product.step_section | length) }}">
+            <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-4 boxed">
                 {% set item=product.step_section[i] %}
-                <h2>{{ item.title }}</h2>
-                <p>{{ item.text }}</p>
+                <h3 class="box-title">{{ item.title }}</h3>
+                <p class="box-text">{{ item.text }}</p>
                 <a href="{{ item.link }}">{{ item.link }}</a>
             </div>
         {% endfor %}

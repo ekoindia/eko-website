@@ -64,7 +64,7 @@ img {
 
 .short_ad p {
     text-align: left;
-    font-weight: bold;
+    font-weight: 500;
 }
 .short_ad h1 {
     text-align: left;
@@ -74,4 +74,100 @@ img {
 .h3 {
     font-weight: bolder;
     font-size: 16px;
+}
+.step_section h3 {
+    font-size: 24px;
+    color: grey;
+    font-weight: 500;
+}
+.step_section p {
+    color: #c7c7c7;
+    opacity: 1;
+    font-weight: 500;
+}
+
+.boxed {
+    max-width: 220px;
+    display: block;
+    border: 1px solid  #c7c7c7;
+    border-radius: 15px;
+    padding-top: 30px;
+    padding-bottom: 70px;
+    padding-left: 20px;
+    margin: 10px;
+    opacity: 0.5;
+}
+.boxed:hover{
+    background-color: rgba(	255, 191, 127, 0.1);
+    border: 2px solid orange;
+}
+
+.boxed:hover .box-text,
+.box-text:hover {     
+    color: black;
+    opacity: 1; 
+}
+
+.boxed:hover .box-title,  
+.box-title:hover {
+    color: orange;
+    opacity: 1;
+}
+
+.main-line {
+    font-weight: bold;
+}
+
+.button-white {
+    border-radius: 12px;
+    transition-duration: 0.4s;
+    background-color: white;
+    border: 1px solid orange;
+    color: orange;
+    padding: 10px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;  
+    font-weight: bold;
+}
+
+.button-white:hover {
+    background-color: orange;
+    color:white;
+}
+
+.dimmed-image {
+    filter: grayscale(100%);
+    opacity: 0.5;
+}
+
+.dimmed-image:hover {
+    filter: none;
+    opacity: 1;
+}
+
+.big-header {
+    font-size: 35px;
+}
+
+.footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: grey;
+    color: white;
+    padding-top: 50px;
+    padding-bottom: 40px;
+}
+
+.footer p {
+    font-size: 16px;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    font-weight: 300;
+}
+
+.footer h3 {
+    color: orange;
 }

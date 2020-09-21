@@ -161,7 +161,8 @@
       title: 'Step 4:'
       text: Start serving your customers
   message:
-    text: A customer who wishes to use your service would simply need to provide his mobile number and details of the bank account to transfer money to. 
+    line1: A customer who wishes to use your service would simply need to provide his aadhar number, name, and account number. 
+    line2: The process to enable AePS and register your biometric device is easy.
     main_line: For all issues, we provide 24x7 support.
     button_text: Contact Support
     button_link: 'https://eko.in/contact-us'
@@ -180,7 +181,7 @@
   final_ad:
     small_header: Ready to get started?
     main_header: Use Aadhaar Banking & Earn More
-    image: /images/final_ad.png
+    image: /images/become-eko-partner.svg
     button1_text: Get Started
     button1_link: 'https://eko.in/sign-up'
     button2_text: Contact Sales

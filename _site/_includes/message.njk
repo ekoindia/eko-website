@@ -1,13 +1,13 @@
-<div class="row">
-    <div class="col-lg-1"></div>
-    <div class="col-2">
+<div class="pure-g">
+    <div class="pure-u-1 pure-u-md-1-4">
         <img src="/images/star.png">
     </div>
-    <div class="col-8">
-        <p>{{ product.message.text }}</p>
-        <b><h4>{{ product.message.main_line }}</h4></b>
+    <div class="pure-u-1 pure-u-md-3-4">
+        <p>{{ product.message.line1 }}</p>
         <br>
-        <a href="{{ product.message.button_link }}" class="btn btn-secondary">{{ product.message.button_text }}</a>
+        <p>{{ product.message.line2 }}</p>
+        <p class="main-line">{{ product.message.main_line }}</p>
+        <br>
+        <a href="{{ product.message.button_link }}" class="button-white">{{ product.message.button_text }}</a>
     </div>
-    <div class="col-lg-1"></div>
 </div>
