@@ -16,6 +16,14 @@ module.exports = function(eleventyConfig) {
     return `<p><br><br></p>`;
   })
 
+  eleventyConfig.addShortcode('iconScroll', function() {
+    return `<center><div class="icon-scroll icon-scroll-container">
+    <div class="mouse">
+      <div class="wheel"></div>
+    </div>
+  </div></center>`;
+  })
+
   eleventyConfig.addPlugin(eleventyNavigationPlugin)
 
   return {

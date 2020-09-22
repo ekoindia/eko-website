@@ -3,58 +3,58 @@
   # # html file exists but not shown in menu
   # hidden: 
   top_hero:
-    image: '/images/money-transfer/hero.png'
-    description: 'Easiest way to transfer cash to anyone'
-    summary: 'A simple and highly secure direct money transfer ability for your customers using cash with industry-leading success rates'
-    button: 'Sign Up'
+    image: /images/money-transfer/money-transfer.svg
+    description: Easiest way to transfer cash to anyone
+    summary: A simple and highly secure direct money transfer ability for your customers using cash with industry-leading success rates
+    button: Sign Up
   mid_summary:
-    small_descrip: 'Money Transfer'
-    header: 'Instant money transfer, anytime & anywhere'
-    big_summary: 'Eko’s remittance service gives you the feature to turn your own shop into a bank. Customers who do not have bank accounts but still want to transfer money using cash can visit your shop. You can take the cash and transfer digital money to the bank account specified by them. Easy and effective!'
+    small_descrip: Money Transfer
+    header: Instant money transfer, anytime & anywhere
+    big_summary: Eko’s remittance service gives you the feature to turn your own shop into a bank. Customers who do not have bank accounts but still want to transfer money using cash can visit your shop. You can take the cash and transfer digital money to the bank account specified by them. Easy and effective!
   alternating_steps:
     - step1:
       title: Easy Cash transfer
       text: 'Customers can transfer cash to anyone by specifying their bank details right at your doorstep'
-      image: /images/money-transfer/item1.png
+      image: /images/money-transfer/easy-cash-transfer.svg
     - step2:
       title: Transaction-assurance
       text: Assure your customers that their money is safe using our transaction assurance option
-      image: /images/money-transfer/item2.png
+      image: /images/money-transfer/transaction-assurance.svg
     - step3:
       title: Transaction receipt
       text: Print transaction-receipt for your customers to give them a sense of safety
-      image: /images/money-transfer/item3.png
+      image: /images/money-transfer/transaction-receipt.svg
   heros_main_section:
     - header: Benefits
     - line1: 
       # Benefit 1
       title_left: Earn Commission
       text_left: Earn commission for every cash-deposit, cash-withdrawal or balance-inquiry that your customer does at your shop. More transaction is more commission for you.
-      image_left: /images/money-transfer/benefit1.png
+      image_left: /images/money-transfer/earn-commission.svg
       # Benefit 2
       title_right: Best Success Rate
       text_right: Transaction failures occur rarely with our services. We ensure that you get the best success rate for every transaction. We are as reliable as banks themselves
-      image_right: /images/money-transfer/benefit2.png
+      image_right: /images/money-transfer/best-success-rate.svg
       # Checks if 2 benefits are side by side
       single_hero: false
     - line2:
       # Benefit 3 (center)
       title: Turn your shop into a mini bank
       text: Since money transfer is the most commonly used banking service, this feature will turn your shop into a mini bank for customers! Consequently, more customers will visit your shop
-      image: /images/money-transfer/benefit3.png
+      image: /images/money-transfer/mini-bank.svg
       single_hero: true
     - line3:
       # Benefit 4 (left side)
       title_left: Avoid Bank Queues
       text_left: Customers would no longer need to stand in queues for banking services. They can simply visit your shop and use these services.
-      image_left: /images/money-transfer/benefit4.png
+      image_left: /images/money-transfer/avoid-bank-queues.svg
       # Benefit 5 (right side)
       title_right: Save Travel Money
       text_right: Customers can save time and money by not having to travel to bank branches. They can use all these basic banking services at your shop.
-      image_right: /images/money-transfer/benefit5.png
+      image_right: /images/money-transfer/save-money.svg
       single_hero: false
   one_liner:
-    icon: /images/one_liner_icon.png
+    icon: /images/eko-trust.svg
     title: Eko's Trust
     text: You can assure your customers that their money and data is safe. Eko’s trust is unparalleled
   step_section:
@@ -73,14 +73,14 @@
       title: 'Step 4:'
       text: Click send and collect cash
   message:
-    text: A customer who wishes to use your service would simply need to provide his mobile number and details of the bank account to transfer money to. 
+    line1: A customer who wishes to use your service would simply need to provide his mobile number and details of the bank account to transfer money to. 
     main_line: For all issues, we provide 24x7 support.
     button_text: Contact Support
     button_link: 'https://eko.in/contact-us'
   final_ad:
     small_header: Ready to get started?
     main_header: Become Eko Partner & Earn More
-    image: /images/final_ad.png
+    image: /images/become-eko-partner.svg
     button1_text: Get Started
     button1_link: 'https://eko.in/sign-up'
     button2_text: Contact Sales
