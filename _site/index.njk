@@ -1,271 +1,309 @@
----
-title: "Home"
-layout: base
----
-<main class="container">
-<br><br><br><br>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{siteTitle}}</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    {# Pure CSS #}
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css" integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/grids-responsive-min.css">
+  </head>
+  <body>
+    {% include "navigation.njk" %}
+    <main class="container">
+    <br><br><br><br>
 
-{# Top Hero #}
-<center>
-    <p>{{ main.top_hero.tag }} - <a href='{{ main.top_hero.tag_link }}'>{{ main.top_hero.tag_link_text }}</a></p>
-    <h1>{{ main.top_hero.header }}</h1>
-    <br>
-    <a href=" {{ main.top_hero.button_link }}" class="btn btn-secondary">{{ main.top_hero.button }}</a>
-    <br><br>
-    <img src="{{ main.top_hero.image }}" alt="top hero">
-
-
-{% sectionSeparator %}
-
-{% iconScroll %}
-
-{% sectionSeparator %}
-
-{# Mid Summary #}
-<div class="row">
-    <div class="col-8">
-        <h1>{{ main.mid_summary.header }}</h1>
-    </div>
-</div>
-<br>
-<div class="row">
-    <div class="col-10">
-        <p>{{ main.mid_summary.description }}</p>
-    </div>
-</div>
-
-{% sectionSeparator %}
-
-{# Slider #}
-<h1>insert slider here</h1>
-
-{% sectionSeparator %}
-
-{# Short Ad #}
-<div class="row">
-    <div class="col">
-        <br>
-        <img src="{{ main.short_ad.image }}">
-    </div>
-    <div class="col">
-        <h1>{{ main.short_ad.header }}</h1>
-        <br>
-        <p>{{ main.short_ad.text }}</p>
-        <a href="{{ main.short_ad.link }}">{{ main.short_ad.link_text }}</a>
-        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
-        </svg>
-    </div>
-</div>
-
-{% sectionSeparator %}
-
-{# Icon List #}
-<center>
-    <h1>{{main.icon_list[0].header}}</h1>
-    <br>
-</center>
-<div class="row">
-    {% for i in range(1, main.icon_list | length) %}
-        {% set item=main.icon_list[i] %}
-        <div class="col">
-        <center>
-            <img src="{{ item.image }}">
-            <h3>{{ item.text }}</h3>
-        </center>
-        </div>
-    {% endfor %}
-</div>
-
-{% sectionSeparator %}
-
-{# Side-by-Side Heros #}
-<div class="row">
-    <div class="col">
-        <center>
-            <img src="{{ main.side_by_side.image_left }}">
-            <h2>{{ main.side_by_side.title_left }}</h2>
-            <p>{{ main.side_by_side.text_left }}</p>
-        </center>
-    </div>
-    <div class="col-md-2 col-md-offset-2"></div>
-    <div class="col">
-        <center>
-            <img src="{{ main.side_by_side.image_right }}"> 
-            <h2>{{ main.side_by_side.title_right }}</h2>
-            <p>{{ main.side_by_side.text_right }}</p>
-        </center>
-    </div>
-</div>
-
-{% sectionSeparator %}
-
-{# One Liner #}
-<center>
-    <img src="{{ main.one_liner.icon }}" alt="{{ main.one_liner.title }}">
-    <h1>{{ main.one_liner.title }}</h1>
-    <p>{{ main.one_liner.text }}</p>
-</center>
-
-{% sectionSeparator %}
-
-{# Alternating Steps #}
-<center>
-    <h6>{{ main.alternating_steps[0].small_header }}</h6>
-    <h1>{{ main.alternating_steps[1].main_header }}</h1>
-    <br><br>
-</center>
-
-{% set align = "left" %}
-{% for i in range(2, main.alternating_steps | length) %}
-    {% set item=main.alternating_steps[i] %}
-    <div class="container">
-    {% if align == "left" %}
-        <div class="row">
-            <div class="col">
-                <br>
-                <h3>{{ item.title }}</h3>
-                <p>{{ item.text }}</p>
-                <p>{{ item.tag }}</p>
-                <div class="row">
-                <div class="col">
-                <a href="{{ item.button_link }}" class="btn btn-secondary">{{ item.button_text }}</a>
-                </div>
-                <br><br>
-                <div class="col">
-                <a href="{{ item.link }}">{{ item.link_text }}</a>
-                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
-                </svg>
-                </div>
-            </div>
-            </div>
-            <div class="col">
-                <img src="{{ item.image }}">
-            </div>
-        </div>
-        {% set align = "right" %}
-    {% elif align == "right" %}
-    <div class="row">
-        <div class="col">
-            <img src="{{ item.image }}">
-        </div>
-        <div class="col">
+    {# Top Hero #}
+    <center>
+    <div class="tag">
+        <span class="dot-box">
+        <span class="dot"><span class="orange-dot"></span>     Covid-19 - <span><a href="https://www.pmcares.gov.in/en/" target="_blank" rel="noopener nofollow">Donate for PM care</a>
+        </span></span></span>
+            <h1 class="main-header">Best way to collect cash at your doorstep</h1>
             <br>
-            <h3>{{ item.title }}</h3>
-            <p>{{ item.text }}</p>
-            <p>{{ item.tag }}</p>
-            <div class="row">
-                <div class="col">
-                <a href="{{ item.button_link }}" class="btn btn-secondary">{{ item.button_text }}</a>
-                </div>
-                <br><br>
-                <div class="col">
-                <a href="{{ item.link }}">{{ item.link_text }}</a>
-                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
-                </svg>
-                </div>
-            </div>
+            <div class="bg-image">
+                <a href="https://eko.in/sign-up" class="button">Try for Free</a></a>
         </div>
     </div>
-    {% set align = "left" %}
-    {% endif %} 
-    </div> 
-{% endfor %}
+    </center>
 
-{% sectionSeparator %}
+    {% sectionSeparator %}
 
-{# Header #}
-<div class="row">
-    <div class="col-2"></div>
-    {% for i in range(1, main.header | length) %}
-        {% set tag=main.header[i].text %}
-            <div class="col-2">
-                <center><p>{{ tag }}</p><center>
-            </div>
-    {% endfor %}
-    <div class="col-2"></div>
-</div>
-<center><h1>{{ main.header[0].title }}</h1></center>
+    {% iconScroll %}
 
-{% sectionSeparator %}
+    {% sectionSeparator %}
 
-{# Gallery #}
-<h1>{{ main.gallery[0].header}}</h1>
-<h6>insert gallery slideshow</h6>
-{# Finish Gallery #}
+    {# Mid Summary #}
+    <div class="mid-summary">
+        <h1 class="header">Become a Banking & Financial service provider</h1>
+        <div class="h2-border"></div>
+        <br>
+        <p>Eko gives you an opportunity to turn your own shop into a Banking & Financial institution. Customers who do not have bank accounts and still want to transfer money using cash can do so at your shop. You can pay their utility bills, provide them insurance and earn in every service you give. Easy and effective!</p>
+    </div>
+    
+    {% sectionSeparator %}
 
-{% sectionSeparator %}
+    {# Slider #}
+    <h1>insert slider here</h1>
 
-{# Small Heros Section #}
-<center>
-    <h1>{{ main.small_heros_section[0].header}}
-</center>
-<p><br><br><br></p>
-<div class="row">
-    {% for i in range (1, main.small_heros_section | length) %}
-        {% set item=main.small_heros_section[i]%}
-        <div class="col">
-            <img src="{{ item.image }}">
+    {% sectionSeparator %}
+
+    {# Short Ad #}
+    <div class="pure-g">
+        <div class="pure-u-1 pure-u-md-1-2 l-box">
+            <br>
+            <img src="/images/main/partner-brands.png">
         </div>
-    {% endfor %}
-</div>
+        <div class="pure-u-1 pure-u-md-1-2 l-box">
+            <h1 class="header">Offer services from our partner brands</h1>
+            <div class="h2-border"></div>
+            <br>
+            <p>Use Eko’s digital and physical infrastructure to reach the 800 million cash earning Indians. Low & Middle Income (LMI) consumers are under-served on digital as well as financial products. Eko provides solutions that help you reach this base in a variety of ways.</p>
+            <a href="https://eko.in/our-brand-association">Learn More</a>
+            <svg width="2em" height="1.5em" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+            </svg>
+        </div>
+    </div>
 
-{% sectionSeparator %}
+    {% sectionSeparator %}
 
-{# Form #}
-<center>
-    <h1>{{ main.form.header }}</h1>
-    <div class="row"><br></div>
-    <p>{{ main.form.explanation }}</p>
+    {# Icon List #}
+    <div class="background-section">
+    <center>
+        <h1>Benefits</h1>
+        <div class="h2-border"></div>
+    </center>
+    <div class="pure-g">
+    <center>
+        <div class="pure-u-1 pure-u-md-1-3 three-box">
+            <img src="/images/main/merchant-onboarding-icon.svg">
+            <h6>Instant retailer onboarding</h6>
+        </div>
+        <div class="pure-u-1 pure-u-md-1-3 three-box">
+            <img src="/images/main/success-rate.svg">
+            <h6>Industry-leading success rates</h6>
+        </div>
+        <div class="pure-u-1 pure-u-md-1-3 three-box">
+            <img src="/images/main/seamless-integration.svg">
+            <h6>Seamless integration with all the service</h6>
+        </div>
+    </div>
+    </center>
+
+    {% sectionSeparator %}
+
+    {# Side-by-Side Heros #}
+    <div class="pure-g">
+        <div class="pure-u-1 pure-u-md-1-2 l-box">
+            <center>
+                <img src="/images/main/easy-integration.svg">
+                <h2>Easy Integration</h2>
+                <p>Our API is well-documented and easy to understand. Integrating is as easy as it can get. We provide 24x7 manual integration support just in case, leaving no stone unturned to make the integration process seamless.</p>
+            </center>
+        </div>
+        <div class="pure-u-1 pure-u-md-1-2 l-box">
+            <center>
+                <img src="/images/main/simple-documentation.svg"> 
+                <h2>Simple Documentation</h2>
+                <p>The documentation for our APIs is comprehensive and comprehensible! We constantly update it to explain the minutest detail. Whether you use Python, Java, PHP, or C#, we have you covered!</p>
+            </center>
+        </div>
+    </div>
+
+    {% sectionSeparator %}
+
+    {# One Liner #}
+    <center>
+        <div class="one-liner">
+            <img src="/images/eko-trust.svg">
+            <h1>Eko's Trust</h1>
+            <span class="h2-border"></span>
+            <p> We use the same APIs here at Eko! Every API call is secured with one-time-use tokens generated using asymmetric cryptography. Our open-source libraries make it extremely easy & error-proof</p>
+        </div>
+    </center>
+    </div>
+
+    {% sectionSeparator %}
+
+    {# Alternating Steps #}
+    <center>
+        <p>Individual | Retailer | Distributor | Business</p>
+        <h1>Made for everyone</h1>
+        <div class="h2-border"></div>
+        <br><br>
+    </center>
+
+    <div class="pure-g">
+        <div class="pure-u-1 pure-u-md-1-2 l-box">
+            <h3>Retailer</h3>
+            <br>
+            <p>Our retailer partners use Eko's proprietary platform 'Connect' and partner services to offer cash based and assisted commerce services. This provides a great earning potential and the freedom of running their own business with minimal investment.</p>
+            <br>
+            <span class="dot-box">
+            <span class="dot"><span class="orange-dot"></span>     Join over 1,50,000 retailers</span></span></span>
+            <br><br><br>
+            <a href="https://eko.in/contact-us" class="button">Contact Sales</a>
+            <a href="https://eko.in/become-a-retailer">Learn More</a>
+            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+            </svg>
+        </div>
+        <div class="pure-u-1 pure-u-md-1-2 l-box">
+            <img src="/images/main/retailer.svg">
+        </div>
+    </div>
+
+    <div class="pure-g">
+        <div class="pure-u-1 pure-u-md-1-2 l-box">
+            <img src="/images/main/developers.svg">
+        </div>
+        <div class="pure-u-1 pure-u-md-1-2 l-box">
+            <h3>Developers</h3>
+            <br>
+            <p>We offer developer APIs to almost all aspects of our business services with just one objective in mind and that is to provide platform and system to all to build their own innovative business models.</p>
+            <br><br><br>
+            <a href="https://developers.eko.in/docs" class="button">View Documentation</a>
+            <a href="https://eko.in/developers/eps">Learn More</a>
+            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+            </svg>
+        </div>
+    </div>
+        
+    {% sectionSeparator %}
+
+    {# One Liner #}
+    <div class="background-section">
+    <center>
+    <div class="pure-g tags-row">
+        <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-4 l-box">
+            <span class="dot-box">
+            <span class="dot"><span class="orange-dot"></span>     Individual
+            </span></span></span>
+        </div>
+        <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-4 l-box">
+            <span class="dot-box">
+            <span class="dot"><span class="orange-dot"></span>     Retailers
+            </span></span></span>
+        </div>
+        <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-4 l-box">
+            <span class="dot-box">
+            <span class="dot"><span class="orange-dot"></span>     Distributors
+            </span></span></span>
+        </div>
+        <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-4 l-box">
+            <span class="dot-box">
+            <span class="dot"><span class="orange-dot"></span>     Business
+            </span></span></span>
+        </div>
+    </div>
+    <br><br>
+    <h1> No matter what your business is we’ve got you covered </h2>
+    </center>
+    </div>
+    <br><br>
+
+    {% sectionSeparator %}
+
+    {# Gallery #}
+    <h1>What our partner says</h1>
+    <div class="h2-border"></div>
+    <h6>insert gallery slideshow</h6>
+    {# Finish Gallery #}
+
+    {% sectionSeparator %}
+
+    {# Small Heros Section #}
+    <center>
+        <h1>Our Trusted Partners</h1>
+        <div class="h2-border"></div>
+    </center>
+    <p><br><br><br></p>
+    <center>
+    <div class="pure-g">
+        <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-5">
+            <img class="dimmed-image square" width="240" height= "84" src="/images/main/partner1.jpg">
+        </div>
+        <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-5">
+            <img class="dimmed-image square" width="387" height= "144" src="/images/main/partner2.jpg">
+        </div>
+        <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-5">
+            <img class="dimmed-image square" width="420" height= "111" src="/images/main/partner3.jpg">
+        </div>
+        <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-5">
+            <img class="dimmed-image square" width="303" height= "114" src="/images/main/partner4.jpg">
+        </div>
+        <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-5">
+            <img class="dimmed-image square" width="101" height= "27" src="/images/main/partner5.jpg">
+        </div>
+    </div>
+    </center>
+
+    {% sectionSeparator %}
+
+    {# Form #}
+    <div class="background-section">
+    <center>
+        <h1>Still got a question?</h1>
+        <div class="h2-border"></div>
+        <p>Write to us for more information</p>
+    </center>
+
     <form action="">
-</center>
-
-<form action="">
-    <center>
-        <input type="text" size="75" id="entry1" name="{{ main.form.entry_boxes[0] }}" value="{{ main.form.entry_boxes[0] }}"><br>
-    </center>
-    <div class="row">
-        <div class="col"></div>
-        <div class="col">
-            <br><input type="text" size="35" id="entry2" name="{{ main.form.entry_boxes[1] }}" value="{{ main.form.entry_boxes[1] }}"><br>
-        </div>
-        <div class="col">
-            <br><input type="text" size="35" id="entry3" name="{{ main.form.entry_boxes[2] }}" value="{{ main.form.entry_boxes[2] }}"><br>
-        </div>
-        <div class="col"></div>
-    </div>
-    <center>
-        <br><input type="text" size="75" height="400px" id="entry4" name="{{ main.form.entry_boxes[3] }}" value="{{ main.form.entry_boxes[3] }}"><br>
-        <br><br><input type="submit" value="Submit">
-    </center>
-</form>
-
-{% sectionSeparator %}
-
-{# Big Ad #}
-<div class="row">
-<div class="col">
-    <h3>{{ main.big_ad.small_header }}</h3>
-    <h1>{{ main.big_ad.big_header }}</h1>
-    <br>
-    <div class="row">
-        <div class="col-3">
         <center>
-            <img src="{{ main.big_ad.icon1 }}">
-            <p>{{ main.big_ad.caption1 }}</p>
+            <input type="text" size="75" id="entry1" name="{{ main.form.entry_boxes[0] }}" value="{{ main.form.entry_boxes[0] }}"><br>
         </center>
+        <div class="row">
+            <div class="col"></div>
+            <div class="col">
+                <br><input type="text" size="35" id="entry2" name="{{ main.form.entry_boxes[1] }}" value="{{ main.form.entry_boxes[1] }}"><br>
+            </div>
+            <div class="col">
+                <br><input type="text" size="35" id="entry3" name="{{ main.form.entry_boxes[2] }}" value="{{ main.form.entry_boxes[2] }}"><br>
+            </div>
+            <div class="col"></div>
         </div>
-        <div class="col-3">
         <center>
-            <img src="{{ main.big_ad.icon2 }}">
-            <p>{{ main.big_ad.caption2 }}</p>
+            <br><input type="text" size="75" height="400px" id="entry4" name="{{ main.form.entry_boxes[3] }}" value="{{ main.form.entry_boxes[3] }}"><br>
+            <br><br><input type="submit" class="button" value="Submit">
         </center>
+    </form>
+    </div>
+
+    {% sectionSeparator %}
+
+    {# Big Ad #}
+    <div class="pure-g">
+    <div class="pure-u-1 pure-u-md-3-5">
+        <h3>Let’s fight Covid-19 together</h3>
+        <h1>Download Aarogya Setu App</h1>
+        <div class="h2-border"></div>
+        <br>
+        <div class="pure-g">
+            <div class="pure-u-1-4 pure-u-md-1-4">
+            <center>
+                <img src="/images/main/android-icon.svg">
+                <p>Android</p>
+            </center>
+            </div>
+            <div class="pure-u-1-4 pure-u-md-1-4">
+            <center>
+                <img src="/images/main/ios-icon.svg">
+                <p>iOS</p>
+            </center>
+            </div>
         </div>
     </div>
-</div>
-<div class="col">
-    <img src="{{ main.big_ad.image }}">
-</div>
-</main>
+    <div class="pure-u-1 pure-u-md-2-5">
+        <img src="/images/main/aarogya-setu-logo.png">
+    </div>
+    </main>
+    {% sectionSeparator %}
+    {% include "footer.njk" %}
+</body>
+</html>

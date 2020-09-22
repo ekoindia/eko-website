@@ -73,10 +73,45 @@ a:hover {
     color: white !important;
 }
 
-/* img {
+.tag a {
+    font-size: 12px;
+}
+.orange-dot {
+    padding: 3px;
+    height: 10px;
+    width: 10px;
+    background-color: orange;
+    border-radius: 50%;
+    display: inline-block;
+}
+.dot-box {
+    border-radius: 30px;
+    background-color: #ffefd1;
+    font-size: 14px;
+    padding: 5px 10px 5px;
+    max-width: 21%;
+    justify-content: center;
+    margin: 0 auto;
+    box-shadow: 0 3px 2px 0 rgba(0,0,0,0.1);
+}
+
+.dot {
+    border-radius: 25px;
+    font-weight: bold;
+    color: #727272;
+}
+
+.bg-image {
+    background-image: url(https://eko.in/sites/default/files/2020-06/homepage-illustration_0.svg);
+    background-repeat: no-repeat;
+    height: 442px;
+    background-position: center;
+}
+
+img {
     max-width: 100%;
     height: auto;
-} */
+}
 
 .short_ad p {
     text-align: left;
@@ -165,6 +200,11 @@ a:hover {
 
 .big-header {
     font-size: 35px;
+}
+
+.main-header {
+    font-size: 50px;
+    width: 50%;
 }
 
 .footer {
@@ -273,4 +313,45 @@ a:hover {
 
 .footer a {
     text-decoration: none;
+}
+
+.mid-summary {
+    width: 70%;
+}
+
+.header {
+    width: 60%;
+    font-size: 30px;
+}
+
+.bi-arrow-right {
+    color: orange;
+    font-weight: bold;
+}
+
+h6 {
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 0.1em;
+}
+
+.three-box {
+    padding: 90px;
+}
+
+.one-liner {
+    width: 70%;
+}
+
+.tags-row {
+    width: 70%;
+}
+
+.square {
+    display: inline-block;
+    padding: 17px 55px;
+    vertical-align: middle;
+    margin-right: 15px;
+    width: 190px;
+    height: 62px;
 }
