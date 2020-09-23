@@ -355,3 +355,35 @@ h6 {
     width: 190px;
     height: 62px;
 }
+
+.slide {
+    display: none;
+    margin: 20px;
+    border: solid 0.3px orange;
+}
+#slide1 {display:block}
+
+.inside {
+    padding: 30px;
+    background-color: rgba(255, 191, 127, 0.2);
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+
+}
+
+.w3-left, .w3-right, .w3-badge {cursor:pointer;}
+.w3-badge {height:13px;width:9px;padding:0;}
+
+.arrow {
+    background-color: white;
+    border: 0.5px solid orange;
+    border-radius: 50%;
+    color: orange;
+    font-size: 25px;
+}
+
+.clear {
+    clear:both;
+    }
+    

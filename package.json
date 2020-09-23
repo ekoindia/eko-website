@@ -12,5 +12,8 @@
     "js-yaml": "^3.13.1",
     "luxon": "^1.22.0",
     "node-fetch": "^2.6.0"
+  },
+  "dependencies": {
+    "pug": "^3.0.0"
   }
 }

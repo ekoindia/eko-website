@@ -7,10 +7,15 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="/css/styles.css">
     
     <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css" integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
     <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/grids-responsive-min.css">
+    <script type="text/javascript" src="/js/slider.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   </head>
   <body>
     <nav class="site-nav family-sans navbar navbar-expand-md py-0">
@@ -74,7 +79,71 @@
     <p><br><br></p>
 
     
-    <h1>insert slider here</h1>
+    
+
+<div class="w3-content w3-display-container" style="max-width:800px">
+    <div id="slide1" class="slide w3-container w3-white">
+    <div class="clear"></div>
+        <div class="pure-g inside">
+            <div class="pure-u-1 pure-u-md-1-2 l-box">
+                <img src="/images/main/easy-cash-transfer.svg">
+            </div>
+            <div class="pure-u-1 pure-u-md-1-2 l-box">  
+                <h3>Money Transfer</h3>
+                <p>Transfer money instantly to any bank account in India using cash from customer.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="slide w3-container w3-white">
+        <div class="pure-g inside">
+            <div class="pure-u-1 pure-u-md-1-2 l-box">
+                <img src="/images/main/aadhaa-banking-small.svg">
+            </div>
+            <div class="pure-u-1 pure-u-md-1-2 l-box">  
+                <h3>Aadhaar Banking</h3>
+                <p>Allow your customers to withdraw cash & transfer money at your doorstep with just the fingerprint & Aadhaar number</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="slide w3-container w3-white">
+        <div class="pure-g inside">
+            <div class="pure-u-1 pure-u-md-1-2 l-box">
+                <img src="/images/main/bill-payment.svg">
+            </div>
+            <div class="pure-u-1 pure-u-md-1-2 l-box">  
+                <h3>Utility Bill Payment</h3>
+                <p>Pay utility bills for 100+ billers in India using Eko’s platform. All under one roof.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="slide w3-container w3-white">
+        <div class="pure-g inside">
+            <div class="pure-u-1 pure-u-md-1-2 l-box">
+                <img src="/images/main/low-cost-insurance.svg">
+            </div>
+            <div class="pure-u-1 pure-u-md-1-2 l-box">  
+                <h3>Sell Insurance</h3>
+                <p>Low cost, simple paperwork & easy claim process makes our insurance policies the best choice for your customers.</p>
+            </div>
+        </div>
+    </div>
+
+    <button class="arrow w3-display-left glyphicon glyphicon-arrow-left" onclick="plusDivs(-1)"></button>
+    <button class="arrow w3-display-right glyphicon glyphicon-arrow-right" onclick="plusDivs(1)"></button>
+
+    <div class="w3-container w3-section w3-small w3-display-bottom" style="width:100%">
+        <span class="w3-badge demo w3-border w3-transparent w3-orange" onclick="currentDiv(1)"></span>
+        <span class="w3-badge demo w3-border w3-transparent " onclick="currentDiv(2)"></span>
+        <span class="w3-badge demo w3-border w3-transparent " onclick="currentDiv(3)"></span>
+        <span class="w3-badge demo w3-border w3-transparent" onclick="currentDiv(4)"></span>
+    </div>
+</div>
+
+
 
     <p><br><br></p>
 
@@ -404,4 +473,5 @@
 
 
 </body>
+
 </html>
