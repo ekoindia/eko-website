@@ -1,8 +1,6 @@
 main {
     letter-spacing: 1px;
     color: grey;
-    padding: 0;
-    margin: 0;
 }
 
 .background-section {
@@ -12,7 +10,6 @@ main {
     padding-top: 100px !important;
     padding-bottom: 100px;
 }
-
 
 .scroll-icon-container .scroll-icon {
     border: 1px solid #727272;
@@ -108,10 +105,10 @@ a:hover {
     background-position: center;
 }
 
-img {
+/* img {
     max-width: 100%;
     height: auto;
-}
+} */
 
 .short_ad p {
     text-align: left;
@@ -315,12 +312,7 @@ img {
     text-decoration: none;
 }
 
-.mid-summary {
-    width: 70%;
-}
-
 .header {
-    width: 60%;
     font-size: 30px;
 }
 
@@ -387,11 +379,13 @@ h6 {
 
 .content h4 {
     font-weight: bold;
+    padding-top: 10px;
+    font-size: 15px;
     color: #727272;
 }
 
 .caption {
-    font-size: 10px;
+    font-size: 12px;
 }
 
 .partner-box {

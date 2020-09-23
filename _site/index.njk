@@ -5,15 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{siteTitle}}</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    {# Link CSS Files#}
     <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/purecssframework.css">
     {# Pure CSS #}
     <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css" integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
     <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/grids-responsive-min.css">
-    
     {# Slick for Sliders #}
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
@@ -39,25 +36,36 @@
     </div>
     </center>
 
-    {% sectionSeparator %}
+    <p><br><br></p>
 
-    {% iconScroll %}
+    {# Icon Scroller #}
+    <center><div class="icon-scroll icon-scroll-container">
+        <div class="mouse">
+        <div class="wheel"></div>
+        </div>
+    </div></center>
 
-    {% sectionSeparator %}
+    <p><br><br></p>
 
     {# Mid Summary #}
     <div class="mid-summary">
-        <h1 class="header">Become a Banking & Financial service provider</h1>
+        <div class="pure-g">
+        <div class="pure-u-1 pure-u-md-2-3 pure-u-sm-1">
+            <h1 class="header">Become a Banking & Financial service provider</h1>
+        </div>
+        </div>
         <div class="h2-border"></div>
         <br>
-        <p>Eko gives you an opportunity to turn your own shop into a Banking & Financial institution. Customers who do not have bank accounts and still want to transfer money using cash can do so at your shop. You can pay their utility bills, provide them insurance and earn in every service you give. Easy and effective!</p>
+        <div class="pure-g">
+        <div class="pure-u-1 pure-u-md-2-3 pure-u-sm-1">
+            <p>Eko gives you an opportunity to turn your own shop into a Banking & Financial institution. Customers who do not have bank accounts and still want to transfer money using cash can do so at your shop. You can pay their utility bills, provide them insurance and earn in every service you give. Easy and effective!</p>
+        </div>
+        </div>
     </div>
     
-    {% sectionSeparator %}
+    <p><br><br></p>
 
     {# Slider #}
-    {# {% include "slider.njk"%} #}
-
     <div class="slider" style="max-width:700px">
     <div class="slide">
         <div class="pure-g inside">
@@ -118,7 +126,7 @@
         });
     </script>
 
-    {% sectionSeparator %}
+    <p><br><br></p>
 
     {# Short Ad #}
     <div class="pure-g">
@@ -138,7 +146,7 @@
         </div>
     </div>
 
-    {% sectionSeparator %}
+    <p><br><br></p>
 
     {# Icon List #}
     <div class="background-section">
@@ -163,7 +171,7 @@
     </div>
     </center>
 
-    {% sectionSeparator %}
+    <p><br><br></p>
 
     {# Side-by-Side Heros #}
     <div class="pure-g">
@@ -183,7 +191,7 @@
         </div>
     </div>
 
-    {% sectionSeparator %}
+    <p><br><br></p>
 
     {# One Liner #}
     <center>
@@ -196,7 +204,7 @@
     </center>
     </div>
 
-    {% sectionSeparator %}
+    <p><br><br></p>
 
     {# Alternating Steps #}
     <center>
@@ -206,8 +214,8 @@
         <br><br>
     </center>
 
-    <div class="pure-g">
-        <div class="pure-u-1 pure-u-md-1-2 l-box">
+    <div class="pure-g flex-grid">
+        <div class="pure-u-1 pure-u-md-1-2 order-1-md order-2-sm l-box">
             <h3>Retailer</h3>
             <br>
             <p>Our retailer partners use Eko's proprietary platform 'Connect' and partner services to offer cash based and assisted commerce services. This provides a great earning potential and the freedom of running their own business with minimal investment.</p>
@@ -221,16 +229,16 @@
                 <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
             </svg>
         </div>
-        <div class="pure-u-1 pure-u-md-1-2 l-box">
+        <div class="pure-u-1 pure-u-md-1-2 order-2-md order-1-sm l-box">
             <img src="/images/main/retailer.svg">
         </div>
     </div>
 
     <div class="pure-g">
-        <div class="pure-u-1 pure-u-md-1-2 l-box">
+        <div class="pure-u-1 pure-u-md-1-2 order-1-md order-1-sm l-box">
             <img src="/images/main/developers.svg">
         </div>
-        <div class="pure-u-1 pure-u-md-1-2 l-box">
+        <div class="pure-u-1 pure-u-md-1-2 order-2-md order-2-sm l-box">
             <h3>Developers</h3>
             <br>
             <p>We offer developer APIs to almost all aspects of our business services with just one objective in mind and that is to provide platform and system to all to build their own innovative business models.</p>
@@ -243,7 +251,7 @@
         </div>
     </div>
         
-    {% sectionSeparator %}
+    <p><br><br></p>
 
     {# One Liner #}
     <div class="background-section">
@@ -251,23 +259,19 @@
     <div class="pure-g tags-row">
         <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-4 l-box">
             <span class="dot-box">
-            <span class="dot"><span class="orange-dot"></span>     Individual
-            </span></span></span>
+            <span class="dot"><span class="orange-dot"></span>     Individual</span></span></span>
         </div>
         <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-4 l-box">
             <span class="dot-box">
-            <span class="dot"><span class="orange-dot"></span>     Retailers
-            </span></span></span>
+            <span class="dot"><span class="orange-dot"></span>     Retailers</span></span></span>
         </div>
         <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-4 l-box">
             <span class="dot-box">
-            <span class="dot"><span class="orange-dot"></span>     Distributors
-            </span></span></span>
+            <span class="dot"><span class="orange-dot"></span>     Distributors</span></span></span>
         </div>
         <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-4 l-box">
             <span class="dot-box">
-            <span class="dot"><span class="orange-dot"></span>     Business
-            </span></span></span>
+            <span class="dot"><span class="orange-dot"></span>     Business</span></span></span>
         </div>
     </div>
     <br><br>
@@ -276,7 +280,7 @@
     </div>
     <br><br>
 
-    {% sectionSeparator %}
+    <p><br><br></p>
 
     {# Gallery #}
     <h1>What our partner says</h1>
@@ -287,7 +291,6 @@
                 <div class="pure-u-1 pure-u-md-1-2 l-box">
                     <p>"ALTBalaji is fuelling the growth of subscription-based digital video streaming. Partnering with Eko is a way to bring the offline consumers into the online world. With ALTBalaji now being a part of their Eko Store, we are expanding our reach to a whole new audience and are excited to welcome them as a part of the ALTBalaji family"</p>
                 </div>
-                <div class="pure-u-1 pure-u-md-1-12"><br></div>
                 <div class="pure-u-1 pure-u-md-1-2 l-box partner-box">  
                     <center>
                         <img class="round" src="/images/main/alt-balaji-customer.png">
@@ -303,7 +306,6 @@
                 <div class="pure-u-1 pure-u-md-1-2 l-box">
                     <p>"Indifi is committed to simplifying credit access to small and medium-sized entrepreneurs. Our partnership with Eko will further our vision of facilitating financial inclusion for India’s huge SME sector. By providing Eko’s cash distributors with the credit line services, we will also help empower a greater number of retailers across the country."</p>
                 </div>
-                <div class="pure-u-1 pure-u-md-1-12"><br></div>
                 <div class="pure-u-1 pure-u-md-1-2 l-box partner-box">  
                     <center>
                         <img class="round" src="/images/main/alot-mitttal.png">
@@ -324,7 +326,7 @@
         });
     </script>
 
-    {% sectionSeparator %}
+    <p><br><br></p>
 
     {# Small Heros Section #}
     <center>
@@ -352,7 +354,7 @@
     </div>
     </center>
 
-    {% sectionSeparator %}
+    <p><br><br></p>
 
     {# Form #}
     <div class="background-section">
@@ -362,7 +364,7 @@
         <p>Write to us for more information</p>
     </center>
 
-    <form action="">
+    {# <form action="">
         <center>
             <input type="text" size="75" id="entry1" name="{{ main.form.entry_boxes[0] }}" value="{{ main.form.entry_boxes[0] }}"><br>
         </center>
@@ -380,14 +382,14 @@
             <br><input type="text" size="75" height="400px" id="entry4" name="{{ main.form.entry_boxes[3] }}" value="{{ main.form.entry_boxes[3] }}"><br>
             <br><br><input type="submit" class="button" value="Submit">
         </center>
-    </form>
+    </form> #}
     </div>
 
-    {% sectionSeparator %}
+    <p><br><br></p>
 
     {# Big Ad #}
-    <div class="pure-g">
-    <div class="pure-u-1 pure-u-md-3-5">
+    <div class="pure-g flex-grid">
+    <div class="pure-u-1 pure-u-md-3-5 order-sm-2">
         <h3>Let’s fight Covid-19 together</h3>
         <h1>Download Aarogya Setu App</h1>
         <div class="h2-border"></div>
@@ -407,13 +409,45 @@
             </div>
         </div>
     </div>
-    <div class="pure-u-1 pure-u-md-2-5">
+    <div class="pure-u-1 pure-u-md-2-5 order-sm-1">
         <img src="/images/main/aarogya-setu-logo.png">
     </div>
     </main>
-    {% sectionSeparator %}
-    {% include "footer.njk" %}
 
+    <p><br><br></p>
+
+    {# Footer #}
+    <div class="footer">
+    <div class="pure-g">
+        <div class="pure-u-4-5 pure-u-md-2-5 pure-u-sm-1 l-box">
+        <h3>{{ footer.title }}</h3>
+        <p>{{ footer.text }}</h4>
+        <p>{{ footer.copyright }}</p>
+        <a href="{{ footer.facebook }}" target="_blank" class="fa fa-facebook"></a>
+        <a href="{{ footer.linkedin }}" target="_blank" class="fa fa-linkedin"></a>
+        <a href="{{ footer.twitter }}" target="_blank" class="fa fa-twitter"></a>
+        </div>
+        <div class="pure-u-1 pure-u-md-1-5 pure-u-sm-1 l-box">
+        <h5 class="column-header">{{ footer.column1[0].header }}</h5>
+        {% for link in footer.column1 %}
+            <a href="{{ link.url }}">{{link.text}}</a>
+            <br>
+        {% endfor %}
+        </div>
+        <div class="pure-u-1-3 pure-u-md-1-5 pure-u-sm-1-3 l-box">
+        <h5 class="column-header">{{ footer.column2[0].header }}</h5>
+            {% for link in footer.column2 %}
+            <a href="{{ link.url }}">{{link.text}}</a>
+            <br>
+            {% endfor %}
+        </div>
+        <div class="pure-u-1-3 pure-u-md-1-5 pure-u-sm-1-3 l-box">
+        <br><br><br><br><br><br>
+        <a href="{{ footer.button_link }}" class="button">{{ footer.button_text }}</a>
+        <br><br>
+        <a class="orange-link" href="{{ footer.contact_link }}"><img src="/images/paper-plane.svg">  {{ footer.contact_text }}</a>
+        </div>
+    </div>
+    </div>
 </body>
-
 </html>

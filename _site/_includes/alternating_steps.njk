@@ -1,27 +1,26 @@
 {% set align = "right" %}
-
 {% for item in product.alternating_steps %}
     {% if align == "left" %}
-        <div class="pure-g">
-            <div class="pure-u-1-2 pure-u-md-1-2 l-box">
+        <div class="pure-g flex-grid">
+            <div class="pure-u-1-2 pure-u-md-1-2 pure-u-sm-1 order-1 order-md-2 order-sm-2 l-box">
                 <h3>{{ item.title }}</h3>
                 <p>{{ item.text }}</p>
             </div>
-            <div class="pure-u-1-2 pure-u-md-1-2 l-box">
+            <div class="pure-u-1-2 pure-u-md-1-2 pure-u-sm-1 order-2 order-md-1 order-sm-1 l-box">
                 <img src="{{ item.image }}">
             </div>
         </div>
         {% set align = "right" %}
     {% elif align == "right" %}
-    <div class="pure-g">
-        <div class="pure-u-1-2 pure-u-md-1-2 l-box">
-            <img src="{{ item.image }}">
+        <div class="pure-g flex-grid">
+            <div class="pure-u-1-2 pure-u-md-1-2 pure-u-sm-1 order-1 order-md-1 order-sm-1 l-box">
+                <img src="{{ item.image }}">
+            </div>
+            <div class="pure-u-1-2 pure-u-md-1-2 pure-u-sm-1 order-2 order-md-2 order-sm-2 l-box">
+                <h3>{{ item.title }}</h3>
+                <p>{{ item.text }}</p>
+            </div>
         </div>
-        <div class="pure-u-1-2 pure-u-md-1-2 l-box">
-            <h3>{{ item.title }}</h3>
-            <p>{{ item.text }}</p>
-        </div>
-    </div>
-    {% set align = "left" %}
+        {% set align = "left" %}
     {% endif %} 
 {% endfor %}
