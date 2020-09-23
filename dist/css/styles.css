@@ -231,7 +231,26 @@ a:hover {
     font-weight: bold;
     color: lightgray;
 }
+.nav-right {
+    float: right;
+    margin-left: 700px;
+}
 
+.nav-button {
+    border-radius: 12px;
+    transition-duration: 0.4s;
+    background-color: orange;
+    border: none;
+    color: white;
+    padding: 8px 20px;
+    margin-top: 10px;
+    margin-left: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;  
+    font-weight: bold;
+}
 .footer a {
     color:  Gainsboro;
     font-weight: 500;

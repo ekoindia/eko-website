@@ -7,5 +7,5 @@ permalink: 'products/{{ product.name | slug }}/'
 layout: product_page
 eleventyNavigation:
     key: product.name
-    parent: Products
+    parent: products
 ---
