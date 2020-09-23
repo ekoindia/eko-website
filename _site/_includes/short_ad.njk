@@ -1,11 +1,12 @@
-<div class="pure-g short_ad background-section">
-    <center>
-    <div class="pure-u-1-2 pure-u-md-7-24 pure-u-sm-1">
-        <img src="{{ product.short_ad.image }}">
+    <div class="pure-g short_ad flex-grid">
+        <center>
+        <div class="pure-u-1 pure-u-md-7-24 pure-u-sm-1">
+            <img src="{{ product.short_ad.image }}">
+        </div>
+        <div class="pure-u-1 pure-u-md-16-24 pure-u-sm-1">
+            <h1> {{ product.short_ad.title }}</h1>
+            <p> {{ product.short_ad.text }}</p>
+        </div>
+        </center>
     </div>
-    <div class="pure-u-1-2 pure-u-md-16-24 pure-u-sm-1">
-        <h1> {{ product.short_ad.title }}</h1>
-        <p> {{ product.short_ad.text }}</p>
-    </div>
-    </center>
 </div>

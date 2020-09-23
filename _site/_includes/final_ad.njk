@@ -1,19 +1,21 @@
-<div class="pure-g background-section flex-grid">
-    <div class="pure-u-1 pure-u-md-2-3 order-md-1 order-sm-2">
+<div class="background-section">
+<div class="pure-g container flex-grid">
+    <div class="pure-u-1 pure-u-md-3-5 order-2-sm l-box">
         <br><br>
         <h3>{{ product.final_ad.small_header }}</h3>
         <h1 class="big-header">{{ product.final_ad.main_header }}<h1>
         <span class="h2-border"></span>
-    <div class="pure-g">
-        <div class="pure-u-1-2 pure-u-md-1-2">
-            <a href="{{ product.final_ad.button1_link }}" class="button">{{ product.final_ad.button1_text }}</a>
-        </div>
-        <div class="pure-u-1-2 pure-u-md-1-2">
-            <a href="{{ product.final_ad.button2_link }}" class="button-white">{{ product.final_ad.button2_text }}</a>
+        <div class="pure-g flex-grid">
+            <div class="pure-u-1-4 pure-u-md-1-3">
+                <a href="{{ product.final_ad.button1_link }}" class="button">{{ product.final_ad.button1_text }}</a>
+            </div>
+            <div class="pure-u-1-4 pure-u-md-1-2">
+                <a href="{{ product.final_ad.button2_link }}" class="button-white">{{ product.final_ad.button2_text }}</a>
+            </div>
         </div>
     </div>
-    </div>
-    <div class="pure-u-1 pure-u-md-1-3 order-md-2 order-sm-1">
+    <div class="pure-u-1 pure-u-md-2-5 order-1-sm l-box">
         <img src="{{ product.final_ad.image }}">
     </div>
+</div>
 </div>

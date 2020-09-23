@@ -1,15 +1,16 @@
+
 <center>
     <h1>{{ product.small_heros_section[0].header}}</h1>
     <span class="h2-border"></span>
 </center>
 <p><br></p>
 <center>
-<div class="pure-g">
-    {% for i in range (1, product.small_heros_section | length) %}
-        {% set item=product.small_heros_section[i]%}
-        <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-5">
-            <img class="dimmed-image" src="{{ item.image }}">
-        </div>
-    {% endfor %}
-</div>
- </center>
+    <div class="pure-g">
+        {% for i in range (1, product.small_heros_section | length) %}
+            {% set item=product.small_heros_section[i]%}
+            <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-5">
+                <img class="dimmed-image" src="{{ item.image }}">
+            </div>
+        {% endfor %}
+    </div>
+</center>
