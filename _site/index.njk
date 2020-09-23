@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css" integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
     <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/grids-responsive-min.css">
     <script type="text/javascript" src="/js/slider.js"></script>
+    <script type="text/javascript" src="/js/gallery.js"></script>
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   </head>
@@ -218,8 +219,50 @@
     {# Gallery #}
     <h1>What our partner says</h1>
     <div class="h2-border"></div>
-    <h6>insert gallery slideshow</h6>
-    {# Finish Gallery #}
+    <div class="w3-content w3-display-container" style="max-width:800px">
+        <div id="gallery1" class="gallery w3-container w3-white">
+            <div class="pure-g content">
+                <div class="pure-u-1 pure-u-md-1-2 l-box">
+                    <p>ALTBalaji is fuelling the growth of subscription-based digital video streaming. Partnering with Eko is a way to bring the offline consumers into the online world. With ALTBalaji now being a part of their Eko Store, we are expanding our reach to a whole new audience and are excited to welcome them as a part of the ALTBalaji family</p>
+                </div>
+                <div class="pure-u-1 pure-u-md-1-12"><br></div>
+                <div class="pure-u-1 pure-u-md-1-2 l-box partner-box">  
+                    <center>
+                        <img class="round" src="/images/main/alt-balaji-customer.png">
+                        <h4>Nachiket Pantvaidya</h4>
+                        <p class="caption">CEO, ALTBalaji and Group COO Balaji Telefilms</p>
+                    </center>
+                </div>
+            </div>
+        </div>
+
+        <div class="gallery w3-container w3-white">
+            <div class="pure-g content">
+                <div class="pure-u-1 pure-u-md-1-2 l-box">
+                    <p>Indifi is committed to simplifying credit access to small and medium-sized entrepreneurs. Our partnership with Eko will further our vision of facilitating financial inclusion for India’s huge SME sector. By providing Eko’s cash distributors with the credit line services, we will also help empower a greater number of retailers across the country.</p>
+                </div>
+                <div class="pure-u-1 pure-u-md-1-12"><br></div>
+                <div class="pure-u-1 pure-u-md-1-2 l-box partner-box">  
+                    <center>
+                        <img class="round" src="/images/main/alot-mitttal.png">
+                        <h4>Alok Mittal</h4>
+                        <p class="caption">Co-founder and CEO, Indifi Technologies</p>
+                    </center>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="pure-g">
+            <div class="pure-u-4-5"></div>
+            <div class="pure-u-1-5">
+            <div class="w3-container w3-section w3-small w3-display-bottom" style="width:100%">
+                <span class="w3-badge dots w3-border w3-transparent w3-orange" onclick="currentDiv(1)"></span>
+                <span class="w3-badge dots w3-border w3-transparent " onclick="currentDiv(2)"></span>
+            </div>
+            </div>
+        </div>
+    </div>
+
 
     {% sectionSeparator %}
 
@@ -228,7 +271,7 @@
         <h1>Our Trusted Partners</h1>
         <div class="h2-border"></div>
     </center>
-    <p><br><br><br></p>
+    <p><br></p>
     <center>
     <div class="pure-g">
         <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-5">

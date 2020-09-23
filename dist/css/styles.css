@@ -361,7 +361,8 @@ h6 {
     margin: 20px;
     border: solid 0.3px orange;
 }
-#slide1 {display:block}
+#slide1 {display:block;}
+#gallery1 {display:block;}
 
 .inside {
     padding: 30px;
@@ -372,8 +373,17 @@ h6 {
 
 }
 
+.gallery {
+    display: none;
+}
+
 .w3-left, .w3-right, .w3-badge {cursor:pointer;}
-.w3-badge {height:13px;width:9px;padding:0;}
+
+.w3-badge {
+    height:13px;
+    width:9px;
+    padding:0;
+}
 
 .arrow {
     background-color: white;
@@ -383,7 +393,26 @@ h6 {
     font-size: 25px;
 }
 
-.clear {
-    clear:both;
-    }
+.round {
+    border-radius: 25px;
+}
+
+.content p {
+    color: grey;
+}
+
+.content h4 {
+    font-weight: bold;
+    color: #727272;
+}
+
+.caption {
+    font-size: 10px;
+}
+
+.partner-box {
+    max-width: 300px;
+    border-radius: 20px;
+    box-shadow: 0 3px 10px 0 rgba(0,0,0,0.12), 0 3px 5px 0 rgba(0,0,0,0.05);
+}
     
