@@ -1,3 +1,4 @@
+<div class= "container">
 <div class="background-section">
     <center>
         <h1>{{ product.heros_main_section[0].header }}</h1>
@@ -9,6 +10,7 @@
         {% if item.single_hero %}
             <center>
                 <img class="mw-100" style="width: 500px; height: 300px; background-color: rgba(0,0,255,0.1);" src="{{ item.image }}" alt="{{ item.title }}">
+                <br><br>
                 <h3>{{ item.title }}</h3>
                 <p>{{ item.text }}</p>
             </center>
@@ -17,11 +19,13 @@
             <div class="pure-g">
                 <div class="pure-u-1 pure-u-md-1-2 l-box">
                     <img src="{{ item.image_left }}" alt="{{ item.title_left }}">
+                    <br><br>
                     <h3>{{ item.title_left }}</h3>
                     <p>{{ item.text_left }}</p>
                 </div>
                 <div class="pure-u-1 pure-u-md-1-2 l-box">
                     <img src=" {{ item.image_right }}" alt="{{ item.title_right }}">
+                    <br><br>
                     <h3>{{ item.title_right }}</h3>
                     <p>{{ item.text_right }}</p>
                 </div>
