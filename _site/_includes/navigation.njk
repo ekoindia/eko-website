@@ -7,9 +7,11 @@
             <a href="{{ nav.url }}" class="pure-menu-link">{{ nav.key }}</a>
             <ul class="pure-menu-children">
             {%- for product in products -%}
-            <li class="pure-menu-item">
-                <a href="/products/{{ product.name | slug }}/" class="pure-menu-link">{{ product.name }}</a>
-            </li>
+              {% if product.hidden != true %}
+                <li class="pure-menu-item">
+                    <a href="/products/{{ product.name | slug }}/" class="pure-menu-link">{{ product.name }}</a>
+                </li>
+              {% endif %}
           {% endfor %}
           </ul>
         </li>
@@ -26,4 +28,3 @@
         </div>
     </ul>
 </div>
-

@@ -1,7 +1,6 @@
 - name: 'Money Transfer'
   # disabled: true
-  # # html file exists but not shown in menu
-  # hidden: 
+  hidden: false
   top_hero:
     image: /images/money-transfer/money-transfer.svg
     description: Easiest way to transfer cash to anyone
