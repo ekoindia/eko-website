@@ -1,30 +1,101 @@
-<div class="pure-menu pure-menu-horizontal">
-    <a href="/" class="pure-menu-heading pure-menu-link">Eko.in</a>
-    <ul class="pure-menu-list">
-        {% set mainNav = collections.all | eleventyNavigation('main') %}
-        {%- for nav in mainNav -%}
-        <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
-            <a href="{{ nav.url }}" class="pure-menu-link">{{ nav.key }}</a>
-            <ul class="pure-menu-children">
-            {%- for product in products -%}
-              {% if product.hidden != true %}
-                <li class="pure-menu-item">
-                    <a href="/products/{{ product.name | slug }}/" class="pure-menu-link">{{ product.name }}</a>
-                </li>
-              {% endif %}
-          {% endfor %}
-          </ul>
+<div class="menu-wrapper" role="navigation">
+  <div class="pure-g">
+
+    <div class="pure-u-1 pure-u-md-1-6 l-box">
+      <a class="l-box-main logo" href="/">Eko.in</a>
+    </div>
+
+    <div class="pure-u-1 pure-u-md-1-2 l-box">
+      <center>
+      <ul class="nav" role="menubar">
+        <li role="menuitem" class="l-box-main">
+          <a href="#">Products</a>
+          <div class="mega-menu" aria-hidden="true" role="menu">
+            <div class="pure-g">
+              <div class="pure-u-1 pure-u-md-5-24 nav-column l-box">
+                <br>
+                <h5>Product</h5>
+                <div class="h2-border"></div>
+              </div>
+              <div class="pure-u-1 pure-u-md-9-24 nav-column l-box">
+                <ul>
+                  <br>
+                  <li role="menuitem"><a href="/products/money-transfer/">{% orangeDot %} Money Transfer</a></li>
+                  <li role="menuitem"><a href="/products/aadhaar-banking-cash-out/">{% orangeDot %} Aadhar Banking / Cash Out</a></li>
+                  <li role="menuitem"><a href="/">{% orangeDot %} Doorstep Cash Delivery</a></li>
+                  <li role="menuitem"><a href="/">{% orangeDot %} Utility & Bill Payment</a></li>
+                  <li role="menuitem"><a href="/">{% orangeDot %} Sell Insurance </a></li>
+                  <li role="menuitem"><a href="/">{% orangeDot %} Indo-Nepal Money Transfer</a></li>
+                </ul>
+              </div>
+              <div class="pure-u-1 pure-u-md-9-24 nav-column l-box">
+                <img src="/images/product-nav.svg">
+                <h5>Check out our Developer Products</h5>
+                <p>Available as APIs & SDKs</p>
+                <a href="https://eko.in/developers/eps#with-border-box" class="button-white">Check Developer Products</a>
+              </div>
+              </div>
+            </div>
         </li>
-        {% endfor %}
+          
+        <li role="menuitem" class="l-box-main"><a href="#">Retailers</a></li>
+        
+        <li role="menuitem" class="l-box-main">
+          <a href="/">Developers</a>
+          <div class="mega-menu small" aria-hidden="true" role="menu">
+          <div class="pure-g">
+            <div class="pure-u-1 pure-u-md-1-3 nav-column l-box">
+              <h5>Developers</h5>
+              <div class="h2-border"></div>
+            </div>
+            <div class="pure-u-1 pure-u-md-2-3 nav-column l-box">
+              <ul>
+                <li rol="capt">Develop with</li>
+                <li role="menuitem"><a href="/">{% orangeDot %} Eko Platform Services</a></li>
+                <li rol="capt">Resources</li>
+                <li role="menuitem"><a href="/">{% orangeDot %} API references</a></li>
+                <li role="menuitem"><a href="/">{% orangeDot %} Developer Guide</a></li>
+              </ul>
+            </div>
+            </div>
+          </div>
+        </li>     
 
+        <li role="menuitem" class="l-box-main">
+          <a href="#">Company</a>
+          <div class="mega-menu small" aria-hidden="true" role="menu">
+            <div class="pure-g">
+            <div class="pure-u-1 pure-u-md-1-3 nav-column l-box">
+              <h5>Company</h5>
+              <div class="h2-border"></div>
+            </div>
+            <div class="pure-u-1 pure-u-md-2-3 nav-column l-box">
+              <ul>
+                <li role="menuitem"><a href="/">{% orangeDot %} About Us</a></li>
+                <li role="menuitem"><a href="/">{% orangeDot %} Brand Partner</a></li>
+                <li rol="capt">Help Center</li>
+                <li role="menuitem"><a href="/">{% orangeDot %} Blogs</a></li>
+                <li role="menuitem"><a href="/">{% orangeDot %} Eko University</a></li>
+                <li role="menuitem"><a href="/">{% orangeDot %} FAQs</a></li>
+              </ul>
+            </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+      </center>
+    </div>
+  
+    <div class="pure-u-1 pure-u-md-1-3 l-box">
+      <ul class="nav" role="menubar">  
+        <li role="menuitem" class="l-box-main">
+          <a href="https://eko.in/contact-us"><img src="/images/paper-plane.svg">  Contact Sales</a>
+        </li>
+        <li role="menuitem" class="l-box-main">
+          <a href="https://eko.in/sign-up" class="nav-button">Sign Up</a>
+        </li>
+      </ul>
+    </div>
 
-        <div class="nav-right">
-          <li class="pure-menu-item">
-            <a class="orange-link" href="{{ nav.contact_link }}"><img src="/images/paper-plane.svg">  Contact Us</a>
-          </li>
-          <li class="pure-menu-item">
-            <a href="{{ nav.button_link }}" class="nav-button">Sign Up</a>
-          </li>
-        </div>
-    </ul>
+  </div>
 </div>

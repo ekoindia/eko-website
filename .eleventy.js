@@ -16,6 +16,10 @@ module.exports = function(eleventyConfig) {
     return `<p><br><br></p>`;
   })
 
+  eleventyConfig.addShortcode('orangeDot', function() {
+    return `<span class="orange-dot"></span></span>`;
+  })
+
   eleventyConfig.addShortcode('iconScroll', function() {
     return `<center><div class="icon-scroll icon-scroll-container">
     <div class="mouse">
