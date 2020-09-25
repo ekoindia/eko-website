@@ -4,6 +4,11 @@ main, html, body {
     font-family: Roboto,sans-serif;
     line-height: 1.42857143;
 }
+@media (max-width: 1000px) {
+    .img {
+        max-width: 10%;
+    }
+}
 
 .background-section {
     /* background-color: rgb(255, 207, 158, 0.15);
@@ -232,6 +237,12 @@ a:hover {
 .l-box {
     padding: 2em;
 }
+
+@media only screen and (max-width: 600px) {
+    .l-box {
+        padding: 1em !important;
+    }
+  }
 
 .sm-box {
     padding: 0.5em;
