@@ -3,21 +3,21 @@
 {% for item in product.alternating_steps %}
     {% if align == "left" %}
         <div class="pure-g flex-grid container">
-            <div class="pure-u-1 pure-u-md-1-2 order-1-md order-2-sm l-box">
+            <div class="pure-u-1 pure-u-md-1 pure-u-lg-1-2 l-box order-2-sm order-2-md">
                 <h3>{{ item.title }}</h3>
                 <p>{{ item.text }}</p>
             </div>
-            <div class="pure-u-1 pure-u-md-1-2 order-2-md order-1-sm l-box">
+            <div class="pure-u-1 pure-u-md-1 pure-u-lg-1-2 l-box order-1-sm order-1-md">
                 <img src="{{ item.image }}">
             </div>
         </div>
         {% set align = "right" %}
     {% elif align == "right" %}
         <div class="pure-g flex-grid">
-            <div class="pure-u-1 pure-u-md-1-2 l-box">
+            <div class="pure-u-1 pure-u-md-1 pure-u-lg-1-2 l-box order-1-sm order-1-md">
                 <img src="{{ item.image }}">
             </div>
-            <div class="pure-u-1 pure-u-md-1-2 l-box">
+            <div class="pure-u-1 pure-u-md-1 pure-u-lg-1-2 l-box order-2-sm order-2-md">
                 <h3>{{ item.title }}</h3>
                 <p>{{ item.text }}</p>
             </div>

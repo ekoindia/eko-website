@@ -116,6 +116,19 @@ a:hover {
     background-position: center;
 }
 
+.button-white {
+    border-radius: 12px;
+    transition-duration: 0.4s;
+    border: 1px solid orange;
+    color: orange;
+    padding: 10px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 13px;  
+    font-weight: 600;
+}
+
 .short_ad p {
     text-align: left;
     font-weight: 500;
