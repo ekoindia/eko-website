@@ -1,4 +1,3 @@
-<div class= "container">
 <div class="background-section">
     <center>
         <h1>{{ product.heros_main_section[0].header }}</h1>
@@ -15,8 +14,8 @@
                 <p>{{ item.text }}</p>
             </center>
         {% else %}
-            <center>
-            <div class="pure-g">
+            <div class="pure-g flex-grid container">
+                <center>
                 <div class="pure-u-1 pure-u-md-1 pure-u-lg-1-2 l-box order-1-sm order-1-md">
                     <img src="{{ item.image_left }}" alt="{{ item.title_left }}">
                     <br><br>
@@ -29,8 +28,10 @@
                     <h3>{{ item.title_right }}</h3>
                     <p>{{ item.text_right }}</p>
                 </div>
+                </center>
             </div>
-            </center>
+            
         {% endif %}
         <br><br><br><br><br>
     {% endfor %}
+

@@ -1,4 +1,3 @@
-<div class="container">
 {% set align = "right" %}
 {% for item in product.alternating_steps %}
     {% if align == "left" %}
@@ -13,7 +12,7 @@
         </div>
         {% set align = "right" %}
     {% elif align == "right" %}
-        <div class="pure-g flex-grid">
+        <div class="pure-g flex-grid container">
             <div class="pure-u-1 pure-u-md-1 pure-u-lg-1-2 l-box order-1-sm order-1-md">
                 <img src="{{ item.image }}">
             </div>
@@ -25,4 +24,3 @@
         {% set align = "left" %}
     {% endif %} 
 {% endfor %}
-</div>
