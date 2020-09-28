@@ -19,7 +19,7 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
   </head>
   <body>
-    <div class="menu-wrapper" role="navigation">
+    <div class="menu-wrapper topnav" role="navigation" id="myTopnav">
   <div class="pure-g flex-grid">
 
     <div class="pure-u-1 pure-u-md-1-6 l-box order-1-sm">
@@ -118,8 +118,23 @@
       </ul>
     </div>
 
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+
   </div>
 </div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
     <div><main class="container">
   
     
