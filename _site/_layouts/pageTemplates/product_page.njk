@@ -1,17 +1,16 @@
 ---
 layout: base
 ---
+{% block seo%}
+  {# Facebook #}
+  <meta property="og:title" content="Money Transfer"/>
+  <meta property="og:description" content="test."/>
+  <meta property="og:image" content="https://ekoin.netlify.app/images/star.png"/>
+  <meta property="og:url" content="https://ekoin.netlify.app/products/money-transfer/"/>
+  <meta property="og:type" content="website"/>
+{% endblock %}
 
 <main class="container">
-<script>
-var metaList = document.getElementsByTagName("meta");
-for (var i = 0; i < metaList.length; i++) {
-    if (metaList[i].getAttribute("property") == "og:image") {
-        metaList[i].content = "https://ekoin.netlify.app/images/star.png";
-    }
-}
-</script>
-
   {% if 'top_hero' in product %}
     {% include "top_hero.njk" %}
     {% sectionSeparator %}
