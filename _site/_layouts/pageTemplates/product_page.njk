@@ -4,7 +4,10 @@ layout: base
 
 <main class="container">
 <script>
-$("meta[property='og:image']").attr('content', 'https://ekoin.netlify.app/images/star.png'); 
+$(function() {
+    $('meta[property="og:url"]').remove();
+    $('head').append('<meta property="og:image" content="https://ekoin.netlify.app/images/star.png"/>');
+});
 </script>
 
   {% if 'top_hero' in product %}
