@@ -33,7 +33,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPlugin(pluginSEO, {
     title: "Eko",
     description: "Best way to collect cash at your doorstep",
-    url: "https://ekoin.netlify.app/",
+    url: "https://ekoin.netlify.app",
     image: "https://ekoin.netlify.app/images/main/homepage.png"
   });
 
