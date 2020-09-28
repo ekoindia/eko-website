@@ -3,11 +3,9 @@ layout: base
 ---
 
 <main class="container">
-
-<script>
-document.querySelector('meta[property="og:title"]').setAttribute("content", "Example with og title meta tag");
-</script>
-
+<head>
+<meta property="og:url" content="https://ekoin.netlify.app/products/money-transfer/"/>
+</head>
 
   {% if 'top_hero' in product %}
     {% include "top_hero.njk" %}
