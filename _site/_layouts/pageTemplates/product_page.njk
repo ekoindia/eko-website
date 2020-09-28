@@ -2,11 +2,13 @@
 layout: base
 ---
 
+<main class="container">
+
 <script>
 document.querySelector('meta[property="og:title"]').setAttribute("content", "Example with og title meta tag");
 </script>
 
-<main class="container">
+
   {% if 'top_hero' in product %}
     {% include "top_hero.njk" %}
     {% sectionSeparator %}
