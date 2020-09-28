@@ -31,12 +31,10 @@ module.exports = function(eleventyConfig) {
 
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
   eleventyConfig.addPlugin(pluginSEO, {
-    title: "Foobar Site",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    url: "https://foo.com",
-    author: "Jane Doe",
-    twitter: "username",
-    image: "foo.jpg"
+    title: "Eko",
+    description: "Best way to collect cash at your doorstep",
+    url: "https://ekoin.netlify.app/",
+    image: "https://ekoin.netlify.app/images/main/homepage.png"
   });
 
   return {
