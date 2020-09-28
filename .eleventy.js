@@ -1,6 +1,7 @@
 const yaml = require('js-yaml');
 const { DateTime } = require('luxon');
-const eleventyNavigationPlugin = require('@11ty/eleventy-navigation')
+const eleventyNavigationPlugin = require('@11ty/eleventy-navigation');
+const pluginSEO = require("eleventy-plugin-seo");
 
 module.exports = function(eleventyConfig) {
 
@@ -28,7 +29,15 @@ module.exports = function(eleventyConfig) {
   </div></center>`;
   })
 
-  eleventyConfig.addPlugin(eleventyNavigationPlugin)
+  eleventyConfig.addPlugin(eleventyNavigationPlugin);
+  eleventyConfig.addPlugin(pluginSEO, {
+    title: "Foobar Site",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    url: "https://foo.com",
+    author: "Jane Doe",
+    twitter: "username",
+    image: "foo.jpg"
+  });
 
   return {
     markdownTemplateEngine: 'njk',
