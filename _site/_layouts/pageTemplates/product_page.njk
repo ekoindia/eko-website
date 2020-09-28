@@ -3,9 +3,18 @@ layout: base
 ---
 
 <main class="container">
-<head>
-<meta property="og:url" content="https://ekoin.netlify.app/products/money-transfer/"/>
-</head>
+<script>
+var allMetaElements = document.getElementsByTagName('meta');
+//loop through and find the element you want
+for (var i=0; i<allMetaElements.length; i++) { 
+  if (allMetaElements[i].getAttribute("name") == "Description") { 
+     //make necessary changes
+     allMetaElements[i].setAttribute('content', "description you want to include"); 
+     //no need to continue loop after making changes.
+     break;
+  } 
+} 
+</script>
 
   {% if 'top_hero' in product %}
     {% include "top_hero.njk" %}
