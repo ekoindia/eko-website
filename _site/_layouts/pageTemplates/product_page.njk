@@ -4,10 +4,12 @@ layout: base
 
 <main class="container">
 <script>
-$(function() {
-    $('meta[property="og:url"]').remove();
-    $('head').append('<meta property="og:image" content="https://ekoin.netlify.app/images/star.png"/>');
-});
+var metaList = document.getElementsByTagName("meta");
+for (var i = 0; i < metaList.length; i++) {
+    if (metaList[i].getAttribute("property") == "og:image") {
+        metaList[i].content = "https://ekoin.netlify.app/images/star.png";
+    }
+}
 </script>
 
   {% if 'top_hero' in product %}
