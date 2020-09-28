@@ -1,6 +1,18 @@
 ---
 layout: base
 ---
+
+<script>
+$(document).ready(function() {
+  $('meta[property="og:title"]').remove();
+  $('meta[property="og:description"]').remove();
+  $('meta[property="og:url"]').remove();
+  $("head").append('<meta property="og:title" content="hello">');
+  $("head").append('<meta property="og:description" content="blubb2">');
+  $("head").append('<meta property="og:url" content="blubb3">');
+});
+
+</script>
 <main class="container">
   {% if 'top_hero' in product %}
     {% include "top_hero.njk" %}
