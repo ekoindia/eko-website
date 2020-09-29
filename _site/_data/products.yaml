@@ -1,7 +1,7 @@
 - name: 'Money Transfer'
   description: Easiest way to transfer cash to anyone
   social_image: "https://ekoin.netlify.app/images/money-transfer/easy-cash-transfer.png"
-
+  keywords: money, transfer, easy
   # disabled: true
   # hidden: true
   top_hero:

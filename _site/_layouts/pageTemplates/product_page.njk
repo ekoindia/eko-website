@@ -4,6 +4,7 @@
   {% block seo %}
   {# Facebook #}
     <title>{{ product.name }}</title>
+    <meta name="keywords" content="{{ product.keywords }}">
     <meta property="og:url" content="https://ekoin.netlify.app/products/{{ product.name | slug }}/"/>
     <meta property="og:image" content="{{ product.social_image }}">
     <meta property="og:title" content="{{ product.name }}"/>
