@@ -1,15 +1,11 @@
-{# ---
-layout: base
---- #}
-
 {% extends "./base.njk" %}
 
 {% block seo %}
   <title>{{product.name}}</title>
   <meta property="og:url" content="https://ekoin.netlify.app/products/{{ product.name | slug }}/">
-  <meta property="og:image" content="https://ekoin.netlify.app/images/money-transfer/easy-cash-transfer.png">
+  <meta property="og:image" content="{{ product.social-image }}">
   <meta property="og:title" content="{{product.name}}">
-  <meta property="og:description" content="hi">
+  <meta property="og:description" content="{{ product.description }}">
   <meta property="og:type" content="website">
 {% endblock %}
 
