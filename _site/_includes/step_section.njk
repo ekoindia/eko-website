@@ -1,14 +1,15 @@
 <div class="step_section container">
-    <h1>{{ product.step_section[0].header }}</h1>
+    <h1>{{ item.header }}</h1>
     <span class="h2-border"></span>
     <div class="pure-g">
-        {% for i in range(1, product.step_section | length) %}
+        {% for step_key, step_val in item %}
+            {% if step_key != 'header' %}
             <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-4 boxed">
-                {% set item=product.step_section[i] %}
-                <h3 class="box-title">{{ item.title }}</h3>
-                <p class="box-text">{{ item.text }}</p>
-                <a href="{{ item.link }}">{{ item.link }}</a>
+                <h3 class="box-title">{{ step_val.title }}</h3>
+                <p class="box-text">{{ step_val.text }}</p>
+                <a href="{{ step_val.link }}">{{ step_val.link }}</a>
             </div>
+            {% endif %}
         {% endfor %}
     </div>
 </div>

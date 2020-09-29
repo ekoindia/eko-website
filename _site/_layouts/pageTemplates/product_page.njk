@@ -24,65 +24,11 @@
 
 {% block main %}
 <main class="container">
-  {% if 'top_hero' in product %}
-    {% include "top_hero.njk" %}
+  {% for key, val in product.layout %}
+    {% set component = key + ".njk" %}
+    {% set item = product.layout[key] %}
+    {% include component %}
     {% sectionSeparator %}
-  {% endif %}
-
-  {% if 'mid_summary' in product %}
-    {% include "mid_summary.njk"%}
-    {% sectionSeparator %}
-  {% endif %}
-
-  {% if 'single_hero' in product %}
-    {% include "single_hero.njk"%}
-    {% sectionSeparator %}  
-  {% endif %}
-
-  {% if 'short_ad' in product %}
-    {% include "short_ad.njk"%}
-    {% sectionSeparator %}
-  {% endif %}
-
-  {% if 'alternating_steps' in product %}
-    {% include "alternating_steps.njk" %}
-    {% sectionSeparator %}
-  {% endif %}
-
-  {% if 'heros_main_section' in product %}
-    {% include "heros_main_section.njk" %}
-    {% sectionSeparator %}
-  {% endif %}
-
-  {% if 'one_liner' in product %}
-    {% include "one_liner.njk" %}
-    {% sectionSeparator %}
-  {% endif %}
-
-  {% if 'step_section' in product %}
-    {% include "step_section.njk" %}
-    {% sectionSeparator %}
-  {% endif %}
-
-  {% if 'message' in product %}
-    {% include "message.njk" %}
-    {% sectionSeparator %}
-  {% endif %}
-
-  {% if 'small_heros_section' in product %}
-    {% include "small_heros_section.njk" %}
-    {% sectionSeparator %}
-  {% endif %}
-  
-  {% if 'final_ad' in product %}
-    {% include "final_ad.njk" %}
-    {% sectionSeparator %}
-  {% endif %}
-
-  {% if 'form' in product %}
-    {% include "form.njk" %}
-    {% sectionSeparator %}
-  {% endif %}
-  
+  {% endfor %}
 </main>
 {% endblock %}
