@@ -1,6 +1,6 @@
----
+{# ---
 siteTitle: Eko
----
+--- #}
 <!DOCTYPE HTML>
 <html lang="en">
   <head>
@@ -33,7 +33,8 @@ siteTitle: Eko
   </head>
   <body>
     {% include "navigation.njk" %}
-    <div>{{ content | safe }}</div>
+    {# <div>{{ content | safe }}</div> #}
+    <div>{% block main%}{% endblock %}</div>
     {% include "footer.njk" %}
   </body>
 </html>

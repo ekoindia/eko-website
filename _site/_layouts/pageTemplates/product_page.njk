@@ -1,7 +1,9 @@
----
+{# ---
 layout: base
----
-<head>
+--- #}
+
+{% extends "./base.njk" %}
+
 {% block seo %}
   <title>{{product.name}}</title>
   <meta property="og:url" content="https://ekoin.netlify.app/products/{{ product.name | slug }}/">
@@ -9,8 +11,8 @@ layout: base
   <meta property="og:title" content="{{product.name}}">
   <meta property="og:description" content="hi">
 {% endblock %}
-</head>
 
+{% block main %}
 <main class="container">
   {% if 'top_hero' in product %}
     {% include "top_hero.njk" %}
@@ -73,3 +75,4 @@ layout: base
   {% endif %}
   
 </main>
+{% endblock %}
