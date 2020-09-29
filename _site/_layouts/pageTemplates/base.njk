@@ -8,13 +8,13 @@ siteTitle: Eko
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
   {% block seo %}
-    {# <title>{{siteTitle}}</title>
+    <title>{{siteTitle}}</title>
     <meta property="og:url" content="https://ekoin.netlify.app">
     <meta property="og:image" content="https://ekoin.netlify.app/images/main/homepage.png">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Eko">
     <meta property="og:description" content="Best way to collect cash at your doorstep">
-    <meta property="og:site_name" content="Eko.in"> #}
+    <meta property="og:site_name" content="Eko.in">
   {% endblock %}
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -30,7 +30,7 @@ siteTitle: Eko
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-  {# </head> #}
+  </head>
   <body>
     {% include "navigation.njk" %}
     <div>{{ content | safe }}</div>
