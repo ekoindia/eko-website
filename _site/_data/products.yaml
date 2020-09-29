@@ -1,6 +1,6 @@
 - name: 'Money Transfer'
   description: Easiest way to transfer cash to anyone
-  social-image: /images/money-transfer/easy-cash-transfer.png
+  social-image: "https://ekoin.netlify.app/images/main/homepage.png"
 
   # disabled: true
   # hidden: true
@@ -94,7 +94,7 @@
 
 - name: Aadhaar Banking / Cash-out
   description: AePS - Aadhaar Enabled Payment System
-  social-image: https://ekoin.netlify.app/images/aadhaar-banking/AePS_hero.png
+  social-image: "https://ekoin.netlify.app/images/main/homepage.png"
   top_hero:
     image: /images/aadhaar-banking/AePS_hero.svg
     description: AePS - Aadhaar Enabled Payment System
