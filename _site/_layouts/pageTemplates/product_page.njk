@@ -2,11 +2,11 @@
 
 {% block seo %}
   <title>{{product.name}}</title>
-  <meta property="og:url" content="https://ekoin.netlify.app/products/{{ product.name | slug }}/">
-  <meta property="og:image" content="{{ product.social-image }}">
-  <meta property="og:title" content="{{product.name}}">
-  <meta property="og:description" content="{{ product.description }}">
-  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ekoin.netlify.app/products/{{ product.name | slug }}/"/>
+  <meta property="og:image" content={{ product.social-image }}/>
+  <meta property="og:title" content="{{product.name}}"/>
+  <meta property="og:description" content="{{ product.description }}"/>
+  <meta property="og:type" content="website"/>
 {% endblock %}
 
 {% block main %}
