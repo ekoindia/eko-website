@@ -1,7 +1,7 @@
 const yaml = require('js-yaml');
 const { DateTime } = require('luxon');
 const eleventyNavigationPlugin = require('@11ty/eleventy-navigation');
-const pluginSEO = require("eleventy-plugin-seo");
+// const pluginSEO = require("eleventy-plugin-seo");
 
 module.exports = function(eleventyConfig) {
 
@@ -30,12 +30,15 @@ module.exports = function(eleventyConfig) {
   })
 
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
-  eleventyConfig.addPlugin(pluginSEO, {
-    title: "Eko",
-    description: "Best way to collect cash at your doorstep",
-    url: "https://ekoin.netlify.app",
-    image: "https://ekoin.netlify.app/images/main/homepage.png"
-  });
+  // eleventyConfig.addPlugin(pluginSEO, {
+  //   title: "Eko",
+  //   description: "Best way to collect cash at your doorstep",
+  //   url: "https://ekoin.netlify.app",
+  //   image: "https://ekoin.netlify.app/images/main/homepage.png",
+  //   options: {
+  //     titleStyle: "minimalistic"
+  //   }
+  // });
 
   return {
     markdownTemplateEngine: 'njk',

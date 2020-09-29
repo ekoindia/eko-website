@@ -1,6 +1,16 @@
 ---
 layout: base
 ---
+<head>
+{% block seo %}
+  <title>{{product.name}}</title>
+  <meta property="og:url" content="https://ekoin.netlify.app/products/{{ product.name | slug }}/">
+  <meta property="og:image" content="https://ekoin.netlify.app/images/star.png">
+  <meta property="og:title" content="{{product.name}}">
+  <meta property="og:description" content="hi">
+{% endblock %}
+</head>
+
 <main class="container">
   {% if 'top_hero' in product %}
     {% include "top_hero.njk" %}
