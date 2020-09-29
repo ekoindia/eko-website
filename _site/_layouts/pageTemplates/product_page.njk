@@ -1,24 +1,25 @@
 {% extends "./base.njk" %}
 
-{% block seo %}
-{# Facebook #}
-  <title>{{product.name}}</title>
-  <meta property="og:url" content="https://ekoin.netlify.app/products/{{ product.name | slug }}/"/>
-  <meta property="og:image" content="{{ product.social_image }}">
-  <meta property="og:title" content="{{ product.name }}"/>
-  <meta property="og:description" content="{{ product.description }}"/>
-  <meta property="og:type" content="website"/>
+{% if 'social_image' in product and 'description' in product %}
+  {% block seo %}
+  {# Facebook #}
+    <title>{{ product.name }}</title>
+    <meta property="og:url" content="https://ekoin.netlify.app/products/{{ product.name | slug }}/"/>
+    <meta property="og:image" content="{{ product.social_image }}">
+    <meta property="og:title" content="{{ product.name }}"/>
+    <meta property="og:description" content="{{ product.description }}"/>
+    <meta property="og:type" content="website"/>
 
-  {# Twitter #}
-  <meta name="robots" content="index,follow">
-  <meta name="twitter:card" content="website">
-  <meta name="twitter:site" content="@ekospeaks">
-  <meta name="twitter:url" content="https://ekoin.netlify.app/products/{{ product.name | slug }}/">
-  <meta name="twitter:title" content="{{ product.name }}">
-  <meta name="twitter:description" content="{{ product.description }}">
-  <meta name="twitter:image" content="{{ product.social_image }}">
-
-{% endblock %}
+    {# Twitter #}
+    <meta name="robots" content="index,follow">
+    <meta name="twitter:card" content="website">
+    <meta name="twitter:site" content="@ekospeaks">
+    <meta name="twitter:url" content="https://ekoin.netlify.app/products/{{ product.name | slug }}/">
+    <meta name="twitter:title" content="{{ product.name }}">
+    <meta name="twitter:description" content="{{ product.description }}">
+    <meta name="twitter:image" content="{{ product.social_image }}">
+  {% endblock %}
+{% endif %}
 
 {% block main %}
 <main class="container">
