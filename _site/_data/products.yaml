@@ -2,13 +2,13 @@
   description: Easiest way to transfer cash to anyone
   social_image: "https://ekoin.netlify.app/images/money-transfer/easy-cash-transfer.png"
   keywords: money, transfer, easy
-  # disabled: true
   # hidden: true
   layout:
+    # remove top hero from layout (add to main configuration)
     top_hero:
-      image: /images/money-transfer/money-transfer.svg
+      hero_image: /images/money-transfer/money-transfer.svg
       summary: A simple and highly secure direct money transfer ability for your customers using cash with industry-leading success rates
-      button: Sign Up
+      button: Sign Up #can remove this from config
     mid_summary:
       small_description: Money Transfer
       header: Instant money transfer, anytime & anywhere
