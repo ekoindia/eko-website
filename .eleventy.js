@@ -1,13 +1,29 @@
 const yaml = require('js-yaml');
 const eleventyNavigationPlugin = require('@11ty/eleventy-navigation');
+const {
+  DateTime
+} = require("luxon");
 
 module.exports = function(eleventyConfig) {
+
+  eleventyConfig.addFilter('htmlDateString', (dateObj) => {
+    return DateTime.fromJSDate(dateObj, {
+      zone: 'utc'
+      }).toFormat('yy-MM-dd');
+    });
+
+  eleventyConfig.addFilter("readableDate", dateObj => {
+  return DateTime.fromJSDate(dateObj, {
+    zone: 'utc'
+    }).toFormat("dd-MM-yy");
+  });
 
   eleventyConfig.addPassthroughCopy('./_site/images');
   eleventyConfig.addPassthroughCopy('./_site/css');
 
   eleventyConfig.addLayoutAlias('base', 'pageTemplates/base.njk');
   eleventyConfig.addLayoutAlias('product_page', 'pageTemplates/product_page.njk');
+  eleventyConfig.addLayoutAlias('blog', 'pageTemplates/blog.njk');
 
   eleventyConfig.addDataExtension('yaml', contents => yaml.safeLoad(contents))
 
