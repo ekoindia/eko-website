@@ -1,7 +1,7 @@
 ---
 layout: blog
 title: Hindi Blog Post
-description: AePS
+description: A simple and highly secure cash withdrawing ability for your customers using Aadhaar and ensuring that you earn more with every transaction.
 date: 2019-04-18
 featuredImage: /images/blogs/hindi.png
 ---

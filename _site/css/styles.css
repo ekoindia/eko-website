@@ -595,3 +595,83 @@ li:hover > .mega-menu {
       text-align: left;
     }
   }
+
+/* Blog CSS */
+
+.band {
+    width: 90%;
+    max-width: 1240px;
+    margin: 0 auto;
+    
+    display: grid;
+    grid-template-columns: auto auto auto;
+    /* grid-template-columns: 1fr;
+    grid-template-rows: auto; */
+    grid-gap: 20px;
+    
+    @media (min-width: 30em) {
+      grid-template-columns: 1fr 1fr;
+    }
+    
+    @media (min-width: 60em) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+
+.card {
+    background: white;
+    text-decoration: none;
+    color: #444;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    /* min-height: 100%; */
+
+    position: relative;
+    top: 0;
+    transition: all .1s ease-in;
+}
+      
+.card:hover {
+    top: -2px;
+    box-shadow: 0 4px 5px rgba(0,0,0,0.2);
+}
+
+article {
+    padding: 20px;
+    flex: 1;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+  .band p {
+    flex: 1;
+    line-height: 1.4;
+  }
+  
+  .band span {
+    font-size: 12px;
+    font-weight: bold;
+    color: #999;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    margin: 2em 0 0 0;
+  }
+
+  .band .thumb {
+    padding-bottom: 60%;
+    background-size: cover;
+    /* background-position: center center; */
+    height: auto;
+  }
+
+  .item a:hover p {
+      color: black !important;
+      text-decoration: none;
+  }
+
+  .item {
+    padding: 20px;
+  }
