@@ -1,20 +1,21 @@
 ---
 pagination:
   data: collections
-  size: 1
-  alias: tag
-permalink: /blogs/{{ tag }}/
+  size: 10
+eleventyExcludeFromCollections: true
 ---
-{% extends "./_layouts/pageTemplates/base.njk" %}
+
+{% extends "../_layouts/pageTemplates/base.njk" %}
 
 {% block main %}
-    {% set blogslist = collections[ tag ] %}
+<main class="container">
     <div class="container">
         <header>
             <h1>Blog Posts</h1>
             <span class="h2-border"></span>
         </header>
+        {% set blogslist = collections['post'] %}
         {% include "blogslist.njk" %}
     </div>
-    {% sectionSeparator %}
+</main>
 {% endblock %}
