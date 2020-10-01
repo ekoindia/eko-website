@@ -24,6 +24,7 @@
 
 {% block main %}
 <main class="container">
+  {% include "top_hero.njk" %}
   {% for key, val in product.layout %}
     {% set component = key + ".njk" %}
     {% set item = product.layout[key] %}

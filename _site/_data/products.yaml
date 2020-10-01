@@ -2,13 +2,11 @@
   description: Easiest way to transfer cash to anyone
   social_image: "https://ekoin.netlify.app/images/money-transfer/easy-cash-transfer.png"
   keywords: money, transfer, easy
+  button_link: https://eko.in/sign-up
+  hero_image: /images/money-transfer/money-transfer.svg
+  summary: A simple and highly secure direct money transfer ability for your customers using cash with industry-leading success rates
   # hidden: true
   layout:
-    # remove top hero from layout (add to main configuration)
-    top_hero:
-      hero_image: /images/money-transfer/money-transfer.svg
-      summary: A simple and highly secure direct money transfer ability for your customers using cash with industry-leading success rates
-      button: Sign Up #can remove this from config
     mid_summary:
       small_description: Money Transfer
       header: Instant money transfer, anytime & anywhere
@@ -96,13 +94,12 @@
   description: AePS - Aadhaar Enabled Payment System
   social_image: "https://ekoin.netlify.app/images/aadhaar-banking/AePS_hero.png"
   video_link: https://www.youtube.com/watch?time_continue=1&v=y-zLDNRPnBs&feature=emb_logo
+  hero_image: /images/aadhaar-banking/AePS_hero.svg
+  summary: A simple and highly secure cash withdrawing ability for your customers using Aadhaar and ensuring that you earn more with every transaction.
+  button: Try for free
+  icon: /images/aadhaar-banking/aadhaar_logo.svg
+  video_text: Learn more
   layout:
-    top_hero:
-      image: /images/aadhaar-banking/AePS_hero.svg
-      summary: A simple and highly secure cash withdrawing ability for your customers using Aadhaar and ensuring that you earn more with every transaction.
-      button: Try for free
-      icon: /images/aadhaar-banking/aadhaar_logo.svg
-      video_text: Learn more
     mid_summary:
       small_description: Earn with Aadhaar Banking (AePS)
       header: Turn your shop into an ATM
