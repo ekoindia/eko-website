@@ -597,7 +597,6 @@ li:hover > .mega-menu {
   }
 
 /* Blog CSS */
-
 .band {
     width: 90%;
     max-width: 1240px;
@@ -605,18 +604,20 @@ li:hover > .mega-menu {
     
     display: grid;
     grid-template-columns: auto auto auto;
-    /* grid-template-columns: 1fr;
-    grid-template-rows: auto; */
     grid-gap: 20px;
+}
     
-    @media (min-width: 30em) {
-      grid-template-columns: 1fr 1fr;
+    @media only screen and (min-width: 30em) {
+        .band {
+            grid-template-columns: repeat(1, 1fr);
+        }
     }
     
-    @media (min-width: 60em) {
-      grid-template-columns: repeat(4, 1fr);
+    @media only screen and (min-width: 60em) {
+        .band {
+            grid-template-columns: repeat(2, 1fr);
+        }
     }
-  }
 
 .card {
     background: white;
