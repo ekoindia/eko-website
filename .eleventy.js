@@ -25,7 +25,7 @@ module.exports = function(eleventyConfig) {
 
   eleventyConfig.addLayoutAlias('base', 'pageTemplates/base.njk');
   eleventyConfig.addLayoutAlias('product_page', 'pageTemplates/product_page.njk');
-  eleventyConfig.addLayoutAlias('blog', 'pageTemplates/blog.njk');
+  eleventyConfig.addLayoutAlias('blog_post', 'pageTemplates/blog_post.njk');
 
   eleventyConfig.addDataExtension('yaml', contents => yaml.safeLoad(contents))
 
