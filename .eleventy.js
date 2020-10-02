@@ -43,12 +43,12 @@ module.exports = function(eleventyConfig) {
   </div></center>`;
   })
 
-  eleventyConfig.addPlugin(eleventyNavigationPlugin);
+  // Filter source file names using a glob
+  eleventyConfig.addCollection("posts", function(collection) {
+    return collection.getFilteredByGlob('_site/blogs/*.md');
+  });
 
-    // Filter source file names using a glob
-    eleventyConfig.addCollection("posts", function(collectionApi) {
-      return collectionApi.getFilteredByGlob("_posts/*.md");
-    });
+  eleventyConfig.addPlugin(eleventyNavigationPlugin);
 
   return {
     markdownTemplateEngine: 'njk',
