@@ -6,6 +6,8 @@ const {
 
 module.exports = function(eleventyConfig) {
 
+  eleventyConfig.addPlugin(eleventyNavigationPlugin);
+  
   eleventyConfig.addFilter('htmlDateString', (dateObj) => {
     return DateTime.fromJSDate(dateObj, {
       zone: 'utc'
@@ -43,12 +45,18 @@ module.exports = function(eleventyConfig) {
   </div></center>`;
   })
 
-  eleventyConfig.addPlugin(eleventyNavigationPlugin);
+  // Filter source file names using a glob
+  eleventyConfig.addCollection("posts", function(collection) {
+    return collection.getFilteredByGlob(['_site/blogs/*.md','_site/blogs/**/*.md'] );
+  });
 
-    // Filter source file names using a glob
-    eleventyConfig.addCollection("posts", function(collectionApi) {
-      return collectionApi.getFilteredByGlob("_posts/*.md");
-    });
+  eleventyConfig.addCollection("technology", function(collection) {
+    return collection.getFilteredByGlob('_site/blogs/technology/*.md');
+  });
+
+  eleventyConfig.addCollection("finance", function(collection) {
+    return collection.getFilteredByGlob('_site/blogs/finance/*.md');
+  });
 
   return {
     markdownTemplateEngine: 'njk',
