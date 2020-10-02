@@ -45,6 +45,11 @@ module.exports = function(eleventyConfig) {
 
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
 
+    // Filter source file names using a glob
+    eleventyConfig.addCollection("posts", function(collectionApi) {
+      return collectionApi.getFilteredByGlob("_posts/*.md");
+    });
+
   return {
     markdownTemplateEngine: 'njk',
     dir: {

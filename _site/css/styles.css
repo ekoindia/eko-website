@@ -676,3 +676,14 @@ article {
   .item {
     padding: 20px;
   }
+
+  .blog-button {
+    width: 30%;
+    color: white;
+    margin-top: 20px;
+    font-size: 13px;
+    font-weight: 500;
+    background: #44ce6f;
+    border: 0;
+    padding: 12px 30px;
+  }

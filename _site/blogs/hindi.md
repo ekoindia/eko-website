@@ -5,9 +5,9 @@ description: A simple and highly secure cash withdrawing ability for your custom
 date: 2019-04-18
 featuredImage: /images/blogs/hindi.png
 tags:
+ - post
  - technology
  - finance
- - post
 ---
 
 
