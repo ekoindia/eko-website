@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: Tamil Blog Post
+title: General Blog Post
 description: A simple and highly secure direct money transfer ability for your customers using cash with industry-leading success rates
 date: 2020-04-18
 featuredImage: /images/blogs/tamil.png

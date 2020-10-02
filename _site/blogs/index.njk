@@ -5,7 +5,7 @@ pagination:
   alias: tag
   filter:
     - all
-    - post
+    - posts
 eleventyExcludeFromCollections: true
 ---
 
@@ -24,7 +24,7 @@ eleventyExcludeFromCollections: true
     <h1>Categories</h1>
     <ul>
         {% for item in tag %}
-            <li><h4><a href="/blogs/{{item}}/">{{ item }}</h1></li></h4>
+            <li><h4><a href="/blogs/{{item}}/">{{ item | capitalize }}</h1></li></h4>
         {% endfor %}
     </ul>
     {% sectionSeparator %}

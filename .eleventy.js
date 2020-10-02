@@ -6,6 +6,8 @@ const {
 
 module.exports = function(eleventyConfig) {
 
+  eleventyConfig.addPlugin(eleventyNavigationPlugin);
+  
   eleventyConfig.addFilter('htmlDateString', (dateObj) => {
     return DateTime.fromJSDate(dateObj, {
       zone: 'utc'
@@ -45,10 +47,16 @@ module.exports = function(eleventyConfig) {
 
   // Filter source file names using a glob
   eleventyConfig.addCollection("posts", function(collection) {
-    return collection.getFilteredByGlob('_site/blogs/*.md');
+    return collection.getFilteredByGlob(['_site/blogs/*.md','_site/blogs/**/*.md'] );
   });
 
-  eleventyConfig.addPlugin(eleventyNavigationPlugin);
+  eleventyConfig.addCollection("technology", function(collection) {
+    return collection.getFilteredByGlob('_site/blogs/technology/*.md');
+  });
+
+  eleventyConfig.addCollection("finance", function(collection) {
+    return collection.getFilteredByGlob('_site/blogs/finance/*.md');
+  });
 
   return {
     markdownTemplateEngine: 'njk',

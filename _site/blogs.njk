@@ -11,7 +11,7 @@ permalink: /blogs/{{ tag }}/
     {% set blogslist = collections[ tag ] %}
     <div class="container">
         <header>
-            <h1>Blog Posts</h1>
+            <h1>Blog Posts  - {{ tag | capitalize  }}</h1>
             <span class="h2-border"></span>
         </header>
         {% include "blogslist.njk" %}
