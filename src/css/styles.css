@@ -3,6 +3,7 @@ main, html, body {
     color: grey;
     font-family: Roboto,sans-serif;
     line-height: 1.42857143;
+    font-display: swap;
 }
 @media (max-width: 1000px) {
     .img {
