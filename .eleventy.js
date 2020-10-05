@@ -12,7 +12,7 @@ module.exports = function(eleventyConfig) {
       ready: function(err, bs) {
 
         bs.addMiddleware("*", (req, res) => {
-          const content_404 = fs.readFileSync('dist/404.html');
+          const content_404 = fs.readFileSync('_site/404.html');
           // Provides the 404 content without redirect.
           res.write(content_404);
           // Add 404 http status code in request header.
@@ -38,8 +38,8 @@ module.exports = function(eleventyConfig) {
     }).toFormat("dd-MM-yy");
   });
 
-  eleventyConfig.addPassthroughCopy('./_site/images');
-  eleventyConfig.addPassthroughCopy('./_site/css');
+  eleventyConfig.addPassthroughCopy('./src/images');
+  eleventyConfig.addPassthroughCopy('./src/css');
 
   eleventyConfig.addLayoutAlias('base', 'pageTemplates/base.njk');
   eleventyConfig.addLayoutAlias('product_page', 'pageTemplates/product_page.njk');
@@ -65,17 +65,17 @@ module.exports = function(eleventyConfig) {
 
   // Filter source file names using a glob
   eleventyConfig.addCollection("post", function(collection) {
-    return collection.getFilteredByGlob('_site/blogs/*.md');
+    return collection.getFilteredByGlob('src/blogs/*.md');
   });
 
   return {
     markdownTemplateEngine: 'njk',
     dir: {
-      input: '_site',
+      input: 'src',
       data: '_data',
       includes: '_includes',
       layouts: '_layouts',
-      output: 'dist'
+      output: '_site'
     }
   }
 }
