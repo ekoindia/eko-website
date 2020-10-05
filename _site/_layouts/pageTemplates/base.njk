@@ -7,21 +7,21 @@
   {% block seo %}
     <title>Eko</title>
     <meta name="keywords" content="Eko">
-    <meta property="og:url" content="https://eko.in">
-    <meta property="og:image" content="https://ekoin.netlify.app/images/main/homepage.png">
+    <meta property="og:url" content="{{ base.base_url }}">
+    <meta property="og:image" content="{{ base.image }}">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Eko">
-    <meta property="og:description" content="Best way to collect cash at your doorstep">
-    <meta property="og:site_name" content="Eko.in">
+    <meta property="og:title" content="{{ base.title }}">
+    <meta property="og:description" content="{{ base.tag_line }}">
+    <meta property="og:site_name" content="{{ base.base_url }}">
 
     {# Twitter #}
     <meta name="robots" content="index,follow">
     <meta name="twitter:card" content="website">
-    <meta name="twitter:site" content="@ekospeaks">
-    <meta name="twitter:url" content="https://eko.in">
-    <meta name="twitter:title" content="Eko">
-    <meta name="twitter:description" content="Best way to collect cash at your doorstep">
-    <meta name="twitter:image" content="https://ekoin.netlify.app/images/main/homepage.png">
+    <meta name="twitter:site" content="{{ base.twitter_handle }}">
+    <meta name="twitter:url" content="{{ base.base_url }}">
+    <meta name="twitter:title" content="{{ base.title }}">
+    <meta name="twitter:description" content="{{ base.tag_line }}">
+    <meta name="twitter:image" content="{{ base.image }}">
   {% endblock %}
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">

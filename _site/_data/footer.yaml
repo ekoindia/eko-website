@@ -1,9 +1,7 @@
 title: Eko.in
 text: Eko has been catering to millions of low and moderate-income Indians by providing them with a cash-in point to convert their cash to digital and make payments for an array of services
 copyright: © 2020. All rights reserved
-facebook: https://www.facebook.com/ekoindia
-linkedin: https://www.linkedin.com/company/eko-india-financial-services-private-limited/?originalSubdomain=in
-twitter: https://twitter.com/ekospeaks
+contact_button_text: Contact Sales
 column1: 
   - header: DEVELOPER PROUCT
   - link1:
@@ -47,7 +45,3 @@ column2:
   - link7:
     text: Grievance
     url: https://eko.in/grievance
-button_text: Sign Up
-button_link: https://eko.in/sign-up
-contact_text: Contact Sales
-contact_link: https://eko.in/contact-us
