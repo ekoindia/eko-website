@@ -45,6 +45,10 @@ main, html, body {
   }
 }
 
+.horizontal-spacer {
+    padding-right: 20px;
+}
+
 .background-section {
     /* background-color: rgb(255, 207, 158, 0.15);
     padding-top: 100px !important;
