@@ -3,20 +3,19 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="website">
+    <meta name="robots" content="index,follow">
   {% block seo %}
-    <title>Eko</title>
+    <title>{{ base.title }}</title>
     <meta name="keywords" content="Eko">
     <meta property="og:url" content="{{ base.base_url }}">
     <meta property="og:image" content="{{ base.image }}">
-    <meta property="og:type" content="website">
     <meta property="og:title" content="{{ base.title }}">
     <meta property="og:description" content="{{ base.tag_line }}">
     <meta property="og:site_name" content="{{ base.base_url }}">
 
     {# Twitter #}
-    <meta name="robots" content="index,follow">
-    <meta name="twitter:card" content="website">
     <meta name="twitter:site" content="{{ base.twitter_handle }}">
     <meta name="twitter:url" content="{{ base.base_url }}">
     <meta name="twitter:title" content="{{ base.title }}">

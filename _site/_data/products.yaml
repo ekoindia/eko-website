@@ -6,7 +6,6 @@
   summary: A simple and highly secure direct money transfer ability for your customers using cash with industry-leading success rates
   description: Eko’s remittance service gives you the feature to turn your own shop into a bank. Customers who do not have bank accounts but still want to transfer money using cash can visit your shop. You can take the cash and transfer digital money to the bank account specified by them. Easy and effective!
 
-  # hidden: true
   layout:
     mid_summary:
       small_description: Money Transfer
