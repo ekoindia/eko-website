@@ -5,7 +5,7 @@ pagination:
   alias: tag
   filter:
     - all
-    - posts
+    - post
 eleventyExcludeFromCollections: true
 ---
 
@@ -17,7 +17,7 @@ eleventyExcludeFromCollections: true
         <h1>Blog Posts</h1>
         <span class="h2-border"></span>
     </header>
-    {% set blogslist = collections.posts %}
+    {% set blogslist = collections.post %}
     {% include "blogslist.njk" %}
 
     {% sectionSeparator %}

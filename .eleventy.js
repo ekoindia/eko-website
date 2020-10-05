@@ -46,16 +46,8 @@ module.exports = function(eleventyConfig) {
   })
 
   // Filter source file names using a glob
-  eleventyConfig.addCollection("posts", function(collection) {
-    return collection.getFilteredByGlob(['_site/blogs/*.md','_site/blogs/**/*.md'] );
-  });
-
-  eleventyConfig.addCollection("technology", function(collection) {
-    return collection.getFilteredByGlob('_site/blogs/technology/*.md');
-  });
-
-  eleventyConfig.addCollection("finance", function(collection) {
-    return collection.getFilteredByGlob('_site/blogs/finance/*.md');
+  eleventyConfig.addCollection("post", function(collection) {
+    return collection.getFilteredByGlob('_site/blogs/*.md');
   });
 
   return {
