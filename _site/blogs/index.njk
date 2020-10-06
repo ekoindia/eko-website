@@ -1,0 +1,32 @@
+---
+pagination:
+  data: collections
+  size: 10
+  alias: tag
+  filter:
+    - all
+    - post
+eleventyExcludeFromCollections: true
+---
+
+{% extends "../_layouts/pageTemplates/base.njk" %}
+
+{% block main %}
+<main class="container">
+    <header>
+        <h1>Blog Posts</h1>
+        <span class="h2-border"></span>
+    </header>
+    {% set blogslist = collections.post %}
+    {% include "blogslist.njk" %}
+
+    {% sectionSeparator %}
+    <h1>Categories</h1>
+    <ul>
+        {% for item in tag %}
+            <li><h4><a href="/blogs/{{item}}/">{{ item | capitalize }}</h1></li></h4>
+        {% endfor %}
+    </ul>
+    {% sectionSeparator %}
+</main>
+{% endblock %}

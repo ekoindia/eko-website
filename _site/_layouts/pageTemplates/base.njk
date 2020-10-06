@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="website">
+    <meta name="robots" content="index,follow">
+  {% block seo %}
+    <title>{{ base.title }}</title>
+    <meta name="keywords" content="{{ base.keywords }}">
+    <meta property="og:url" content="{{ base.base_url }}">
+    <meta property="og:image" content="{{ base.image }}">
+    <meta property="og:title" content="{{ base.title }}">
+    <meta property="og:description" content="{{ base.tag_line }}">
+    <meta property="og:site_name" content="{{ base.base_url }}">
+
+    {# Twitter #}
+    <meta name="twitter:site" content="{{ base.twitter_handle }}">
+    <meta name="twitter:url" content="{{ base.base_url }}">
+    <meta name="twitter:title" content="{{ base.title }}">
+    <meta name="twitter:description" content="{{ base.tag_line }}">
+    <meta name="twitter:image" content="{{ base.image }}">
+  {% endblock %}
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    {# Link CSS Files#}
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/purecssframework.css">
+    {# Pure CSS #}
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css" integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/grids-responsive-min.css">
+    {# Slick for Sliders #}
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
+  </head>
+  <body>
+    {% include "navigation.njk" %}
+    <div>{% block main%}{% endblock %}</div>
+    {% include "footer.njk" %}
+  </body>
+</html>

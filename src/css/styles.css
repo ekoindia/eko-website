@@ -11,6 +11,10 @@ main, html, body {
     }
 }
 
+* {
+    box-sizing: border-box;
+}
+
 .container {
   --bs-gutter-x: 1.5rem;
   width: 100%;
@@ -50,16 +54,14 @@ main, html, body {
     padding-right: 20px;
 }
 
-.background-section {
-    /* background-color: rgb(255, 207, 158, 0.15);
-    padding-top: 100px !important;
-    padding-bottom: 100px;
-    overflow-x: hidden !important; */
+.background-section{
+    width: 100%;
     background-color: rgb(255, 207, 158, 0.15);
-    margin: 0 -3%;
-    padding: 0 3%;
     padding-top: 100px !important;
     padding-bottom: 100px;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0;
 }
 
 .scroll-icon-container .scroll-icon {
@@ -254,6 +256,8 @@ a:hover {
     padding-bottom: 100px;
     padding-left: 75px;
     padding-right: 30px;
+    box-sizing: border-box;
+    margin: 0;
 }
 
 .footer p {

@@ -21,7 +21,7 @@
 {% endif %}
 
 {% block main %}
-  <main class="container">
+  <main>
     {% include "top_hero.njk" %}
     {% for key, val in product.layout %}
       {% set component = key + ".njk" %}

@@ -1,0 +1,47 @@
+title: Eko.in
+text: Eko has been catering to millions of low and moderate-income Indians by providing them with a cash-in point to convert their cash to digital and make payments for an array of services
+copyright: © 2020. All rights reserved
+contact_button_text: Contact Sales
+column1: 
+  - header: DEVELOPER PROUCT
+  - link1:
+    text: DMT API
+    url: https://eko.in/developers/eps/domestic-money-transfer-api
+  - link2:
+    text: AePS Cashout SDK
+    url: https://eko.in/developers/eps/aeps-cashout-sdk
+  - link3:
+    text: Fund Settlement API
+    url: https://eko.in/developers/eps/fund-settlement-api
+  - link4:
+    text: Cash Collection API
+    url: https://eko.in/developers/eps/domestic-money-transfer-api
+  - link5:
+    text: PAN Verification API
+    url: https://eko.in/developers/eps/aeps-cashout-sdk
+  - link6:
+    text: Account Verification API
+    url: https://eko.in/developers/eps/fund-settlement-api
+column2:
+  - header: COMPANY
+  - link1:
+    text: About Us
+    url: https://eko.in/developers/eps/domestic-money-transfer-api
+  - link2:
+    text: Blogs
+    url: https://eko.in/developers/eps/aeps-cashout-sdk
+  - link3:
+    text: FAQs
+    url: https://eko.in/developers/eps/fund-settlement-api
+  - link4:
+    text: T&C
+    url: https://eko.in/developers/eps/domestic-money-transfer-api
+  - link5:
+    text: Privacy Policy
+    url: https://eko.in/developers/eps/aeps-cashout-sdk
+  - link6:
+    text: Other Documents
+    url: https://eko.in/developers/eps/fund-settlement-api
+  - link7:
+    text: Grievance
+    url: https://eko.in/grievance
