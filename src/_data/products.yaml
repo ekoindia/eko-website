@@ -104,11 +104,11 @@
     single_hero:
       title: Easy Cash Withdrawal
       text: AePS allows you to turn your shop into an ATM and lets your customers withdraw cash using their fingerprint.
-      image: '/images/aadhaar-banking/easy-cash-withdrawal.svg'
+      image: /images/aadhaar-banking/easy-cash-withdrawal.svg
     short_ad:
       title: Jan Dhan Government Benefit
       text: AePS allows your customers to withdraw their DBT (Direct Benefit Transfers) from government in their Jan Dhan account.
-      image: '/images/aadhaar-banking/jan_dhan.svg'
+      image: /images/aadhaar-banking/jan_dhan.svg
     alternating_steps:
       step1:
         title: Easy Cash Deposit
@@ -166,15 +166,15 @@
     small_heros_section:
       header: Our Partners
       partner1:
-        image: /images/aadhaar-banking/partner1.png
+        image: /images/aadhaar-banking/partner1.svg
       partner2:
-        image: /images/aadhaar-banking/partner2.png
+        image: /images/aadhaar-banking/partner2.svg
       partner3:
-        image: /images/aadhaar-banking/partner3.png
+        image: /images/aadhaar-banking/partner3.svg
       partner4:
-        image: /images/aadhaar-banking/partner4.png
+        image: /images/aadhaar-banking/partner4.svg
       partner5:
-        image: /images/aadhaar-banking/partner5.png
+        image: /images/aadhaar-banking/partner5.svg
     final_ad:
       small_header: Ready to get started?
       main_header: Use Aadhaar Banking & Earn More
