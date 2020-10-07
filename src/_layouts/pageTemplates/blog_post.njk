@@ -4,7 +4,7 @@
     <main class="container">
         <h2>{{ title }}</h2>
         <h3>{{ date | readableDate }}</h3>
-        <img src="{{ featuredImage | url }}" alt="{{ featuredImage }}"></img>
+        <img src="{{ image | url }}" alt="{{ image }}"></img>
         <p>{{ content | safe }}</p>
     </main>
 {% endblock %}
