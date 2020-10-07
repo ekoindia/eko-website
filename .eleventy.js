@@ -38,8 +38,8 @@ module.exports = function(eleventyConfig) {
     }).toFormat("dd-MM-yy");
   });
 
-  eleventyConfig.addPassthroughCopy('/src/images');
-  eleventyConfig.addPassthroughCopy('/src/css');
+  eleventyConfig.addPassthroughCopy('src/images');
+  eleventyConfig.addPassthroughCopy('src/css');
   eleventyConfig.addPassthroughCopy('src/admin');
 
   eleventyConfig.addLayoutAlias('base', 'pageTemplates/base.njk');
