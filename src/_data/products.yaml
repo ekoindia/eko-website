@@ -81,10 +81,6 @@
       image: /images/become-eko-partner.svg
       button1_text: Get Started
       button2_text: Contact Sales
-    form:
-      header: Still got a question?
-      explanation: Write to us for more information
-      entry_boxes: [Name, Email, Phone, Your Message]
 
 
 - name: Aadhaar Banking / Cash-out
@@ -181,7 +177,3 @@
       image: /images/become-eko-partner.svg
       button1_text: Get Started
       button2_text: Contact Sales
-    form:
-      header: Still got a question?
-      explanation: Write to us for more information
-      entry_boxes: [Name, Email, Phone, Your Message]

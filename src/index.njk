@@ -342,31 +342,7 @@
 
 {# Form #}
 <div class="background-section">
-<center>
-    <h1>Still got a question?</h1>
-    <div class="h2-border"></div>
-    <p>Write to us for more information</p>
-</center>
-
-{# <form action="">
-    <center>
-        <input type="text" size="75" id="entry1" name="{{ main.form.entry_boxes[0] }}" value="{{ main.form.entry_boxes[0] }}"><br>
-    </center>
-    <div class="row">
-        <div class="col"></div>
-        <div class="col">
-            <br><input type="text" size="35" id="entry2" name="{{ main.form.entry_boxes[1] }}" value="{{ main.form.entry_boxes[1] }}"><br>
-        </div>
-        <div class="col">
-            <br><input type="text" size="35" id="entry3" name="{{ main.form.entry_boxes[2] }}" value="{{ main.form.entry_boxes[2] }}"><br>
-        </div>
-        <div class="col"></div>
-    </div>
-    <center>
-        <br><input type="text" size="75" height="400px" id="entry4" name="{{ main.form.entry_boxes[3] }}" value="{{ main.form.entry_boxes[3] }}"><br>
-        <br><br><input type="submit" class="button" value="Submit">
-    </center>
-</form> #}
+    {% include "form.njk" %}
 </div>
 
 {% sectionSeparator %}
