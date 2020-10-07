@@ -40,6 +40,7 @@ module.exports = function(eleventyConfig) {
 
   eleventyConfig.addPassthroughCopy('./src/images');
   eleventyConfig.addPassthroughCopy('./src/css');
+  eleventyConfig.addPassthroughCopy('./src/admin');
 
   eleventyConfig.addLayoutAlias('base', 'pageTemplates/base.njk');
   eleventyConfig.addLayoutAlias('product_page', 'pageTemplates/product_page.njk');
@@ -64,7 +65,7 @@ module.exports = function(eleventyConfig) {
   })
 
   // Filter source file names using a glob
-  eleventyConfig.addCollection("post", function(collection) {
+  eleventyConfig.addCollection("blog", function(collection) {
     return collection.getFilteredByGlob('src/blogs/*.md');
   });
 

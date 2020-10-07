@@ -3,7 +3,7 @@ layout: blog_post
 title: Technology Blog Post
 description: A simple and highly secure cash withdrawing ability for your customers using Aadhaar and ensuring that you earn more with every transaction.
 date: 2019-04-18
-featuredImage: /images/blogs/hindi.png
+image: /images/blogs/hindi.png
 tags:
     - technology
 ---

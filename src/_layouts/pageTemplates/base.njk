@@ -23,7 +23,7 @@
     <meta name="twitter:description" content="{{ base.tag_line }}">
     <meta name="twitter:image" content="{{ base.image }}">
   {% endblock %}
-
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
     {# Link CSS Files#}
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="/css/purecssframework.css">
@@ -37,5 +37,16 @@
     {% include "navigation.njk" %}
     <div>{% block main%}{% endblock %}</div>
     {% include "footer.njk" %}
+    <script>
+      if (window.netlifyIdentity) {
+        window.netlifyIdentity.on("init", user => {
+          if (!user) {
+            window.netlifyIdentity.on("login", () => {
+              document.location.href = "/admin/";
+            });
+         }
+        });
+      }
+    </script>
   </body>
 </html>

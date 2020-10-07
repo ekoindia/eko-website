@@ -23,7 +23,7 @@
     <meta name="twitter:description" content="Best way to collect cash at your doorstep">
     <meta name="twitter:image" content="https://ekoin.netlify.app/images/main/homepage.png">
   
-
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
     
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="/css/purecssframework.css">
@@ -162,7 +162,7 @@ function myFunction() {
     
     <div class="item">
         <a href="/blogs/technology-post/" class="card">
-        <div class="thumb" style="background-image: url(/images/blogs/hindi.png)"></div>
+        <div class="thumb" style="background-image: url()"></div>
         <article>
             <h1>Technology Blog Post</h1>
             <span><time datetime="19-04-18">18-04-19</time></span>
@@ -250,5 +250,16 @@ function myFunction() {
 </div>
 
 
+    <script>
+      if (window.netlifyIdentity) {
+        window.netlifyIdentity.on("init", user => {
+          if (!user) {
+            window.netlifyIdentity.on("login", () => {
+              document.location.href = "/admin/";
+            });
+         }
+        });
+      }
+    </script>
   </body>
 </html>

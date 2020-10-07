@@ -23,7 +23,7 @@
     <meta name="twitter:description" content="Best way to collect cash at your doorstep">
     <meta name="twitter:image" content="https://ekoin.netlify.app/images/main/homepage.png">
   
-
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
     
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="/css/purecssframework.css">
@@ -154,7 +154,7 @@ function myFunction() {
     <main class="container">
         <h2>Finance Blog Post</h2>
         <h3>18-04-18</h3>
-        <img src="/images/blogs/marathi.png" alt="/images/blogs/marathi.png"></img>
+        <img src="." alt=""></img>
         <p><p>श्री. अभिनव सिन्हा आणि श्री. अभिषेक सिन्हा यांनी वर्ष 2006 मध्ये स्थापन केलेली इको इंडिया फायनान्शियल सर्विसेस प्रा. लि. भारतातील बँका नसलेल्या भागांत चोवीस तास बँक सेवा पुरविण्याचे उद्दीष्ट सुनिश्चित करते. भारतातील अनेक मोठ्या बँकांना त्यांच्या बँकिंग सेवा त्वरेने पुरविण्याकामी इको (Eko) त्यांच्याबरोबर भागीदारीत काम करते. AePS आणि तत्सम विविध सेवा प्रदान करण्यासाठी इको (Eko) बरोबरची भागीदारी छोट्या व्यावसायिकांना डिजिटल इंडियाचा एक भाग बनण्यास सक्षम करते.</p>
 </p>
     </main>
@@ -233,5 +233,16 @@ function myFunction() {
 </div>
 
 
+    <script>
+      if (window.netlifyIdentity) {
+        window.netlifyIdentity.on("init", user => {
+          if (!user) {
+            window.netlifyIdentity.on("login", () => {
+              document.location.href = "/admin/";
+            });
+         }
+        });
+      }
+    </script>
   </body>
 </html>

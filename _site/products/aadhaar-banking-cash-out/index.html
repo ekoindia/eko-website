@@ -23,7 +23,7 @@
     <meta name="twitter:description" content="AePS - Aadhaar Enabled Payment System">
     <meta name="twitter:image" content="https://ekoin.netlify.app/images/aadhaar-banking/AePS_hero.png">
   
-
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
     
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="/css/purecssframework.css">
@@ -568,5 +568,16 @@ function myFunction() {
 </div>
 
 
+    <script>
+      if (window.netlifyIdentity) {
+        window.netlifyIdentity.on("init", user => {
+          if (!user) {
+            window.netlifyIdentity.on("login", () => {
+              document.location.href = "/admin/";
+            });
+         }
+        });
+      }
+    </script>
   </body>
 </html>

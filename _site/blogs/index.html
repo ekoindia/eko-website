@@ -23,7 +23,7 @@
     <meta name="twitter:description" content="Best way to collect cash at your doorstep">
     <meta name="twitter:image" content="https://ekoin.netlify.app/images/main/homepage.png">
   
-
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
     
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="/css/purecssframework.css">
@@ -160,39 +160,6 @@ function myFunction() {
     <div class="container">
 <div class="band">
     
-    <div class="item">
-        <a href="/blogs/general/" class="card">
-        <div class="thumb" style="background-image: url(/images/blogs/tamil.png)"></div>
-        <article>
-            <h1>General Blog Post</h1>
-            <span><time datetime="20-04-18">18-04-20</time></span>
-            <p>A simple and highly secure direct money transfer ability for your customers using cash with industry-leading success rates</p>
-        </article>
-        </a>
-    </div>
-    
-    <div class="item">
-        <a href="/blogs/technology-post/" class="card">
-        <div class="thumb" style="background-image: url(/images/blogs/hindi.png)"></div>
-        <article>
-            <h1>Technology Blog Post</h1>
-            <span><time datetime="19-04-18">18-04-19</time></span>
-            <p>A simple and highly secure cash withdrawing ability for your customers using Aadhaar and ensuring that you earn more with every transaction.</p>
-        </article>
-        </a>
-    </div>
-    
-    <div class="item">
-        <a href="/blogs/finance-post/" class="card">
-        <div class="thumb" style="background-image: url(/images/blogs/marathi.png)"></div>
-        <article>
-            <h1>Finance Blog Post</h1>
-            <span><time datetime="18-04-18">18-04-18</time></span>
-            <p>A simple and highly secure direct money transfer ability for your customers using cash with industry-leading success rates</p>
-        </article>
-        </a>
-    </div>
-    
 </div>
 </div>
 
@@ -203,6 +170,8 @@ function myFunction() {
             <li><h4><a href="/blogs/finance/">Finance</h1></li></h4>
         
             <li><h4><a href="/blogs/technology/">Technology</h1></li></h4>
+        
+            <li><h4><a href="/blogs/blog/">Blog</h1></li></h4>
         
     </ul>
     <p><br><br></p>
@@ -282,5 +251,16 @@ function myFunction() {
 </div>
 
 
+    <script>
+      if (window.netlifyIdentity) {
+        window.netlifyIdentity.on("init", user => {
+          if (!user) {
+            window.netlifyIdentity.on("login", () => {
+              document.location.href = "/admin/";
+            });
+         }
+        });
+      }
+    </script>
   </body>
 </html>
