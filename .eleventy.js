@@ -38,9 +38,9 @@ module.exports = function(eleventyConfig) {
     }).toFormat("dd-MM-yy");
   });
 
-  eleventyConfig.addPassthroughCopy('./src/images');
-  eleventyConfig.addPassthroughCopy('./src/css');
-  eleventyConfig.addPassthroughCopy('./src/admin');
+  eleventyConfig.addPassthroughCopy('/src/images');
+  eleventyConfig.addPassthroughCopy('/src/css');
+  eleventyConfig.addPassthroughCopy('src/admin');
 
   eleventyConfig.addLayoutAlias('base', 'pageTemplates/base.njk');
   eleventyConfig.addLayoutAlias('product_page', 'pageTemplates/product_page.njk');
