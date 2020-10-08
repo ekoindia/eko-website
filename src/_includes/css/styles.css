@@ -1,3 +1,7 @@
+@font-face {
+  font-display: swap;
+}
+
 .embla {
 position: relative;
 padding: 20px;
