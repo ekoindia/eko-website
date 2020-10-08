@@ -637,8 +637,13 @@ h6 {
 
 .partner-box {
   margin-bottom: 50px;
+  width: 100%;
   border-radius: 20px;
   box-shadow: 0 3px 10px 0 rgba(0,0,0,0.12), 0 3px 5px 0 rgba(0,0,0,0.05);
+}
+
+.partner-box img {
+  max-width: 80%;
 }
 
 /* CSS Navivation */

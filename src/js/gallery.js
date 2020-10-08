@@ -54,7 +54,7 @@ const view = div.querySelector(".gallery__viewport");
 const prev = div.querySelector(".gallery__button--prev");
 const next = div.querySelector(".gallery__button--next");
 const gallery = EmblaCarousel(view);
-const player = autoGallery(gallery, 4000);
+const player = autoGallery(gallery, 5000);
 const disPrevAndNextBtns = disPrevNextBtns(prev, next, gallery);
 
 prevBtnClick(prev, gallery, player);
