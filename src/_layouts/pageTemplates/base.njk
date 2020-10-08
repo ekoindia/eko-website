@@ -25,17 +25,15 @@
   {% endblock %}
     {# Link CSS Files#}
     {% set css_main %}
-      {% include "styles.css" %}
+      {% include "css/styles.css" %}
     {% endset %}
     {% set css_pure %}
-      {% include "pure.css" %}
+      {% include "css/pure.css" %}
     {% endset %}
     <style>
       {{ css_main | cssmin | safe }}
       {{ css_pure | cssmin | safe }}
     </style>
-    {# Pure CSS #}
-    {# <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/grids-responsive-min.css" > #}
     {% block jquery%}{% endblock %}
   </head>
   <body>
