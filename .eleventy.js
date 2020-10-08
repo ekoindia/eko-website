@@ -1,11 +1,16 @@
 const yaml = require('js-yaml');
 const fs = require("fs");
+const CleanCSS = require("clean-css");
 const eleventyNavigationPlugin = require('@11ty/eleventy-navigation');
 const {
   DateTime
 } = require("luxon");
 
 module.exports = function(eleventyConfig) {
+
+  eleventyConfig.addFilter("cssmin", function(code) {
+    return new CleanCSS({}).minify(code).styles;
+  });
 
   eleventyConfig.setBrowserSyncConfig({
     callbacks: {
@@ -39,7 +44,7 @@ module.exports = function(eleventyConfig) {
   });
 
   eleventyConfig.addPassthroughCopy('src/images');
-  eleventyConfig.addPassthroughCopy('src/css');
+  // eleventyConfig.addPassthroughCopy('src/css');
   eleventyConfig.addPassthroughCopy('src/admin');
 
   eleventyConfig.addLayoutAlias('base', 'pageTemplates/base.njk');
