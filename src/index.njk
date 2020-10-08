@@ -1,14 +1,11 @@
 {% extends "./_layouts/pageTemplates/base.njk" %}
 
-{% block jquery%}
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+{% block carousel %}
+    <script src="https://unpkg.com/embla-carousel"></script>
 {% endblock %}
 
 {% block main %}
 <main class="container">
-<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
-<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 
 <br><br><br><br>
 
@@ -51,70 +48,75 @@
 {% sectionSeparator %}
 
 {# Slider #}
-<div class="slider" style="max-width:800px">
-<div class="slide">
-    <div class="pure-g inside">
-        <div class="pure-u-1 pure-u-md-1-2 l-box">
-            <img src="/images/main/easy-cash-transfer.svg" alt="">
+<center>
+<div class="embla">
+    <div class="embla__viewport">
+    <div class="embla__container">
+        <div class="embla__slide">
+        <div class="embla__slide__inner pure-g">
+            <div class="pure-u-1 pure-u-md-1-2 l-box">
+                <img src="/images/main/easy-cash-transfer.svg" alt="">
+            </div>
+            <div class="pure-u-1 pure-u-md-1-2 l-box">  
+                <h3>Money Transfer</h3>
+                <p>Transfer money instantly to any bank account in India using cash from customer.</p>
+            </div>
         </div>
-        <div class="pure-u-1 pure-u-md-1-2 l-box">  
-            <h3>Money Transfer</h3>
-            <p>Transfer money instantly to any bank account in India using cash from customer.</p>
+        </div>
+        <div class="embla__slide">
+        <div class="embla__slide__inner pure-g">
+             <div class="pure-u-1 pure-u-md-1-2 l-box">
+                <img src="/images/main/aadhaa-banking-small.svg" alt="">
+            </div>
+            <div class="pure-u-1 pure-u-md-1-2 l-box">  
+                <h3>Aadhaar Banking</h3>
+                <p>Allow your customers to withdraw cash & transfer money at your doorstep with just the fingerprint & Aadhaar number</p>
+            </div>
+        </div>
+        </div>
+        <div class="embla__slide">
+        <div class="embla__slide__inner pure-g">
+            <div class="pure-u-1 pure-u-md-1-2 l-box">
+                <img src="/images/main/bill-payment.svg">
+            </div>
+            <div class="pure-u-1 pure-u-md-1-2 l-box">  
+                <h3>Utility Bill Payment</h3>
+                <p>Pay utility bills for 100+ billers in India using Eko’s platform. All under one roof.</p>
+            </div>
+        </div>
+        </div>
+        <div class="embla__slide">
+        <div class="embla__slide__inner pure-g">
+            <div class="pure-u-1 pure-u-md-1-2 l-box">
+                <img src="/images/main/low-cost-insurance.svg" alt="">
+            </div>
+            <div class="pure-u-1 pure-u-md-1-2 l-box">  
+                <h3>Sell Insurance</h3>
+                <p>Low cost, simple paperwork & easy claim process makes our insurance policies the best choice for your customers.</p>
+            </div>
+        </div>
         </div>
     </div>
-</div>
-
-<div class="slide">
-    <div class="pure-g inside">
-        <div class="pure-u-1 pure-u-md-1-2 l-box">
-            <img src="/images/main/aadhaa-banking-small.svg" alt="">
-        </div>
-        <div class="pure-u-1 pure-u-md-1-2 l-box">  
-            <h3>Aadhaar Banking</h3>
-            <p>Allow your customers to withdraw cash & transfer money at your doorstep with just the fingerprint & Aadhaar number</p>
-        </div>
     </div>
+    {# Buttons #}
+    <button class="embla__button embla__button--prev" type="button">
+        <svg class="embla__button__svg" viewBox="137.718 -1.001 366.563 643.999">
+            <path d="M428.36 12.5c16.67-16.67 43.76-16.67 60.42 0 16.67 16.67 16.67 43.76 0 60.42L241.7 320c148.25 148.24 230.61 230.6 247.08 247.08 16.67 16.66 16.67 43.75 0 60.42-16.67 16.66-43.76 16.67-60.42 0-27.72-27.71-249.45-249.37-277.16-277.08a42.308 42.308 0 0 1-12.48-30.34c0-11.1 4.1-22.05 12.48-30.42C206.63 234.23 400.64 40.21 428.36 12.5z"></path>
+        </svg>
+    </button>
+    <button class="embla__button embla__button--next" type="button">
+        <svg class="embla__button__svg" viewBox="0 0 238.003 238.003">
+            <path d="M181.776 107.719L78.705 4.648c-6.198-6.198-16.273-6.198-22.47 0s-6.198 16.273 0 22.47l91.883 91.883-91.883 91.883c-6.198 6.198-6.198 16.273 0 22.47s16.273 6.198 22.47 0l103.071-103.039a15.741 15.741 0 0 0 4.64-11.283c0-4.13-1.526-8.199-4.64-11.313z"></path>
+        </svg>
+    </button>
 </div>
-
-<div class="slide">
-    <div class="pure-g inside">
-        <div class="pure-u-1 pure-u-md-1-2 l-box">
-            <img src="/images/main/bill-payment.svg">
-        </div>
-        <div class="pure-u-1 pure-u-md-1-2 l-box">  
-            <h3>Utility Bill Payment</h3>
-            <p>Pay utility bills for 100+ billers in India using Eko’s platform. All under one roof.</p>
-        </div>
-    </div>
-</div>
-
-<div class="slide">
-    <div class="pure-g inside">
-        <div class="pure-u-1 pure-u-md-1-2 l-box">
-            <img src="/images/main/low-cost-insurance.svg" alt="">
-        </div>
-        <div class="pure-u-1 pure-u-md-1-2 l-box">  
-            <h3>Sell Insurance</h3>
-            <p>Low cost, simple paperwork & easy claim process makes our insurance policies the best choice for your customers.</p>
-        </div>
-    </div>
-</div>
-</div>
-</div>
-
-<script type="text/javascript">
-    $('.slider').slick({
-        dots: true,
-        autoplay: true,
-        autoplayspeed: 2500,
-        arrows: true,
-    });
-</script>
+</center>
+<script src="/js/carousel.js"></script>
 
 {% sectionSeparator %}
 
 {# Short Ad #}
-<div class="pure-g flex-grid container">
+<div class="pure-g short-ad flex-grid container">
     <div class="pure-u-1 pure-u-md-1 pure-u-lg-1-2 l-box order-1-sm order-1-md">
         <br>
         <img src="/images/main/partner-brands.webp" alt="">
@@ -270,50 +272,58 @@
 {% sectionSeparator %}
 
 {# Gallery #}
-<div class="container">
     <h1>What our partner says</h1>
     <div class="h2-border"></div>
-    <div class="gallery" style="max-width:800px">
-        <div>
-            <div class="pure-g content">
-                <div class="pure-u-1 pure-u-md-1 pure-u-lg-1-2 l-box order-1-sm order-1-md">
-                    <p>"ALTBalaji is fuelling the growth of subscription-based digital video streaming. Partnering with Eko is a way to bring the offline consumers into the online world. With ALTBalaji now being a part of their Eko Store, we are expanding our reach to a whole new audience and are excited to welcome them as a part of the ALTBalaji family"</p>
-                </div>
-                <div class="pure-u-1 pure-u-md-1 pure-u-lg-1-2 l-box order-2-sm order-2-md partner-box">  
-                    <center>
-                        <img class="round" src="/images/main/alt-balaji-customer.webp" alt="">
-                        <h4>Nachiket Pantvaidya</h4>
-                        <p class="caption">CEO, ALTBalaji and Group COO Balaji Telefilms</p>
-                    </center>
-                </div>
+<center>
+    <div class="gallery">
+    <div class="gallery__viewport">
+    <div class="gallery__container">
+        <div class="gallery__slide">
+        <div class="pure-g gallery__slide__inner">
+            <div class="pure-u-1 pure-u-md-1 pure-u-lg-1-2 l-box order-2-sm order-2-md">
+                <p>"ALTBalaji is fuelling the growth of subscription-based digital video streaming. Partnering with Eko is a way to bring the offline consumers into the online world. With ALTBalaji now being a part of their Eko Store, we are expanding our reach to a whole new audience and are excited to welcome them as a part of the ALTBalaji family"</p>
+            </div>
+           
+            <div class="pure-u-1 pure-u-md-1 pure-u-lg-1-2 l-box order-1-sm order-1-md partner-box">  
+                <center>
+                    <img class="round" src="/images/main/alt-balaji-customer.webp" alt="">
+                    <h4>Nachiket Pantvaidya</h4>
+                    <p class="caption">CEO, ALTBalaji and Group COO Balaji Telefilms</p>
+                </center>
+            </div>
+            
+        </div>
+        </div>
+        <div class="gallery__slide">
+        <div class="pure-g gallery__slide__inner">
+            <div class="pure-u-1 pure-u-md-1 pure-u-lg-1-2 l-box order-2-sm order-2-md">
+                <p>"Indifi is committed to simplifying credit access to small and medium-sized entrepreneurs. Our partnership with Eko will further our vision of facilitating financial inclusion for India’s huge SME sector. By providing Eko’s cash distributors with the credit line services, we will also help empower a greater number of retailers across the country."</p>
+            </div>
+            <div class="pure-u-1 pure-u-md-1 pure-u-lg-1-2 l-box order-1-sm order-1-md partner-box">  
+                <center>
+                    <img class="round" src="/images/main/alot-mitttal.webp" alt="">
+                    <h4>Alok Mittal</h4>
+                    <p class="caption">Co-founder and CEO, Indifi Technologies</p>
+                </center>
             </div>
         </div>
-
-        <div>
-            <div class="pure-g content">
-                <div class="pure-u-1 pure-u-md-1 pure-u-lg-1-2 l-box order-1-sm order-1-md">
-                    <p>"Indifi is committed to simplifying credit access to small and medium-sized entrepreneurs. Our partnership with Eko will further our vision of facilitating financial inclusion for India’s huge SME sector. By providing Eko’s cash distributors with the credit line services, we will also help empower a greater number of retailers across the country."</p>
-                </div>
-                <div class="pure-u-1 pure-u-md-1 pure-u-lg-1-2 l-box order-2-sm order-2-md partner-box">  
-                    <center>
-                        <img class="round" src="/images/main/alot-mitttal.webp" alt="">
-                        <h4>Alok Mittal</h4>
-                        <p class="caption">Co-founder and CEO, Indifi Technologies</p>
-                    </center>
-                </div>
-            </div>
         </div>
     </div>
+    </div>
+    {# Buttons #}
+    <button class="gallery__button gallery__button--prev" type="button">
+        <svg class="gallery__button__svg" viewBox="137.718 -1.001 366.563 643.999">
+            <path d="M428.36 12.5c16.67-16.67 43.76-16.67 60.42 0 16.67 16.67 16.67 43.76 0 60.42L241.7 320c148.25 148.24 230.61 230.6 247.08 247.08 16.67 16.66 16.67 43.75 0 60.42-16.67 16.66-43.76 16.67-60.42 0-27.72-27.71-249.45-249.37-277.16-277.08a42.308 42.308 0 0 1-12.48-30.34c0-11.1 4.1-22.05 12.48-30.42C206.63 234.23 400.64 40.21 428.36 12.5z"></path>
+        </svg>
+    </button>
+    <button class="gallery__button gallery__button--next" type="button">
+        <svg class="gallery__button__svg" viewBox="0 0 238.003 238.003">
+            <path d="M181.776 107.719L78.705 4.648c-6.198-6.198-16.273-6.198-22.47 0s-6.198 16.273 0 22.47l91.883 91.883-91.883 91.883c-6.198 6.198-6.198 16.273 0 22.47s16.273 6.198 22.47 0l103.071-103.039a15.741 15.741 0 0 0 4.64-11.283c0-4.13-1.526-8.199-4.64-11.313z"></path>
+        </svg>
+    </button>
 </div>
-
-<script type="text/javascript">
-    $('.gallery').slick({
-        dots: true,
-        autoplay: true,
-        autoplayspeed: 2500,
-        arrows: true,
-    });
-</script>
+</center>
+<script src="/js/gallery.js"></script>
 
 {% sectionSeparator %}
 

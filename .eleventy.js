@@ -1,7 +1,9 @@
 const yaml = require('js-yaml');
 const fs = require("fs");
 const CleanCSS = require("clean-css");
+//const embla = require("embla-carousel");
 const eleventyNavigationPlugin = require('@11ty/eleventy-navigation');
+
 const {
   DateTime
 } = require("luxon");
@@ -42,6 +44,7 @@ module.exports = function(eleventyConfig) {
 
   eleventyConfig.addPassthroughCopy('src/images');
   eleventyConfig.addPassthroughCopy('src/admin');
+  eleventyConfig.addPassthroughCopy('src/js');
 
   eleventyConfig.addLayoutAlias('base', 'pageTemplates/base.njk');
   eleventyConfig.addLayoutAlias('product_page', 'pageTemplates/product_page.njk');
