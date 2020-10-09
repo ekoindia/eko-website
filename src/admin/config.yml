@@ -31,8 +31,8 @@ collections:
           - {label: Sign Up URL, name: signup_url, widget: string}
           - {label: Contact Us URL, name: contact_url, widget: string}
           - {label: Company Description, name: company_description, widget: string}
-          - {label: Keywords (SEO), name: keywords, widget: list}
-          - {label: Base Image, name: image}
+          - {label: Keywords (SEO), name: keywords, widget: "list", required: false}
+          - {label: Base Image, name: image, widget: string}
           - {label: Tag Line, name: tag_line, widget: string}
           - {label: Facebook Link, name: facebook, widget: string}
           - {label: LinkedIn Link, name: linkedin, widget: string}
