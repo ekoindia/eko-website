@@ -1,25 +1,12 @@
 const yaml = require('js-yaml');
 const fs = require("fs");
 const CleanCSS = require("clean-css");
-const Cache = require("@11ty/eleventy-cache-assets");
 const eleventyNavigationPlugin = require('@11ty/eleventy-navigation');
 const blogTools = require("eleventy-plugin-blog-tools");
 
 const {
   DateTime
 } = require("luxon");
-
-module.exports = async function() {
-  // https://developer.github.com/v3/repos/#get
-  let json = await Cache("https://api.github.com/repos/11ty/eleventy", {
-    duration: "1d", // 1 day
-    type: "json" // also supports "text" or "buffer"
-  });
-
-  return {
-    stargazers: json.stargazers_count
-  };
-};
 
 module.exports = function(eleventyConfig) {
 
