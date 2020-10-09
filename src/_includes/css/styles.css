@@ -372,7 +372,7 @@ box-shadow: 0 3px 2px 0 rgba(0,0,0,0.1);
 .dot {
 border-radius: 25px;
 font-weight: bold;
-color: #727272;
+color: orange;
 }
 
 .bg-image {
