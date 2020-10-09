@@ -459,6 +459,20 @@ font-weight: 600;
 .dimmed-image {
   filter: grayscale(100%);
   opacity: 0.5;
+  max-width: 100%;
+  height: auto;
+}
+
+.partners {
+  display: block;
+}
+.img-box {
+  display: inline-block;
+  padding: 17px 55px;
+  vertical-align: middle;
+  margin-right: 15px;
+  width: 190px;
+  height: 62px;
 }
 
 .dimmed-image:hover {
@@ -622,14 +636,14 @@ h6 {
   width: 70%;
 }
 
-.square {
+/* .square {
   display: inline-block;
   padding: 17px 55px;
   vertical-align: middle;
   margin-right: 15px;
   width: 190px;
   height: 62px;
-}
+} */
 
 .round {
   border-radius: 25px;
