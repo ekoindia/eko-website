@@ -18,6 +18,7 @@
   },
   "dependencies": {
     "clean-css": "^4.2.3",
+    "eleventy-plugin-blog-tools": "^0.3.1",
     "eleventy-plugin-seo": "^0.5.1",
     "pug": "^3.0.0",
     "purecss": "^2.0.3"

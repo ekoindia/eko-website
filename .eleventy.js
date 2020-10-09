@@ -1,8 +1,8 @@
 const yaml = require('js-yaml');
 const fs = require("fs");
 const CleanCSS = require("clean-css");
-//const embla = require("embla-carousel");
 const eleventyNavigationPlugin = require('@11ty/eleventy-navigation');
+const blogTools = require("eleventy-plugin-blog-tools");
 
 const {
   DateTime
@@ -29,6 +29,7 @@ module.exports = function(eleventyConfig) {
   });
 
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
+  eleventyConfig.addPlugin(blogTools);
   
   eleventyConfig.addFilter('htmlDateString', (dateObj) => {
     return DateTime.fromJSDate(dateObj, {
@@ -49,6 +50,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addLayoutAlias('base', 'pageTemplates/base.njk');
   eleventyConfig.addLayoutAlias('product_page', 'pageTemplates/product_page.njk');
   eleventyConfig.addLayoutAlias('blog_post', 'pageTemplates/blog_post.njk');
+  eleventyConfig.addLayoutAlias('ekoUniversity', 'pageTemplates/ekoUniversity.njk');
 
   eleventyConfig.addDataExtension('yaml', contents => yaml.safeLoad(contents))
 

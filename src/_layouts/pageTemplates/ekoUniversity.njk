@@ -1,0 +1,25 @@
+{% extends "./base.njk" %}
+
+{% block main %}
+<main class="container">
+    <div class="pure-g" id="links">
+        {% for item in ekoUniversity %}
+            <div class="pure-u-1-4">
+                <p><a href="/eko-university/{{ item.title | slug }}">
+                {{ item.title }}
+                </a></p>
+            </div>
+        {% endfor %}
+    </div>
+
+    <h1>{{ ekoUni.title }}</h1>
+
+    {% sectionSeparator %}
+
+    {% for id in ekoUni.ids %}
+        <p>{% youtube id %}</p>
+    {% endfor %}
+
+    {% sectionSeparator %}
+</main>
+{% endblock %}

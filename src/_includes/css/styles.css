@@ -924,3 +924,7 @@ article {
   border: 0;
   padding: 12px 30px;
 }
+
+.active, .btn:hover {
+  color: orange !important;
+}
