@@ -1,7 +1,3 @@
-@font-face {
-  font-display: swap;
-}
-
 .embla {
 position: relative;
 padding: 20px;
@@ -927,4 +923,22 @@ article {
 
 .active, .btn:hover {
   color: orange !important;
+}
+
+#links p {
+  letter-spacing: 0;
+  border: none;
+  margin: 0;
+  padding: 0;
+  text-align: left !important;
+  display: flex;
+  justify-content: center;
+}
+
+#links a:hover {
+  background-color: rgb(211,211,211, 0.1);
+  color: orange;
+  padding: 2px;
+  text-decoration: none;
+  /* display: inline-block; */
 }
