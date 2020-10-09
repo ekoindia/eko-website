@@ -31,7 +31,7 @@ collections:
           - {label: "Sign Up URL", name: "signup_url", widget: "string"}
           - {label: "Contact Us URL", name: "contact_url", widget: "string"}
           - {label: "Company Description", name: "company_description", widget: "string"}
-          # - {label: "Keywords (SEO)", name: "keywords", widget: "list", required: false}
+          - {label: "Keywords (SEO)", name: "keywords", widget: "string", hint: "These are keywords that are associated with this website that can help with website traffic and higher results in Google searches. "}
           - {label: "Base Image", name: "image", widget: "image"}
           - {label: "Tag Line", name: "tag_line", widget: "string"}
           - {label: "Facebook Link", name: "facebook", widget: "string"}
