@@ -1,5 +1,5 @@
-.icon-facebook:before {
-  content: "\e900";
+@font-face {
+  font-display: swap;
 }
 
 .embla {
@@ -136,7 +136,7 @@ padding-left: 10px;
   color: grey;
 }
 
-.gallery__slide__inner h4 {
+.gallery__slide__inner h1 {
   font-weight: bold;
   padding-top: 10px;
   font-size: 15px;
