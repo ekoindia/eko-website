@@ -28,13 +28,13 @@ collections:
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Logo", name: "logo", widget: "image"}
           - {label: "Base URL", name: "base_url", widget: "string"}
-          # - {label: Sign Up URL, name: signup_url, widget: string}
-          # - {label: Contact Us URL, name: contact_url, widget: string}
-          # - {label: Company Description, name: company_description, widget: string}
-          # - {label: Keywords (SEO), name: keywords, widget: "list", required: false}
-          # - {label: Base Image, name: image, widget: string}
-          # - {label: Tag Line, name: tag_line, widget: string}
-          # - {label: Facebook Link, name: facebook, widget: string}
-          # - {label: LinkedIn Link, name: linkedin, widget: string}
-          # - {label: Twitter Link, name: twitter, widget: string}
-          # - {label: Twitter Handle, name: twitter_handle, widget: string}
+          - {label: "Sign Up UR"L, name: "signup_url", widget: "string"}
+          - {label: "Contact Us URL", name: "contact_url", widget: "string"}
+          - {label: "Company Description", name: "company_description", widget: "string"}
+          - {label: "Keywords (SEO)", name: "keywords", widget: "list", required: false}
+          - {label: "Base Image", name: "image", widget: "image"}
+          - {label: "Tag Line", name: "tag_line", widget: "string"}
+          - {label: "Facebook Link", name: "facebook", widget: "string"}
+          - {label: "LinkedIn Link", name: "linkedin", widget: "string"}
+          - {label: "Twitter Link", name: "twitter", widget: "string"}
+          - {label: "Twitter Handle", name: "twitter_handle", widget: "string"}
