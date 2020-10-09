@@ -45,7 +45,7 @@ position: relative;
 overflow: hidden;
 padding: 30px;
 margin-bottom: -15px;
-background-color: rgba(255, 191, 127, 0.1);
+background-color: rgba(255, 191, 127, 0.05);
 background-size: cover;
 text-align: left !important;
 }
@@ -280,7 +280,7 @@ padding-right: 20px;
 
 .background-section{
 width: 100%;
-background-color: rgb(255, 207, 158, 0.15);
+background-color: rgb(255, 207, 158, 0.05);
 padding-top: 100px !important;
 padding-bottom: 100px;
 box-sizing: border-box;
@@ -519,8 +519,8 @@ font-weight: 600;
 }
 
 .footer a {
-  color:  Gainsboro;
-  font-weight: 500;
+  color:  white;
+  font-weight: bold;
 }
 
 .footer a:hover {
@@ -643,6 +643,7 @@ h6 {
 
 .caption {
   font-size: 12px;
+  font-weight: normal;
 }
 
 .partner-box {
@@ -946,7 +947,7 @@ article {
 }
 
 #links a:hover {
-  background-color: rgb(211,211,211, 0.1);
+  background-color: rgba(136, 52, 52, 0.05);
   color: orange;
   padding: 2px;
   text-decoration: none;
