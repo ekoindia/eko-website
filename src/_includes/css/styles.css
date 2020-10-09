@@ -1,3 +1,7 @@
+.icon-facebook:before {
+  content: "\e900";
+}
+
 .embla {
 position: relative;
 padding: 20px;
@@ -941,3 +945,4 @@ article {
   padding: 2px;
   text-decoration: none;
 }
+
