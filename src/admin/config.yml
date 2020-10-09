@@ -15,7 +15,7 @@ collections:
       - {label: "Description", name: "description", widget: "text"}
       - {label: "Date", name: "date", widget: "datetime"}
       - {label: "Image", name: "image", widget: "image"}
-      - {label: "Tags", name: "tags", widget: "select",  options: ["technology", "finance"], hint: "Choose a theme associated with this blog post.", required: false}
+      - {label: "Tags", name: "tags", multiple: true, widget: "select",  options: ["technology", "finance"], hint: "Choose a theme associated with this blog post.", required: false}
       - {label: "Body", name: "body", widget: "markdown"}
 
   - name: "settings" 
