@@ -466,6 +466,7 @@ font-weight: 600;
 .partners {
   display: block;
 }
+
 .img-box {
   display: inline-block;
   padding: 17px 55px;
@@ -635,15 +636,6 @@ h6 {
 .tags-row {
   width: 70%;
 }
-
-/* .square {
-  display: inline-block;
-  padding: 17px 55px;
-  vertical-align: middle;
-  margin-right: 15px;
-  width: 190px;
-  height: 62px;
-} */
 
 .round {
   border-radius: 25px;
