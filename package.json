@@ -8,6 +8,7 @@
   "author": "Nisha Chatwani",
   "devDependencies": {
     "@11ty/eleventy": "^0.11.0",
+    "@11ty/eleventy-cache-assets": "^2.0.3",
     "@11ty/eleventy-navigation": "^0.1.6",
     "@babel/core": "7.2.0",
     "embla-carousel": "^4.0.5",
