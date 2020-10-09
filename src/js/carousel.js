@@ -28,7 +28,7 @@ const autoplay = (embla, interval) => {
       autoplayer.stop();
       embla.scrollPrev();
     };
-    btn.addEventListener("click", scrollPrev, false);
+    btn.addEventListener("click", scrollPrev, false, {passive: true});
   };
 
   const listenForNextBtnClick = (btn, embla, autoplayer) => {
@@ -36,7 +36,7 @@ const autoplay = (embla, interval) => {
       autoplayer.stop();
       embla.scrollNext();
     };
-    btn.addEventListener("click", scrollNext, false);
+    btn.addEventListener("click", scrollNext, false, {passive: true});
   };
 
   const disablePrevNextBtns = (prevBtn, nextBtn, embla) => {
