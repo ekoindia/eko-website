@@ -1,6 +1,6 @@
 ---
 layout: blog_post
-title: Blog Post
+title: Finance Blog Post
 description: A simple and highly secure direct money transfer ability for your
   customers using cash with industry-leading success rates
 date: 2018-04-18
