@@ -1,6 +1,7 @@
 const yaml = require('js-yaml');
 const fs = require("fs");
 const { minify } = require("terser");
+const htmlmin = require("html-minifier");
 const CleanCSS = require("clean-css");
 const eleventyNavigationPlugin = require('@11ty/eleventy-navigation');
 const blogTools = require("eleventy-plugin-blog-tools");
@@ -15,6 +16,18 @@ module.exports = function(eleventyConfig) {
     return new CleanCSS({}).minify(code).styles;
   });
 
+  eleventyConfig.addTransform("htmlmin", function(content, outputPath) {
+    if( outputPath.endsWith(".html") ) {
+      let minified = htmlmin.minify(content, {
+        useShortDoctype: true,
+        removeComments: true,
+        collapseWhitespace: true
+      });
+      return minified;
+    }
+    return content;
+  });
+  
   eleventyConfig.addNunjucksAsyncFilter("jsmin", async function (
     code,
     callback
