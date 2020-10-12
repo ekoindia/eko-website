@@ -2,6 +2,10 @@
   font-display: swap;
 }
 
+img {
+  max-width: 100%;
+}
+
 .embla {
 position: relative;
 padding: 20px;
