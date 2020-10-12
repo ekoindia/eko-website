@@ -111,7 +111,12 @@
     </button>
 </div>
 </center>
-<script src="/js/carousel.js"></script>
+{% set carousel %}
+  {% include "js/carousel.js" %}
+{% endset %}
+<script>
+  {{ carousel | jsmin | safe }}
+</script>
 
 {% sectionSeparator %}
 
@@ -325,7 +330,12 @@
     </button>
 </div>
 </center>
-<script src="/js/gallery.js"></script>
+{% set gallery %}
+  {% include "js/gallery.js" %}
+{% endset %}
+<script>
+  {{ gallery | jsmin | safe }}
+</script>
 
 {% sectionSeparator %}
 
