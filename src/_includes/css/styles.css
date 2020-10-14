@@ -2,6 +2,14 @@
   font-display: swap;
 }
 
+aside {
+  position: absolute;
+  right: 50px;
+  padding: 0;
+  top: 20px;
+}
+
+
 img {
   max-width: 100%;
 }
@@ -227,7 +235,7 @@ button:-moz-focusring,
 
 main, html, body {
   letter-spacing: 1px;
-  color: grey;
+  color: grey !important;
   font-family: Roboto,sans-serif;
   line-height: 1.42857143;
   font-display: swap;
@@ -382,6 +390,7 @@ color: grey;
 .bg-image {
 background-image: url(https://eko.in/sites/default/files/2020-06/homepage-illustration_0.svg);
 background-repeat: no-repeat;
+background-size: contain;
 height: 442px;
 background-position: center;
 }
@@ -542,9 +551,12 @@ font-weight: 600;
   padding: 2em;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
   .l-box {
       padding: 1em !important;
+  }
+  .main-header {
+    font-size: 30px;
   }
 }
 

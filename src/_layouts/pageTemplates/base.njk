@@ -1,6 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="en">
   <head>
+    <script type="module" src= "/js/dark-mode-toggle.mjs"></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta property="og:type" content="website">
@@ -29,14 +30,31 @@
     {% set css_pure %}
       {% include "css/pure.css" %}
     {% endset %}
+    {# CSS File for Dark Mode #}
+    {# {% set dark %}
+      {% include "css/dark.css" %}
+    {% endset %} #}
     <style>
       {{ css_main | cssmin | safe }}
       {{ css_pure | cssmin | safe }}
+      {# {{ dark | cssmin | safe }} #}
     </style>
     {% block carousel%}{% endblock %}
   </head>
   <body>
     {% include "navigation.njk" %}
+    {# Dark/Light Mode Icons #}
+    {# <aside>
+      <dark-mode-toggle appearance="switch"></dark-mode-toggle>
+    </aside>
+    <script>
+      window.addEventListener('colorschemechange', (e) => {
+        document.body.classList.toggle('dark', e.target.mode === 'dark');
+      });
+      window.addEventListener('colorschemechange', (e) => {
+        document.body.classList.toggle('light', e.target.mode === '');
+      });
+    </script> #}
     <div>{% block main%}{% endblock %}</div>
     {% include "footer.njk" %}
     <script>

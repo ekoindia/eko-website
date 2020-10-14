@@ -1,0 +1,32 @@
+
+.dark {
+    color: white;
+    background-color: #000;
+  }
+  
+  .dark a {
+    color: white;
+  }
+  
+  .dark .tag a {
+    color: black;
+  }
+  
+  .dark a:hover {
+    color: orange;
+  }
+  
+  .dark .nav a {
+    color: grey;
+  }
+  
+  
+  .dark .boxed:hover .box-text,
+  .box-text:hover {     
+    color: white;
+    opacity: 1; 
+  }
+  
+  .dark .nav .l-box-main a:hover {
+    color: orange;
+  }
