@@ -49,19 +49,26 @@ const autoplay = (embla, interval) => {
     };
   };
 
-const wrap = document.querySelector(".embla");
-const viewPort = wrap.querySelector(".embla__viewport");
-const prevBtn = wrap.querySelector(".embla__button--prev");
-const nextBtn = wrap.querySelector(".embla__button--next");
-const embla = EmblaCarousel(viewPort);
-const autoplayer = autoplay(embla, 4000);
-const disablePrevAndNextBtns = disablePrevNextBtns(prevBtn, nextBtn, embla);
+const setupEmblaCarousel = (emblaNode, options) => {
+  const viewPort = emblaNode.querySelector(".embla__viewport");
+  const prevBtn = emblaNode.querySelector(".embla__button--prev");
+  const nextBtn = emblaNode.querySelector(".embla__button--next");
+  const embla = EmblaCarousel(viewPort, options);
+  const autoplayer = autoplay(embla, 4000);
+  const disablePrevAndNextBtns = disablePrevNextBtns(prevBtn, nextBtn, embla);
 
-listenForPrevBtnClick(prevBtn, embla, autoplayer);
-listenForNextBtnClick(nextBtn, embla, autoplayer);
+  listenForPrevBtnClick(prevBtn, embla, autoplayer);
+  listenForNextBtnClick(nextBtn, embla, autoplayer);
 
-embla.on("select", disablePrevAndNextBtns);
-embla.on("init", disablePrevAndNextBtns);
+  embla.on("select", disablePrevAndNextBtns);
+  embla.on("init", disablePrevAndNextBtns);
 
-embla.on("pointerDown", autoplayer.stop);
-embla.on("init", autoplayer.play);
+  embla.on("pointerDown", autoplayer.stop);
+  embla.on("init", autoplayer.play);
+};
+  
+  const options = { loop: false };
+  const emblaNodes = [].slice.call(document.querySelectorAll(".embla"));
+  const emblaCarousels = emblaNodes.map(emblaNode =>
+    setupEmblaCarousel(emblaNode, options)
+  );
