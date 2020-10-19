@@ -2,16 +2,12 @@
     <h1>{{ item.header }}</h1>
     <span class="h2-border"></span>
     <div class="pure-g container">
-        {% for step_key, step_val in item %}
-            {% if step_key != 'header '%}
-                {% !if 'box' in step_key %}
-                <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-4 boxed">
-                <h3 class="box-title">{{ step_val.title }}</h3>
-                <p class="box-text">{{ step_val.text }}</p>
-                <a href="{{ step_val.link }}">{{ step_val.link }}</a>
+        {% for box in item.boxes %}
+            <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-4 boxed">
+            <h3 class="box-title">{{ box.title }}</h3>
+            <p class="box-text">{{ box.text }}</p>
+            <a href="{{ box.link }}">{{ box.link }}</a>
             </div>
-            {% endif %}
-            {% endif %}
         {% endfor %}
     </div>
 </div>
