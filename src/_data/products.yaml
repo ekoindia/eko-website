@@ -7,10 +7,11 @@
   description: Eko’s remittance service gives you the feature to turn your own shop into a bank. Customers who do not have bank accounts but still want to transfer money using cash can visit your shop. You can take the cash and transfer digital money to the bank account specified by them. Easy and effective!
 
   layout:
-    mid_summary:
+    - section: mid_summary
       small_description: Money Transfer
       header: Instant money transfer, anytime & anywhere
-    alternating_steps:
+    - section: alternating_steps
+      steps:
       - title: Easy Cash transfer
         text: 'Customers can transfer cash to anyone by specifying their bank details right at your doorstep'
         image: /images/money-transfer/easy-cash-transfer.svg
@@ -21,7 +22,7 @@
         text: Print transaction-receipt for your customers to give them a sense of safety
         image: /images/money-transfer/transaction-receipt.svg
       # Can add more steps here
-    heros_main_section:
+    - section: heros_main_section
       header: Benefits
       line1: 
         # Benefit 1
@@ -50,11 +51,11 @@
         text_right: Customers can save time and money by not having to travel to bank branches. They can use all these basic banking services at your shop.
         image_right: /images/money-transfer/save-money.svg
         single_hero: false
-    one_liner:
+    - section: one_liner
       icon: /images/eko-trust.svg
       title: Eko's Trust
       text: You can assure your customers that their money and data is safe. Eko’s trust is unparalleled
-    step_section:
+    - section: step_section
       header: How money transfer works
       boxes:
       - title: 'Step 1:'
@@ -66,11 +67,11 @@
         text: Enter amount and bank details
       - title: 'Step 4:'
         text: Click send and collect cash
-    message:
+    - section: message
       line1: A customer who wishes to use your service would simply need to provide his mobile number and details of the bank account to transfer money to. 
       main_line: For all issues, we provide 24x7 support.
       button_text: Contact Support
-    final_ad:
+    - section: final_ad
       small_header: Ready to get started?
       main_header: Become Eko Partner & Earn More
       image: /images/become-eko-partner.svg
@@ -89,18 +90,19 @@
   video_link: https://www.youtube.com/watch?time_continue=1&v=y-zLDNRPnBs&feature=emb_logo
   
   layout:
-    mid_summary:
+    - section: mid_summary
       small_description: Earn with Aadhaar Banking (AePS)
       header: Turn your shop into an ATM
-    single_hero:
+    - section: single_hero
       title: Easy Cash Withdrawal
       text: AePS allows you to turn your shop into an ATM and lets your customers withdraw cash using their fingerprint.
       image: /images/aadhaar-banking/easy-cash-withdrawal.svg
-    short_ad:
+    - section: short_ad
       title: Jan Dhan Government Benefit
       text: AePS allows your customers to withdraw their DBT (Direct Benefit Transfers) from government in their Jan Dhan account.
       image: /images/aadhaar-banking/jan_dhan.svg
-    alternating_steps:
+    - section: alternating_steps
+      steps:
       - title: Easy Cash Deposit
         text: AePS also allows you to turn your shop into a cash deposit machine. Your customers can then deposit cash at your shop with ease.
         image: /images/aadhaar-banking/easy-cash-deposit.svg
@@ -113,7 +115,7 @@
       - title: Mini Statement
         text: AePS will also let your customers take the mini statement of their account at your shop
         image: /images/aadhaar-banking/mini-statement.svg
-    heros_main_section:
+    - section: heros_main_section
       header: Benefits
       line1:
         # Benefit 1
@@ -126,11 +128,11 @@
         image_right: /images/aadhaar-banking/best-success-rate.svg
         # Checks if 2 benefits are side by side
         single_hero: false
-    one_liner:
+    - section: one_liner
       icon: /images/eko-trust.svg
       title: Eko's Trust
       text: You can assure your customers that their money and data is safe. Eko’s trust is unparalleled
-    step_section:
+    - section: step_section
       header: How to use Aadhaar Banking
       boxes:
       - title: 'Step 1:'
@@ -142,12 +144,12 @@
         text: Register your biometric device
       - title: 'Step 4:'
         text: Start serving your customers
-    message:
+    - section: message
       line1: A customer who wishes to use your service would simply need to provide his aadhar number, name, and account number. 
       line2: The process to enable AePS and register your biometric device is easy.
       main_line: For all issues, we provide 24x7 support.
       button_text: Contact Support
-    small_heros_section:
+    - section: small_heros_section
       header: Our Partners
       partner_images:
       - image: /images/aadhaar-banking/billdesk.png
@@ -155,7 +157,7 @@
       - image: /images/aadhaar-banking/bharat.png
       - image: /images/aadhaar-banking/aeps.png
       - image: /images/aadhaar-banking/npcl.png
-    final_ad:
+    - section: final_ad
       small_header: Ready to get started?
       main_header: Use Aadhaar Banking & Earn More
       image: /images/become-eko-partner.svg

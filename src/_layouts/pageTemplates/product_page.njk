@@ -23,9 +23,11 @@
 {% block main %}
   <main>
     {% include "section_top_hero.njk" %}
-    {% for key, val in product.layout %}
-      {% set component = "section_" + key + ".njk" %}
-      {% set item = product.layout[key] %}
+    {% for i in range(0, product.layout | length) %}
+      {% set item = product.layout[i] %}
+      {# <h1>{{ item.section }}</h1> #}
+      {% set component = "section_" + item.section + ".njk" %}
+      {# <h1>{{ item | dump }}</h1> #}
       {% include component %}
     {% endfor %}
     <section>{% include "form.njk" %}</section>
