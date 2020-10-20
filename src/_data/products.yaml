@@ -24,33 +24,30 @@
       # Can add more steps here
     - section: heros_main_section
       header: Benefits
-      line1: 
-        # Benefit 1
-        title_left: Earn Commission
-        text_left: Earn commission for every cash-deposit, cash-withdrawal or balance-inquiry that your customer does at your shop. More transaction is more commission for you.
-        image_left: /images/money-transfer/earn-commission.svg
-        # Benefit 2
-        title_right: Best Success Rate
-        text_right: Transaction failures occur rarely with our services. We ensure that you get the best success rate for every transaction. We are as reliable as banks themselves
-        image_right: /images/money-transfer/best-success-rate.svg
-        # Checks if 2 benefits are side by side
-        single_hero: false
-      line2:
-        # Benefit 3 (center)
-        title: Turn your shop into a mini bank
-        text: Since money transfer is the most commonly used banking service, this feature will turn your shop into a mini bank for customers! Consequently, more customers will visit your shop
-        image: /images/money-transfer/mini-bank.svg
-        single_hero: true
-      line3:
-        # Benefit 4 (left side)
-        title_left: Avoid Bank Queues
-        text_left: Customers would no longer need to stand in queues for banking services. They can simply visit your shop and use these services.
-        image_left: /images/money-transfer/avoid-bank-queues.svg
-        # Benefit 5 (right side)
-        title_right: Save Travel Money
-        text_right: Customers can save time and money by not having to travel to bank branches. They can use all these basic banking services at your shop.
-        image_right: /images/money-transfer/save-money.svg
-        single_hero: false
+      heros: 
+        - type: pair # 2 heros side-by-side
+          # Benefit 1
+          title_left: Earn Commission
+          text_left: Earn commission for every cash-deposit, cash-withdrawal or balance-inquiry that your customer does at your shop. More transaction is more commission for you.
+          image_left: /images/money-transfer/earn-commission.svg
+          # Benefit 2
+          title_right: Best Success Rate
+          text_right: Transaction failures occur rarely with our services. We ensure that you get the best success rate for every transaction. We are as reliable as banks themselves
+          image_right: /images/money-transfer/best-success-rate.svg
+        - type: single # One hero on its own in the center of the page
+          # Benefit 3 (center)
+          title: Turn your shop into a mini bank
+          text: Since money transfer is the most commonly used banking service, this feature will turn your shop into a mini bank for customers! Consequently, more customers will visit your shop
+          image: /images/money-transfer/mini-bank.svg
+        - type: pair
+          # Benefit 4 (left side)
+          title_left: Avoid Bank Queues
+          text_left: Customers would no longer need to stand in queues for banking services. They can simply visit your shop and use these services.
+          image_left: /images/money-transfer/avoid-bank-queues.svg
+          # Benefit 5 (right side)
+          title_right: Save Travel Money
+          text_right: Customers can save time and money by not having to travel to bank branches. They can use all these basic banking services at your shop.
+          image_right: /images/money-transfer/save-money.svg
     - section: one_liner
       icon: /images/eko-trust.svg
       title: Eko's Trust
@@ -117,17 +114,16 @@
         image: /images/aadhaar-banking/mini-statement.svg
     - section: heros_main_section
       header: Benefits
-      line1:
-        # Benefit 1
-        title_left: Earn Commission
-        text_left: Earn commission for every cash-deposit, cash-withdrawal or balance-inquiry that your customer does at your shop. More transaction is more commission for you.
-        image_left: /images/aadhaar-banking/earn-commission.svg
-        # Benefit 2
-        title_right: Best Success Rate
-        text_right: Transaction failures occur rarely with our services. We ensure that you get the best success rate for every transaction. We are as reliable as banks themselves
-        image_right: /images/aadhaar-banking/best-success-rate.svg
-        # Checks if 2 benefits are side by side
-        single_hero: false
+      heros: 
+        - type: pair
+          # Benefit 1
+          title_left: Earn Commission
+          text_left: Earn commission for every cash-deposit, cash-withdrawal or balance-inquiry that your customer does at your shop. More transaction is more commission for you.
+          image_left: /images/aadhaar-banking/earn-commission.svg
+          # Benefit 2
+          title_right: Best Success Rate
+          text_right: Transaction failures occur rarely with our services. We ensure that you get the best success rate for every transaction. We are as reliable as banks themselves
+          image_right: /images/aadhaar-banking/best-success-rate.svg
     - section: one_liner
       icon: /images/eko-trust.svg
       title: Eko's Trust
