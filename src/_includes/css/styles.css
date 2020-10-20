@@ -448,9 +448,9 @@ font-weight: 600;
   width: 50%;
 }
 
-.footer {
+footer {
   bottom: 0;
-  width: 100%;
+  wfooteridth: 100%;
   background-color: rgb(96,96,96);
   color: white;
   padding-top: 50px;
@@ -461,14 +461,14 @@ font-weight: 600;
   margin: 0;
 }
 
-.footer p {
+footer p {
   font-size: 16px;
   letter-spacing: 1px;
   word-spacing: 2px;
   font-weight: 300;
 }
 
-.footer h2 {
+footer h2 {
   color: orange;
 }
 .column-header {
@@ -476,12 +476,12 @@ font-weight: 600;
   color: lightgray;
 }
 
-.footer a {
+footer a {
   color:  white;
   font-weight: bold;
 }
 
-.footer a:hover {
+footer a:hover {
   color: orange;
 }
 
@@ -567,7 +567,7 @@ border-radius: 50%;
   border-radius: 50%;
 }
 
-.footer a {
+footer a {
   text-decoration: none;
 }
 
