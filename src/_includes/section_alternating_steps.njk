@@ -1,8 +1,8 @@
-<section class="container">
+<section>
 {% set align = "right" %}
 {% for step in item %}
     {% if align == "left" %}
-        <div class="pure-g flex-grid container">
+        <div class="pure-g flex-grid">
             <div class="pure-u-1 pure-u-md-1-2 l-box order-2-sm">
                 <h3>{{ step.title }}</h3>
                 <p>{{ step.text }}</p>
@@ -13,7 +13,7 @@
         </div>
         {% set align = "right" %}
     {% elif align == "right" %}
-        <div class="pure-g flex-grid container">
+        <div class="pure-g flex-grid">
             <div class="pure-u-1 pure-u-md-1-2 l-box order-1-sm">
                 <img src="{{ step.image }}" alt="">
             </div>

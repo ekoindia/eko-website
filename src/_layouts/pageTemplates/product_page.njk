@@ -27,9 +27,7 @@
       {% set component = "section_" + key + ".njk" %}
       {% set item = product.layout[key] %}
       {% include component %}
-      {% sectionSeparator %}
     {% endfor %}
-    {% include "form.njk" %}
-    {% sectionSeparator %}
+    <section>{% include "form.njk" %}</section>
   </main>
 {% endblock %}

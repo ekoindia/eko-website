@@ -12,21 +12,24 @@ eleventyExcludeFromCollections: true
 {% extends "../_layouts/pageTemplates/base.njk" %}
 
 {% block main %}
-<main class="container">
-    <header>
-        <h1>Blog Posts</h1>
-        <span class="h2-border"></span>
-    </header>
+<main>
+    <section>
+        <header>
+            <h1>Blog Posts</h1>
+            <span class="h2-border"></span>
+        </header>
+    </section>
+    
     {% set blogslist = collections.blog %}
     {% include "blogslist.njk" %}
 
-    {% sectionSeparator %}
-    <h1>Categories</h1>
-    <ul>
-        {% for item in tag %}
-            <li><h4><a href="/blogs/{{item}}/">{{ item | capitalize }}</h1></li></h4>
-        {% endfor %}
-    </ul>
-    {% sectionSeparator %}
+    <section>
+        <h1>Categories</h1>
+        <ul>
+            {% for item in tag %}
+                <li><h4><a href="/blogs/{{item}}/">{{ item | capitalize }}</h1></li></h4>
+            {% endfor %}
+        </ul>
+    </section>
 </main>
 {% endblock %}
