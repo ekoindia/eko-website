@@ -57,16 +57,11 @@
     </script> #}
     <div>{% block main%}{% endblock %}</div>
     {% include "footer.njk" %}
+    {% set netlify_admin %}
+      {% include "js/netlify.js" %}
+    {% endset %}
     <script>
-      if (window.netlifyIdentity) {
-        window.netlifyIdentity.on("init", user => {
-          if (!user) {
-            window.netlifyIdentity.on("login", () => {
-              document.location.href = "/admin/";
-            });
-         }
-        });
-      }
+      {{ netlify_admin | jsmin | safe }}
     </script>
   </body>
 </html>
