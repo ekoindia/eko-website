@@ -9,6 +9,23 @@ aside {
   top: 20px;
 }
 
+.alternating-steps .pure-g:nth-of-type(even) .step-image{
+  order: 1;
+}
+
+.alternating-steps .pure-g:nth-of-type(even) .step-text{
+  order: 2;
+}
+
+@media screen and (max-width: 48em) {
+  .alternating-steps .pure-g:nth-of-type(odd) .step-image{
+    order: 1;
+  }
+  
+  .alternating-steps .pure-g:nth-of-type(odd) .step-text{
+    order: 2;
+  }
+}
 
 img {
   max-width: 100%;
