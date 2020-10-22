@@ -236,11 +236,15 @@ section, nav, footer {
     padding-left: 10%;
     padding-right: 10%;
   }
+  section {
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
 }
 
 section {
-  padding-top: 8px;
-  padding-bottom: 8px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .horizontal-spacer {
@@ -250,10 +254,7 @@ padding-right: 20px;
 .background-section{
 width: 100%;
 background-color: var(--background-section-color);
-padding-top: 100px !important;
-padding-bottom: 100px;
 box-sizing: border-box;
-width: 100%;
 margin: 0;
 }
 
