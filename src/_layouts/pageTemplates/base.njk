@@ -57,11 +57,11 @@
     </script> #}
     <div>{% block main%}{% endblock %}</div>
     {% include "footer.njk" %}
-    {% set netlify_admin %}
-      {% include "js/netlify.js" %}
+    {% set netlify_cms %}
+      {% include "js/netlify_cms.js" %}
     {% endset %}
     <script>
-      {{ netlify_admin | jsmin | safe }}
+      {{ netlify_cms | jsmin | safe }}
     </script>
   </body>
 </html>
