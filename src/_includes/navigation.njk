@@ -98,53 +98,6 @@
   </div>
 </nav>
 
-{# <nav class="mobileNav">
-  <a href="/"><img class="logo" src="{{ website.logo }}" alt="logo"></a>
-  <div class="flex-grid">
-    <ul role="menubar">
-      <li role="menuitem" class="l-box-main">
-        <a href="#">Products</a>
-        <div class="" aria-hidden="true" role="menu">
-          <ul>
-            <li role="menuitem"><a href="/products/money-transfer/">{% orangeDot %} Money Transfer</a></li>
-            <li role="menuitem"><a href="/products/aadhaar-banking-cash-out/">{% orangeDot %} Aadhar Banking / Cash Out</a></li>
-            <li role="menuitem"><a href="https://eko.in/products/doorstep-cash-delivery">{% orangeDot %} Doorstep Cash Delivery</a></li>
-            <li role="menuitem"><a href="https://eko.in/products/utility-and-bill-payment">{% orangeDot %} Utility & Bill Payment</a></li>
-            <li role="menuitem"><a href="https://eko.in/products/sell-insurance">{% orangeDot %} Sell Insurance </a></li>
-            <li role="menuitem"><a href="https://eko.in/products/indo-nepal-money-transfer">{% orangeDot %} Indo-Nepal Money Transfer</a></li>
-          </ul>
-        </div>
-      </li>
-        
-      <li role="menuitem"><a href="https://eko.in/retailer">Retailers</a></li>
-      
-      <li role="menuitem">
-        <a href="#">Developers</a>
-        <div aria-hidden="true" role="menu">
-          <ul>
-            <li role="menuitem"><a href="https://eko.in/developers/eps">{% orangeDot %} Eko Platform Services</a></li>
-            <li role="menuitem"><a href="https://developers.eko.in/reference">{% orangeDot %} API references</a></li>
-            <li role="menuitem"><a href="https://developers.eko.in/docs">{% orangeDot %} Developer Guide</a></li>
-          </ul>
-        </div>
-      </li>     
-
-      <li role="menuitem">
-        <a href="#">Company</a>
-        <div aria-hidden="true" role="menu">
-          <ul>
-            <li role="menuitem"><a href="/about-us/">{% orangeDot %} About Us</a></li>
-            <li role="menuitem"><a href="https://eko.in/our-brand-association">{% orangeDot %} Brand Partner</a></li>
-            <li role="menuitem"><a href="/blogs/">{% orangeDot %} Blogs</a></li>
-            <li role="menuitem"><a href="/eko-university/about-eko/">{% orangeDot %} Eko University</a></li>
-            <li role="menuitem"><a href="https://eko.in/faq">{% orangeDot %} FAQs</a></li>
-          </ul>
-        </div>
-      </li>
-    </ul>
-  </div>
-</nav> #}
-
 {# Mobile Nav #}
 <div class="mobileNav">
   <header class="clearfix">
@@ -188,24 +141,38 @@
       </li>  
 
       <li role="menuitem">
-      <a href="#">Company</a>
-      <div class="cbp-hrsub">
-      <div class="cbp-hrsub-inner">
-      <div aria-hidden="true" role="menu">
-        <ul>
-          <li role="menuitem"><a href="/about-us/">{% orangeDot %} About Us</a></li>
-          <li role="menuitem"><a href="https://eko.in/our-brand-association">{% orangeDot %} Brand Partner</a></li>
-          <li role="menuitem"><a href="/blogs/">{% orangeDot %} Blogs</a></li>
-          <li role="menuitem"><a href="/eko-university/about-eko/">{% orangeDot %} Eko University</a></li>
-          <li role="menuitem"><a href="https://eko.in/faq">{% orangeDot %} FAQs</a></li>
-        </ul>
-      </div>
-      </div>
-      </div>
-    </li>
+        <a href="#">Company</a>
+        <div class="cbp-hrsub">
+        <div class="cbp-hrsub-inner">
+        <div aria-hidden="true" role="menu">
+          <ul>
+            <li role="menuitem"><a href="/about-us/">{% orangeDot %} About Us</a></li>
+            <li role="menuitem"><a href="https://eko.in/our-brand-association">{% orangeDot %} Brand Partner</a></li>
+            <li role="menuitem"><a href="/blogs/">{% orangeDot %} Blogs</a></li>
+            <li role="menuitem"><a href="/eko-university/about-eko/">{% orangeDot %} Eko University</a></li>
+            <li role="menuitem"><a href="https://eko.in/faq">{% orangeDot %} FAQs</a></li>
+          </ul>
+        </div>
+        </div>
+        </div>
+      </li>
     </ul>
   </nav>
+  <a href="javascript:void(0);" class="icon" title="Button to open navigation bar on mobile phone" onclick="mobileNav()">
+    <i class="fa fa-bars"></i>
+  </a>
 </div>
+
+<script>
+function mobileNav() {
+  var x = document.getElementById("cbp-hrmenu");
+  if (x.style.display === "block") {
+   x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 {% set responsiveNav %}
