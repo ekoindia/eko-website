@@ -1046,7 +1046,7 @@ article {
 	}
 
 	.cbp-hrmenu .cbp-hrsub-inner {
-		padding: 0 2em;
+		padding: 0.1em 3.2em;
 		font-size: 75%;
 	}
 
@@ -1054,7 +1054,7 @@ article {
 		display: block;
 	}
 
-	.cbp-hrmenu > ul > li > a, .single-nav { 
+	.cbp-hrmenu > ul > li > a, .single-nav  { 
 		display: block;
 		padding: 0.5em 3em;
 	}
