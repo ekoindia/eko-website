@@ -198,6 +198,27 @@ font-size: 13px;
 font-weight: 600;
 }
 
+
+/* alternating steps*/
+.alternating-steps > *:nth-of-type(even) .step-image{
+  order: 1;
+}
+
+.alternating-steps > *:nth-of-type(even) .step-text{
+  order: 2;
+}
+
+@media screen and (max-width: 768px) {
+  .alternating-steps > *:nth-of-type(odd) .step-image{
+    order: 1;
+  }
+
+  .alternating-steps > *:nth-of-type(odd) .step-text{
+    order: 2;
+  }
+}
+
+
 .short_ad p {
   text-align: left;
   font-weight: 500;
