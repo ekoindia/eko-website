@@ -45,6 +45,14 @@
     {% endset %}
 	#}
 
+
+	{# ----- EMBLA CAROUSEL SUPPORT (https://github.com/davidcetinkaya/embla-carousel) ------ #}
+	{% set carousel %}
+		{% include "js/embla-carousel.umd.min.js" %}
+		{% include "js/carousel.js" %}
+	{% endset %}
+
+
 	{# ------ Dark Mode ------- #}
 	{# <script type="module" src= "/js/dark-mode-toggle.mjs"></script> #}
     {# {% set dark %}
@@ -59,7 +67,6 @@
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-	{% block carousel%}{% endblock %}
   </head>
 
   <body>

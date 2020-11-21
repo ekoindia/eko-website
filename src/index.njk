@@ -1,9 +1,5 @@
 {% extends "./_layouts/pageTemplates/base.njk" %}
 
-{% block carousel %}
-    <script src="https://unpkg.com/embla-carousel"></script>
-{% endblock %}
-
 {% block main %}
 <main>
 
@@ -57,7 +53,7 @@
             <div class="pure-u-1 pure-u-md-1-2 l-box">
                 <img src="/images/main/easy-cash-transfer.svg" alt="">
             </div>
-            <div class="pure-u-1 pure-u-md-1-2 l-box">  
+            <div class="pure-u-1 pure-u-md-1-2 l-box">
                 <h2>Money Transfer</h2>
                 <p>Transfer money instantly to any bank account in India using cash from customer.</p>
             </div>
@@ -68,7 +64,7 @@
              <div class="pure-u-1 pure-u-md-1-2 l-box">
                 <img src="/images/main/aadhaa-banking-small.svg" alt="">
             </div>
-            <div class="pure-u-1 pure-u-md-1-2 l-box">  
+            <div class="pure-u-1 pure-u-md-1-2 l-box">
                 <h2>Aadhaar Banking</h2>
                 <p>Allow your customers to withdraw cash & transfer money at your doorstep with just the fingerprint & Aadhaar number</p>
             </div>
@@ -79,7 +75,7 @@
             <div class="pure-u-1 pure-u-md-1-2 l-box">
                 <img src="/images/main/bill-payment.svg" alt="">
             </div>
-            <div class="pure-u-1 pure-u-md-1-2 l-box">  
+            <div class="pure-u-1 pure-u-md-1-2 l-box">
                 <h2>Utility Bill Payment</h2>
                 <p>Pay utility bills for 100+ billers in India using Eko’s platform. All under one roof.</p>
             </div>
@@ -90,7 +86,7 @@
             <div class="pure-u-1 pure-u-md-1-2 l-box">
                 <img src="/images/main/low-cost-insurance.svg" alt="">
             </div>
-            <div class="pure-u-1 pure-u-md-1-2 l-box">  
+            <div class="pure-u-1 pure-u-md-1-2 l-box">
                 <h2>Sell Insurance</h2>
                 <p>Low cost, simple paperwork & easy claim process makes our insurance policies the best choice for your customers.</p>
             </div>
@@ -111,12 +107,13 @@
     </button>
 </div>
 </center>
-{% set carousel %}
+
+{# {% set carousel %}
   {% include "js/carousel.js" %}
 {% endset %}
 <script>
   {{ carousel | jsmin | safe }}
-</script>
+</script> #}
 
 {% sectionSeparator %}
 
@@ -175,7 +172,7 @@
     </div>
     <div class="pure-u-1 pure-u-md-1 pure-u-lg-1-2 l-box order-2-sm order-2-md">
         <center>
-            <img src="/images/main/simple-documentation.svg" alt=""> 
+            <img src="/images/main/simple-documentation.svg" alt="">
             <br><br>
             <h2>Simple Documentation</h2>
             <p>The documentation for our APIs is comprehensive and comprehensible! We constantly update it to explain the minutest detail. Whether you use Python, Java, PHP, or C#, we have you covered!</p>
@@ -244,7 +241,7 @@
         </svg>
     </div>
 </div>
-    
+
 {% sectionSeparator %}
 
 {# One Liner #}
@@ -282,23 +279,23 @@
     <div class="h2-border"></div>
 </div>
 <center>
-    <div class="gallery">
-    <div class="gallery__viewport">
+    <div class="embla">
+    <div class="embla__viewport">
     <div class="gallery__container">
         <div class="gallery__slide">
         <div class="pure-g gallery__slide__inner">
             <div class="pure-u-1 pure-u-md-1 pure-u-lg-1-2 l-box order-2-sm order-2-md">
                 <p>"ALTBalaji is fuelling the growth of subscription-based digital video streaming. Partnering with Eko is a way to bring the offline consumers into the online world. With ALTBalaji now being a part of their Eko Store, we are expanding our reach to a whole new audience and are excited to welcome them as a part of the ALTBalaji family"</p>
             </div>
-           
-            <div class="pure-u-1 pure-u-md-1 pure-u-lg-1-2 l-box order-1-sm order-1-md partner-box">  
+
+            <div class="pure-u-1 pure-u-md-1 pure-u-lg-1-2 l-box order-1-sm order-1-md partner-box">
                 <center>
                     <img class="round" src="/images/main/alt-balaji-customer.webp" alt="">
                     <h1>Nachiket Pantvaidya</h1>
                     <p class="caption">CEO, ALTBalaji and Group COO Balaji Telefilms</p>
                 </center>
             </div>
-            
+
         </div>
         </div>
         <div class="gallery__slide">
@@ -306,7 +303,7 @@
             <div class="pure-u-1 pure-u-md-1 pure-u-lg-1-2 l-box order-2-sm order-2-md">
                 <p>"Indifi is committed to simplifying credit access to small and medium-sized entrepreneurs. Our partnership with Eko will further our vision of facilitating financial inclusion for India’s huge SME sector. By providing Eko’s cash distributors with the credit line services, we will also help empower a greater number of retailers across the country."</p>
             </div>
-            <div class="pure-u-1 pure-u-md-1 pure-u-lg-1-2 l-box order-1-sm order-1-md partner-box">  
+            <div class="pure-u-1 pure-u-md-1 pure-u-lg-1-2 l-box order-1-sm order-1-md partner-box">
                 <center>
                     <img class="round" src="/images/main/alot-mitttal.webp" alt="">
                     <h1>Alok Mittal</h1>
@@ -318,24 +315,24 @@
     </div>
     </div>
     {# Buttons #}
-    <button aria-label="previous" aria-hidden="true" class="gallery__button gallery__button--prev" type="button">
-        <svg class="gallery__button__svg" viewBox="137.718 -1.001 366.563 643.999">
+    <button aria-label="previous" aria-hidden="true" class="embla__button embla__button--prev" type="button">
+        <svg class="embla__button__svg" viewBox="137.718 -1.001 366.563 643.999">
             <path d="M428.36 12.5c16.67-16.67 43.76-16.67 60.42 0 16.67 16.67 16.67 43.76 0 60.42L241.7 320c148.25 148.24 230.61 230.6 247.08 247.08 16.67 16.66 16.67 43.75 0 60.42-16.67 16.66-43.76 16.67-60.42 0-27.72-27.71-249.45-249.37-277.16-277.08a42.308 42.308 0 0 1-12.48-30.34c0-11.1 4.1-22.05 12.48-30.42C206.63 234.23 400.64 40.21 428.36 12.5z"></path>
         </svg>
     </button>
-    <button aria-label="next" class="gallery__button gallery__button--next" type="button">
-        <svg class="gallery__button__svg" viewBox="0 0 238.003 238.003">
+    <button aria-label="next" class="embla__button embla__button--next" type="button">
+        <svg class="embla__button__svg" viewBox="0 0 238.003 238.003">
             <path d="M181.776 107.719L78.705 4.648c-6.198-6.198-16.273-6.198-22.47 0s-6.198 16.273 0 22.47l91.883 91.883-91.883 91.883c-6.198 6.198-6.198 16.273 0 22.47s16.273 6.198 22.47 0l103.071-103.039a15.741 15.741 0 0 0 4.64-11.283c0-4.13-1.526-8.199-4.64-11.313z"></path>
         </svg>
     </button>
 </div>
 </center>
-{% set gallery %}
-  {% include "js/gallery.js" %}
-{% endset %}
-<script>
-  {{ gallery | jsmin | safe }}
-</script>
+{# {% set carousel %}
+  {% include "js/carousel.js" %}
+{% endset %} #}
+{# <script>
+  {{ carousel | jsmin | safe }}
+</script> #}
 
 {% sectionSeparator %}
 
@@ -402,5 +399,10 @@
 </div>
 </div>
 </main>
+
+<script>
+  {{ carousel | jsmin | safe }}
+</script>
+
 {% sectionSeparator %}
 {% endblock %}
