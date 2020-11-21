@@ -894,6 +894,10 @@ left: 27px;
 right: 27px;
 }
 
+.gallery {
+	border: none !important;
+}
+
 /* .gallery {
 position: relative;
 padding: 20px;
