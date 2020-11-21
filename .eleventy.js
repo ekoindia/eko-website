@@ -27,7 +27,7 @@ module.exports = function(eleventyConfig) {
     }
     return content;
   });
-  
+
   eleventyConfig.addNunjucksAsyncFilter("jsmin", async function (
     code,
     callback
@@ -56,9 +56,9 @@ module.exports = function(eleventyConfig) {
     }
   });
 
-  eleventyConfig.addPlugin(eleventyNavigationPlugin);
+//   eleventyConfig.addPlugin(eleventyNavigationPlugin);
   eleventyConfig.addPlugin(blogTools);
-  
+
   eleventyConfig.addFilter('htmlDateString', (dateObj) => {
     return DateTime.fromJSDate(dateObj, {
       zone: 'utc'
@@ -70,6 +70,13 @@ module.exports = function(eleventyConfig) {
     zone: 'utc'
     }).toFormat("dd-MM-yy");
   });
+
+  // Filter out all elements from a list (eg: products) that has a 'hidden: true' property in it
+  eleventyConfig.addFilter("hiddenFilter", list => list.filter(item => item.hidden ? false : true));
+
+  // Filter out all elements from a list (eg: products) that has a 'disabled: true' property in it
+  eleventyConfig.addFilter("disabledFilter", list => list.filter(item => item.disabled ? false : true));
+
 
   eleventyConfig.addPassthroughCopy('src/images');
   eleventyConfig.addPassthroughCopy('src/admin');

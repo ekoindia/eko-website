@@ -2,8 +2,8 @@ title: Eko.in
 text: Eko has been catering to millions of low and moderate-income Indians by providing them with a cash-in point to convert their cash to digital and make payments for an array of services
 copyright: © 2020. All rights reserved
 contact_button_text: Contact Sales
-column1: 
-  - header: DEVELOPER PROUCT
+column1:
+  - header: DEVELOPER PRODUCT
   - link1:
     text: DMT API
     url: https://eko.in/developers/eps/domestic-money-transfer-api

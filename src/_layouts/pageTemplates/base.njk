@@ -1,49 +1,71 @@
 <!DOCTYPE HTML>
 <html lang="en">
   <head>
-    <script type="module" src= "/js/dark-mode-toggle.mjs"></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta property="og:type" content="website">
     <meta name="twitter:card" content="website">
+
   {% block seo %}
     <title>{{ website.title }}</title>
     <meta name="description" content="{{ website.tag_line }}">
     <meta name="keywords" content="{{ website.keywords }}">
+
+	{# OpenGraph (Facebook) Social Card #}
     <meta property="og:url" content="{{ website.base_url }}">
     <meta property="og:image" content="{{ website.image }}">
     <meta property="og:title" content="{{ website.title }}">
     <meta property="og:description" content="{{ website.tag_line }}">
     <meta property="og:site_name" content="{{ website.base_url }}">
 
-    {# Twitter #}
+    {# Twitter Social Card #}
     <meta name="twitter:site" content="{{ website.twitter_handle }}">
     <meta name="twitter:url" content="{{ website.base_url }}">
     <meta name="twitter:title" content="{{ website.title }}">
     <meta name="twitter:description" content="{{ website.tag_line }}">
     <meta name="twitter:image" content="{{ website.image }}">
   {% endblock %}
-    {# Link CSS Files#}
+
+    {# Link CSS Files #}
     {% set css_main %}
       {% include "css/styles.css" %}
     {% endset %}
     {% set css_pure %}
+	  {# read more: https://purecss.io #}
       {% include "css/pure.css" %}
+	  {% include "css/grids-responsive-min.css" %}
     {% endset %}
-    {# CSS File for Dark Mode #}
+
+	{# Font Awesone Icons #}
+	{#
+    {% set font_awesome %}
+	  {% include "css/fontawesome/css/fontawesome.min.css" %}
+	  {% include "css/fontawesome/css/brands.min.css" %}
+	  {% include "css/fontawesome/css/solid.min.css" %}
+    {% endset %}
+	#}
+
+	{# ------ Dark Mode ------- #}
+	{# <script type="module" src= "/js/dark-mode-toggle.mjs"></script> #}
     {# {% set dark %}
       {% include "css/dark.css" %}
     {% endset %} #}
-    <style>
+
+	<style>
       {{ css_main | cssmin | safe }}
       {{ css_pure | cssmin | safe }}
       {# {{ dark | cssmin | safe }} #}
     </style>
-    {% block carousel%}{% endblock %}
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	{% block carousel%}{% endblock %}
   </head>
+
   <body>
     {% include "navigation.njk" %}
-    {# Dark/Light Mode Icons #}
+
+	{# Dark/Light Mode Icons #}
     {# <aside>
       <dark-mode-toggle appearance="switch"></dark-mode-toggle>
     </aside>
@@ -54,9 +76,13 @@
       window.addEventListener('colorschemechange', (e) => {
         document.body.classList.toggle('light', e.target.mode === '');
       });
-    </script> #}
-    <div>{% block main%}{% endblock %}</div>
-    {% include "footer.njk" %}
+    </script>
+	#}
+
+	<main>{% block main%}{% endblock %}</main>
+
+	{% include "footer.njk" %}
+
     <script>
       if (window.netlifyIdentity) {
         window.netlifyIdentity.on("init", user => {

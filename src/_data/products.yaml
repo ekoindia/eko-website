@@ -1,10 +1,13 @@
-- name: 'Money Transfer'
+- name: Money Transfer
+  title: Money Transfer
   tag_line: Easiest way to transfer cash to anyone
   social_image: https://ekoin.netlify.app/images/money-transfer/easy-cash-transfer.png
   keywords: money, transfer, easy
   hero_image: /images/money-transfer/money-transfer.svg
   summary: A simple and highly secure direct money transfer ability for your customers using cash with industry-leading success rates
   description: Eko’s remittance service gives you the feature to turn your own shop into a bank. Customers who do not have bank accounts but still want to transfer money using cash can visit your shop. You can take the cash and transfer digital money to the bank account specified by them. Easy and effective!
+
+  hidden: false
 
   layout:
     mid_summary:
@@ -25,7 +28,7 @@
         image: /images/money-transfer/transaction-receipt.svg
     heros_main_section:
       header: Benefits
-      line1: 
+      line1:
         # Benefit 1
         title_left: Earn Commission
         text_left: Earn commission for every cash-deposit, cash-withdrawal or balance-inquiry that your customer does at your shop. More transaction is more commission for you.
@@ -72,7 +75,7 @@
         title: 'Step 4:'
         text: Click send and collect cash
     message:
-      line1: A customer who wishes to use your service would simply need to provide his mobile number and details of the bank account to transfer money to. 
+      line1: A customer who wishes to use your service would simply need to provide his mobile number and details of the bank account to transfer money to.
       main_line: For all issues, we provide 24x7 support.
       button_text: Contact Support
     final_ad:
@@ -83,7 +86,8 @@
       button2_text: Contact Sales
 
 
-- name: Aadhaar Banking / Cash-out
+- name: Aadhaar Banking
+  title: Aadhaar Banking / Cash-out
   tag_line: AePS - Aadhaar Enabled Payment System
   social_image: https://ekoin.netlify.app/images/aadhaar-banking/AePS_hero.png
   keywords: Aadhaar Banking, Cash-out
@@ -92,7 +96,7 @@
   description: Aadhar banking (AePS) helps you turn your own shop into an ATM. It provides you the ability to deliver services such as cash deposit, cash withdrawal, and balance check to your customers. This is particularly useful for customers who do not trust themselves to be able to use an ATM properly. Help them out, help yourself out!
   icon: /images/aadhaar-banking/aadhaar_logo.svg
   video_link: https://www.youtube.com/watch?time_continue=1&v=y-zLDNRPnBs&feature=emb_logo
-  
+
   layout:
     mid_summary:
       small_description: Earn with Aadhaar Banking (AePS)
@@ -155,7 +159,7 @@
         title: 'Step 4:'
         text: Start serving your customers
     message:
-      line1: A customer who wishes to use your service would simply need to provide his aadhar number, name, and account number. 
+      line1: A customer who wishes to use your service would simply need to provide his aadhar number, name, and account number.
       line2: The process to enable AePS and register your biometric device is easy.
       main_line: For all issues, we provide 24x7 support.
       button_text: Contact Support
