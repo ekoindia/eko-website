@@ -89,10 +89,6 @@ module.exports = function(eleventyConfig) {
 
   eleventyConfig.addDataExtension('yaml', contents => yaml.safeLoad(contents))
 
-  // eleventyConfig.addShortcode('sectionSeparator', function() {
-  //  return `<p><br><br></p>`;
-  // })
-
   eleventyConfig.addShortcode('orangeDot', function() {
     return `<span class="orange-dot"></span></span>`;
   })
