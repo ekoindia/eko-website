@@ -71,6 +71,7 @@ button:-moz-focusring,
 
 
 /* ============= SECTIONS / COMPONENTS =================== */
+
 section, nav, footer {
 	box-sizing: border-box;
 	width: 100%;
@@ -79,16 +80,21 @@ section, nav, footer {
 	padding-right: 5px;
 }
 
+section {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
 @media (min-width: 576px) {
 	section, nav, footer {
 		padding-left: 10%;
 		padding-right: 10%;
 	}
-}
 
-section {
-  padding-top: 8px;
-  padding-bottom: 8px;
+	section {
+		padding-top: 5%;
+		padding-bottom: 5%;
+	}
 }
 
 
@@ -97,12 +103,10 @@ padding-right: 20px;
 }
 
 /* TODO: Fix this. Normally used with <section> */
-.background-section{
-width: 100%;
-background-color: var(--background-section-color);
-padding-top: 100px !important;
-padding-bottom: 100px;
-margin: 0;
+.background-section {
+	width: 100%;
+	background-color: var(--background-section-color);
+	margin: 0;
 }
 
 .scroll-icon-container .scroll-icon {
@@ -493,11 +497,6 @@ h6 {
 
 
 /* ================================= CSS Navigation =================================== */
-
-nav > section {
-	padding-top: 0;
-	padding-bottom: 0;
-}
 
 nav h5 {
 	margin-top: 0 !important;
