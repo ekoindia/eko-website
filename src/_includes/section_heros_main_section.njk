@@ -1,37 +1,36 @@
-<div class="background-section">
-    <center>
-        <h1>{{ item.header }}</h1>
-        <div class="h2-border"></div>
-    </center>
+<section class="background-section">
+	<center>
+		<h1>{{ item.header }}</h1>
+		<div class="h2-border"></div>
+	</center>
 
-    {% for hero_key, hero_val in item %}
-    {% if hero_key != 'header' %}
-        {% if hero_val.single_hero %}
-            <section class="container">
-            <center>
-                <img class="mw-100" style="width: 500px; height: 300px; background-color: rgba(0,0,255,0.1);" src="{{ hero_val.image }}" alt="{{ hero_val.title }}">
-                <br><br>
-                <h3>{{ hero_val.title }}</h3>
-                <p>{{ hero_val.text }}</p>
-            </center>
-            </section>
-            {% sectionSeparator %}
-        {% elif not hero_val.single_hero %}
-            <section class="pure-g container">
-                <div class="pure-u-1 pure-u-md-1 pure-u-lg-1-2 l-box order-1-sm order-1-md">
-                    <center><img src="{{ hero_val.image_left }}" alt="{{ hero_val.title_left }}">
-                    <br><br>
-                    <h3>{{ hero_val.title_left }}</h3>
-                    <p>{{ hero_val.text_left }}</p></center>
-                </div>
-                <div class="pure-u-1 pure-u-md-1 pure-u-lg-1-2 l-box order-2-sm order-2-md">
-                    <center><img src=" {{ hero_val.image_right }}" alt="{{ hero_val.title_right }}">
-                    <br><br>
-                    <h3>{{ hero_val.title_right }}</h3>
-                    <p>{{ hero_val.text_right }}</p></center>
-                </div>
-            </section>
-            {% sectionSeparator %}
-        {% endif %}
-        {% endif %}
-    {% endfor %}
+	{% for hero_key, hero_val in item %}
+		{% if hero_key != 'header' %}
+			{% if hero_val.single_hero %}
+				<div>
+				<center>
+					<img class="mw-100" style="width: 500px; height: 300px; background-color: rgba(0,0,255,0.1);" src="{{ hero_val.image }}" alt="{{ hero_val.title }}">
+					<br><br>
+					<h3>{{ hero_val.title }}</h3>
+					<p>{{ hero_val.text }}</p>
+				</center>
+				</div>
+			{% elif not hero_val.single_hero %}
+				<div class="pure-g">
+					<div class="pure-u-1 pure-u-md-1 pure-u-lg-1-2 l-box order-1-sm order-1-md">
+						<center><img src="{{ hero_val.image_left }}" alt="{{ hero_val.title_left }}">
+						<br><br>
+						<h3>{{ hero_val.title_left }}</h3>
+						<p>{{ hero_val.text_left }}</p></center>
+					</div>
+					<div class="pure-u-1 pure-u-md-1 pure-u-lg-1-2 l-box order-2-sm order-2-md">
+						<center><img src=" {{ hero_val.image_right }}" alt="{{ hero_val.title_right }}">
+						<br><br>
+						<h3>{{ hero_val.title_right }}</h3>
+						<p>{{ hero_val.text_right }}</p></center>
+					</div>
+				</div>
+			{% endif %}
+		{% endif %}
+	{% endfor %}
+</section>

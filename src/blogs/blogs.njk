@@ -9,12 +9,11 @@ permalink: /blogs/{{ tag }}/
 
 {% block main %}
     {% set blogslist = collections[ tag ] %}
-    <div class="container">
+    <section>
         <header>
             <h1>Blog Posts  - {{ tag | capitalize  }}</h1>
             <span class="h2-border"></span>
         </header>
         {% include "blogslist.njk" %}
-    </div>
-    {% sectionSeparator %}
+    </section>
 {% endblock %}
