@@ -13,19 +13,18 @@
     mid_summary:
       small_description: Money Transfer
       header: Instant money transfer, anytime & anywhere
+
     alternating_steps:
-      step1:
-        title: Easy Cash transfer
+      - title: Easy Cash transfer
         text: 'Customers can transfer cash to anyone by specifying their bank details right at your doorstep'
         image: /images/money-transfer/easy-cash-transfer.svg
-      step2:
-        title: Transaction-assurance
+      - title: Transaction-assurance
         text: Assure your customers that their money is safe using our transaction assurance option
         image: /images/money-transfer/transaction-assurance.svg
-      step3:
-        title: Transaction receipt
+      - title: Transaction receipt
         text: Print transaction-receipt for your customers to give them a sense of safety
         image: /images/money-transfer/transaction-receipt.svg
+
     heros_main_section:
       header: Benefits
       line1:
@@ -55,35 +54,33 @@
         text_right: Customers can save time and money by not having to travel to bank branches. They can use all these basic banking services at your shop.
         image_right: /images/money-transfer/save-money.svg
         single_hero: false
+
     one_liner:
       icon: /images/eko-trust.svg
       title: Eko's Trust
       text: You can assure your customers that their money and data is safe. Eko’s trust is unparalleled
+
     step_section:
       header: How money transfer works
-      box1:
-        title: 'Step 1:'
-        text: Sign Up on Connect
-        link: https://connect.eko.in/
-      box2:
-        title: 'Step 2:'
-        text: Enter customer mobile number
-      box3:
-        title: 'Step 3:'
-        text: Enter amount and bank details
-      box4:
-        title: 'Step 4:'
-        text: Click send and collect cash
+      steps:
+      - text: Sign Up on Connect
+        link: https://connect.eko.in
+      - text: Enter customer mobile number
+      - text: Enter amount and bank details
+      - text: Click send and collect cash
+
     message:
       line1: A customer who wishes to use your service would simply need to provide his mobile number and details of the bank account to transfer money to.
       main_line: For all issues, we provide 24x7 support.
       button_text: Contact Support
+
     final_ad:
       small_header: Ready to get started?
       main_header: Become Eko Partner & Earn More
       image: /images/become-eko-partner.svg
       button1_text: Get Started
       button2_text: Contact Sales
+
 
 
 - name: Aadhaar Banking
@@ -101,31 +98,31 @@
     mid_summary:
       small_description: Earn with Aadhaar Banking (AePS)
       header: Turn your shop into an ATM
+
     single_hero:
       title: Easy Cash Withdrawal
       text: AePS allows you to turn your shop into an ATM and lets your customers withdraw cash using their fingerprint.
       image: /images/aadhaar-banking/easy-cash-withdrawal.svg
+
     short_ad:
       title: Jan Dhan Government Benefit
       text: AePS allows your customers to withdraw their DBT (Direct Benefit Transfers) from government in their Jan Dhan account.
       image: /images/aadhaar-banking/jan_dhan.svg
+
     alternating_steps:
-      step1:
-        title: Easy Cash Deposit
+      - title: Easy Cash Deposit
         text: AePS also allows you to turn your shop into a cash deposit machine. Your customers can then deposit cash at your shop with ease.
         image: /images/aadhaar-banking/easy-cash-deposit.svg
-      step2:
-        title: Quick Fund Transfer
+      - title: Quick Fund Transfer
         text: With AePS you will never have to go to a Bank or an ATM and you will not need a debit card also. Just transfer funds using your fingerprint.
         image: /images/aadhaar-banking/quick-fund-transfer.svg
-      step3:
-        title: Instant Balance-inquiry
+      - title: Instant Balance-inquiry
         text: AePS allows your customers to check their bank balance at your shop instantly.
         image: /images/aadhaar-banking/instant-balance-inquiry.svg
-      step4:
-        title: Mini Statement
+      - title: Mini Statement
         text: AePS will also let your customers take the mini statement of their account at your shop
         image: /images/aadhaar-banking/mini-statement.svg
+
     heros_main_section:
       header: Benefits
       line1:
@@ -139,25 +136,21 @@
         image_right: /images/aadhaar-banking/best-success-rate.svg
         # Checks if 2 benefits are side by side
         single_hero: false
+
     one_liner:
       icon: /images/eko-trust.svg
       title: Eko's Trust
       text: You can assure your customers that their money and data is safe. Eko’s trust is unparalleled
+
     step_section:
       header: How to use Aadhaar Banking
-      box1:
-        title: 'Step 1:'
-        text: Sign Up on Connect
-        link: https://connect.eko.in/
-      box2:
-        title: 'Step 2:'
-        text: Enable AePS using the Connect app
-      box3:
-        title: 'Step 3:'
-        text: Register your biometric device
-      box4:
-        title: 'Step 4:'
-        text: Start serving your customers
+      steps:
+      - text: Sign Up on Connect
+        link: https://connect.eko.in
+      - text: Enable AePS using the Connect app
+      - text: Register your biometric device
+      - text: Start serving your customers
+
     message:
       line1: A customer who wishes to use your service would simply need to provide his aadhar number, name, and account number.
       line2: The process to enable AePS and register your biometric device is easy.
@@ -166,15 +159,15 @@
     small_heros_section:
       header: Our Partners
       partner1:
-        image: /images/aadhaar-banking/partner1.svg
+        image: /images/aadhaar-banking/billdesk.png
       partner2:
-        image: /images/aadhaar-banking/partner2.svg
+        image: /images/aadhaar-banking/nsdl.png
       partner3:
-        image: /images/aadhaar-banking/partner3.svg
+        image: /images/aadhaar-banking/bharat.png
       partner4:
-        image: /images/aadhaar-banking/partner4.svg
+        image: /images/aadhaar-banking/aeps.png
       partner5:
-        image: /images/aadhaar-banking/partner5.svg
+        image: /images/aadhaar-banking/npcl.png
     final_ad:
       small_header: Ready to get started?
       main_header: Use Aadhaar Banking & Earn More
