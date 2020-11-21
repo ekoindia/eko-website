@@ -90,12 +90,12 @@
 
 	{% include "footer.njk" %}
 
-	{% set netlify_admin %}
+	{% set netlify_cms %}
       {% include "js/netlify_cms.js" %}
     {% endset %}
 
     <script>
-      {{ netlify_admin | jsmin | safe }}
+      {{ netlify_cms | jsmin | safe }}
     </script>
   </body>
 </html>
