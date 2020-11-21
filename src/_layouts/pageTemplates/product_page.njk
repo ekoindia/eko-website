@@ -22,9 +22,9 @@
 
 {% block main %}
   <main>
-    {% include "top_hero.njk" %}
+    {% include "section_top_hero.njk" %}
     {% for key, val in product.layout %}
-      {% set component = key + ".njk" %}
+      {% set component = "section_" + key + ".njk" %}
       {% set item = product.layout[key] %}
       {% include component %}
       {% sectionSeparator %}

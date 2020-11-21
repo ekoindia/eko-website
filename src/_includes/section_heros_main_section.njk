@@ -7,17 +7,17 @@
     {% for hero_key, hero_val in item %}
     {% if hero_key != 'header' %}
         {% if hero_val.single_hero %}
-            <div class="container">
+            <section class="container">
             <center>
                 <img class="mw-100" style="width: 500px; height: 300px; background-color: rgba(0,0,255,0.1);" src="{{ hero_val.image }}" alt="{{ hero_val.title }}">
                 <br><br>
                 <h3>{{ hero_val.title }}</h3>
                 <p>{{ hero_val.text }}</p>
             </center>
-            </div>
+            </section>
             {% sectionSeparator %}
         {% elif not hero_val.single_hero %}
-            <div class="pure-g container">
+            <section class="pure-g container">
                 <div class="pure-u-1 pure-u-md-1 pure-u-lg-1-2 l-box order-1-sm order-1-md">
                     <center><img src="{{ hero_val.image_left }}" alt="{{ hero_val.title_left }}">
                     <br><br>
@@ -30,7 +30,7 @@
                     <h3>{{ hero_val.title_right }}</h3>
                     <p>{{ hero_val.text_right }}</p></center>
                 </div>
-            </div>
+            </section>
             {% sectionSeparator %}
         {% endif %}
         {% endif %}

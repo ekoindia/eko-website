@@ -1,0 +1,16 @@
+<section class="container">
+	<center>
+		<h1>{{ item.header}}</h1>
+		<span class="h2-border"></span>
+	</center>
+	<p><br></p>
+	<center>
+		<div class="pure-g">
+			{% for partner in item.partner_images %}
+				<div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-5 l-box">
+					<img class="dimmed-image" src="{{ partner.image }}">
+				</div>
+			{% endfor %}
+		</div>
+	</center>
+</section>
