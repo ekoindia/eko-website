@@ -290,8 +290,6 @@ font-weight: 600;
 .img-box {
   display: inline-block;
   padding: 17px 55px;
-  vertical-align: middle;
-  margin-right: 15px;
   width: 190px;
   height: 62px;
 }
