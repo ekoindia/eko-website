@@ -92,8 +92,12 @@ section {
 	}
 
 	section {
-		padding-top: 5%;
-		padding-bottom: 5%;
+		padding-top: 3%;
+		padding-bottom: 3%;
+	}
+
+	main {
+		padding-top: 1%;
 	}
 }
 
@@ -686,6 +690,22 @@ nav ul {
 	.mobileNav {
 		display: block;
 	}
+
+	.mobileNav #cbp-hrmenu {
+		display: none;
+	}
+}
+
+.mobileNav #cbp-hrmenu {
+  display: none;
+}
+
+.mobileNav .icon {
+  display: block;
+  position: absolute;
+  right: 10px;
+  top: 25px;
+  height: auto;
 }
 
 
