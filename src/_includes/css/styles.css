@@ -72,7 +72,7 @@ button:-moz-focusring,
 
 /* ============= SECTIONS / COMPONENTS =================== */
 
-section, nav, footer {
+section, footer {
 	box-sizing: border-box;
 	width: 100%;
 	margin: 0;
@@ -86,7 +86,7 @@ section {
 }
 
 @media (min-width: 576px) {
-	section, nav, footer {
+	section, footer {
 		padding-left: 10%;
 		padding-right: 10%;
 	}
@@ -502,6 +502,14 @@ h6 {
 
 /* ================================= CSS Navigation =================================== */
 
+nav {
+	width: 100%;
+	box-sizing: border-box;
+	margin: 0;
+	padding-left: 2px;
+	padding-right: 2px;
+}
+
 nav h5 {
 	margin-top: 0 !important;
 	margin-bottom: 10px;
@@ -580,6 +588,11 @@ width: 750px;
 z-index: 500;
 }
 
+.mega-menu li {
+	font-size: 16px !important;
+	font-weight: 500 !important;
+}
+
 .small {
   width: 400px !important;
 }
@@ -593,10 +606,11 @@ z-index: 500;
   }
 }
 
-.capt {
-  font-size: 10px;
-  font-weight: 500;
+.mega-menu .small .capt {
+  font-size: 10px !important;
+  font-weight: 500 !important;
   color: var(--nav-caption) !important;
+  opacity: 0.8;
 }
 
 li:hover > .mega-menu {
@@ -608,7 +622,7 @@ visibility: visible;
 /* menu content */
 .nav-column a {
 font-size: 16px;
-font-weight: 700;
+font-weight: 600;
 color: var(--header-color);
 padding: 0;
 }
@@ -621,7 +635,7 @@ padding: 0;
   font-size: 20px !important;
   font-weight: bold !important;
   color: var(--primary-color) !important;
-  padding-bottom: 10px;
+  padding-bottom: -5px !important;
   padding-top: 10px;
 }
 
@@ -682,7 +696,7 @@ nav ul {
 	list-style-type: none;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 900px) {
 	.topnav {
 		display: none;
 	}
@@ -774,17 +788,17 @@ nav ul {
 }
 
 .cbp-hrmenu > ul > li, .single-nav {
-	display: inline-block;
+	display: block;
 }
 
 .cbp-hrmenu > ul > li > a, .single-nav {
-	display: inline-block;
+	display: block;
 }
 
 /* sub-menu */
 .cbp-hrmenu .cbp-hrsub {
 	display: none;
-	position: absolute;
+	position: relative;
 	width: 100%;
 	left: 0;
 }
