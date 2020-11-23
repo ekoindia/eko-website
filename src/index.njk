@@ -60,46 +60,33 @@
 {% include "section_single_hero.njk" %}
 
 {# Icon List #}
-<section class="background-section">
-    <center>
-        <h1>Benefits</h1>
-        <div class="h2-border"></div>
-    </center>
-    <div class="pure-g">
-        <div class="pure-u-1 pure-u-md-1-3 three-box order-1-sm order-1-md">
-            <center><img src="/images/main/merchant-onboarding-icon.svg" alt="">
-            <p>Instant retailer onboarding</p></center>
-        </div>
-        <div class="pure-u-1 pure-u-md-1-3 three-box order-1-sm order-1-md">
-            <center><img src="/images/main/success-rate.svg" alt="">
-            <p>Industry-leading success rates</p></center>
-        </div>
-        <div class="pure-u-1 pure-u-md-1-3 three-box order-1-sm order-1-md">
-            <center><img src="/images/main/seamless-integration.svg" alt="">
-            <p>Seamless integration with all the service</p></center>
-        </div>
-    </div>
-    {# Side-by-Side Heros #}
-    <div class="pure-g">
-        <div class="pure-u-1 pure-u-md-1-2 l-box">
-            <center>
-                <img src="/images/main/easy-integration.svg" alt="">
-                <br><br>
-                <h2>Easy Integration</h2>
-                <p>Our API is well-documented and easy to understand. Integrating is as easy as it can get. We provide 24x7 manual integration support just in case, leaving no stone unturned to make the integration process seamless.</p>
-            </center>
-        </div>
-        <div class="pure-u-1 pure-u-md-1-2 l-box">
-            <center>
-                <img src="/images/main/simple-documentation.svg" alt=""> 
-                <br><br>
-                <h2>Simple Documentation</h2>
-                <p>The documentation for our APIs is comprehensive and comprehensible! We constantly update it to explain the minutest detail. Whether you use Python, Java, PHP, or C#, we have you covered!</p>
-            </center>
-        </div>
-    </div>
-</section>
-
+{% set item = {
+    "header": "Benefits",
+    "icons": [
+        {
+            "image": "/images/main/merchant-onboarding-icon.svg",
+            "caption": "Instant retailer onboarding"
+        },
+        {
+            "image": "/images/main/success-rate.svg",
+            "caption": "Industry-leading success rates"
+        },
+        {
+            "image": "/images/main/seamless-integration.svg",
+            "caption": "Seamless integration with all the service"
+        }],
+    "heros": [
+        {
+            "type": "pair",
+            "title_left": "Easy Integration",
+            "text_left": "Our API is well-documented and easy to understand. Integrating is as easy as it can get. We provide 24x7 manual integration support just in case, leaving no stone unturned to make the integration process seamless.",
+            "image_left": "/images/main/easy-integration.svg",
+            "title_right": "Simple Documentation",
+            "text_right": "The documentation for our APIs is comprehensive and comprehensible! We constantly update it to explain the minutest detail. Whether you use Python, Java, PHP, or C#, we have you covered!",
+            "image_right": "/images/main/simple-documentation.svg"
+        }]
+} %}
+{% include "section_heros_main.njk" %}
 
 {# One Liner #}
 {% set item = {
@@ -236,7 +223,7 @@
         "image": "/images/main/partner5.webp"
     }]
 } %}
-{% include "section_small_heros_section.njk" %}
+{% include "section_small_heros.njk" %}
 
 {# Form #}
 <section class="background-section">

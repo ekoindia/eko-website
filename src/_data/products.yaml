@@ -24,7 +24,7 @@
         text: Print transaction-receipt for your customers to give them a sense of safety
         image: /images/money-transfer/transaction-receipt.svg
       # Can add more steps here
-    - section: heros_main_section
+    - section: heros_main
       header: Benefits
       heros: 
         - type: pair # 2 heros side-by-side
@@ -115,7 +115,7 @@
       - title: Mini Statement
         text: AePS will also let your customers take the mini statement of their account at your shop
         image: /images/aadhaar-banking/mini-statement.svg
-    - section: heros_main_section
+    - section: heros_main
       header: Benefits
       heros: 
         - type: pair
@@ -148,7 +148,7 @@
       line2: The process to enable AePS and register your biometric device is easy.
       main_line: For all issues, we provide 24x7 support.
       button_text: Contact Support
-    - section: small_heros_section
+    - section: small_heros
       header: Our Partners
       partner_images:
       - image: /images/aadhaar-banking/billdesk.png
