@@ -1,41 +1,45 @@
 <section class="pure-g flex-grid">
-  <div class="pure-u-1 pure-u-lg-1-2">
-  <br><br>
-    <div class="pure-g">
-      <div class="pure-u-1-2 pure-u-md-10-24">
-        <br><br>
-        <h5>{{ product.title }}</h5>
-      </div>
-      <div class="pure-u-1-2 pure-u-md-10-24">
-          <img src="{{ product.icon }}" alt="">
-      </div>
-    </div>
-    <div class="pure-g">
-      <div class="pure-u-1">
-        <h1>{{ product.tag_line }}</h1>
-        <p>{{ product.summary }}</p>
-      </div>
-    </div>
-    <div class="pure-g">
-      <div class="pure-u-1 pure-u-md-1-2 l-box">
-        <a href="{{ website.signup_url }}" class="button">Try for free</a>
-      </div>
-      <div class="pure-u-1 pure-u-md-1-2 l-box">
-      {% if product.video_link %}
-        <a href="{{ product.video_link }}" rel="noopener" target="_blank">
-          Learn More
-          <svg width="3em" height="1em" viewBox="0 0 10 12" class="bi bi-arrow-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
-            </svg>
-        </a>
-      {% endif %}
-      </div>
-    </div>
-  </div>
-  <div class="pure-u-1 pure-u-lg-1-2">
-    <img src="{{ product.hero_image }}" alt="{{ product.name }} image">
-  </div>
+	<div class="pure-u-1 pure-u-md-1-2">
+		<br><br>
+		<div class="pure-g flex-grid">
+			<div class="pure-u-1 pure-u-md-1-2">
+				<br><br>
+				<h5>{{ product.title }}</h5>
+			</div>
+			<div class="pure-u-1 pure-u-md-1-2">
+				<br><br>
+				<img src="{{ product.icon }}">
+			</div>
+		</div>
+		<div class="pure-g flex-grid">
+			<div class="pure-u-1">
+				<h1>{{ product.tag_line }}</h1>
+				<p>{{ product.summary }}</p>
+			</div>
+		</div>
+    	<div class="pure-g flex-grid">
+			{% if product.video_link %}
+				<div class="pure-u-1 pure-u-md-1-2 l-box">
+					<a href="{{ website.signup_url }}" class="button">Try for free</a>
+				</div>
+				<div class="pure-u-1 pure-u-md-1-2 l-box">
+					<a href="{{ product.video_link }}" rel="noopener" target="_blank">
+					Learn More
+					<svg width="3em" height="1em" viewBox="0 0 10 12" class="bi bi-arrow-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/></svg>
+					</a>
+				</div>
+			{% else %}
+				<div class="pure-u-1">
+				<a href="{{ website.signup_url }}" class="button">Try for free</a>
+				</div>
+			{% endif %}
+		</div>
+	</div>
+	<div class="pure-u-1 pure-u-md-1-2">
+		<br><br><br><br>
+		<img src="{{ product.hero_image }}" alt="{{ product.name }}">
+	</div>
 </section>
-<br><br><br><br>
+<br><br>
 {% iconScroll %}
 <br>

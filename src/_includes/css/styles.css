@@ -357,11 +357,13 @@ footer h2 {
 footer .column-header {
   font-weight: bold;
   color: var(--footer-column-header);
+  font-size: 15px;
 }
 
 footer a {
   color: var(--footer-link);
   font-weight: bold;
+  font-size: 14px !important;
 }
 
 footer a:hover {
@@ -467,8 +469,20 @@ h6 {
 }
 
 .three-box {
-  padding: 90px;
+  padding: 5%;
 }
+
+.three-box p {
+  font-weight: 500 !important;
+  font-size: 18px !important;
+}
+
+.box-link {
+  color: dark-blue !important;
+  font-size: 12px !important;
+}
+
+
 
 .one-liner {
   width: 70%;

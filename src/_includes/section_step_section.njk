@@ -3,10 +3,10 @@
     <span class="h2-border"></span>
     <div class="pure-g">
         {% for box in item.steps %}
-			<div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-4 boxed">
+			<div class="pure-u-1 pure-u-md-1-5 boxed">
 				<h3 class="box-title">Step {{ loop.index }}:</h3>
 				<p class="box-text">{{ box.text }}</p>
-				<a href="{{ box.link }}">{{ box.link }}</a>
+				<a class="box-link" href="{{ box.link }}">{{ box.link }}</a>
             </div>
         {% endfor %}
     </div>
