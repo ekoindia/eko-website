@@ -1,14 +1,15 @@
-<nav class="menu-wrapper topnav pure-g flex-grid" role="navigation" id="topnavbar">
-
-    <div class="pure-u-1 pure-u-md-1-6 l-box order-1-sm">
+<nav class="topnav">
+  <div class="pure-g flex-grid">
+    <div class="pure-u-1 pure-u-md-1-6 order-1-sm">
       <a class="l-box-main" href="/"><img class="logo" src="{{ website.logo }}" alt="logo"></a>
     </div>
 
-    <div class="pure-u-1 pure-u-md-1-2 pure-u-sm-1 l-box order-3-sm">
-      <ul class="nav" role="menubar">
-        <li role="menuitem" class="l-box-main">
+    <div class="pure-u-1 pure-u-md-1-2">
+      <center>
+      <ul class="nav" class="menubar">
+        <li class="menuitem">
           <a href="#">Products</a>
-          <div class="mega-menu" aria-hidden="true" role="menu">
+          <div class="mega-menu" aria-hidden="true" class="menu">
             <div class="pure-g">
               <div class="pure-u-1 pure-u-md-5-24 nav-column l-box">
                 <br>
@@ -33,11 +34,11 @@
             </div>
         </li>
 
-        <li role="menuitem" class="l-box-main"><a href="https://eko.in/retailer">Retailers</a></li>
+        <li class="menuitem"><a href="https://eko.in/retailer">Retailers</a></li>
 
-        <li role="menuitem" class="l-box-main">
+        <li class="menuitem">
           <a href="#">Developers</a>
-          <div class="mega-menu small" aria-hidden="true" role="menu">
+          <div class="mega-menu small" aria-hidden="true" class="menu">
           <div class="pure-g">
             <div class="pure-u-1 pure-u-md-1-3 nav-column l-box">
               <h5>Developers</h5>
@@ -45,20 +46,20 @@
             </div>
             <div class="pure-u-1 pure-u-md-2-3 nav-column l-box">
               <ul>
-                <li rol="capt">Develop with</li>
-                <li role="menuitem"><a href="https://eko.in/developers/eps">{% orangeDot %} Eko Platform Services</a></li>
-                <li rol="capt">Resources</li>
-                <li role="menuitem"><a href="https://developers.eko.in/reference">{% orangeDot %} API references</a></li>
-                <li role="menuitem"><a href="https://developers.eko.in/docs">{% orangeDot %} Developer Guide</a></li>
+                <li class="capt">Develop with</li>
+                <li class="menuitem"><a href="https://eko.in/developers/eps">{% orangeDot %} Eko Platform Services</a></li>
+                <li class="capt">Resources</li>
+                <li class="menuitem"><a href="https://developers.eko.in/reference">{% orangeDot %} API references</a></li>
+                <li class="menuitem"><a href="https://developers.eko.in/docs">{% orangeDot %} Developer Guide</a></li>
               </ul>
             </div>
             </div>
           </div>
         </li>
 
-        <li role="menuitem" class="l-box-main">
+        <li class="menuitem">
           <a href="#">Company</a>
-          <div class="mega-menu small" aria-hidden="true" role="menu">
+          <div class="mega-menu small" aria-hidden="true" class="menu">
             <div class="pure-g">
             <div class="pure-u-1 pure-u-md-1-3 nav-column l-box">
               <h5>Company</h5>
@@ -66,40 +67,112 @@
             </div>
             <div class="pure-u-1 pure-u-md-2-3 nav-column l-box">
               <ul>
-                <li role="menuitem"><a href="/about-us/">{% orangeDot %} About Us</a></li>
-                <li role="menuitem"><a href="https://eko.in/our-brand-association">{% orangeDot %} Brand Partner</a></li>
-                <li rol="capt">Help Center</li>
-                <li role="menuitem"><a href="/blogs/">{% orangeDot %} Blogs</a></li>
-                <li role="menuitem"><a href="/eko-university/about-eko/">{% orangeDot %} Eko University</a></li>
-                <li role="menuitem"><a href="https://eko.in/faq">{% orangeDot %} FAQs</a></li>
+                <li class="menuitem"><a href="/about-us/">{% orangeDot %} About Us</a></li>
+                <li class="menuitem"><a href="https://eko.in/our-brand-association">{% orangeDot %} Brand Partner</a></li>
+                <li class="capt">Help Center</li>
+                <li class="menuitem"><a href="/blogs/">{% orangeDot %} Blogs</a></li>
+                <li class="menuitem"><a href="/eko-university/about-eko/">{% orangeDot %} Eko University</a></li>
+                <li class="menuitem"><a href="https://eko.in/faq">{% orangeDot %} FAQs</a></li>
               </ul>
             </div>
             </div>
           </div>
         </li>
       </ul>
+      </center>
     </div>
 
-    <div class="pure-u-1 pure-u-md-1-3 l-box order-2-sm">
-      <ul class="nav" role="menubar">
-        <li role="menuitem" class="l-box-main">
-          <a href="{{ website.contact_url }}"><img src="/images/paper-plane.svg" alt="">Contact Sales</a>
+    <div class="pure-u-1 pure-u-md-1-3">
+      <ul class="nav" class="menubar">
+        <li class="menuitem">
+          <a href="{{ website.contact_url }}"><img src="/images/paper-plane.svg" alt="">  Contact Sales</a>
         </li>
-        <li role="menuitem" class="l-box-main">
+        <li class="menuitem">
           <a href="{{ website.signup_url }}" class="button">Sign Up</a>
         </li>
       </ul>
     </div>
-
-    <a href="javascript:void(0);" class="icon" title="Menu" onclick="mobileNav()">
-      <i class="fa fa-bars"></i>
-    </a>
-
+  </div>
 </nav>
+
+
+{# Mobile Nav #}
+<div class="mobileNav">
+  <header class="clearfix">
+    <a href="/"><img class="logo" src="{{ website.logo }}" alt="logo"></a>
+  </header>
+  <nav id="cbp-hrmenu" class="cbp-hrmenu">
+    <ul>
+      <li class="menuitem">
+        <a href="#">Products</a>
+        <div class="cbp-hrsub">
+          <div class="cbp-hrsub-inner">
+            <div class="" aria-hidden="true" class="menu">
+              <ul>
+				{%- for product in products | rejectattr("hidden") | rejectattr("disabled") -%}
+					<li role="menuitem"><a href="/products/{{ product.name | slug }}">{% orangeDot %}&nbsp;{{ product.title }}</a></li>
+				{%- endfor -%}
+              </ul>
+            </div>
+          </div><!-- /cbp-hrsub-inner -->
+        </div><!-- /cbp-hrsub -->
+      </li>
+
+      <a class="single-nav" href="https://eko.in/retailer">Retailers</a>
+
+      <li class="menuitem">
+        <a href="#">Developers</a>
+        <div class="cbp-hrsub">
+        <div class="cbp-hrsub-inner">
+        <div aria-hidden="true" class="menu">
+          <ul>
+            <li class="menuitem"><a href="https://eko.in/developers/eps">{% orangeDot %} Eko Platform Services</a></li>
+            <li class="menuitem"><a href="https://developers.eko.in/reference">{% orangeDot %} API references</a></li>
+            <li class="menuitem"><a href="https://developers.eko.in/docs">{% orangeDot %} Developer Guide</a></li>
+          </ul>
+        </div>
+        </div>
+        </div>
+      </li>
+
+      <li class="menuitem">
+        <a href="#">Company</a>
+        <div class="cbp-hrsub">
+        <div class="cbp-hrsub-inner">
+        <div aria-hidden="true" class="menu">
+          <ul>
+            <li roclassle="menuitem"><a href="/about-us/">{% orangeDot %} About Us</a></li>
+            <li class="menuitem"><a href="https://eko.in/our-brand-association">{% orangeDot %} Brand Partner</a></li>
+            <li class="menuitem"><a href="/blogs/">{% orangeDot %} Blogs</a></li>
+            <li class="menuitem"><a href="/eko-university/about-eko/">{% orangeDot %} Eko University</a></li>
+            <li class="menuitem"><a href="https://eko.in/faq">{% orangeDot %} FAQs</a></li>
+          </ul>
+        </div>
+        </div>
+        </div>
+      </li>
+    </ul>
+  </nav>
+  <a href="javascript:void(0);" class="icon" title="Button to open navigation bar on mobile phone" onclick="mobileNav()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
 
 <script>
 function mobileNav() {
-  var x = document.getElementById("topnavbar");
-  if (x) { x.classList.toggle("responsive"); }
+  var x = document.getElementById("cbp-hrmenu");
+  if (x.style.display === "block") {
+   x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
 }
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+{% set responsiveNav %}
+  {% include "js/nav.js" %}
+{% endset %}
+<script>
+  {{ responsiveNav | jsmin | safe }}
 </script>
