@@ -6,7 +6,7 @@ collections:
   - name: "blog"
     label: "Blog"
     folder: "src/blogs"
-    create: true 
+    create: true
     slug: "{{slug}}"
     fields:
       - {label: "Layout", name: "layout", widget: "hidden", default: "blog_post"}
@@ -17,9 +17,9 @@ collections:
       - {label: "Tags", name: "tags", widget: "list", hint: "Choose a theme or multiple themes associated with this blog post. Enter tags in a comma-separated list. Ex) technology, finance", required: false}
       - {label: "Body", name: "body", widget: "markdown"}
 
-  - name: "settings" 
+  - name: "settings"
     label: "Settings"
-    files: 
+    files:
       - name: "website settings"
         label: "Website Settings"
         file: "src/_data/website.yaml"

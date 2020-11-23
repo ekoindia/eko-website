@@ -98,5 +98,16 @@
     <script>
       {{ netlify_cms | jsmin | safe }}
     </script>
+
+	{# ~~~~~ Global site tag (gtag.js) - Google Analytics ~~~~~ #}
+    <script async src="https://www.googletagmanager.com/gtag/js?id={{ website.analytics_key }}"></script>
+	{% set google %}
+		{% include "js/google_analytics.js" %}
+    {% endset %}
+    <script>
+		{{ google | jsmin | safe }}
+		window.onload = googleAnalytics('{{ website.analytics_key }}');
+    </script>
+
   </body>
 </html>
