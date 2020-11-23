@@ -10,6 +10,8 @@
     - section: mid_summary
       small_description: Money Transfer
       header: Instant money transfer, anytime & anywhere
+      main_text: Eko’s remittance service gives you the feature to turn your own shop into a bank. Customers who do not have bank accounts but still want to transfer money using cash can visit your shop. You can take the cash and transfer digital money to the bank account specified by them. Easy and effective!
+
     - section: alternating_steps
       steps:
       - title: Easy Cash transfer
@@ -90,6 +92,7 @@
     - section: mid_summary
       small_description: Earn with Aadhaar Banking (AePS)
       header: Turn your shop into an ATM
+      main_text: Aadhar banking (AePS) helps you turn your own shop into an ATM. It provides you the ability to deliver services such as cash deposit, cash withdrawal, and balance check to your customers. This is particularly useful for customers who do not trust themselves to be able to use an ATM properly. Help them out, help yourself out!
     - section: single_hero
       title: Easy Cash Withdrawal
       text: AePS allows you to turn your shop into an ATM and lets your customers withdraw cash using their fingerprint.

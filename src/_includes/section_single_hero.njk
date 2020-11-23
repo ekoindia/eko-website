@@ -3,7 +3,18 @@
         <img src="{{ item.image }}" alt="">
     </div>
     <div class="pure-u-1 pure-u-md-1-2 l-box order-2-sm">
-        <h3>{{ item.title }}</h3>
+        {% if item.link_text %}
+            <h1 class="header">{{ item.title }}</h1>
+            <div class="h2-border"></div>
+        {% else %}
+            <h3>{{ item.title }}</h3>
+        {% endif %}
         <p>{{ item.text }}</p>
+        {% if item.link_text %}
+            <a href="{{ item.link }}" title="Brand Association link to learn more">{{ item.link_text }}</a>
+            <svg width="3em" height="1em" viewBox="0 0 10 12" class="bi bi-arrow-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+            </svg>
+        {% endif %}
     </div>
 </section>
