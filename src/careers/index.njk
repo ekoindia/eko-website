@@ -1,0 +1,26 @@
+---
+pagination:
+  data: collections
+  size: 10
+  alias: tag
+  filter:
+    - all
+    - blog
+eleventyExcludeFromCollections: true
+---
+
+{% extends "../_layouts/pageTemplates/base.njk" %}
+
+{% block main %}
+<main>
+    <section>
+        <header>
+            <h1>Career Posts</h1>
+            <span class="h2-border"></span>
+        </header>
+    </section>
+    
+    {% set careers_list = collections.career %}
+    {% include "careers_list.njk" %}
+</main>
+{% endblock %}

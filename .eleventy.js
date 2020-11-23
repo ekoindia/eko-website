@@ -78,6 +78,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addLayoutAlias('base', 'pageTemplates/base.njk');
   eleventyConfig.addLayoutAlias('product_page', 'pageTemplates/product_page.njk');
   eleventyConfig.addLayoutAlias('blog_post', 'pageTemplates/blog_post.njk');
+  eleventyConfig.addLayoutAlias('career_post', 'pageTemplates/career_post.njk');
   eleventyConfig.addLayoutAlias('ekoUniversity', 'pageTemplates/ekoUniversity.njk');
 
   eleventyConfig.addDataExtension('yaml', contents => yaml.safeLoad(contents))
@@ -97,6 +98,10 @@ module.exports = function(eleventyConfig) {
   // Filter source file names using a glob
   eleventyConfig.addCollection("blog", function(collection) {
     return collection.getFilteredByGlob('src/blogs/*.md');
+  });
+
+  eleventyConfig.addCollection("career", function(collection) {
+    return collection.getFilteredByGlob('src/careers/*.md');
   });
 
   return {

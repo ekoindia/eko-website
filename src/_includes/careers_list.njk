@@ -1,0 +1,16 @@
+<div class="container">
+<div class="band">
+    {% for career in careers_list | reverse %}
+    <div class="item">
+        <a href="{{ career.url | url }}" class="card">
+        <div class="thumb" style="background-image: url({{ career.data.image }})"></div>
+        <article>
+            <h1>{{ career.data.title }}</h1>
+            <span><time datetime="{{ career.date | htmlDateString }}">{{ career.date | readableDate }}</time></span>
+            <p>{{ career.data.description }}</p>
+        </article>
+        </a>
+    </div>
+    {% endfor %}
+</div>
+</div>
