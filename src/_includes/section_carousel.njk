@@ -1,9 +1,31 @@
-{% block carousel %}
-    <script src="https://unpkg.com/embla-carousel"></script>
-{% endblock %}
+<section>
+{% if item.header %}
+    <h1>{{ item.header }}</h1>
+    <div class="h2-border"></div>
+{% endif %}
 
 <center>
-<section class="embla">
+<div class="embla">
+    {% if item.style == "gallery" %}
+    <div class="embla__viewport gallery">
+    <div class="gallery__container">
+        {% for slide in item.slides %}
+            <div class="gallery__slide">
+                <div class="pure-g gallery__slide__inner">
+                    <div class="pure-u-1 pure-u-md-1-2 l-box order-2-sm">
+                        <p>{{ slide.description }}</p>
+                    </div>
+                    <div class="pure-u-1 pure-u-md-1-2 l-box order-1-sm partner-box">  
+                        <center>
+                            <img class="round" src="{{ slide.image }}" alt="">
+                            <h1>{{ slide.title }}</h1>
+                            <p class="caption">{{ slide.caption }}</p>
+                        </center>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    {% else %}
     <div class="embla__viewport">
     <div class="embla__container">
         {% for slide in item.slides %}
@@ -19,6 +41,7 @@
             </div>
             </div>
         {% endfor %}
+    {% endif %}
     </div>
     </div>
     {# Buttons #}
