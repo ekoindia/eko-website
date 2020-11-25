@@ -24,6 +24,13 @@
     <meta name="twitter:description" content="{{ website.tag_line }}">
     <meta name="twitter:image" content="{{ website.image }}">
   {% endblock %}
+
+  {# Placeholders #}
+  {% block custom_css %}
+  {% endblock %}
+  {% block js %}
+  {% endblock %}
+
     {# Link CSS Files#}
     {% set css_main %}
       {% include "css/styles.css" %}
