@@ -10,6 +10,8 @@
     - section: mid_summary
       small_description: Money Transfer
       header: Instant money transfer, anytime & anywhere
+      main_text: Eko’s remittance service gives you the feature to turn your own shop into a bank. Customers who do not have bank accounts but still want to transfer money using cash can visit your shop. You can take the cash and transfer digital money to the bank account specified by them. Easy and effective!
+
     - section: alternating_steps
       steps:
       - title: Easy Cash transfer
@@ -22,7 +24,7 @@
         text: Print transaction-receipt for your customers to give them a sense of safety
         image: /images/money-transfer/transaction-receipt.svg
       # Can add more steps here
-    - section: heros_main_section
+    - section: heros_main
       header: Benefits
       heros: 
         - type: pair # 2 heros side-by-side
@@ -90,6 +92,7 @@
     - section: mid_summary
       small_description: Earn with Aadhaar Banking (AePS)
       header: Turn your shop into an ATM
+      main_text: Aadhar banking (AePS) helps you turn your own shop into an ATM. It provides you the ability to deliver services such as cash deposit, cash withdrawal, and balance check to your customers. This is particularly useful for customers who do not trust themselves to be able to use an ATM properly. Help them out, help yourself out!
     - section: single_hero
       title: Easy Cash Withdrawal
       text: AePS allows you to turn your shop into an ATM and lets your customers withdraw cash using their fingerprint.
@@ -112,7 +115,7 @@
       - title: Mini Statement
         text: AePS will also let your customers take the mini statement of their account at your shop
         image: /images/aadhaar-banking/mini-statement.svg
-    - section: heros_main_section
+    - section: heros_main
       header: Benefits
       heros: 
         - type: pair
@@ -145,7 +148,7 @@
       line2: The process to enable AePS and register your biometric device is easy.
       main_line: For all issues, we provide 24x7 support.
       button_text: Contact Support
-    - section: small_heros_section
+    - section: small_heros
       header: Our Partners
       partner_images:
       - image: /images/aadhaar-banking/billdesk.png

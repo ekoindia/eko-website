@@ -1096,3 +1096,70 @@ article {
 		float: none;
 	}
 }
+
+.accordian a {
+  display: block;
+  padding: 10px 15px;
+}
+
+.drop-down-menu {
+  display: block;
+  padding: 0.2em;
+  width: 60%;
+  border: solid 1px #d4d4d4;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.menu-title {
+  display: block;
+  padding: 10px 15px;
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.accordion p {
+  font-size: 16px;
+  padding: 10px 15px;
+}
+
+.activate {
+  display: none;
+  position: absolute;
+  cursor: pointer;
+  width: 100%;
+  height: 40px;
+  margin: 0 0 0 -15px;
+  opacity: 0;
+}
+
+.drop-down {
+  max-height: 0;
+  overflow: hidden;
+}
+
+.activate:checked ~ .drop-down {
+  max-height: 200px;
+}
+
+.activate:checked ~ .menu-title {
+  color: var(--main-theme-color);
+}
+
+.drop-down, .menu p, .drop-down-menu {
+  -webkit-transform: translateZ(0);  
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.right-arrow {
+  float: right;
+  margin-right: 20%;
+  margin-top: 0;
+  font-weight: bold;
+  font-size: 14px;
+}

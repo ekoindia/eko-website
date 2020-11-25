@@ -1,10 +1,25 @@
 <section class="background-section">
     <center>
         <div class="one-liner">
-            <img src="{{ item.icon }}" alt="{{ item.title }}">
+            {% if item.icon %}
+                <img src="{{ item.icon }}" alt="{{ item.title }}">
+            {% endif %}
+            {% if item.tags %}
+            <div class="pure-g tags-row">
+                {% for tag in item.tags %}
+                    <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-4 sm-box">
+                        <span class="dot-box">
+                        <span class="dot"><span class="orange-dot"></span>{{ tag.name }}</span></span></span>
+                    </div>
+                {% endfor %}
+                <br><br>
+            </div>
+            {% endif %}
             <h1>{{ item.title }}</h1>
-            <span class="h2-border"></span>
-            <p>{{ item.text }}</p>
+            {% if item.text %}
+                <span class="h2-border"></span>
+                <p>{{ item.text }}</p>
+            {% endif %}
         </div>
     </center>
 </section>
