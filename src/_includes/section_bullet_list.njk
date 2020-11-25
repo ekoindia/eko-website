@@ -1,0 +1,11 @@
+<center>
+<section class="background-section">
+    <div class="bullet-list">
+        <ul>
+        {% for bullet in item.lines %}
+            <li><span>{{ bullet.text }}</span></li>
+        {% endfor %}
+        </ul>
+    </div>
+</section>
+</center>

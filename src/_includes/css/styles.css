@@ -1163,3 +1163,39 @@ article {
   font-weight: bold;
   font-size: 14px;
 }
+
+.bullet-list {
+  width: 60%;
+  height: auto;
+  max-width: 95%;
+  border: 1px solid var(--main-theme-color);
+  border-radius: 25px;
+  background-color: white;
+  padding: 8%;
+  text-align: left;
+}
+
+.bullet-list li {
+  padding-bottom: 5%;
+  margin: 0px 0px 20px;
+  font-size: 20px;
+  font-family: Roboto, sans-serif;
+}
+
+.bullet-list li::before {
+  margin-left: -15px;
+}
+
+.bullet-list ul {
+  list-style-type: circle;
+  font-weight: bold;
+}
+
+.bullet-list li {
+  color: var(--main-theme-color);
+  font-weight: 550;
+}
+
+.bullet-list li span {
+  color: var(--header-color);
+}
