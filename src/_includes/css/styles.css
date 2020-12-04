@@ -72,7 +72,7 @@ button:-moz-focusring,
 
 /* ============= SECTIONS / COMPONENTS =================== */
 
-section, footer {
+section, nav, footer {
 	box-sizing: border-box;
 	width: 100%;
 	margin: 0;
@@ -86,7 +86,7 @@ section {
 }
 
 @media (min-width: 576px) {
-	section, footer {
+	section, nav, footer {
 		padding-left: 10%;
 		padding-right: 10%;
 	}
@@ -517,11 +517,9 @@ h6 {
 /* ================================= CSS Navigation =================================== */
 
 nav {
-	width: 100%;
-	box-sizing: border-box;
 	margin: 0;
-	padding-left: 2px;
-	padding-right: 2px;
+	padding-top: 0;
+	padding-bottom: 0;
 }
 
 nav h5 {
@@ -1205,4 +1203,117 @@ padding-left: 10px;
 } */
 
 /* ======================================================================================== */
+
+
+
+
+/* ====================== SECTION ACCORDION =================================== */
+.accordian a {
+  display: block;
+  padding: 10px 15px;
+}
+
+.accordian .drop-down-menu {
+  display: block;
+  padding: 0.2em;
+  width: 60%;
+  border: solid 1px #d4d4d4;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.accordian .menu-title {
+  display: block;
+  padding: 10px 15px;
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.accordion p {
+  font-size: 16px;
+  padding: 10px 15px;
+}
+
+.accordian .activate {
+  display: none;
+  position: absolute;
+  cursor: pointer;
+  width: 100%;
+  height: 40px;
+  margin: 0 0 0 -15px;
+  opacity: 0;
+}
+
+.accordian .drop-down {
+  max-height: 0;
+  overflow: hidden;
+}
+
+.accordian .activate:checked ~ .drop-down {
+  max-height: 200px;
+}
+
+.accordian .activate:checked ~ .menu-title {
+  color: var(--main-theme-color);
+}
+
+.accordian .drop-down, .drop-down-menu {
+  -webkit-transform: translateZ(0);
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.accordion-right-arrow {
+  float: right;
+  margin-right: 20%;
+  margin-top: 0;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+
+
+
+/* ============================= SECTION BULLET-LIST ============================ */
+
+.bullet-list {
+  width: 60%;
+  height: auto;
+  max-width: 95%;
+  border: 1px solid var(--main-theme-color);
+  border-radius: 25px;
+  background-color: white;
+  padding: 8%;
+  text-align: left;
+}
+
+.bullet-list li {
+  padding-bottom: 5%;
+  margin: 0px 0px 20px;
+  font-size: 20px;
+  font-family: Roboto, sans-serif;
+}
+
+.bullet-list li::before {
+  margin-left: -15px;
+}
+
+.bullet-list ul {
+  list-style-type: circle;
+  font-weight: bold;
+}
+
+.bullet-list li {
+  color: var(--main-theme-color);
+  font-weight: 550;
+}
+
+.bullet-list li span {
+  color: var(--header-color);
+}
+
 
