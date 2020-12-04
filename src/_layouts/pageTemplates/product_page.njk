@@ -21,15 +21,21 @@
 {% endif %}
 
 {% block main %}
-	<main>
-		{% include "section_top_hero.njk" %}
 
-		{% for i in range(0, product.layout | length) %}
-			{% set item = product.layout[i] %}
-			{% set component = "section_" + item.section + ".njk" %}
-			{% include component %}
-		{% endfor %}
+	{% include "section_top_hero.njk" %}
 
-		<section>{% include "form.njk" %}</section>
-	</main>
+	{% for i in range(0, product.layout | length) %}
+		{% set item = product.layout[i] %}
+
+		{# The section mid_summary uses the main product description as it's main-text #}
+		{% if item.section === "mid_summary" %}
+			{% set item = product.layout[i]|mergeObjectFilter({main_text: product.description}) %}}
+		{% endif %}
+
+		{% set component = "section_" + item.section + ".njk" %}
+		{% include component %}
+	{% endfor %}
+
+	<section>{% include "form.njk" %}</section>
+
 {% endblock %}
