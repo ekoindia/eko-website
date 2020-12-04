@@ -5,10 +5,8 @@ const htmlmin = require("html-minifier");
 const CleanCSS = require("clean-css");
 const eleventyNavigationPlugin = require('@11ty/eleventy-navigation');
 const blogTools = require("eleventy-plugin-blog-tools");
+const { DateTime } = require("luxon");
 
-const {
-  DateTime
-} = require("luxon");
 
 module.exports = function(eleventyConfig) {
 
@@ -77,6 +75,9 @@ module.exports = function(eleventyConfig) {
   // Filter out all elements from a list (eg: products) that has a 'disabled: true' property in it
   eleventyConfig.addFilter("disabledFilter", list => list.filter(item => item.disabled ? false : true));
 
+  // Useful to change property of an object in the Nunjucks 'set' method which is fairly limited...
+  eleventyConfig.addFilter("mergeObjectFilter", (obj1, obj2) => { return { ...obj1, ...obj2 } });
+
 
   eleventyConfig.addPassthroughCopy('src/images');
   eleventyConfig.addPassthroughCopy('src/admin');
@@ -99,12 +100,14 @@ module.exports = function(eleventyConfig) {
       <div class="wheel"></div>
     </div>
   </div></center>`;
-  })
+  });
 
   // Filter source file names using a glob
   eleventyConfig.addCollection("blog", function(collection) {
     return collection.getFilteredByGlob('src/blogs/*.md');
   });
+  // TODO: add a front-matter config "disabled" and append a 'disabledFilter' to hide any disabled post.
+  // TODO: Specially for "Career" section
 
   return {
     markdownTemplateEngine: 'njk',
