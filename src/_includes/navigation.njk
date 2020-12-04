@@ -19,12 +19,9 @@
               <div class="pure-u-1 pure-u-md-9-24 nav-column l-box">
                 <ul>
                   <br>
-                  <li class="menuitem"><a href="/products/money-transfer/">{% orangeDot %} Money Transfer</a></li>
-                  <li class="menuitem"><a href="/products/aadhaar-banking-cash-out/">{% orangeDot %} Aadhar Banking / Cash Out</a></li>
-                  <li class="menuitem"><a href="https://eko.in/products/doorstep-cash-delivery">{% orangeDot %} Doorstep Cash Delivery</a></li>
-                  <li class="menuitem"><a href="https://eko.in/products/utility-and-bill-payment">{% orangeDot %} Utility & Bill Payment</a></li>
-                  <li class="menuitem"><a href="https://eko.in/products/sell-insurance">{% orangeDot %} Sell Insurance </a></li>
-                  <li class="menuitem"><a href="https://eko.in/products/indo-nepal-money-transfer">{% orangeDot %} Indo-Nepal Money Transfer</a></li>
+					{%- for product in products | rejectattr("hidden") | rejectattr("disabled") -%}
+					<li role="menuitem"><a href="/products/{{ product.name | slug }}">{% orangeDot %}&nbsp;{{ product.title }}</a></li>
+					{%- endfor -%}
                 </ul>
               </div>
               <div class="pure-u-1 pure-u-md-9-24 nav-column l-box">
@@ -36,9 +33,9 @@
               </div>
             </div>
         </li>
-          
+
         <li class="menuitem"><a href="https://eko.in/retailer">Retailers</a></li>
-        
+
         <li class="menuitem">
           <a href="#">Developers</a>
           <div class="mega-menu small" aria-hidden="true" class="menu">
@@ -58,7 +55,7 @@
             </div>
             </div>
           </div>
-        </li>     
+        </li>
 
         <li class="menuitem">
           <a href="#">Company</a>
@@ -84,9 +81,9 @@
       </ul>
       </center>
     </div>
-  
+
     <div class="pure-u-1 pure-u-md-1-3">
-      <ul class="nav" class="menubar">  
+      <ul class="nav" class="menubar">
         <li class="menuitem">
           <a href="{{ website.contact_url }}"><img src="/images/paper-plane.svg" alt="">  Contact Sales</a>
         </li>
@@ -98,25 +95,23 @@
   </div>
 </nav>
 
+
 {# Mobile Nav #}
 <div class="mobileNav">
   <header class="clearfix">
     <a href="/"><img class="logo" src="{{ website.logo }}" alt="logo"></a>
-  </header>	
+  </header>
   <nav id="cbp-hrmenu" class="cbp-hrmenu">
     <ul>
       <li class="menuitem">
         <a href="#">Products</a>
         <div class="cbp-hrsub">
-          <div class="cbp-hrsub-inner"> 
+          <div class="cbp-hrsub-inner">
             <div class="" aria-hidden="true" class="menu">
               <ul>
-                <li class="menuitem"><a href="/products/money-transfer/">{% orangeDot %} Money Transfer</a></li>
-                <li class="menuitem"><a href="/products/aadhaar-banking-cash-out/">{% orangeDot %} Aadhar Banking / Cash Out</a></li>
-                <li class="menuitem"><a href="https://eko.in/products/doorstep-cash-delivery">{% orangeDot %} Doorstep Cash Delivery</a></li>
-                <li class="menuitem"><a href="https://eko.in/products/utility-and-bill-payment">{% orangeDot %} Utility & Bill Payment</a></li>
-                <li class="menuitem"><a href="https://eko.in/products/sell-insurance">{% orangeDot %} Sell Insurance </a></li>
-                <li class="menuitem"><a href="https://eko.in/products/indo-nepal-money-transfer">{% orangeDot %} Indo-Nepal Money Transfer</a></li>
+				{%- for product in products | rejectattr("hidden") | rejectattr("disabled") -%}
+					<li role="menuitem"><a href="/products/{{ product.name | slug }}">{% orangeDot %}&nbsp;{{ product.title }}</a></li>
+				{%- endfor -%}
               </ul>
             </div>
           </div><!-- /cbp-hrsub-inner -->
@@ -138,7 +133,7 @@
         </div>
         </div>
         </div>
-      </li>  
+      </li>
 
       <li class="menuitem">
         <a href="#">Company</a>

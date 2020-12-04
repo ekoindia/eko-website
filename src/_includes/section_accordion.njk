@@ -1,21 +1,28 @@
-<center>
-    <h1 class="big-header">{{ item.header }}<h1>
-    <span class="h2-border"></span>
+<section>
 
-<section class="accordion">
-  {% for i in range(0, item.rows | length) %}
-    {% set id=i+1 %}
-    <div class="drop-down-menu">
-      <input type="checkbox" class="activate" id="accordion-{{id}}" name="accordion-{{id}}">
-      <label for="accordion-{{id}}" class="menu-title">{{ item.rows[i].title}} </label>
-      <div class="drop-down">
-        <p>{{ item.rows[i].description }}</p>
-      </div>
-    </div>
-  {% endfor %}
-  </center>
-  <a class="right-arrow" href="https://eko.in/faq">All FAQs
-  <svg width="3em" height="1em" viewBox="0 0 10 12" class="bi bi-arrow-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-      <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
-  </svg></a>
+	{% if item.header %}
+		<h1 class="big-header">{{ item.header }}<h1>
+		<span class="h2-border"></span>
+	{% endif %}
+
+	<center class="accordion">
+		{% for i in range(0, item.faqs | length) %}
+			{% set id=i+1 %}
+			<div class="drop-down-menu">
+			<input type="checkbox" class="activate" id="accordion-{{id}}" name="accordion-{{id}}">
+			<label for="accordion-{{id}}" class="menu-title">{{ item.faqs[i].title}} </label>
+			<div class="drop-down">
+				<p>{{ item.faqs[i].description }}</p>
+			</div>
+			</div>
+		{% endfor %}
+	</center>
+
+	{% if item.link %}
+		<a class="accordion-right-arrow" href="{{item.link.url}}">{{item.link.title}}
+		<svg width="3em" height="1em" viewBox="0 0 10 12" class="bi bi-arrow-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+			<path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+		</svg></a>
+	{% endif %}
+
 </section>

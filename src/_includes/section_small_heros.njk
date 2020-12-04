@@ -1,16 +1,16 @@
 <section>
-    <center>
-        <h1>{{ item.header}}</h1>
-        <span class="h2-border"></span>
-    </center>
-    <p><br></p>
-    <div class="pure-g">
-    <center>
-        {% for partner in item.partner_images %}
-            <div class="img-box">
-                <img alt typeof="foaf:Image" class="dimmed-image" src="{{ partner.image }}" alt=" ">
-            </div>
-        {% endfor %}
-    </center>
-    </div>
+	<center>
+		<h1>{{ item.header}}</h1>
+		<span class="h2-border"></span>
+	</center>
+	<p><br></p>
+	<div class="pure-g">
+		<center>
+			{% for partner in item.partner_images %}
+				<div class="img-box">
+					<img alt typeof="foaf:Image" class="dimmed-image" src="{{ partner.image }}">
+				</div>
+			{% endfor %}
+		</center>
+	</div>
 </section>

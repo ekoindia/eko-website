@@ -1,35 +1,41 @@
 {% extends "./base.njk" %}
 
 {% if 'social_image' in product and 'tag_line' in product %}
-  {% block seo %}
-  {# Facebook #}
-    <title>{{ product.name }}</title>
-    <meta name="description" content="{{ product.tag_line }}">
-    <meta name="keywords" content="{{ product.keywords }}">
-    <meta property="og:url" content="{{ base.base_url }}products/{{ product.name | slug }}/"/>
-    <meta property="og:image" content="{{ product.social_image }}">
-    <meta property="og:title" content="{{ product.name }}"/>
-    <meta property="og:description" content="{{ product.tag_line }}"/>
+	{% block seo %}
+		{# Facebook #}
+		<title>{{ product.name }}</title>
+		<meta name="description" content="{{ product.tag_line }}">
+		<meta name="keywords" content="{{ product.keywords }}">
+		<meta property="og:url" content="{{ base.base_url }}/products/{{ product.name | slug }}/"/>
+		<meta property="og:image" content="{{ product.social_image }}">
+		<meta property="og:title" content="{{ product.name }}"/>
+		<meta property="og:description" content="{{ product.tag_line }}"/>
 
-    {# Twitter #}
-    <meta name="twitter:site" content="{{ base.twitter_handle }}">
-    <meta name="twitter:url" content="{{ base.base_url }}products/{{ product.name | slug }}/">
-    <meta name="twitter:title" content="{{ product.name }}">
-    <meta name="twitter:description" content="{{ product.tag_line }}">
-    <meta name="twitter:image" content="{{ product.social_image }}">
-  {% endblock %}
+		{# Twitter #}
+		<meta name="twitter:site" content="{{ base.twitter_handle }}">
+		<meta name="twitter:url" content="{{ base.base_url }}/products/{{ product.name | slug }}/">
+		<meta name="twitter:title" content="{{ product.name }}">
+		<meta name="twitter:description" content="{{ product.tag_line }}">
+		<meta name="twitter:image" content="{{ product.social_image }}">
+	{% endblock %}
 {% endif %}
 
 {% block main %}
-  <main>
-    {% include "section_top_hero.njk" %}
-    {% for i in range(0, product.layout | length) %}
-      {% set item = product.layout[i] %}
-      {# <h1>{{ item.section }}</h1> #}
-      {% set component = "section_" + item.section + ".njk" %}
-      {# <h1>{{ item | dump }}</h1> #}
-      {% include component %}
-    {% endfor %}
-    <section>{% include "form.njk" %}</section>
-  </main>
+
+	{% include "section_top_hero.njk" %}
+
+	{% for i in range(0, product.layout | length) %}
+		{% set item = product.layout[i] %}
+
+		{# The section mid_summary uses the main product description as it's main-text #}
+		{% if item.section === "mid_summary" %}
+			{% set item = product.layout[i]|mergeObjectFilter({main_text: product.description}) %}}
+		{% endif %}
+
+		{% set component = "section_" + item.section + ".njk" %}
+		{% include component %}
+	{% endfor %}
+
+	<section>{% include "form.njk" %}</section>
+
 {% endblock %}

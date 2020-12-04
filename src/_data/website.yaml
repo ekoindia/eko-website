@@ -1,16 +1,27 @@
 title: Eko
-base_url: https://eko.in/
+base_url: https://eko.in
 logo: /images/logo.svg
-signup_url: https://eko.in/sign-up
-contact_url: https://eko.in/contact-us
+signup_url: /sign-up
+contact_url: /contact-us
 company_description: Eko gives retailers an opportunity to turn their own shop into a Banking & Financial institution by providing solutions to low & middle income customers.
-# SEO
+
+#### SEO & Social...
+tag_line: Best way to collect cash at your doorstep
 keywords: Payment Service Provider In India, Recharges, Money Transfer service, Payments, Payment Collection, Payment Service Provider
 image: https://ekoin.netlify.app/images/main/homepage.png
-tag_line: Best way to collect cash at your doorstep
 facebook: https://www.facebook.com/ekoindia
 linkedin: https://www.linkedin.com/company/eko-india-financial-services-private-limited/?originalSubdomain=in
 twitter: https://twitter.com/ekospeaks
 twitter_handle: '@ekospeaks'
-ms_clarity_tag: 42aoav9qnn
-# ga_key: G-5X6D898K8D
+
+
+
+######### TODO: Move the below values to ENV VARIABLES
+
+#### Analytics...
+# ga_key: <enter key here>
+# ms_clarity_tag: <enter key here>
+
+#### Zoho...
+zoho_salesiq_widgetcode: fd91970851a27274a9347566b07bb87d9f67d9aec11195cab17fbfed2ea7872e99ed9ccb672722d539ae637d70f75ad054227997097d5a5ea44ee956b5869c69
+

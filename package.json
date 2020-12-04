@@ -1,7 +1,7 @@
 {
-  "name": "jamstack",
+  "name": "eko.in",
   "version": "1.0.0",
-  "description": "Eko's website",
+  "description": "Eko's website & blog",
   "scripts": {
     "start": "eleventy --serve --quiet"
   },

@@ -1,21 +1,21 @@
 {% extends "./base.njk" %}
 
 {% block main %}
-<main>
-    <section class="flex-grid" id="links">
-        {% for item in ekoUniversity %}
-            <div>
-                <p><a href="/eko-university/{{ item.title | slug }}">{{ item.title }}</a></p>
-            </div>
-        {% endfor %}
-    </section>
 
-    <section class="pure-g">
-        {% for id in ekoUni.ids %}
-            <div class="pure-u-1-2 pure-u-md-1-2 pure-u-sm-1 l-box">
-            <p>{% youtube id %}</p>
-            </div>
-        {% endfor %}
-    </section>
-</main>
+	<section class="flex-grid" id="links">
+		{% for item in ekoUniversity %}
+			<div>
+				<p><a href="/eko-university/{{ item.title | slug }}">{{ item.title }}</a></p>
+			</div>
+		{% endfor %}
+	</section>
+
+	<section class="pure-g">
+		{% for id in ekoUni.ids %}
+			<div class="pure-u-1-2 pure-u-md-1-2 pure-u-sm-1 l-box">
+			<p>{% youtube id %}</p>
+			</div>
+		{% endfor %}
+	</section>
+
 {% endblock %}

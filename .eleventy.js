@@ -5,10 +5,8 @@ const htmlmin = require("html-minifier");
 const CleanCSS = require("clean-css");
 const eleventyNavigationPlugin = require('@11ty/eleventy-navigation');
 const blogTools = require("eleventy-plugin-blog-tools");
+const { DateTime } = require("luxon");
 
-const {
-  DateTime
-} = require("luxon");
 
 module.exports = function(eleventyConfig) {
 
@@ -27,7 +25,7 @@ module.exports = function(eleventyConfig) {
     }
     return content;
   });
-  
+
   eleventyConfig.addNunjucksAsyncFilter("jsmin", async function (
     code,
     callback
@@ -56,9 +54,9 @@ module.exports = function(eleventyConfig) {
     }
   });
 
-  eleventyConfig.addPlugin(eleventyNavigationPlugin);
+//   eleventyConfig.addPlugin(eleventyNavigationPlugin);
   eleventyConfig.addPlugin(blogTools);
-  
+
   eleventyConfig.addFilter('htmlDateString', (dateObj) => {
     return DateTime.fromJSDate(dateObj, {
       zone: 'utc'
@@ -70,6 +68,16 @@ module.exports = function(eleventyConfig) {
     zone: 'utc'
     }).toFormat("dd-MM-yy");
   });
+
+  // Filter out all elements from a list (eg: products) that has a 'hidden: true' property in it
+  eleventyConfig.addFilter("hiddenFilter", list => list.filter(item => item.hidden ? false : true));
+
+  // Filter out all elements from a list (eg: products) that has a 'disabled: true' property in it
+  eleventyConfig.addFilter("disabledFilter", list => list.filter(item => item.disabled ? false : true));
+
+  // Useful to change property of an object in the Nunjucks 'set' method which is fairly limited...
+  eleventyConfig.addFilter("mergeObjectFilter", (obj1, obj2) => { return { ...obj1, ...obj2 } });
+
 
   eleventyConfig.addPassthroughCopy('src/images');
   eleventyConfig.addPassthroughCopy('src/admin');
@@ -93,12 +101,14 @@ module.exports = function(eleventyConfig) {
       <div class="wheel"></div>
     </div>
   </div></center>`;
-  })
+  });
 
   // Filter source file names using a glob
   eleventyConfig.addCollection("blog", function(collection) {
     return collection.getFilteredByGlob('src/blogs/*.md');
   });
+  // TODO: add a front-matter config "disabled" and append a 'disabledFilter' to hide any disabled post.
+  // TODO: Specially for "Career" section
 
   eleventyConfig.addCollection("career", function(collection) {
     return collection.getFilteredByGlob('src/careers/*.md');

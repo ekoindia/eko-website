@@ -1,23 +1,25 @@
 <!DOCTYPE HTML>
 <html lang="en">
   <head>
-    <script type="module" src= "/js/dark-mode-toggle.mjs"></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta property="og:type" content="website">
     <meta name="twitter:card" content="website">
-    <meta name="theme-color" content="#ffb218"/>
+	<meta name="theme-color" content="#ffb218"/>
+
   {% block seo %}
     <title>{{ website.title }}</title>
     <meta name="description" content="{{ website.tag_line }}">
     <meta name="keywords" content="{{ website.keywords }}">
+
+	{# OpenGraph (Facebook) Social Card #}
     <meta property="og:url" content="{{ website.base_url }}">
     <meta property="og:image" content="{{ website.image }}">
     <meta property="og:title" content="{{ website.title }}">
     <meta property="og:description" content="{{ website.tag_line }}">
     <meta property="og:site_name" content="{{ website.base_url }}">
 
-    {# Twitter #}
+    {# Twitter Social Card #}
     <meta name="twitter:site" content="{{ website.twitter_handle }}">
     <meta name="twitter:url" content="{{ website.base_url }}">
     <meta name="twitter:title" content="{{ website.title }}">
@@ -25,33 +27,55 @@
     <meta name="twitter:image" content="{{ website.image }}">
   {% endblock %}
 
-  {# Placeholders #}
-  {% block custom_css %}
-  {% endblock %}
-  {% block js %}
-  {% endblock %}
-
-    {# Link CSS Files#}
+    {# Link CSS Files #}
     {% set css_main %}
       {% include "css/styles.css" %}
     {% endset %}
     {% set css_pure %}
+	  {# read more: https://purecss.io #}
       {% include "css/pure.css" %}
+	  {% include "css/grids-responsive-min.css" %}
     {% endset %}
-    {# CSS File for Dark Mode #}
+
+	{# Font Awesone Icons #}
+	{#
+    {% set font_awesome %}
+	  {% include "css/fontawesome/css/fontawesome.min.css" %}
+	  {% include "css/fontawesome/css/brands.min.css" %}
+	  {% include "css/fontawesome/css/solid.min.css" %}
+    {% endset %}
+	#}
+
+
+	{# ----- EMBLA CAROUSEL SUPPORT (https://github.com/davidcetinkaya/embla-carousel) ------ #}
+	{% set carousel %}
+		{% include "js/embla-carousel.umd.min.js" %}
+		{% include "js/carousel.js" %}
+	{% endset %}
+
+
+	{# ------ Dark Mode ------- #}
+	{# <script type="module" src= "/js/dark-mode-toggle.mjs"></script> #}
     {# {% set dark %}
       {% include "css/dark.css" %}
     {% endset %} #}
-    <style>
+
+	<style>
       {{ css_main | cssmin | safe }}
       {{ css_pure | cssmin | safe }}
       {# {{ dark | cssmin | safe }} #}
+
+	  {% block custom_style %}{% endblock %}
     </style>
-    {% block carousel%}{% endblock %}
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
   </head>
+
   <body>
     {% include "navigation.njk" %}
-    {# Dark/Light Mode Icons #}
+
+	{# Dark/Light Mode Icons #}
     {# <aside>
       <dark-mode-toggle appearance="switch"></dark-mode-toggle>
     </aside>
@@ -62,43 +86,51 @@
       window.addEventListener('colorschemechange', (e) => {
         document.body.classList.toggle('light', e.target.mode === '');
       });
-    </script> #}
-    <div>{% block main%}{% endblock %}</div>
-    {% include "footer.njk" %}
-    {% set netlify_cms %}
+    </script>
+	#}
+
+	<main>{% block main%}{% endblock %}</main>
+
+	{% include "footer.njk" %}
+
+	{% set netlify_cms %}
       {% include "js/netlify_cms.js" %}
     {% endset %}
+
     <script>
       {{ netlify_cms | jsmin | safe }}
     </script>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    {% if website.ga_key %}
-      <script async src="https://www.googletagmanager.com/gtag/js?id={{ website.ga_key }}"></script>
-      {% set google %}
-        {% include "js/google_analytics.js" %}
-      {% endset %}
-      <script>
-        {{ google | jsmin | safe }}
-      </script>
-      <script>
-        window.onload = googleAnalytics('{{ website.ga_key }}');
-      </script>
+
+	{# ~~~~~ Global site tag (gtag.js) - Google Analytics ~~~~~ #}
+	{% if website.ga_key %}
+		<script async src="https://www.googletagmanager.com/gtag/js?id={{ website.analytics_key }}"></script>
+		{% set google %}
+			{% include "js/google_analytics.js" %}
+		{% endset %}
+		<script>
+			{{ google | jsmin | safe }}
+			window.onload = googleAnalytics('{{ website.ga_key }}');
+		</script>
     {% endif %}
-    {# Microsoft Clarity (Analytics) #}
+
+	{# ~~~~~ Microsoft Clarity (Analytics) ~~~~~ #}
     {% if website.ms_clarity_tag %}
-      <script type="text/javascript">
-      (function(c,l,a,r,i,t,y){
-          c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-          t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-          y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-      })(window, document, "clarity", "script", "{{ website.ms_clarity_tag }}");
-      </script>
+      <script>(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window, document, "clarity", "script", "{{ website.ms_clarity_tag }}");</script>
     {% endif %}
-    <script type="text/javascript">
-      var $zoho=$zoho || {};$zoho.salesiq = $zoho.salesiq ||
-      {widgetcode:"fd91970851a27274a9347566b07bb87d9f67d9aec11195cab17fbfed2ea7872e99ed9ccb672722d539ae637d70f75ad054227997097d5a5ea44ee956b5869c69", values:{},ready:function(){}};
-      var d=document;s=d.createElement("script");s.type="text/javascript";s.id="zsiqscript";s.defer=true;
-      s.src="https://salesiq.zoho.in/widget";t=d.getElementsByTagName("script")[0];t.parentNode.insertBefore(s,t);d.write("<div id='zsiqwidget'></div>");
-    </script>
+
+	{# ~~~~~~ Zoho SalesIQ ~~~~~~ #}
+	{% if website.zoho_salesiq_widgetcode %}
+		<script>
+		var $zoho=$zoho || {};$zoho.salesiq = $zoho.salesiq ||
+		{widgetcode:"{{website.zoho_salesiq_widgetcode}}", values:{},ready:function(){}};
+		var d=document;s=d.createElement("script");s.type="text/javascript";s.id="zsiqscript";s.defer=true;
+		s.src="https://salesiq.zoho.in/widget";t=d.getElementsByTagName("script")[0];t.parentNode.insertBefore(s,t);d.write("<div id='zsiqwidget'></div>");
+		</script>
+	{% endif %}
+
+
+	{# ~~~~~~~~ Custom Javascript code to be inserted in any page ~~~~~~~~ #}
+	<script>{% block custom_script %}{% endblock %}</script>
+
   </body>
 </html>
