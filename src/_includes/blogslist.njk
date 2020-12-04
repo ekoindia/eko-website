@@ -1,5 +1,4 @@
-<div class="container">
-<div class="band">
+<section class="band">
     {% for blog in blogslist | reverse %}
     <div class="item">
         <a href="{{ blog.url | url }}" class="card">
@@ -12,5 +11,4 @@
         </a>
     </div>
     {% endfor %}
-</div>
-</div>
+</section>
