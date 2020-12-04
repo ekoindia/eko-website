@@ -1,8 +1,11 @@
 <section class="background-section">
-	<center>
-		<h1>{{ item.header }}</h1>
-		<div class="h2-border"></div>
-	</center>
+
+	{% if item.header %}
+		<center>
+			<h1>{{ item.header }}</h1>
+			<div class="h2-border"></div>
+		</center>
+	{% endif %}
 
 	{% for hero in item.items %}
 			{% if hero.type == 'single' %}
