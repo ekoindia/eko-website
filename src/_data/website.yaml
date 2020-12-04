@@ -14,6 +14,14 @@ linkedin: https://www.linkedin.com/company/eko-india-financial-services-private-
 twitter: https://twitter.com/ekospeaks
 twitter_handle: '@ekospeaks'
 
+
+
+######### TODO: Move the below values to ENV VARIABLES
+
 #### Analytics...
-# ga_key: G-5X6D898K8D
-ms_clarity_tag: 42aoav9qnn
+# ga_key: <enter key here>
+# ms_clarity_tag: <enter key here>
+
+#### Zoho...
+zoho_salesiq_widgetcode: fd91970851a27274a9347566b07bb87d9f67d9aec11195cab17fbfed2ea7872e99ed9ccb672722d539ae637d70f75ad054227997097d5a5ea44ee956b5869c69
+
