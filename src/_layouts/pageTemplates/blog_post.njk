@@ -4,7 +4,7 @@
     <section>
         <h2>{{ title }}</h2>
         <h3>{{ date | readableDate }}</h3>
-        <img src="{{ image | url }}" alt="{{ image }}"></img>
+        <img src="{{ image | url }}" alt="{{ image }}">
         <p>{{ content | safe }}</p>
     </section>
 {% endblock %}
