@@ -8,7 +8,7 @@
 		<center>
 			{% for partner in item.partner_images %}
 				<div class="img-box">
-					<img alt typeof="foaf:Image" class="dimmed-image" src="{{ partner.image }}">
+					<img typeof="foaf:Image" class="dimmed-image" src="{{ partner.image }}" loading="lazy">
 				</div>
 			{% endfor %}
 		</center>
