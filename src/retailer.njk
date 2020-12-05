@@ -1,0 +1,147 @@
+{% extends "./_layouts/pageTemplates/base.njk" %}
+
+{% block main %}
+
+	{# Top Hero Section #}
+	{% set product = {
+		title: "Retailers",
+		tag_line: "Become our Retailer Partner & earn more",
+		hero_image: "/images/retailer/become-retailer.svg",
+		summary: "We enables every individual to become Eko’s Partner and offer banking & financial services to their customers to earn extra income",
+		video_link: "https://www.youtube.com/watch?v=Lxxn8q_EkR4&feature=emb_logo"
+	} %}
+	{% include "section_top_hero.njk" %}
+
+
+
+	{# Mid Summary Section #}
+	{% set item = {
+		small_description: "Your own financial platform",
+		header: "Provide financial services at your doorstep",
+		main_text: "Eko gives you an opportunity to turn your own shop into a Finacial institution. Customers who do not have bank accounts and still want to transfer money using cash can do so at your shop. You can pay their utility bills, provide them insurance and earn in every service you give. Easy and effective!"
+	} %}
+	{% include "section_mid_summary.njk" %}
+
+
+	{# Alternating Steps Section #}
+	{% set item = {
+		steps: [
+			{
+				title: "Money Transfer",
+				text: "Transfer money instantly to any bank account in India using cash from customer.",
+				image: "/images/retailer/easy-cash-transfer.svg"
+			},
+			{
+				title: "Aadhaar Banking",
+				text: "Allow your customers to withdraw cash & transfer money at your doorstep with just the fingerprint & Aadhaar number",
+				image: "/images/retailer/aadhaar-banking-small.svg"
+			},
+			{
+				title: "Utility Bill Payment",
+				text: "Pay utility bills for 100+ billers in India using Eko’s platform. All under one roof",
+				image: "/images/retailer/bill-payment.svg"
+			},
+			{
+				title: "Indo-Nepal Money Transfer",
+				text: "Eko enables it's agents to conduct cross border money transfers to Nepal",
+				image: "/images/retailer/indo-nepal.svg"
+			},
+			{
+				title: "Insurance",
+				text: "Low cost and easy claim process makes our insurance policies the best choice for your customers. Sell these low cost insurance from our insurance partner",
+				image: "/images/retailer/low-cost-insurance.svg"
+			}
+		]
+	} %}
+	{% include "section_alternating_steps.njk" %}
+
+
+	{# Icon List Section #}
+	{% set item = {
+		header: "Become Eko’s Partner",
+		subtitle: "Earn more, grow better",
+		description: "Eko empowers Retailers, Individuals & Businesses with over 20 ways of making extra money offering our services to their customers",
+		icons: [
+			{
+				image: "/images/retailer/banking-icon.svg",
+				caption: "Provide banking services"
+			},
+			{
+				image: "/images/retailer/utility-bill-icon.svg",
+				caption: "Pay utility bills"
+			},
+			{
+				image: "/images/retailer/assisted-commerce-icon.svg",
+				caption: "Assited commerce capabilities"
+			}]
+	} %}
+	{% include "section_icon_list.njk" %}
+
+
+	{# Step Section #}
+	{% set item = {
+		header: "How to become a Retailer Partner",
+		steps: [
+			{ text: "Sign Up on Connect", link: "https://connect.eko.in" },
+			{ text: "Enter basic details" },
+			{ text: "Sign an agreement" },
+			{ text: "Done! You can start earning money" }
+		]
+	} %}
+	{% include "section_step_section.njk" %}
+
+
+	{# Message Section #}
+	{% set item = {
+		line1: "Becoming Eko’s Partner is easy and takes just few minutes. As soon as you are done with this you can immediately start making money.",
+		main_line: "For all issues, we provide 24x7 support.",
+		button_text: "Contact Support"
+	} %}
+	{% include "section_message.njk" %}
+
+
+	{# Fila Ad Section #}
+	{% set item = {
+		small_header: "Ready to get started?",
+		main_header: "Become Retailer Partner & Earn More",
+		image: "/images/become-eko-partner.svg",
+		button1_text: "Get Started",
+		button2_text: "Contact Sales"
+	} %}
+	{% include "section_final_ad.njk" %}
+
+
+	{# FAQ Accordion Section #}
+	{% set item = {
+		header: "Frequently Asked Questions",
+		faqs: [
+			{
+				title: "What do I get from Eko when I sign up? ",
+				description: "You get India’s fastest and most dependable platform for financial and non-financial services. You also get 24x7 support, and access to our collaterals such as posters, standees, tent cards, etc."
+			},
+			{
+				title: "What if I do not want to sell all products? ",
+				description: "Eko provides you the platform. It is entirely up to you whether you want to sell all products & services or focus on just a few of them."
+			},
+			{
+				title: "How much can I earn?",
+				description: "That depends entirely on you. Many of our retailers earn in lacs offering our services."
+			},
+			{
+				title: "How much do I need to invest to start?",
+				description: "You can start with as little as ₹ 1,000. Contact our sales team to get you started."
+			}
+		]
+	} %}
+	{% include "section_accordion.njk" %}
+
+
+	{# Form section #}
+	<section class="background-section">
+		{% include "form.njk" %}
+	</section>
+
+
+
+
+{% endblock %}

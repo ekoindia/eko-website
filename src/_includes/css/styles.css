@@ -1208,15 +1208,15 @@ padding-left: 10px;
 
 
 /* ====================== SECTION ACCORDION =================================== */
-.accordian a {
+.accordion a {
   display: block;
   padding: 10px 15px;
 }
 
-.accordian .drop-down-menu {
+.accordion .drop-down-menu {
   display: block;
   padding: 0.2em;
-  width: 60%;
+  width: 70%;
   border: solid 1px #d4d4d4;
   border-radius: 4px;
   cursor: pointer;
@@ -1224,11 +1224,13 @@ padding-left: 10px;
   text-align: left;
 }
 
-.accordian .menu-title {
+.accordion .menu-title {
   display: block;
   padding: 10px 15px;
   font-size: 20px;
-  font-weight: normal;
+  font-weight: 500;
+  cursor: pointer;
+  /* color: var(--primary-color); */
 }
 
 .accordion p {
@@ -1236,7 +1238,7 @@ padding-left: 10px;
   padding: 10px 15px;
 }
 
-.accordian .activate {
+.accordion .activate {
   display: none;
   position: absolute;
   cursor: pointer;
@@ -1246,20 +1248,20 @@ padding-left: 10px;
   opacity: 0;
 }
 
-.accordian .drop-down {
+.accordion .drop-down {
   max-height: 0;
   overflow: hidden;
 }
 
-.accordian .activate:checked ~ .drop-down {
+.accordion .activate:checked ~ .drop-down {
   max-height: 200px;
 }
 
-.accordian .activate:checked ~ .menu-title {
-  color: var(--main-theme-color);
+.accordion .activate:checked ~ .menu-title {
+  color: var(--primary-color);
 }
 
-.accordian .drop-down, .drop-down-menu {
+.accordion .drop-down, .drop-down-menu {
   -webkit-transform: translateZ(0);
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
@@ -1284,7 +1286,7 @@ padding-left: 10px;
   width: 60%;
   height: auto;
   max-width: 95%;
-  border: 1px solid var(--main-theme-color);
+  border: 1px solid var(--primary-color);
   border-radius: 25px;
   background-color: white;
   padding: 8%;
@@ -1308,7 +1310,7 @@ padding-left: 10px;
 }
 
 .bullet-list li {
-  color: var(--main-theme-color);
+  color: var(--primary-color);
   font-weight: 550;
 }
 

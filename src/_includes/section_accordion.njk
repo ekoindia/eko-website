@@ -1,19 +1,21 @@
 <section>
 
 	{% if item.header %}
-		<h1 class="big-header">{{ item.header }}<h1>
-		<span class="h2-border"></span>
+		<center>
+			<h1 class="big-header">{{ item.header }}<h1>
+			<span class="h2-border"></span>
+		</center>
 	{% endif %}
 
 	<center class="accordion">
 		{% for i in range(0, item.faqs | length) %}
 			{% set id=i+1 %}
 			<div class="drop-down-menu">
-			<input type="checkbox" class="activate" id="accordion-{{id}}" name="accordion-{{id}}">
-			<label for="accordion-{{id}}" class="menu-title">{{ item.faqs[i].title}} </label>
-			<div class="drop-down">
-				<p>{{ item.faqs[i].description }}</p>
-			</div>
+				<input type="checkbox" class="activate" id="accordion-{{id}}" name="accordion-{{id}}">
+				<label for="accordion-{{id}}" class="menu-title">{{ item.faqs[i].title}} </label>
+				<div class="drop-down">
+					<p>{{ item.faqs[i].description }}</p>
+				</div>
 			</div>
 		{% endfor %}
 	</center>
