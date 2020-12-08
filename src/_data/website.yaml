@@ -8,7 +8,7 @@ company_description: Eko gives retailers an opportunity to turn their own shop i
 #### SEO & Social...
 tag_line: Best way to collect cash at your doorstep
 keywords: Payment Service Provider In India, Recharges, Money Transfer service, Payments, Payment Collection, Payment Service Provider
-image: https://ekoin.netlify.app/images/main/homepage.png
+image: /images/main/homepage.png
 facebook: https://www.facebook.com/ekoindia
 linkedin: https://www.linkedin.com/company/eko-india-financial-services-private-limited/?originalSubdomain=in
 twitter: https://twitter.com/ekospeaks
@@ -16,12 +16,10 @@ twitter_handle: '@ekospeaks'
 
 
 
-######### TODO: Move the below values to ENV VARIABLES
+## The following values are setup as ENVIRONMENT-VARIABLES
+##      See '.env.example' file for details
 
-#### Analytics...
-# ga_key: <enter key here>
-# ms_clarity_tag: <enter key here>
-
-#### Zoho...
-zoho_salesiq_widgetcode: fd91970851a27274a9347566b07bb87d9f67d9aec11195cab17fbfed2ea7872e99ed9ccb672722d539ae637d70f75ad054227997097d5a5ea44ee956b5869c69
-
+# BASE_URL
+# GA_KEY                    (Google Analytics)
+# MS_CLARITY_TAG            (Microsoft Clarity Analytics)
+# ZOHO_SALESIQ_WIDGETCODE   (Zoho SalesIQ Chatbot)
