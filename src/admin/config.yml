@@ -26,7 +26,6 @@ collections:
         fields:
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Logo", name: "logo", widget: "image"}
-          - {label: "Base URL", name: "base_url", widget: "string"}
           - {label: "Sign Up URL", name: "signup_url", widget: "string"}
           - {label: "Contact Us URL", name: "contact_url", widget: "string"}
           - {label: "Company Description", name: "company_description", widget: "text"}

@@ -175,14 +175,7 @@ color: white !important;
 .tag a {
 font-size: 12px;
 }
-.orange-dot {
-padding: 3px;
-height: 3px;
-width: 3px;
-background-color: var(--dot-color);
-border-radius: 50%;
-display: inline-block;
-}
+
 .dot-box {
 border-radius: 30px;
 background-color: var(--tag-color);
@@ -194,10 +187,20 @@ margin: 0 auto;
 box-shadow: 0 3px 2px 0 rgba(0,0,0,0.1);
 }
 
-.dot {
+.dot-box .dot {
 border-radius: 25px;
 font-weight: bold;
 color: var(--main-text-color);
+}
+
+.dot-box .orange-dot {
+padding: 3px;
+margin-right: 0.4em;
+height: 3px;
+width: 3px;
+background-color: var(--dot-color);
+border-radius: 50%;
+display: inline-block;
 }
 
 .bg-image {

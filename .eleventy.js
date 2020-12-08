@@ -7,6 +7,8 @@ const eleventyNavigationPlugin = require('@11ty/eleventy-navigation');
 const blogTools = require("eleventy-plugin-blog-tools");
 const { DateTime } = require("luxon");
 
+require('dotenv').config();
+
 
 module.exports = function(eleventyConfig) {
 

@@ -6,14 +6,14 @@
 		<title>{{ product.name }}</title>
 		<meta name="description" content="{{ product.tag_line }}">
 		<meta name="keywords" content="{{ product.keywords }}">
-		<meta property="og:url" content="{{ base.base_url }}/products/{{ product.name | slug }}/"/>
+		<meta property="og:url" content="{{ env.BASE_URL }}/products/{{ product.name | slug }}/"/>
 		<meta property="og:image" content="{{ product.social_image }}">
 		<meta property="og:title" content="{{ product.name }}"/>
 		<meta property="og:description" content="{{ product.tag_line }}"/>
 
 		{# Twitter #}
 		<meta name="twitter:site" content="{{ base.twitter_handle }}">
-		<meta name="twitter:url" content="{{ base.base_url }}/products/{{ product.name | slug }}/">
+		<meta name="twitter:url" content="{{ env.BASE_URL }}/products/{{ product.name | slug }}/">
 		<meta name="twitter:title" content="{{ product.name }}">
 		<meta name="twitter:description" content="{{ product.tag_line }}">
 		<meta name="twitter:image" content="{{ product.social_image }}">

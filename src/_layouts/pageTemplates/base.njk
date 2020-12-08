@@ -13,18 +13,18 @@
     <meta name="keywords" content="{{ website.keywords }}">
 
 	{# OpenGraph (Facebook) Social Card #}
-    <meta property="og:url" content="{{ website.base_url }}">
-    <meta property="og:image" content="{{ website.image }}">
+    <meta property="og:url" content="{{ env.BASE_URL }}">
+    <meta property="og:image" content="{{ env.BASE_URL }}{{ website.image }}">
     <meta property="og:title" content="{{ website.title }}">
     <meta property="og:description" content="{{ website.tag_line }}">
-    <meta property="og:site_name" content="{{ website.base_url }}">
+    <meta property="og:site_name" content="{{ website.title }}">
 
     {# Twitter Social Card #}
     <meta name="twitter:site" content="{{ website.twitter_handle }}">
-    <meta name="twitter:url" content="{{ website.base_url }}">
+    <meta name="twitter:url" content="{{ env.BASE_URL }}">
     <meta name="twitter:title" content="{{ website.title }}">
     <meta name="twitter:description" content="{{ website.tag_line }}">
-    <meta name="twitter:image" content="{{ website.image }}">
+    <meta name="twitter:image" content="{{ env.BASE_URL }}{{ website.image }}">
   {% endblock %}
 
     {# Link CSS Files #}
@@ -102,27 +102,29 @@
     </script>
 
 	{# ~~~~~ Global site tag (gtag.js) - Google Analytics ~~~~~ #}
-	{% if website.ga_key %}
+	{% if env.GA_KEY %}
 		<script async src="https://www.googletagmanager.com/gtag/js?id={{ website.analytics_key }}"></script>
 		{% set google %}
 			{% include "js/google_analytics.js" %}
 		{% endset %}
 		<script>
 			{{ google | jsmin | safe }}
-			window.onload = googleAnalytics('{{ website.ga_key }}');
+			window.onload = googleAnalytics('{{ env.GA_KEY }}');
 		</script>
     {% endif %}
 
+
 	{# ~~~~~ Microsoft Clarity (Analytics) ~~~~~ #}
-    {% if website.ms_clarity_tag %}
-      <script>(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window, document, "clarity", "script", "{{ website.ms_clarity_tag }}");</script>
+    {% if env.MS_CLARITY_TAG %}
+      <script>(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window, document, "clarity", "script", "{{ env.MS_CLARITY_TAG }}");</script>
     {% endif %}
 
+
 	{# ~~~~~~ Zoho SalesIQ ~~~~~~ #}
-	{% if website.zoho_salesiq_widgetcode %}
+	{% if env.ZOHO_SALESIQ_WIDGETCODE %}
 		<script>
 		var $zoho=$zoho || {};$zoho.salesiq = $zoho.salesiq ||
-		{widgetcode:"{{website.zoho_salesiq_widgetcode}}", values:{},ready:function(){}};
+		{widgetcode:"{{env.ZOHO_SALESIQ_WIDGETCODE}}", values:{},ready:function(){}};
 		var d=document;s=d.createElement("script");s.type="text/javascript";s.id="zsiqscript";s.defer=true;
 		s.src="https://salesiq.zoho.in/widget";t=d.getElementsByTagName("script")[0];t.parentNode.insertBefore(s,t);d.write("<div id='zsiqwidget'></div>");
 		</script>
