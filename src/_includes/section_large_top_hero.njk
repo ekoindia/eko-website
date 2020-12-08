@@ -1,8 +1,14 @@
 <center>
 <section class="tag large-top-hero">
-		<span class="dot-box">
-		<span class="dot"><span class="orange-dot"></span>{{ item.tag_title }}<span><a href="{{ item.tag_link }}" target="_blank" rel="noopener">{{ item.tag_description }}</a>
-		</span></span></span>
+		{% if item.tag_title %}
+			<span class="dot-box">
+				<span class="dot">
+					<span class="orange-dot"></span>
+					{{ item.tag_title }}
+					<span><a href="{{ item.tag_link }}" target="_blank" rel="noopener">{{ item.tag_description }}</a></span>
+				</span>
+			</span>
+		{% endif %}
 		<h1 class="main-header">{{ item.header }}</h1>
 		<br>
 		<div class="bg-image">
