@@ -1,0 +1,108 @@
+/* ================ Blog Posts & Listing ================ */
+
+.band {
+  width: 90%;
+  max-width: 1240px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 20px;
+}
+@media only screen and (min-width: 30em) {
+  .band {
+      grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media only screen and (min-width: 60em) {
+  .band {
+      grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.card {
+  background: white;
+  text-decoration: none;
+  color: var(--main-text-color);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 0;
+  transition: all .1s ease-in;
+}
+
+.card:hover {
+  top: -2px;
+  box-shadow: 0 4px 5px rgba(0,0,0,0.2);
+}
+
+article {
+  padding: 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.band p {
+  flex: 1;
+  line-height: 1.4;
+}
+
+.band span {
+  font-size: 12px;
+  font-weight: bold;
+  color: var(--header-color);
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  margin: 2em 0 0 0;
+}
+
+.band .thumb {
+  padding-bottom: 60%;
+  background-size: cover;
+  height: auto;
+}
+
+.item a:hover p {
+  color: var(--main-text-color) !important;
+  text-decoration: none;
+}
+
+.item {
+  padding: 20px;
+}
+
+.blog-button {
+  width: 30%;
+  color: white;
+  margin-top: 20px;
+  font-size: 13px;
+  font-weight: 500;
+  background: #44ce6f;
+  border: 0;
+  padding: 12px 30px;
+}
+
+.active, .btn:hover {
+  color: var(--primary-color) !important;
+}
+
+#links p {
+  letter-spacing: 0;
+  border: none;
+  margin: 0;
+  padding: 0;
+  text-align: left !important;
+  display: flex;
+  justify-content: center;
+}
+
+#links a:hover {
+  background-color: rgba(136, 52, 52, 0.05);
+  color: var(--primary-color);
+  padding: 2px;
+  text-decoration: none;
+}
+

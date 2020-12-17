@@ -1,0 +1,42 @@
+
+footer {
+  bottom: 0;
+  width: 100%;
+  background-color: var(--footer-background-color);
+  color: var(--footer-text);
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+footer p {
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-weight: 300;
+  line-height: 1.67;
+  margin: 0 0 10px;
+}
+
+footer .logo {
+	height: 20px;
+	margin: 10px 0;
+}
+
+footer .column-header {
+  font-weight: bold;
+  color: var(--footer-column-header);
+  font-size: 15px;
+}
+
+footer a {
+  color: var(--footer-link);
+  font-weight: bold;
+  font-size: 14px !important;
+}
+
+footer a:hover {
+  color: var(--primary-color);
+}
+
+footer a {
+  text-decoration: none;
+}
