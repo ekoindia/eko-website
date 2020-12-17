@@ -27,14 +27,21 @@
     <meta name="twitter:image" content="{{ env.BASE_URL }}{{ website.image }}">
   {% endblock %}
 
-    {# Link CSS Files #}
+    {# Link Main CSS Files (common to all sections & pages) #}
     {% set css_main %}
-      {% include "css/styles.css" %}
+      {% include "css/base.css" %}
+	  {% include "css/nav.css" %}
+	  {% include "css/footer.css" %}
     {% endset %}
     {% set css_pure %}
 	  {# read more: https://purecss.io #}
       {% include "css/pure.css" %}
 	  {% include "css/grids-responsive-min.css" %}
+    {% endset %}
+
+	{# CSS include for Blog section (included in blog template and the blog listing pages) #}
+	{% set css_blog %}
+      {% include "css/blog.css" %}
     {% endset %}
 
 	{# Font Awesone Icons #}

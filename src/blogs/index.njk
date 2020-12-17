@@ -11,6 +11,10 @@ eleventyExcludeFromCollections: true
 
 {% extends "../_layouts/pageTemplates/base.njk" %}
 
+{% block custom_style %}
+	{{ css_blog | cssmin | safe }}
+{% endblock %}
+
 {% block main %}
 
 	<section>
