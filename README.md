@@ -1,4 +1,4 @@
-# Building Eko's Website with JAMStack and Eleventy
+# Eko's Website with Jamstack and Eleventy
 
 ## Installing
 1. Clone this repository into your local machine using the terminal (Mac), CMD (Windows), or a GUI tool like SourceTree.

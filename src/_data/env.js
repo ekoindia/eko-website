@@ -10,4 +10,6 @@ module.exports = {
 	GA_KEY: process.env.GA_KEY || '',
 	MS_CLARITY_TAG: process.env.MS_CLARITY_TAG || '',
 	ZOHO_SALESIQ_WIDGETCODE: process.env.ZOHO_SALESIQ_WIDGETCODE || '',
+	ZOHO_FORM_URL: process.env.ZOHO_FORM_URL || '',
+	DEBUG_SECTIONS: process.env.DEBUG_SECTIONS || null
 }

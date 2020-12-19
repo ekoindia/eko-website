@@ -40,6 +40,10 @@
 	  {% include "css/grids-responsive-min.css" %}
     {% endset %}
 
+	{% set css_debug %}
+	  {% include "css/debug.css" %}
+    {% endset %}
+
 	{# CSS include for Blog section (included in blog template and the blog listing pages) #}
 	{% set css_blog %}
       {% include "css/blog.css" %}
@@ -76,6 +80,10 @@
 	  {% block custom_style %}{% endblock %}
     </style>
 
+	{% if env.DEBUG_SECTIONS=='true' %}
+		<style>{{ css_debug | cssmin | safe }}</style>
+	{% endif %}
+
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   </head>
@@ -97,7 +105,9 @@
     </script>
 	#}
 
-	<main>{% block main%}{% endblock %}</main>
+	<main>
+		{% block main%}{% endblock %}
+	</main>
 
 	{% include "footer.njk" %}
 
