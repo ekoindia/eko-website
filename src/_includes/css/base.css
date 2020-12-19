@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap&text=abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890.!#\'",|+-₹');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap&text=abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890%21%22%23%24%25%26%27%2B%2C%2F%40%7C%7B%7D%5B%5D%3B%3C%3D%3E%3F.!-*()₹');
 
 :root {
 	--primary-color: #ffb218;
@@ -14,17 +14,17 @@
 	--nav-caption: #b0b0b0;
 }
 
-@font-face {
-  font-display: swap;
-}
-
 
 main, html, body {
   letter-spacing: 1px;
   color: var(--main-text-color) !important;
   font-family: 'Roboto', sans-serif;
   line-height: 1.42857143;
-  font-display: swap;
+}
+
+/* For compatibility with PureCSS.io */
+.pure-g [class *= "pure-u"] {
+    font-family: 'Roboto', sans-serif;
 }
 
 *, *::before, *::after {
@@ -128,8 +128,9 @@ margin-bottom: 5px;
 }
 
 h1 {
-font-size: 128px;
+font-size: 40px;
 font-weight: bold;
+line-height: 1.4;
 }
 
 h5 {
@@ -325,9 +326,6 @@ font-weight: 600;
   opacity: 1;
 }
 
-.big-header {
-  font-size: 35px;
-}
 
 .main-header {
   font-size: 50px;
@@ -357,55 +355,42 @@ font-weight: 600;
   padding: 0.5em;
 }
 
-.icon-scroll .icon-scroll-container {
-position: absolute;
-top: 50%;
-left: 50%;
-  width: 1em;
-height: 3.125em;
-transform: translateX(-50%) scale(2);
-z-index: 99999;
-}
 
-.icon-scroll span {
-animation-delay: .2s;
-}
-
+/* ----- Mouse Scroll Animated Icon ----- */
 .icon-scroll .mouse {
-height: 2.5em;
-width: 1.5em;
-border: 1px solid var(--header-color);
-border-radius: 2em;
+	height: 36px;
+	width: 22px;
+	border: 1px solid var(--header-color);
+	border-radius: 11px;
 }
 
-.icon-scroll .wheel {
-position: relative;
-display: block;
-height: 0.5em;
-width: 0.1875em;
-margin: 1.5em auto 0;
-background: var(--header-color);
-animation: mouse-wheel 1.2s ease infinite;
-border-radius: 50%;
+.icon-scroll .mouse::before {
+	content: '';
+	display: block;
+	height: 7px;
+	width: 4px;
+	margin-top: 8px;
+	background: var(--header-color);
+	animation: mouse-wheel 1.4s ease 30;
+	animation-fill-mode: forwards;
+	animation-delay: 6s;
+	border-radius: 2px;
+	opacity: 0;
 }
 
 @keyframes mouse-wheel {
-0% {
-  opacity: 1;
-  transform: translateY(0);
-}
+	0% {
+		opacity: 1;
+		transform: translateY(16px);
+	}
 
-100% {
-  opacity: 0;
-  transform: translateY(-1em);
+	100% {
+		opacity: 0;
+		transform: none;
+	}
 }
-}
+/* -------------------------------------- */
 
-@keyframes mouse-scroll {
-0%   { opacity: 0; }
-50%  { opacity: .5; }
-100% { opacity: 1; }
-}
 
 .fa {
   padding: 20px;
@@ -474,6 +459,25 @@ h6 {
   max-width: 80%;
 }
 
+
+.documentation_link_banner div {
+	border: 1px solid var(--primary-color);
+	border-radius: 12px;
+	padding: 20px 40px;
+	background: white;
+}
+
+.documentation_link_banner h2 {
+	display: inline;
+	margin: 20px 0;
+}
+
+
+@media (min-width: 700px) {
+	.documentation_link_banner h2 {
+		margin: 0 20px;
+	}
+}
 
 
 
@@ -753,39 +757,67 @@ padding-left: 10px;
 /* ============================= SECTION BULLET-LIST ============================ */
 
 .bullet-list {
-  width: 60%;
-  height: auto;
-  max-width: 95%;
+  width: 100%;
   border: 1px solid var(--primary-color);
   border-radius: 25px;
   background-color: white;
-  padding: 8%;
+  padding: 20px 10px;
   text-align: left;
 }
 
-.bullet-list li {
-  padding-bottom: 5%;
-  margin: 0px 0px 20px;
-  font-size: 20px;
-  font-family: Roboto, sans-serif;
-}
-
-.bullet-list li::before {
-  margin-left: -15px;
-}
-
 .bullet-list ul {
-  list-style-type: circle;
-  font-weight: bold;
+  list-style-type: disc;
+  padding-inline-start: 18px;
 }
 
 .bullet-list li {
-  color: var(--primary-color);
-  font-weight: 550;
-}
-
-.bullet-list li span {
+  margin-bottom: 0.5em;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.3;
   color: var(--header-color);
 }
 
+.bullet-list li::marker {
+	color: var(--primary-color);
+	font-size: 1.1em;
+}
 
+
+
+@media (min-width: 700px) {
+	.bullet-list {
+		width: 80%;
+		max-width: 95%;
+		padding: 60px 120px;
+	}
+
+	.bullet-list ul {
+		padding-inline-start: 20px;
+	}
+
+	.bullet-list li {
+		margin-bottom: 0.8em;
+		font-size: 24px;
+		line-height: 1.5;
+		letter-spacing: 1px;
+	}
+}
+
+
+
+/* ================================= Zoho Form ====================================== */
+
+.form-frame {
+	width: 100%;
+	height: 600px;
+	border: none;
+	background: var(--background-section-color);
+}
+
+
+@media (min-width: 700px) {
+	.form-frame {
+		width: 600px;
+	}
+}

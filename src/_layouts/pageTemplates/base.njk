@@ -29,6 +29,7 @@
 
     {# Link Main CSS Files (common to all sections & pages) #}
     {% set css_main %}
+	  {% include "css/flex.css" %}
       {% include "css/base.css" %}
 	  {% include "css/nav.css" %}
 	  {% include "css/footer.css" %}
@@ -68,8 +69,8 @@
     {% endset %} #}
 
 	<style>
-      {{ css_main | cssmin | safe }}
       {{ css_pure | cssmin | safe }}
+      {{ css_main | cssmin | safe }}
       {# {{ dark | cssmin | safe }} #}
 
 	  {% block custom_style %}{% endblock %}

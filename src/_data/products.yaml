@@ -1,7 +1,7 @@
 - name: Money Transfer
   title: Money Transfer
   tag_line: Easiest way to transfer cash to anyone
-  social_image: https://ekoin.netlify.app/images/money-transfer/easy-cash-transfer.png
+  social_image: /images/money-transfer/easy-cash-transfer.png
   keywords: money, transfer, easy
   hero_image: /images/money-transfer/money-transfer.svg
   summary: A simple and highly secure direct money transfer ability for your customers using cash with industry-leading success rates
@@ -84,13 +84,13 @@
 - name: Aadhaar Banking
   title: Aadhaar Banking / Cash-out
   tag_line: AePS - Aadhaar Enabled Payment System
-  social_image: https://ekoin.netlify.app/images/aadhaar-banking/AePS_hero.png
-  keywords: Aadhaar Banking, Cash-out
+  social_image: /images/aadhaar-banking/AePS_hero.png
+  keywords: aadhaar banking, cashout, ATM
   hero_image: /images/aadhaar-banking/AePS_hero.svg
   summary: A simple and highly secure cash withdrawing ability for your customers using Aadhaar and ensuring that you earn more with every transaction.
   description: Aadhar banking (AePS) helps you turn your own shop into an ATM. It provides you the ability to deliver services such as cash deposit, cash withdrawal, and balance check to your customers. This is particularly useful for customers who do not trust themselves to be able to use an ATM properly. Help them out, help yourself out!
   icon: /images/aadhaar-banking/aadhaar_logo.svg
-  video_link: https://www.youtube.com/watch?time_continue=1&v=y-zLDNRPnBs&feature=emb_logo
+  learn_more_link: https://www.youtube.com/watch?v=y-zLDNRPnBs&feature=emb_logo
 
   layout:
     - section: mid_summary
@@ -157,16 +157,12 @@
 
     - section: small_heros
       header: Our Partners
-      partner1:
-        image: /images/aadhaar-banking/billdesk.png
-      partner2:
-        image: /images/aadhaar-banking/nsdl.png
-      partner3:
-        image: /images/aadhaar-banking/bharat.png
-      partner4:
-        image: /images/aadhaar-banking/aeps.png
-      partner5:
-        image: /images/aadhaar-banking/npcl.png
+      partner_images:
+      - /images/aadhaar-banking/billdesk.png
+      - /images/aadhaar-banking/nsdl.png
+      - /images/aadhaar-banking/bharat.png
+      - /images/aadhaar-banking/aeps.png
+      - /images/aadhaar-banking/npcl.png
 
     - section: final_ad
       small_header: Ready to get started?
@@ -174,3 +170,299 @@
       image: /images/become-eko-partner.svg
       button1_text: Get Started
       button2_text: Contact Sales
+
+
+
+- name: Doorstep Cash Delivery
+  title: Doorstep Cash Delivery with RWA
+  tag_line: Deliver banking services at customer doorstep
+  social_image: /images/doorstep-delivery/doorstep-delivery.svg
+  keywords: cashout, home delivery, doorsetp delivery, ATM, cash delivery
+  hero_image: /images/doorstep-delivery/doorstep-delivery.svg
+  summary: Deliver essential banking services to your customers during the COVID-19 pandemic and keep your livelihood secure
+  description: Eko along with RWA is taking an initiative to deliver its Banking Services to every individual. Retailers can deliver cash & give cash-deposit service to every society, apartment, and other residence. Retailers can run their business even during this crisis, while the customers can get these services right at their doorstep.
+
+  layout:
+    - section: mid_summary
+      small_description: An Initiative with RWA
+      header: Home delivery of ATM
+
+    - section: alternating_steps
+      steps:
+      - title: Cash delivery at home
+        text: Deliver cash to your customers’ doorsteps using UPI or AePS.
+        image: /images/doorstep-delivery/cash-delivery-at-home.svg
+      - title: Cash-deposit at home
+        text: Give your customers the ability to deposit money into their bank accounts from the comfort of their homes.
+        image: /images/doorstep-delivery/cash-deposit-at-home.svg
+      - title: Utility bill payments at home
+        text: Help your customers pay their water, electricity, phone, and gas bills from home
+        image: /images/doorstep-delivery/utility.svg
+
+    - section: heros_main
+      header: Benefits
+      items:
+        - type: single
+          # Benefit 1
+          title: Keep your business running during the lockdown
+          text: Keep earning money eveen during the lockdown. Keep serving these doorstep essential setvices and keep your livelihood secure in the process.
+          image: /images/doorstep-delivery/business-running.svg
+        - type: single
+          # Benefit 2
+          title: Ensuring retailer & customer safety at all steps
+          text: We have made specific guidelines for our retailers to keep themselves and the customers safe while delivering these services.
+          image: /images/doorstep-delivery/customer-safety.svg
+
+    - section: bullet_list
+      lines:
+      - Kiosk will be available outside the main entrance of the society.
+      - Service availability will only be for 1hr & 30min in a day.
+      - Our retailers will sit with all the advised precautionary measures for Covid-19.
+      - Each person who requires service will be queued into a numbered circle mark.
+      - The retailers and every customer must wear a face-mask at all time.
+      - Use of hand sanitizer before & after getting our banking services rendered is mandatory.
+      - After every biometric transaction, the retailer will sanitize the biometric device.
+
+    - section: one_liner
+      icon: /images/eko-trust.svg
+      title: Eko's Trust
+      text: With Eko's 12+ years of experience in leading the money transfer space in India, we assure your customer's hard-earned money reaches the destination
+
+    - section: step_section
+      header: How does doorstep cash delivery work
+      steps:
+      - text: RWA Calls Eko & requests for a Cash Delivery Kiosk
+      - text: Eko confirms the time with RWA to setup the kiosk
+      - text: Eko calls the retailer to visit the society and set up a kiosk
+      - text: Retailer goes to the society and starts serving
+
+    - section: message
+      line1: Doorstep delivery is fairly simple. Things do not go wrong often, but when they do, you can count on us to solve your problems.
+      main_line: For all issues, we provide 24x7 support.
+      button_text: Contact Support
+
+    - section: final_ad
+      small_header: Ready to get started?
+      main_header: Serve at Doorstep & Earn More
+      image: /images/become-eko-partner.svg
+      button1_text: Get Started
+      button2_text: Contact Sales
+
+
+
+- name: Utility and Bill Payment
+  title: Utility & Bill Payments
+  tag_line: Help your customers pay their utility bills
+  social_image: /images/bill-payment/utility-bill-payment.svg
+  keywords: bill payment, utility payment
+  hero_image: /images/bill-payment/utility-bill-payment.svg
+  summary: Your one-stop shop for online bill payments! Make them easy and hassle free for your customers using cash.
+  description: Eko gives you the opportunity to turn your shop into a one-stop bill payment destination. Collect cash from customers and pay their electricity bill, water bill, gas bill, and phone bills using your Eko wallet!
+
+  layout:
+    - section: icon_list
+      header: Pay all bills at the same place, at the same time
+      subtitle: Pay Bills instantly
+      description: Eko gives you the opportunity to turn your shop into a one-stop bill payment destination. Collect cash from customers and pay their electricity bill, water bill, gas bill, and phone bills using your Eko wallet!
+      icons:
+        - image: /images/bill-payment/mobile-recharge-icon.svg
+          caption: Prepaid & Postpaid mobile recharge
+        - image: /images/bill-payment/electricity-icon.svg
+          caption: Electricity bill payments
+        - image: /images/bill-payment/water-icon.svg
+          caption: Water and Gas bill payment
+        - image: /images/bill-payment/gas-icon.svg
+          caption: Book LPG gas cylinders
+
+    - section: heros_main
+      header: Benefits
+      items:
+        - type: pair
+          # Benefit 1
+          title_left: Earn Commission
+          text_left: Earn commission for every Bill payment. Prepaid & Postpaid recharges, electricity bills, water and gas bills and even for the booking of LPG cylinders.
+          image_left: /images/bill-payment/earn-commission.svg
+          # Benefit 2
+          title_right: Best Success Rate
+          text_right: Transaction failures occur rarely with our services. We ensure that you get the best success rate for every transaction. We are as reliable as banks themselves
+          image_right: /images/bill-payment/best-success-rate.svg
+        - type: single
+          # Benefit 3
+          title: Turn your shop into a one-stop payment destination
+          text: Imagine the number of customers who would visit your shop just to pay bills! These utility payments happen frequently and the demand never goes down.
+          image: /images/bill-payment/one-stop-payment.svg
+        - type: pair
+          # Benefit 4
+          title_left: Avoid Queues
+          text_left: Customers would no longer need to stand in queues to pay their essential bills. They can simply visit your shop!
+          image_left: /images/bill-payment/avoid-bank-queues.svg
+          # Benefit 5
+          title_right: Save Travel Money
+          text_right: Customers can save time and money by not having to travel to various departments. They can make all these bill payments at your shop.
+          image_right: /images/bill-payment/save-money.svg
+
+    - section: one_liner
+      icon: /images/eko-trust.svg
+      title: Eko's Trust
+      text: You can assure your customers that their money and data is safe. Eko’s trust is unparalleled
+
+    - section: step_section
+      header: How to pay utility bills
+      steps:
+      - text: Sign Up on Connect
+        link: https://connect.eko.in
+      - text: Enter customer's mobile number
+      - text: Choose biller & pay amount
+      - text: Collect cash from the customer
+
+    - section: message
+      line1: Utility & Bill Payments
+      line2: Paying bill for the customers is easy with Eko’s Connect portal. Things do not go wrong often, but when they do, you can count on us to solve your problems.
+      main_line: For all issues, we provide 24x7 support.
+      button_text: Contact Support
+
+    - section: final_ad
+      small_header: Ready to get started?
+      main_header: Pay Utility Bills & Earn More
+      image: /images/become-eko-partner.svg
+      button1_text: Get Started
+      button2_text: Contact Sales
+
+
+
+- name: Sell Insurance
+  title: Sell Insurance
+  tag_line: Sell low cost insurance policy at your doorstep
+  social_image: /images/sell-insurance/insurance.svg
+  keywords: insurance
+  hero_image: /images/sell-insurance/insurance.svg
+  summary: Low cost, simple paperwork and easy claim process makes our insurance policies the best choice for your customers.
+  description: Help your customers secure their lives by becoming an insurance agent. No, not the kind of agent who bothers people by going to their houses only to tell them they could die, but the kind who people themselves approach for their insurance needs.
+
+  layout:
+    - section: icon_list
+      header: Become an Insurance Agent
+      subtitle: Insurance
+      description: Help your customers secure their lives by becoming an insurance agent. No, not the kind of agent who bothers people by going to their houses only to tell them they could die, but the kind who people themselves approach for their insurance needs.
+      icons:
+        - image: /images/sell-insurance/insurance-policy-icon.svg
+          caption: Sell exclusive and affordable insurance policies
+        - image: /images/sell-insurance/insurance-premium-icon.svg
+          caption: Make premium payment for your customers
+        - image: /images/sell-insurance/cashback-icon.svg
+          caption: Get cashback for every insurance/premium sold
+
+    - section: heros_main
+      header: Benefits
+      items:
+        - type: single
+          # Benefit 1
+          title: Exclusive low-cost insurance policy
+          text: Sell low-cost insurance policies not available on any other platform.
+          image: /images/sell-insurance/low-cost-insurance.svg
+        - type: pair
+          # Benefit 2
+          title_left: One-time premium
+          text_left: One-time premiums are also available for customers who do not need long-term policies. There is something for everyone!
+          image_left: /images/sell-insurance/one-time-premium.svg
+          # Benefit 3
+          title_right: Easy claim process
+          text_right: Making claims should be as easy as buying loans and so we offer a process that involves lesser paperwork and more support.
+          image_right: /images/sell-insurance/easy-claim-process.svg
+
+    - section: one_liner
+      icon: /images/eko-trust.svg
+      title: Eko's Trust
+      text: Trust is indeed the most important factor when it comes to insurance. Over the years, we have built a reputation for safety with all our services. Our partners trust us with their money, and we never disappoint them.
+
+    - section: step_section
+      header: How to pay utility bills
+      steps:
+      - text: Sign Up on Connect
+        link: https://connect.eko.in
+      - text: Go to EkoStore on the left menu
+      - text: Choose the insurance policy
+      - text: Fill the details and you are done
+
+    - section: message
+      line1: Use your Connect account to tell your customers about the insurance policies available exclusively on Eko’s platform.
+      line2: The process of selling insurance is easy.
+      main_line: For all issues, we provide 24x7 support.
+      button_text: Contact Support
+
+    - section: final_ad
+      small_header: Ready to get started?
+      main_header: Sell Insurance policies & Earn More
+      image: /images/become-eko-partner.svg
+      button1_text: Get Started
+      button2_text: Contact Sales
+
+
+
+- name: Indo-Nepal Money Transfer
+  title: Indo-Nepal Money Transfer
+  tag_line: Transfer money to Nepal, at the click of a button
+  social_image: /images/indo-nepal/nepal-money-transfer.svg
+  keywords: indo-nepal, nepal, money transfer
+  hero_image: /images/indo-nepal/nepal-money-transfer.svg
+  summary: Help your customers (mostly Nepali immigrants) send money to their loved-ones in Nepal. Fast, secure money transfer whenever you need to.
+  description: A simple and highly secure direct money transfer ability for your customers to transfer money to Nepal. No Indian bank account needed and no need to visit banks.
+
+  layout:
+    - section: mid_summary
+      small_description: Easy money transfer to Nepal
+      header: Send money to your loved-ones
+
+    - section: alternating_steps
+      steps:
+      - title: Easy Cash transfer
+        text: Let customers transfer money to any bank account in Nepal by paying in cash
+        image: /images/indo-nepal/indo-nepal.svg
+      - title: Transaction receipt
+        text: Print transaction-receipt for your customers to give them a sense of safety
+        image: /images/indo-nepal/transaction-receipt.svg
+
+    - section: heros_main
+      header: Benefits
+      items:
+        - type: single # One item on its own in the center of the page
+          # Benefit 1 (center)
+          title: No Indian bank account needed
+          text: Your customers do not need to have a bank account in India to be able to transfer money to Nepal. As long as they have cash, you can help them out.
+          image: /images/indo-nepal/no-indian-bank.svg
+        - type: pair
+          # Benefit 2 (left side)
+          title_left: Earn Commission
+          text_left: Earn money with every transaction. There is virtually no limit to the amount of money that can be made.
+          image_left: /images/indo-nepal/earn-commission.svg
+          # Benefit 3 (right side)
+          title_right: Best Success Rate
+          text_right: Transaction failures occur rarely with our services. We ensure that you get the best success rate for every transaction.
+          image_right: /images/indo-nepal/best-success-rate.svg
+
+    - section: one_liner
+      icon: /images/eko-trust.svg
+      title: Eko's Trust
+      text: With Eko's 12+ years of experience in leading the money transfer space in India, we assure your customer's hard-earned money reaches the destination
+
+    - section: step_section
+      header: How Indo-Nepal Payment Works
+      steps:
+      - text: Sign Up on Connect
+        link: https://connect.eko.in
+      - text: Select Indo-Nepal in the left menu
+      - text: Enter amount and bank details
+      - text: Collect cash from the customer
+
+    - section: message
+      line1: A customer who wishes to use Indo-Nepal service would simply need to show his ID card and provide bank details to transfer money.
+      main_line: For all issues, we provide 24x7 support.
+      button_text: Contact Support
+
+    - section: final_ad
+      small_header: Ready to get started?
+      main_header: Send money to Nepal & Earn More
+      image: /images/become-eko-partner.svg
+      button1_text: Get Started
+      button2_text: Contact Sales
+

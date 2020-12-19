@@ -2,8 +2,8 @@
 	<center>
 		<div class="bullet-list">
 			<ul>
-			{% for bullet in item.lines %}
-				<li><span>{{ bullet.text }}</span></li>
+			{% for line in item.lines %}
+				<li>{{ line }}</li>
 			{% endfor %}
 			</ul>
 		</div>

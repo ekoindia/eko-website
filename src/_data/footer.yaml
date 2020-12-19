@@ -5,42 +5,42 @@ column1:
   - header: DEVELOPER PRODUCT
   - link1:
     text: DMT API
-    url: https://eko.in/developers/eps/domestic-money-transfer-api
+    url: /developers/eps/domestic-money-transfer-api
   - link2:
     text: AePS Cashout SDK
-    url: https://eko.in/developers/eps/aeps-cashout-sdk
+    url: /developers/eps/aeps-cashout-sdk
   - link3:
     text: Fund Settlement API
-    url: https://eko.in/developers/eps/fund-settlement-api
+    url: /developers/eps/fund-settlement-api
   - link4:
     text: Cash Collection API
-    url: https://eko.in/developers/eps/domestic-money-transfer-api
+    url: /developers/eps/domestic-money-transfer-api
   - link5:
     text: PAN Verification API
-    url: https://eko.in/developers/eps/aeps-cashout-sdk
+    url: /developers/eps/aeps-cashout-sdk
   - link6:
     text: Account Verification API
-    url: https://eko.in/developers/eps/fund-settlement-api
+    url: /developers/eps/fund-settlement-api
 column2:
   - header: COMPANY
   - link1:
     text: About Us
-    url: https://eko.in/developers/eps/domestic-money-transfer-api
+    url: /about-us
   - link2:
     text: Blogs
-    url: https://eko.in/developers/eps/aeps-cashout-sdk
+    url: /blog
   - link3:
     text: FAQs
-    url: https://eko.in/developers/eps/fund-settlement-api
+    url: /faq
   - link4:
     text: T&C
-    url: https://eko.in/developers/eps/domestic-money-transfer-api
+    url: /
   - link5:
     text: Privacy Policy
-    url: https://eko.in/developers/eps/aeps-cashout-sdk
+    url: /privacy-policy
   - link6:
     text: Other Documents
-    url: https://eko.in/developers/eps/fund-settlement-api
+    url: /other-documents
   - link7:
     text: Grievance
-    url: https://eko.in/grievance
+    url: /grievance

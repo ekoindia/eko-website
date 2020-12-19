@@ -29,7 +29,7 @@
 
 		{# The section mid_summary uses the main product description as it's main-text #}
 		{% if item.section === "mid_summary" %}
-			{% set item = product.layout[i]|mergeObjectFilter({main_text: product.description}) %}}
+			{% set item = product.layout[i]|mergeObjectFilter({main_text: product.description}) %}
 		{% endif %}
 
 		{% set component = "section_" + item.section + ".njk" %}
