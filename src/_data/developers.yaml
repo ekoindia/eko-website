@@ -159,11 +159,16 @@
     - section: small_heros
       header: Our Partners
       partner_images:
-        - /images/partners/shopx.png
-        - /images/partners/matrix.png
-        - /images/partners/storeking.png
-        - /images/partners/vakrangee.png
-        - /images/partners/toffee.png
+        - image: /images/partners/shopx.png
+          title: ShopX
+        - image: /images/partners/matrix.png
+          title: Matrix
+        - image: /images/partners/storeking.png
+          title: StoreKing
+        - image: /images/partners/vakrangee.png
+          title: Vakrangee
+        - image: /images/partners/toffee.png
+          title: Toffee Insurance
 
     - section: final_ad
       small_header: Ready to get started?

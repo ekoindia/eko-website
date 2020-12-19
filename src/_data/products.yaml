@@ -158,11 +158,16 @@
     - section: small_heros
       header: Our Partners
       partner_images:
-      - /images/aadhaar-banking/billdesk.png
-      - /images/aadhaar-banking/nsdl.png
-      - /images/aadhaar-banking/bharat.png
-      - /images/aadhaar-banking/aeps.png
-      - /images/aadhaar-banking/npcl.png
+        - image: /images/aadhaar-banking/billdesk.png
+          title: BillDesk
+        - image: /images/aadhaar-banking/nsdl.png
+          title: NSDL
+        - image: /images/aadhaar-banking/bharat.png
+          title: Bharat BillPay
+        - image: /images/aadhaar-banking/aeps.png
+          title: AePS
+        - image: /images/aadhaar-banking/npci.png
+          title: NPCI
 
     - section: final_ad
       small_header: Ready to get started?
