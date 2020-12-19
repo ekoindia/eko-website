@@ -10,7 +10,7 @@
 	{% for hero in item.items %}
 			{% if hero.type == 'single' %}
 				<center>
-					<img class="mw-100" style="max-width:500px; max-height:300px; background-color:rgba(0,0,255,0.1);" src="{{ hero.image }}" alt="{{ hero.title }}">
+					<img class="mw-100" src="{{ hero.image }}" alt="{{ hero.title }}">
 					<br><br>
 					<h3>{{ hero.title }}</h3>
 					<p>{{ hero.text }}</p>

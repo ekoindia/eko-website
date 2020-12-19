@@ -1,9 +1,10 @@
 title: Eko
-base_url: https://eko.in
 logo: /images/logo.svg
 signup_url: /sign-up
 contact_url: /contact-us
 company_description: Eko gives retailers an opportunity to turn their own shop into a Banking & Financial institution by providing solutions to low & middle income customers.
+developer_portal: https://developers.eko.in
+
 
 #### SEO & Social...
 tag_line: Best way to collect cash at your doorstep

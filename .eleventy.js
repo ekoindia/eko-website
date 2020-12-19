@@ -87,6 +87,7 @@ module.exports = function(eleventyConfig) {
 
   eleventyConfig.addLayoutAlias('base', 'pageTemplates/base.njk');
   eleventyConfig.addLayoutAlias('product_page', 'pageTemplates/product_page.njk');
+  eleventyConfig.addLayoutAlias('developer_page', 'pageTemplates/developer_page.njk');
   eleventyConfig.addLayoutAlias('blog_post', 'pageTemplates/blog_post.njk');
   eleventyConfig.addLayoutAlias('career_post', 'pageTemplates/career_post.njk');
   eleventyConfig.addLayoutAlias('ekoUniversity', 'pageTemplates/ekoUniversity.njk');
@@ -98,10 +99,8 @@ module.exports = function(eleventyConfig) {
   })
 
   eleventyConfig.addShortcode('iconScroll', function() {
-    return `<center><div class="icon-scroll icon-scroll-container">
-    <div class="mouse">
-      <div class="wheel"></div>
-    </div>
+    return `<center><div class="icon-scroll">
+    <div class="mouse"></div>
   </div></center>`;
   });
 
