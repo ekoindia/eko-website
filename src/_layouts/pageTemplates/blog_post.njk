@@ -7,7 +7,12 @@
 {% block main %}
     <section>
         <h1>{{ title }}</h1>
-        <h3>{{ date | readableDate }}</h3>
+        <h6>
+			<time>{{ date | readableDate }}</time>
+			{% for item in tags %}
+				<a class="blogtag" href="/blog/{{item}}/">{{ item }}</h1></li></h4>
+			{% endfor %}
+		</h6>
         <img class="hero" src="{{ image | url }}" alt="{{ image }}">
         <p>{{ content | safe }}</p>
     </section>

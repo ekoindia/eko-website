@@ -78,6 +78,16 @@ img.hero {
   }
 }
 
+.blogtag {
+	margin-left: 1em;
+	text-decoration: none;
+}
+
+.blogtag::before {
+	content: "•";
+	padding-right: 0.3em;
+}
+
 .card {
   background: white;
   text-decoration: none;
@@ -116,7 +126,7 @@ article {
   letter-spacing: .05em;
 }
 
-.band time::before {
+time::before {
 	content: '📅 ';
 }
 
