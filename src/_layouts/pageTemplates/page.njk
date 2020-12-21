@@ -7,8 +7,9 @@
 {% block main %}
     <section>
         <h1>{{ title }}</h1>
-        <h3>{{ date | readableDate }}</h3>
-        <img class="hero" src="{{ image | url }}" alt="{{ image }}">
+		{% if image %}
+			<img src="{{ image }}">
+		{% endif %}
         <p>{{ content | safe }}</p>
     </section>
 {% endblock %}

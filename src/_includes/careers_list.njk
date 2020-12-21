@@ -5,7 +5,7 @@
         <a href="{{ career.url | url }}" class="card">
         <div class="thumb" style="background-image: url({{ career.data.image }})"></div>
         <article>
-            <h1>{{ career.data.title }}</h1>
+            <h4>{{ career.data.title }}</h4>
             <span><time datetime="{{ career.date | htmlDateString }}">{{ career.date | readableDate }}</time></span>
             <p>{{ career.data.description }}</p>
         </article>

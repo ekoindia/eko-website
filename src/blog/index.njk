@@ -19,8 +19,7 @@ eleventyExcludeFromCollections: true
 
 	<section>
 		<header>
-			<h1>Blog Posts</h1>
-			<span class="h2-border"></span>
+			<h1>Blog</h1>
 		</header>
 	</section>
 
@@ -31,7 +30,7 @@ eleventyExcludeFromCollections: true
 		<h1>Categories</h1>
 		<ul>
 			{% for item in tag %}
-				<li><h4><a href="/blogs/{{item}}/">{{ item | capitalize }}</h1></li></h4>
+				<li><h4><a href="/blog/{{item}}/">{{ item | capitalize }}</h1></li></h4>
 			{% endfor %}
 		</ul>
 	</section>

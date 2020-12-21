@@ -1,5 +1,63 @@
 /* ================ Blog Posts & Listing ================ */
 
+h1 {
+	font-size: 2em;
+	line-height: 1.6;
+	color: var(--header-color);
+	border-bottom: 1px solid var(--divider-color);
+}
+h2 { font-size: 1.5em; }
+h3 { font-size: 1.17em; }
+h4 { font-size: 1.12em; }
+h5 { font-size: .83em; }
+h6 { font-size: .75em; }
+
+
+@media (min-width: 700px) {
+	h1 { font-size: 40px; }
+	h2 { font-size: 32px; }
+	h3 { font-size: 22px; }
+	h4 { font-size: 18px; }
+}
+
+a {
+	text-decoration: underline;
+	color: var(--primary-color);
+}
+
+
+blockquote {
+  background: #f9f9f9;
+  border-left: 10px solid #ccc;
+  margin: 1.5em 10px;
+  padding: 1.2em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+blockquote:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 5em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+blockquote p {
+  display: inline;
+  font-size: 1.3em;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+
+
+img.hero {
+    display: block;
+    margin: 2rem auto;
+	max-width: 100%;
+	border-radius: 5px;
+}
+
+
 .band {
   width: 90%;
   max-width: 1240px;
@@ -47,16 +105,19 @@ article {
 
 .band p {
   flex: 1;
+  font-size: 0.9em;
   line-height: 1.4;
 }
 
-.band span {
-  font-size: 12px;
+.band time {
+  font-size: 11px;
   font-weight: bold;
   color: var(--header-color);
-  text-transform: uppercase;
   letter-spacing: .05em;
-  margin: 2em 0 0 0;
+}
+
+.band time::before {
+	content: '📅 ';
 }
 
 .band .thumb {
@@ -106,3 +167,25 @@ article {
   text-decoration: none;
 }
 
+
+/* ===================== Markdown Extentions ============================== */
+
+nav.table-of-contents {
+	display: block;
+	width: 100%;
+	padding: 0.4em;
+	margin-bottom: 2em;
+	background: var(--background-section-color);
+	border-left: 5px solid var(--primary-color);
+}
+
+@media (min-width: 700px) {
+	nav.table-of-contents {
+		max-width:70%;
+		width:auto;
+		padding: 1em;
+		margin-left: auto;
+		margin-right: auto;
+
+	}
+}

@@ -6,11 +6,89 @@ const CleanCSS = require("clean-css");
 const eleventyNavigationPlugin = require('@11ty/eleventy-navigation');
 const blogTools = require("eleventy-plugin-blog-tools");
 const { DateTime } = require("luxon");
+const outdent = require('outdent');
+
+// const string = require('string');		// https://github.com/jprichardson/string.js
+
+const md = require("markdown-it");
+const md_emoji = require("markdown-it-emoji");
+const multimd_table = require('markdown-it-multimd-table');
+const md_attrs = require('@gerhobbelt/markdown-it-attrs');
+const md_abbr = require('markdown-it-abbr');
+const md_footnote = require('markdown-it-footnote');
+const md_sub = require('markdown-it-sub');
+const md_sup = require('markdown-it-sup');
+const md_container = require('markdown-it-container');
+const md_anchor = require('markdown-it-anchor');
+const uslug = require('uslug');
+const md_toc = require("markdown-it-toc-done-right");
+
 
 require('dotenv').config();
 
 
 module.exports = function(eleventyConfig) {
+
+	// ---------------------- Configure Markdown Support ----------------------------
+
+	const markdownLib = md({
+		html: true,
+		breaks: true,
+		linkify: true,
+		typographer: true
+	});
+
+	markdownLib.use(md_emoji);			// https://github.com/markdown-it/markdown-it-emoji
+	markdownLib.use(md_anchor, {
+		level: [1, 2, 3],
+		slugify: s => uslug(s)
+	});									// https://github.com/valeriangalliat/markdown-it-anchor
+	markdownLib.use(md_toc, {
+		level: [1, 2, 3],
+		// placeholder: '[[TOC]]',
+		listType: 'ol',
+		slugify: s => uslug(s)
+	});									// https://github.com/nagaozen/markdown-it-toc-done-right
+	markdownLib.use(multimd_table, {
+		multiline: true,
+		rowspan: true,
+		headerless: true
+	});									// https://github.com/RedBug312/markdown-it-multimd-table
+	markdownLib.use(md_attrs, {
+		allowedAttributes: ["class"]
+	});									// https://github.com/GerHobbelt/markdown-it-attrs
+	markdownLib.use(md_abbr);			// https://github.com/markdown-it/markdown-it-abbr
+	markdownLib.use(md_footnote);		// https://github.com/markdown-it/markdown-it-footnote
+	markdownLib.use(md_sub);			// https://github.com/markdown-it/markdown-it-sub
+	markdownLib.use(md_sup);			// https://github.com/markdown-it/markdown-it-sup
+	markdownLib.use(md_container);		// https://github.com/markdown-it/markdown-it-container
+	// markdownLib.use();
+	// markdownLib.use();
+	// markdownLib.use();
+	// markdownLib.use();
+	// markdownLib.use();
+	// markdownLib.use();
+
+	eleventyConfig.setLibrary("md", markdownLib);
+
+		// Simple typographic replacements (with typographer: true config):
+		// 		quotes beautification
+		// 		(c) (C) → ©
+		// 		(tm) (TM) → ™
+		// 		(r) (R) → ®
+		// 		+- → ±
+		// 		(p) (P) -> §
+		// 		... → … (also ?.... → ?.., !.... → !..)
+		// 		???????? → ???, !!!!! → !!!, `,,` → `,`
+		// 		-- → &ndash;, --- → &mdash;
+
+	// ---------------------------------------------------------------------------------
+
+	// eleventyConfig.setFrontMatterParsingOptions({
+	// 	excerpt: true,
+	// 	// Optional, default is "---"
+	// 	excerpt_separator: "<!-- excerpt -->"
+	// });
 
   eleventyConfig.addFilter("cssmin", function(code) {
     return new CleanCSS({}).minify(code).styles;
@@ -56,19 +134,19 @@ module.exports = function(eleventyConfig) {
     }
   });
 
-//   eleventyConfig.addPlugin(eleventyNavigationPlugin);
+  // eleventyConfig.addPlugin(eleventyNavigationPlugin);
   eleventyConfig.addPlugin(blogTools);
 
   eleventyConfig.addFilter('htmlDateString', (dateObj) => {
     return DateTime.fromJSDate(dateObj, {
       zone: 'utc'
-      }).toFormat('yy-MM-dd');
+      }).toFormat('yyyy-mm-dd');
     });
 
   eleventyConfig.addFilter("readableDate", dateObj => {
   return DateTime.fromJSDate(dateObj, {
     zone: 'utc'
-    }).toFormat("dd-MM-yy");
+    }).toFormat("dd MMM yyyy");
   });
 
   // Filter out all elements from a list (eg: products) that has a 'hidden: true' property in it
@@ -86,27 +164,28 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy('src/js');
 
   eleventyConfig.addLayoutAlias('base', 'pageTemplates/base.njk');
+  eleventyConfig.addLayoutAlias('page', 'pageTemplates/page.njk');
   eleventyConfig.addLayoutAlias('product_page', 'pageTemplates/product_page.njk');
   eleventyConfig.addLayoutAlias('developer_page', 'pageTemplates/developer_page.njk');
-  eleventyConfig.addLayoutAlias('blog_post', 'pageTemplates/blog_post.njk');
+  eleventyConfig.addLayoutAlias('blog', 'pageTemplates/blog_post.njk');
   eleventyConfig.addLayoutAlias('career_post', 'pageTemplates/career_post.njk');
   eleventyConfig.addLayoutAlias('ekoUniversity', 'pageTemplates/ekoUniversity.njk');
 
-  eleventyConfig.addDataExtension('yaml', contents => yaml.safeLoad(contents))
+  eleventyConfig.addDataExtension('yaml', contents => yaml.safeLoad(contents));
 
   eleventyConfig.addShortcode('orangeDot', function() {
-    return `<span class="orange-dot"></span></span>`;
-  })
+	  return outdent`<span class="orange-dot"></span>`;
+  });
 
   eleventyConfig.addShortcode('iconScroll', function() {
-    return `<center><div class="icon-scroll">
-    <div class="mouse"></div>
-  </div></center>`;
+	return outdent`<center><div class="icon-scroll">
+		<div class="mouse"></div>
+	</div></center>`;
   });
 
   // Filter source file names using a glob
   eleventyConfig.addCollection("blog", function(collection) {
-    return collection.getFilteredByGlob('src/blogs/*.md');
+    return collection.getFilteredByGlob('src/blog/*.md');
   });
   // TODO: add a front-matter config "disabled" and append a 'disabledFilter' to hide any disabled post.
   // TODO: Specially for "Career" section

@@ -1,13 +1,13 @@
 
 /* ================================= CSS Navigation =================================== */
 
-nav {
+.topnav {
 	margin: 0;
 	padding-top: 0;
 	padding-bottom: 0;
 }
 
-nav h5 {
+.topnav h5 {
 	margin-top: 0 !important;
 	margin-bottom: 10px;
 }
@@ -189,7 +189,7 @@ padding: 0;
 	display: none;
 }
 
-nav ul {
+.topnav ul, .cbp-hrmenu ul {
 	list-style-type: none;
 }
 

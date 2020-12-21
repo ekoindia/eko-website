@@ -4,8 +4,8 @@
         <a href="{{ blog.url | url }}" class="card">
         <div class="thumb" style="background-image: url({{ blog.data.image }})"></div>
         <article>
-            <h1>{{ blog.data.title }}</h1>
-            <span><time datetime="{{ blog.date | htmlDateString }}">{{ blog.date | readableDate }}</time></span>
+            <h4>{{ blog.data.title }}</h4>
+            <time datetime="{{ blog.date | htmlDateString }}">{{ blog.date | readableDate }}</time>
             <p>{{ blog.data.description }}</p>
         </article>
         </a>
