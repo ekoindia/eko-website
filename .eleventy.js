@@ -22,6 +22,10 @@ const md_container = require('markdown-it-container');
 const md_anchor = require('markdown-it-anchor');
 const uslug = require('uslug');
 const md_toc = require("markdown-it-toc-done-right");
+const md_lazy_loading = require('markdown-it-image-lazy-loading');
+const md_link_attrs = require('markdown-it-link-attributes');
+const md_mark = require('markdown-it-mark');
+const md_image_size = require('markdown-it-imsize');
 
 
 require('dotenv').config();
@@ -57,17 +61,22 @@ module.exports = function(eleventyConfig) {
 	markdownLib.use(md_attrs, {
 		allowedAttributes: ["class"]
 	});									// https://github.com/GerHobbelt/markdown-it-attrs
+	markdownLib.use(md_link_attrs, {
+		pattern: /^https?:/,
+		attrs: {
+			target: '_blank',
+			rel: 'noopener',
+			class: 'ext-link'
+		}
+	});									// https://github.com/crookedneighbor/markdown-it-link-attributes
+	markdownLib.use(md_lazy_loading);	// https://github.com/ruanyf/markdown-it-image-lazy-loading
 	markdownLib.use(md_abbr);			// https://github.com/markdown-it/markdown-it-abbr
 	markdownLib.use(md_footnote);		// https://github.com/markdown-it/markdown-it-footnote
 	markdownLib.use(md_sub);			// https://github.com/markdown-it/markdown-it-sub
 	markdownLib.use(md_sup);			// https://github.com/markdown-it/markdown-it-sup
 	markdownLib.use(md_container);		// https://github.com/markdown-it/markdown-it-container
-	// markdownLib.use();
-	// markdownLib.use();
-	// markdownLib.use();
-	// markdownLib.use();
-	// markdownLib.use();
-	// markdownLib.use();
+	markdownLib.use(md_mark);			// https://github.com/markdown-it/markdown-it-mark
+	markdownLib.use(md_image_size);		// https://github.com/tatsy/markdown-it-imsize
 
 	eleventyConfig.setLibrary("md", markdownLib);
 
@@ -174,13 +183,11 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addDataExtension('yaml', contents => yaml.safeLoad(contents));
 
   eleventyConfig.addShortcode('orangeDot', function() {
-	  return outdent`<span class="orange-dot"></span>`;
+	  return `<span class="orange-dot"></span>`;
   });
 
   eleventyConfig.addShortcode('iconScroll', function() {
-	return outdent`<center><div class="icon-scroll">
-		<div class="mouse"></div>
-	</div></center>`;
+	return `<center><div class="icon-scroll"><div class="mouse"></div></div></center>`;
   });
 
   // Filter source file names using a glob
