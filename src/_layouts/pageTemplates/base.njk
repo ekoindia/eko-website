@@ -7,8 +7,20 @@
     <meta name="twitter:card" content="website">
 	<meta name="theme-color" content="#ffb218"/>
 
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap&text=abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890%21%22%23%24%25%26%27%2B%2C%2F%40%7C%7B%7D%5B%5D%3B%3C%3D%3E%3F.!-*()₹" rel="stylesheet">
+
+	{# ---- Optimal/non-blocking way to load Google Font (https://csswizardry.com/2020/05/the-fastest-google-fonts) ---- #}
+	{% if website.google_font_url %}
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+		{# Less optimized way but ledd FOUT: #}
+		<link rel="stylesheet" href="{{ website.google_font_url }}" />
+
+		{# More optimized method but more FOUT: #}
+		{# <link rel="preload" as="style" href="{{ website.google_font_url }}" />
+		<link rel="stylesheet" href="{{ website.google_font_url }}" media="print" onload="this.media='all'" /> #}
+		{# Ignoring <noscript> for normal font load when Javascript is disabled. Fallback font will be used #}
+	{% endif %}
+
 
   {% block seo %}
     <title>{{ website.title }}</title>
@@ -16,7 +28,7 @@
     <meta name="keywords" content="{{ website.keywords }}">
 
 	{# OpenGraph (Facebook) Social Card #}
-    <meta property="og:url" content="{{ env.BASE_URL }}">
+    <meta property="og:url" content="{{ env.BASE_URL }}{{ page.url }}">
     <meta property="og:image" content="{{ env.BASE_URL }}{{ website.image }}">
     <meta property="og:title" content="{{ website.title }}">
     <meta property="og:description" content="{{ website.tag_line }}">
@@ -24,19 +36,21 @@
 
     {# Twitter Social Card #}
     <meta name="twitter:site" content="{{ website.twitter_handle }}">
-    <meta name="twitter:url" content="{{ env.BASE_URL }}">
+    <meta name="twitter:url" content="{{ env.BASE_URL }}{{ page.url }}">
     <meta name="twitter:title" content="{{ website.title }}">
     <meta name="twitter:description" content="{{ website.tag_line }}">
     <meta name="twitter:image" content="{{ env.BASE_URL }}{{ website.image }}">
   {% endblock %}
 
-    {# Link Main CSS Files (common to all sections & pages) #}
+    {# DEFINE Main CSS Files (common to all sections & pages) #}
     {% set css_main %}
 	  {% include "css/flex.css" %}
       {% include "css/base.css" %}
 	  {% include "css/nav.css" %}
 	  {% include "css/footer.css" %}
     {% endset %}
+
+	{# DEFINE PureCSS.io Grid System CSS #}
     {% set css_pure %}
 	  {# read more: https://purecss.io #}
       {% include "css/purecss/base-min.css" %}
@@ -44,16 +58,17 @@
 	  {% include "css/purecss/grids-responsive-min.css" %}
     {% endset %}
 
+	{# DEFINE CSS to debug components #}
 	{% set css_debug %}
 	  {% include "css/debug.css" %}
     {% endset %}
 
-	{# CSS include for Blog section (included in blog template and the blog listing pages) #}
+	{# DEFINE CSS for Blog section (included in blog template and the blog listing pages) #}
 	{% set css_blog %}
       {% include "css/blog.css" %}
     {% endset %}
 
-	{# Font Awesone Icons #}
+	{# DEFINE Font Awesone Icons #}
 	{#
     {% set font_awesome %}
 	  {% include "css/fontawesome/css/fontawesome.min.css" %}
@@ -63,11 +78,14 @@
 	#}
 
 
-	{# ----- EMBLA CAROUSEL SUPPORT (https://github.com/davidcetinkaya/embla-carousel) ------ #}
-	{% set carousel %}
+	{# ----- DEFINE EMBLA CAROUSEL SUPPORT (https://github.com/davidcetinkaya/embla-carousel) ------ #}
+	{% set js_carousel %}
 		{% include "js/embla-carousel.umd.min.js" %}
 		{% include "js/carousel.js" %}
 	{% endset %}
+	{% set css_carousel %}
+	  {% include "css/carousel.css" %}
+    {% endset %}
 
 
 	{# ------ Dark Mode ------- #}

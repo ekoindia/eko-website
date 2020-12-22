@@ -5,7 +5,7 @@ title: FAQs
 
 1. #### What is Eko Wallet?
 
-   Eko wall~et~ refe^rs^ to an ==electronic== service =that= allows an individual to make electronic transactions, which is created with Eko in respect to the Customer Mobile and Name. Additional details include the KYC of the customer which is mandatorily updated for every wallet. Every transaction conducted by the customer is routed through his/her respective wallet and the history of any transaction can be checked from the wallet.
+   Eko wallet refers to an electronic service that allows an individual to make electronic transactions, which is created with Eko in respect to the Customer Mobile and Name. Additional details include the KYC of the customer which is mandatorily updated for every wallet. Every transaction conducted by the customer is routed through his/her respective wallet and the history of any transaction can be checked from the wallet.
 
 
 2. #### How can I register for Eko Wallet?

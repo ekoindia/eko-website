@@ -1,6 +1,7 @@
 
 :root {
 	--primary-color: #ffb218;
+	--accent-dark-color: #f6b243;				/* nav (bordered button, dot), link */
 	--dot-color: #ffb218;
 	--header-color: #727272;
 	--main-text-color: #666;
@@ -12,13 +13,37 @@
 	--footer-link: #8e8e8e;
 	--nav-caption: #b0b0b0;
 	--divider-color: #e0e0e0;
+	--button-shadow-color: rgba(254,178,25,0.6);
+
+	/*
+		bordered button: #f6b243
+		link on shaded BG: #f6b243
+
+		Menu-dot: #f6b243
+		Dot Box:
+			BG: #ffefd1	(tag color)
+			Dot: #ffb218
+
+
+		dark carousel pagination dot: primary
+			light pagination dot: #f7e8c8
+		Carousel border & next/prev arrowhead circles: #fcb72c
+	*/
+
+	/* Extended Palette - Use with care */
+	--primary-dark-20-color: #DF9500;
+	--primary-dark-40-color: #A77000;
+	--primary-dark-60-color: #704A00;
+
+	--primary-light-20-color: #FFC146;
+	--primary-light-40-color: #FFD174;
+	--primary-light-60-color: #FFE0A3;
 }
 
 
 main, html, body {
-  letter-spacing: 1px;
-  color: var(--main-text-color) !important;
   font-family: 'Roboto', sans-serif;
+  color: var(--main-text-color);
   line-height: 1.42857143;
 }
 
@@ -51,89 +76,6 @@ img {
   max-width: 100%;
 }
 
-button, select {
-  text-transform: none;
-}
-
-button,
-  [type="button"],
-  [type="reset"],
-  [type="submit"] {
-  -webkit-appearance: none;
-}
-
-button::-moz-focus-inner,
-  [type="button"]::-moz-focus-inner,
-  [type="reset"]::-moz-focus-inner,
-  [type="submit"]::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-button:-moz-focusring,
-  [type="button"]:-moz-focusring,
-  [type="reset"]:-moz-focusring,
-  [type="submit"]:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
-
-/* ============= SECTIONS / COMPONENTS =================== */
-
-section, nav.topnav, footer {
-	box-sizing: border-box;
-	width: 100%;
-	margin: 0;
-	padding-left: 5px;
-	padding-right: 5px;
-}
-
-section {
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-
-@media (min-width: 576px) {
-	section, nav.topnav, footer {
-		padding-left: 10%;
-		padding-right: 10%;
-	}
-
-	section {
-		padding-top: 3%;
-		padding-bottom: 3%;
-	}
-
-	main {
-		padding-top: 1%;
-	}
-}
-
-
-.horizontal-spacer {
-	padding-right: 20px;
-}
-
-/* TODO: Fix this. Normally used with <section> */
-.background-section {
-	width: 100%;
-	background-color: var(--background-section-color);
-	margin: 0;
-}
-
-.scroll-icon-container .scroll-icon {
-border: 1px solid #727272;
-border-radius: 18px;
-}
-
-.h2-border {
-width: 50px;
-height: 5px;
-background-color: var(--primary-color);
-display: inline-block;
-border-radius: 2.5px;
-margin-bottom: 5px;
-}
 
 h1 {
 	font-size: 40px;
@@ -167,28 +109,86 @@ a:hover {
 	color: var(--primary-color);
 }
 
-.button {
-	border-radius: 12px;
-	transition-duration: 0.4s;
+/* button, select {
+  text-transform: none;
+}
+
+button,
+  [type="button"],
+  [type="reset"],
+  [type="submit"] {
+  -webkit-appearance: none;
+}
+
+button::-moz-focus-inner,
+  [type="button"]::-moz-focus-inner,
+  [type="reset"]::-moz-focus-inner,
+  [type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+button:-moz-focusring,
+  [type="button"]:-moz-focusring,
+  [type="reset"]:-moz-focusring,
+  [type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+} */
+
+
+/* =============== COMMON UI COMPONENTS ================= */
+
+
+.h2-border {
+	width: 50px;
+	height: 5px;
 	background-color: var(--primary-color);
-	border: none;
-	color: white;
-	padding: 10px 24px;
-	text-align: center;
-	text-decoration: none;
+	display: inline-block;
+	border-radius: 2.5px;
+	margin-bottom: 5px;
+}
+
+
+.button {
 	display: inline-block;
 	font-size: 16px;
 	font-weight: bold;
+	padding: 12px 25px;
+	margin: 0.3em;
+	background: var(--primary-color) !important;
+	color: white !important;
+	text-align: center;
+	vertical-align: middle;
+	text-decoration: none;
+	border: none;
+	border-radius: 10px;
+	white-space: nowrap;
+	cursor: pointer;
+	line-height: 1.43;
+	transition: all 0.3s ease-out;
+	will-change: translate;
 }
 
-.button:hover {
-box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-color: white !important;
+.button:not(.outline):hover {
+	box-shadow: 0px 15px 20px var(--button-shadow-color);
+    transform: translateY(-7px);
 }
 
-.tag a {
-font-size: 12px;
+.button.outline {
+	padding: 10px 25px;
+	background: none !important;
+	border: 2px solid var(--accent-dark-color);
+	border-radius: 10px;
+    color: var(--accent-dark-color) !important;
 }
+
+.button.outline:hover {
+	background-color: var(--accent-dark-color) !important;
+	color: white !important;
+	transform: none;
+	box-shadow: none;
+}
+
 
 .dot-box {
 border-radius: 30px;
@@ -217,26 +217,57 @@ box-shadow: 0 3px 2px 0 rgba(0,0,0,0.1);
 	display: inline-block;
 }
 
-.bg-image {
-background-image: url(https://eko.in/sites/default/files/2020-06/homepage-illustration_0.svg);
-background-repeat: no-repeat;
-background-size: contain;
-height: 442px;
-background-position: center;
+
+
+/* ============= SECTIONS / COMPONENTS =================== */
+
+section, nav.topnav, footer {
+	box-sizing: border-box;
+	width: 100%;
+	margin: 0;
+	padding-left: 20px;
+	padding-right: 20px;
 }
 
-.button-white {
-border-radius: 12px;
-transition-duration: 0.4s;
-border: 1px solid var(--primary-color);
-color: var(--primary-color);
-padding: 10px 24px;
-text-align: center;
-text-decoration: none;
-display: inline-block;
-font-size: 13px;
-font-weight: 600;
+section {
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
+
+@media (min-width: 576px) {
+	section, nav.topnav, footer {
+		padding-left: 10%;
+		padding-right: 10%;
+	}
+
+	section {
+		padding-top: 3%;
+		padding-bottom: 3%;
+	}
+
+	main {
+		padding-top: 1%;
+	}
+}
+
+
+.horizontal-spacer {
+	padding-right: 20px;
+}
+
+.background-section {
+	background-color: var(--background-section-color);
+}
+
+
+
+.large-top-hero .bg-image {
+	background-repeat: no-repeat;
+	background-size: contain;
+	height: 442px;
+	background-position: center;
+}
+
 
 
 /* alternating steps*/
@@ -283,7 +314,7 @@ font-weight: 600;
   font-weight: 500;
 }
 
-.boxed {
+.step_section .boxed {
   max-width: 200px;
   display: block;
   border: 1px solid  var(--main-text-color);
@@ -294,22 +325,24 @@ font-weight: 600;
   margin: 10px;
   opacity: 0.5;
 }
-.boxed:hover{
+.step_section .boxed:hover{
   background-color: var(--background-section-color);
-  border: 2px solid var(--primary-color);
+  border-color: var(--primary-color);
 }
 
-.boxed:hover .box-text,
-.box-text:hover {
+.step_section .boxed:hover .box-text,
+.step_section .box-text:hover {
   color: var(--header-color);
   opacity: 1;
 }
 
-.boxed:hover .box-title,
-.box-title:hover {
+.step_section .boxed:hover .box-title,
+.step_section .box-title:hover {
   color: var(--primary-color);
   opacity: 1;
 }
+
+
 
 .main-line {
   font-weight: bold;
@@ -478,214 +511,18 @@ h6 {
 
 
 
-
-
-/* ================================= EMBLA COROUSEL ============================ */
-/* ----------- [TODO: Remove duplicate CSS between galary & embla] ------------ */
-
-.embla {
-position: relative;
-padding: 20px;
-max-width: 850px;
+.get_started_banner h1 {
+	line-height: 1.5em;
+	margin: 0;
 }
-
-.embla__viewport {
-overflow: hidden;
-width: 100%;
-align-items: center;
-margin: auto;
-border: solid 0.3px var(--primary-color);
+.get_started_banner h3 {
+	font-size: 24px;
+	line-height: 1.1;
+	margin:0;
 }
-
-.embla__viewport.is-draggable {
-cursor: move;
-cursor: grab;
+.get_started_banner .button {
+	margin: 0 1em 0 0;
 }
-
-.embla__viewport.is-dragging {
-cursor: grabbing;
-}
-
-.embla__container {
-display: flex;
-user-select: none;
--webkit-touch-callout: none;
--khtml-user-select: none;
--webkit-tap-highlight-color: transparent;
-margin-left: -10px;
-}
-
-.embla__slide {
-position: relative;
-min-width: 100%;
-padding-left: 10px;
-}
-
-.embla__slide__inner {
-position: relative;
-overflow: hidden;
-padding: 30px;
-margin-bottom: -15px;
-background-color: var(--background-section-color);
-background-size: cover;
-text-align: left !important;
-}
-
-.embla__slide__inner h3 {
-font-weight: bold;
-}
-
-.embla__slide__inner img {
-max-width: 100%;
-}
-
-.embla__button {
-outline: 0;
-cursor: pointer;
-background-color: transparent;
-touch-action: manipulation;
-position: absolute;
-z-index: 1;
-top: 50%;
-transform: translateY(-50%);
-border: 0;
-width: 30px;
-height: 30px;
-justify-content: center;
-align-items: center;
-fill: var(--primary-color);
-padding: 0;
-}
-
-.embla__button:disabled {
-cursor: default;
-opacity: 0.3;
-}
-
-.embla__button__svg {
-width: 100%;
-height: 100%;
-}
-
-.embla__button--prev {
-left: 27px;
-}
-
-.embla__button--next {
-right: 27px;
-}
-
-.gallery {
-	border: none !important;
-}
-
-/* .gallery {
-position: relative;
-padding: 20px;
-max-width: 850px;
-} */
-
-/* .gallery__viewport {
-overflow: hidden;
-width: 100%;
-align-items: center;
-margin: auto;
-padding: 20px;
-} */
-
-/* .gallery__viewport.is-draggable {
-cursor: move;
-cursor: grab;
-} */
-
-/* .gallery__viewport.is-dragging {
-cursor: grabbing;
-} */
-
-.gallery__container {
-display: flex;
-user-select: none;
--webkit-touch-callout: none;
--khtml-user-select: none;
--webkit-tap-highlight-color: transparent;
-margin-left: -10px;
-}
-
-.gallery__slide {
-position: relative;
-min-width: 100%;
-padding-left: 10px;
-}
-
-.gallery__slide__inner p {
-  color: var(--main-text-color);
-}
-
-.gallery__slide__inner h1 {
-  font-weight: bold;
-  padding-top: 10px;
-  font-size: 15px;
-  color: var(--header-color);
-}
-
-.gallery__slide__inner {
-  position: relative;
-  overflow: hidden;
-  padding: 30px;
-  margin-bottom: -15px;
-  background-size: cover;
-  text-align: left !important;
-}
-
-
-.gallery .partner-box {
-  margin-bottom: 50px;
-  border-radius: 20px;
-  box-shadow: 0 3px 10px 0 rgba(0,0,0,0.12), 0 3px 5px 0 rgba(0,0,0,0.05);
-}
-
-.gallery .partner-box img {
-  max-width: 80%;
-}
-
-/* .gallery__button {
-  outline: 0;
-  cursor: pointer;
-  background-color: transparent;
-  touch-action: manipulation;
-  position: absolute;
-  z-index: 1;
-  top: 50%;
-  transform: translateY(-50%);
-  border: 0;
-  width: 30px;
-  height: 30px;
-  justify-content: center;
-  align-items: center;
-  fill: var(--primary-color);
-  padding: 0;
-} */
-
-/* .gallery__button:disabled {
-  cursor: default;
-  opacity: 0.3;
-  }
-
-.gallery__button__svg {
-  width: 100%;
-  height: 100%;
-}
-
-.gallery__button--prev {
-  left: 1px;
-}
-
-.gallery__button--next {
-  right: 1px;
-} */
-
-/* ======================================================================================== */
-
 
 
 

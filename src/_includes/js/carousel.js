@@ -54,7 +54,7 @@ const setupEmblaCarousel = (emblaNode, options) => {
 	const prevBtn = emblaNode.querySelector(".embla__button--prev");
 	const nextBtn = emblaNode.querySelector(".embla__button--next");
 	const embla = EmblaCarousel(viewPort, options);
-	const autoplayer = autoplay(embla, 4000);
+	const autoplayer = autoplay(embla, 10000);
 	const disablePrevAndNextBtns = disablePrevNextBtns(prevBtn, nextBtn, embla);
 
 	listenForPrevBtnClick(prevBtn, embla, autoplayer);

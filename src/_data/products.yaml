@@ -72,7 +72,7 @@
       main_line: For all issues, we provide 24x7 support.
       button_text: Contact Support
 
-    - section: final_ad
+    - section: get_started_banner
       small_header: Ready to get started?
       main_header: Become Eko Partner & Earn More
       image: /images/become-eko-partner.svg
@@ -169,7 +169,7 @@
         - image: /images/aadhaar-banking/npci.png
           title: NPCI
 
-    - section: final_ad
+    - section: get_started_banner
       small_header: Ready to get started?
       main_header: Use Aadhaar Banking & Earn More
       image: /images/become-eko-partner.svg
@@ -246,7 +246,7 @@
       main_line: For all issues, we provide 24x7 support.
       button_text: Contact Support
 
-    - section: final_ad
+    - section: get_started_banner
       small_header: Ready to get started?
       main_header: Serve at Doorstep & Earn More
       image: /images/become-eko-partner.svg
@@ -326,7 +326,7 @@
       main_line: For all issues, we provide 24x7 support.
       button_text: Contact Support
 
-    - section: final_ad
+    - section: get_started_banner
       small_header: Ready to get started?
       main_header: Pay Utility Bills & Earn More
       image: /images/become-eko-partner.svg
@@ -395,7 +395,7 @@
       main_line: For all issues, we provide 24x7 support.
       button_text: Contact Support
 
-    - section: final_ad
+    - section: get_started_banner
       small_header: Ready to get started?
       main_header: Sell Insurance policies & Earn More
       image: /images/become-eko-partner.svg
@@ -464,7 +464,7 @@
       main_line: For all issues, we provide 24x7 support.
       button_text: Contact Support
 
-    - section: final_ad
+    - section: get_started_banner
       small_header: Ready to get started?
       main_header: Send money to Nepal & Earn More
       image: /images/become-eko-partner.svg

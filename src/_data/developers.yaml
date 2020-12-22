@@ -73,7 +73,7 @@
       main_line: For all integration related issues, we provide 24x7 support.
       button_text: Contact Support
 
-    - section: final_ad
+    - section: get_started_banner
       small_header: Ready to get started?
       main_header: Integrate our money transfer API
       image: /images/become-eko-partner.svg
@@ -170,7 +170,7 @@
         - image: /images/partners/toffee.png
           title: Toffee Insurance
 
-    - section: final_ad
+    - section: get_started_banner
       small_header: Ready to get started?
       main_header: Get AePS SDK & Earn More
       image: /images/become-eko-partner.svg

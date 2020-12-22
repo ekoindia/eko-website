@@ -1,5 +1,5 @@
 <center>
-<section class="tag large-top-hero" type="large_top_hero">
+<section class="large-top-hero" type="large_top_hero">
 		{% if item.tag_title %}
 			<span class="dot-box">
 				<span class="dot">
@@ -11,7 +11,7 @@
 		{% endif %}
 		<h1 class="main-header">{{ item.header }}</h1>
 		<br>
-		<div class="bg-image">
+		<div class="bg-image" style="background-image: url({{ item.image }})">
 			<a href="https://eko.in/sign-up" class="button">Try for Free</a>
 		</div>
 </section>

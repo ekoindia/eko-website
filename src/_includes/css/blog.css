@@ -25,6 +25,10 @@ a {
 	color: var(--primary-color);
 }
 
+p {
+	text-align: justify;
+}
+
 
 blockquote {
   background: #f9f9f9;
@@ -34,11 +38,11 @@ blockquote {
   quotes: "\201C""\201D""\2018""\2019";
 }
 blockquote:before {
-  color: #ccc;
+  color: var(--primary-light-60-color);
   content: open-quote;
   font-size: 5em;
   line-height: 0.1em;
-  margin-right: 0.25em;
+  margin-right: 0.1em;
   vertical-align: -0.4em;
 }
 blockquote p {

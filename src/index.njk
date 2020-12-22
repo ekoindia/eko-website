@@ -2,8 +2,13 @@
 
 {# Include Embla Carousel #}
 {% block custom_script %}
-  {{ carousel | jsmin | safe }}
+  {{ js_carousel | jsmin | safe }}
 {% endblock %}
+
+{% block custom_style %}
+  {{ css_carousel | cssmin | safe }}
+{% endblock %}
+
 
 {% block main %}
 
@@ -13,7 +18,8 @@
 
 	{# Large Top Hero section #}
 	{% set item = {
-		header: "Best way to collect cash at your doorstep"
+		header: "Best way to collect cash at your doorstep",
+		image: "/images/main/homepage-illustration.svg"
 	} %}
 	{% include "section_large_top_hero.njk" %}
 
@@ -206,7 +212,7 @@
 		image: "/images/main/aarogya-setu-logo.webp",
 		caption: "#StayAlertStaySafe"
 	} %}
-	{% include "section_final_ad.njk" %} #}
+	{% include "section_get_started_banner.njk" %} #}
 
 
 {% endblock %}

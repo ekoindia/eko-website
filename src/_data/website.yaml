@@ -16,6 +16,10 @@ twitter: https://twitter.com/ekospeaks
 twitter_handle: '@ekospeaks'
 
 
+#### Others...
+google_font_url: https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap&text=abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890%21%22%23%24%25%26%27%2B%2C%2F%40%7C%7B%7D%5B%5D%3B%3C%3D%3E%3F.!-*()₹
+
+
 
 ## The following values are setup as ENVIRONMENT-VARIABLES
 ##      See '.env.example' file for details

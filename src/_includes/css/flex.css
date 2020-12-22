@@ -133,3 +133,16 @@
 	align-self: stretch;
 }
 
+
+/* -------- Responsive Flexbox -------- */
+@media (min-width: 700px) {
+
+	.layout.horizontal-md {
+		flex-direction: row;
+	}
+
+	.layout.horizontal-reverse-md {
+		flex-direction: row-reverse;
+	}
+
+}
