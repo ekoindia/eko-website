@@ -27,10 +27,10 @@ eleventyExcludeFromCollections: true
 	{% include "blogslist.njk" %}
 
 	<section>
-		<h1>Categories</h1>
+		<h2>Browse by Tag</h2>
 		<ul>
 			{% for item in tag %}
-				<li><h4><a href="/blog/{{item}}/">{{ item | capitalize }}</h1></li></h4>
+				<li><h4><a href="/blog/tags/{{item}}/">{{ item | capitalize }}</h1></li></h4>
 			{% endfor %}
 		</ul>
 	</section>

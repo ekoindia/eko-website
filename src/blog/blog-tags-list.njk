@@ -1,0 +1,29 @@
+---
+permalink: /blog/tags/
+pagination:
+  data: collections
+  size: 1
+  alias: tag
+  filter:
+    - all
+    - blog
+---
+
+{% extends "../_layouts/base.njk" %}
+
+{% block custom_style %}
+	{{ css_blog | cssmin | safe }}
+{% endblock %}
+
+{% block main %}
+
+	<section>
+		<h1>Blog Tags</h1>
+		<ul>
+			{% for item in tag %}
+				<li><h4><a href="/blog/tags/{{item}}/">{{ item | capitalize }}</h1></li></h4>
+			{% endfor %}
+		</ul>
+	</section>
+
+{% endblock %}
