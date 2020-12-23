@@ -35,7 +35,7 @@ The Eko website & blog built with [Eleventy](https://www.11ty.dev). Uses reusabl
   * 📄 [**index.njk**](/src/index.njk)  `The home page`
   * 📂✍ [**blog/**](/src/blog)  `Create blog posts here`
     * 📄 [**index.njk**](/src/blog/index.njk)  `The blog listing page`
-	* 📄 [**blog-tags.njk**](/src/blog/blog-tags.njk)  `The listing page template for blog tags`
+	* 📄 [**blog-tag-pages.njk**](/src/blog/blog-tags.njk)  `Page template to list posts for individual tags`
   * 📂🔧 [**_data**](/src/_data)  `All the website configuration and data go here`
     * 📄🔧 [**website.yaml**](/src/_data/website.yaml)  `Top configurations, like, domain, logo, title, SEO, etc`
 	* 📑🔧 [**products.yaml**](/src/_data/products.yaml)  `The retail products listing. Pages automatically created and added to menu`
@@ -43,15 +43,15 @@ The Eko website & blog built with [Eleventy](https://www.11ty.dev). Uses reusabl
 	* 📑🔧 [**ekoUniversity.yaml**](/src/_data/ekoUniversity.yaml)  `The video listing for the Eko University section`
 	* 📄🔧 [**footer.yaml**](/src/_data/footer.yaml)  `Configure footer links`
 	* 📄🔧 [**env.yaml**](/src/_data/env.yaml)  `Secret configurations as envoirnment variables`
-  * 📂👩‍💻 [**_layouts/pageTemplates**](/src/_layouts/pageTemplates)  `Reusable templates for various page types`
-    * 📄⭐ [**base.njk**](/src/_layouts/pageTemplates/base.njk)  `Main template with outermost common code used by all pages`
-	* 📄 [**product_page.njk**](/src/_layouts/pageTemplates/product_page.njk)  `Template for retail product pages`
-	* 📄 [**developer_page.njk**](/src/_layouts/pageTemplates/developer_page.njk)  `Template for API product pages`
-	* 📄 [**blog_post.njk**](/src/_layouts/pageTemplates/blog_post.njk)  `Template for blog post pages ideally written in markdown`
-	* 📄 [**page.njk**](/src/_layouts/pageTemplates/page.njk)  `Template for normal pages ideally written in markdown`
-	* 📄 [**ekoUniversity.njk**](/src/_layouts/pageTemplates/ekoUniversity.njk)  `For the Eko University page`
+  * 📂👩‍💻 [**_layouts**](/src/_layouts)  `Reusable templates for various page types`
+    * 📄⭐ [**base.njk**](/src/_layouts/base.njk)  `Main template with outermost common code used by all pages`
+	* 📄 [**product_page.njk**](/src/_layouts/product_page.njk)  `Template for retail product pages`
+	* 📄 [**developer_page.njk**](/src/_layouts/developer_page.njk)  `Template for API product pages`
+	* 📄 [**blog_post.njk**](/src/_layouts/blog_post.njk)  `Template for blog post pages ideally written in markdown`
+	* 📄 [**page.njk**](/src/_layouts/page.njk)  `Template for normal pages ideally written in markdown`
+	* 📄 [**ekoUniversity.njk**](/src/_layouts/ekoUniversity.njk)  `For the Eko University page`
   * 📂👩‍💻 [**_includes**](/src/_includes)  `All build-time reusable components go here`
-    * 📄 ***section_\*.njk***  `Full width reusable UI components that compose the index & product pages`
+    * 📓🧩 ***section_\*.njk***  `Full width reusable UI components that compose the index & product pages`
 	* 📄 [**navigation.njk**](/src/_includes/navigation.njk)  `Top navigation bar in every page`
 	* 📄 [**footer.njk**](/src/_includes/footer.njk)  `Footer section at the bottom of every page`
 	* 📄 [**blogslist.njk**](/src/_includes/blogslist.njk)  `List of all blog posts with pagination`
