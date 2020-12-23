@@ -249,6 +249,33 @@ button:-moz-focusring,
 }
 
 
+/* Common styling for Tables: */
+
+table {
+	border-collapse: collapse;
+}
+
+th {
+	background: var(--footer-background-color);
+	color: var(--footer-text);
+	border: 1px solid var(--footer-column-header);
+	font-size: 0.9em;
+	font-weight: 700;
+	padding: 0.5em;
+	vertical-align:middle;
+}
+
+td {
+	padding: 0.4em;
+	vertical-align: middle;
+	border: 1px solid var(--footer-column-header);
+}
+
+tr:nth-child(even) td {
+	background: var(--background-section-color);
+}
+
+
 
 /* ============= SECTIONS / COMPONENTS =================== */
 
