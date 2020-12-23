@@ -2,8 +2,7 @@
 The Eko website & blog built with [Eleventy](https://www.11ty.dev). Uses reusable component and simple configurations to automate page creation.
 
 ![Netlify Status](https://api.netlify.com/api/v1/badges/16835446-1532-4951-9268-a82abe342e6a/deploy-status)
-<a href="https://github.com/ekoindia/android-uidai-rdservice-manager/issues">![GitHub issues](https://img.shields.io/github/issues/ekoindia/eko-website)</a>
-<a href="https://github.com/ekoindia/android-uidai-rdservice-manager/blob/master/LICENSE">![GitHub license](https://img.shields.io/github/license/ekoindia/eko-website)</a>
+<a href="https://github.com/ekoindia/eko-website/issues">![GitHub issues](https://img.shields.io/github/issues/ekoindia/eko-website)</a>
 <a href="https://eko.in" target="_blank">![Develop With Eko.in](https://img.shields.io/badge/Develop%20with-Eko.in-brightgreen)</a>
 <a href="https://twitter.com/intent/tweet?text=Wow:&url=https%3A%2F%2Fgithub.com%2Fekoindia%2Feko-website" target="_blank"><img alt="Twitter" src="https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Fgithub.com%2Fekoindia%2Feko-website"></a>
 <a href="https://twitter.com/intent/follow?screen_name=ekospeaks" target="_blank">![Twitter Follow](https://img.shields.io/twitter/follow/ekospeaks?label=Follow&style=social)</a>
@@ -18,12 +17,12 @@ The Eko website & blog built with [Eleventy](https://www.11ty.dev). Uses reusabl
 1. Simple stack. Minification/bundling using internal 11ty plugins.
 
 ## 🔗 Table Of Contents
-1. [Getting Started](#getting-started-development-setup)
-2. [Project Structure](#project-structure)
-3. [How to add a new blog post?](#how-to-add-a-new-blog-post)
-4. [How to add or edit a Retail-product page?](#how-to-add-or-edit-a-retail-product-page)
-5. [How to add or edit an API-product page?](#how-to-add-or-edit-an-api-product-page)
-6. [How to add a custom page?](#how-to-add-a-custom-page)
+1. [Getting Started](#-getting-started-development-setup)
+2. [Project Structure](#-project-structure)
+3. [How to add a new blog post?](#-how-to-add-a-new-blog-post)
+4. [How to add or edit a Retail-product page?](#-how-to-add-or-edit-a-retail-product-page)
+5. [How to add or edit an API-product page?](#-how-to-add-or-edit-an-api-product-page)
+6. [How to add a custom page?](#-how-to-add-a-custom-page)
 
 
 ## 🏁 Getting Started (Development Setup)
