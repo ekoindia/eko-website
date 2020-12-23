@@ -42,6 +42,7 @@ Example:
 > There is not enough time
 > to do all the nothing we
 > want to do.
+>
 > -- Bill Waterson (Calvin & Hobbes)
 
 
@@ -70,9 +71,7 @@ Example: ![Image Title](image-url.jpg)
 This website also supports extended markdown features added through external plugins:
 
 #### Insert a github-flavored emoji
-For example,  :blush: :raising_hand:
-
-([Full Emoji List](https://gist.github.com/rxaviers/7360908))
+For example,  :blush: :raising_hand:  ([Full Emoji List](https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md))
 
 
 #### Table Of Contents can be added anywhere on the page by inserting [[toc]] on a new line.
