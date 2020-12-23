@@ -11,7 +11,7 @@ tags:
 
 Everything written this line onwards will be visible on the page!
 
-Checkout a quick guide here: https://www.markdownguide.org/cheat-sheet/
+Checkout a quick Markdown guide here: https://www.markdownguide.org/cheat-sheet/
 
 
 ## This is H1 header (largest heading size)
