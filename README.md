@@ -10,15 +10,15 @@ The Eko website & blog built with [Eleventy](https://www.11ty.dev). Uses reusabl
 
 ---
 
-## Features
+## 🌟 Features
 1. Built with [Eleventy](https://www.11ty.dev)!  [<small>(docs)</small>](https://www.11ty.dev/docs)
 1. [Netlify CMS](https://www.netlifycms.org): easy blog & website configuration management.
 1. Reusable components for faster development ([src/_includes](src/_includes)).
 1. Simple configuration files for creating retail/API product pages ([src/_data](src/_data)).
 1. Simple stack. Minification/bundling using internal 11ty plugins.
 
-## Table Of Contents
-1. [Getting Started](#getting-started)
+## 🔗 Table Of Contents
+1. [Getting Started](#getting-started-development-setup)
 2. [Project Structure](#project-structure)
 3. [How to add a new blog post?](#how-to-add-a-new-blog-post)
 4. [How to add or edit a Retail-product page?](#how-to-add-or-edit-a-retail-product-page)
@@ -26,19 +26,18 @@ The Eko website & blog built with [Eleventy](https://www.11ty.dev). Uses reusabl
 6. [How to add a custom page?](#how-to-add-a-custom-page)
 
 
-## Getting Started (Development Setup)
+## 🏁 Getting Started (Development Setup)
 1. Install [node/npm](https://nodejs.org/en) & [git](https://git-scm.com)
 1. Clone this Repository:
    `git clone https://github.com/ekoindia/eko-website`
 1. Navigate to the directory: `cd eko-website`
-1. Install
 1. Install dependencies: `npm install`
 1. Copy [`.env.example`](.env.example) to a new `.env` file and setup your own defaults
 1. Build and host locally for local development: `npm start`
    Checkout in the browser: `localhost:8080`
 
 
-## Project Structure
+## 🗃 Project Structure
 * 📄🔧 [**.eleventy.js**](.eleventy.js)  `All project technical configurations go here`
 * 📂 [**src/**](/src)  `Main source directory. Top-level/custom webpages are created right here`
   * 📄 [**index.njk**](/src/index.njk)  `The home page`
@@ -80,7 +79,7 @@ The Eko website & blog built with [Eleventy](https://www.11ty.dev). Uses reusabl
   * 📄 [**filters.js**](/utils/filters.js)  `Custom filters for 11ty to be used in templates to manipulate data` [<small>(docs)</small>](https://www.11ty.dev/docs/filters)
 
 
-## How to add a new blog post?
+## ❓ How to add a new blog post?
 1. Add a new file in the [`src/blog/`](/src/blog) folder (or, copy an existing file).
 1. File name becomes the URL of the blog-post (without the extension).
 1. Easiest way to write the post is to use Markdown (.md). Any other file format can be used (eg: Nunjucks, HTML, Liquid, Javascript).
@@ -90,7 +89,7 @@ The Eko website & blog built with [Eleventy](https://www.11ty.dev). Uses reusabl
 1. Alternatively, you can use the graphical admin interface (provided by Netlify CMS) to easily add/edit blog posts.
 
 
-## How to add or edit a Retail-product page?
+## ❓ How to add or edit a Retail-product page?
 1. Retail product pages can by added without coding by just adding the product details to the [configuration file](/src/_data/products.yaml)!
 1. All configuration files reside in the [`src/_data/`](/src/_data) folder.
 1. Configuration files are simple text files written in [YAML format](https://learnxinyminutes.com/docs/yaml).
@@ -101,7 +100,7 @@ The Eko website & blog built with [Eleventy](https://www.11ty.dev). Uses reusabl
 1. Any new product page is automatically added to the navigation menu!
 
 
-## How to add or edit an API-product page?
+## ❓ How to add or edit an API-product page?
 1. API product pages can by added without coding by just adding the product details to the [configuration file](/src/_data/developers.yaml)!
 1. All configuration files reside in the [`src/_data/`](/src/_data) folder.
 1. Configuration files are simple text files written in [YAML format](https://learnxinyminutes.com/docs/yaml).
@@ -112,7 +111,7 @@ The Eko website & blog built with [Eleventy](https://www.11ty.dev). Uses reusabl
 1. Any new product page is automatically added to the navigation menu!
 
 
-## How to add a custom page?
+## ❓ How to add a custom page?
 1. Add a new file in the [`src/`](/src/) folder (or, copy an existing file).
    1. File name becomes the URL of the blog-post (without the extension).
    2. You can also create the file under a sub-directory, if required. The page URL will reflect the sub-directory in the path.
