@@ -1,5 +1,5 @@
 <section class="band">
-    {% for blog in blogposts | reverse | trimArray(30) %}
+    {% for blog in blogposts | trimArray(30) %}
 		<div class="item">
 			<a href="{{ blog.url | url }}" class="card nostyle">
 				<div class="thumb" style="background-image: url({{ blog.data.image }})"></div>

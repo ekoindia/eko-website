@@ -39,7 +39,7 @@ eleventyComputed:
 			<a class="button outline" href="/blog">see all posts</a>
 		</header>
 
-		{% set blogposts = collections[ tag ] %}
+		{% set blogposts = collections[tag] | reverse %}
 		{% set pagination = null %}
 		{% include "blogslist.njk" %}
 	</section>
