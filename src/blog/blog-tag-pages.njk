@@ -1,6 +1,6 @@
 ---
 pagination:
-  data: collections
+  data: collections.blogtags
   size: 1
   alias: tag
 permalink: /blog/tags/{{ tag }}/
@@ -39,7 +39,8 @@ eleventyComputed:
 			<a class="button outline" href="/blog">see all posts</a>
 		</header>
 
-		{% set blogslist = collections[ tag ] %}
+		{% set blogposts = collections[tag] | reverse %}
+		{% set pagination = null %}
 		{% include "blogslist.njk" %}
 	</section>
 

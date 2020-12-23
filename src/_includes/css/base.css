@@ -5,6 +5,7 @@
 	--dot-color: #ffb218;
 	--header-color: #727272;
 	--main-text-color: #666;
+	--lighter-text-color: #888;
 	--background-section-color: #fffcf6;
 	--tag-color: #ffefd1;
 	--footer-background-color: #58595b;
@@ -68,6 +69,11 @@ body {
   box-sizing: border-box;
 }
 
+
+[disabled] {
+	pointer-events: none;
+}
+
 b, strong {
     font-weight: 700;
 }
@@ -109,13 +115,24 @@ a {
 	transition-duration: 0.4s;
 	text-decoration: none;
 	color: var(--main-text-color);
-	/* font-size: 16px; */
 }
 
 a:hover {
 	text-decoration: none;
 	color: var(--primary-color);
 }
+
+a[disabled] {
+	text-decoration: none !important;
+	color: var(--lighter-text-color);
+	opacity: 0.8;
+}
+
+a.nostyle, a.nostyle:hover {
+	text-decoration: none;
+	color: inherit;
+}
+
 
 /* button, select {
   text-transform: none;
@@ -198,31 +215,64 @@ button:-moz-focusring,
 }
 
 
-.dot-box {
-border-radius: 30px;
-background-color: var(--tag-color);
-font-size: 14px;
-padding: 5px 10px 5px;
-max-width: 21%;
-justify-content: center;
-margin: 0 auto;
-box-shadow: 0 3px 2px 0 rgba(0,0,0,0.1);
+/*
+	A Tag of text with a colored dot on the left.
+	Use the "dotTag" Nunjucks shortcode in your templates to add a tag.
+*/
+.dottagbox {
+	display: inline-flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: center;
+	justify-content: center;
+	text-decoration: none !important;
 }
 
-.dot-box .dot {
-	border-radius: 25px;
-	font-weight: bold;
+.dottagbox::before {
+	content: '';
+	width: 0.6em;
+	min-width: 0.6em;
+	height: 0.6em;
+	margin-right: 0.5em;
+	border-radius: 50%;
+	background: var(--primary-color);
+}
+
+.dottagbox.filled {
+	font-size: 0.9em;
+	padding: 0 0.7em 0 0.6em;
+	margin: 2px 3px;
+	height: 1.8em;
+	border-radius: 0.9em;
+	background: var(--tag-color);
 	color: var(--main-text-color);
 }
 
-.orange-dot {
-	padding: 3px;
-	margin-right: 0.4em;
-	height: 3px;
-	width: 3px;
-	background-color: var(--dot-color);
-	border-radius: 50%;
-	display: inline-block;
+
+/* Common styling for Tables: */
+
+table {
+	border-collapse: collapse;
+}
+
+th {
+	background: var(--footer-background-color);
+	color: var(--footer-text);
+	border: 1px solid var(--footer-column-header);
+	font-size: 0.9em;
+	font-weight: 700;
+	padding: 0.5em;
+	vertical-align:middle;
+}
+
+td {
+	padding: 0.4em;
+	vertical-align: middle;
+	border: 1px solid var(--footer-column-header);
+}
+
+tr:nth-child(even) td {
+	background: var(--background-section-color);
 }
 
 
@@ -269,7 +319,7 @@ section {
 
 
 
-.large-top-hero .bg-image {
+.index-page-hero .bg-image {
 	background-repeat: no-repeat;
 	background-size: contain;
 	height: 442px;
@@ -674,3 +724,4 @@ h6 {
 		width: 600px;
 	}
 }
+

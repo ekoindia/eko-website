@@ -1,8 +1,9 @@
 ---
 pagination:
-  data: collections
+  data: collections.blog
   size: 10
-  alias: tag
+  alias: posts
+  reverse: true
   filter:
     - all
     - blog
@@ -23,16 +24,16 @@ eleventyExcludeFromCollections: true
 		</header>
 	</section>
 
-	{% set blogslist = collections.blog %}
+	{% set blogposts = posts %}
 	{% include "blogslist.njk" %}
 
 	<section>
-		<h2>Browse by Tag</h2>
-		<ul>
-			{% for item in tag %}
-				<li><h4><a href="/blog/tags/{{item}}/">{{ item | capitalize }}</h1></li></h4>
+		<h3>Browse by Tag</h3>
+		<div class="layout horizontal wrap">
+			{% for item in collections.blogtags %}
+				<a class="nostyle" href="/blog/tags/{{item}}/">{% dotTag item, "filled" %}</a>&nbsp;
 			{% endfor %}
-		</ul>
+		</div>
 	</section>
 
 {% endblock %}

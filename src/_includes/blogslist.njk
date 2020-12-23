@@ -1,14 +1,35 @@
 <section class="band">
-    {% for blog in blogslist | reverse %}
-    <div class="item">
-        <a href="{{ blog.url | url }}" class="card">
-        <div class="thumb" style="background-image: url({{ blog.data.image }})"></div>
-        <article>
-            <h4>{{ blog.data.title }}</h4>
-            <time datetime="{{ blog.date | dateFormat('yyyy-mm-dd') }}">{{ blog.date | dateFormat('dd MMM yyyy') }}</time>
-            <p>{{ blog.data.description }}</p>
-        </article>
-        </a>
-    </div>
+    {% for blog in blogposts | trimArray(30) %}
+		<div class="item">
+			<a href="{{ blog.url | url }}" class="card nostyle">
+				<div class="thumb" style="background-image: url({{ blog.data.image }})"></div>
+				<article>
+					<h4>{{ blog.data.title }}</h4>
+					<time datetime="{{ blog.date | dateFormat('yyyy-mm-dd') }}">{{ blog.date | dateFormat('dd MMM yyyy') }}</time>
+					{#
+						{% for tag in blog.data.tags %}
+							{%- if collections.tagList.indexOf(tag) != -1 -%}
+								{% set tagUrl %}/tags/{{ tag }}/{% endset %}
+								<a href="{{ tagUrl | url }}" class="post-tag">{{ tag }}</a>
+							{%- endif -%}
+						{% endfor %}
+					#}
+					<p>{{ blog.data.description }}</p>
+				</article>
+			</a>
+		</div>
     {% endfor %}
+
 </section>
+
+{% if pagination.pages.length > 1 %}
+	<section class="pagination layout horizontal around-justified flex wrap center-center" aria-labelledby="pagination">
+		{# <a href="{{ pagination.href.first }}">&lt;&lt; First</a> #}
+		<a href="{{ pagination.href.previous }}"{% if pagination.pageNumber == 0 %} disabled{% endif %}>&lt; Previous</a>
+
+		<span>Page {{ pagination.pageNumber + 1 }} of {{ pagination.pages.length }}</span>
+
+		<a href="{{ pagination.href.next }}"{% if pagination.pageNumber == pagination.pages.length - 1 %} disabled{% endif %}>Next &gt;</a>
+		{# <a href="{{ pagination.href.last }}">Last &gt;&gt;</a> #}
+	</section>
+{% endif %}

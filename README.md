@@ -11,13 +11,22 @@ The Eko website & blog built with [Eleventy](https://www.11ty.dev). Uses reusabl
 ---
 
 ## Features
-1. Built with [Eleventy](https://www.11ty.dev)!
-1. Netlify CMS: easy blog & website configuration management.
+1. Built with [Eleventy](https://www.11ty.dev)!  [<small>(docs)</small>](https://www.11ty.dev/docs)
+1. [Netlify CMS](https://www.netlifycms.org): easy blog & website configuration management.
 1. Reusable components for faster development ([src/_includes](src/_includes)).
-1. Simple configuration files for creating retail/API product pages.
+1. Simple configuration files for creating retail/API product pages ([src/_data](src/_data)).
 1. Simple stack. Minification/bundling using internal 11ty plugins.
 
-## Getting Started (Local Development)
+## Table Of Contents
+1. [Getting Started](#getting-started)
+2. [Project Structure](#project-structure)
+3. [How to add a new blog post?](#how-to-add-a-new-blog-post)
+4. [How to add or edit a Retail-product page?](#how-to-add-or-edit-a-retail-product-page)
+5. [How to add or edit an API-product page?](#how-to-add-or-edit-an-api-product-page)
+6. [How to add a custom page?](#how-to-add-a-custom-page)
+
+
+## Getting Started (Development Setup)
 1. Install [node/npm](https://nodejs.org/en) & [git](https://git-scm.com)
 1. Clone this Repository:
    `git clone https://github.com/ekoindia/eko-website`
@@ -50,8 +59,8 @@ The Eko website & blog built with [Eleventy](https://www.11ty.dev). Uses reusabl
 	* 📄 [**blog_post.njk**](/src/_layouts/blog_post.njk)  `Template for blog post pages ideally written in markdown`
 	* 📄 [**page.njk**](/src/_layouts/page.njk)  `Template for normal pages ideally written in markdown`
 	* 📄 [**ekoUniversity.njk**](/src/_layouts/ekoUniversity.njk)  `For the Eko University page`
-  * 📂👩‍💻 [**_includes**](/src/_includes)  `All build-time reusable components go here`
-    * 📓🧩 ***section_\*.njk***  `Full width reusable UI components that compose the index & product pages`
+  * 📂🧩 [**_includes**](/src/_includes)  `All build-time reusable components go here`
+    * 📓 ***section_\*.njk***  `Full width reusable UI components that compose the index & product pages`
 	* 📄 [**navigation.njk**](/src/_includes/navigation.njk)  `Top navigation bar in every page`
 	* 📄 [**footer.njk**](/src/_includes/footer.njk)  `Footer section at the bottom of every page`
 	* 📄 [**blogslist.njk**](/src/_includes/blogslist.njk)  `List of all blog posts with pagination`
@@ -66,4 +75,49 @@ The Eko website & blog built with [Eleventy](https://www.11ty.dev). Uses reusabl
 	  * 📄 [**section_components.css**](/src/_includes/css/section_components.css)  `CSS rules for the section_*.njk reusable components`
 	* 📁 [**js**](/src/_includes/js)  `Javascript files - inlined into HTML during build`
   * 📁🖼 [**images**](/src/images)  `Public images folder`
+* 📂 [**utils/**](/utils)  `11ty build-time custom utilities...`
+  * 📄 [**shortcodes.js**](/utils/shortcodes.js)  `Reusable short markup (HTML) snippets` [<small>(docs)</small>](https://www.11ty.dev/docs/shortcodes)
+  * 📄 [**filters.js**](/utils/filters.js)  `Custom filters for 11ty to be used in templates to manipulate data` [<small>(docs)</small>](https://www.11ty.dev/docs/filters)
+
+
+## How to add a new blog post?
+1. Add a new file in the [`src/blog/`](/src/blog) folder (or, copy an existing file).
+1. File name becomes the URL of the blog-post (without the extension).
+1. Easiest way to write the post is to use Markdown (.md). Any other file format can be used (eg: Nunjucks, HTML, Liquid, Javascript).
+   1. Check [EXAMPLE-POST.md](/src/blog/EXAMPLE-POST.md) for an example page and a quick guide to markdown.
+1. Add other page info (like title, description, image, etc) at the top of the page between the two '---' lines.
+   1. Check [EXAMPLE-POST.md](/src/blog/EXAMPLE-POST.md) for a quick example.
+1. Alternatively, you can use the graphical admin interface (provided by Netlify CMS) to easily add/edit blog posts.
+
+
+## How to add or edit a Retail-product page?
+1. Retail product pages can by added without coding by just adding the product details to the [configuration file](/src/_data/products.yaml)!
+1. All configuration files reside in the [`src/_data/`](/src/_data) folder.
+1. Configuration files are simple text files written in [YAML format](https://learnxinyminutes.com/docs/yaml).
+   1. It is a simple format to understand and write manually.
+   1. Just ensure proper _indentation and spaces_!
+1. Open the [`src/_data/products.yaml`](/src/_data/products.yaml) file.
+1. Add a new product by copying configuration of an existing product and changing it's values!
+1. Any new product page is automatically added to the navigation menu!
+
+
+## How to add or edit an API-product page?
+1. API product pages can by added without coding by just adding the product details to the [configuration file](/src/_data/developers.yaml)!
+1. All configuration files reside in the [`src/_data/`](/src/_data) folder.
+1. Configuration files are simple text files written in [YAML format](https://learnxinyminutes.com/docs/yaml).
+   1. It is a simple format to understand and write manually.
+   2. Just ensure proper _indentation and spaces_!
+1. Open the [`src/_data/developers.yaml`](/src/_data/developers.yaml) file.
+1. Add a new product by copying configuration of an existing product and changing it's values!
+1. Any new product page is automatically added to the navigation menu!
+
+
+## How to add a custom page?
+1. Add a new file in the [`src/`](/src/) folder (or, copy an existing file).
+   1. File name becomes the URL of the blog-post (without the extension).
+   2. You can also create the file under a sub-directory, if required. The page URL will reflect the sub-directory in the path.
+1. Easiest way to write the post is to use Markdown (.md). Any other file format can be used (eg: Nunjucks, HTML, Liquid, Javascript).
+   1. Check [EXAMPLE-POST.md](/src/blog/EXAMPLE-POST.md) for an example page and a quick guide to markdown.
+1. For full customization, create a Nunjucks file (.njk) and write any custom HTML.
+1. Add other page info (like description, social image, etc) at the top of the page between the two '---' lines.
 

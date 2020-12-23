@@ -15,8 +15,7 @@
             	<br>
 				<p>{{ step.text }}</p>
 				{% if step.tag %}
-					<span class="dot-box">
-					<span class="dot"><span class="orange-dot"></span>{{ step.tag }}</span></span></span>
+					{% dotTag step.tag, 'filled' %}
 					<br><br><br>
 				{% endif%}
 				{% if step.button %}
