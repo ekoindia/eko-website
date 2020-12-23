@@ -1,0 +1,7 @@
+---
+permalink: build.txt
+eleventyExcludeFromCollections: true
+---
+LAST BUILD: {{ build.timestamp | dateISO }}
+ENV:        {{ build.env}}
+BASE_URL:	{{ env.BASE_URL }}
