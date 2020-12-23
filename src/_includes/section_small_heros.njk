@@ -1,4 +1,4 @@
-<section>
+<section type="small_heros">
 	<center>
 		<h1>{{ item.header}}</h1>
 		<span class="h2-border"></span>
@@ -6,9 +6,9 @@
 	<p><br></p>
 	<div class="pure-g">
 		<center>
-			{% for _img in item.partner_images %}
+			{% for partner in item.partner_images %}
 				<div class="img-box">
-					<img typeof="foaf:Image" class="dimmed-image" src="{{ _img }}" loading="lazy">
+					<img typeof="foaf:Image" class="dimmed-image" src="{{ partner.image }}" alt="{{ partner.title }}" loading="lazy">
 				</div>
 			{% endfor %}
 		</center>

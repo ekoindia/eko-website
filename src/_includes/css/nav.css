@@ -1,13 +1,13 @@
 
 /* ================================= CSS Navigation =================================== */
 
-nav {
+.topnav {
 	margin: 0;
 	padding-top: 0;
 	padding-bottom: 0;
 }
 
-nav h5 {
+.topnav h5 {
 	margin-top: 0 !important;
 	margin-bottom: 10px;
 }
@@ -141,32 +141,6 @@ padding: 0;
   font-weight: normal;
 }
 
-.nav-column .button-white {
-  border-radius: 12px;
-  transition-duration: 0.4s;
-  border: 1px solid var(--primary-color);
-  color: var(--primary-color);
-  padding: 10px 24px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 13px;
-  font-weight: 600;
-}
-
-.nav-column .button-white:hover {
-  background-color: var(--primary-color);
-  color:white;
-}
-
-.nav .button {
-  color: white !important;
-}
-
-.nav-button:hover {
-  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-}
-
 .nav .l-box-main {
   padding-right: 1em;
 }
@@ -189,7 +163,7 @@ padding: 0;
 	display: none;
 }
 
-nav ul {
+.topnav ul, .cbp-hrmenu ul {
 	list-style-type: none;
 }
 

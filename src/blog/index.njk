@@ -9,7 +9,7 @@ pagination:
 eleventyExcludeFromCollections: true
 ---
 
-{% extends "../_layouts/pageTemplates/base.njk" %}
+{% extends "../_layouts/base.njk" %}
 
 {% block custom_style %}
 	{{ css_blog | cssmin | safe }}
@@ -19,8 +19,7 @@ eleventyExcludeFromCollections: true
 
 	<section>
 		<header>
-			<h1>Blog Posts</h1>
-			<span class="h2-border"></span>
+			<h1>Blog</h1>
 		</header>
 	</section>
 
@@ -28,10 +27,10 @@ eleventyExcludeFromCollections: true
 	{% include "blogslist.njk" %}
 
 	<section>
-		<h1>Categories</h1>
+		<h2>Browse by Tag</h2>
 		<ul>
 			{% for item in tag %}
-				<li><h4><a href="/blogs/{{item}}/">{{ item | capitalize }}</h1></li></h4>
+				<li><h4><a href="/blog/tags/{{item}}/">{{ item | capitalize }}</h1></li></h4>
 			{% endfor %}
 		</ul>
 	</section>

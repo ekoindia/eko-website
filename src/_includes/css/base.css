@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap&text=abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890%21%22%23%24%25%26%27%2B%2C%2F%40%7C%7B%7D%5B%5D%3B%3C%3D%3E%3F.!-*()₹');
 
 :root {
 	--primary-color: #ffb218;
+	--accent-dark-color: #f6b243;				/* nav (bordered button, dot), link */
 	--dot-color: #ffb218;
 	--header-color: #727272;
 	--main-text-color: #666;
@@ -12,15 +12,52 @@
 	--footer-text: #e4e4e4;
 	--footer-link: #8e8e8e;
 	--nav-caption: #b0b0b0;
+	--divider-color: #e0e0e0;
+	--button-shadow-color: rgba(254,178,25,0.6);
+
+	/*
+		bordered button: #f6b243
+		link on shaded BG: #f6b243
+
+		Menu-dot: #f6b243
+		Dot Box:
+			BG: #ffefd1	(tag color)
+			Dot: #ffb218
+
+
+		dark carousel pagination dot: primary
+			light pagination dot: #f7e8c8
+		Carousel border & next/prev arrowhead circles: #fcb72c
+	*/
+
+	/* Extended Palette - Use with care */
+	--primary-dark-20-color: #DF9500;
+	--primary-dark-40-color: #A77000;
+	--primary-dark-60-color: #704A00;
+
+	--primary-light-20-color: #FFC146;
+	--primary-light-40-color: #FFD174;
+	--primary-light-60-color: #FFE0A3;
 }
 
 
 main, html, body {
-  letter-spacing: 1px;
-  color: var(--main-text-color) !important;
   font-family: 'Roboto', sans-serif;
+  color: var(--main-text-color);
   line-height: 1.42857143;
 }
+
+body {
+	scroll-behavior: smooth;
+	animation: fadein 500ms ease;
+	animation-fill-mode: forwards;
+}
+
+@keyframes fadein {
+	from { opacity: 0; }
+	to { opacity: 1; }
+}
+
 
 /* For compatibility with PureCSS.io */
 .pure-g [class *= "pure-u"] {
@@ -29,6 +66,10 @@ main, html, body {
 
 *, *::before, *::after {
   box-sizing: border-box;
+}
+
+b, strong {
+    font-weight: 700;
 }
 
 aside {
@@ -43,7 +84,40 @@ img {
   max-width: 100%;
 }
 
-button, select {
+
+h1 {
+	font-size: 40px;
+	font-weight: bold;
+	line-height: 1.4;
+}
+
+/* h2 {
+  font-size: 16px;
+  font-weight: bold;
+} */
+
+h5 {
+	font-size: 16px;
+}
+
+p {
+	font-size: 18px;
+	font-weight: 400;
+}
+
+a {
+	transition-duration: 0.4s;
+	text-decoration: none;
+	color: var(--main-text-color);
+	/* font-size: 16px; */
+}
+
+a:hover {
+	text-decoration: none;
+	color: var(--primary-color);
+}
+
+/* button, select {
   text-transform: none;
 }
 
@@ -67,17 +141,100 @@ button:-moz-focusring,
   [type="reset"]:-moz-focusring,
   [type="submit"]:-moz-focusring {
   outline: 1px dotted ButtonText;
+} */
+
+
+/* =============== COMMON UI COMPONENTS ================= */
+
+
+.h2-border {
+	width: 50px;
+	height: 5px;
+	background-color: var(--primary-color);
+	display: inline-block;
+	border-radius: 2.5px;
+	margin-bottom: 5px;
 }
+
+
+.button {
+	display: inline-block;
+	font-size: 16px;
+	font-weight: bold;
+	padding: 12px 25px;
+	margin: 0.3em;
+	background: var(--primary-color) !important;
+	color: white !important;
+	text-align: center;
+	vertical-align: middle;
+	text-decoration: none;
+	border: none;
+	border-radius: 10px;
+	white-space: nowrap;
+	cursor: pointer;
+	line-height: 1.43;
+	transition: all 0.3s ease-out;
+	will-change: translate;
+}
+
+.button:not(.outline):hover {
+	box-shadow: 0px 15px 20px var(--button-shadow-color);
+    transform: translateY(-7px);
+}
+
+.button.outline {
+	padding: 10px 25px;
+	background: none !important;
+	border: 2px solid var(--accent-dark-color);
+	border-radius: 10px;
+    color: var(--accent-dark-color) !important;
+}
+
+.button.outline:hover {
+	background-color: var(--accent-dark-color) !important;
+	color: white !important;
+	transform: none;
+	box-shadow: none;
+}
+
+
+.dot-box {
+border-radius: 30px;
+background-color: var(--tag-color);
+font-size: 14px;
+padding: 5px 10px 5px;
+max-width: 21%;
+justify-content: center;
+margin: 0 auto;
+box-shadow: 0 3px 2px 0 rgba(0,0,0,0.1);
+}
+
+.dot-box .dot {
+	border-radius: 25px;
+	font-weight: bold;
+	color: var(--main-text-color);
+}
+
+.orange-dot {
+	padding: 3px;
+	margin-right: 0.4em;
+	height: 3px;
+	width: 3px;
+	background-color: var(--dot-color);
+	border-radius: 50%;
+	display: inline-block;
+}
+
 
 
 /* ============= SECTIONS / COMPONENTS =================== */
 
-section, nav, footer {
+section, nav.topnav, footer {
 	box-sizing: border-box;
 	width: 100%;
 	margin: 0;
-	padding-left: 5px;
-	padding-right: 5px;
+	padding-left: 20px;
+	padding-right: 20px;
 }
 
 section {
@@ -86,7 +243,7 @@ section {
 }
 
 @media (min-width: 576px) {
-	section, nav, footer {
+	section, nav.topnav, footer {
 		padding-left: 10%;
 		padding-right: 10%;
 	}
@@ -106,124 +263,19 @@ section {
 	padding-right: 20px;
 }
 
-/* TODO: Fix this. Normally used with <section> */
 .background-section {
-	width: 100%;
 	background-color: var(--background-section-color);
-	margin: 0;
 }
 
-.scroll-icon-container .scroll-icon {
-border: 1px solid #727272;
-border-radius: 18px;
+
+
+.large-top-hero .bg-image {
+	background-repeat: no-repeat;
+	background-size: contain;
+	height: 442px;
+	background-position: center;
 }
 
-.h2-border {
-width: 50px;
-height: 5px;
-background-color: var(--primary-color);
-display: inline-block;
-border-radius: 2.5px;
-margin-bottom: 5px;
-}
-
-h1 {
-font-size: 40px;
-font-weight: bold;
-line-height: 1.4;
-}
-
-h5 {
-font-size: 16px;
-}
-
-p {
-font-size: 18px;
-font-weight: 200;
-}
-
-a {
-	transition-duration: 0.4s;
-	text-decoration: none;
-	color: var(--main-text-color);
-	font-size: 16px;
-}
-
-a:hover {
-	text-decoration: none;
-	color: var(--primary-color);
-}
-
-.button {
-	border-radius: 12px;
-	transition-duration: 0.4s;
-	background-color: var(--primary-color);
-	border: none;
-	color: white;
-	padding: 10px 24px;
-	text-align: center;
-	text-decoration: none;
-	display: inline-block;
-	font-size: 16px;
-	font-weight: bold;
-}
-
-.button:hover {
-box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-color: white !important;
-}
-
-.tag a {
-font-size: 12px;
-}
-
-.dot-box {
-border-radius: 30px;
-background-color: var(--tag-color);
-font-size: 14px;
-padding: 5px 10px 5px;
-max-width: 21%;
-justify-content: center;
-margin: 0 auto;
-box-shadow: 0 3px 2px 0 rgba(0,0,0,0.1);
-}
-
-.dot-box .dot {
-border-radius: 25px;
-font-weight: bold;
-color: var(--main-text-color);
-}
-
-.dot-box .orange-dot {
-padding: 3px;
-margin-right: 0.4em;
-height: 3px;
-width: 3px;
-background-color: var(--dot-color);
-border-radius: 50%;
-display: inline-block;
-}
-
-.bg-image {
-background-image: url(https://eko.in/sites/default/files/2020-06/homepage-illustration_0.svg);
-background-repeat: no-repeat;
-background-size: contain;
-height: 442px;
-background-position: center;
-}
-
-.button-white {
-border-radius: 12px;
-transition-duration: 0.4s;
-border: 1px solid var(--primary-color);
-color: var(--primary-color);
-padding: 10px 24px;
-text-align: center;
-text-decoration: none;
-display: inline-block;
-font-size: 13px;
-font-weight: 600;
-}
 
 
 /* alternating steps*/
@@ -259,11 +311,6 @@ font-weight: 600;
   max-width: 100%;
 }
 
-.h2 {
-  font-weight: bolder;
-  font-size: 16px;
-}
-
 .step_section h3 {
   font-size: 24px;
   color: var(--header-color);
@@ -275,7 +322,7 @@ font-weight: 600;
   font-weight: 500;
 }
 
-.boxed {
+.step_section .boxed {
   max-width: 200px;
   display: block;
   border: 1px solid  var(--main-text-color);
@@ -286,22 +333,24 @@ font-weight: 600;
   margin: 10px;
   opacity: 0.5;
 }
-.boxed:hover{
+.step_section .boxed:hover{
   background-color: var(--background-section-color);
-  border: 2px solid var(--primary-color);
+  border-color: var(--primary-color);
 }
 
-.boxed:hover .box-text,
-.box-text:hover {
+.step_section .boxed:hover .box-text,
+.step_section .box-text:hover {
   color: var(--header-color);
   opacity: 1;
 }
 
-.boxed:hover .box-title,
-.box-title:hover {
+.step_section .boxed:hover .box-title,
+.step_section .box-title:hover {
   color: var(--primary-color);
   opacity: 1;
 }
+
+
 
 .main-line {
   font-weight: bold;
@@ -448,17 +497,6 @@ h6 {
   font-weight: normal;
 }
 
-.partner-box {
-  margin-bottom: 50px;
-  width: 100%;
-  border-radius: 20px;
-  box-shadow: 0 3px 10px 0 rgba(0,0,0,0.12), 0 3px 5px 0 rgba(0,0,0,0.05);
-}
-
-.partner-box img {
-  max-width: 80%;
-}
-
 
 .documentation_link_banner div {
 	border: 1px solid var(--primary-color);
@@ -481,203 +519,18 @@ h6 {
 
 
 
-
-
-/* ================================= EMBLA COROUSEL ============================ */
-/* ----------- [TODO: Remove duplicate CSS between galary & embla] ------------ */
-
-.embla {
-position: relative;
-padding: 20px;
-max-width: 850px;
+.get_started_banner h1 {
+	line-height: 1.5em;
+	margin: 0;
 }
-
-.embla__viewport {
-overflow: hidden;
-width: 100%;
-align-items: center;
-margin: auto;
-border: solid 0.3px var(--primary-color);
+.get_started_banner h3 {
+	font-size: 24px;
+	line-height: 1.1;
+	margin:0;
 }
-
-.embla__viewport.is-draggable {
-cursor: move;
-cursor: grab;
+.get_started_banner .button {
+	margin: 0 1em 0 0;
 }
-
-.embla__viewport.is-dragging {
-cursor: grabbing;
-}
-
-.embla__container {
-display: flex;
-user-select: none;
--webkit-touch-callout: none;
--khtml-user-select: none;
--webkit-tap-highlight-color: transparent;
-margin-left: -10px;
-}
-
-.embla__slide {
-position: relative;
-min-width: 100%;
-padding-left: 10px;
-}
-
-.embla__slide__inner {
-position: relative;
-overflow: hidden;
-padding: 30px;
-margin-bottom: -15px;
-background-color: var(--background-section-color);
-background-size: cover;
-text-align: left !important;
-}
-
-.embla__slide__inner h3 {
-font-weight: bold;
-}
-
-.embla__slide__inner img {
-max-width: 100%;
-}
-
-.embla__button {
-outline: 0;
-cursor: pointer;
-background-color: transparent;
-touch-action: manipulation;
-position: absolute;
-z-index: 1;
-top: 50%;
-transform: translateY(-50%);
-border: 0;
-width: 30px;
-height: 30px;
-justify-content: center;
-align-items: center;
-fill: var(--primary-color);
-padding: 0;
-}
-
-.embla__button:disabled {
-cursor: default;
-opacity: 0.3;
-}
-
-.embla__button__svg {
-width: 100%;
-height: 100%;
-}
-
-.embla__button--prev {
-left: 27px;
-}
-
-.embla__button--next {
-right: 27px;
-}
-
-.gallery {
-	border: none !important;
-}
-
-/* .gallery {
-position: relative;
-padding: 20px;
-max-width: 850px;
-} */
-
-/* .gallery__viewport {
-overflow: hidden;
-width: 100%;
-align-items: center;
-margin: auto;
-padding: 20px;
-} */
-
-/* .gallery__viewport.is-draggable {
-cursor: move;
-cursor: grab;
-} */
-
-/* .gallery__viewport.is-dragging {
-cursor: grabbing;
-} */
-
-.gallery__container {
-display: flex;
-user-select: none;
--webkit-touch-callout: none;
--khtml-user-select: none;
--webkit-tap-highlight-color: transparent;
-margin-left: -10px;
-}
-
-.gallery__slide {
-position: relative;
-min-width: 100%;
-padding-left: 10px;
-}
-
-.gallery__slide__inner p {
-  color: var(--main-text-color);
-}
-
-.gallery__slide__inner h1 {
-  font-weight: bold;
-  padding-top: 10px;
-  font-size: 15px;
-  color: var(--header-color);
-}
-
-.gallery__slide__inner {
-  position: relative;
-  overflow: hidden;
-  padding: 30px;
-  margin-bottom: -15px;
-  background-size: cover;
-  text-align: left !important;
-}
-
-/* .gallery__button {
-  outline: 0;
-  cursor: pointer;
-  background-color: transparent;
-  touch-action: manipulation;
-  position: absolute;
-  z-index: 1;
-  top: 50%;
-  transform: translateY(-50%);
-  border: 0;
-  width: 30px;
-  height: 30px;
-  justify-content: center;
-  align-items: center;
-  fill: var(--primary-color);
-  padding: 0;
-} */
-
-/* .gallery__button:disabled {
-  cursor: default;
-  opacity: 0.3;
-  }
-
-.gallery__button__svg {
-  width: 100%;
-  height: 100%;
-}
-
-.gallery__button--prev {
-  left: 1px;
-}
-
-.gallery__button--next {
-  right: 1px;
-} */
-
-/* ======================================================================================== */
-
 
 
 

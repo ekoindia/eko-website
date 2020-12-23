@@ -73,7 +73,7 @@
       main_line: For all integration related issues, we provide 24x7 support.
       button_text: Contact Support
 
-    - section: final_ad
+    - section: get_started_banner
       small_header: Ready to get started?
       main_header: Integrate our money transfer API
       image: /images/become-eko-partner.svg
@@ -159,13 +159,18 @@
     - section: small_heros
       header: Our Partners
       partner_images:
-        - /images/partners/shopx.png
-        - /images/partners/matrix.png
-        - /images/partners/storeking.png
-        - /images/partners/vakrangee.png
-        - /images/partners/toffee.png
+        - image: /images/partners/shopx.png
+          title: ShopX
+        - image: /images/partners/matrix.png
+          title: Matrix
+        - image: /images/partners/storeking.png
+          title: StoreKing
+        - image: /images/partners/vakrangee.png
+          title: Vakrangee
+        - image: /images/partners/toffee.png
+          title: Toffee Insurance
 
-    - section: final_ad
+    - section: get_started_banner
       small_header: Ready to get started?
       main_header: Get AePS SDK & Earn More
       image: /images/become-eko-partner.svg

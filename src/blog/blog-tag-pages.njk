@@ -1,0 +1,46 @@
+---
+pagination:
+  data: collections
+  size: 1
+  alias: tag
+permalink: /blog/tags/{{ tag }}/
+eleventyComputed:
+  title: Blog posts tagged  “{{ tag | capitalize  }}” | {{website.title}}
+---
+
+{# this file generates pages for all the blog-categories/tags #}
+
+{% extends "../_layouts/base.njk" %}
+
+{% block seo %}
+	<title>Blog posts tagged  “{{ tag | capitalize  }}” | {{website.title}}</title>
+	<meta name="description" content="{{ description }}">
+	{# <meta name="keywords" content="{{ website.keywords }}"> #}
+
+	{# OpenGraph (Facebook) Social Card #}
+	{# <meta property="og:image" content="{{ env.BASE_URL }}{{ image }}"> #}
+	<meta property="og:title" content="Blog posts tagged  “{{ tag | capitalize  }}” | {{website.title}}">
+	{# <meta property="og:description" content="{{ description }}"> #}
+
+	{# Twitter Social Card #}
+	<meta name="twitter:title" content="Blog posts tagged  “{{ tag | capitalize  }}” | {{website.title}}">
+	{# <meta name="twitter:description" content="{{ description }}"> #}
+	{# <meta name="twitter:image" content="{{ env.BASE_URL }}{{ image }}"> #}
+{% endblock %}
+
+{% block custom_style %}
+	{{ css_blog | cssmin | safe }}
+{% endblock %}
+
+{% block main %}
+	<section>
+		<header>
+			<h1>Blog posts tagged  “{{ tag }}”</h1>
+			<a class="button outline" href="/blog">see all posts</a>
+		</header>
+
+		{% set blogslist = collections[ tag ] %}
+		{% include "blogslist.njk" %}
+	</section>
+
+{% endblock %}

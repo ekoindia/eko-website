@@ -9,7 +9,7 @@ pagination:
 eleventyExcludeFromCollections: true
 ---
 
-{% extends "../_layouts/pageTemplates/base.njk" %}
+{% extends "../_layouts/base.njk" %}
 
 {% block main %}
 <main>
@@ -19,7 +19,7 @@ eleventyExcludeFromCollections: true
             <span class="h2-border"></span>
         </header>
     </section>
-    
+
     {% set careers_list = collections.career %}
     {% include "careers_list.njk" %}
 </main>

@@ -1,0 +1,35 @@
+{% extends "./base.njk" %}
+
+{% block seo %}
+	<title>{{ title }} | {{ website.title }}</title>
+	<meta name="description" content="{{ description }}">
+	{# <meta name="keywords" content="{{ website.keywords }}"> #}
+
+	{# OpenGraph (Facebook) Social Card #}
+	<meta property="og:image" content="{{ env.BASE_URL }}{{ image }}">
+	<meta property="og:title" content="{{ title }} | {{ website.title }}">
+	<meta property="og:description" content="{{ description }}">
+
+	{# Twitter Social Card #}
+	<meta name="twitter:title" content="{{ title }} | {{ website.title }}">
+	<meta name="twitter:description" content="{{ description }}">
+	<meta name="twitter:image" content="{{ env.BASE_URL }}{{ image }}">
+{% endblock %}
+
+{% block custom_style %}
+	{{ css_blog | cssmin | safe }}
+{% endblock %}
+
+{% block main %}
+	<section>
+        <h1>{{ title }}</h1>
+        <h6>
+			<time>{{ date | dateFormat('dd MMM yyyy') }}</time>
+			{% for item in tags %}
+				<a class="blogtag" href="/blog/{{item}}/">{{ item }}</h1></li></h4>
+			{% endfor %}
+		</h6>
+        <img class="hero" src="{{ image | url }}" alt="{{ image }}">
+        <p>{{ content | safe }}</p>
+    </section>
+{% endblock %}

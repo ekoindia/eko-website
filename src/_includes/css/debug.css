@@ -1,0 +1,16 @@
+section[type] {
+	position: relative;
+	border:1px solid #666;
+}
+section[type]::before {
+	content: "section: " attr(type);
+	position: absolute;
+	top:0; left:0;
+	font-family: monospace;
+	font-size: 10px;
+	font-weight: 700;
+	background: #666;
+	color: #fff;
+	padding:2px 5px;
+	letter-spacing: 1px;
+}

@@ -3,49 +3,74 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta property="og:type" content="website">
-    <meta name="twitter:card" content="website">
 	<meta name="theme-color" content="#ffb218"/>
 
-  {% block seo %}
-    <title>{{ website.title }}</title>
-    <meta name="description" content="{{ website.tag_line }}">
-    <meta name="keywords" content="{{ website.keywords }}">
 
-	{# OpenGraph (Facebook) Social Card #}
-    <meta property="og:url" content="{{ env.BASE_URL }}">
-    <meta property="og:image" content="{{ env.BASE_URL }}{{ website.image }}">
-    <meta property="og:title" content="{{ website.title }}">
-    <meta property="og:description" content="{{ website.tag_line }}">
+	{# ---- Optimal/non-blocking way to load Google Font (https://csswizardry.com/2020/05/the-fastest-google-fonts) ---- #}
+	{% if website.google_font_url %}
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+		{# Less optimized method but less FOUT: #}
+		<link rel="stylesheet" href="{{ website.google_font_url }}" />
+
+		{# More optimized method but more FOUT: #}
+		{# <link rel="preload" as="style" href="{{ website.google_font_url }}" />
+		<link rel="stylesheet" href="{{ website.google_font_url }}" media="print" onload="this.media='all'" /> #}
+		{# Ignoring <noscript> for normal font load when Javascript is disabled. Fallback font will be used #}
+	{% endif %}
+
+	{% block seo %}
+		<title>{{ website.title }}</title>
+		<meta name="description" content="{{ website.tag_line }}">
+		<meta name="keywords" content="{{ website.keywords }}">
+
+		{# OpenGraph (Facebook) Social Card #}
+		<meta property="og:image" content="{{ env.BASE_URL }}{{ website.image }}">
+		<meta property="og:title" content="{{ website.title }}">
+		<meta property="og:description" content="{{ website.tag_line }}">
+
+		{# Twitter Social Card #}
+		<meta name="twitter:title" content="{{ website.title }}">
+		<meta name="twitter:description" content="{{ website.tag_line }}">
+		<meta name="twitter:image" content="{{ env.BASE_URL }}{{ website.image }}">
+	{% endblock %}
+
+	{# Common Social metatags #}
+    <meta property="og:type" content="website">
+	<meta property="og:url" content="{{ env.BASE_URL }}{{ page.url }}">
     <meta property="og:site_name" content="{{ website.title }}">
-
-    {# Twitter Social Card #}
+    <meta name="twitter:card" content="website">
+    <meta name="twitter:url" content="{{ env.BASE_URL }}{{ page.url }}">
     <meta name="twitter:site" content="{{ website.twitter_handle }}">
-    <meta name="twitter:url" content="{{ env.BASE_URL }}">
-    <meta name="twitter:title" content="{{ website.title }}">
-    <meta name="twitter:description" content="{{ website.tag_line }}">
-    <meta name="twitter:image" content="{{ env.BASE_URL }}{{ website.image }}">
-  {% endblock %}
 
-    {# Link Main CSS Files (common to all sections & pages) #}
+
+    {# DEFINE Main CSS Files (common to all sections & pages) #}
     {% set css_main %}
 	  {% include "css/flex.css" %}
       {% include "css/base.css" %}
 	  {% include "css/nav.css" %}
 	  {% include "css/footer.css" %}
     {% endset %}
+
+	{# DEFINE PureCSS.io Grid System CSS #}
     {% set css_pure %}
 	  {# read more: https://purecss.io #}
-      {% include "css/pure.css" %}
-	  {% include "css/grids-responsive-min.css" %}
+      {% include "css/purecss/base-min.css" %}
+	  {% include "css/purecss/grids-min.css" %}
+	  {% include "css/purecss/grids-responsive-min.css" %}
     {% endset %}
 
-	{# CSS include for Blog section (included in blog template and the blog listing pages) #}
+	{# DEFINE CSS to debug components #}
+	{% set css_debug %}
+	  {% include "css/debug.css" %}
+    {% endset %}
+
+	{# DEFINE CSS for Blog section (included in blog template and the blog listing pages) #}
 	{% set css_blog %}
       {% include "css/blog.css" %}
     {% endset %}
 
-	{# Font Awesone Icons #}
+	{# DEFINE Font Awesone Icons #}
 	{#
     {% set font_awesome %}
 	  {% include "css/fontawesome/css/fontawesome.min.css" %}
@@ -55,11 +80,14 @@
 	#}
 
 
-	{# ----- EMBLA CAROUSEL SUPPORT (https://github.com/davidcetinkaya/embla-carousel) ------ #}
-	{% set carousel %}
+	{# ----- DEFINE EMBLA CAROUSEL SUPPORT (https://github.com/davidcetinkaya/embla-carousel) ------ #}
+	{% set js_carousel %}
 		{% include "js/embla-carousel.umd.min.js" %}
 		{% include "js/carousel.js" %}
 	{% endset %}
+	{% set css_carousel %}
+	  {% include "css/carousel.css" %}
+    {% endset %}
 
 
 	{# ------ Dark Mode ------- #}
@@ -75,6 +103,10 @@
 
 	  {% block custom_style %}{% endblock %}
     </style>
+
+	{% if env.DEBUG_SECTIONS=='true' %}
+		<style>{{ css_debug | cssmin | safe }}</style>
+	{% endif %}
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -97,7 +129,9 @@
     </script>
 	#}
 
-	<main>{% block main%}{% endblock %}</main>
+	<main>
+		{% block main%}{% endblock %}
+	</main>
 
 	{% include "footer.njk" %}
 
