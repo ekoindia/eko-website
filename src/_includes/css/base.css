@@ -49,7 +49,15 @@ main, html, body {
 
 body {
 	scroll-behavior: smooth;
+	animation: fadein 500ms ease;
+	animation-fill-mode: forwards;
 }
+
+@keyframes fadein {
+	from { opacity: 0; }
+	to { opacity: 1; }
+}
+
 
 /* For compatibility with PureCSS.io */
 .pure-g [class *= "pure-u"] {
