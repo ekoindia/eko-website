@@ -6,7 +6,7 @@
         <div class="thumb" style="background-image: url({{ career.data.image }})"></div>
         <article>
             <h4>{{ career.data.title }}</h4>
-            <span><time datetime="{{ career.date | htmlDateString }}">{{ career.date | readableDate }}</time></span>
+            <span><time datetime="{{ career.date | dateFormat('yyyy-mm-dd') }}">{{ career.date | dateFormat('dd MMM yyyy') }}</time></span>
             <p>{{ career.data.description }}</p>
         </article>
         </a>

@@ -3,8 +3,6 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta property="og:type" content="website">
-    <meta name="twitter:card" content="website">
 	<meta name="theme-color" content="#ffb218"/>
 
 
@@ -12,7 +10,7 @@
 	{% if website.google_font_url %}
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-		{# Less optimized way but ledd FOUT: #}
+		{# Less optimized method but less FOUT: #}
 		<link rel="stylesheet" href="{{ website.google_font_url }}" />
 
 		{# More optimized method but more FOUT: #}
@@ -21,26 +19,30 @@
 		{# Ignoring <noscript> for normal font load when Javascript is disabled. Fallback font will be used #}
 	{% endif %}
 
+	{% block seo %}
+		<title>{{ website.title }}</title>
+		<meta name="description" content="{{ website.tag_line }}">
+		<meta name="keywords" content="{{ website.keywords }}">
 
-  {% block seo %}
-    <title>{{ website.title }}</title>
-    <meta name="description" content="{{ website.tag_line }}">
-    <meta name="keywords" content="{{ website.keywords }}">
+		{# OpenGraph (Facebook) Social Card #}
+		<meta property="og:image" content="{{ env.BASE_URL }}{{ website.image }}">
+		<meta property="og:title" content="{{ website.title }}">
+		<meta property="og:description" content="{{ website.tag_line }}">
 
-	{# OpenGraph (Facebook) Social Card #}
-    <meta property="og:url" content="{{ env.BASE_URL }}{{ page.url }}">
-    <meta property="og:image" content="{{ env.BASE_URL }}{{ website.image }}">
-    <meta property="og:title" content="{{ website.title }}">
-    <meta property="og:description" content="{{ website.tag_line }}">
+		{# Twitter Social Card #}
+		<meta name="twitter:title" content="{{ website.title }}">
+		<meta name="twitter:description" content="{{ website.tag_line }}">
+		<meta name="twitter:image" content="{{ env.BASE_URL }}{{ website.image }}">
+	{% endblock %}
+
+	{# Common Social metatags #}
+    <meta property="og:type" content="website">
+	<meta property="og:url" content="{{ env.BASE_URL }}{{ page.url }}">
     <meta property="og:site_name" content="{{ website.title }}">
-
-    {# Twitter Social Card #}
-    <meta name="twitter:site" content="{{ website.twitter_handle }}">
+    <meta name="twitter:card" content="website">
     <meta name="twitter:url" content="{{ env.BASE_URL }}{{ page.url }}">
-    <meta name="twitter:title" content="{{ website.title }}">
-    <meta name="twitter:description" content="{{ website.tag_line }}">
-    <meta name="twitter:image" content="{{ env.BASE_URL }}{{ website.image }}">
-  {% endblock %}
+    <meta name="twitter:site" content="{{ website.twitter_handle }}">
+
 
     {# DEFINE Main CSS Files (common to all sections & pages) #}
     {% set css_main %}

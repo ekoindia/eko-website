@@ -2,19 +2,17 @@
 
 {% if 'social_image' in product and 'tag_line' in product %}
 	{% block seo %}
-		{# Facebook #}
-		<title>{{ product.name }}</title>
+		<title>{{ product.name }} | {{ website.title }}</title>
 		<meta name="description" content="{{ product.tag_line }}">
 		<meta name="keywords" content="{{ product.keywords }}">
-		<meta property="og:url" content="{{ env.BASE_URL }}/products/{{ product.name | slug }}/"/>
+
+		{# Facebook #}
 		<meta property="og:image" content="{{ product.social_image }}">
-		<meta property="og:title" content="{{ product.name }}"/>
+		<meta property="og:title" content="{{ product.name }} | {{ website.title }}"/>
 		<meta property="og:description" content="{{ product.tag_line }}"/>
 
 		{# Twitter #}
-		<meta name="twitter:site" content="{{ base.twitter_handle }}">
-		<meta name="twitter:url" content="{{ env.BASE_URL }}/products/{{ product.name | slug }}/">
-		<meta name="twitter:title" content="{{ product.name }}">
+		<meta name="twitter:title" content="{{ product.name }} | {{ website.title }}">
 		<meta name="twitter:description" content="{{ product.tag_line }}">
 		<meta name="twitter:image" content="{{ product.social_image }}">
 	{% endblock %}
@@ -22,7 +20,7 @@
 
 {% block main %}
 
-	{% include "section_top_hero.njk" %}
+	{% include "section_product_page_hero.njk" %}
 
 	{% for i in range(0, product.layout | length) %}
 		{% set item = product.layout[i] %}

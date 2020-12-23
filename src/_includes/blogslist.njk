@@ -5,7 +5,7 @@
         <div class="thumb" style="background-image: url({{ blog.data.image }})"></div>
         <article>
             <h4>{{ blog.data.title }}</h4>
-            <time datetime="{{ blog.date | htmlDateString }}">{{ blog.date | readableDate }}</time>
+            <time datetime="{{ blog.date | dateFormat('yyyy-mm-dd') }}">{{ blog.date | dateFormat('dd MMM yyyy') }}</time>
             <p>{{ blog.data.description }}</p>
         </article>
         </a>

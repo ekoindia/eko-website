@@ -6,7 +6,7 @@ pagination:
   alias: tag
 permalink: /blog/{{ tag }}/
 ---
-{% extends "../_layouts/pageTemplates/base.njk" %}
+{% extends "../_layouts/base.njk" %}
 
 {% block main %}
     {% set blogslist = collections[ tag ] %}

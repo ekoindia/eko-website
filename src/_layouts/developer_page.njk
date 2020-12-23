@@ -2,18 +2,16 @@
 
 {% if 'social_image' in developer and 'tag_line' in developer %}
 	{% block seo %}
-		{# Facebook #}
 		<title>{{ developer.name }}</title>
 		<meta name="description" content="{{ developer.tag_line }}">
 		<meta name="keywords" content="{{ developer.keywords }}">
-		<meta property="og:url" content="{{ env.BASE_URL }}/developers/{{ developer.name | slug }}/"/>
+
+		{# Facebook #}
 		<meta property="og:image" content="{{ developer.social_image }}">
 		<meta property="og:title" content="{{ developer.name }}"/>
 		<meta property="og:description" content="{{ developer.tag_line }}"/>
 
 		{# Twitter #}
-		<meta name="twitter:site" content="{{ base.twitter_handle }}">
-		<meta name="twitter:url" content="{{ env.BASE_URL }}/developers/{{ developer.name | slug }}/">
 		<meta name="twitter:title" content="{{ developer.name }}">
 		<meta name="twitter:description" content="{{ developer.tag_line }}">
 		<meta name="twitter:image" content="{{ developer.social_image }}">
@@ -23,7 +21,7 @@
 {% block main %}
 
 	{% set product = developer|mergeObjectFilter({learn_more_link: developer.documentation_link}) %}
-	{% include "section_top_hero.njk" %}
+	{% include "section_product_page_hero.njk" %}
 
 
 	{% for i in range(0, product.layout | length) %}

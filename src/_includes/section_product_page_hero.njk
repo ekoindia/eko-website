@@ -1,0 +1,36 @@
+<section class="pure-g flex-grid product_page_hero" type="product_page_hero">
+	<div class="pure-u-1 pure-u-md-1-2">
+		<br><br>
+		<div class="pure-g flex-grid">
+			<div class="pure-u-1 pure-u-md-1-2">
+				<h5>{{ product.title }}</h5>
+			</div>
+			<div class="pure-u-1 pure-u-md-1-2">
+				<img src="{{ product.icon }}">
+			</div>
+		</div>
+		<div class="pure-g flex-grid">
+			<div class="pure-u-1">
+				<h1>{{ product.tag_line }}</h1>
+				<p>{{ product.summary }}</p>
+			</div>
+		</div>
+    	<div class="layout horizontal center">
+			<a href="{{ website.signup_url }}" class="button">Sign up</a>
+			{% if product.learn_more_link %}
+				&nbsp;
+				<a href="{{ product.learn_more_link }}" rel="noopener" target="_blank">
+				Learn More
+				<img src="/images/icons/next-icon.svg">
+				</a>
+			{% endif %}
+		</div>
+	</div>
+	<div class="pure-u-1 pure-u-md-1-2">
+		<br><br><br><br>
+		<img src="{{ product.hero_image }}" alt="{{ product.name }}">
+	</div>
+</section>
+<br><br>
+{% iconScroll %}
+<br>
