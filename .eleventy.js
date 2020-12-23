@@ -2,11 +2,14 @@ const yaml = require('js-yaml');
 const fs = require("fs");
 const { minify } = require("terser");
 const htmlmin = require("html-minifier");
-const CleanCSS = require("clean-css");
+
 const eleventyNavigationPlugin = require('@11ty/eleventy-navigation');
 const blogTools = require("eleventy-plugin-blog-tools");
 const { DateTime } = require("luxon");
-const outdent = require('outdent');
+
+const filters = require('./utils/filters.js');
+const shortcodes = require('./utils/shortcodes.js');
+// const iconsprite = require('./utils/iconsprite.js');
 
 // const string = require('string');		// https://github.com/jprichardson/string.js
 
@@ -32,6 +35,21 @@ require('dotenv').config();
 
 
 module.exports = function(eleventyConfig) {
+
+
+	// Add Filters
+	Object.keys(filters).forEach((filterName) => {
+		eleventyConfig.addFilter(filterName, filters[filterName]);
+	})
+
+	// Add Shortcodes
+	Object.keys(shortcodes).forEach((shortcodeName) => {
+		eleventyConfig.addShortcode(shortcodeName, shortcodes[shortcodeName]);
+	})
+
+	// Add Icon Sprite
+	// eleventyConfig.addNunjucksAsyncShortcode('iconsprite', iconsprite);
+
 
 	// ---------------------- Configure Markdown Support ----------------------------
 
@@ -99,10 +117,6 @@ module.exports = function(eleventyConfig) {
 	// 	excerpt_separator: "<!-- excerpt -->"
 	// });
 
-  eleventyConfig.addFilter("cssmin", function(code) {
-    return new CleanCSS({}).minify(code).styles;
-  });
-
   eleventyConfig.addTransform("htmlmin", function(content, outputPath) {
     if( outputPath.endsWith(".html") ) {
       let minified = htmlmin.minify(content, {
@@ -143,72 +157,51 @@ module.exports = function(eleventyConfig) {
     }
   });
 
-  // eleventyConfig.addPlugin(eleventyNavigationPlugin);
-  eleventyConfig.addPlugin(blogTools);
+	// Add Plugins...
+	// eleventyConfig.addPlugin(eleventyNavigationPlugin);
+	eleventyConfig.addPlugin(blogTools);
 
-  eleventyConfig.addFilter('htmlDateString', (dateObj) => {
-    return DateTime.fromJSDate(dateObj, {
-      zone: 'utc'
-      }).toFormat('yyyy-mm-dd');
-    });
+	// Add Files Passthrough...
+	eleventyConfig.addPassthroughCopy('src/images');
+	eleventyConfig.addPassthroughCopy('src/admin');
+	eleventyConfig.addPassthroughCopy('src/js');
 
-  eleventyConfig.addFilter("readableDate", dateObj => {
-  return DateTime.fromJSDate(dateObj, {
-    zone: 'utc'
-    }).toFormat("dd MMM yyyy");
-  });
+	// Add Layouts...
+	eleventyConfig.addLayoutAlias('base', 'base.njk');
+	eleventyConfig.addLayoutAlias('page', 'page.njk');
+	eleventyConfig.addLayoutAlias('product_page', 'product_page.njk');
+	eleventyConfig.addLayoutAlias('developer_page', 'developer_page.njk');
+	eleventyConfig.addLayoutAlias('blog', 'blog_post.njk');
+	eleventyConfig.addLayoutAlias('career_post', 'career_post.njk');
+	eleventyConfig.addLayoutAlias('ekoUniversity', 'ekoUniversity.njk');
 
-  // Filter out all elements from a list (eg: products) that has a 'hidden: true' property in it
-  eleventyConfig.addFilter("hiddenFilter", list => list.filter(item => item.hidden ? false : true));
-
-  // Filter out all elements from a list (eg: products) that has a 'disabled: true' property in it
-  eleventyConfig.addFilter("disabledFilter", list => list.filter(item => item.disabled ? false : true));
-
-  // Useful to change property of an object in the Nunjucks 'set' method which is fairly limited...
-  eleventyConfig.addFilter("mergeObjectFilter", (obj1, obj2) => { return { ...obj1, ...obj2 } });
+	// Add Data Extensions...
+	eleventyConfig.addDataExtension('yaml', contents => yaml.safeLoad(contents));
 
 
-  eleventyConfig.addPassthroughCopy('src/images');
-  eleventyConfig.addPassthroughCopy('src/admin');
-  eleventyConfig.addPassthroughCopy('src/js');
+	// Add Collections......
 
-  eleventyConfig.addLayoutAlias('base', 'pageTemplates/base.njk');
-  eleventyConfig.addLayoutAlias('page', 'pageTemplates/page.njk');
-  eleventyConfig.addLayoutAlias('product_page', 'pageTemplates/product_page.njk');
-  eleventyConfig.addLayoutAlias('developer_page', 'pageTemplates/developer_page.njk');
-  eleventyConfig.addLayoutAlias('blog', 'pageTemplates/blog_post.njk');
-  eleventyConfig.addLayoutAlias('career_post', 'pageTemplates/career_post.njk');
-  eleventyConfig.addLayoutAlias('ekoUniversity', 'pageTemplates/ekoUniversity.njk');
+	// Filter source file names using a glob
+	eleventyConfig.addCollection("blog", function(collection) {
+		return collection.getFilteredByGlob('src/blog/*.md');
+	});
+	// TODO: add a front-matter config "disabled" and append a 'disabledFilter' to hide any disabled post.
+	// TODO: Specially for "Career" section
 
-  eleventyConfig.addDataExtension('yaml', contents => yaml.safeLoad(contents));
+	eleventyConfig.addCollection("career", function(collection) {
+		return collection.getFilteredByGlob('src/careers/*.md');
+	});
 
-  eleventyConfig.addShortcode('orangeDot', function() {
-	  return `<span class="orange-dot"></span>`;
-  });
 
-  eleventyConfig.addShortcode('iconScroll', function() {
-	return `<center><div class="icon-scroll"><div class="mouse"></div></div></center>`;
-  });
-
-  // Filter source file names using a glob
-  eleventyConfig.addCollection("blog", function(collection) {
-    return collection.getFilteredByGlob('src/blog/*.md');
-  });
-  // TODO: add a front-matter config "disabled" and append a 'disabledFilter' to hide any disabled post.
-  // TODO: Specially for "Career" section
-
-  eleventyConfig.addCollection("career", function(collection) {
-    return collection.getFilteredByGlob('src/careers/*.md');
-  });
-
-  return {
-    markdownTemplateEngine: 'njk',
-    dir: {
-      input: 'src',
-      data: '_data',
-      includes: '_includes',
-      layouts: '_layouts',
-      output: '_site'
-    }
-  }
+	return {
+		dir: {
+			input: 'src',
+			data: '_data',
+			includes: '_includes',
+			layouts: '_layouts',
+			output: '_site'
+		},
+		htmlTemplateEngine: 'njk',
+		markdownTemplateEngine: 'njk',
+	}
 }
