@@ -1,13 +1,7 @@
 <center>
-<section class="index_page_hero" type="index_page_hero">
+<section class="index-page-hero" type="index_page_hero">
 		{% if item.tag_title %}
-			<span class="dot-box">
-				<span class="dot">
-					<span class="orange-dot"></span>
-					{{ item.tag_title }}
-					<span><a href="{{ item.tag_link }}" target="_blank" rel="noopener">{{ item.tag_description }}</a></span>
-				</span>
-			</span>
+			{% dotTag item.tag_title + ' - ' + item.tag_description, "filled raised" %}
 		{% endif %}
 		<h1 class="main-header">{{ item.header }}</h1>
 		<br>
