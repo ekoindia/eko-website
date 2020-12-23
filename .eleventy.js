@@ -181,15 +181,30 @@ module.exports = function(eleventyConfig) {
 
 	// Add Collections......
 
-	// Filter source file names using a glob
+	// Collection of blog posts with files created in the '/blog' folder
 	eleventyConfig.addCollection("blog", function(collection) {
 		return collection.getFilteredByGlob('src/blog/*.md');
 	});
 	// TODO: add a front-matter config "disabled" and append a 'disabledFilter' to hide any disabled post.
 	// TODO: Specially for "Career" section
 
-	eleventyConfig.addCollection("career", function(collection) {
-		return collection.getFilteredByGlob('src/careers/*.md');
+	// Collection of career posts [WIP]
+	// eleventyConfig.addCollection("career", function(collection) {
+	// 	return collection.getFilteredByGlob('src/careers/*.md');
+	// });
+
+	// Collection of blog tags...
+	eleventyConfig.addCollection("blogtags", function (collection) {
+		let _tags = {};
+		collection.getFilteredByGlob('src/blog/*.md').map(item => {
+			if ("tags" in item.data) {
+				// TODO: optionally filter tags
+				for (let tag of item.data.tags) {
+					_tags[tag] = 1;
+				}
+			}
+		});
+		return Object.keys(_tags).sort();
 	});
 
 

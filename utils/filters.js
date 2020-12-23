@@ -43,5 +43,13 @@ module.exports = {
             chars.unshift(['&#', str[i].charCodeAt(), ';'].join(''));
         }
         return chars.join('');
-    }
+	},
+
+	// Reduce length of a large Array
+	trimArray: (array, max_length) => {
+		if (array && array.length && array.length > max_length) {
+			array.length = max_length;
+		}
+		return array;
+	},
 }
