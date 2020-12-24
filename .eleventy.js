@@ -35,14 +35,19 @@ require('dotenv').config();
 module.exports = function(eleventyConfig) {
 
 
-	// Add Filters
+	// Add Eleventy Plugins...
+	// eleventyConfig.addPlugin(eleventyNavigationPlugin);
+	eleventyConfig.addPlugin(svgContents);
+	eleventyConfig.addPlugin(blogTools);
+
+	// Add Universal Filters
 	Object.keys(filters).forEach((filterName) => {
 		eleventyConfig.addFilter(filterName, filters[filterName]);
 	})
 
-	// Add Shortcodes
+	// Add Universal Shortcodes
 	Object.keys(shortcodes).forEach((shortcodeName) => {
-		eleventyConfig.addShortcode(shortcodeName, shortcodes[shortcodeName]);
+		eleventyConfig.addShortcode(shortcodeName, shortcodes[shortcodeName](eleventyConfig));
 	})
 
 	// Add Icon Sprite
@@ -155,15 +160,6 @@ module.exports = function(eleventyConfig) {
     }
   });
 
-	// Add Plugins...
-	// eleventyConfig.addPlugin(eleventyNavigationPlugin);
-	eleventyConfig.addPlugin(svgContents);
-	eleventyConfig.addPlugin(blogTools);
-
-	// Add a shortcut shortcode for the svgContent filter:
-	eleventyConfig.addShortcode("svgico", function (name) {
-		return eleventyConfig.getFilter("svgContents")(`/src/images/icons/${name}.svg`, "svgico");
-	});
 
 	// Add Files Passthrough...
 	eleventyConfig.addPassthroughCopy('src/images');
