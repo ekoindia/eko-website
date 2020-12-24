@@ -3,15 +3,13 @@ const fs = require("fs");
 const { minify } = require("terser");
 const htmlmin = require("html-minifier");
 
-const eleventyNavigationPlugin = require('@11ty/eleventy-navigation');
+// const eleventyNavigationPlugin = require('@11ty/eleventy-navigation');
 const blogTools = require("eleventy-plugin-blog-tools");
-const { DateTime } = require("luxon");
+const svgContents = require("eleventy-plugin-svg-contents");
 
 const filters = require('./utils/filters.js');
 const shortcodes = require('./utils/shortcodes.js');
 // const iconsprite = require('./utils/iconsprite.js');
-
-// const string = require('string');		// https://github.com/jprichardson/string.js
 
 const md = require("markdown-it");
 const md_emoji = require("markdown-it-emoji");
@@ -159,7 +157,13 @@ module.exports = function(eleventyConfig) {
 
 	// Add Plugins...
 	// eleventyConfig.addPlugin(eleventyNavigationPlugin);
+	eleventyConfig.addPlugin(svgContents);
 	eleventyConfig.addPlugin(blogTools);
+
+	// Add a shortcut shortcode for the svgContent filter:
+	eleventyConfig.addShortcode("svgico", function (name) {
+		return eleventyConfig.getFilter("svgContents")(`/src/images/icons/${name}.svg`, "svgico");
+	});
 
 	// Add Files Passthrough...
 	eleventyConfig.addPassthroughCopy('src/images');

@@ -108,11 +108,12 @@
 		<style>{{ css_debug | cssmin | safe }}</style>
 	{% endif %}
 
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
   </head>
 
   <body>
+
+	{# <div hidden>{% iconsprite %}</div> #}
+
     {% include "navigation.njk" %}
 
 	{# Dark/Light Mode Icons #}

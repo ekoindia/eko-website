@@ -259,6 +259,15 @@ button:-moz-focusring,
 }
 
 
+.svgico {
+	display: inline-block;
+	vertical-align: middle;
+	width: 1.2em;
+	height: 1.2em;
+	fill: currentColor;
+}
+
+
 /* Common styling for Tables: */
 
 table {
@@ -515,14 +524,6 @@ section {
 }
 /* -------------------------------------- */
 
-
-.fa {
-  padding: 20px;
-  font-size: 15px;
-  width: 30px;
-  text-decoration: none;
-  border-radius: 50%;
-}
 
 .header {
   font-size: 30px;
