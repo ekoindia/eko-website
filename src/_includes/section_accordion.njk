@@ -21,10 +21,7 @@
 	</center>
 
 	{% if item.link %}
-		<a class="accordion-right-arrow" href="{{item.link.url}}" class="icolink">
-			{{item.link.title}}
-			<img src="/images/icons/next-icon.svg">
-		</a>
+		{% linkArrow item.link.url, item.link.title, 'bold' %}
 	{% endif %}
 
 </section>

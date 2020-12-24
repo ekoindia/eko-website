@@ -19,10 +19,7 @@
 			<a href="{{ website.signup_url }}" class="button">{{ product.signup_label or 'Sign up' }}</a>
 			{% if product.learn_more_link %}
 				&nbsp;&nbsp;&nbsp;
-				<a href="{{ product.learn_more_link }}" class="icolink" rel="noopener" target="_blank">
-					Learn More&nbsp;&nbsp;
-					<img src="/images/icons/next-icon.svg">
-				</a>
+				{% linkArrow product.learn_more_link, "Learn More" %}
 			{% endif %}
 		</div>
 	</div>
