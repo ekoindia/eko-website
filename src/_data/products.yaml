@@ -6,6 +6,7 @@
   hero_image: /images/money-transfer/money-transfer.svg
   summary: A simple and highly secure direct money transfer ability for your customers using cash with industry-leading success rates
   description: Eko’s remittance service gives you the feature to turn your own shop into a bank. Customers who do not have bank accounts but still want to transfer money using cash can visit your shop. You can take the cash and transfer digital money to the bank account specified by them. Easy and effective!
+  signup_label: Sign up
 
   hidden: false
 
@@ -91,6 +92,7 @@
   description: Aadhar banking (AePS) helps you turn your own shop into an ATM. It provides you the ability to deliver services such as cash deposit, cash withdrawal, and balance check to your customers. This is particularly useful for customers who do not trust themselves to be able to use an ATM properly. Help them out, help yourself out!
   icon: /images/aadhaar-banking/aadhaar_logo.svg
   learn_more_link: https://www.youtube.com/watch?v=y-zLDNRPnBs&feature=emb_logo
+  signup_label: Try for free
 
   layout:
     - section: mid_summary
@@ -186,6 +188,7 @@
   hero_image: /images/doorstep-delivery/doorstep-delivery.svg
   summary: Deliver essential banking services to your customers during the COVID-19 pandemic and keep your livelihood secure
   description: Eko along with RWA is taking an initiative to deliver its Banking Services to every individual. Retailers can deliver cash & give cash-deposit service to every society, apartment, and other residence. Retailers can run their business even during this crisis, while the customers can get these services right at their doorstep.
+  signup_label: Try for free
 
   layout:
     - section: mid_summary
@@ -263,6 +266,7 @@
   hero_image: /images/bill-payment/utility-bill-payment.svg
   summary: Your one-stop shop for online bill payments! Make them easy and hassle free for your customers using cash.
   description: Eko gives you the opportunity to turn your shop into a one-stop bill payment destination. Collect cash from customers and pay their electricity bill, water bill, gas bill, and phone bills using your Eko wallet!
+  signup_label: Try for free
 
   layout:
     - section: icon_list
@@ -343,6 +347,7 @@
   hero_image: /images/sell-insurance/insurance.svg
   summary: Low cost, simple paperwork and easy claim process makes our insurance policies the best choice for your customers.
   description: Help your customers secure their lives by becoming an insurance agent. No, not the kind of agent who bothers people by going to their houses only to tell them they could die, but the kind who people themselves approach for their insurance needs.
+  signup_label: Try for free
 
   layout:
     - section: icon_list
@@ -412,6 +417,7 @@
   hero_image: /images/indo-nepal/nepal-money-transfer.svg
   summary: Help your customers (mostly Nepali immigrants) send money to their loved-ones in Nepal. Fast, secure money transfer whenever you need to.
   description: A simple and highly secure direct money transfer ability for your customers to transfer money to Nepal. No Indian bank account needed and no need to visit banks.
+  signup_label: Try for free
 
   layout:
     - section: mid_summary

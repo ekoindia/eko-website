@@ -1,5 +1,7 @@
 README.md
+src/**/README.md
 src/**/EXAMPLE-POST.njk
 src/**/EXAMPLE-POST.md
+src/**/EXAMPLE-*.*
 _drafts/
 node_modules/

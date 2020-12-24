@@ -2,7 +2,7 @@
 	<center>
 		<div class="one-liner">
 			{% if item.icon %}
-				<img src="{{ item.icon }}" alt="{{ item.title }}">
+				<img src="{{ item.icon }}" alt="{{ item.title }}" loading="lazy">
 			{% endif %}
 			{% if item.tags %}
 				<div class="pure-g tags-row">
