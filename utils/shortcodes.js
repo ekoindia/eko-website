@@ -11,18 +11,19 @@ module.exports = {
 	// Pass "filled" in the second 'classes' parameter to get rounded tag-like background.
 	dotTag: () => (text, classes='') => `<span class="dottagbox ${classes}">${text}</span>`,
 
-
-	// A link with an arrow-head (next-icon) to the right.
-	// Pass "bold" in the second 'classes' parameter for bold text.
-	linkArrow: () => (url, text, classes='') => {
-		url = url || '/';
-		const trgt = url.toLowerCase().startsWith('http') ? 'rel="noopener" target="_blank"' : '';
-		return `<a href="${url}" class="icolink ${classes}" ${trgt}>${text}&nbsp;&nbsp;<img src="/images/icons/next-icon.svg" alt="${text}"></a>`;
-	},
-
 	// Inline svg icons using the 'svgContents' filter
 	// Pass only the name (without the .svg extension) of
 	// the icon from the 'src/images/icons' folder
 	svgico: (config) => (name, classes = '') => config.getFilter("svgContents")(`/src/images/icons/${name}.svg`, `svgico ${classes}`).replace(/<title>[^<]+<\/title>/i, ''),
+
+
+	// A link with an arrow-head (next-icon) to the right.
+	// Uses 'svgico' shortcode for inline SVG icon.
+	// Pass "bold" in the second 'classes' parameter for bold text.
+	linkArrow: (config) => (url, text, classes = '') => {
+		url = url || '/';
+		const trgt = url.toLowerCase().startsWith('http') ? 'rel="noopener" target="_blank"' : '';
+		return `<a href="${url}" class="icolink ${classes}" ${trgt}>${text}&nbsp;&nbsp;${config.javascriptFunctions.svgico("arrow-circle-right", "primarycolor")}`;
+	},
 
 }

@@ -43,12 +43,12 @@ module.exports = function(eleventyConfig) {
 	// Add Universal Filters
 	Object.keys(filters).forEach((filterName) => {
 		eleventyConfig.addFilter(filterName, filters[filterName]);
-	})
+	});
 
 	// Add Universal Shortcodes
 	Object.keys(shortcodes).forEach((shortcodeName) => {
 		eleventyConfig.addShortcode(shortcodeName, shortcodes[shortcodeName](eleventyConfig));
-	})
+	});
 
 	// Add Icon Sprite
 	// eleventyConfig.addNunjucksAsyncShortcode('iconsprite', iconsprite);
