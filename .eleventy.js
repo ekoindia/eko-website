@@ -3,15 +3,13 @@ const fs = require("fs");
 const { minify } = require("terser");
 const htmlmin = require("html-minifier");
 
-const eleventyNavigationPlugin = require('@11ty/eleventy-navigation');
+// const eleventyNavigationPlugin = require('@11ty/eleventy-navigation');
 const blogTools = require("eleventy-plugin-blog-tools");
-const { DateTime } = require("luxon");
+const svgContents = require("eleventy-plugin-svg-contents");
 
 const filters = require('./utils/filters.js');
 const shortcodes = require('./utils/shortcodes.js');
 // const iconsprite = require('./utils/iconsprite.js');
-
-// const string = require('string');		// https://github.com/jprichardson/string.js
 
 const md = require("markdown-it");
 const md_emoji = require("markdown-it-emoji");
@@ -37,15 +35,20 @@ require('dotenv').config();
 module.exports = function(eleventyConfig) {
 
 
-	// Add Filters
+	// Add Eleventy Plugins...
+	// eleventyConfig.addPlugin(eleventyNavigationPlugin);
+	eleventyConfig.addPlugin(svgContents);
+	eleventyConfig.addPlugin(blogTools);
+
+	// Add Universal Filters
 	Object.keys(filters).forEach((filterName) => {
 		eleventyConfig.addFilter(filterName, filters[filterName]);
-	})
+	});
 
-	// Add Shortcodes
+	// Add Universal Shortcodes
 	Object.keys(shortcodes).forEach((shortcodeName) => {
-		eleventyConfig.addShortcode(shortcodeName, shortcodes[shortcodeName]);
-	})
+		eleventyConfig.addShortcode(shortcodeName, shortcodes[shortcodeName](eleventyConfig));
+	});
 
 	// Add Icon Sprite
 	// eleventyConfig.addNunjucksAsyncShortcode('iconsprite', iconsprite);
@@ -157,9 +160,6 @@ module.exports = function(eleventyConfig) {
     }
   });
 
-	// Add Plugins...
-	// eleventyConfig.addPlugin(eleventyNavigationPlugin);
-	eleventyConfig.addPlugin(blogTools);
 
 	// Add Files Passthrough...
 	eleventyConfig.addPassthroughCopy('src/images');

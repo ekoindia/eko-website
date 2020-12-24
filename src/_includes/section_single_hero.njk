@@ -11,10 +11,7 @@
 		{% endif %}
 		<p>{{ item.text }}</p>
 		{% if item.link_text %}
-			<a href="{{ item.link }}" title="learn more about {{ item.title }}" class="icolink bold">
-				{{ item.link_text }}&nbsp;&nbsp;
-				<img src="/images/icons/next-icon.svg">
-			</a>
+			{% linkArrow item.link, item.link_text, 'bold' %}
 		{% endif %}
 	</div>
 </section>

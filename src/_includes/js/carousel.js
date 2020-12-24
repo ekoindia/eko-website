@@ -67,7 +67,7 @@ const setupEmblaCarousel = (emblaNode, options) => {
 	embla.on("init", autoplayer.play);
 }
 
-const options = { loop: false };
+const options = { loop: true };
 const emblaNodes = [].slice.call(document.querySelectorAll(".embla"));
 const emblaCarousels = emblaNodes.map(emblaNode =>
 	setupEmblaCarousel(emblaNode, options)
