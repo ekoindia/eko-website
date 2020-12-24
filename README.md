@@ -118,4 +118,5 @@ The Eko website & blog built with [Eleventy](https://www.11ty.dev). Uses reusabl
    1. Check [EXAMPLE-POST.md](/src/blog/EXAMPLE-POST.md) for an example page and a quick guide to markdown.
 1. For full customization, create a Nunjucks file (.njk) and write any custom HTML.
 1. Add other page info (like description, social image, etc) at the top of the page between the two '---' lines.
+1. Add to navigation menu in the [`src/_includes/navigation.njk`](/src/_includes/navigation.njk) file.
 

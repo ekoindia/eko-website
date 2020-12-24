@@ -117,6 +117,13 @@ a {
 	color: var(--main-text-color);
 }
 
+a.icolink {		/* A short link with an icon inside */
+	display: inline-flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: center;
+}
+
 a:hover {
 	text-decoration: none;
 	color: var(--primary-color);
@@ -133,6 +140,9 @@ a.nostyle, a.nostyle:hover {
 	color: inherit;
 }
 
+.bold {
+	font-weight: 700;
+}
 
 /* button, select {
   text-transform: none;
@@ -319,16 +329,37 @@ section {
 
 
 
+/* Index Page Top Hero Section */
+
+.index-page-hero .main-header {
+	font-size: 33px;
+	max-width: 95%;
+}
+
 .index-page-hero .bg-image {
 	background-repeat: no-repeat;
 	background-size: contain;
-	height: 442px;
+	height: 300px;
 	background-position: center;
+}
+
+@media (min-width: 700px) {
+
+	.index-page-hero .main-header {
+		font-size: 50px;
+		max-width: 600px;
+	}
+
+	.index-page-hero .bg-image {
+		height: 442px;
+	}
+
 }
 
 
 
-/* alternating steps*/
+/* alternating steps section */
+
 .alternating-steps > *:nth-of-type(even) .step-image{
   order: 1;
 }
@@ -423,12 +454,6 @@ section {
 .dimmed-image:hover {
   filter: none;
   opacity: 1;
-}
-
-
-.main-header {
-  font-size: 50px;
-  width: 50%;
 }
 
 
