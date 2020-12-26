@@ -161,9 +161,9 @@ module.exports = function(eleventyConfig) {
 
 
 	// Add Files Passthrough...
-	eleventyConfig.addPassthroughCopy('src/images');
 	eleventyConfig.addPassthroughCopy('src/admin');
-	eleventyConfig.addPassthroughCopy('src/assets/ico')
+	eleventyConfig.addPassthroughCopy('src/assets/ico');
+	eleventyConfig.addPassthroughCopy('src/assets/img');
 
 	// Add Layouts...
 	eleventyConfig.addLayoutAlias('base', 'base.njk');

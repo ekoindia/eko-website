@@ -2,9 +2,9 @@
   title: Domestic Money Transfer API
   title_short: Money Transfer API
   tag_line: Easiest way to transfer cash to anyone
-  social_image: /images/money-transfer/easy-cash-transfer.png
+  social_image: /assets/img/money-transfer/easy-cash-transfer.png
   keywords: money transfer, DMT, API, developer
-  hero_image: /images/developers/money-transfer-api.svg
+  hero_image: /assets/img/developers/money-transfer-api.svg
   summary: A simple and highly secure direct money transfer ability for your customers using cash with industry-leading success rates
   description: Eko’s money transfer API allows your retailers to turn their shop into mini bank. Customers who need assistance for transferring money using cash can visit these retailer shops. Integrate with us to increase the growth of your business and that of your retailers.
   documentation_link: https://developers.eko.in/docs/money-transfer
@@ -20,10 +20,10 @@
       steps:
       - title: Easy Cash transfer
         text: Your retailers can use this feature to let customers transfer money to any bank account by paying in cash.
-        image: /images/money-transfer/easy-cash-transfer.svg
+        image: /assets/img/money-transfer/easy-cash-transfer.svg
       - title: Transaction receipt
         text: Retailers can print transaction-receipt for their customers to give them a sense of safety
-        image: /images/money-transfer/transaction-receipt.svg
+        image: /assets/img/money-transfer/transaction-receipt.svg
 
     - section: heros_main
       header: Benefits
@@ -32,30 +32,30 @@
           # Benefit 1
           title_left: Earn Commission
           text_left: Earn commission for every cash-deposit, cash-withdrawal or balance-inquiry that happens at your retailer’s shop. More transaction is more commission for you.
-          image_left: /images/money-transfer/earn-commission.svg
+          image_left: /assets/img/money-transfer/earn-commission.svg
           # Benefit 2
           title_right: Best Success Rate
           text_right: Transaction failures occur rarely with our services. We ensure that you get the best success rate for every transaction. We are as reliable as banks themselves
-          image_right: /images/money-transfer/best-success-rate.svg
+          image_right: /assets/img/money-transfer/best-success-rate.svg
         - type: single # One item on its own in the center of the page
           # Benefit 3 (center)
           title: Turn retailer’s shop into a mini bank
           text: Since money transfer is the most commonly used banking service, this feature will turn the retailer’s shop into a mini bank! Consequently, more customers will visit their shop
-          image: /images/money-transfer/mini-bank.svg
+          image: /assets/img/money-transfer/mini-bank.svg
         - type: pair
           # Benefit 4 (left side)
           title_left: Seamless Integration
           text_left: Money Transfer API is well-documented & easy to understand. Integrating it is easy & we provide 24x7 manual integration support just in case, leaving no stone unturned to make the integration process seamless.
-          image_left: /images/developers/easy-integration.svg
+          image_left: /assets/img/developers/easy-integration.svg
           # Benefit 5 (right side)
           title_right: Simple Documentation
           text_right: The documentation for our APIs is comprehensive and comprehensible! We constantly update it to explain the minutest detail. Whether you use Python, Java, PHP, or C#, we have you covered!
-          image_right: /images/developers/simple-documentation.svg
+          image_right: /assets/img/developers/simple-documentation.svg
 
     - section: documentation_link_banner
 
     - section: one_liner
-      icon: /images/eko-trust.svg
+      icon: /assets/img/eko-trust.svg
       title: Eko's Trust
       text: We use the same APIs here at Eko! Every API call is secured with one-time-use tokens generated using asymmetric cryptography. Our open-source libraries make it extremely easy & error-proof
 
@@ -76,7 +76,7 @@
     - section: get_started_banner
       small_header: Ready to get started?
       main_header: Integrate our money transfer API
-      image: /images/become-eko-partner.svg
+      image: /assets/img/become-eko-partner.svg
       button1_text: Get Started
       button2_text: Contact Sales
 
@@ -85,12 +85,12 @@
 - name: AePS Cashout SDK
   title: AePS SDK
   tag_line: AePS - Aadhaar Enabled Payment System
-  social_image: /images/aadhaar-banking/AePS_hero.png
+  social_image: /assets/img/aadhaar-banking/AePS_hero.png
   keywords: Aadhaar Banking, Cashout, ATM, API, developer
-  hero_image: /images/developers/aeps-main.svg
+  hero_image: /assets/img/developers/aeps-main.svg
   summary: AePS via SDK is a simple and highly secure cash withdrawal system developed by NPCI for Indians using their Aadhaar linked bank accounts
   description: AePS allows a customer to use Aadhaar and access their bank account to perform basic banking transactions like cash-deposit, cash-withdrawal, intrabank or interbank fund-transfer, balance-inquiry, and access their mini statement with just their fingerprint.
-  icon: /images/aadhaar-banking/aadhaar_logo.svg
+  icon: /assets/img/aadhaar-banking/aadhaar_logo.svg
   documentation_link: https://developers.eko.in/docs/aeps
 
   layout:
@@ -101,44 +101,44 @@
     - section: single_hero
       title: Easy Cash Withdrawal
       text: AePS allows your retailers to turn their shop into an ATM and let customers withdraw cash using their Aadhaar & fingerprint.
-      image: /images/aadhaar-banking/easy-cash-withdrawal.svg
+      image: /assets/img/aadhaar-banking/easy-cash-withdrawal.svg
 
     - section: short_ad
       title: Jan Dhan Government Benefit
       text: AePS allows your customers to withdraw their DBT (Direct Benefit Transfers) from government in their Jan Dhan account.
-      image: /images/aadhaar-banking/jan_dhan.svg
+      image: /assets/img/aadhaar-banking/jan_dhan.svg
 
     - section: alternating_steps
       steps:
       - title: Easy Cash Deposit
         text: AePS also allows retailers to turn their shop into a cash deposit machine. Customers can then deposit cash at their shop with ease.
-        image: /images/aadhaar-banking/easy-cash-deposit.svg
+        image: /assets/img/aadhaar-banking/easy-cash-deposit.svg
       - title: Quick Fund Transfer
         text: With AePS customers will never have to go to a Bank or an ATM and they will not need a debit card also. Just transfer funds using fingerprint.
-        image: /images/aadhaar-banking/quick-fund-transfer.svg
+        image: /assets/img/aadhaar-banking/quick-fund-transfer.svg
       - title: Instant Balance-inquiry
         text: AePS allows customers to check their bank balance at a retailer’s shop instantly.
-        image: /images/aadhaar-banking/instant-balance-inquiry.svg
+        image: /assets/img/aadhaar-banking/instant-balance-inquiry.svg
       - title: Mini Statement
         text: AePS will also let customers take the mini statement of their account at a retailer’s shop.
-        image: /images/aadhaar-banking/mini-statement.svg
+        image: /assets/img/aadhaar-banking/mini-statement.svg
 
     - section: icon_list
       header: Benefits
       icons:
-        - image: /images/developers/merchant-onboarding-icon.svg
+        - image: /assets/img/developers/merchant-onboarding-icon.svg
           caption: Instant retailer onboarding
-        - image: /images/developers/no-chargeback-icon.svg
+        - image: /assets/img/developers/no-chargeback-icon.svg
           caption: No chargeback requests required
-        - image: /images/developers/success-rate-icon.svg
+        - image: /assets/img/developers/success-rate-icon.svg
           caption: Industry-leading success rates
-        - image: /images/developers/seamless-integration-icon.svg
+        - image: /assets/img/developers/seamless-integration-icon.svg
           caption: Seamless integration with AePS SDK
 
     - section: documentation_link_banner
 
     - section: one_liner
-      icon: /images/eko-trust.svg
+      icon: /assets/img/eko-trust.svg
       title: Eko's Trust
       text: We use the same APIs here at Eko! Every API call is secured with one-time-use tokens generated using asymmetric cryptography. Our open-source libraries make it extremely easy & error-proof
 
@@ -159,21 +159,21 @@
     - section: small_heros
       header: Our Partners
       partner_images:
-        - image: /images/partners/shopx.png
+        - image: /assets/img/partners/shopx.png
           title: ShopX
-        - image: /images/partners/matrix.png
+        - image: /assets/img/partners/matrix.png
           title: Matrix
-        - image: /images/partners/storeking.png
+        - image: /assets/img/partners/storeking.png
           title: StoreKing
-        - image: /images/partners/vakrangee.png
+        - image: /assets/img/partners/vakrangee.png
           title: Vakrangee
-        - image: /images/partners/toffee.png
+        - image: /assets/img/partners/toffee.png
           title: Toffee Insurance
 
     - section: get_started_banner
       small_header: Ready to get started?
       main_header: Get AePS SDK & Earn More
-      image: /images/become-eko-partner.svg
+      image: /assets/img/become-eko-partner.svg
       button1_text: Get Started
       button2_text: Contact Sales
 

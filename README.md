@@ -72,7 +72,7 @@ The Eko website & blog built with [Eleventy](https://www.11ty.dev). Uses reusabl
 	  * 📄 [**carousel.css**](/src/_includes/css/carousel.css)  `CSS rules for the carousel section`
 	  * 📄 [**section_components.css**](/src/_includes/css/section_components.css)  `CSS rules for the section_*.njk reusable components`
 	* 📁 [**js**](/src/_includes/js)  `Javascript files - inlined into HTML during build`
-  * 📁🖼 [**images**](/src/images)  `Public images folder`
+  * 📁🖼 [**assets**](/src/assets)  `Static assets like images, icons, etc`
 * 📂 [**utils/**](/utils)  `11ty build-time custom utilities...`
   * 📄 [**shortcodes.js**](/utils/shortcodes.js)  `Reusable short markup (HTML) snippets` [<small>(docs)</small>](https://www.11ty.dev/docs/shortcodes)
   * 📄 [**filters.js**](/utils/filters.js)  `Custom filters for 11ty to be used in templates to manipulate data` [<small>(docs)</small>](https://www.11ty.dev/docs/filters)

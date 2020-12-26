@@ -3,7 +3,7 @@ layout: blog
 title: What are the API products Eko has to offer?
 description: Eko Financial Services is India’s most trusted DMT and AePS service provider. With over 13 years of trust, 55 billion users and 500+ fintech clients spread across 1000 cities in India, Eko.in is one of the pioneers in providing APIs for Money Transfer, AePS and Verification purposes.
 date: 2020-12-07
-image: /images/blog/api-products-eko-has-to-offer.png
+image: /assets/img/blog/api-products-eko-has-to-offer.png
 tags:
   - api
   - developers
