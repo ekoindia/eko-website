@@ -14,7 +14,7 @@
 							{%- endif -%}
 						{% endfor %}
 					#}
-					<p>{{ blog.data.description }}</p>
+					<p>{{ blog.data.page.excerpt or blog.data.description }}</p>
 				</article>
 			</a>
 		</div>

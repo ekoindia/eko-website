@@ -9,7 +9,9 @@ tags:
   - tag2
 ---
 
-Everything written this line onwards will be visible on the page!
+This document shows examples of writting markdown. Everything written here onwards will be visible on the page!
+
+<!-- excerpt -->
 
 Checkout a quick Markdown guide here: https://www.markdownguide.org/cheat-sheet/
 
