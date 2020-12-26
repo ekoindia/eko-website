@@ -19,9 +19,9 @@
               <div class="pure-u-1 pure-u-md-9-24 nav-column l-box">
                 <ul>
                   <br>
-					{%- for product in products | rejectattr("hidden") | rejectattr("disabled") -%}
-					<li role="menuitem"><a href="/products/{{ product.name | slug }}">{% dotTag product.title %}</a></li>
-					{%- endfor -%}
+					{% for product in products | rejectattr("hidden") | rejectattr("disabled") -%}
+						<li role="menuitem"><a href="/products/{{ product.name | slug }}">{% dotTag product.title %}</a></li>
+					{%- endfor %}
                 </ul>
               </div>
               <div class="pure-u-1 pure-u-md-9-24 nav-column l-box">
