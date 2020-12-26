@@ -13,8 +13,8 @@ module.exports = {
 
 	// Inline svg icons using the 'svgContents' filter
 	// Pass only the name (without the .svg extension) of
-	// the icon from the 'src/images/icons' folder
-	svgico: (config) => (name, classes = '') => config.getFilter("svgContents")(`/src/images/icons/${name}.svg`, `svgico ${classes}`).replace(/<title>[^<]+<\/title>/i, ''),
+	// the icon from the 'src/assets/ico' folder
+	svgico: (config) => (name, classes = '') => config.getFilter("svgContents")(`/src/assets/ico/${name}.svg`, `svgico ${classes}`).replace(/<title>[^<]+<\/title>/i, ''),
 
 
 	// A link with an arrow-head (next-icon) to the right.
