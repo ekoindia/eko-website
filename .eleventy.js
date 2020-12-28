@@ -161,7 +161,7 @@ module.exports = function(eleventyConfig) {
 
 
 	// Add paired shortcode to embed Markdown in templates...
-	eleventyConfig.addShortcode("markdown", (content) => {
+	eleventyConfig.addPairedShortcode("markdown", (content) => {
 		return markdownLib.render(content);
 	});
 
