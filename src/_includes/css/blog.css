@@ -164,23 +164,6 @@ time::before {
   color: var(--primary-color) !important;
 }
 
-#links p {
-  letter-spacing: 0;
-  border: none;
-  margin: 0;
-  padding: 0;
-  text-align: left !important;
-  display: flex;
-  justify-content: center;
-}
-
-#links a:hover {
-  background-color: rgba(136, 52, 52, 0.05);
-  color: var(--primary-color);
-  padding: 2px;
-  text-decoration: none;
-}
-
 
 /* ===================== Markdown Extentions ============================== */
 

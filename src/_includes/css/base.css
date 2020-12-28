@@ -489,9 +489,35 @@ section {
   }
 }
 
-.sm-box {
-  padding: 0.5em;
+
+
+/* product_category_showcase section */
+
+.prod-category-box {
+	border: 1px solid var(--primary-color);
+	border-radius: 10px;
+	padding: 0.5em;
+	width: 100%;
+	background: var(--background-section-color);
 }
+
+.prod-category-box img {
+	max-width: 100%;
+	max-height: 220px;
+}
+
+
+@media (min-width: 700px) {
+	.prod-category-box {
+		padding: 2em;
+		width: 70%;
+	}
+	.prod-category-box img {
+		max-width: 300px;
+		max-height: 240px;
+	}
+}
+
 
 
 /* ----- Mouse Scroll Animated Icon ----- */
@@ -565,7 +591,7 @@ h6 {
   width: 70%;
 }
 
-.tags-row {
+.one-liner .tags-row {
   width: 70%;
 }
 
