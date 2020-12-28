@@ -160,6 +160,11 @@ module.exports = function(eleventyConfig) {
   });
 
 
+	// Add paired shortcode to embed Markdown in templates...
+	eleventyConfig.addShortcode("markdown", (content) => {
+		return markdownLib.render(content);
+	});
+
 	// Add Files Passthrough...
 	eleventyConfig.addPassthroughCopy('src/admin');
 	eleventyConfig.addPassthroughCopy('src/assets/ico');
