@@ -1,4 +1,4 @@
-<section class="band">
+<section class="block band">
     {% for blog in blogposts | trimArray(30) %}
 		<div class="item">
 			<a href="{{ blog.url | url }}" class="card nostyle">
@@ -23,7 +23,7 @@
 </section>
 
 {% if pagination.pages.length > 1 %}
-	<section class="pagination layout horizontal around-justified flex wrap center-center" aria-labelledby="pagination">
+	<section class="block pagination layout horizontal around-justified flex wrap center-center" aria-labelledby="pagination">
 		{# <a href="{{ pagination.href.first }}">&lt;&lt; First</a> #}
 		<a href="{{ pagination.href.previous }}"{% if pagination.pageNumber == 0 %} disabled{% endif %}>&lt; Previous</a>
 

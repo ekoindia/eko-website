@@ -8,7 +8,7 @@
 
 {% block main %}
 
-	<section class="flex-grid" id="links">
+	<section class="block flex-grid" id="links">
 		{% for item in ekoUniversity %}
 			<div {% if page.url == '/eko-university/' + item.title | slug + '/' %}selected{% endif %}>
 				<p><a href="/eko-university/{{ item.title | slug }}">{{ item.title }}</a></p>
@@ -16,7 +16,7 @@
 		{% endfor %}
 	</section>
 
-	<section class="pure-g">
+	<section class="block pure-g">
 		{% for id in ekoUni.ids %}
 			<div class="pure-u-1-2 pure-u-md-1-2 pure-u-sm-1 l-box">
 			<p>{% youtube id %}</p>

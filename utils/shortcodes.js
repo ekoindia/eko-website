@@ -23,7 +23,7 @@ module.exports = {
 	linkArrow: (config) => (url, text, classes = '') => {
 		url = url || '/';
 		const trgt = url.toLowerCase().startsWith('http') ? 'rel="noopener" target="_blank"' : '';
-		return `<a href="${url}" class="icolink ${classes}" ${trgt}>${text}&nbsp;&nbsp;${config.javascriptFunctions.svgico("arrow-circle-right", "primarycolor")}`;
+		return `<a href="${url}" class="icolink ${classes}" ${trgt}>${text}&nbsp;&nbsp;${config.javascriptFunctions.svgico("arrow-circle-right", "text-primary")}`;
 	},
 
 }

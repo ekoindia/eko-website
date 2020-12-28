@@ -95,6 +95,16 @@ left: -25px;
 right: -25px;
 }
 
+.round {
+  border-radius: 25px;
+}
+
+.caption {
+  font-size: 12px;
+  font-weight: normal;
+}
+
+
 .gallery {
 	border: none !important;
 }

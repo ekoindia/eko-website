@@ -1,4 +1,4 @@
-<section class="step_section" type="step_section">
+<section class="block step_section" type="step_section">
     <h1>{{ item.header }}</h1>
     <span class="h2-border"></span>
     <div class="pure-g">
@@ -6,7 +6,7 @@
 			<div class="pure-u-1 pure-u-md-1-5 boxed">
 				<h3 class="box-title">Step {{ loop.index }}:</h3>
 				<p class="box-text">{{ box.text }}</p>
-				<a class="box-link" href="{{ box.link }}">{{ box.link }}</a>
+				<a href="{{ box.link }}"><small>{{ box.link }}</small></a>
             </div>
         {% endfor %}
     </div>

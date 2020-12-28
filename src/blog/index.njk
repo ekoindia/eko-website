@@ -18,7 +18,7 @@ eleventyExcludeFromCollections: true
 
 {% block main %}
 
-	<section>
+	<section class="block">
 		<header>
 			<h1>Blog</h1>
 		</header>
@@ -27,7 +27,7 @@ eleventyExcludeFromCollections: true
 	{% set blogposts = posts %}
 	{% include "blogslist.njk" %}
 
-	<section>
+	<section class="block">
 		<h3>Browse by Tag</h3>
 		<div class="layout horizontal wrap">
 			{% for item in collections.blogtags %}

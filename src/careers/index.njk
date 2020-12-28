@@ -13,8 +13,8 @@ eleventyExcludeFromCollections: true
 {% extends "../_layouts/base.njk" %}
 
 {% block main %}
-<main>
-    <section>
+
+    <section class="block">
         <header>
             <h1>Career Posts</h1>
             <span class="h2-border"></span>
@@ -23,5 +23,5 @@ eleventyExcludeFromCollections: true
 
     {% set careers_list = collections.career %}
     {% include "careers_list.njk" %}
-</main>
+
 {% endblock %}
