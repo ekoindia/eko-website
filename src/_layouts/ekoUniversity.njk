@@ -1,10 +1,16 @@
 {% extends "./base.njk" %}
 
+
+{% block custom_style %}
+	{{ css_university | cssmin | safe }}
+{% endblock %}
+
+
 {% block main %}
 
 	<section class="flex-grid" id="links">
 		{% for item in ekoUniversity %}
-			<div>
+			<div {% if page.url == '/eko-university/' + item.title | slug + '/' %}selected{% endif %}>
 				<p><a href="/eko-university/{{ item.title | slug }}">{{ item.title }}</a></p>
 			</div>
 		{% endfor %}
