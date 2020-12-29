@@ -5,7 +5,13 @@ footer {
   background-color: var(--footer-background-color);
   color: var(--footer-text);
   padding-top: 70px;
-  padding-bottom: 70px;
+  padding-bottom: 80px;
+}
+
+@media (min-width: 576px) {
+	footer > div:not(:last-child) {
+		padding-right: 15px;
+	}
 }
 
 footer p {
@@ -27,18 +33,22 @@ footer .column-header {
   font-size: 15px;
 }
 
-footer a {
+footer .linkbox a, footer .socialicons a {
   color: var(--footer-link);
-  font-weight: bold;
-  font-size: 15px;
   text-decoration: none;
 }
 
-footer a:hover {
-  color: var(--primary-color);
+footer .linkbox a {
+	font-size: 15px;
+	font-weight: bold;
+	line-height: 2;
 }
 
-footer .about-company .svgico {
+footer .socialicons a {
 	font-size: 24px;
-	margin-right: 1em;
+	margin-right: 0.5em;
+}
+
+footer .linkbox a:hover, footer .socialicons a:hover {
+  color: var(--primary-color);
 }

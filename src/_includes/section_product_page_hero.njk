@@ -19,7 +19,7 @@
 			<a href="{{ website.signup_url }}" class="button">{{ product.signup_label or 'Sign up' }}</a>
 			{% if product.learn_more_link %}
 				&nbsp;&nbsp;&nbsp;
-				{% linkArrow product.learn_more_link, "Learn More" %}
+				{% linkArrow product.learn_more_link, product.learn_more_label or "Learn More" %}
 			{% endif %}
 		</div>
 	</div>

@@ -145,6 +145,11 @@ a.nostyle, a.nostyle:hover {
 	font-weight: 700;
 }
 
+.txt-center {
+	text-align: center;
+}
+
+
 /* Color utility classes --- */
 
 .bg-shaded {
@@ -158,6 +163,8 @@ a.nostyle, a.nostyle:hover {
 .text-primary {
 	color: var(--primary-color);
 }
+
+
 
 
 

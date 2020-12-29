@@ -75,7 +75,7 @@
 
     - section: get_started_banner
       small_header: Ready to get started?
-      main_header: Integrate our money transfer API
+      main_header: Integrate our Money Transfer API
       image: /assets/img/become-eko-partner.svg
       button1_text: Get Started
       button2_text: Contact Sales
@@ -176,4 +176,304 @@
       image: /assets/img/become-eko-partner.svg
       button1_text: Get Started
       button2_text: Contact Sales
+
+
+
+- name: Fund Settlement API
+  title: Fund Settlement API
+  tag_line: Make salary & vendor payments easily
+  social_image: /assets/img/developers/salary-disbursal-first-fold.svg
+  keywords: fund settlement, disbursal, vendor payment, salary payment, API, developer
+  hero_image: /assets/img/developers/salary-disbursal-first-fold.svg
+  summary: Get our easy-to-use fund settlement API and pay your employees and vendors their payments using your digital wallet balance with ease.
+  description: Make instant, automated payments to your vendors or pay wages to your employees. The best part is that you can use your e-money balance for the payouts.
+  documentation_link: https://developers.eko.in/docs/fund-transfer
+
+  layout:
+    - section: mid_summary
+      small_description: Fund Settlement API
+      header: Instant salary disbursal & vendor payment using Eko’s fund settlement API
+
+    - section: alternating_steps
+      steps:
+      - title: Easy Salary Disbursals
+        text: Easily pay wages to your employees, directly into their bank accounts.
+        image: /assets/img/developers/easy-salary-disbursal-small.svg
+      - title: Instant Vendor Payments
+        text: Settle any outstanding dues with your vendors in one go through our hassle-free process.
+        image: /assets/img/developers/instant-vendor-payment-small.svg
+      - title: Track your Payment
+        text: Maintain a record of every vendor payment transaction you have made to avoid conflicts.
+        image: /assets/img/developers/transaction-alert.svg
+
+    - section: heros_main
+      header: Benefits
+      items:
+        - type: single # One item on its own in the center of the page
+          # Benefit 1 (center)
+          title: Use e-money to make payment
+          text: You would no longer need to use a bank account for making payments. You can simply use your e-wallet balance to make payment. This is much easier and faster!
+          image: /assets/img/developers/use-emoney.svg
+        - type: single # One item on its own in the center of the page
+          # Benefit 2 (center)
+          title: 24x7 Availability
+          text: Banks do not work 24x7, but these payments do! You should no longer be confined to make payments during office hours.
+          image: /assets/img/developers/24-x-7-avaialble.svg
+        - type: pair # 2 items side-by-side
+          # Benefit 3
+          title_left: Best Success Rate
+          text_left: Transaction failures occur rarely with our services. We ensure that you get the best success rate for every transaction. We are as reliable as banks themselves.
+          image_left: /assets/img/developers/best-success-rate.svg
+          # Benefit 4
+          title_right: Simple Documentation
+          text_right: The documentation for our APIs is comprehensive! We constantly update it to explain the minutest detail, and of course, we provide technical support.
+          image_right: /assets/img/developers/simple-documentation.svg
+
+    - section: documentation_link_banner
+
+    - section: one_liner
+      icon: /assets/img/eko-trust.svg
+      title: Eko's Trust
+      text: We use the same APIs here at Eko! Every API call is secured with one-time-use tokens generated using asymmetric cryptography. Our open-source libraries make it extremely easy & error-proof
+
+    - section: step_section
+      header: How does Fund Settlement API work
+      steps:
+      - text: Sign Up on Connect
+        link: https://connect.eko.in
+      - text: Submit necessary documents
+      - text: Integrate Fund Settlement API
+      - text: Start making payments
+
+    - section: message
+      line1: The process of integrating fund settlement API is easy.
+      main_line: For all integration related issues, we provide 24x7 support.
+      button_text: Contact Support
+
+    - section: get_started_banner
+      small_header: Ready to get started?
+      main_header: Integrate our Fund Settlement API
+      image: /assets/img/become-eko-partner.svg
+      button1_text: Get Started
+      button2_text: Contact Sales
+
+
+
+- name: Cash Collection API
+  title: Cash Collection Service
+  tag_line: Assisted Cash Management System
+  social_image: /assets/img/developers/assisted-cash-management.svg
+  keywords: e-money, cash management, cash collection, API, developer
+  hero_image: /assets/img/developers/assisted-cash-management.svg
+  summary: Eko provides technical service assistance to help you set up a cash management system for your Retailers.
+  description: Eko provides an easy-to-use Cash Collection service which helps you set up a cash management system for your retailers. This system makes e-money transfer hassle-free for you and your retailers. We bear the end-to-end technical burden, reducing your integration task to a mere formality.
+  documentation_link: https://developers.eko.in/docs/cash-collection
+
+  layout:
+    - section: mid_summary
+      small_description: Cash Collection Service
+      header: Instant e-money for your retailers using Eko’s cash collection service
+
+    - section: alternating_steps
+      steps:
+      - title: Direct E-money Transfer
+        text: E-money is transfered to your retailers directly when they transfer money to your bank account.
+        image: /assets/img/developers/direct-emoney-transfer.svg
+      - title: Transaction Alerts
+        text: You receive alerts for every cash deposited by your retailers.
+        image: /assets/img/developers/transaction-alert.svg
+      - title: Tehnical Assistance for Bank Account
+        text: Eko assists you in setting up a bank account for end-to-end cash management of your retailers. We also hold the technical responsibility for integration between you and the bank.
+        image: /assets/img/developers/technical-assistance-for-bank.svg
+
+    - section: heros_main
+      header: Benefits
+      items:
+        - type: single # One item on its own in the center of the page
+          # Benefit 1 (center)
+          title: Technical Assistance in Bank Integration
+          text: Using our experience in the Fintech industry, we uncomplicate the process of setting up a bank account for you. Since the end-to-end process requires technical integration with the bank, we help you in that too. We help you set up a cash management system, from start to finish.
+          image: /assets/img/developers/technical-assistance.svg
+        - type: single # One item on its own in the center of the page
+          # Benefit 2 (center)
+          title: Reduced Operational Cost
+          text: We have set up a system that allows your retailers to deposit money directly into your account, so that you don’t end up needing feet on the ground to collect cash from them.
+          image: /assets/img/developers/reduced-operational-cost.svg
+        - type: pair # 2 items side-by-side
+          # Benefit 3
+          title_left: Secure E-money Usage
+          text_left: We hold the responsibility for ensuring that fund credited as e-money is used for domestic money transfer services only. Preventing e-money misuse is our responsibility.
+          image_left: /assets/img/developers/secure-emoney.svg
+          # Benefit 4
+          title_right: Simple Documentation
+          text_right: The documentation for our APIs is comprehensive! We constantly update it to explain the minutest detail, and of course, we provide technical support.
+          image_right: /assets/img/developers/simple-documentation.svg
+
+    - section: documentation_link_banner
+
+    - section: one_liner
+      icon: /assets/img/eko-trust.svg
+      title: Eko's Trust
+      text: We have been in this industry long enough to know how to handle tricky situations. You can trust us to take care of your business interests.
+
+    - section: step_section
+      header: How to integrate Cash Collection Service
+      steps:
+      - text: Eko provides CDM Cards & Cash deposit slips to our API Partners.
+      - text: The API Partner then provides those CDM cards & cash deposit slips to their retailers.
+      - text: Retailers deposit cash into your bank account using a CDM card or a cash deposit slip.
+      - text: E-money is credited to the retailer.
+
+    - section: message
+      line1: The process of cash collection from retailers is easy.
+      main_line: For all integration related issues, we provide 24x7 support.
+      button_text: Contact Support
+
+    - section: get_started_banner
+      small_header: Ready to get started?
+      main_header: Ask for our Cash Collection Service
+      image: /assets/img/become-eko-partner.svg
+      button1_text: Get Started
+      button2_text: Contact Sales
+
+
+
+- name: PAN Verification API
+  title: PAN Verification API
+  tag_line: Customer onboarding & verification made easy
+  social_image: /assets/img/developers/pan-verification.svg
+  keywords: PAN verification, NSDL, API, developer
+  hero_image: /assets/img/developers/pan-verification.svg
+  summary: Real-time onboarding and verification of users is as easy as it gets with out PAN Verification API. Just integrate the API and get going.
+  description: Use Eko’s NSDL-powered Pan verification API to validate your customers, employees, and merchants. Our easy-to-use API has made pan-fraud a thing of the past.
+  documentation_link: https://developers.eko.in/docs/identity
+
+  layout:
+    - section: icon_list
+      header: Real-time Verification
+      subtitle: PAN API
+      description: Use Eko’s NSDL-powered Pan verification API to validate your customers, employees, and merchants. Our easy-to-use API has made PAN-fraud a thing of the past.
+      icons:
+        - image: /assets/img/developers/pan-valid-icon.svg
+          caption: Check PAN number validity
+        - image: /assets/img/developers/check-name-icon.svg
+          caption: Check associated Name
+        - image: /assets/img/developers/secure-icon.svg
+          caption: Secure, simple and robust
+
+    - section: heros_main
+      header: Benefits
+      items:
+        - type: single # One item on its own in the center of the page
+          # Benefit 1 (center)
+          title: Robust and Authentic Code
+          text: Our backend is powered by robust code which makes use of the official NSDL-returned name associated with the entered pan number.
+          image: /assets/img/developers/robust-code.svg
+        - type: pair # 2 items side-by-side
+          # Benefit 3
+          title_left: Seamless Integration
+          text_left: PAN API is well-documented and easy to understand. Integrating is as easy as it can get. We provide 24x7 manual integration support just in case, leaving no stone unturned to make the integration process seamless.
+          image_left: /assets/img/developers/easy-integration.svg
+          # Benefit 4
+          title_right: Simple Documentation
+          text_right: The documentation for our APIs is comprehensive and comprehensible! We constantly update it to explain the minutest detail. Whether you use Python, Java, PHP, or C#, we have you covered!
+          image_right: /assets/img/developers/simple-documentation.svg
+
+    - section: documentation_link_banner
+
+    - section: one_liner
+      icon: /assets/img/eko-trust.svg
+      title: Eko's Trust
+      text: We use the same APIs here at Eko! Every API call is secured with one-time-use tokens generated using asymmetric cryptography. Our open-source libraries make it extremely easy & error-proof.
+
+    - section: step_section
+      header: How to integrate PAN API
+      steps:
+      - text: Sign Up on Connect
+        link: https://connect.eko.in
+      - text: Submit necessary documents
+      - text: Integrate PAN API
+      - text: Start onboarding Retailers
+
+    - section: message
+      line1: "**PAN API** -\n\nEko’s PAN API provides an easy **“Type and Click”** process for pan verification.\n\n**Type -** Enter pan number in a text box.\n\n**Click -** Press the submit button.\n\nAt the backend, the pan number is first sent to NSDL, which returns the name associated with the pan number."
+      main_line: For all integration related issues, we provide 24x7 support.
+      button_text: Contact Support
+
+    - section: get_started_banner
+      small_header: Ready to get started?
+      main_header: Integrate our PAN API
+      image: /assets/img/become-eko-partner.svg
+      button1_text: Get Started
+      button2_text: Contact Sales
+
+
+
+- name: Account Verification API
+  title: Account Verification API
+  tag_line: Simple & easy way to verify bank account
+  social_image: /assets/img/developers/bank-verification.svg
+  keywords: bank account verification, API, developer
+  hero_image: /assets/img/developers/bank-verification.svg
+  summary: Account verification API to ensure that your money goes exactly where it is supposed to. No IFSC code needed.
+  description: Bank account numbers are usually long & difficult to remember. Before sending money to any bank account, it should ideally be verified to avoid customer complaints. Using Eko’s bank account verification API, you can verify any bank account number with the click of a button.
+  documentation_link: https://developers.eko.in/docs/identity
+
+  layout:
+    - section: mid_summary
+      small_description: Bank Account Verification API
+      header: Verify recipient account number before any transaction
+
+    - section: alternating_steps
+      steps:
+      - title: Verify any bank account
+        text: Let your retailers check the validity of any account number without having to remember the IFSC. You can verify employee's salary account as well during onboarding.
+        image: /assets/img/developers/verify-account.svg
+      - title: No IFSC code required
+        text: Only the bank account number needs to be entered, making the process shorter and simpler.
+        image: /assets/img/developers/no-ifsc-code.svg
+
+    - section: heros_main
+      header: Benefits
+      items:
+        - type: pair # 2 items side-by-side
+          # Benefit 1
+          title_left: Seamless Integration
+          text_left: Account verification API is well-documented & easy to understand. Integrating it is easy & we provide 24x7 manual integration support just in case, leaving no stone unturned to make the integration process seamless.
+          image_left: /assets/img/developers/easy-integration.svg
+          # Benefit 2
+          title_right: Simple Documentation
+          text_right: The documentation for our APIs is comprehensive! We constantly update it to explain the minutest detail. Whether you use Python, Java, PHP, or C#, we have you covered!
+          image_right: /assets/img/developers/simple-documentation.svg
+
+    - section: documentation_link_banner
+
+    - section: one_liner
+      icon: /assets/img/eko-trust.svg
+      title: Eko's Trust
+      text: We use the same APIs here at Eko! Every API call is secured with one-time-use tokens generated using asymmetric cryptography. Our open-source libraries make it extremely easy & error-proof.
+
+    - section: step_section
+      header: How to integrate Account Verification API
+      steps:
+      - text: Sign Up on Connect
+        link: https://connect.eko.in
+      - text: Submit necessary documents
+      - text: Integrate account verification API
+      - text: Start verifiying bank accounts
+
+    - section: message
+      line1: The process of integrating bank verification API is easy.
+      main_line: For all integration related issues, we provide 24x7 support.
+      button_text: Contact Support
+
+    - section: get_started_banner
+      small_header: Ready to get started?
+      main_header: Integrate our Account Verification API
+      image: /assets/img/become-eko-partner.svg
+      button1_text: Get Started
+      button2_text: Contact Sales
+
+
+
 

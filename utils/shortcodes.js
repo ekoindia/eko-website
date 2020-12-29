@@ -2,7 +2,8 @@ const outdent = require('outdent');
 
 module.exports = {
 
-    icon: () => name => `<svg class="icon icon--${name}" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#icon-${name}"></use></svg>`,
+	// IconSprite svg icon
+    // icon: () => name => `<svg class="icon icon--${name}" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#icon-${name}"></use></svg>`,
 
 	// The scrolling mouse icon used under hero banners
 	iconScroll: () => () => `<center><div class="icon-scroll"><div class="mouse"></div></div></center>`,

@@ -1,16 +1,11 @@
 <footer class="pure-g">
-	<div class="about-company pure-u-4-5 pure-u-md-2-5 pure-u-sm-1 l-box">
-	<p><img class="logo" src="{{ website.logo }}" alt="{{ website.title }}" width="70" height="20"></p>
-	<p>{{ footer.text }}</h4>
-	<p><small>{{ footer.copyright }}</small></p>
-	<a href="{{ website.facebook }}" target="_blank" rel="noopener" title="Link to Facebook Page">{% svgico 'facebook-square' %}</a>
-
-	<a href="{{ website.linkedin }}" target="_blank" rel="noopener" title="Link to LinkedIn Page">{% svgico 'linkedin-square' %}</a>
-	<a href="{{ website.twitter }}" target="_blank" rel="noopener" title="Link to Twitter Page">{% svgico 'twitter-square' %}</a>
-	<a href="{{ website.github }}" target="_blank" rel="noopener" title="Link to Github Page">{% svgico 'github-square' %}</a>
+	<div class="about-company pure-u-1 pure-u-md-2-5">
+		<p><img class="logo" src="{{ website.logo }}" alt="{{ website.title }}" width="70" height="20"></p>
+		<p>{{ footer.text }}</h4>
+		<p><small>{{ footer.copyright }}</small></p>
 	</div>
 
-	<div class="pure-u-1 pure-u-md-1-5 pure-u-sm-1 l-box">
+	<div class="linkbox pure-u-1 pure-u-md-1-5">
 		<h3 class="column-header">{{ footer.column1.header }}</h3>
 		{% for link in footer.column1.links -%}
 			<a href="{{ link.url }}">{{link.label}}</a>
@@ -18,7 +13,7 @@
 		{%- endfor %}
 	</div>
 
-	{# <div class="pure-u-1 pure-u-md-1-5 pure-u-sm-1 l-box">
+	{# <div class="linkbox pure-u-1 pure-u-md-1-5 l-box">
 		<h3 class="column-header">{{ footer.column1.header }}</h3>
 		{% for item in developers | rejectattr("hidden") | rejectattr("disabled") -%}
 			<a href="/developers/eps/{{ item.name | slug }}">{{item.title}}</a>
@@ -26,7 +21,7 @@
 		{%- endfor %}
 	</div> #}
 
-	<div class="pure-u-1-3 pure-u-md-1-5 pure-u-sm-1-3 l-box">
+	<div class="linkbox pure-u-1 pure-u-md-1-5">
 		<h3 class="column-header">{{ footer.column2.header }}</h3>
 		{% for link in footer.column2.links -%}
 			<a href="{{ link.url }}">{{link.label}}</a>
@@ -34,11 +29,21 @@
 		{%- endfor %}
 	</div>
 
-	<div class="pure-u-1-3 pure-u-md-1-5 pure-u-sm-1-3 l-box">
-	<br><br><br><br><br><br>
-	<a href="{{ website.signup_url }}" class="button">Sign Up</a>
-	<br><br>
-	<a class="text-primary" href="{{ website.contact_url }}">{% svgico 'paper-plane' %}&nbsp;&nbsp;{{ footer.contact_button_text }}</a>
+	<div class="signupbox pure-u-1 pure-u-md-1-5">
+		<br>
+		<a href="{{ website.signup_url }}" class="button">Sign Up</a>
+		<br><br>
+		&nbsp;<small><a class="text-primary icolink sales" href="{{ website.contact_url }}">{% svgico 'paper-plane' %}&nbsp;{{ footer.contact_button_text }}</a></small>
+		<br><br>
+		<div class="socialicons">
+			<h3 class="column-header">FOLLOW US</h3>
+
+			<a href="{{ website.facebook }}" target="_blank" rel="noopener" title="Link to Facebook Page">{% svgico 'facebook-square' %}</a>
+
+			<a href="{{ website.linkedin }}" target="_blank" rel="noopener" title="Link to LinkedIn Page">{% svgico 'linkedin-square' %}</a>
+			<a href="{{ website.twitter }}" target="_blank" rel="noopener" title="Link to Twitter Page">{% svgico 'twitter-square' %}</a>
+			<a href="{{ website.github }}" target="_blank" rel="noopener" title="Link to Github Page">{% svgico 'github-square' %}</a>
+		</div>
 	</div>
 </footer>
 

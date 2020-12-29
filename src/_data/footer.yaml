@@ -12,11 +12,11 @@ column1:
     - label: Fund Settlement API
       url: /developers/eps/fund-settlement-api
     - label: Cash Collection API
-      url: /developers/eps/domestic-money-transfer-api
+      url: /developers/eps/cash-collection-api
     - label: PAN Verification API
-      url: /developers/eps/aeps-cashout-sdk
+      url: /developers/eps/pan-verification-api
     - label: Account Verification API
-      url: /developers/eps/fund-settlement-api
+      url: /developers/eps/account-verification-api
 
 column2:
   header: COMPANY
@@ -27,8 +27,8 @@ column2:
       url: /blog
     - label: FAQs
       url: /faq
-    - label: T&C
-      url: /
+    - label: Terms & Conditions
+      url: /Eko_Customer_TC.pdf
     - label: Privacy Policy
       url: /privacy-policy
     - label: Other Documents

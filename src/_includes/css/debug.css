@@ -1,8 +1,8 @@
-section.block {
+section.block[type] {
 	position: relative;
 	border:1px solid #666;
 }
-section.block::before {
+section.block[type]::before {
 	content: "🧩 section_" attr(type) ".njk";
 	position: absolute;
 	top:0; left:0;
