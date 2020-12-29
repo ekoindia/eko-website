@@ -185,6 +185,8 @@ a.nostyle, a.nostyle:hover {
 	display: inline-block;
 	font-size: 16px;
 	font-weight: bold;
+	width: fit-content;
+	white-space: nowrap;
 	padding: 12px 25px;
 	margin: 0.3em;
 	background: var(--primary-color) !important;
@@ -194,7 +196,6 @@ a.nostyle, a.nostyle:hover {
 	text-decoration: none;
 	border: none;
 	border-radius: 10px;
-	white-space: nowrap;
 	cursor: pointer;
 	line-height: 1.43;
 	transition: all 0.3s ease-out;
