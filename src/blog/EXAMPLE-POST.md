@@ -3,13 +3,15 @@ layout: blog
 title: This is page title. It is displayed on top of the blog in large text.
 description: This is a short description of the post (for example, the first paragraph). It is displayed as the short excerpt (preview) of the blog on the blog listing pages. Also helps with the SEO.
 date: 2020-12-23
-image: /images/blog/blog-post-main-image.png
+image: /assets/img/blog/blog-post-main-image.png
 tags:
   - tag1
   - tag2
 ---
 
-Everything written this line onwards will be visible on the page!
+This document shows examples of writting markdown. Everything written here onwards will be visible on the page!
+
+<!-- excerpt -->
 
 Checkout a quick Markdown guide here: https://www.markdownguide.org/cheat-sheet/
 

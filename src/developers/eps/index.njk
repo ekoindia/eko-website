@@ -1,0 +1,132 @@
+{% extends "../../_layouts/base.njk" %}
+
+{% block main %}
+
+	{# Top Hero Section #}
+	{% set product = {
+		title: "Eko Platform Services (EPS)",
+		tag_line: "Develop financial products with EPS",
+		hero_image: "/assets/img/developers/developer-landing-page.svg",
+		summary: "Simple & modular APIs, libraries & SDKs. Go live instantly with our plug & play UI flows. Leverage our large technology & distribution network to grow your business",
+		learn_more_link: "https://developers.eko.in/docs"
+	} %}
+	{% include "section_product_page_hero.njk" %}
+
+
+	{# Alternating Steps Section #}
+	{% set item = {
+		title: "EPS (Eko Platform Services) can be used by…",
+		subtitle: "Developer | Enterprise",
+		steps: [
+			{
+				title: "A Developer",
+				text: "* Create solutions for yourself and others with our easy to use Libraries & SDKs.\n* Contribute to our open-source initiatives.",
+				image: "/assets/img/developers/developer-small.svg",
+				more_info: "View Documentation",
+				info_link: "https://developers.eko.in"
+			},
+			{
+				title: "An Enterprise",
+				text: "* Automate with our services.\n* Scale your business with our suite of products",
+				image: "/assets/img/developers/enterprise.svg",
+				more_info: "View our Products",
+				more_info_link: ""
+			}
+		]
+	} %}
+	{% include "section_alternating_steps.njk" %}
+
+
+	{# One Liner section #}
+	{% set item = {
+		title: "No matter who you are, we’ve got you covered",
+		tags: [
+			{ name: "Enterprise" },
+			{ name: "Developer" }
+		]
+	} %}
+	{% include "section_one_liner.njk" %}
+
+
+	{# Mid Summary section #}
+	{% set item = {
+		header: "Developer Products",
+		small_description: "Available as APIs & SDKs"
+	} %}
+	{% include "section_mid_summary.njk" %}
+
+
+	{# Product Category Showcase Section - Money Transfer #}
+	{% set item = {
+		title: "Money Transfer",
+		image: "/assets/img/money-transfer/money-transfer.svg",
+		doc_url: "https://developers.eko.in/docs/money-transfer",
+		products: [
+			{
+				title: "Domestic Money Transfer API",
+				link: "/developers/eps/domestic-money-transfer-api"
+			}
+		]
+	} %}
+	{% include "section_product_category_showcase.njk" %}
+
+
+	{# Product Category Showcase Section - Disbursals #}
+	{% set item = {
+		title: "Disbursals",
+		image: "/assets/img/developers/aeps-main.svg",
+		doc_url: "https://developers.eko.in/docs/fund-transfer",
+		products: [
+			{
+				title: "AePS Cashout SDK",
+				link: "/developers/eps/aeps-cashout-sdk"
+			},
+			{
+				title: "Fund Settlement API",
+				link: "/developers/eps/fund-settlement-api"
+			}
+		]
+	} %}
+	{% include "section_product_category_showcase.njk" %}
+
+
+	{# Product Category Showcase Section - Collections #}
+	{% set item = {
+		title: "Collections",
+		image: "/assets/img/developers/assisted-cash-management.svg",
+		doc_url: "https://developers.eko.in/docs/cash-collection",
+		products: [
+			{
+				title: "Cash Collection API",
+				link: "/developers/eps/cash-collection-api"
+			}
+		]
+	} %}
+	{% include "section_product_category_showcase.njk" %}
+
+
+	{# Product Category Showcase Section - Verification #}
+	{% set item = {
+		title: "Verification",
+		image: "/assets/img/developers/bank-verification.svg",
+		doc_url: "https://developers.eko.in/docs/identity",
+		products: [
+			{
+				title: "PAN Verification API",
+				link: "/developers/eps/pan-verification-api"
+			},
+			{
+				title: "Account Verification API",
+				link: "/developers/eps/account-verification-api"
+			}
+		]
+	} %}
+	{% include "section_product_category_showcase.njk" %}
+
+
+	{# Form section #}
+	<section class="block bg-shaded">
+		{% include "form.njk" %}
+	</section>
+
+{% endblock %}

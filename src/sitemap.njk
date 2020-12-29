@@ -4,12 +4,28 @@ eleventyExcludeFromCollections: true
 ---
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
 {%- for item in collections.all -%}
-{%- if not item.data.excludeFromSitemap and item.url -%}
+{%- if not item.data.excludeFromSitemap and item.url and item.url != '/admin/' -%}
 <url>
 <loc>{{ env.BASE_URL }}{{ item.url }}</loc>
 <lastmod>{{ item.date | dateFormat('yyyy-MM-dd') }}</lastmod>
 </url>
 {%- endif -%}
 {%- endfor -%}
+
+{%- for item in products -%}
+<url>
+<loc>{{ env.BASE_URL }}/products/{{ item.name | slug }}</loc>
+<lastmod>{{ item.date or page.date | dateFormat('yyyy-MM-dd') }}</lastmod>
+</url>
+{%- endfor -%}
+
+{%- for item in developers -%}
+<url>
+<loc>{{ env.BASE_URL }}/developers/eps/{{ item.name | slug }}</loc>
+<lastmod>{{ item.date or page.date | dateFormat('yyyy-MM-dd') }}</lastmod>
+</url>
+{%- endfor -%}
+
 </urlset>

@@ -3,7 +3,7 @@ layout: blog
 title: White-label API solutions for your fintech business
 description: Are you a developer looking out for robust money transfer, AePS and verification API solutions for your fintech clients? Are you a fintech solution provider looking for white-label API solutions that’s secure and easy to integrate? Are you a reseller looking to earn more with white-label API solutions?
 date: 2020-11-12
-image: /images/blog/white-label-api-solns.png
+image: /assets/img/blog/white-label-api-solns.png
 tags:
   - api
   - developers

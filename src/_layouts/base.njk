@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="theme-color" content="#ffb218"/>
 
+	<link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/vnd.microsoft.icon" />
 
 	{# ---- Optimal/non-blocking way to load Google Font (https://csswizardry.com/2020/05/the-fastest-google-fonts) ---- #}
 	{% if website.google_font_url %}
@@ -70,14 +71,10 @@
       {% include "css/blog.css" %}
     {% endset %}
 
-	{# DEFINE Font Awesone Icons #}
-	{#
-    {% set font_awesome %}
-	  {% include "css/fontawesome/css/fontawesome.min.css" %}
-	  {% include "css/fontawesome/css/brands.min.css" %}
-	  {% include "css/fontawesome/css/solid.min.css" %}
+	{# DEFINE CSS for University section #}
+	{% set css_university %}
+      {% include "css/university.css" %}
     {% endset %}
-	#}
 
 
 	{# ----- DEFINE EMBLA CAROUSEL SUPPORT (https://github.com/davidcetinkaya/embla-carousel) ------ #}
@@ -104,9 +101,9 @@
 	  {% block custom_style %}{% endblock %}
     </style>
 
-	{% if env.DEBUG_SECTIONS=='true' %}
+	{% if env.DEBUG_SECTIONS=='true' -%}
 		<style>{{ css_debug | cssmin | safe }}</style>
-	{% endif %}
+	{%- endif %}
 
   </head>
 

@@ -1,0 +1,24 @@
+<section class="block" type="product_category_showcase">
+	<center>
+		<div class="prod-category-box">
+
+			<h3>{{ item.title }}</h3>
+			<div class="layout vertical horizontal-md wrap center">
+				<div class="layout horizontal center-center flex">
+					<img src="{{ item.image }}" alt="{{ item.title }}">
+				</div>
+
+				<div class="layout vertical center-center flex">
+					<ul>
+						{% for prod in item.products %}
+							<li><a href="{{ prod.link }}">{{ prod.title }}</a></li>
+						{% endfor %}
+					</ul>
+					<br>
+					<a class="button" href="{{ item.doc_url }}">View Documentation</a>
+				</div>
+
+			</div>
+		</div>
+	</center>
+</section>

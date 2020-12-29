@@ -2,7 +2,8 @@ const outdent = require('outdent');
 
 module.exports = {
 
-    icon: () => name => `<svg class="icon icon--${name}" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#icon-${name}"></use></svg>`,
+	// IconSprite svg icon
+    // icon: () => name => `<svg class="icon icon--${name}" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#icon-${name}"></use></svg>`,
 
 	// The scrolling mouse icon used under hero banners
 	iconScroll: () => () => `<center><div class="icon-scroll"><div class="mouse"></div></div></center>`,
@@ -13,8 +14,8 @@ module.exports = {
 
 	// Inline svg icons using the 'svgContents' filter
 	// Pass only the name (without the .svg extension) of
-	// the icon from the 'src/images/icons' folder
-	svgico: (config) => (name, classes = '') => config.getFilter("svgContents")(`/src/images/icons/${name}.svg`, `svgico ${classes}`).replace(/<title>[^<]+<\/title>/i, ''),
+	// the icon from the 'src/assets/ico' folder
+	svgico: (config) => (name, classes = '') => config.getFilter("svgContents")(`/src/assets/ico/${name}.svg`, `svgico ${classes}`).replace(/<title>[^<]+<\/title>/i, ''),
 
 
 	// A link with an arrow-head (next-icon) to the right.
@@ -23,7 +24,7 @@ module.exports = {
 	linkArrow: (config) => (url, text, classes = '') => {
 		url = url || '/';
 		const trgt = url.toLowerCase().startsWith('http') ? 'rel="noopener" target="_blank"' : '';
-		return `<a href="${url}" class="icolink ${classes}" ${trgt}>${text}&nbsp;&nbsp;${config.javascriptFunctions.svgico("arrow-circle-right", "primarycolor")}`;
+		return `<a href="${url}" class="icolink ${classes}" ${trgt}>${text}&nbsp;&nbsp;${config.javascriptFunctions.svgico("arrow-circle-right", "text-primary")}`;
 	},
 
 }

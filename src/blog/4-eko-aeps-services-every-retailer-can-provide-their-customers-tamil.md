@@ -3,7 +3,7 @@ layout: blog
 title: ஒவ்வொரு சில்லரை விற்பனையாளரும் அவர்களது வாடிக்கையாளர்களுக்கு வழங்க முடிகிற 4 EkoAePS சேவைகள்
 description: Eko’வின் AePS சேவைகள், சில்லரை வர்த்தகர்கள் தங்களது கடையை ஒரு ATM ஆக மாற்றிக் கொண்டு, அவர்களது வாடிக்கையாளர்களுக்கு, ரொக்கப் பணம் செலுத்துதல், பணம் எடுத்தல், மற்றும் மீதத்தொகை விசாரணை என்ற விதத்தில் வங்கியச் சேவைகளைத் தர உதவுகிறது
 date: 2020-09-17
-image: /images/blog/4-eko-aeps-services-tamil.png
+image: /assets/img/blog/4-eko-aeps-services-tamil.png
 tags:
   - products
   - aeps

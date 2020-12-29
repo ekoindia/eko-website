@@ -5,7 +5,7 @@ const glob = require('glob');
 const File = require('vinyl');
 const SVGSpriter = require('svg-sprite');
 
-const cwd = path.resolve('src/images/icons');
+const cwd = path.resolve('src/assets/icosprite');
 
 const spriteConfig = {
     mode: {

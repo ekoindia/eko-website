@@ -1,5 +1,4 @@
-<section>
-<div class="band">
+<section class="block band">
     {% for career in careers_list | reverse %}
     <div class="item">
         <a href="{{ career.url | url }}" class="card">
@@ -12,5 +11,4 @@
         </a>
     </div>
     {% endfor %}
-</div>
 </section>

@@ -1,4 +1,4 @@
-<section class="pure-g flex-grid product_page_hero" type="product_page_hero">
+<section class="block pure-g flex-grid product_page_hero" type="product_page_hero">
 	<div class="pure-u-1 pure-u-md-1-2">
 		<br><br>
 		<div class="pure-g flex-grid">
@@ -19,7 +19,7 @@
 			<a href="{{ website.signup_url }}" class="button">{{ product.signup_label or 'Sign up' }}</a>
 			{% if product.learn_more_link %}
 				&nbsp;&nbsp;&nbsp;
-				{% linkArrow product.learn_more_link, "Learn More" %}
+				{% linkArrow product.learn_more_link, product.learn_more_label or "Learn More" %}
 			{% endif %}
 		</div>
 	</div>

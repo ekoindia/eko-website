@@ -68,15 +68,18 @@
       worldwide, non-exclusive, no-charge, royalty-free, irrevocable
       copyright license to reproduce, prepare Derivative Works of,
       publicly display, publicly perform, sublicense, and distribute the
-      Work and such Derivative Works in Source or Object form, provided that 
+      Work and such Derivative Works in Source or Object form, provided that
       You meet the following conditions:
 
-      (a) The following assets are under the closed ownership and copyright 
-          of the Licensor (Eko) and the Grant of Copyright License does not 
+      (a) The following assets are under the closed ownership and copyright
+          of the Licensor (Eko) and the Grant of Copyright License does not
           apply to them:
           i.   Images & banners (except small icons)
           ii.  Product & page configuration data
           iii. Webpage & blog post contents
+		  iv.  PDF files
+		  v.   Information related to Eko, it's products & services,
+		       it's agents or, it's partners
 
    3. Grant of Patent License. Subject to the terms and conditions of
       this License, each Contributor hereby grants to You a perpetual,
@@ -99,11 +102,14 @@
       modifications, and in Source or Object form, provided that You
       meet the following conditions:
 
-      (a) The following assets are under the closed ownership and copyright 
+      (a) The following assets are under the closed ownership and copyright
           of the Licensor (Eko) and may not be redistributed:
           i.   Images & banners (except small icons)
           ii.  Product & page configuration data
           iii. Webpage & blog post contents
+		  iv.  PDF files
+		  v.   Information related to Eko, it's products & services,
+		       it's agents or, it's partners
 
       (b) You must give any other recipients of the Work or
           Derivative Works a copy of this License; and

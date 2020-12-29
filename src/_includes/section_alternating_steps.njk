@@ -1,4 +1,4 @@
-<section class="alternating-steps" type="alternating_steps">
+<section class="block alternating-steps" type="alternating_steps">
 	{% if item.title %}
 		<center>
 			<p>{{ item.subtitle }}</p>
@@ -9,18 +9,20 @@
 	{% endif %}
 
 	{% for step in item.steps %}
-		<div class="pure-g flex-grid">
+		<div class="pure-g flex-grid slim_ul">
 			<div class="step-text pure-u-1 pure-u-md-1-2 l-box">
 				<h2>{{ step.title }}</h2>
             	<br>
-				<p>{{ step.text }}</p>
+				{% markdown %}{{ step.text }}{% endmarkdown %}
 				{% if step.tag %}
 					{% dotTag step.tag, 'filled' %}
-					<br><br><br>
+					<br><br>
 				{% endif%}
 				{% if step.button %}
 					<a href="{{ step.button_link }}" class="button">{{ step.button }}</a>
-					<span class="horizontal-spacer"></span>
+					&nbsp;
+				{% endif %}
+				{% if step.more_info %}
 					{% linkArrow step.info_link, step.more_info, 'bold' %}
 				{% endif %}
 			</div>

@@ -72,7 +72,7 @@ The Eko website & blog built with [Eleventy](https://www.11ty.dev). Uses reusabl
 	  * 📄 [**carousel.css**](/src/_includes/css/carousel.css)  `CSS rules for the carousel section`
 	  * 📄 [**section_components.css**](/src/_includes/css/section_components.css)  `CSS rules for the section_*.njk reusable components`
 	* 📁 [**js**](/src/_includes/js)  `Javascript files - inlined into HTML during build`
-  * 📁🖼 [**images**](/src/images)  `Public images folder`
+  * 📁🖼 [**assets**](/src/assets)  `Static assets like images, icons, etc`
 * 📂 [**utils/**](/utils)  `11ty build-time custom utilities...`
   * 📄 [**shortcodes.js**](/utils/shortcodes.js)  `Reusable short markup (HTML) snippets` [<small>(docs)</small>](https://www.11ty.dev/docs/shortcodes)
   * 📄 [**filters.js**](/utils/filters.js)  `Custom filters for 11ty to be used in templates to manipulate data` [<small>(docs)</small>](https://www.11ty.dev/docs/filters)
@@ -81,11 +81,13 @@ The Eko website & blog built with [Eleventy](https://www.11ty.dev). Uses reusabl
 ## ❓ How to add a new blog post?
 1. Add a new file in the [`src/blog/`](/src/blog) folder (or, copy an existing file).
 1. File name becomes the URL of the blog-post (without the extension).
-1. Easiest way to write the post is to use Markdown (.md). Any other file format can be used (eg: Nunjucks, HTML, Liquid, Javascript).
+1. Easiest way to write the post is to use Markdown (.md). Any other file format can be used (eg: [Nunjucks](https://mozilla.github.io/nunjucks/templating.html), HTML, Liquid, Javascript).
    1. Check [EXAMPLE-POST.md](/src/blog/EXAMPLE-POST.md) for an example page and a quick guide to markdown.
-1. Add other page info (like title, description, image, etc) at the top of the page between the two '---' lines.
+1. Add other page info (like title, description, image, etc) in the top section of the page between the two '---' lines.
+   1. Make the first paragraph of the post an excerpt by add a `<!-- excerpt -->` comment after it. This will be shown as the post description.
+   1. Alternatively, add a `description` field in the top section of the page between the two '---' lines.
    1. Check [EXAMPLE-POST.md](/src/blog/EXAMPLE-POST.md) for a quick example.
-1. Alternatively, you can use the graphical admin interface (provided by Netlify CMS) to easily add/edit blog posts.
+1. You can also use the graphical admin interface (provided by Netlify CMS) to easily add/edit blog posts.
 
 
 ## ❓ How to add or edit a Retail-product page?

@@ -3,7 +3,7 @@ layout: blog
 title: 4 Eko AePS सेवा ज्या प्रत्येक छोटा व्यावसायिक आपल्या ग्राहकांना देऊ शकतो
 description: इको (Eko) ची AePS किरकोळ विक्रेते आणि छोट्या व्यावसायिकांना त्यांचे उद्योगाचे ठिकाण एटीएम (ATM) मध्ये रूपांतरीत करून त्यांच्या ग्राहकांना रोख रकमेचा भरणा, रोख रक्कम काढणे आणि खात्यावरील शिल्लक रकमेची चौकशी अशा मिनी बँकिंग सेवा प्रदान करण्यास मदत करते
 date: 2020-09-17
-image: /images/blog/4-eko-aeps-services-marathi.png
+image: /assets/img/blog/4-eko-aeps-services-marathi.png
 tags:
   - products
   - aeps

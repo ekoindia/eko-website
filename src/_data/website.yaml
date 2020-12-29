@@ -1,5 +1,5 @@
 title: Eko
-logo: /images/logo.svg
+logo: /assets/img/logo.svg
 signup_url: /sign-up
 contact_url: /contact-us
 company_description: Eko gives retailers an opportunity to turn their own shop into a Banking & Financial institution by providing solutions to low & middle income customers.
@@ -9,7 +9,7 @@ developer_portal: https://developers.eko.in
 #### SEO & Social...
 tag_line: Best way to collect cash at your doorstep
 keywords: Payment Service Provider In India, Recharges, Money Transfer service, Payments, Payment Collection, Payment Service Provider
-image: /images/main/homepage.png
+image: /assets/img/main/homepage.png
 facebook: https://www.facebook.com/ekoindia
 linkedin: https://www.linkedin.com/company/eko-india-financial-services-private-limited/?originalSubdomain=in
 twitter: https://twitter.com/ekospeaks

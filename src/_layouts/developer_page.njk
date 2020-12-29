@@ -20,7 +20,7 @@
 
 {% block main %}
 
-	{% set product = developer|mergeObjectFilter({learn_more_link: developer.documentation_link}) %}
+	{% set product = developer|mergeObjectFilter({learn_more_link: developer.documentation_link, learn_more_label: "View Documentation"}) %}
 	{% include "section_product_page_hero.njk" %}
 
 
@@ -41,6 +41,6 @@
 		{% include component %}
 	{% endfor %}
 
-	<section>{% include "form.njk" %}</section>
+	<section class="block">{% include "form.njk" %}</section>
 
 {% endblock %}

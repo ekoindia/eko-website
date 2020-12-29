@@ -1,17 +1,14 @@
-<section class="background-section" type="one_liner">
+<section class="block bg-shaded" type="one_liner">
 	<center>
 		<div class="one-liner">
 			{% if item.icon %}
 				<img src="{{ item.icon }}" alt="{{ item.title }}" loading="lazy">
 			{% endif %}
 			{% if item.tags %}
-				<div class="pure-g tags-row">
+				<div class="tags-row layout horizontal wrap center-center">
 					{% for tag in item.tags %}
-						<div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-4 sm-box">
-							{% dotTag tag.name, "filled" %}
-						</div>
+						&nbsp;{% dotTag tag.name, "filled" %}&nbsp;
 					{% endfor %}
-					<br><br>
 				</div>
 			{% endif %}
 			<h1>{{ item.title }}</h1>

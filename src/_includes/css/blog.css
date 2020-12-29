@@ -20,14 +20,14 @@ h6 { font-size: .75em; }
 	h4 { font-size: 18px; }
 }
 
-a {
+main a {
 	text-decoration: underline;
 	color: var(--primary-color);
 }
 
-p {
+/* p {
 	text-align: justify;
-}
+} */
 
 
 blockquote {
@@ -162,23 +162,6 @@ time::before {
 
 .active, .btn:hover {
   color: var(--primary-color) !important;
-}
-
-#links p {
-  letter-spacing: 0;
-  border: none;
-  margin: 0;
-  padding: 0;
-  text-align: left !important;
-  display: flex;
-  justify-content: center;
-}
-
-#links a:hover {
-  background-color: rgba(136, 52, 52, 0.05);
-  color: var(--primary-color);
-  padding: 2px;
-  text-decoration: none;
 }
 
 

@@ -1,16 +1,16 @@
-<section class="icon-list background-section" type="icon_list">
+<section class="block icon-list bg-shaded" type="icon_list">
 	{% if item.header %}
 		<center>
 			{% if item.subtitle %}
 				<p>{{ item.subtitle }}</p>
 			{% endif %}
-			<h1>{{ item.header }}</h1>
+			<h1 class="txt-center">{{ item.header }}</h1>
 			<div class="h2-border"></div>
 		</center>
 	{% endif %}
 
 	{% if item.description %}
-		<p>{{ item.description }}</p>
+		<p class="txt-center">{{ item.description }}</p>
 	{% endif %}
 
 	<div class="pure-g">
@@ -18,7 +18,7 @@
 			<div class="pure-u-1 pure-u-md-1-{{item.icons | length}} three-box">
 				<center>
 					<img src="{{ icon.image }}" alt="{{ icon.caption }}" loading="lazy">
-					<p>{{ icon.caption }}</p>
+					<p class="bold">{{ icon.caption }}</p>
 				</center>
 			</div>
 		{% endfor %}

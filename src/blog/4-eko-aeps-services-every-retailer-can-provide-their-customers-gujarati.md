@@ -3,7 +3,7 @@ layout: blog
 title: 4 એકો AePS સર્વિસીઝ દરેક રિટેલર તેમના ગ્રાહકોને પૂરી પાડી શકે
 description: એકોની  AePS દ્વારા રિટેલર્સને તેમની દુકાનને એટીએમમાં તબદિલ કરીને તેમના ગ્રાહકોને મિનિ બેન્કિંગ સેવાઓ ઓફર કરવામાં મદદ મળે છે જેમાં રોકડ જમા, રોકડ ઉપાડ અને બેલેન્સ ઇન્કવાયરી વગેરેનો સમાવેશ થાય છે
 date: 2020-09-17
-image: /images/blog/4-aeps-services-gujarati.png
+image: /assets/img/blog/4-aeps-services-gujarati.png
 tags:
   - products
   - aeps

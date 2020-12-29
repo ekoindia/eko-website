@@ -89,7 +89,7 @@ module.exports = function(eleventyConfig) {
 			rel: 'noopener',
 			class: 'ext-link'
 		}
-	});									// https://github.com/crookedneighbor/markdown-it-link-attributes
+	});								// https://github.com/crookedneighbor/markdown-it-link-attributes
 	markdownLib.use(md_lazy_loading);	// https://github.com/ruanyf/markdown-it-image-lazy-loading
 	markdownLib.use(md_abbr);			// https://github.com/markdown-it/markdown-it-abbr
 	markdownLib.use(md_footnote);		// https://github.com/markdown-it/markdown-it-footnote
@@ -114,11 +114,10 @@ module.exports = function(eleventyConfig) {
 
 	// ---------------------------------------------------------------------------------
 
-	// eleventyConfig.setFrontMatterParsingOptions({
-	// 	excerpt: true,
-	// 	// Optional, default is "---"
-	// 	excerpt_separator: "<!-- excerpt -->"
-	// });
+	eleventyConfig.setFrontMatterParsingOptions({
+		excerpt: true,
+		excerpt_separator: "<!-- excerpt -->"	// default: "---"
+	});
 
   eleventyConfig.addTransform("htmlmin", function(content, outputPath) {
     if( outputPath.endsWith(".html") ) {
@@ -161,10 +160,16 @@ module.exports = function(eleventyConfig) {
   });
 
 
+	// Add paired shortcode to embed Markdown in templates...
+	eleventyConfig.addPairedShortcode("markdown", (content) => {
+		return markdownLib.render(content);
+	});
+
 	// Add Files Passthrough...
-	eleventyConfig.addPassthroughCopy('src/images');
 	eleventyConfig.addPassthroughCopy('src/admin');
-	eleventyConfig.addPassthroughCopy('src/js');
+	eleventyConfig.addPassthroughCopy('src/assets/ico');
+	eleventyConfig.addPassthroughCopy('src/assets/img');
+	eleventyConfig.addPassthroughCopy("src/*.pdf");
 
 	// Add Layouts...
 	eleventyConfig.addLayoutAlias('base', 'base.njk');

@@ -5,12 +5,12 @@ permalink: 404.html
 {% extends "./_layouts/base.njk" %}
 
 {% block main %}
-<section>
-<center>
-	<h1>404</h1>
-	<p>Oops! This page is missing. The link you clicked may be broken or the page may have been removed.</p>
-	<br><br>
-	<a href="{{ "/" | url }}" class="button">Go back to home page</a>
-</center>
-</section>
+	<section class="block">
+		<center>
+			<h1>404</h1>
+			<p>Oops! This page is missing. The link you clicked may be broken or the page may have been removed.</p>
+			<br><br>
+			<a href="/" class="button">Go back to home page</a>
+		</center>
+	</section>
 {% endblock %}
