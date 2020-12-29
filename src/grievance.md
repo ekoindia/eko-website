@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Eko India Financial Services Private Limited Customer Grievance Redressal Mechanisms
+excludeFromSitemap: true
 ---
 
 ### Customer Grievance Policy
