@@ -89,8 +89,13 @@
 		</ul>
 	</div>
 
+	{# Sign Up Buttons #}
+	{% set signup_url_suffix = "" %}
+	{% if business == "retail" or business == "api" %}
+		{% set signup_url_suffix = "-" + business %}
+	{% endif %}
 	<div class="desktoponly layout horizontal center">
 		<a href="{{ website.contact_url }}" class="icolink">{% svgico 'paper-plane', 'text-primary' %}&nbsp;Contact Sales</a>&nbsp;&nbsp;
-		<a href="{{ website.signup_url }}" class="button">Sign Up</a>
+		<a href="{{ website.signup_url }}{{ signup_url_suffix }}" class="button">Sign Up</a>
 	</div>
 </nav>

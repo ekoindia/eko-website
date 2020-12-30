@@ -8,6 +8,7 @@ tags:
   - api
   - developers
   - whitelabel
+business: api
 ---
 
 Are you a developer looking out for robust money transfer, AePS and verification API solutions for your fintech clients? Are you a fintech solution provider looking for white-label API solutions that’s secure and easy to integrate? Are you a reseller looking to earn more with white-label API solutions?

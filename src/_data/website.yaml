@@ -26,6 +26,7 @@ google_font_url: https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;70
 ##      See '.env.example' file for details
 
 # BASE_URL
-# GA_KEY                    (Google Analytics)
-# MS_CLARITY_TAG            (Microsoft Clarity Analytics)
-# ZOHO_SALESIQ_WIDGETCODE   (Zoho SalesIQ Chatbot)
+# GA_KEY            (Google Analytics)
+# MS_CLARITY_TAG    (Microsoft Clarity Analytics)
+# ZOHO_SALESIQ      (Zoho SalesIQ Chatbot)
+# ZOHO_FORM_URL     (Zoho Signup Forms)

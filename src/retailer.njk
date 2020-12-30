@@ -1,3 +1,7 @@
+---
+business: retail
+---
+
 {% extends "./_layouts/base.njk" %}
 
 {% block main %}
@@ -137,9 +141,8 @@
 
 
 	{# Form section #}
-	<section class="block bg-shaded">
-		{% include "form.njk" %}
-	</section>
+	{% set form = { type: "retail" } %}
+	{% include "section_signup_form.njk" %}
 
 
 
