@@ -4,12 +4,12 @@
 	</div>
 	<div class="pure-u-1 pure-u-md-1-2 l-box order-2-sm">
 		{% if item.link_text %}
-			<h1 class="header">{{ item.title }}</h1>
+			<h2>{{ item.title }}</h2>
 			<div class="h2-border"></div>
 		{% else %}
 			<h3>{{ item.title }}</h3>
 		{% endif %}
-		<p>{{ item.text }}</p>
+		<p class="lh-high">{{ item.text }}</p>
 		{% if item.link_text %}
 			{% linkArrow item.link, item.link_text, 'bold' %}
 		{% endif %}

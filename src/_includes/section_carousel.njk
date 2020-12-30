@@ -1,6 +1,6 @@
 <section class="block carousel" type="carousel">
 	{% if item.header %}
-		<h1>{{ item.header }}</h1>
+		<h2>{{ item.header }}</h2>
 		<div class="h2-border"></div>
 	{% endif %}
 
@@ -22,12 +22,12 @@
 
 								{% if item.style == "gallery" %}
 									<div class="pure-u-1 pure-u-md-1-2 l-box order-2-sm">
-										<p>{{ slide.description }}</p>
+										<p class="blockquote lh-high">{{ slide.description }}</p>
 									</div>
 									<div class="pure-u-1 pure-u-md-1-2 l-box order-1-sm partner-box">
 										<center>
 											<img class="round" src="{{ slide.image }}" alt="{{ slide.title }}" loading="lazy">
-											<h1>{{ slide.title }}</h1>
+											<div class="subtitle bold">{{ slide.title }}</div>
 											<p class="caption">{{ slide.caption }}</p>
 										</center>
 									</div>
@@ -36,8 +36,8 @@
 										<img src="{{ slide.image }}" alt="{{ slide.title }}" loading="lazy">
 									</div>
 									<div class="pure-u-1 pure-u-md-1-2 l-box">
-										<h2>{{ slide.title }}</h2>
-										<p>{{ slide.description }}</p>
+										<h3>{{ slide.title }}</h3>
+										<p class="lh-high">{{ slide.description }}</p>
 									</div>
 								{% endif %}
 

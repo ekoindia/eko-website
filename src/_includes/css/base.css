@@ -142,11 +142,19 @@ a.nostyle, a.nostyle:hover {
 }
 
 .bold {
-	font-weight: 700;
+	font-weight: bold;
 }
 
 .txt-center {
 	text-align: center;
+}
+
+.txt-thin {
+	font-weight: 300;
+}
+
+.lh-high {
+	line-height: 1.67;
 }
 
 
@@ -292,7 +300,9 @@ tr:nth-child(even) td {
 	background: var(--background-section-color);
 }
 
-/* Slim UL list: colored dots & negetive left-margin */
+
+/* Slim <ul> lists: colored dots & negetive left-margin */
+
 ul.slim_ul, .slim_ul ul {
 	list-style-type: none;
 	padding-left: 0;
@@ -305,17 +315,33 @@ ul.slim_ul > li, .slim_ul ul > li {
 
 ul.slim_ul > li::before, .slim_ul ul > li::before {
 	content: "";
-    position: absolute;
-    left: -1em;
-    top: 10px;
+	position: absolute;
+	left: -1em;
+	top: 10px;
 	left: -1.1em;
-    top: 0.4em;
-    width: 0.6em;
-    height: 0.6em;
-    background: var(--primary-color);
-    border-radius: 50%;
+	top: 0.4em;
+	width: 0.6em;
+	height: 0.6em;
+	background: var(--primary-color);
+	border-radius: 50%;
 }
 
+
+
+/* ========== Zoho SalesIQ Chat-bubble Styling =========== */
+
+.zsiq_floatmain #zsiq_float .zsiq_flt_rel {
+	transition: box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+	box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14),
+				0 1px 18px 0 rgba(0, 0, 0, 0.12),
+				0 3px 5px -1px rgba(0, 0, 0, 0.4);
+}
+
+.zsiq_floatmain:hover #zsiq_float .zsiq_flt_rel {
+	box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14),
+				0  6px 30px 5px rgba(0, 0, 0, 0.12),
+				0  8px 10px -5px rgba(0, 0, 0, 0.4);
+}
 
 
 
@@ -363,6 +389,34 @@ section.block {
 }
 
 
+section.block .subtitle {
+	font-size: 18px;
+}
+
+section.block h2 {
+	font-size: 28px;
+	font-weight: 700;
+	line-height: 1.5em;
+	margin: 0;
+}
+
+section.block h3 {
+	font-size: 24px;
+	font-weight: 700;
+	letter-spacing: 1px;
+	line-height: 1.1;
+	margin: 0;
+}
+
+
+@media (min-width: 700px) {
+
+	section.block h2 {
+		font-size: 38px;
+	}
+
+}
+
 
 /* Index Page Top Hero Section */
 
@@ -393,7 +447,47 @@ section.block {
 
 
 
+/* Product Page (sub-pages) Hero Section */
+
+.product_page_hero h1 {
+	font-size: 30px;
+}
+
+.product_page_hero .subtitle > div {
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 1.1;
+}
+
+.product_page_hero .subtitle > img {
+	margin-left: 10px;
+	max-height: 50px;
+}
+
+@media (min-width: 700px) {
+
+	.product_page_hero h1 {
+		font-size: 40px;
+	}
+
+	.product_page_hero .descbox {
+		padding-right: 30px;
+	}
+
+	.product_page_hero .subtitle > img {
+		margin-left: 20px;
+		max-height: 60px;
+	}
+
+}
+
+
+
 /* alternating steps section */
+
+.alternating-steps .step-box:not(:first-of-type) {
+	margin-top: 60px;
+}
 
 .alternating-steps > *:nth-of-type(even) .step-image{
   order: 1;
@@ -411,6 +505,13 @@ section.block {
   .alternating-steps > *:nth-of-type(odd) .step-text{
     order: 2;
   }
+}
+
+
+@media (min-width: 700px) {
+	.alternating-steps .step-box {
+		margin: 0 !important;
+	}
 }
 
 
@@ -466,11 +567,10 @@ section.block {
   opacity: 1;
 }
 
-.small_heros .img-box {
-  display: inline-block;
-  padding: 17px 55px;
-  width: 190px;
-  height: 62px;
+.small_heros img {
+	margin: 1em;
+	max-height: 34px;
+	max-width: 120px;
 }
 
 
@@ -552,10 +652,6 @@ section.block {
 /* -------------------------------------- */
 
 
-.single-hero .header {
-  font-size: 30px;
-}
-
 .icon-list .three-box {
   padding: 5%;
 }
@@ -566,9 +662,12 @@ section.block {
 }
 
 
-.one-liner, .one-liner .tags-row {
-	width: 70%;
+@media (min-width: 700px) {
+	.one-liner, .one-liner .tags-row {
+		width: 70%;
+	}
 }
+
 
 
 .documentation_link_banner div {
@@ -591,17 +690,18 @@ section.block {
 }
 
 
-
-.get_started_banner h1 {
+section.block.get_started_banner h2 {
 	line-height: 1.5em;
 	margin: 0;
 }
-.get_started_banner h3 {
+
+section.block.get_started_banner .subtitle {
 	font-size: 24px;
 	line-height: 1.1;
-	margin:0;
+	font-weight: bold;
 }
-.get_started_banner .button {
+
+section.block.get_started_banner .button {
 	margin: 0 1em 0 0;
 }
 

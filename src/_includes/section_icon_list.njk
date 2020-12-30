@@ -2,24 +2,22 @@
 	{% if item.header %}
 		<center>
 			{% if item.subtitle %}
-				<p>{{ item.subtitle }}</p>
+				<div class="subtitle bold txt-center">{{ item.subtitle }}</div>
 			{% endif %}
-			<h1 class="txt-center">{{ item.header }}</h1>
+			<h2 class="txt-center">{{ item.header }}</h2>
 			<div class="h2-border"></div>
 		</center>
 	{% endif %}
 
 	{% if item.description %}
-		<p class="txt-center">{{ item.description }}</p>
+		<p class="lh-high txt-center">{{ item.description }}</p>
 	{% endif %}
 
-	<div class="pure-g">
+	<div class="layout horizontal center wrap around-justified">
 		{% for icon in item.icons %}
-			<div class="pure-u-1 pure-u-md-1-{{item.icons | length}} three-box">
-				<center>
-					<img src="{{ icon.image }}" alt="{{ icon.caption }}" loading="lazy">
-					<p class="bold">{{ icon.caption }}</p>
-				</center>
+			<div class="layout vertical center inline">
+				<img src="{{ icon.image }}" alt="{{ icon.caption }}" loading="lazy">
+				<p class="bold txt-center">{{ icon.caption }}</p>
 			</div>
 		{% endfor %}
 	</div>

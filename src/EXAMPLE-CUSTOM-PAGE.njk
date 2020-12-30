@@ -1,0 +1,35 @@
+{#
+	This is a sample custom page created using Nunjucks.
+
+	The automatic link for this page is the file-name, i.e,  /example-custom-page
+
+	If you want to put this page into a folder, create a folder and create your njk file in that folder.
+
+	Go to _includes/navigation.njk and add/change the link for this page.
+#}
+
+{# extend the base layout to automatically include navigation bar + footer #}
+{% extends "./_layouts/base.njk" %}
+
+{# You can optionally include this SEO block to change the meta tags and social media links for this page #}
+{# {% block seo %}
+	<title></title>
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta property="og:image" content="">
+	<meta property="og:title" content=""/>
+	<meta property="og:description" content=""/>
+
+	<meta name="twitter:title" content="">
+	<meta name="twitter:description" content="">
+	<meta name="twitter:image" content="">
+{% endblock %} #}
+
+{# Put all your custom page html in the "main" block here: #}
+{% block main %}
+	<section class="block">
+
+		Write all your HTML/njk content here.
+
+	</section>
+{% endblock %}

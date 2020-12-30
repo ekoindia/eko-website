@@ -1,16 +1,12 @@
 <section class="block small_heros" type="small_heros">
 	<center>
-		<h1>{{ item.header}}</h1>
+		<h2>{{ item.header}}</h2>
 		<span class="h2-border"></span>
 	</center>
-	<p><br></p>
-	<div class="pure-g">
-		<center>
-			{% for partner in item.partner_images %}
-				<div class="img-box">
-					<img typeof="foaf:Image" class="dimmed-image" src="{{ partner.image }}" alt="{{ partner.title }}" loading="lazy">
-				</div>
-			{% endfor %}
-		</center>
+	<br>
+	<div class="layout horizontal center-center wrap around-justified">
+		{% for partner in item.partner_images %}
+			<img typeof="foaf:Image" class="dimmed-image" src="{{ partner.image }}" alt="{{ partner.title }}" loading="lazy">
+		{% endfor %}
 	</div>
 </section>
