@@ -2,8 +2,8 @@
 /* ----------- [TODO: Remove duplicate CSS between galary & embla] ------------ */
 
 .embla {
-position: relative;
-max-width: 850px;
+	position: relative;
+	max-width: 850px;
 }
 
 .embla__viewport {
@@ -48,9 +48,6 @@ background-size: cover;
 text-align: left !important;
 }
 
-.embla__slide__inner h3 {
-font-weight: bold;
-}
 
 .embla__slide__inner img {
 max-width: 100%;
@@ -151,7 +148,7 @@ padding-left: 10px;
   color: var(--main-text-color);
 }
 
-.gallery__slide__inner h1 {
+.gallery__slide__inner .subtitle {
   font-weight: bold;
   padding-top: 10px;
   font-size: 15px;
@@ -213,3 +210,21 @@ padding-left: 10px;
 .gallery__button--next {
   right: 1px;
 } */
+
+
+.blockquote {
+	position: relative;
+	/* margin: 1.5em 10px;
+	padding: 1.2em 10px; */
+	quotes: "\201C""\201D""\201C""\201C";
+}
+
+.blockquote:before {
+	position: absolute;
+	top: -0.7em;
+    left: -0.3em;
+	z-index: 999;
+	color: var(--primary-light-60-color);
+	content: open-quote;
+	font-size: 10em;
+}

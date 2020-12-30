@@ -2,7 +2,7 @@
 
 	{% if item.header %}
 		<center>
-			<h1>{{ item.header }}</h1>
+			<h2>{{ item.header }}</h2>
 			<div class="h2-border"></div>
 		</center>
 	{% endif %}
@@ -13,7 +13,7 @@
 					<img class="mw-100" src="{{ hero.image }}" alt="{{ hero.title }}" loading="lazy">
 					<br><br>
 					<h3>{{ hero.title }}</h3>
-					<p>{{ hero.text }}</p>
+					<p class="lh-high">{{ hero.text }}</p>
 				</center>
 			{% else %}
 				<div class="pure-g">
@@ -22,7 +22,7 @@
 							<img src="{{ hero.image_left }}" alt="{{ hero.title_left }}" loading="lazy">
 							<br><br>
 							<h3>{{ hero.title_left }}</h3>
-							<p>{{ hero.text_left }}</p>
+							<p class="lh-high">{{ hero.text_left }}</p>
 						</center>
 					</div>
 					<div class="pure-u-1 pure-u-md-1-2 l-box order-2-sm">
@@ -30,7 +30,7 @@
 							<img src=" {{ hero.image_right }}" alt="{{ hero.title_right }}" loading="lazy">
 							<br><br>
 							<h3>{{ hero.title_right }}</h3>
-							<p>{{ hero.text_right }}</p>
+							<p class="lh-high">{{ hero.text_right }}</p>
 						</center>
 					</div>
 				</div>

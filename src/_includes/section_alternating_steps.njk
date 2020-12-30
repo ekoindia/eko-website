@@ -1,19 +1,18 @@
 <section class="block alternating-steps" type="alternating_steps">
 	{% if item.title %}
 		<center>
-			<p>{{ item.subtitle }}</p>
-			<h1>{{ item.title }}</h1>
+			<div class="subtitle">{{ item.subtitle }}</div>
+			<h2>{{ item.title }}</h2>
 			<div class="h2-border"></div>
 			<br><br>
 		</center>
 	{% endif %}
 
 	{% for step in item.steps %}
-		<div class="pure-g flex-grid slim_ul">
-			<div class="step-text pure-u-1 pure-u-md-1-2 l-box">
-				<h2>{{ step.title }}</h2>
-            	<br>
-				{% markdown %}{{ step.text }}{% endmarkdown %}
+		<div class="step-box pure-g flex-grid slim_ul">
+			<div class="step-text lh-high pure-u-1 pure-u-md-1-2 l-box">
+				<h3>{{ step.title }}</h3>
+            	{% markdown %}{{ step.text }}{% endmarkdown %}
 				{% if step.tag %}
 					{% dotTag step.tag, 'filled' %}
 					<br><br>
