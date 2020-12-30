@@ -50,9 +50,6 @@ nav.topnav .button {
 }
 
 #menu .sub-menu {
-	background: #444;
-	color: white;
-	border-width: 1px 1px 0;
 	margin: 0 1em;
 }
 
@@ -167,6 +164,10 @@ nav.topnav .button {
 
 	nav.topnav .desktoponly, #menu .sub-menu > div {
 		display: none !important;
+	}
+
+	#menu ul.main-menu > li > a {
+		font-weight: bold;
 	}
 
 	#menu li .drop-icon {
