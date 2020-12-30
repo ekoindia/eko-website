@@ -3,7 +3,15 @@
     <div class="h2-border"></div>
     <p>Write to us for more information</p>
 
-	{% if env.ZOHO_FORM_URL %}
-		<iframe class="form-frame" frameborder="0" loading="lazy" src='{{env.ZOHO_FORM_URL}}'></iframe>
+	{% if form and form.type == "api" %}
+		{% set formurl = env.ZOHO_FORM_API_URL or env.ZOHO_FORM_URL %}
+	{% elif form and form.type == "retail" %}
+		{% set formurl = env.ZOHO_FORM_RETAIL_URL or env.ZOHO_FORM_URL %}
+	{% else %}
+		{% set formurl = env.ZOHO_FORM_URL %}
+	{% endif %}
+
+	{% if formurl %}
+		<iframe class="form-frame" frameborder="0" loading="lazy" src='{{formurl}}'></iframe>
 	{% endif %}
 </center>
