@@ -1,3 +1,7 @@
+---
+business: api
+---
+
 {% extends "./base.njk" %}
 
 {% if 'social_image' in developer and 'tag_line' in developer %}
@@ -41,7 +45,8 @@
 		{% include component %}
 	{% endfor %}
 
+	{# Signup Form Section #}
 	{% set form = { type: "api" } %}
-	<section class="block">{% include "form.njk" %}</section>
+	{% include "section_signup_form.njk" %}
 
 {% endblock %}

@@ -1,3 +1,7 @@
+---
+business: api
+---
+
 {% extends "../../_layouts/base.njk" %}
 
 {% block main %}
@@ -8,7 +12,8 @@
 		tag_line: "Develop financial products with EPS",
 		hero_image: "/assets/img/developers/developer-landing-page.svg",
 		summary: "Simple & modular APIs, libraries & SDKs. Go live instantly with our plug & play UI flows. Leverage our large technology & distribution network to grow your business",
-		learn_more_link: "https://developers.eko.in/docs"
+		learn_more_link: "https://developers.eko.in/docs",
+		learn_more_label: "View Documentation"
 	} %}
 	{% include "section_product_page_hero.njk" %}
 
@@ -124,10 +129,8 @@
 	{% include "section_product_category_showcase.njk" %}
 
 
-	{# Form section #}
-	<section class="block bg-shaded">
-		{% set form = { type: "api" } %}
-		{% include "form.njk" %}
-	</section>
+	{# Signup Form Section #}
+	{% set form = { type: "api" } %}
+	{% include "section_signup_form.njk" %}
 
 {% endblock %}

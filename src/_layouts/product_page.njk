@@ -1,3 +1,7 @@
+---
+business: retail
+---
+
 {% extends "./base.njk" %}
 
 {% if 'social_image' in product and 'tag_line' in product %}
@@ -34,7 +38,8 @@
 		{% include component %}
 	{% endfor %}
 
+	{# Signup Form Section #}
 	{% set form = { type: "retail" } %}
-	<section class="block">{% include "form.njk" %}</section>
+	{% include "section_signup_form.njk" %}
 
 {% endblock %}

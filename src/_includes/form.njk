@@ -1,17 +1,12 @@
-<center>
-    <h2>Still got a question?</h2>
-    <div class="h2-border"></div>
-    <p>Write to us for more information</p>
 
-	{% if form and form.type == "api" %}
-		{% set formurl = env.ZOHO_FORM_API_URL or env.ZOHO_FORM_URL %}
-	{% elif form and form.type == "retail" %}
-		{% set formurl = env.ZOHO_FORM_RETAIL_URL or env.ZOHO_FORM_URL %}
-	{% else %}
-		{% set formurl = env.ZOHO_FORM_URL %}
-	{% endif %}
+{% if form and form.type == "api" %}
+	{% set formurl = env.ZOHO_FORM_API_URL or env.ZOHO_FORM_URL %}
+{% elif form and form.type == "retail" %}
+	{% set formurl = env.ZOHO_FORM_RETAIL_URL or env.ZOHO_FORM_URL %}
+{% else %}
+	{% set formurl = env.ZOHO_FORM_URL %}
+{% endif %}
 
-	{% if formurl %}
-		<iframe class="form-frame" frameborder="0" loading="lazy" src='{{formurl}}'></iframe>
-	{% endif %}
-</center>
+{% if formurl %}
+	<iframe class="form-frame" frameborder="0" loading="lazy" src='{{formurl}}'></iframe>
+{% endif %}
