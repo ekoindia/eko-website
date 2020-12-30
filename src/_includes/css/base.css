@@ -615,6 +615,17 @@ section.block h3 {
 }
 
 
+.section-message .button {
+	margin-left: 0;
+}
+
+@media (min-width: 700px) {
+	.section-message img {
+		float: right;
+		margin: 0.9em 1em;
+	}
+}
+
 
 /* ----- Mouse Scroll Animated Icon ----- */
 .icon-scroll .mouse {
@@ -652,13 +663,9 @@ section.block h3 {
 /* -------------------------------------- */
 
 
-.icon-list .three-box {
-  padding: 5%;
-}
-
-.icon-list .three-box p {
-  font-weight: 500 !important;
-  font-size: 18px !important;
+.icon-list .iconsbox > div {
+	padding: 20px;
+	max-width: 280px;
 }
 
 
@@ -836,7 +843,7 @@ section.block.get_started_banner .button {
 
 .form-frame {
 	width: 100%;
-	height: 600px;
+	height: 500px;
 	border: none;
 	background: var(--background-section-color);
 }

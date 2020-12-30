@@ -161,11 +161,11 @@
 
 
 	{# ~~~~~~ Zoho SalesIQ ~~~~~~ #}
-	{% if env.ZOHO_SALESIQ_WIDGETCODE %}
+	{% if env.ZOHO_SALESIQ %}
 		<script>
 		window.onload=function(){
 		window.$zoho=window.$zoho || {};$zoho.salesiq = $zoho.salesiq ||
-		{widgetcode:"{{env.ZOHO_SALESIQ_WIDGETCODE}}", values:{},ready:function(){}};
+		{widgetcode:"{{env.ZOHO_SALESIQ}}", values:{},ready:function(){}};
 		var d=document;s=d.createElement("script");s.type="text/javascript";s.id="zsiqscript";s.defer=true;
 		s.src="https://salesiq.zoho.in/widget";t=d.getElementsByTagName("script")[0];t.parentNode.insertBefore(s,t);
 		}

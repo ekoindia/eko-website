@@ -1,0 +1,28 @@
+---
+business: api
+excludeFromSitemap: true
+---
+
+{% extends "./_layouts/base.njk" %}
+
+{% block main %}
+
+<section class="block bg-shaded layout vertical horizontal-md center">
+
+	<div class="flex">
+		<img src="/assets/img/main/signup-illustration.png">
+	</div>
+
+	<div class="flex">
+		<center>
+			<h2>Sign Up</h2>
+			<div class="h2-border"></div>
+
+			{% set form = { type: "api" } %}
+			{% include "form.njk" %}
+		</center>
+	</div>
+
+</section>
+
+{% endblock %}

@@ -7,6 +7,7 @@ image: /assets/img/blog/4-eko-aeps-services-marathi.png
 tags:
   - products
   - aeps
+business: retail
 ---
 
 
