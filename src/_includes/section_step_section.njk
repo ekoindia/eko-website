@@ -1,13 +1,16 @@
 <section class="block step_section" type="step_section">
-    <h2>{{ item.header }}</h2>
-    <span class="h2-border"></span>
-    <div class="pure-g">
-        {% for box in item.steps %}
-			<div class="pure-u-1 pure-u-md-1-5 boxed">
+	<h2>{{ item.header }}</h2>
+	<span class="h2-border"></span>
+	<br><br>
+	<div class="steps">
+		{% for box in item.steps %}
+			<div class="step">
 				<h3 class="box-title">Step {{ loop.index }}:</h3>
 				<p class="box-text">{{ box.text }}</p>
-				<a href="{{ box.link }}"><small>{{ box.link }}</small></a>
-            </div>
-        {% endfor %}
-    </div>
+				{% if box.link %}
+					<small>{% linkArrow box.link, box.link, "bold" %}</small>
+				{% endif %}
+			</div>
+		{% endfor %}
+	</div>
 </section>

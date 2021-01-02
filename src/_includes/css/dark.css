@@ -17,7 +17,7 @@
   }
 
 
-  .dark .boxed:hover .box-text,
+  .dark .step:hover .box-text,
   .box-text:hover {
     color: white;
     opacity: 1;

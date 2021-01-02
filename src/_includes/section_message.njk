@@ -1,13 +1,15 @@
-<section class="block section-message pure-g" type="message">
-	<div class="pure-u-1 pure-u-md-1-4">
-		<img src="/assets/img/star.webp" loading="lazy">
-	</div>
-	<div class="pure-u-1 pure-u-md-3-4">
-		<p>{% markdown %}{{ item.line1 }}{% endmarkdown %}</p>
-		{% if item.line2 %}
-			<p>{{ item.line2 }}</p>
-		{% endif %}
-		<p class="bold">{{ item.main_line }}</p>
-		<a href="{{ website.contact_url }}" class="button outline">{{ item.button_text }}</a>
+<section class="block section-message" type="message">
+	<div class="layout vertical horizontal-md">
+		<div>
+			<img src="/assets/img/star.webp" loading="lazy">
+		</div>
+		<div>
+			<p>{% markdown %}{{ item.line1 }}{% endmarkdown %}</p>
+			{% if item.line2 %}
+				<p>{{ item.line2 }}</p>
+			{% endif %}
+			<p class="bold">{{ item.main_line }}</p>
+			<a href="{{ website.contact_url }}" class="button outline">{{ item.button_text }}</a>
+		</div>
 	</div>
 </section>
