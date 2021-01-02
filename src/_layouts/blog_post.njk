@@ -3,6 +3,10 @@
 {# Ideally set through eleventyComputed in front-matter but not working. Bug? #}
 {% set description = description or page.excerpt | trim %}
 
+{% block head %}
+	<link rel="index" href="{{ env.BASE_URL }}/blog/">
+{% endblock %}
+
 {% block custom_style %}
 	{{ css_blog | cssmin | safe }}
 {% endblock %}

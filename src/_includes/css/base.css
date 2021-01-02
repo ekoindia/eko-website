@@ -2,7 +2,6 @@
 :root {
 	--primary-color: #ffb218;
 	--accent-dark-color: #f6b243;				/* nav (bordered button, dot), link */
-	--dot-color: #ffb218;
 	--header-color: #727272;
 	--main-text-color: #666;
 	--lighter-text-color: #888;
@@ -24,7 +23,6 @@
 		Dot Box:
 			BG: #ffefd1	(tag color)
 			Dot: #ffb218
-
 
 		dark carousel pagination dot: primary
 			light pagination dot: #f7e8c8
