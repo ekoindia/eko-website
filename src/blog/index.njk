@@ -29,9 +29,10 @@ eleventyExcludeFromCollections: true
 
 	<section class="block">
 		<h3>Browse by Tag</h3>
+		<br>
 		<div class="layout horizontal wrap">
 			{% for item in collections.blogtags %}
-				<a class="nostyle" href="/blog/tags/{{item}}/">{% dotTag item, "filled" %}</a>&nbsp;
+				<a class="nostyle" href="/blog/tags/{{item}}/">{% dotTag item, "filled hash" %}</a>&nbsp;
 			{% endfor %}
 		</div>
 	</section>

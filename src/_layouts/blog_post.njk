@@ -11,12 +11,15 @@
 	<section class="block">
         <h1>{{ title }}</h1>
         <h6>
-			<time>{{ date | dateFormat('dd MMM yyyy') }}</time>
+			<time>{{ date | dateFormat('MMM d, yyyy') }}</time>
 			{% for item in tags %}
-				<a class="blogtag" href="/blog/{{item}}/">{{ item }}</h1></li></h4>
+				<a class="blogtag" href="/blog/{{item}}/">#{{ item }}</h1></li></h4>
 			{% endfor %}
 		</h6>
         <img class="hero" src="{{ image | url }}" alt="{{ image }}">
         <p>{{ content | safe }}</p>
+
+		<br><br><hr>
+		<a class="button outline" href="/blog/">{% svgico 'arrow-circle-left' %}&nbsp;All Posts</a>
     </section>
 {% endblock %}

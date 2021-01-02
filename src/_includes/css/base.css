@@ -11,7 +11,7 @@
 	--footer-background-color: #58595b;
 	--footer-column-header: #adadad;
 	--footer-text: #e4e4e4;
-	--footer-link: #8e8e8e;
+	--footer-link: #bbb;
 	--nav-caption: #b0b0b0;
 	--divider-color: #e0e0e0;
 	--button-shadow-color: rgba(254,178,25,0.6);
@@ -262,6 +262,17 @@ a.nostyle, a.nostyle:hover {
 	border-radius: 0.9em;
 	background: var(--tag-color);
 	color: var(--main-text-color);
+}
+.dottagbox.hash::before {
+	content: '#';
+	width: auto;
+	min-width: auto;
+	height: auto;
+	margin-right: 2px;
+	border-radius: 0;
+	background: transparent;
+	color: var(--primary-color);
+	font-weight: 700;
 }
 
 

@@ -62,34 +62,19 @@ img.hero {
 }
 
 
-.band {
-  width: 90%;
-  max-width: 1240px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: auto auto auto;
-  grid-gap: 20px;
-}
-@media only screen and (min-width: 30em) {
-  .band {
-      grid-template-columns: repeat(1, 1fr);
-  }
+.blogslist {
+	width: 100%;
+	/* max-width: 1240px; */
+	/* margin: 0 auto; */
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	grid-gap: 20px;
 }
 
-@media only screen and (min-width: 60em) {
-  .band {
-      grid-template-columns: repeat(2, 1fr);
-  }
-}
 
 .blogtag {
 	margin-left: 1em;
 	text-decoration: none;
-}
-
-.blogtag::before {
-	content: "•";
-	padding-right: 0.3em;
 }
 
 .card {
@@ -117,37 +102,44 @@ article {
   justify-content: space-between;
 }
 
-.band p {
+.blogslist p {
   flex: 1;
   font-size: 0.9em;
   line-height: 1.4;
 }
 
-.band time {
+.blogslist time {
   font-size: 11px;
   font-weight: bold;
   color: var(--header-color);
   letter-spacing: .05em;
 }
 
-time::before {
+/* time::before {
 	content: '📅 ';
+} */
+
+.blogslist .taglist > span {
+	font-size: 0.8em;
+	margin-right: 0.5em;
+	color: var(--lighter-text-color);
+	font-family: 'Courier New', Courier, monospace;
 }
 
-.band .thumb {
+.blogslist .thumb {
   padding-bottom: 60%;
   background-size: cover;
   height: auto;
 }
 
-.item a:hover p {
+/* .item a:hover p {
   color: var(--main-text-color) !important;
   text-decoration: none;
-}
+} */
 
-.item {
+/* .item {
   padding: 20px;
-}
+} */
 
 .blog-button {
   width: 30%;
