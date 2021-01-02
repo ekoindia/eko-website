@@ -30,4 +30,8 @@ module.exports = {
 		return `<a href="${url}" class="icolink ${classes}" ${trgt}>${text}&nbsp;&nbsp;${config.javascriptFunctions.svgico("arrow-circle-right", "text-primary")}`;
 	},
 
+
+	// Return the current year (Used in the footer for copyright message)
+	thisYear: (config) => () => new Date().getFullYear().toString(),
+
 }
