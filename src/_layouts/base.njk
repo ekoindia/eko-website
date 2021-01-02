@@ -20,29 +20,38 @@
 		{# Ignoring <noscript> for normal font load when Javascript is disabled. Fallback font will be used #}
 	{% endif %}
 
-	{% block seo %}
-		<title>{{ website.title }}</title>
-		<meta name="description" content="{{ website.tag_line }}">
-		<meta name="keywords" content="{{ website.keywords }}">
 
-		{# OpenGraph (Facebook) Social Card #}
-		<meta property="og:image" content="{{ env.BASE_URL }}{{ website.image }}">
-		<meta property="og:title" content="{{ website.title }}">
-		<meta property="og:description" content="{{ website.tag_line }}">
+	{# SEO... #}
+	<title>{{ title and title + " | " }}{{ website.title }}</title>
 
-		{# Twitter Social Card #}
-		<meta name="twitter:title" content="{{ website.title }}">
-		<meta name="twitter:description" content="{{ website.tag_line }}">
-		<meta name="twitter:image" content="{{ env.BASE_URL }}{{ website.image }}">
-	{% endblock %}
+	{% if business and business == "api" %}
+		{% set keywords_extra = ", " + website.keywords_api %}
+	{% elif business and business == "retail" %}
+		{% set keywords_extra = ", " + website.keywords_retail %}
+	{% else %}
+		{% set keywords_extra = "" %}
+	{% endif %}
+	<meta name="description" content="{{ (description or website.tag_line) | truncate(150) }}">
+	<meta name="keywords" content="{{ keywords or website.keywords }}{{ keywords_extra }}, {{ website.short_name }}">
 
-	{# Common Social metatags #}
+	{# OpenGraph (Facebook) Social Card #}
+	<meta property="og:title" content="{{ title and title + " | " }}{{ website.title }}">
+	<meta property="og:description" content="{{ description or website.tag_line }}">
+	<meta property="og:image" content="{{ env.BASE_URL }}{{ image or website.image }}">
     <meta property="og:type" content="website">
 	<meta property="og:url" content="{{ env.BASE_URL }}{{ page.url }}">
     <meta property="og:site_name" content="{{ website.title }}">
-    <meta name="twitter:card" content="website">
+
+	{# Twitter Social Card #}
+	<meta name="twitter:title" content="{{ title and title + " | " }}{{ website.title }}">
+	<meta name="twitter:description" content="{{ description or website.tag_line }}">
+	<meta name="twitter:image" content="{{ env.BASE_URL }}{{ image or website.image }}">
+	<meta name="twitter:card" content="website">
     <meta name="twitter:url" content="{{ env.BASE_URL }}{{ page.url }}">
     <meta name="twitter:site" content="{{ website.twitter_handle }}">
+
+
+	{% block head %}{% endblock %}
 
 
     {# DEFINE Main CSS Files (common to all sections & pages) #}

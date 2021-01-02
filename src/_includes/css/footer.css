@@ -28,9 +28,10 @@ footer .logo {
 }
 
 footer .column-header {
-  font-weight: bold;
-  color: var(--footer-column-header);
-  font-size: 15px;
+	color: var(--primary-color);
+	font-size: 15px;
+	font-weight: 400;
+	letter-spacing: 1px;
 }
 
 footer a {
@@ -45,6 +46,10 @@ footer .linkbox a {
 	font-size: 15px;
 	font-weight: bold;
 	line-height: 2;
+}
+
+footer .socialicons h3 {
+	margin-bottom: 5px;
 }
 
 footer .socialicons a {

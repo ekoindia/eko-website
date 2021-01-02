@@ -1,19 +1,10 @@
 {% extends "./base.njk" %}
 
-{% block seo %}
-	<title>{{ title }} | {{ website.title }}</title>
-	<meta name="description" content="{{ description or page.excerpt | trim }}">
-	{# <meta name="keywords" content="{{ website.keywords | trim }}"> #}
+{# Ideally set through eleventyComputed in front-matter but not working. Bug? #}
+{% set description = description or page.excerpt | trim %}
 
-	{# OpenGraph (Facebook) Social Card #}
-	<meta property="og:image" content="{{ env.BASE_URL }}{{ image }}">
-	<meta property="og:title" content="{{ title }} | {{ website.title }}">
-	<meta property="og:description" content="{{ description or page.excerpt | trim }}">
-
-	{# Twitter Social Card #}
-	<meta name="twitter:title" content="{{ title }} | {{ website.title }}">
-	<meta name="twitter:description" content="{{ description or page.excerpt | trim }}">
-	<meta name="twitter:image" content="{{ env.BASE_URL }}{{ image }}">
+{% block head %}
+	<link rel="index" href="{{ env.BASE_URL }}/blog/">
 {% endblock %}
 
 {% block custom_style %}
@@ -24,12 +15,15 @@
 	<section class="block">
         <h1>{{ title }}</h1>
         <h6>
-			<time>{{ date | dateFormat('dd MMM yyyy') }}</time>
+			<time>{{ date | dateFormat('MMM d, yyyy') }}</time>
 			{% for item in tags %}
-				<a class="blogtag" href="/blog/{{item}}/">{{ item }}</h1></li></h4>
+				<a class="blogtag" href="/blog/{{item}}/">#{{ item }}</h1></li></h4>
 			{% endfor %}
 		</h6>
         <img class="hero" src="{{ image | url }}" alt="{{ image }}">
         <p>{{ content | safe }}</p>
+
+		<br><br><hr>
+		<a class="button outline" href="/blog/">{% svgico 'arrow-circle-left' %}&nbsp;All Posts</a>
     </section>
 {% endblock %}

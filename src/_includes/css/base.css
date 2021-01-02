@@ -2,7 +2,6 @@
 :root {
 	--primary-color: #ffb218;
 	--accent-dark-color: #f6b243;				/* nav (bordered button, dot), link */
-	--dot-color: #ffb218;
 	--header-color: #727272;
 	--main-text-color: #666;
 	--lighter-text-color: #888;
@@ -11,7 +10,7 @@
 	--footer-background-color: #58595b;
 	--footer-column-header: #adadad;
 	--footer-text: #e4e4e4;
-	--footer-link: #8e8e8e;
+	--footer-link: #bbb;
 	--nav-caption: #b0b0b0;
 	--divider-color: #e0e0e0;
 	--button-shadow-color: rgba(254,178,25,0.6);
@@ -24,7 +23,6 @@
 		Dot Box:
 			BG: #ffefd1	(tag color)
 			Dot: #ffb218
-
 
 		dark carousel pagination dot: primary
 			light pagination dot: #f7e8c8
@@ -58,6 +56,46 @@ body {
 	from { opacity: 0; }
 	to { opacity: 1; }
 } */
+
+
+
+section.block, nav.topnav, footer {
+	box-sizing: border-box;
+	width: 100%;
+	margin: 0 auto;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+section.block {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+@media (min-width: 576px) {
+	section.block, nav.topnav, footer {
+		padding-left: 10%;
+		padding-right: 10%;
+	}
+
+	section.block {
+		padding-top: 3%;
+		padding-bottom: 3%;
+	}
+
+	main {
+		padding-top: 1%;
+	}
+}
+
+@media (min-width: 1300px) {
+	section.block, nav.topnav, footer {
+		padding-left: calc( (100% - 1100px) / 2 );
+		padding-right: calc( (100% - 1100px) / 2 );
+	}
+}
+
+
 
 
 /* For compatibility with PureCSS.io */
@@ -263,6 +301,17 @@ a.nostyle, a.nostyle:hover {
 	background: var(--tag-color);
 	color: var(--main-text-color);
 }
+.dottagbox.hash::before {
+	content: '#';
+	width: auto;
+	min-width: auto;
+	height: auto;
+	margin-right: 2px;
+	border-radius: 0;
+	background: transparent;
+	color: var(--primary-color);
+	font-weight: 700;
+}
 
 
 .svgico {
@@ -347,36 +396,6 @@ ul.slim_ul > li::before, .slim_ul ul > li::before {
 
 
 /* ============= SECTIONS / COMPONENTS =================== */
-
-section.block, nav.topnav, footer {
-	box-sizing: border-box;
-	width: 100%;
-	margin: 0;
-	padding-left: 20px;
-	padding-right: 20px;
-}
-
-section.block {
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-
-@media (min-width: 576px) {
-	section.block, nav.topnav, footer {
-		padding-left: 10%;
-		padding-right: 10%;
-	}
-
-	section.block {
-		padding-top: 3%;
-		padding-bottom: 3%;
-	}
-
-	main {
-		padding-top: 1%;
-	}
-}
-
 
 .l-box {
 	padding: 1em;
@@ -528,44 +547,38 @@ section.block h3 {
   max-width: 100%;
 }
 
+
+
 .step_section h3 {
   font-size: 24px;
-  color: var(--header-color);
   font-weight: 500;
 }
 .step_section p {
   color: var(--main-text-color);
-  opacity: 1;
   font-weight: 500;
 }
 
-.step_section .boxed {
-  max-width: 200px;
-  display: block;
+.step_section .steps {
+	display:grid;
+	grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
+	grid-gap:15px;
+}
+
+.step_section .step {
   border: 1px solid  var(--main-text-color);
   border-radius: 15px;
-  padding-top: 30px;
-  padding-bottom: 70px;
-  padding-left: 20px;
-  margin: 10px;
+  padding: 10%;
   opacity: 0.5;
+  transition: all 0.2s ease-out;
 }
-.step_section .boxed:hover{
+.step_section .step:hover{
   background-color: var(--background-section-color);
   border-color: var(--primary-color);
-}
-
-.step_section .boxed:hover .box-text,
-.step_section .box-text:hover {
-  color: var(--header-color);
   opacity: 1;
 }
 
-.step_section .boxed:hover .box-title,
-.step_section .box-title:hover {
-  color: var(--primary-color);
-  opacity: 1;
-}
+
+
 
 .small_heros img {
 	margin: 1em;
@@ -620,9 +633,13 @@ section.block h3 {
 }
 
 @media (min-width: 700px) {
+	.section-message > div {
+		padding:0 10%;
+	}
+
 	.section-message img {
-		float: right;
-		margin: 0.9em 1em;
+
+		padding: 0.9em 1em;
 	}
 }
 
@@ -723,13 +740,21 @@ section.block.get_started_banner .button {
 .accordion .drop-down-menu {
   display: block;
   padding: 0.2em;
-  width: 70%;
+  width: 100%;
   border: solid 1px #d4d4d4;
   border-radius: 4px;
   cursor: pointer;
   margin-bottom: 20px;
   text-align: left;
 }
+
+
+@media (min-width: 700px) {
+	.accordion .drop-down-menu {
+		width: 70%;
+	}
+}
+
 
 .accordion .menu-title {
   display: block;

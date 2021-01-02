@@ -4,23 +4,11 @@ business: api
 
 {% extends "./base.njk" %}
 
-{% if 'social_image' in developer and 'tag_line' in developer %}
-	{% block seo %}
-		<title>{{ developer.name }}</title>
-		<meta name="description" content="{{ developer.tag_line }}">
-		<meta name="keywords" content="{{ developer.keywords }}">
-
-		{# Facebook #}
-		<meta property="og:image" content="{{ developer.social_image }}">
-		<meta property="og:title" content="{{ developer.name }}"/>
-		<meta property="og:description" content="{{ developer.tag_line }}"/>
-
-		{# Twitter #}
-		<meta name="twitter:title" content="{{ developer.name }}">
-		<meta name="twitter:description" content="{{ developer.tag_line }}">
-		<meta name="twitter:image" content="{{ developer.social_image }}">
-	{% endblock %}
-{% endif %}
+{# Ideally set through eleventyComputed in front-matter but not working. Bug? #}
+{% set title = developer.name + " | Developers" %}
+{% set description = developer.summary or developer.description %}
+{% set keywords = developer.keywords %}
+{% set image = developer.social_image or developer.image %}
 
 {% block main %}
 

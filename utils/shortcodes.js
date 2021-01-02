@@ -22,9 +22,16 @@ module.exports = {
 	// Uses 'svgico' shortcode for inline SVG icon.
 	// Pass "bold" in the second 'classes' parameter for bold text.
 	linkArrow: (config) => (url, text, classes = '') => {
+		if (!text) {
+			return '';
+		}
 		url = url || '/';
 		const trgt = url.toLowerCase().startsWith('http') ? 'rel="noopener" target="_blank"' : '';
 		return `<a href="${url}" class="icolink ${classes}" ${trgt}>${text}&nbsp;&nbsp;${config.javascriptFunctions.svgico("arrow-circle-right", "text-primary")}`;
 	},
+
+
+	// Return the current year (Used in the footer for copyright message)
+	thisYear: (config) => () => new Date().getFullYear().toString(),
 
 }
