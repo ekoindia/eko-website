@@ -58,6 +58,46 @@ body {
 } */
 
 
+
+section.block, nav.topnav, footer {
+	box-sizing: border-box;
+	width: 100%;
+	margin: 0 auto;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+section.block {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+@media (min-width: 576px) {
+	section.block, nav.topnav, footer {
+		padding-left: 10%;
+		padding-right: 10%;
+	}
+
+	section.block {
+		padding-top: 3%;
+		padding-bottom: 3%;
+	}
+
+	main {
+		padding-top: 1%;
+	}
+}
+
+@media (min-width: 1300px) {
+	section.block, nav.topnav, footer {
+		padding-left: calc( (100% - 1100px) / 2 );
+		padding-right: calc( (100% - 1100px) / 2 );
+	}
+}
+
+
+
+
 /* For compatibility with PureCSS.io */
 .pure-g [class *= "pure-u"] {
     font-family: 'Roboto', sans-serif;
@@ -357,36 +397,6 @@ ul.slim_ul > li::before, .slim_ul ul > li::before {
 
 /* ============= SECTIONS / COMPONENTS =================== */
 
-section.block, nav.topnav, footer {
-	box-sizing: border-box;
-	width: 100%;
-	margin: 0;
-	padding-left: 20px;
-	padding-right: 20px;
-}
-
-section.block {
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-
-@media (min-width: 576px) {
-	section.block, nav.topnav, footer {
-		padding-left: 10%;
-		padding-right: 10%;
-	}
-
-	section.block {
-		padding-top: 3%;
-		padding-bottom: 3%;
-	}
-
-	main {
-		padding-top: 1%;
-	}
-}
-
-
 .l-box {
 	padding: 1em;
 }
@@ -541,12 +551,10 @@ section.block h3 {
 
 .step_section h3 {
   font-size: 24px;
-  color: var(--header-color);
   font-weight: 500;
 }
 .step_section p {
   color: var(--main-text-color);
-  opacity: 1;
   font-weight: 500;
 }
 
@@ -561,23 +569,16 @@ section.block h3 {
   border-radius: 15px;
   padding: 10%;
   opacity: 0.5;
+  transition: all 0.2s ease-out;
 }
 .step_section .step:hover{
   background-color: var(--background-section-color);
   border-color: var(--primary-color);
-}
-
-.step_section .step:hover .box-text,
-.step_section .box-text:hover {
-  color: var(--header-color);
   opacity: 1;
 }
 
-.step_section .step:hover .box-title,
-.step_section .box-title:hover {
-  color: var(--primary-color);
-  opacity: 1;
-}
+
+
 
 .small_heros img {
 	margin: 1em;
@@ -739,13 +740,21 @@ section.block.get_started_banner .button {
 .accordion .drop-down-menu {
   display: block;
   padding: 0.2em;
-  width: 70%;
+  width: 100%;
   border: solid 1px #d4d4d4;
   border-radius: 4px;
   cursor: pointer;
   margin-bottom: 20px;
   text-align: left;
 }
+
+
+@media (min-width: 700px) {
+	.accordion .drop-down-menu {
+		width: 70%;
+	}
+}
+
 
 .accordion .menu-title {
   display: block;
