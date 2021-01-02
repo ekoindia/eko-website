@@ -1,21 +1,5 @@
 {% extends "./base.njk" %}
 
-{% block seo %}
-	<title>{{ title }} | {{ website.title }}</title>
-	<meta name="description" content="{{ description }}">
-	<meta name="keywords" content="{{ keywords }}">
-
-	{# OpenGraph (Facebook) Social Card #}
-	<meta property="og:image" content="{{ env.BASE_URL }}{{ image }}">
-	<meta property="og:title" content="{{ title }} | {{ website.title }}">
-	<meta property="og:description" content="{{ description }}">
-
-	{# Twitter Social Card #}
-	<meta name="twitter:title" content="{{ title }} | {{ website.title }}">
-	<meta name="twitter:description" content="{{ description }}">
-	<meta name="twitter:image" content="{{ env.BASE_URL }}{{ image }}">
-{% endblock %}
-
 {% block custom_style %}
 	{{ css_blog | cssmin | safe }}
 {% endblock %}

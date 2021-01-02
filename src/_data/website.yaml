@@ -1,4 +1,5 @@
-title: Eko
+title: Eko India Financial Services
+short_name: Eko
 logo: /assets/img/logo.svg
 signup_url: /sign-up
 contact_url: /contact-us
@@ -9,6 +10,8 @@ developer_portal: https://developers.eko.in
 #### SEO & Social...
 tag_line: Best way to collect cash at your doorstep
 keywords: Payment Service Provider In India, Recharges, Money Transfer service, Payments, Payment Collection, Payment Service Provider
+keywords_retail: retailer, earn, cash
+keywords_api: API, SDK, library, developer, EPS
 image: /assets/img/main/homepage.png
 facebook: https://www.facebook.com/ekoindia
 linkedin: https://www.linkedin.com/company/eko-india-financial-services-private-limited/?originalSubdomain=in

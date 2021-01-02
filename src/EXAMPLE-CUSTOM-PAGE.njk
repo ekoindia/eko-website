@@ -1,3 +1,10 @@
+---
+title: Page Title for SEO (goes into the HTML <title> tag and used on social-media when shared)
+description: Page Description for SEO (and used on social-media when shared)
+keywords: Page keywords (comma-separated) for SEO (and used on social-media when shared)
+image: Optional image to be used when shared on social-media
+---
+
 {#
 	This is a sample custom page created using Nunjucks.
 
@@ -11,19 +18,6 @@
 {# extend the base layout to automatically include navigation bar + footer #}
 {% extends "./_layouts/base.njk" %}
 
-{# You can optionally include this SEO block to change the meta tags and social media links for this page #}
-{# {% block seo %}
-	<title></title>
-	<meta name="description" content="">
-	<meta name="keywords" content="">
-	<meta property="og:image" content="">
-	<meta property="og:title" content=""/>
-	<meta property="og:description" content=""/>
-
-	<meta name="twitter:title" content="">
-	<meta name="twitter:description" content="">
-	<meta name="twitter:image" content="">
-{% endblock %} #}
 
 {# Put all your custom page html in the "main" block here: #}
 {% block main %}

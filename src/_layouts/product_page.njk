@@ -4,23 +4,12 @@ business: retail
 
 {% extends "./base.njk" %}
 
-{% if 'social_image' in product and 'tag_line' in product %}
-	{% block seo %}
-		<title>{{ product.name }} | {{ website.title }}</title>
-		<meta name="description" content="{{ product.tag_line }}">
-		<meta name="keywords" content="{{ product.keywords }}">
+{# Ideally set through eleventyComputed in front-matter but not working. Bug? #}
+{% set title = product.name + " | Retail" %}
+{% set description = product.summary or product.description %}
+{% set keywords = product.keywords %}
+{% set image = product.social_image or product.image %}
 
-		{# Facebook #}
-		<meta property="og:image" content="{{ product.social_image }}">
-		<meta property="og:title" content="{{ product.name }} | {{ website.title }}"/>
-		<meta property="og:description" content="{{ product.tag_line }}"/>
-
-		{# Twitter #}
-		<meta name="twitter:title" content="{{ product.name }} | {{ website.title }}">
-		<meta name="twitter:description" content="{{ product.tag_line }}">
-		<meta name="twitter:image" content="{{ product.social_image }}">
-	{% endblock %}
-{% endif %}
 
 {% block main %}
 

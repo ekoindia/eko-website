@@ -3,7 +3,7 @@
   title_short: Money Transfer API
   tag_line: Easiest way to transfer cash to anyone
   social_image: /assets/img/money-transfer/easy-cash-transfer.png
-  keywords: money transfer, DMT, API, developer
+  keywords: money transfer, DMT
   hero_image: /assets/img/developers/money-transfer-api.svg
   summary: A simple and highly secure direct money transfer ability for your customers using cash with industry-leading success rates
   description: Eko’s money transfer API allows your retailers to turn their shop into mini bank. Customers who need assistance for transferring money using cash can visit these retailer shops. Integrate with us to increase the growth of your business and that of your retailers.
@@ -86,7 +86,7 @@
   title: AePS SDK
   tag_line: AePS - Aadhaar Enabled Payment System
   social_image: /assets/img/aadhaar-banking/AePS_hero.png
-  keywords: Aadhaar Banking, Cashout, ATM, API, developer
+  keywords: Aadhaar Banking, Cashout, ATM
   hero_image: /assets/img/developers/aeps-main.svg
   summary: AePS via SDK is a simple and highly secure cash withdrawal system developed by NPCI for Indians using their Aadhaar linked bank accounts
   description: AePS allows a customer to use Aadhaar and access their bank account to perform basic banking transactions like cash-deposit, cash-withdrawal, intrabank or interbank fund-transfer, balance-inquiry, and access their mini statement with just their fingerprint.
@@ -183,7 +183,7 @@
   title: Fund Settlement API
   tag_line: Make salary & vendor payments easily
   social_image: /assets/img/developers/salary-disbursal-first-fold.svg
-  keywords: fund settlement, disbursal, vendor payment, salary payment, API, developer
+  keywords: fund settlement, disbursal, vendor payment, salary payment
   hero_image: /assets/img/developers/salary-disbursal-first-fold.svg
   summary: Get our easy-to-use fund settlement API and pay your employees and vendors their payments using your digital wallet balance with ease.
   description: Make instant, automated payments to your vendors or pay wages to your employees. The best part is that you can use your e-money balance for the payouts.
@@ -263,7 +263,7 @@
   title: Cash Collection Service
   tag_line: Assisted Cash Management System
   social_image: /assets/img/developers/assisted-cash-management.svg
-  keywords: e-money, cash management, cash collection, API, developer
+  keywords: e-money, cash management, cash collection
   hero_image: /assets/img/developers/assisted-cash-management.svg
   summary: Eko provides technical service assistance to help you set up a cash management system for your Retailers.
   description: Eko provides an easy-to-use Cash Collection service which helps you set up a cash management system for your retailers. This system makes e-money transfer hassle-free for you and your retailers. We bear the end-to-end technical burden, reducing your integration task to a mere formality.
@@ -342,7 +342,7 @@
   title: PAN Verification API
   tag_line: Customer onboarding & verification made easy
   social_image: /assets/img/developers/pan-verification.svg
-  keywords: PAN verification, NSDL, API, developer
+  keywords: PAN verification, NSDL
   hero_image: /assets/img/developers/pan-verification.svg
   summary: Real-time onboarding and verification of users is as easy as it gets with out PAN Verification API. Just integrate the API and get going.
   description: Use Eko’s NSDL-powered Pan verification API to validate your customers, employees, and merchants. Our easy-to-use API has made pan-fraud a thing of the past.
@@ -413,7 +413,7 @@
   title: Account Verification API
   tag_line: Simple & easy way to verify bank account
   social_image: /assets/img/developers/bank-verification.svg
-  keywords: bank account verification, API, developer
+  keywords: bank account verification
   hero_image: /assets/img/developers/bank-verification.svg
   summary: Account verification API to ensure that your money goes exactly where it is supposed to. No IFSC code needed.
   description: Bank account numbers are usually long & difficult to remember. Before sending money to any bank account, it should ideally be verified to avoid customer complaints. Using Eko’s bank account verification API, you can verify any bank account number with the click of a button.

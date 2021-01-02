@@ -1,20 +1,7 @@
 {% extends "./base.njk" %}
 
-{% block seo %}
-	<title>{{ title }} | {{ website.title }}</title>
-	<meta name="description" content="{{ description or page.excerpt | trim }}">
-	{# <meta name="keywords" content="{{ website.keywords | trim }}"> #}
-
-	{# OpenGraph (Facebook) Social Card #}
-	<meta property="og:image" content="{{ env.BASE_URL }}{{ image }}">
-	<meta property="og:title" content="{{ title }} | {{ website.title }}">
-	<meta property="og:description" content="{{ description or page.excerpt | trim }}">
-
-	{# Twitter Social Card #}
-	<meta name="twitter:title" content="{{ title }} | {{ website.title }}">
-	<meta name="twitter:description" content="{{ description or page.excerpt | trim }}">
-	<meta name="twitter:image" content="{{ env.BASE_URL }}{{ image }}">
-{% endblock %}
+{# Ideally set through eleventyComputed in front-matter but not working. Bug? #}
+{% set description = description or page.excerpt | trim %}
 
 {% block custom_style %}
 	{{ css_blog | cssmin | safe }}
