@@ -17,7 +17,7 @@
         <h6>
 			<time>{{ date | dateFormat('MMM d, yyyy') }}</time>
 			{% for item in tags %}
-				<a class="blogtag" href="/blog/{{item}}/">#{{ item }}</h1></li></h4>
+				<a class="blogtag" href="/blog/tags/{{item}}/">#{{ item }}</h1></li></h4>
 			{% endfor %}
 		</h6>
         <img class="hero" src="{{ image | url }}" alt="{{ image }}">
