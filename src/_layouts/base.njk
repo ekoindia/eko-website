@@ -50,6 +50,10 @@
     <meta name="twitter:url" content="{{ env.BASE_URL }}{{ page.url }}">
     <meta name="twitter:site" content="{{ website.twitter_handle }}">
 
+	{# RSS Atom Feed #}
+	<link rel="alternate" href="{{ env.BASE_URL }}/feed.xml" type="application/atom+xml"
+    title="Blog Feed | {{ website.title }}">
+
 
 	{% block head %}{% endblock %}
 

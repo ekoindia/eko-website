@@ -6,6 +6,7 @@ const htmlmin = require("html-minifier");
 // const eleventyNavigationPlugin = require('@11ty/eleventy-navigation');
 const blogTools = require("eleventy-plugin-blog-tools");
 const svgContents = require("eleventy-plugin-svg-contents");
+const pluginRss = require("@11ty/eleventy-plugin-rss");
 
 const filters = require('./utils/filters.js');
 const shortcodes = require('./utils/shortcodes.js');
@@ -39,6 +40,7 @@ module.exports = function(eleventyConfig) {
 	// eleventyConfig.addPlugin(eleventyNavigationPlugin);
 	eleventyConfig.addPlugin(svgContents);
 	eleventyConfig.addPlugin(blogTools);
+	eleventyConfig.addPlugin(pluginRss);
 
 	// Add Universal Filters
 	Object.keys(filters).forEach((filterName) => {
