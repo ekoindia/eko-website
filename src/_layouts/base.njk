@@ -37,7 +37,7 @@
 	{# OpenGraph (Facebook) Social Card #}
 	<meta property="og:title" content="{{ title and title + " | " }}{{ website.title }}">
 	<meta property="og:description" content="{{ description or website.tag_line }}">
-	<meta property="og:image" content="{{ env.BASE_URL }}{{ image or website.image }}">
+	<meta property="og:image" content="{{ env.BASE_URL }}{% SocialImagePath image or website.image %}">
     <meta property="og:type" content="website">
 	<meta property="og:url" content="{{ env.BASE_URL }}{{ page.url }}">
     <meta property="og:site_name" content="{{ website.title }}">
@@ -45,7 +45,7 @@
 	{# Twitter Social Card #}
 	<meta name="twitter:title" content="{{ title and title + " | " }}{{ website.title }}">
 	<meta name="twitter:description" content="{{ description or website.tag_line }}">
-	<meta name="twitter:image" content="{{ env.BASE_URL }}{{ image or website.image }}">
+	<meta name="twitter:image" content="{{ env.BASE_URL }}{% SocialImagePath image or website.image %}">
 	<meta name="twitter:card" content="website">
     <meta name="twitter:url" content="{{ env.BASE_URL }}{{ page.url }}">
     <meta name="twitter:site" content="{{ website.twitter_handle }}">

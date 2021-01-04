@@ -449,6 +449,9 @@ section.block h3 {
 .index-page-hero .main-header {
 	font-size: 30px;
 	max-width: 95%;
+	margin-top: 0;
+	margin-bottom: 5px;
+	line-height: 1.15;
 }
 
 .index-page-hero .bg-image {

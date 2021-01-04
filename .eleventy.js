@@ -7,6 +7,7 @@ const htmlmin = require("html-minifier");
 const blogTools = require("eleventy-plugin-blog-tools");
 const svgContents = require("eleventy-plugin-svg-contents");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
+const Image = require("@11ty/eleventy-img");
 
 const filters = require('./utils/filters.js');
 const shortcodes = require('./utils/shortcodes.js');
@@ -35,7 +36,6 @@ require('dotenv').config();
 
 module.exports = function(eleventyConfig) {
 
-
 	// Add Eleventy Plugins...
 	// eleventyConfig.addPlugin(eleventyNavigationPlugin);
 	eleventyConfig.addPlugin(svgContents);
@@ -54,6 +54,57 @@ module.exports = function(eleventyConfig) {
 
 	// Add Icon Sprite
 	// eleventyConfig.addNunjucksAsyncShortcode('iconsprite', iconsprite);
+
+
+	// --------------------- Add 11ty-Image AsyncShortCodes -------------------------
+
+	eleventyConfig.addAsyncShortcode("Image", async (src, alt, lazy, classes, urlOnly) => {
+		if (!src) {
+			throw new Error(`Missing \`src\` on Image: ALT = ${alt}`);
+		}
+
+		if (!alt) {
+			throw new Error(`Missing \`alt\` on Image from: ${src}`);
+		}
+
+		lazy = lazy || false;
+		classes = classes || '';
+		src = fixSrcPath(src);
+
+		let meta = await Image(src, {
+			widths: [600, 800, 1200, null],
+			formats: ["svg", "webp", "jpeg"],
+			urlPath: "/img/",
+			outputDir: "./_site/img/",
+			svgShortCircuit: true
+		});
+
+		let lowsrc = meta.jpeg && meta.jpeg.length > 0 ? meta.jpeg[0] : meta.svg[0];
+
+		if (urlOnly) {
+			return lowsrc.url;
+		}
+		else {
+			const sources = `${Object.values(meta).map(format => format && format[0] ? `<source type="image/${format[0].format}" srcset="${format.map(entry => entry.srcset).join(", ")}">` : '').join("\n")}`;
+
+			return `<picture>${sources}<img class="${classes}" src="${lowsrc.url}" alt="${alt}" ${lazy ? 'loading="lazy"' : ''}></picture>`;
+		}
+	});
+
+	// Returns 1200px wide JPEG social-media (open-graph) image path.
+	eleventyConfig.addAsyncShortcode("SocialImagePath", async (src) => {
+		if (!src) return '';
+		src = fixSrcPath(src);
+
+		let meta = await Image(src, {
+			widths: [1200],
+			formats: ["jpeg"],
+			urlPath: "/img/",
+			outputDir: "./_site/img/"
+		});
+		return meta.jpeg && meta.jpeg.length > 0 ? meta.jpeg[0].url : '';
+	});
+
 
 
 	// ---------------------- Configure Markdown Support ----------------------------
@@ -222,5 +273,19 @@ module.exports = function(eleventyConfig) {
 		},
 		htmlTemplateEngine: 'njk',
 		markdownTemplateEngine: 'njk',
+	}
+}
+
+
+/**
+ * Fix public asset path relative to "src" folder
+ */
+function fixSrcPath(url)
+{
+	if ((url.startsWith('/') || url.startsWith('./')) && !url.startsWith('./src')) {
+		return './src' + url;
+	}
+	else {
+		return url;
 	}
 }
