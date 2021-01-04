@@ -4,16 +4,20 @@
 			<div class="thumb" style="background-image: url({% Image blog.data.image, 'Image', false, '', true %})"></div>
 			<article>
 				<h4>{{ blog.data.title }}</h4>
-				<p>{{ (blog.data.page.excerpt or blog.data.description) | truncate(250) }}</p>
-				<div class="layout horizontal end">
+				<p>
+					{{ (blog.data.page.excerpt or blog.data.description) | truncate(250) }}
 					<div class="taglist flex">
 						{% for tag in blog.data.tags %}
 							<span class="post-tag">#{{ tag }}</span>
 						{% endfor %}
 					</div>
-					<time datetime="{{ blog.date | dateFormat('yyyy-mm-dd') }}">{{ blog.date | dateFormat('MMM d, yyyy') }}</time>
+				</p>
+				<div class="layout horizontal center">
+					<div class="flex">
+						<time datetime="{{ blog.date | dateFormat('yyyy-mm-dd') }}">{{ blog.date | dateFormat('MMM d, yyyy') }}</time>
+					</div>
+					<small class="bold">{% dotTag "Read More", "filled" %}</small>
 				</div>
-
 			</article>
 		</a>
     {% endfor %}

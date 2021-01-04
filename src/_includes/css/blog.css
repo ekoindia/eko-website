@@ -129,7 +129,7 @@ img.hero {
 	font-weight: bold;
 	margin-right: 0.5em;
 	color: var(--lighter-text-color);
-	font-family: 'Courier New', Courier, monospace;
+	/* font-family: 'Courier New', Courier, monospace; */
 }
 
 .blogslist .thumb {
