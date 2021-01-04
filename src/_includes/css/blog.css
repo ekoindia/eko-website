@@ -77,29 +77,34 @@ img.hero {
 	text-decoration: none;
 }
 
-.card {
-  background: white;
-  text-decoration: none;
-  color: var(--main-text-color);
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  top: 0;
-  transition: all .1s ease-in;
+.blogslist .card {
+	background: white;
+	text-decoration: none;
+	color: var(--main-text-color);
+	border-radius: 5px;
+	overflow: hidden;
+	box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	transition: all .1s ease-out;
 }
 
-.card:hover {
-  top: -2px;
-  box-shadow: 0 4px 5px rgba(0,0,0,0.2);
+.blogslist .card:hover {
+	transform: translateY(-2px);
+	box-shadow: 0 4px 5px rgba(0,0,0,0.2);
 }
 
-article {
+.blogslist article {
   padding: 20px;
   flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+.blogslist h4 {
+	margin: 0.2em 0;
 }
 
 .blogslist p {
@@ -121,15 +126,20 @@ article {
 
 .blogslist .taglist > span {
 	font-size: 0.8em;
+	font-weight: bold;
 	margin-right: 0.5em;
 	color: var(--lighter-text-color);
-	font-family: 'Courier New', Courier, monospace;
+	/* font-family: 'Courier New', Courier, monospace; */
 }
 
 .blogslist .thumb {
   padding-bottom: 60%;
   background-size: cover;
   height: auto;
+}
+
+.pagination a {
+	color: var(--main-text-color);
 }
 
 /* .item a:hover p {

@@ -2,36 +2,24 @@ text: Eko has been catering to millions of low and moderate-income Indians by pr
 copyright: Eko™. All rights reserved.
 contact_button_text: Contact Sales
 
-column1:
-  header: DEVELOPER PRODUCTS
-  links:
-    - label: DMT API
-      url: /developers/eps/domestic-money-transfer-api
-    - label: AePS Cashout SDK
-      url: /developers/eps/aeps-cashout-sdk
-    - label: Fund Settlement API
-      url: /developers/eps/fund-settlement-api
-    - label: Cash Collection API
-      url: /developers/eps/cash-collection-api
-    - label: PAN Verification API
-      url: /developers/eps/pan-verification-api
-    - label: Account Verification API
-      url: /developers/eps/account-verification-api
+columns:
+  - column: DEVELOPER PRODUCTS
+    type: api
 
-column2:
-  header: COMPANY
-  links:
-    - label: About Us
-      url: /about-us
-    - label: Blogs
-      url: /blog
-    - label: FAQs
-      url: /faq
-    - label: T&C
-      url: /Eko_Customer_TC.pdf
-    - label: Privacy Policy
-      url: /privacy-policy
-    - label: Other Documents
-      url: /other-documents
-    - label: Grievance
-      url: /grievance
+  - column: COMPANY
+    type: links
+    links:
+      - label: About Us
+        url: /about-us
+      - label: Blogs
+        url: /blog
+      - label: FAQs
+        url: /faq
+      - label: T&C
+        url: /Eko_Customer_TC.pdf
+      - label: Privacy Policy
+        url: /privacy-policy
+      - label: Other Documents
+        url: /other-documents
+      - label: Grievance
+        url: /grievance

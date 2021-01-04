@@ -5,30 +5,35 @@
 		<p><small>© {% thisYear %} {{ footer.copyright }}</small></p>
 	</div>
 
-	<div class="linkbox pure-u-1 pure-u-md-1-5">
-		<h3 class="column-header">{{ footer.column1.header }}</h3>
-		{% for link in footer.column1.links -%}
-			<a href="{{ link.url }}">{{link.label}}</a>
-			<br>
-		{%- endfor %}
-	</div>
+	{# Footer link columns: #}
+	{% for col in footer.columns -%}
+		<div class="linkbox pure-u-1 pure-u-md-1-5">
+			<h3 class="column-header">{{ col.column }}</h3>
 
-	{# <div class="linkbox pure-u-1 pure-u-md-1-5 l-box">
-		<h3 class="column-header">{{ footer.column1.header }}</h3>
-		{% for item in developers | rejectattr("hidden") | rejectattr("disabled") -%}
-			<a href="/developers/eps/{{ item.name | slug }}">{{item.title}}</a>
-				<br>
-		{%- endfor %}
-	</div> #}
+			{% if col.type == "api" %}
+				{% for item in developers | rejectattr("hidden") | rejectattr("disabled") -%}
+					<a href="/developers/eps/{{ item.name | slug }}">{{item.title_short or item.title}}</a>
+					<br>
+				{%- endfor %}
+			{% endif %}
 
-	<div class="linkbox pure-u-1 pure-u-md-1-5">
-		<h3 class="column-header">{{ footer.column2.header }}</h3>
-		{% for link in footer.column2.links -%}
-			<a href="{{ link.url }}">{{link.label}}</a>
-			<br>
-		{%- endfor %}
-	</div>
+			{% if col.type == "retail" %}
+				{% for item in products | rejectattr("hidden") | rejectattr("disabled") -%}
+					<a href="/products/{{ item.name | slug }}">{{item.title_short or item.title}}</a>
+					<br>
+				{%- endfor %}
+			{% endif %}
 
+			{% if col.type == "links" %}
+				{% for link in col.links -%}
+					<a href="{{ link.url }}">{{link.label}}</a>
+					<br>
+				{%- endfor %}
+			{% endif %}
+		</div>
+	{%- endfor %}
+
+	{# Signup and Follow Section  #}
 	<div class="signupbox pure-u-1 pure-u-md-1-5">
 		<br>
 		<a href="{{ website.signup_url }}" class="button">Sign Up</a>
@@ -42,6 +47,7 @@
 			<a href="{{ website.linkedin }}" target="_blank" rel="noopener" title="{{ website.short_name }} LinkedIn Page">{% svgico 'linkedin-square' %}</a>
 			<a href="{{ website.twitter }}" target="_blank" rel="noopener" title="{{ website.short_name }} Twitter Page">{% svgico 'twitter-square' %}</a>
 			<a href="{{ website.github }}" target="_blank" rel="noopener" title="{{ website.short_name }} Github Page">{% svgico 'github-square' %}</a>
+			<a href="/feed.xml" target="_blank" title="RSS Feed: {{ website.short_name }} Blog">{% svgico 'rss-square' %}</a>
 		</div>
 	</div>
 </footer>

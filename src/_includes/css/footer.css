@@ -57,6 +57,10 @@ footer .socialicons a {
 	margin-right: 0.5em;
 }
 
+footer a.button {
+	color: var(--footer-background-color) !important;
+}
+
 footer .linkbox a:hover, footer .socialicons a:hover {
   color: var(--primary-color);
 }

@@ -1,21 +1,19 @@
-
-#links p {
-  letter-spacing: 0;
-  border: none;
-  margin: 0;
-  padding: 0;
-  text-align: left !important;
-  display: flex;
-  justify-content: center;
+#links a {
+	padding: 2px 1em;
+	margin: 0.8em 0.5em;
+	height: 36px;
+	border: 1px solid var(--primary-color);
+	color: var(--main-text-color);
+	border-radius: 18px;
+	display: inline-flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	text-decoration: none;
 }
 
-#links a:hover {
-  background-color: rgba(136, 52, 52, 0.05);
-  color: var(--primary-color);
-  padding: 2px;
-  text-decoration: none;
-}
-
-#links div[selected] a {
-	font-weight: 700;
+#links a:hover, #links a[selected] {
+	background-color: var(--primary-color);
+	color: white;
+	text-decoration: none;
 }

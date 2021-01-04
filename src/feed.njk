@@ -1,0 +1,31 @@
+---
+permalink: feed.xml
+eleventyExcludeFromCollections: true
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+<title>Blog | {{ website.title }}</title>
+<subtitle>{{ website.company_description }}</subtitle>
+<link href="{{ env.BASE_URL }}/feed.xml" rel="self"/>
+<link href="{{ env.BASE_URL }}/"/>
+<updated>{{ collections.blog | rssLastUpdatedDate }}</updated>
+<id>{{ env.BASE_URL }}/</id>
+<author>
+	<name>{{ website.short_name }}</name>
+	<email>{{ website.email }}</email>
+</author>
+{%- for post in collections.blog | reverse -%}
+{% set absolutePostUrl %}{{ post.url | url | absoluteUrl(env.BASE_URL) }}{% endset %}
+<entry>
+	<title>{{ post.data.title }}</title>
+	<link href="{{ absolutePostUrl }}"/>
+	<updated>{{ post.date | rssDate }}</updated>
+	<id>{{ absolutePostUrl }}</id>
+	<author>
+		<name>{{ website.short_name }}</name>{# TODO: Put actual blog post author info here #}
+		<email>{{ website.email }}</email>
+	</author>
+	<content type="html">{{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) }}</content>
+</entry>
+{%- endfor -%}
+</feed>

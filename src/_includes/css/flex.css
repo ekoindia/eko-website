@@ -1,5 +1,6 @@
 /* ---- Most common flex styles ---- */
 
+/* .flex-h, .flex-v, .flex-h-c, .flex-v-c, .flex-h-cc, .flex-v-cc, */
 .layout.horizontal,
 .layout.vertical,
 .layout.horizontal-reverse,
@@ -7,6 +8,7 @@
 	display: flex;
 }
 
+/* .flex-i-h, .flex-i-v, .flex-i-h-c, .flex-i-v-c, .flex-i-h-cc, .flex-i-v-cc, */
 .layout.inline {
 	display: inline-flex;
 }
@@ -27,11 +29,13 @@
 	flex-wrap: nowrap;
 }
 
+/* .flex-h-c, .flex-v-c, .flex-h-cc, .flex-v-cc, */
 .layout.center,
 .layout.center-center {
 	align-items: center;
 }
 
+/* .flex-h-cc, .flex-v-cc, */
 .layout.center-justified,
 .layout.center-center {
 	justify-content: center;

@@ -27,7 +27,7 @@ eleventyComputed:
 	<section class="block">
 		<header>
 			<h1>Blog posts tagged  “#{{ tag }}”</h1>
-			<a class="button outline" href="/blog">see all posts</a>
+			<a class="icolink button outline" href="/blog">{% svgico 'arrow-circle-left' %}&nbsp;See all Posts</a>
 		</header>
 
 		{% set blogposts = collections[tag] | reverse %}

@@ -1,8 +1,11 @@
 backend:
   name: git-gateway
   branch: master
+  # name: test-repo
+
 media_folder: "src/assets/img/blog"
 public_folder: "/assets/img/blog"
+
 collections:
   - name: "blog"
     label: "Blog"
@@ -13,9 +16,9 @@ collections:
       - {label: "Layout", name: "layout", widget: "hidden", default: "blog"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Description", name: "description", widget: "text"}
-      - {label: "Date", name: "date", widget: "datetime", default: "{{year}}-{{month}}-{{day}}"}
+      - {label: "Date", name: "date", widget: "datetime"}
       - {label: "Image", name: "image", widget: "image"}
-      # - {label: "Business", name: "business", widget: "select", required: false, options: [ "api", "retail" ] }
+      - {label: "Business", name: "business", widget: "select", required: false, options: [ "api", "retail" ] }
       - {label: "Tags", name: "tags", widget: "list", hint: "Choose a theme or multiple themes associated with this blog post. Enter tags in a comma-separated list. Ex) technology, finance", required: false}
       - {label: "Body", name: "body", widget: "markdown"}
 
@@ -27,9 +30,11 @@ collections:
         file: "src/_data/website.yaml"
         fields:
           - {label: "Title", name: "title", widget: "string"}
+          - {label: "Short Name", name: "short_name", widget: "string"}
           - {label: "Logo", name: "logo", widget: "image"}
           - {label: "Sign Up URL", name: "signup_url", widget: "string"}
           - {label: "Contact Us URL", name: "contact_url", widget: "string"}
+          - {label: "Contact Email", name: "email", widget: "string"}
           - {label: "Company Description", name: "company_description", widget: "text"}
           - {label: "Keywords (SEO)", name: "keywords", widget: "string", hint: "These are keywords that are associated with this website that can help with website traffic and higher results in Google searches. (Separate keywords by commas) "}
           - {label: "Base Image", name: "image", widget: "image"}

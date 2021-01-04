@@ -3,20 +3,34 @@
   "version": "1.0.0",
   "description": "Eko's website & blog",
   "scripts": {
-    "start": "eleventy --serve --quiet"
+    "start": "del-cli _site && eleventy --serve --quiet",
+    "build": "del-cli _site && eleventy",
+    "clean": "del-cli _site"
   },
-  "author": "Nisha Chatwani",
+  "contributors": [
+    {
+      "name": "Nisha Chatwani"
+    },
+    {
+      "name": "Kumar Abhishek",
+      "url": "https://abhi.page"
+    }
+  ],
+  "license": "See License in ./LICENSE",
   "devDependencies": {
     "@11ty/eleventy": "^0.11.1",
-    "@11ty/eleventy-cache-assets": "^2.0.3",
+    "@11ty/eleventy-cache-assets": "^2.0.4",
+    "@11ty/eleventy-img": "^0.7.1",
     "@11ty/eleventy-navigation": "^0.1.6",
+    "@11ty/eleventy-plugin-rss": "^1.0.9",
     "@babel/core": "7.2.0",
     "@gerhobbelt/markdown-it-attrs": "^3.0.3-20",
+    "del-cli": "^3.0.1",
     "dotenv": "^8.2.0",
     "eleventy-plugin-svg-contents": "^0.7.0",
-    "embla-carousel": "^4.0.5",
-    "js-yaml": "^3.13.1",
-    "luxon": "^1.22.0",
+    "embla-carousel": "^4.1.2",
+    "js-yaml": "^3.14.1",
+    "luxon": "^1.25.0",
     "markdown-it-abbr": "^1.0.4",
     "markdown-it-anchor": "^6.0.1",
     "markdown-it-container": "^3.0.0",
@@ -41,6 +55,6 @@
     "eleventy-plugin-seo": "^0.5.1",
     "html-minifier": "^4.0.0",
     "svg-sprite": "^1.5.0",
-    "terser": "^5.3.5"
+    "terser": "^5.5.1"
   }
 }

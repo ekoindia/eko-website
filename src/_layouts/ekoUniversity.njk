@@ -7,21 +7,23 @@
 
 
 {% block main %}
+	<section class="block">
 
-	<section class="block flex-grid" id="links">
-		{% for item in ekoUniversity %}
-			<div {% if page.url == '/eko-university/' + item.title | slug + '/' %}selected{% endif %}>
-				<p><a href="/eko-university/{{ item.title | slug }}">{{ item.title }}</a></p>
-			</div>
-		{% endfor %}
-	</section>
+		<div id="links" class="layout horizontal center-center wrap around-justified">
+			{% for item in ekoUniversity %}
+				<a href="/eko-university/{{ item.link | slug }}" {% if page.url == '/eko-university/' + item.link | slug + '/' %}selected{% endif %}>{{ item.section }}</a>
+			{% endfor %}
+		</div>
 
-	<section class="block pure-g">
-		{% for id in ekoUni.ids %}
-			<div class="pure-u-1-2 pure-u-md-1-2 pure-u-sm-1 l-box">
-			<p>{% youtube id %}</p>
-			</div>
-		{% endfor %}
+		<div class="block pure-g">
+			{% for vid in ekoUni.videos %}
+				<div class="pure-u-1-2 pure-u-md-1-2 pure-u-sm-1 l-box">
+					<p>{% youtube vid.id %}</p>
+					{{ vid.label }}
+				</div>
+			{% endfor %}
+		</div>
+
 	</section>
 
 {% endblock %}

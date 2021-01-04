@@ -12,6 +12,15 @@ eleventyExcludeFromCollections: true
 
 {% extends "../_layouts/base.njk" %}
 
+{% block head %}
+	{% if pagination.pageNumber > 0 %}
+		<link rel="prev" href="{{ env.BASE_URL }}{{ pagination.href.previous }}">
+	{% endif %}
+	{% if pagination.pageNumber < pagination.pages.length - 1 %}
+	<link rel="next" href="{{ env.BASE_URL }}{{ pagination.href.next }}">
+	{% endif %}
+{% endblock %}
+
 {% block custom_style %}
 	{{ css_blog | cssmin | safe }}
 {% endblock %}

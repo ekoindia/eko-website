@@ -1,53 +1,95 @@
-- title: About Eko
-  ids:
-    - FwbQeZuk86A
-    - ovQ6veZXB3s
-    - d9fLP2P8CvQ
-    - 30WYE3urU8g
+- section: "About Eko"
+  link: about-eko
+  videos:
+    - id: FwbQeZuk86A
+      label: "Eko merchant and customer transaction process"
+    - id: ovQ6veZXB3s
+      label: "EkoStore कमाई मोर - ब्राइट टेलीकॉम"
+    - id: d9fLP2P8CvQ
+      label: "Eko India - Simple & Secure Money Transfer"
+    - id: 30WYE3urU8g
+      label: "Welcome to EkoStore | Eko India"
 
-- title: Connect New Products - Hindi
-  ids:
-    - l5NS6eit_oc
-    - Onz_7u4v4-Q
-    - J_23yz85SaA
-    - ZQ2nBVrcnNk
-    - TpzbnXDSXk4
+- section: "कनेक्ट - नए प्रोडक्टस"
+  link: connect-new-products-hindi
+  videos:
+    - id: l5NS6eit_oc
+      label: "EkoStore: अब जादा पैसे कमाने के लिए Shemaroo भक्ति और..."
+    - id: Onz_7u4v4-Q
+      label: "टोकन की ताकत"
+    - id: J_23yz85SaA
+      label: "Eko कैश पिकप"
+    - id: ZQ2nBVrcnNk
+      label: "Eko Shopclues - होलसेल में खरीदें, रिटेल में बेचें"
+    - id: TpzbnXDSXk4
+      label: "EkoStore Self E-value - ख़ुद लोड करें"
 
-- title: Connect New Products - English
-  ids:
-    - HH8-xYNrEQg
-    - Yc0y4ZjMMJU
-    - Z34n0Ki1650
-    - Xl1E2qtD3Yk
-    - 3h1b046ZAXM
-    - DcGr0IPWjTY
-    - CuHxGn_FbyU
-    - EG1vCu7NvYo
+- section: "Connect New Products"
+  link: connect-new-products
+  videos:
+    - id: HH8-xYNrEQg
+      label: "Power of Token"
+    - id: Yc0y4ZjMMJU
+      label: "How To Apply For Business Loan"
+    - id: Z34n0Ki1650
+      label: "Eko Cash Pick Up"
+    - id: Xl1E2qtD3Yk
+      label: "EkoStore: Now Earn More with Shemaroo Bhakti and Others"
+    - id: 3h1b046ZAXM
+      label: "EkoStore: Self E-value"
+    - id: DcGr0IPWjTY
+      label: "EkoStore: 2-wheeler insurance Easy Policy merchant"
+    - id: CuHxGn_FbyU
+      label: "Eko Shopclues - Buy Products at Wholesale. Sell at Retail."
+    - id: EG1vCu7NvYo
+      label: "ALTBalaji in EkoStore!"
 
-- title: Connect How to - Hindi
-  ids:
-    - 7xtl7vlpSQs
+- section: "Connect How To (हिन्दी)"
+  link: connect-how-to-hindi
+  videos:
+    - id: 7xtl7vlpSQs
+      label: "कैसे ALTBalaji की सदस्यता खरीदें और कूपन कोड का उपयोग करें"
 
-- title: Connect How to - Tamil
-  ids:
-    - _mTiiLRM3WA
-    - ZGK4aYVwR1I
-    - cs2YYfEexrU
-    - BHK_abynmkg
-    - zK4ZvHzT2ek
-    - cupVeb3evOc
-    - h4q7FIlSkUk
-    - F5TCyiER0OY
+- section: "Connect How to (Tamil)"
+  link: connect-how-to-tamil
+  videos:
+    - id: _mTiiLRM3WA
+      label: "How To Make Electricity Bill Payments (In Tamil)"
+    - id: ZGK4aYVwR1I
+      label: "How To Make Utility Bill Payment (In Tamil)"
+    - id: cs2YYfEexrU
+      label: "How To Do KYC Of Your Customers (In Tamil)"
+    - id: BHK_abynmkg
+      label: "How Merchants Can Onboard On Connect (In Tamil)"
+    - id: zK4ZvHzT2ek
+      label: "How To Create A Gmail Account (In Tamil)"
+    - id: cupVeb3evOc
+      label: "How To Activate AePS Service (In Tamil)"
+    - id: rmQUVjqZX_I
+      label: "Give Health Insurance Policy To Your Customers (In Tamil)"
+    - id: h4q7FIlSkUk
+      label: "How To Load Evalue Via UPI Pay (In Tamil)"
+    - id: F5TCyiER0OY
+      label: "How A Merchant Can Load E-value (In Tamil)"
 
-- title: Connect How to - English
-  ids:
-    - M-SkvtBGvcU
-    - nWDYviAIsiE
-    - xhgMv39wdUo
-    - MRh0v69CLiM
-    - lQQfUfg4rEs
-    - Da6TYI34kmQ
-    - w2de5btnKRQ
-    - 4PBR8DHC6jc
-    - mgVy8pHQltk
-
+- section: "Connect How to (English)"
+  link: connect-how-to
+  videos:
+    - id: M-SkvtBGvcU
+      label: "How to buy subscription of ALTBalaji and use coupon code"
+    - id: nWDYviAIsiE
+      label: "How To Recharge DTH Service On Connect"
+    - id: xhgMv39wdUo
+      label: "How To Do Mobile Recharge/Payment on Connect"
+    - id: MRh0v69CLiM
+      label: "How To Make Electricity Bill Payments"
+    - id: lQQfUfg4rEs
+      label: "How To Do KYC Of Your Customers"
+    - id: Da6TYI34kmQ
+      label: "How To Make Utility Bill Payment"
+    - id: w2de5btnKRQ
+      label: "How Merchants Can Onboard On Connect"
+    - id: 4PBR8DHC6jc
+      label: "How To Create A Gmail Account"
+    - id: mgVy8pHQltk
+      label: "How To Activate AePS Service"

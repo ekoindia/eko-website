@@ -39,6 +39,9 @@
 	--primary-light-60-color: #FFE0A3;
 }
 
+html {
+	scroll-behavior: smooth;
+}
 
 main, html, body {
   font-family: 'Roboto', sans-serif;
@@ -46,11 +49,10 @@ main, html, body {
   line-height: 1.42857143;
 }
 
-body {
-	scroll-behavior: smooth;
-	/* animation: fadein 500ms ease;
-	animation-fill-mode: forwards; */
-}
+/* body {
+	animation: fadein 500ms ease;
+	animation-fill-mode: forwards;
+} */
 
 /* @keyframes fadein {
 	from { opacity: 0; }
@@ -110,6 +112,7 @@ section.block {
 
 [disabled] {
 	pointer-events: none;
+	opacity: 0.5;
 }
 
 b, strong {
@@ -161,6 +164,7 @@ a.icolink {		/* A short link with an icon inside */
 	flex-wrap: nowrap;
 	align-items: center;
 	fill: currentColor;
+	text-decoration: none;
 }
 
 a:hover {
@@ -168,10 +172,13 @@ a:hover {
 	color: var(--primary-color);
 }
 
+a.icolink:hover {
+	color: var(--primary-color);
+}
+
 a[disabled] {
 	text-decoration: none !important;
 	color: var(--lighter-text-color);
-	opacity: 0.8;
 }
 
 a.nostyle, a.nostyle:hover {
@@ -442,6 +449,9 @@ section.block h3 {
 .index-page-hero .main-header {
 	font-size: 30px;
 	max-width: 95%;
+	margin-top: 0;
+	margin-bottom: 5px;
+	line-height: 1.15;
 }
 
 .index-page-hero .bg-image {
