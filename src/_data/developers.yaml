@@ -1,6 +1,6 @@
 - name: Domestic Money Transfer API
   title: Domestic Money Transfer API
-  title_short: Money Transfer API
+  title_short: DMT API
   tag_line: Easiest way to transfer cash to anyone
   social_image: /assets/img/money-transfer/easy-cash-transfer.png
   keywords: money transfer, DMT
@@ -83,7 +83,7 @@
 
 
 - name: AePS Cashout SDK
-  title: AePS SDK
+  title: AePS Cashout SDK
   tag_line: AePS - Aadhaar Enabled Payment System
   social_image: /assets/img/aadhaar-banking/AePS_hero.png
   keywords: Aadhaar Banking, Cashout, ATM
