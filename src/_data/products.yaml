@@ -19,7 +19,7 @@
       steps:
       - title: Easy Cash transfer
         text: 'Customers can transfer cash to anyone by specifying their bank details right at your doorstep'
-        image: /assets/img/money-transfer/easy-cash-transfer.svg
+        image: /assets/img/main/easy-cash-transfer-opt.svg
       - title: Transaction-assurance
         text: Assure your customers that their money is safe using our transaction assurance option
         image: /assets/img/money-transfer/transaction-assurance.svg
@@ -38,7 +38,7 @@
           # Benefit 2
           title_right: Best Success Rate
           text_right: Transaction failures occur rarely with our services. We ensure that you get the best success rate for every transaction. We are as reliable as banks themselves
-          image_right: /assets/img/money-transfer/best-success-rate.svg
+          image_right: /assets/img/main/best-success-rate-opt.svg
         - type: single # One item on its own in the center of the page
           # Benefit 3 (center)
           title: Turn your shop into a mini bank
@@ -55,7 +55,7 @@
           image_right: /assets/img/money-transfer/save-money.svg
 
     - section: one_liner
-      icon: /assets/img/eko-trust.svg
+      icon: /assets/img/eko-trust-opt.svg
       title: Eko's Trust
       text: You can assure your customers that their money and data is safe. Eko’s trust is unparalleled
 
@@ -76,7 +76,7 @@
     - section: get_started_banner
       small_header: Ready to get started?
       main_header: Become Eko Partner & Earn More
-      image: /assets/img/become-eko-partner.svg
+      image: /assets/img/become-eko-partner-opt.svg
       button1_text: Get Started
       button2_text: Contact Sales
 
@@ -135,10 +135,10 @@
           # Benefit 2
           title_right: Best Success Rate
           text_right: Transaction failures occur rarely with our services. We ensure that you get the best success rate for every transaction. We are as reliable as banks themselves
-          image_right: /assets/img/aadhaar-banking/best-success-rate.svg
+          image_right: /assets/img/main/best-success-rate-opt.svg
 
     - section: one_liner
-      icon: /assets/img/eko-trust.svg
+      icon: /assets/img/eko-trust-opt.svg
       title: Eko's Trust
       text: You can assure your customers that their money and data is safe. Eko’s trust is unparalleled
 
@@ -174,7 +174,7 @@
     - section: get_started_banner
       small_header: Ready to get started?
       main_header: Use Aadhaar Banking & Earn More
-      image: /assets/img/become-eko-partner.svg
+      image: /assets/img/become-eko-partner-opt.svg
       button1_text: Get Started
       button2_text: Contact Sales
 
@@ -232,7 +232,7 @@
       - After every biometric transaction, the retailer will sanitize the biometric device.
 
     - section: one_liner
-      icon: /assets/img/eko-trust.svg
+      icon: /assets/img/eko-trust-opt.svg
       title: Eko's Trust
       text: With Eko's 12+ years of experience in leading the money transfer space in India, we assure your customer's hard-earned money reaches the destination
 
@@ -252,7 +252,7 @@
     - section: get_started_banner
       small_header: Ready to get started?
       main_header: Serve at Doorstep & Earn More
-      image: /assets/img/become-eko-partner.svg
+      image: /assets/img/become-eko-partner-opt.svg
       button1_text: Get Started
       button2_text: Contact Sales
 
@@ -294,7 +294,7 @@
           # Benefit 2
           title_right: Best Success Rate
           text_right: Transaction failures occur rarely with our services. We ensure that you get the best success rate for every transaction. We are as reliable as banks themselves
-          image_right: /assets/img/bill-payment/best-success-rate.svg
+          image_right: /assets/img/main/best-success-rate-opt.svg
         - type: single
           # Benefit 3
           title: Turn your shop into a one-stop payment destination
@@ -311,7 +311,7 @@
           image_right: /assets/img/bill-payment/save-money.svg
 
     - section: one_liner
-      icon: /assets/img/eko-trust.svg
+      icon: /assets/img/eko-trust-opt.svg
       title: Eko's Trust
       text: You can assure your customers that their money and data is safe. Eko’s trust is unparalleled
 
@@ -333,7 +333,7 @@
     - section: get_started_banner
       small_header: Ready to get started?
       main_header: Pay Utility Bills & Earn More
-      image: /assets/img/become-eko-partner.svg
+      image: /assets/img/become-eko-partner-opt.svg
       button1_text: Get Started
       button2_text: Contact Sales
 
@@ -369,7 +369,7 @@
           # Benefit 1
           title: Exclusive low-cost insurance policy
           text: Sell low-cost insurance policies not available on any other platform.
-          image: /assets/img/sell-insurance/low-cost-insurance.svg
+          image: /assets/img/main/low-cost-insurance-opt.svg
         - type: pair
           # Benefit 2
           title_left: One-time premium
@@ -381,7 +381,7 @@
           image_right: /assets/img/sell-insurance/easy-claim-process.svg
 
     - section: one_liner
-      icon: /assets/img/eko-trust.svg
+      icon: /assets/img/eko-trust-opt.svg
       title: Eko's Trust
       text: Trust is indeed the most important factor when it comes to insurance. Over the years, we have built a reputation for safety with all our services. Our partners trust us with their money, and we never disappoint them.
 
@@ -403,7 +403,7 @@
     - section: get_started_banner
       small_header: Ready to get started?
       main_header: Sell Insurance policies & Earn More
-      image: /assets/img/become-eko-partner.svg
+      image: /assets/img/become-eko-partner-opt.svg
       button1_text: Get Started
       button2_text: Contact Sales
 
@@ -412,9 +412,9 @@
 - name: Indo-Nepal Money Transfer
   title: Indo-Nepal Money Transfer
   tag_line: Transfer money to Nepal, at the click of a button
-  social_image: /assets/img/indo-nepal/nepal-money-transfer.svg
+  social_image: /assets/img/indo-nepal/nepal-money-transfer-opt.svg
   keywords: indo-nepal, nepal, money transfer
-  hero_image: /assets/img/indo-nepal/nepal-money-transfer.svg
+  hero_image: /assets/img/indo-nepal/nepal-money-transfer-opt.svg
   summary: Help your customers (mostly Nepali immigrants) send money to their loved-ones in Nepal. Fast, secure money transfer whenever you need to.
   description: A simple and highly secure direct money transfer ability for your customers to transfer money to Nepal. No Indian bank account needed and no need to visit banks.
   signup_label: Try for free
@@ -449,10 +449,10 @@
           # Benefit 3 (right side)
           title_right: Best Success Rate
           text_right: Transaction failures occur rarely with our services. We ensure that you get the best success rate for every transaction.
-          image_right: /assets/img/indo-nepal/best-success-rate.svg
+          image_right: /assets/img/main/best-success-rate-opt.svg
 
     - section: one_liner
-      icon: /assets/img/eko-trust.svg
+      icon: /assets/img/eko-trust-opt.svg
       title: Eko's Trust
       text: With Eko's 12+ years of experience in leading the money transfer space in India, we assure your customer's hard-earned money reaches the destination
 
@@ -473,7 +473,7 @@
     - section: get_started_banner
       small_header: Ready to get started?
       main_header: Send money to Nepal & Earn More
-      image: /assets/img/become-eko-partner.svg
+      image: /assets/img/become-eko-partner-opt.svg
       button1_text: Get Started
       button2_text: Contact Sales
 
