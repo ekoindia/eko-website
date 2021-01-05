@@ -399,6 +399,13 @@ ul.slim_ul > li::before, .slim_ul ul > li::before {
 				0  8px 10px -5px rgba(0, 0, 0, 0.4);
 }
 
+@media (max-width: 699px) {
+	/* Hide Chatbot floating msg on small screen */
+	.zsiq_floatmain #titlediv {
+		display: none;
+	}
+}
+
 
 
 
@@ -881,6 +888,10 @@ section.block.get_started_banner .button {
 	height: 500px;
 	border: none;
 	background: var(--background-section-color);
+}
+
+.form-frame.retail {
+	height: 400px;
 }
 
 

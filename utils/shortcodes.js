@@ -47,4 +47,10 @@ module.exports = {
 	 */
 	thisYear: () => () => new Date().getFullYear().toString(),
 
+
+	/**
+	 * Get Signup page URLs for the given business type
+	 */
+	getSignupURL: () => (baseURL, business) => baseURL + (business === 'retail' || business === 'api' ? `-${business}` : ''),
+
 }

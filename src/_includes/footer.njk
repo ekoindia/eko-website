@@ -8,7 +8,7 @@
 	{# Footer link columns: #}
 	{% for col in footer.columns -%}
 		<div class="linkbox pure-u-1 pure-u-md-1-5">
-			<h3 class="column-header">{{ col.column }}</h3>
+			<h3 class="column-header imp">{{ col.column }}</h3>
 
 			{% if col.type == "api" %}
 				{% for item in developers | rejectattr("hidden") | rejectattr("disabled") -%}
@@ -36,9 +36,9 @@
 	{# Signup and Follow Section  #}
 	<div class="signupbox pure-u-1 pure-u-md-1-5">
 		<br>
-		<a href="{{ website.signup_url }}" class="button">Sign Up</a>
+		<a href="{% getSignupURL website.signup_url, business %}" class="button">Sign Up</a>
 		<br><br>
-		&nbsp;<small><a class="text-primary icolink sales bold" href="{{ website.contact_url }}">{% svgico 'paper-plane' %}&nbsp;{{ footer.contact_button_text }}</a></small>
+		&nbsp;<small><a class="text-primary icolink sales bold" href="{{ website.contact_url }}">{% svgico 'chat' %}&nbsp;&nbsp;{{ footer.contact_button_text }}</a></small>
 		<br><br>
 		<div class="socialicons">
 			<h3 class="column-header">FOLLOW US</h3>

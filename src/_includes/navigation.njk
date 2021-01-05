@@ -31,10 +31,10 @@
 						{%- endfor -%}
 					</ul>
 					<div class="extra-links">
-						<img src="/assets/img/product-nav.svg" width="80" height="80" loading="lazy">
+						<img src="/assets/img/product-nav-opt.svg" width="80" height="80" loading="lazy">
 						<div class="sub-menu-h1">Check out our Developer Products</div>
 						<p class="capt">Available as APIs & SDKs</p>
-						<a href="/developers/eps" class="button outline">Check Developer Products</a>
+						<a href="/developers/eps#product-list" class="button outline">Check Developer Products</a>
 					</div>
 				</div>
 			</li>
@@ -86,16 +86,15 @@
 					</ul>
 				</div>
 			</li>
+
+			{# ====================== Mobile Signup Link ==================== #}
+			<li class="mobileonly"><a href="{% getSignupURL website.signup_url, business %}">Sign Up</a></li>
 		</ul>
 	</div>
 
 	{# Sign Up Buttons #}
-	{% set signup_url_suffix = "" %}
-	{% if business == "retail" or business == "api" %}
-		{% set signup_url_suffix = "-" + business %}
-	{% endif %}
 	<div class="desktoponly layout horizontal center">
-		<a href="{{ website.contact_url }}" class="icolink">{% svgico 'paper-plane', 'text-primary' %}&nbsp;Contact Sales</a>&nbsp;&nbsp;
-		<a href="{{ website.signup_url }}{{ signup_url_suffix }}" class="button">Sign Up</a>
+		<a href="{{ website.contact_url }}" class="icolink">{% svgico 'chat', 'text-primary' %}&nbsp;&nbsp;Contact Us</a>&nbsp;&nbsp;
+		<a href="{% getSignupURL website.signup_url, business %}" class="button">Sign Up</a>
 	</div>
 </nav>

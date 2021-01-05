@@ -4,8 +4,6 @@ pagination:
   size: 1
   alias: tag
 permalink: /blog/tags/{{ tag }}/
-eleventyComputed:
-  title: Blog posts tagged  “{{ tag | capitalize  }}” | {{website.title}}
 ---
 
 {# this file generates pages for all the blog-categories/tags #}
@@ -14,9 +12,9 @@ eleventyComputed:
 
 
 {# Ideally set through eleventyComputed in front-matter but not working. Bug? #}
-{% set title = "All #" + tag + ' posts | Blog' %}
-{% set description = "All blog posts tagged “" + tag | capitalize + '”' %}
-{% set keywords = tag + ", blog" %}
+{% set title = "All #" + tag + ' articles | Blog' %}
+{% set description = "A list of all blog posts tagged #" + tag %}
+{% set keywords = tag + ", blog, articles" %}
 
 
 {% block custom_style %}
@@ -26,13 +24,23 @@ eleventyComputed:
 {% block main %}
 	<section class="block">
 		<header>
-			<h1>Blog posts tagged  “#{{ tag }}”</h1>
+			<h1>Posts tagged  <em>#{{ tag }}</em></h1>
 			<a class="icolink button outline" href="/blog">{% svgico 'arrow-circle-left' %}&nbsp;See all Posts</a>
 		</header>
 
 		{% set blogposts = collections[tag] | reverse %}
 		{% set pagination = null %}
 		{% include "blogslist.njk" %}
+	</section>
+
+	<section class="block">
+		<h3>Browse by Tag</h3>
+		<br>
+		<div class="layout horizontal wrap">
+			{% for item in collections.blogtags %}
+				<a class="nostyle" href="/blog/tags/{{item}}/">{% dotTag item, "filled hash" %}</a>&nbsp;
+			{% endfor %}
+		</div>
 	</section>
 
 {% endblock %}

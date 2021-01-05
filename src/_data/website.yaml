@@ -1,8 +1,8 @@
 title: Eko India Financial Services
 short_name: Eko
-logo: /assets/img/logo.svg
+logo: /assets/img/logo-opt.svg
 signup_url: /sign-up
-contact_url: /contact-us
+contact_url: javascript:showChat()
 email: cs@eko.co.in
 company_description: Eko gives retailers an opportunity to turn their own shop into a Banking & Financial institution by providing solutions to low & middle income customers.
 developer_portal: https://developers.eko.in

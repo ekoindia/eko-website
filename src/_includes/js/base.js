@@ -1,4 +1,13 @@
-/** Common JS to be loaded on all pages */
+/**
+ * Common Javascript to be loaded on all pages
+ */
 
-// function _loadScript(src) {
-// }
+
+/**
+ * Open SalesIQ Chat widget
+ */
+function showChat() {
+	if ($zoho && $zoho.salesiq) {
+		$zoho.salesiq.floatwindow.visible('show');	// show / hide
+	}
+}
