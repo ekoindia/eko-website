@@ -28,10 +28,14 @@ footer .logo {
 }
 
 footer .column-header {
-	color: var(--primary-color);
+	color: var(--footer-column-header);
 	font-size: 15px;
 	font-weight: 400;
 	letter-spacing: 1px;
+}
+
+footer .column-header.imp {
+	color: var(--primary-color);
 }
 
 footer a {

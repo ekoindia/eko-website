@@ -7,6 +7,8 @@
 
 	<link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/vnd.microsoft.icon" />
 
+	<meta name="copyright"content="{% thisYear %} {{ footer.copyright }}">
+
 	{# ---- Optimal/non-blocking way to load Google Font (https://csswizardry.com/2020/05/the-fastest-google-fonts) ---- #}
 	{% if website.google_font_url %}
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -46,7 +48,7 @@
 	<meta name="twitter:title" content="{{ title and title + " | " }}{{ website.title }}">
 	<meta name="twitter:description" content="{{ description or website.tag_line }}">
 	<meta name="twitter:image" content="{{ env.BASE_URL }}{% SocialImagePath image or website.image %}">
-	<meta name="twitter:card" content="website">
+	<meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="{{ env.BASE_URL }}{{ page.url }}">
     <meta name="twitter:site" content="{{ website.twitter_handle }}">
 
@@ -89,6 +91,11 @@
       {% include "css/university.css" %}
     {% endset %}
 
+	{# DEFINE Main Javascript files #}
+	{% set js_main %}
+      {% include "js/base.js" %}
+    {% endset %}
+
 
 	{# ----- DEFINE EMBLA CAROUSEL SUPPORT (https://github.com/davidcetinkaya/embla-carousel) ------ #}
 	{% set js_carousel %}
@@ -100,17 +107,9 @@
     {% endset %}
 
 
-	{# ------ Dark Mode ------- #}
-	{# <script type="module" src= "/js/dark-mode-toggle.mjs"></script> #}
-    {# {% set dark %}
-      {% include "css/dark.css" %}
-    {% endset %} #}
-
 	<style>
       {{ css_pure | cssmin | safe }}
       {{ css_main | cssmin | safe }}
-      {# {{ dark | cssmin | safe }} #}
-
 	  {% block custom_style %}{% endblock %}
     </style>
 
@@ -122,23 +121,7 @@
 
   <body>
 
-	{# <div hidden>{% iconsprite %}</div> #}
-
-    {% include "navigation.njk" %}
-
-	{# Dark/Light Mode Icons #}
-    {# <aside>
-      <dark-mode-toggle appearance="switch"></dark-mode-toggle>
-    </aside>
-    <script>
-      window.addEventListener('colorschemechange', (e) => {
-        document.body.classList.toggle('dark', e.target.mode === 'dark');
-      });
-      window.addEventListener('colorschemechange', (e) => {
-        document.body.classList.toggle('light', e.target.mode === '');
-      });
-    </script>
-	#}
+	{% include "navigation.njk" %}
 
 	<main>
 		{% block main%}{% endblock %}
@@ -151,7 +134,8 @@
     {% endset %}
 
     <script>
-      {{ netlify_cms | jsmin | safe }}
+		{{ js_main | jsmin | safe }}
+		{{ netlify_cms | jsmin | safe }}
     </script>
 
 	{# ~~~~~ Global site tag (gtag.js) - Google Analytics ~~~~~ #}

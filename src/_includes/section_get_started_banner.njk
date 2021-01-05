@@ -15,7 +15,7 @@
 			{% if item.button1_text %}
 				<br><br>
 				<div class="btnbox layout horizontal center wrap">
-					<a href="{{ website.signup_url }}" class="button">{{ item.button1_text }}</a>
+					<a href="{% getSignupURL website.signup_url, business %}" class="button">{{ item.button1_text }}</a>
 					<a href="{{ website.contact_url }}" class="button outline">{{ item.button2_text }}</a>
 				</div>
 			{% endif %}

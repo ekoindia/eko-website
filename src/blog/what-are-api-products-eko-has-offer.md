@@ -19,7 +19,7 @@ Eko’s API products can be broadly classified into:
 
 ### Domestic Money Transfer
 
-Eko’s [Domestic Money Transfer API](https://eko.in/developers/eps/domestic-money-transfer-api) suite enables merchants to offer instant money transfer, anytime and anywhere. Customers who need assistance for transferring money using cash can visit these retailer shops. Partner with us to augment your business and that of your retailers.
+Eko’s [Domestic Money Transfer API](/developers/eps/domestic-money-transfer-api) suite enables merchants to offer instant money transfer, anytime and anywhere. Customers who need assistance for transferring money using cash can visit these retailer shops. Partner with us to augment your business and that of your retailers.
 
 * :ballot_box_with_check: **Cash Transfer** -- Your retailers can accept cash remittance from their customers and effect money transfer using the API to the recipient.
 * :ballot_box_with_check: **Transaction Receipt** -- Your retailers will be able to print a transaction receipt for the cash transfers done through them to share with their customers. This builds trust between the customer and the retailer.
