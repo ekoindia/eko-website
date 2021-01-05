@@ -885,13 +885,13 @@ section.block.get_started_banner .button {
 
 .form-frame {
 	width: 100%;
-	height: 500px;
+	height: 520px;
 	border: none;
 	background: var(--background-section-color);
 }
 
 .form-frame.retail {
-	height: 400px;
+	height: 420px;
 }
 
 

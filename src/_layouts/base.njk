@@ -140,7 +140,7 @@
 
 	{# ~~~~~ Global site tag (gtag.js) - Google Analytics ~~~~~ #}
 	{% if env.GA_KEY %}
-		<script async src="https://www.googletagmanager.com/gtag/js?id={{ website.analytics_key }}"></script>
+		<script async src="https://www.googletagmanager.com/gtag/js?id={{ env.GA_KEY }}"></script>
 		{% set google %}
 			{% include "js/google_analytics.js" %}
 		{% endset %}
