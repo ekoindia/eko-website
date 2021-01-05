@@ -25,7 +25,7 @@ eleventyExcludeFromCollections: true
 		<name>{{ website.short_name }}</name>{# TODO: Put actual blog post author info here #}
 		<email>{{ website.email }}</email>
 	</author>
-	<content type="html">{{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) }}</content>
+	<content type="html">&lt;p&gt;&lt;img src="{{ env.BASE_URL }}{{ post.data.image }}"&gt;&lt;/p&gt;{{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) }}</content>
 </entry>
 {%- endfor -%}
 </feed>
