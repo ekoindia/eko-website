@@ -890,6 +890,10 @@ section.block.get_started_banner .button {
 	background: var(--background-section-color);
 }
 
+.form-frame.retail {
+	height: 400px;
+}
+
 
 @media (min-width: 700px) {
 	.form-frame {

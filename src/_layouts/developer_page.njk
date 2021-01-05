@@ -26,7 +26,7 @@ business: api
 
 		{# The section documentation_link_banner uses title & link from the main section #}
 		{% if item.section === "documentation_link_banner" %}
-			{% set item = product.layout[i]|mergeObjectFilter({title: 'View '+ product.title + ' Documentation', link: product.documentation_link}) %}
+			{% set item = product.layout[i]|mergeObjectFilter({title: 'View '+ (product.title_short or product.title) + ' Documentation', link: product.documentation_link}) %}
 		{% endif %}
 
 		{% set component = "section_" + item.section + ".njk" %}
