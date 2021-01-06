@@ -161,8 +161,12 @@
 	{% if env.ZOHO_SALESIQ %}
 		<script>
 		window.onload=function(){
+		window.$zohosalesiqready = false;
 		window.$zoho=window.$zoho || {};$zoho.salesiq = $zoho.salesiq ||
 		{widgetcode:"{{env.ZOHO_SALESIQ}}", values:{},ready:function(){}};
+		$zoho.salesiq.ready=function(embedinfo){
+		if ($zohosalesiqready===false){ $zohosalesiqready = true; $zoho.salesiq.reset(); }
+		}
 		var d=document;s=d.createElement("script");s.type="text/javascript";s.id="zsiqscript";s.defer=true;
 		s.src="https://salesiq.zoho.in/widget";t=d.getElementsByTagName("script")[0];t.parentNode.insertBefore(s,t);
 		}
