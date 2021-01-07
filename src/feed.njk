@@ -3,10 +3,9 @@ permalink: feed.xml
 eleventyExcludeFromCollections: true
 ---
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom" xmlns:webfeeds="http://webfeeds.org/rss/1.0">
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:webfeeds="http://webfeeds.org/rss/1.0" version="2.0">
 <title>Blog | {{ website.title }}</title>
 <subtitle>{{ website.company_description }}</subtitle>
-<description>{{ website.company_description }}</description>
 <link href="{{ env.BASE_URL }}/feed.xml" rel="self"/>
 <link href="{{ env.BASE_URL }}/"/>
 <updated>{{ collections.blog | rssLastUpdatedDate }}</updated>
@@ -31,7 +30,7 @@ eleventyExcludeFromCollections: true
 		<name>{{ website.short_name }}</name>{# TODO: Put actual blog post author info here #}
 		<email>{{ website.email }}</email>
 	</author>
-	<content type="html">&lt;p&gt;&lt;img src="{{ env.BASE_URL }}{{ post.data.image }}" class="webfeedsFeaturedVisual"&gt;&lt;/p&gt;{{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) }}</content>
+	<content type="html">&lt;p&gt;&lt;img src="{{ env.BASE_URL }}{{ post.data.image }}"&gt;&lt;/p&gt;{{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) }}</content>
 </entry>
 {%- endfor -%}
 </feed>
