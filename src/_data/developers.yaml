@@ -341,9 +341,9 @@
 - name: PAN Verification API
   title: PAN Verification API
   tag_line: Customer onboarding & verification made easy
-  social_image: /assets/img/developers/pan-verification-opt.svg
+  social_image: /assets/img/developers/pan-verification-2-opt.svg
   keywords: PAN verification, NSDL
-  hero_image: /assets/img/developers/pan-verification-opt.svg
+  hero_image: /assets/img/developers/pan-verification-2-opt.svg
   summary: Real-time onboarding and verification of users is as easy as it gets with out PAN Verification API. Just integrate the API and get going.
   description: Use Eko’s NSDL-powered Pan verification API to validate your customers, employees, and merchants. Our easy-to-use API has made pan-fraud a thing of the past.
   documentation_link: https://developers.eko.in/docs/identity
