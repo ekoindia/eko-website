@@ -49,7 +49,6 @@ function loadScript(src, _id, onLoadCallback, defer) {
 	}
 	s.src = src;
 	d.head.appendChild(s);
-	console.log("Loading ", src);
 }
 
 
