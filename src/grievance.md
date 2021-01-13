@@ -95,7 +95,7 @@ On receiving the escalation, the complaint will be acknowledged within twenty fo
 ---
 
 ### Report Unauthorized Fraud Transaction
-Post login please click on 'Need Help' button and report the complaint.
+[**Please click here**](https://connect.eko.in/) and click on 'Need Help' button to report the complaint.
 
 <br><br>
 
@@ -189,6 +189,11 @@ Post login please click on 'Need Help' button and report the complaint.
 
 एसकेलेशन प्राप्त होने पर, शिकायत की पावती चौबीस (24) घंटों के भीतर दिया जाएगा। पावती देने के बाद अधिकतम सात (7) दिनों में समाधान प्रदान किया जाएगा। कृपया याद रखें कि इस स्तर पर सभी शिकायतों पर तभी विचार किया जाएगा जब शिकायत के स्तर 1 में दी गई शिकायत संख्या शिकायत में लिखी हुई हो।
 
+---
+
+### अनधिकृत धोखाधड़ी लेनदेन की रिपोर्ट करें
+कृपया शिकायत दर्ज करने के लिए [**यहां क्लिक करें**](https://connect.eko.in/) और 'Need Help' बटन पर क्लिक करें।
+
 <br><br>
 
 ---
@@ -280,3 +285,8 @@ Post login please click on 'Need Help' button and report the complaint.
 मोबाईल क्रमांक +91-9654280988
 
 एस्कलेशन मिळाल्यापासून चोवीस (24) तासांच्या आत त्याची पोचपावती दिली जाईल. पोचपावती दिल्यानंतर कमाल सात(7) दिवसाच्या आत निराकरण केले जाईल. कृपया लक्षात घ्या की स्तर 1 वर दिला गेलेला तक्रार क्रमांक तक्रारीत लिहिला असेल तरच या स्तरावर तक्रारी घेतल्या जातील.
+
+---
+
+### अनधिकृत फसवणूक व्यवहाराचा अहवाल द्या
+कृपया तक्रार नोंदवण्यासाठी [**येथे क्लिक करा**](https://connect.eko.in/) आणि 'Need Help' बटणावर क्लिक करा.
