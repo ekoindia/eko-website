@@ -96,7 +96,7 @@ On receiving the escalation, the complaint will be acknowledged within twenty fo
 
 ---
 
-#### Report Unauthorized Fraud Transaction
+### Report Unauthorized Fraud Transaction
 Please [**go to the 'Report Unauthorized Transaction' section**](#report-unauthorized-transaction) at the bottom of this page and submit your complaint.
 
 Or, [click here](https://connect.eko.in/) and click on 'Need Help' button to report the complaint.
