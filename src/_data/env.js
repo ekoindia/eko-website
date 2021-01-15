@@ -17,6 +17,7 @@ module.exports = {
 	ZOHO_FORM_URL: process.env.ZOHO_FORM_URL || '',
 	ZOHO_FORM_RETAIL_URL: process.env.ZOHO_FORM_RETAIL_URL || '',
 	ZOHO_FORM_API_URL: process.env.ZOHO_FORM_API_URL || '',
+	ZOHO_FORM_GRIEVANCE_URL: process.env.ZOHO_FORM_GRIEVANCE_URL || '',
 
 	DEBUG_SECTIONS: process.env.DEBUG_SECTIONS || null
 }

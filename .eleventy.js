@@ -119,11 +119,13 @@ module.exports = function(eleventyConfig) {
 	markdownLib.use(md_emoji);			// https://github.com/markdown-it/markdown-it-emoji
 	markdownLib.use(md_anchor, {
 		level: [1, 2, 3],
+		permalink: true,
+		permalinkSymbol: '§',
 		slugify: s => uslug(s)
 	});									// https://github.com/valeriangalliat/markdown-it-anchor
 	markdownLib.use(md_toc, {
-		level: [1, 2, 3],
-		// placeholder: '[[TOC]]',
+		level: [2],
+		placeholder: "(\\[\\[TOC\\]\\])",
 		listType: 'ol',
 		slugify: s => uslug(s)
 	});									// https://github.com/nagaozen/markdown-it-toc-done-right
