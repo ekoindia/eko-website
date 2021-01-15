@@ -97,7 +97,9 @@ On receiving the escalation, the complaint will be acknowledged within twenty fo
 ---
 
 ### Report Unauthorized Fraud Transaction
-Please [**go to the 'Report Complaint' section**](#report-complaint) at the bottom of this page and submit your complaint.
+Please [**go to the 'Report Unauthorized Fraud Transaction' section**](#report-unauthorized-fraud-transaction) at the bottom of this page and submit your complaint.
+
+Or, [click here](https://connect.eko.in/) and click on 'Need Help' button to report the complaint.
 
 <br><br>
 
@@ -194,7 +196,9 @@ Please [**go to the 'Report Complaint' section**](#report-complaint) at the bott
 ---
 
 ### अनधिकृत धोखाधड़ी लेनदेन की रिपोर्ट करें
-कृपया इस पृष्ठ के निचले भाग में **['Report Complaint' अनुभाग पर जाएँ](#report-complaint)** और अपनी शिकायत दर्ज करें।
+कृपया इस पृष्ठ के निचले भाग में **['Report Unauthorized Fraud Transaction' अनुभाग पर जाएँ](#report-unauthorized-fraud-transaction)** और अपनी शिकायत दर्ज करें।
+
+या, शिकायत दर्ज करने के लिए [**यहां क्लिक करें**](https://connect.eko.in/) और 'Need Help' बटन पर क्लिक करें।
 
 <br><br>
 
@@ -291,7 +295,9 @@ Please [**go to the 'Report Complaint' section**](#report-complaint) at the bott
 ---
 
 ### अनधिकृत फसवणूक व्यवहाराचा अहवाल द्या
-कृपया खाली **['Report Complaint' विभागात](#report-complaint)** आपली तक्रार सबमिट करा.
+कृपया खाली **['Report Unauthorized Fraud Transaction' विभागात](#report-unauthorized-fraud-transaction)** आपली तक्रार सबमिट करा.
+
+अथवा, तक्रार नोंदवण्यासाठी [**येथे क्लिक करा**](https://connect.eko.in/) आणि 'Need Help' बटणावर क्लिक करा.
 
 <br><br>
 
@@ -299,7 +305,7 @@ Please [**go to the 'Report Complaint' section**](#report-complaint) at the bott
 
 <br><br>
 
-## Report Complaint
+## Report Unauthorized Fraud Transaction
 
 {% if env.ZOHO_FORM_GRIEVANCE_URL %}
 <iframe class="form-frame grievance" title="Grievance Form" frameborder="0" loading="lazy" src='{{env.ZOHO_FORM_GRIEVANCE_URL}}'></iframe>
