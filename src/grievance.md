@@ -4,7 +4,9 @@ title: Eko India Financial Services Private Limited Customer Grievance Redressal
 excludeFromSitemap: true
 ---
 
-### Customer Grievance Policy
+[[TOC]]
+
+## Customer Grievance Policy
 
 In today's competitive era and constantly evolving business, we at Eko India Financial Services Pvt. Ltd. ('Company') take pride in keeping our customers at the centre of all our strategies and initiatives, and are committed to deliver best in class customer service to all our existing and new customers at all times.
 
@@ -95,7 +97,7 @@ On receiving the escalation, the complaint will be acknowledged within twenty fo
 ---
 
 ### Report Unauthorized Fraud Transaction
-[**Please click here**](https://connect.eko.in/) and click on 'Need Help' button to report the complaint.
+Please [**go to the 'Report Complaint' section**](#report-complaint) at the bottom of this page and submit your complaint.
 
 <br><br>
 
@@ -103,7 +105,7 @@ On receiving the escalation, the complaint will be acknowledged within twenty fo
 
 <br><br>
 
-### ग्राहक शिकायत नीति
+## ग्राहक शिकायत नीति
 
 आज के प्रतिस्पर्धी युग और लगातार विकसित हो रहे व्यवसाय में हम, Eko India फिनान्शियल सर्विसेज प्राइवेट लिमिटेड ('कंपनी'), अपने ग्राहकों को अपनी सभी रणनीतियों और पहल के केंद्र में रखने में गर्व महसूस करते हैं, और हमारे मौजूदा और नए ग्राहकों को हर समय सर्वोत्तम ग्राहक सेवा देने के लिए प्रतिबद्ध हैं।
 
@@ -192,7 +194,7 @@ On receiving the escalation, the complaint will be acknowledged within twenty fo
 ---
 
 ### अनधिकृत धोखाधड़ी लेनदेन की रिपोर्ट करें
-कृपया शिकायत दर्ज करने के लिए [**यहां क्लिक करें**](https://connect.eko.in/) और 'Need Help' बटन पर क्लिक करें।
+कृपया इस पृष्ठ के निचले भाग में **['Report Complaint' अनुभाग पर जाएँ](#report-complaint)** और अपनी शिकायत दर्ज करें।
 
 <br><br>
 
@@ -200,7 +202,7 @@ On receiving the escalation, the complaint will be acknowledged within twenty fo
 
 <br><br>
 
-### ग्राहक तक्रार धोरण
+## ग्राहक तक्रार धोरण
 
 आजच्या स्पर्धात्मक युगात आणि सातत्याने बदलणार्‍या व्यावसायिक वातावरणात एको इंडिया फिनान्शियल सर्विसेस प्रा. लि. (कंपनी) मध्ये आम्ही आमच्या ग्राहकाला आमच्या धोरणांमध्ये आणि उपक्रमांमध्ये केंद्रस्थानी ठेवण्यात अभिमान बाळगतो आणि आमच्या सध्याच्या आणि नव्या ग्राहकांना आमच्या क्षेत्रातली सर्वोत्तम ग्राहक सेवा देण्यास वचनबद्ध आहोत.
 
@@ -289,4 +291,16 @@ On receiving the escalation, the complaint will be acknowledged within twenty fo
 ---
 
 ### अनधिकृत फसवणूक व्यवहाराचा अहवाल द्या
-कृपया तक्रार नोंदवण्यासाठी [**येथे क्लिक करा**](https://connect.eko.in/) आणि 'Need Help' बटणावर क्लिक करा.
+कृपया खाली **['Report Complaint' विभागात](#report-complaint)** आपली तक्रार सबमिट करा.
+
+<br><br>
+
+---
+
+<br><br>
+
+## Report Complaint
+
+{% if env.ZOHO_FORM_GRIEVANCE_URL %}
+<iframe class="form-frame grievance" title="Grievance Form" frameborder="0" loading="lazy" src='{{env.ZOHO_FORM_GRIEVANCE_URL}}'></iframe>
+{% endif %}

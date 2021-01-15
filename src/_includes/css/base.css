@@ -902,6 +902,10 @@ section.block.get_started_banner .button {
 	height: 420px;
 }
 
+.form-frame.grievance {
+	height: 900px;
+	background: none;
+}
 
 @media (min-width: 700px) {
 	.form-frame {
