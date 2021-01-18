@@ -1,7 +1,7 @@
 backend:
-  # name: git-gateway
+  name: git-gateway
   branch: master
-  name: test-repo
+  # name: test-repo
 
 media_folder: "src/assets/img/blog"
 public_folder: "/assets/img/blog"
