@@ -12,14 +12,14 @@ module.exports = {
 	}).minify(code).styles,
 
 
-    dateFormat: function (date, format) {
-        return DateTime.fromJSDate(date, { zone: 'utc' }).toFormat(
-            String(format)
-        );
+	dateFormat: function (date, format) {
+		return DateTime.fromJSDate(date, { zone: 'utc' }).toFormat(
+			String(format)
+		);
 	},
 
 
-    dateISO: date => DateTime.fromJSDate(date, { zone: 'utc' }).toISO({
+	dateISO: date => DateTime.fromJSDate(date, { zone: 'utc' }).toISO({
 		includeOffset: false,
 		suppressMilliseconds: true
 	}),
@@ -35,15 +35,6 @@ module.exports = {
 
 	// Useful to change property of an object in the Nunjucks 'set' method which is fairly limited
 	mergeObjectFilter: (obj1, obj2) => { return { ...obj1, ...obj2 } },
-
-
-    obfuscate: str => {
-        const chars = [];
-        for (var i = str.length - 1; i >= 0; i--) {
-            chars.unshift(['&#', str[i].charCodeAt(), ';'].join(''));
-        }
-        return chars.join('');
-	},
 
 	// Reduce length of a large Array
 	trimArray: (array, max_length) => {
