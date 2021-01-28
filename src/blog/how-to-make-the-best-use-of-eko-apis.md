@@ -11,9 +11,7 @@ business: api
 ---
 Eko offers a digital platform for businesses to maximize revenue by incorporating our professional financial services into your bouquet of offerings. You can get our pre-programmed APIs to empower your merchants with banking services at their shops. 
 
-
 Here’s an overview:
-
 
 API stands for Application Programming Interface –APIs are digital intermediary functions that allow a software to access data and interact with other software.  Fintech APIs are widely used to streamline banking services and to make banking more accessible.   
 
@@ -59,7 +57,7 @@ Customers can verify KYC as well as PAN details through Eko APIs in real-time.
 
 <b>Account Number Verification</b> – Check account number of customers to instantly confirm the details using Eko’s Account number verification API. Businesses can utilize this feature for vendor payments or salary disbursements. 
 
-### Benefits of EKO APIs
+### <u>Benefits of EKO APIs</u>
 
 EKO APIs are widely used across the country by numerous businesses and millions of customers. We leverage more than a decade of expertise and experience in the financial ecosystem to bring technically sound and secure products to you.
 
@@ -70,7 +68,6 @@ EKO APIs are widely used across the country by numerous businesses and millions 
 <li>Seamless Integration </li>
 <li>Comprehensive Documentation </li>
 <li>24/7 Support </li>
-
 
 </ul>
 
