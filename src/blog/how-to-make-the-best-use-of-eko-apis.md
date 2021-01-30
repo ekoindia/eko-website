@@ -9,11 +9,11 @@ date: 2021-01-28T16:40:20.079Z
 image: /assets/img/blog/blog-02-1-.png
 business: api
 tags:
-  - api
-  - whitelabel
-  - moneytransfer
-  - Domestic Money Transfer
-  - EKO APIs
+  - API
+  - WhiteLabel
+  - MoneyTransfer
+  - DomesticMoneyTransfer
+  - EKOAPIs
 ---
 Eko offers a digital platform for businesses to maximize revenue by incorporating our professional financial services into your bouquet of offerings. You can get our pre-programmed APIs to empower your merchants with banking services at their shops. 
 
@@ -39,7 +39,7 @@ With Eko APIs you can offer the following basic facilities:
 
 <li><b>Cash Transfer</b> - Customers can send money through your retailers using the Eko's cash transfer API. </li>
 <li><b>Transaction Receipt</b> - Retailers can print and share the transaction receipt for cash transfers with customers. </li>
-<li><b>Indo-Nepal Money Transfer</b> - Your retailers can help customers to transfer money to Nepal easily. A safe and secure gateway for direct[ money transfer to Nepal](https://eko.in/products/indo-nepal-money-transfer). Eko's API solution doesn't require customers to have an Indian bank account to do the transaction.</li>
+<li><b>Indo-Nepal Money Transfer</b> - Your retailers can help customers to transfer money to Nepal easily. A safe and secure gateway for direct [money transfer to Nepal](https://eko.in/products/indo-nepal-money-transfer). Eko's API solution doesn't require customers to have an Indian bank account to do the transaction.</li>
 
 </ul>
 
