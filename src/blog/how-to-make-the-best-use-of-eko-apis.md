@@ -39,7 +39,7 @@ With Eko APIs you can offer the following basic facilities:
 
 <li><b>Cash Transfer</b> - Customers can send money through your retailers using the Eko's cash transfer API. </li>
 <li><b>Transaction Receipt</b> - Retailers can print and share the transaction receipt for cash transfers with customers. </li>
-<li><b>Indo-Nepal Money Transfer</b> - Your retailers can help customers to transfer money to Nepal easily. A safe and secure gateway for direct [money transfer to Nepal](https://eko.in/products/indo-nepal-money-transfer). Eko's API solution doesn't require customers to have an Indian bank account to do the transaction.</li>
+<li><b>Indo-Nepal Money Transfer</b> - Your retailers can help customers to transfer money to Nepal easily. A safe and secure gateway for direct money transfer to Nepal. Eko's API solution doesn't require customers to have an Indian bank account to do the transaction.</li>
 
 </ul>
 
