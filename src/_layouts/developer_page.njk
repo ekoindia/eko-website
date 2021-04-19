@@ -34,7 +34,7 @@ business: api
 	{% endfor %}
 
 	{# Signup Form Section #}
-	{% set form = { type: "api" } %}
+	{% set form = { type: "api", referrername: "eps_" + product.name | slug } %}
 	{% include "section_signup_form.njk" %}
 
 {% endblock %}
