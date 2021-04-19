@@ -11,5 +11,5 @@
 {% endif %}
 
 {% if formurl %}
-	<iframe class="form-frame {{ clsform }}" title="Signup Form" frameborder="0" loading="lazy" src='{{formurl}}'></iframe>
+	<iframe class="form-frame {{ clsform }}" title="Signup Form" frameborder="0" loading="lazy" src='{{formurl}}?referrername={{form.referrername or page.fileSlug}}'></iframe>
 {% endif %}
