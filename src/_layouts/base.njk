@@ -158,6 +158,11 @@
 		<script>addLoadEvent(function() { loadScript("{{env.ZOHO_PAGESENSE_URL}}", null, null, true); });</script>
     {% endif %}
 
+	{# ~~~~~ Zoho CRM ZCGA Script ~~~~~ #}
+	{% if env.ZOHO_CRM_ZCGA_SCRIPT_URL %}
+		<script>addLoadEvent(function() { loadScript("{{env.ZOHO_CRM_ZCGA_SCRIPT_URL}}", null, null, true); });</script>
+    {% endif %}
+
 
 
 	{# ~~~~~ Global site tag (gtag.js) - Google Analytics ~~~~~ #}
