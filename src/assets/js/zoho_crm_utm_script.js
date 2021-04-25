@@ -1,4 +1,4 @@
-// ThinkWP: To push UTM's on the Zoho CRM with the iframe scenarios
+// ThinkWP: To push UTM's on the Zoho CRM for iframe-based Zoho Forms
 
 function ZFAdvLead() {}
 ZFAdvLead.utmPValObj = ZFAdvLead.utmPValObj || {};
