@@ -162,7 +162,7 @@
 	{% if env.ZOHO_CRM_ZCGA_SCRIPT_URL %}
 		<script>addLoadEvent(function() {
 			loadScript("{{env.ZOHO_CRM_ZCGA_SCRIPT_URL}}", null, null, true);
-			loadScript("./assets/js/zoho_crm_utm_script.js", null, null, true);
+			loadScript("/assets/js/zoho_crm_utm_script.js", null, null, true);
 		});</script>
     {% endif %}
 
