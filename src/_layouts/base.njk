@@ -141,13 +141,13 @@
 	{% if env.ZOHO_SALESIQ %}
 		<script>
 		addLoadEvent(function(){
-		window.$zohosalesiqready = false;
-		window.$zoho=window.$zoho || {};$zoho.salesiq = $zoho.salesiq ||
-		{widgetcode:"{{env.ZOHO_SALESIQ}}", values:{},ready:function(){}};
-		$zoho.salesiq.ready=function(embedinfo){
-		if ($zohosalesiqready===false){ $zohosalesiqready = true; $zoho.salesiq.reset(); }
-		}
-		loadScript("https://salesiq.zoho.in/widget", "zsiqscript", null, true);
+			window.$zohosalesiqready = false;
+			window.$zoho=window.$zoho || {};
+			$zoho.salesiq = $zoho.salesiq || {widgetcode:"{{env.ZOHO_SALESIQ}}", values:{}, ready:function(){}};
+			$zoho.salesiq.ready=function(embedinfo){
+				if ($zohosalesiqready===false){ $zohosalesiqready = true; $zoho.salesiq.reset(); }
+			}
+			loadScript("https://salesiq.zoho.in/widget", "zsiqscript", null, true);
 		});
 		</script>
 		<div id='zsiqwidget'></div>
@@ -166,9 +166,25 @@
 		});</script>
     {% endif %}
 
+	{# ~~~~~~ Facebook Pixel ~~~~~~ #}
+	{% if env.FACEBOOK_PIXEL_ID %}
+		<script>
+		addLoadEvent(function(){
+			var f=window, n;
+			if(f.fbq)return;
+			n=f.fbq=function(){n.callMethod?
+			n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+			if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+			n.queue=[];
+			loadScript("https://connect.facebook.net/en_US/fbevents.js", null, null, true);
+			fbq('init', '{{env.FACEBOOK_PIXEL_ID}}');
+			fbq('track', 'PageView');
+		});
+		</script>
+		<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id={{env.FACEBOOK_PIXEL_ID}}&ev=PageView&noscript=1"/></noscript>
+	{% endif %}
 
-
-	{# ~~~~~ Global site tag (gtag.js) - Google Analytics ~~~~~ #}
+	{# ~~~~~ Global site tag (gtag.js) - Google Analytics / Tag Manager ~~~~~ #}
 	{% if env.GA_KEY %}
 		{% set google %}
 			{% include "js/google_analytics.js" %}
