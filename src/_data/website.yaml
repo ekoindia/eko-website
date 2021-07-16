@@ -30,7 +30,13 @@ google_font_url: https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;70
 ##      See '.env.example' file for details
 
 # BASE_URL
-# GA_KEY            (Google Analytics)
-# MS_CLARITY_TAG    (Microsoft Clarity Analytics)
-# ZOHO_SALESIQ      (Zoho SalesIQ Chatbot)
-# ZOHO_FORM_URL     (Zoho Signup Forms)
+# GA_KEY                  (Google Analytics / Tag Manager)
+# MS_CLARITY_TAG          (Microsoft Clarity Analytics)
+# FACEBOOK_PIXEL_ID       (Facebook Pixel)
+# ZOHO_SALESIQ            (Zoho SalesIQ Chatbot)
+# ZOHO_PAGESENSE_URL      (Zoho PageSense Analytics)
+# ZOHO_FORM_URL           (Zoho Signup Forms)
+# ZOHO_FORM_RETAIL_URL    (Zoho Signup Form for Retail pages)
+# ZOHO_FORM_API_URL       (Zoho Signup Form for API pages)
+# ZOHO_FORM_GRIEVANCE_URL (Zoho Signup Form for grievance page)
+# ZOHO_CRM_ZCGA_SCRIPT_URL(Zoho CRM zcga.js script)

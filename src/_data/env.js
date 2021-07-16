@@ -10,6 +10,7 @@ module.exports = {
 
 	GA_KEY: process.env.GA_KEY || '',
 	MS_CLARITY_TAG: process.env.MS_CLARITY_TAG || '',
+	FACEBOOK_PIXEL_ID: process.env.FACEBOOK_PIXEL_ID || '',
 
 	ZOHO_SALESIQ: process.env.ZOHO_SALESIQ || '',
 	ZOHO_PAGESENSE_URL: process.env.ZOHO_PAGESENSE_URL || '',
