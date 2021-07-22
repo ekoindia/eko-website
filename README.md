@@ -1,4 +1,4 @@
-# ThinkWP Eko's Website & Blog on Jamstack
+# Eko's Website & Blog on Jamstack
 The Eko website & blog built with [Eleventy](https://www.11ty.dev). Uses reusable component and simple configurations to automate page creation.
 
 ![Netlify Status](https://api.netlify.com/api/v1/badges/16835446-1532-4951-9268-a82abe342e6a/deploy-status)

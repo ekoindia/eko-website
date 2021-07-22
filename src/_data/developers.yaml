@@ -1,9 +1,9 @@
 - name: Domestic Money Transfer API
-  title: Domestic Money Transfer API
+  title: Domestic Money Transfer API (DMT API) | Eko - India’s Most Trusted API Solution Provider
   title_short: DMT API
   tag_line: Easiest way to transfer cash to anyone
   social_image: /assets/img/money-transfer/easy-cash-transfer.png
-  keywords: money transfer, DMT
+  keywords: Domestic Money Transfer API, dmt api, domestic money transfer api, payment transfer api, bank transfer api, dmt api provider, eko dmt api, b2b money transfer api
   hero_image: /assets/img/developers/money-transfer-api-opt.svg
   summary: A simple and highly secure direct money transfer ability for your customers using cash with industry-leading success rates
   description: Eko’s money transfer API allows your retailers to turn their shop into mini bank. Customers who need assistance for transferring money using cash can visit these retailer shops. Integrate with us to increase the growth of your business and that of your retailers.
@@ -83,10 +83,10 @@
 
 
 - name: AePS Cashout SDK
-  title: AePS Cashout SDK
+  title: Aadhaar Enabled Payment System (AePS) Cashout SDK | Whitelabel AePS Portal API Eko
   tag_line: AePS - Aadhaar Enabled Payment System
   social_image: /assets/img/aadhaar-banking/AePS_hero.png
-  keywords: Aadhaar Banking, Cashout, ATM
+  keywords: Whitelabel AePS Portal API, Aadhaar Enabled Payment System api, aeps api, aeps api provider bank, aeps api provider, aeps api commission, aeps api provider company, aeps api integration, aeps money transfer api
   hero_image: /assets/img/developers/aeps-main.svg
   summary: AePS via SDK is a simple and highly secure cash withdrawal system developed by NPCI for Indians using their Aadhaar linked bank accounts
   description: AePS allows a customer to use Aadhaar and access their bank account to perform basic banking transactions like cash-deposit, cash-withdrawal, intrabank or interbank fund-transfer, balance-inquiry, and access their mini statement with just their fingerprint.
@@ -180,10 +180,10 @@
 
 
 - name: Fund Settlement API
-  title: Fund Settlement API
+  title: Fund Settlement API With Highest Success Rate | AePS, DMT, Cashout SDK API Provider Eko
   tag_line: Make salary & vendor payments easily
   social_image: /assets/img/developers/salary-disbursal-first-fold-opt.svg
-  keywords: fund settlement, disbursal, vendor payment, salary payment
+  keywords: Fund Settlement API, Whitelabel AePS Portal API, Aadhaar Enabled Payment System api, aeps api, aeps api provider bank
   hero_image: /assets/img/developers/salary-disbursal-first-fold-opt.svg
   summary: Get our easy-to-use fund settlement API and pay your employees and vendors their payments using your digital wallet balance with ease.
   description: Make instant, automated payments to your vendors or pay wages to your employees. The best part is that you can use your e-money balance for the payouts.
@@ -260,10 +260,10 @@
 
 
 - name: Cash Collection API
-  title: Cash Collection Service
+  title: Eko - India’s Most Trusted API Solution Provider | Easy To Use Cash Collection API
   tag_line: Assisted Cash Management System
   social_image: /assets/img/developers/assisted-cash-management-opt.svg
-  keywords: e-money, cash management, cash collection
+  keywords: e-money, cash management, cash collection, Cash Collection API
   hero_image: /assets/img/developers/assisted-cash-management-opt.svg
   summary: Eko provides technical service assistance to help you set up a cash management system for your Retailers.
   description: Eko provides an easy-to-use Cash Collection service which helps you set up a cash management system for your retailers. This system makes e-money transfer hassle-free for you and your retailers. We bear the end-to-end technical burden, reducing your integration task to a mere formality.
@@ -339,10 +339,10 @@
 
 
 - name: PAN Verification API
-  title: PAN Verification API
+  title: Eko - Instant Pan Verification API | Easy To Integrate PAN Verification API
   tag_line: Customer onboarding & verification made easy
   social_image: /assets/img/developers/pan-verification-2-opt.svg
-  keywords: PAN verification, NSDL
+  keywords: pan verification api, pan verification api india, online pan verification api, Instant PAN Verification API, pan ekyc api, pan kyc api
   hero_image: /assets/img/developers/pan-verification-2-opt.svg
   summary: Real-time onboarding and verification of users is as easy as it gets with out PAN Verification API. Just integrate the API and get going.
   description: Use Eko’s NSDL-powered Pan verification API to validate your customers, employees, and merchants. Our easy-to-use API has made pan-fraud a thing of the past.
@@ -410,7 +410,7 @@
 
 
 - name: Account Verification API
-  title: Account Verification API
+  title: Eko’s Best Bank Account Verification API | Simple & Easy Way To Verify Bank Account API
   tag_line: Simple & easy way to verify bank account
   social_image: /assets/img/developers/bank-verification-opt.svg
   keywords: bank account verification
@@ -473,7 +473,3 @@
       image: /assets/img/become-eko-partner-opt.svg
       button1_text: Get Started
       button2_text: Contact Sales
-
-
-
-
