@@ -1,4 +1,4 @@
-# Eko's Website & Blog on Jamstack
+# ThinkWP Eko's Website & Blog on Jamstack
 The Eko website & blog built with [Eleventy](https://www.11ty.dev). Uses reusable component and simple configurations to automate page creation.
 
 ![Netlify Status](https://api.netlify.com/api/v1/badges/16835446-1532-4951-9268-a82abe342e6a/deploy-status)
@@ -121,4 +121,3 @@ The Eko website & blog built with [Eleventy](https://www.11ty.dev). Uses reusabl
 1. For full customization, create a Nunjucks file (.njk) and write any custom HTML.
 1. Add other page info (like description, social image, etc) at the top of the page between the two '---' lines.
 1. Add to navigation menu in the [`src/_includes/navigation.njk`](/src/_includes/navigation.njk) file.
-
