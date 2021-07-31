@@ -39,8 +39,7 @@ All customers have the right to share their feedback or complaint in case they f
 ### Escalation: Level 1
 
 **Our customers can inquire, insist, or complain through the following mediums:**
-* **Phone - Customer Engagement Centre:** Our customers can call us at Help Line: 0124-438-5445 from 7 am to 11 pm on all working days except Government and Public Holidays.
-  Agents can contact us at 0120-476-3000 from 7 am to 11 pm on all working days except Government and Public Holidays.
+* **Phone - Customer Engagement Centre:** Our customers & agents  can call us at Help Line: [0124-456-6200](tel:+911244566200) from 8 AM to 8 PM on all working days except Government and Public Holidays.
 * **Email - Customers can e-mail us at cs@eko.co.in**
 * These aforesaid mechanisms are dedicated for redressing our customer complaints, providing online resolution wherever possible, and capturing valuable feedback regarding our services.
 
@@ -74,7 +73,7 @@ In case the customer is not satisfied with the response from customer service ex
 
 Write to us: Customer Care ,Eko India Financial Services Pvt. Ltd. , 3rd Floor, Phase 2 Building,Plot No. 34, Institutional Area Sector 44, Gurgaon-122 003,Haryana
 
-Email ID: ops@eko.co.in
+Email ID: grievance@eko.co.in
 
 1. All escalations received with the required details such as reference number provided at Level 1, contact details (both phone & email) would be addressed and  resolved within forty eight (48) hours up to a max of seven (7) days in special cases pertaining to third party transactions.
 
@@ -88,7 +87,7 @@ In case the customer is still not satisfied with the resolution provided or dela
 **nodaldesk@eko.co.in**
 **+91-9654280988**
 
-Write to us: Nodal Officer, Eko India Financial Services Pvt. Ltd., 3rd Floor, Phase 2 Building,Plot No. 34, Institutional Area Sector 44, Gurgaon-122 003, Haryana
+Write to us: Nodal Officer, Eko India Financial Services Pvt. Ltd., 3rd Floor, Phase 2 Building, Plot No. 34, Institutional Area Sector 44, Gurgaon-122003, Haryana
 Email ID: nodaldesk@eko.co.in
 Mobile No: +91-9654280988
 
@@ -140,8 +139,7 @@ Or, [click here](https://connect.eko.in/) and click on 'Need Help' button to rep
 ### एसकेलेशन: स्तर 1
 
 **हमारे ग्राहक निम्नलिखित माध्यमों से पूछताछ, आग्रह या शिकायत कर सकते हैं:**
-* **फोन - ग्राहक सेवा केंद्र:** हमारे ग्राहक सरकारी और सार्वजनिक अवकाशों को छोड़कर सभी कार्य दिवसों में सुबह 7 से 11 बजे तक सहायता सेवा नम्बर: 0124-438-5445 पर हमें फोन कर सकते हैं।
-  एजेंट, सरकारी और सार्वजनिक अवकाशों को छोड़कर, सभी कार्य दिवसों में सुबह 7 बजे से 11 बजे तक 0120-476-3000 पर हमसे संपर्क कर सकते हैं।
+* **फोन - ग्राहक सेवा केंद्र:** हमारे ग्राहक और एजेंट सरकारी और सार्वजनिक अवकाशों को छोड़कर सभी कार्य दिवसों में सुबह 8 से शाम 8 बजे तक सहायता सेवा नम्बर: [0124-456-6200](tel:+911244566200) पर हमें फोन कर सकते हैं।
 * **ईमेल - ग्राहक हमें cs@eko.co.in पर ई-मेल कर सकते हैं**
 * ये उपरोक्त तंत्र हमारे ग्राहक की शिकायतों के निवारण के लिए समर्पित हैं, जहाँ भी संभव हो ऑनलाइन समाधान प्रदान करते हैं, और हमारी सेवाओं के बारे में मूल्यवान प्रतिक्रिया को दर्ज करते हैं।
 
@@ -171,9 +169,9 @@ Or, [click here](https://connect.eko.in/) and click on 'Need Help' button to rep
 
 ग्राहक सेवा अधिकारी की प्रतिक्रिया से यदि ग्राहक संतुष्ट नहीं हैं, तो वे शिकायत को एसकेलेशन स्तर 2 तक ले जा सकते हैं।
 
-हमें लिखें: कस्टमर केयर, Eko India फाइनेंशियल सर्विसेज प्राइवेट लिमिटेड , तीसरा तल, फेज 2 भवन, प्लॉट नंबर 34, इंस्टीट्यूशनल एरिया सेक्टर 44, गुड़गाँव -122 003, हरियाणा
+हमें लिखें: कस्टमर केयर, Eko India फाइनेंशियल सर्विसेज प्राइवेट लिमिटेड, तीसरा तल, फेज 2 भवन, प्लॉट नंबर 34, इंस्टीट्यूशनल एरिया सेक्टर 44, गुड़गाँव -122 003, हरियाणा
 
-ईमेल आईडी: ops@eko.co.in
+ईमेल आईडी: grievance@eko.co.in
 
 1. आवश्यक विवरणों, जैसे कि स्तर 1 पर प्रदान की गई संदर्भ संख्या, संपर्क विवरण (फोन और ईमेल दोनों) के साथ प्राप्त सभी एसकेलेशन का समाधान किया जाएगा और विशेष मामलों, जैसे कि तीसरे पक्ष के लेनदेन के लिए अड़तालीस (48) घंटे से ले कर अधिकतम सात (7) दिनों में इसका हल किया जाएगा।
 
@@ -187,7 +185,7 @@ Or, [click here](https://connect.eko.in/) and click on 'Need Help' button to rep
 **nodaldesk@eko.co.in**
 **+91-9654280988**
 
-हमें लिखें: नोडल अधिकारी, Eko India फाइनेंशियल सर्विसेज प्राइवेट लिमिटेड , तीसरा तल, फेज 2 भवन, प्लॉट नंबर 34, इंस्टीट्यूशनल एरिया सेक्टर 44, गुड़गाँव -122 003, हरियाणा
+हमें लिखें: नोडल अधिकारी, Eko India फाइनेंशियल सर्विसेज प्राइवेट लिमिटेड, तीसरा तल, फेज 2 भवन, प्लॉट नंबर 34, इंस्टीट्यूशनल एरिया सेक्टर 44, गुड़गाँव-122003, हरियाणा
 ईमेल आईडी: nodaldesk@eko.co.in
 मोबाइल नंबर: +91-9654280988
 
@@ -239,8 +237,7 @@ Or, [click here](https://connect.eko.in/) and click on 'Need Help' button to rep
 ### एस्कलेशन: स्तर 1
 
 **आमचे ग्राहक खालील मार्गांनी चौकशी करू शकतील, आग्रह धरू शकतील किंवा तक्रार नोंदवू शकतील.**
-* **फोन - ग्राहक संवाद केंद्र** आमचे ग्राहक आम्हाला खालील हेल्प-लाईन क्रमांकांवर फोन करू शकतात. 0124-438-5445 वर सकाळी 7 ते रात्री 11 शासकीय आणि सार्वजनिक सुट्ट्या वगळता सर्व कामाच्या दिवसांदरम्यान
-  एजंट्ससाठी 0120-476-3000 वर सकाळी 7 ते रात्री 11 शासकीय आणि सार्वजनिक सुट्ट्या वगळता सर्व कामाच्या दिवसांदरम्यान.
+* **फोन - ग्राहक संवाद केंद्र** आमचे ग्राहक आणि एजंट् आम्हाला खालील हेल्प-लाईन क्रमांकांवर फोन करू शकतात. [0124-456-6200](tel:+911244566200) वर सकाळी 8 ते रात्री 8 शासकीय आणि सार्वजनिक सुट्ट्या वगळता सर्व कामाच्या दिवसांदरम्यान
 * **ई-मेल- ग्राहक आम्हाला cs@eko.co.in वर ई-मेल पाठवू शकतात.**
 * वर नमूद केलेले मार्ग आमच्या ग्राहकांच्या तक्रारींचे निराकरण करण्यासाठी खास ठेवलेले  आहेत, ज्यात शक्य असेल तेथे ऑन-लाईन निराकरण  करून आमच्या सेवेच्या संदर्भात मोलाचा असणारा अभिप्राय नोंदवला जाईल.
 
@@ -270,9 +267,9 @@ Or, [click here](https://connect.eko.in/) and click on 'Need Help' button to rep
 
 जर ग्राहक ग्राहकसेवा अधिकार्‍याकडून मिळालेल्या प्रतिसादाबद्दल ग्राहक समाधानी नसेल तर दुसर्‍या स्तरावरील एस्कलेशन सुरू होईल.
 
-आम्हाला येथे लिहा: कस्टमर केयर, एको इंडिया फिनंशियल सर्व्हिसेस प्रा. लि., 3रा मजला, फेज 2, बिल्डिंग, प्लॉट क्र. 34, औद्योगिक प्रभाग सेक्टर 44, गुरगाव - 122003, हरयाना
+आम्हाला येथे लिहा: कस्टमर केयर, एको इंडिया फिनंशियल सर्व्हिसेस प्रा. लि., 3रा मजला, फेज 2, बिल्डिंग, प्लॉट क्र. 34, औद्योगिक प्रभाग सेक्टर 44, गुरगाव-122003, हरयाना
 
-ई-मेल आयडी: ops@eko.co.in
+ई-मेल आयडी: grievance@eko.co.in
 
 1. स्तर 1 वर दिला गेलेला संदर्भ क्रमांक, संपर्क तपशिल ( फोन क्रमांक आणि ई-मेल पत्ता हे दोन्ही)  यासारख्या तपशिलासह मिळालेल्या सर्व एस्कलेशन्सवर अठ्ठेचाळीस (48) तासांपासून ते तृतिय पक्षीय व्यवाहारांच्या बाबतीतल्या विशेष प्रकरणांमध्ये सात (7) दिवसांच्या आत कार्यवाही होऊन त्यांचे निराकरण  केले जाईल.
 
