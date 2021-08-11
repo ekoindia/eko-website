@@ -5,7 +5,8 @@ business: api
 {% extends "./base.njk" %}
 
 {# Ideally set through eleventyComputed in front-matter but not working. Bug? #}
-{% set title = developer.name + " | Developers" %}
+{# set title = developer.name + " | Developers" #}
+{% set title = developer.title %}
 {% set description = developer.summary or developer.description %}
 {% set keywords = developer.keywords %}
 {% set image = developer.social_image or developer.image %}

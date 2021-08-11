@@ -5,6 +5,7 @@ pagination:
     alias: developer
 layout: developer_page
 permalink: 'developers/eps/{{ developer.name | slug }}/'
+#permalink: 'developers/eps/{{ developer.name | slug }}/'
 business: api
 # TODO
 # permalink: {{  false if developer.disabled else false 'developers/' + (developer.name | slug) }}

@@ -12,7 +12,7 @@
 
 			{% if col.type == "api" %}
 				{% for item in developers | rejectattr("hidden") | rejectattr("disabled") -%}
-					<a href="/developers/eps/{{ item.name | slug }}">{{item.title_short or item.title}}</a>
+					<a href="/developers/eps/{{ item.name | slug }}">{{item.title_short or item.name}}</a>
 					<br>
 				{%- endfor %}
 			{% endif %}
@@ -50,4 +50,3 @@
 		</div>
 	</div>
 </footer>
-
