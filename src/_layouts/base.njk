@@ -22,8 +22,7 @@
 
 
 	{# SEO... #}
-	{# <title>{{ title and title + " | " }}{{ website.title }}</title> #}
-  <title>{{ title and title }}</title>
+	<title>{{ title and title + " | " }}{{ website.title }}</title>
 
 	{% if business and business == "api" %}
 		{% set keywords_extra = ", " + website.keywords_api %}
