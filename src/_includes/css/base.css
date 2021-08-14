@@ -913,7 +913,7 @@ section.block.get_started_banner .button {
 	}
 }
 
-/* ================================= Ayush Custom CSS ====================================== */
+/* ================================= ThinkWP Custom CSS ====================================== */
 
 .bg-shaded-1 {
 	background-color: #FFB218;
@@ -921,8 +921,14 @@ section.block.get_started_banner .button {
 .cstbox {
 	background: #fff;
 	margin:10px;
-	padding: 20px;
+	padding: 40px 20px;
 }
 .cst-blackfnt {
 	color: #333;
+}
+
+@media (max-width: 700px) {
+	.m-imgbox {
+		width: 210px;
+	}
 }
