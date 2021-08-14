@@ -1,0 +1,48 @@
+<section class="block bg-shaded-1 heros_main" type="custom_main">
+
+	{% if item.header %}
+		<center>
+			<h2 class="cst-blackfnt">{{ item.header }}</h2>
+			<div class="h2-border"></div>
+		</center>
+	{% endif %}
+
+	{% for hero in item.items %}
+			{% if hero.type == 'single' %}
+				<center>
+					<img class="mw-100" src="{{ hero.image }}" alt="{{ hero.title }}" loading="lazy">
+					<br><br>
+					<h3 >{{ hero.title }}</h3>
+					<p class="lh-high p-fw">{{ hero.text }}</p>
+				</center>
+			{% else %}
+				<div class="pure-g-cst">
+					<div class="pure-u-1 pure-u-md-1-3 l-box order-1-sm cstbox">
+						<center>
+							<img src="{{ hero.image_left }}" alt="{{ hero.title_left }}" loading="lazy">
+							<br><br>
+							<h3>{{ hero.title_left }}</h3>
+							<p class="lh-high">{{ hero.text_left }}</p>
+						</center>
+					</div>
+					<div class="pure-u-1 pure-u-md-1-3 l-box order-2-sm cstbox"">
+						<center>
+							<img src="{{ hero.image_center }}" alt="{{ hero.title_center }}" loading="lazy">
+							<br><br>
+							<h3>{{ hero.title_center }}</h3>
+							<p class="lh-high">{{ hero.text_center}}</p>
+						</center>
+					</div>
+					<div class="pure-u-1 pure-u-md-1-3 l-box order-3-sm cstbox"">
+						<center>
+							<img src=" {{ hero.image_right }}" alt="{{ hero.title_right }}" loading="lazy">
+							<br><br>
+							<h3>{{ hero.title_right }}</h3>
+							<p class="lh-high">{{ hero.text_right }}</p>
+						</center>
+					</div>
+				</div>
+			{% endif %}
+			<br>
+	{% endfor %}
+</section>

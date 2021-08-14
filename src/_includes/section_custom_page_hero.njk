@@ -1,0 +1,25 @@
+<section class="block product_page_hero layout vertical horizontal-md center" type="custom_page_hero">
+	<div class="descbox layout inline vertical flex">
+		<div class="subtitle layout inline horizontal end">
+			<div>{{ product.title }}</div>
+			{% if product.icon %}
+				<img src="{{ product.icon }}">
+			{% endif %}
+		</div>
+
+		<h1>{{ product.tag_line }}</h1>
+
+		<p class="lh-high">{{ product.summary }}</p>
+
+		<div class="layout horizontal center">
+			<a href="#sectionSignupForm" class="button">{{ product.signup_label or 'Sign up' }}</a> 
+			{% if product.learn_more_link %}
+				&nbsp;&nbsp;&nbsp;
+				{% linkArrow product.learn_more_link, product.learn_more_label or "Learn More" %}
+			{% endif %}
+		</div>
+	</div>
+	<div class="flex imgbox">
+		<img src="{{ product.hero_image }}" alt="Banner - {{ product.name }}">
+	</div>
+</section>
