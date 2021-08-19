@@ -7,15 +7,15 @@
 			{% endif %}
 		</div>
 
-		<h1>{{ product.tag_line }}</h1>
+		<h1 style="margin:0em;">{{ product.tag_line }}</h1>
 
 		<p class="lh-high">{{ product.summary }}</p>
 
 		<div class="layout horizontal center">
-			<a href="#sectionSignupForm" class="button">{{ product.signup_label or 'Sign up' }}</a>
+			<a href="#sectionSignupForm" class="button cst-btn">{{ product.signup_label or 'Sign up' }}</a>
 			{% if product.learn_more_link %}
 				&nbsp;&nbsp;&nbsp;
-				{% linkArrow product.learn_more_link, product.learn_more_label or "Learn More" %}
+				{% linkArrow product.learn_more_link, product.learn_more_label or "Download App" %}
 			{% endif %}
 		</div>
 	</div>

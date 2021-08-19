@@ -14,36 +14,30 @@ business: api
 	{# Top Hero Section #}
 	{% set product = {
 		tag_line: "Become Eko's Partner to Get Business Loan",
-		hero_image: "/assets/img/lending-page/connect-banner-image.png",
+		hero_image: "/assets/img/lending-page/connect-banner.png",
     name: "Connect App ",
-		summary: "Eko provides financing options for their merchants to grow with Connect "
+		summary: "Eko provides financing options for their merchants to grow with Connect ",
+    learn_more_link: "https://play.google.com/store/apps/details?id=in.eko.connect"
 	} %}
 	{% include "section_custom_page_hero.njk" %}
 
 
-  {# Documentation Link Banner #}
-	{% set item = {
-		title: "Download Connect App Now",
-		link: "https://play.google.com/store/apps/details?id=in.eko.connect"
-  } %}
-	{% include "section_custom_link_banner.njk" %}
-
 
   {# Icon List Section #}
 	{% set item = {
-		header: "We help small businesses to reach their goals",
+		header: "Grow your business with loans from Eko",
 		icons: [
 			{
 				image: "/assets/img/lending-page/loan-one-day.png",
-				caption: "Loan Strating From One Day"
+				caption: "FLEXIBLE TENURE"
 			},
 			{
 				image: "/assets/img/lending-page/minimum-documentation.png",
-				caption: "Minimum Documentation"
+				caption: "MINIMUM DOCUMENTATION"
 			},
 			{
 				image: "/assets/img/lending-page/low-interest-rate.png",
-				caption: "Low Interest Rate"
+				caption: "LOW INTEREST RATE"
 			}]
 	} %}
 	{% include "section_custom_icon_list.njk" %}
@@ -59,22 +53,22 @@ business: api
 			{ text: "Know your eligibility" }
 		]
 	} %}
-	{% include "section_step_section.njk" %}
+	{% include "section_custom_step_section.njk" %}
 
 
   {# Custom Main section #}
 	{% set item = {
-    header: "How can working loans help you to grow your business?",
+    header: "How can loans from eko help you grow your business?",
 		items: [
 			{
 				type: "pair",
-				title_left: "Get Freedom To Do More Transaction",
+				title_left: "Get freedom to do more transactions",
 				text_left: "Double your income in just a 0.05% interest rates loan. Get a business loan and  Double your volume of transactions because doubling transaction helps you to double your commission and doubling commission helps your business to double your income.",
 				image_left: "/assets/img/lending-page/transaction.png",
-        title_center: "Upgrade your Business",
-				text_center: "Use funds to mass purchase stock, upgrade technology or repair machinery and equipment because the latest technology helps businesses to grow easily.",
+        title_center: "Get opportunity to upgrade your business",
+				text_center: "Use funds to mass purchase stock, upgrade technology or repair machinery and equipment because the latest technology helps businesses to grow rapidly.",
 				image_center: "/assets/img/lending-page/upgrade-business.png",
-				title_right: "Reach More Shoppers",
+				title_right: "Expand your reach to more customers",
 				text_right: "With more funds, you can reach more customers and explore more retail solutions to build your business and start selling more products from your shop to reach more customer.",
 				image_right: "/assets/img/lending-page/reach-shoppers.png"
 			}]
@@ -86,11 +80,10 @@ business: api
 	{% set item = {
 		header: "Our Partners",
 		partner_images: [
-			{ image: "/assets/img/main/partner1.webp", title: "SBI" },
-			{ image: "/assets/img/main/partner2.webp", title: "Yes Bank" },
+			{ image: "/assets/img/lending-page/kudos.webp", title: "Kudos" },
+			{ image: "/assets/img/lending-page/lenden.webp", title: "LenDenClub" },
 			{ image: "/assets/img/main/partner3.webp", title: "Fino Payments Bank" },
-			{ image: "/assets/img/main/partner4.webp", title: "Airtel" },
-			{ image: "/assets/img/main/partner5.webp", title: "Axis Bank" }
+			{ image: "/assets/img/lending-page/indifi.webp", title: "Indifi" }
 		]
 	} %}
 	{% include "section_small_heros.njk" %}
@@ -98,10 +91,10 @@ business: api
 
 
 	{# Form section #}
-	{% set form = { type: "lending-page", referrername: "connect" } %}
+	{% set product = {
+    learn_more_link: "https://play.google.com/store/apps/details?id=in.eko.connect"
+	} %}
 	{% include "section_custom_form.njk" %}
-
-
 
 
 {% endblock %}

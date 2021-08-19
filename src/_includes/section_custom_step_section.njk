@@ -1,0 +1,19 @@
+<section class="block step_section" type="custom_step_section">
+<center>
+	<h2>{{ item.header }}</h2>
+	<span class="h2-border"></span>
+	<br><br>
+</center>
+	<div class="steps">
+		{% for box in item.steps %}
+			<div class="step1">
+				<h3 class="box-title">Step {{ loop.index }}:</h3>
+				<p class="box-text">{{ box.text }}</p>
+				{% if box.link %}
+					<small>{% linkArrow box.link, box.link, "bold" %}</small>
+				{% endif %}
+			</div>
+		{% endfor %}
+	</div>
+
+</section>

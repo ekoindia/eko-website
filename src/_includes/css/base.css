@@ -922,13 +922,30 @@ section.block.get_started_banner .button {
 	background: #fff;
 	margin:10px;
 	padding: 40px 20px;
+	border-radius:8px;
 }
 .cst-blackfnt {
 	color: #333;
+}
+.cst-btn {
+padding:12px 32px;
 }
 
 @media (max-width: 700px) {
 	.m-imgbox {
 		width: 210px;
 	}
+}
+
+.step_section .step1 {
+  border: 1px solid  var(--main-text-color);
+  border-radius: 15px;
+  padding: 10%;
+  opacity: 1;
+  transition: all 0.2s ease-out;
+	background-color: var(--background-section-color);
+	border-color: var(--primary-color);
+}
+.cst-small {
+	font-size:15px;
 }
