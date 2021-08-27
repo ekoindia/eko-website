@@ -1,0 +1,107 @@
+---
+title: Business Loans From Eko
+description: Simple & modular APIs, libraries & SDKs. Go live instantly with our plug & play UI flows. Leverage our large technology & distribution network to grow your business
+keywords: API, SDK, library, documentation, developers, enterprise, platform, eps, dmt, aeps, disbursal, collection, verification, banking, financial services
+business: api
+---
+
+{% extends "./_layouts/base.njk" %}
+
+
+{% block main %}
+
+	{# Top Hero Section #}
+	{% set product = {
+		tag_line: "Become Eko's Partner to Get Business Loan",
+		hero_image: "/assets/img/lending-page/connect-banner.png",
+    name: "Connect App ",
+		summary: "Eko provides financing options for their merchants to grow with Connect ",
+    learn_more_link: "https://play.google.com/store/apps/details?id=in.eko.connect"
+	} %}
+	{% include "section_custom_page_hero.njk" %}
+
+
+
+  {# Icon List Section #}
+	{% set item = {
+		header: "Grow your business with loans from Eko",
+		icons: [
+			{
+				image: "/assets/img/lending-page/loan-one-day.png",
+				caption: "FLEXIBLE TENURE"
+			},
+			{
+				image: "/assets/img/lending-page/minimum-documentation.png",
+				caption: "MINIMUM DOCUMENTATION"
+			},
+			{
+				image: "/assets/img/lending-page/low-interest-rate.png",
+				caption: "LOW INTEREST RATE"
+			}]
+	} %}
+	{% include "section_custom_icon_list.njk" %}
+
+
+	{# Step Section #}
+	{% set item = {
+		header: "Getting Started",
+		steps: [
+			{ text: "Sign Up on Connect", link: "https://connect.eko.in" },
+			{ text: "Start your transaction on Connect" },
+			{ text: "Apply for loan" },
+			{ text: "Know your eligibility" }
+		]
+	} %}
+	{% include "section_custom_step_section.njk" %}
+
+
+  {# Custom Main section #}
+	{% set item = {
+    header: "How can loans from eko help you grow your business?",
+		items: [
+			{
+				type: "pair",
+				title_left: "Get freedom to do more transactions",
+				text_left: "Double your income with loans starting as low as 0.05% that enables you to do more transactions.",
+				image_left: "/assets/img/lending-page/get-freedom.svg",
+        title_center: "Get opportunity to upgrade your business",
+				text_center: "Use funds to mass purchase stock, upgrade technology or repair machinery and equipment because the latest technology helps businesses to grow rapidly.",
+				image_center: "/assets/img/lending-page/upgrade-business.svg",
+				title_right: "Expand your reach to more customers",
+				text_right: "With more funds, you can reach more customers and explore more retail solutions to build your business and start selling more products from your shop to reach more customer.",
+				image_right: "/assets/img/lending-page/reach-shoppers.svg"
+			}]
+	} %}
+	{% include "section_custom_main.njk" %}
+
+
+  {# Small Heros section #}
+	{% set item = {
+		header: "Our Partners",
+		partner_images: [
+			{ image: "/assets/img/lending-page/kudos.webp", title: "Kudos" },
+			{ image: "/assets/img/lending-page/lenden.webp", title: "LenDenClub" },
+			{ image: "/assets/img/main/partner3.webp", title: "Fino Payments Bank" },
+      { image: "/assets/img/lending-page/insta-money.webp", title: "Insta Money" },
+			{ image: "/assets/img/lending-page/indifi.webp", title: "Indifi" }
+		]
+	} %}
+	{% include "section_small_heros.njk" %}
+
+
+  	{# Hero section #}
+  	{% set item = {
+    link: "/Fair-Practices-Code-v2.pdf"
+  	} %}
+  	{% include "section_custom_button.njk" %}
+
+
+
+	{# Form section #}
+	{% set product = {
+    learn_more_link: "https://play.google.com/store/apps/details?id=in.eko.connect"
+	} %}
+	{% include "section_custom_form.njk" %}
+
+
+{% endblock %}
