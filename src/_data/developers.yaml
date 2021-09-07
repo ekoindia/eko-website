@@ -186,7 +186,7 @@
   keywords: Fund Settlement API, Whitelabel AePS Portal API, Aadhaar Enabled Payment System api, aeps api, aeps api provider bank
   hero_image: /assets/img/developers/salary-disbursal-first-fold-opt.svg
   summary: Get our easy-to-use fund settlement API and pay your employees and vendors their payments using your digital wallet balance with ease.
-  description: Make instant, automated payments to your vendors or pay wages to your employees. The best part is that you can use your e-money balance for the payouts.
+  description: Get our easy-to-use fund settlement API and pay your employees and vendors their payments using your digital wallet balance with a reliable & secure fund settlement APIs solution.
   documentation_link: https://developers.eko.in/docs/fund-transfer
 
   layout:
@@ -345,7 +345,7 @@
   keywords: pan verification api, pan verification api india, online pan verification api, Instant PAN Verification API, pan ekyc api, pan kyc api
   hero_image: /assets/img/developers/pan-verification-2-opt.svg
   summary: Real-time onboarding and verification of users is as easy as it gets with out PAN Verification API. Just integrate the API and get going.
-  description: Use Eko’s NSDL-powered Pan verification API to validate your customers, employees, and merchants. Our easy-to-use API has made pan-fraud a thing of the past.
+  description: PAN Verification API made customer onboarding & verification easy with Real-time onboarding and verification of users is as easy as it gets without PAN Verification API. Just integrate the API and get going.
   documentation_link: https://developers.eko.in/docs/identity
 
   layout:
@@ -416,7 +416,7 @@
   keywords: bank account verification
   hero_image: /assets/img/developers/bank-verification-opt.svg
   summary: Account verification API to ensure that your money goes exactly where it is supposed to. No IFSC code needed.
-  description: Bank account numbers are usually long & difficult to remember. Before sending money to any bank account, it should ideally be verified to avoid customer complaints. Using Eko’s bank account verification API, you can verify any bank account number with the click of a button.
+  description: Our Account Verification API simple & easy way to verify bank account holder and details. Account verification API to ensure that your money goes exactly where it is supposed to.
   documentation_link: https://developers.eko.in/docs/identity
 
   layout:
