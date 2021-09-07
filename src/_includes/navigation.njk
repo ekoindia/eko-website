@@ -30,7 +30,7 @@
 					</div>
 					<ul>
 						{%- for product in products | rejectattr("hidden") | rejectattr("disabled") -%}
-							<li role="menuitem"><a href="/products/{{ product.name | slug }}">{% dotTag product.title %}</a></li>
+							<li role="menuitem"><a href="/products/{{ product.name | slug }}">{% dotTag product.name %}</a></li>
 						{%- endfor -%}
 					</ul>
 					<div class="extra-links">
