@@ -949,3 +949,11 @@ padding:12px 32px;
 .cst-small {
 	font-size:15px;
 }
+
+@media only screen
+  and (min-device-width: 1024px)
+  and (max-device-width: 1150px) {
+		#menu li a {
+    padding: .8em 0.6em!important;
+}
+}
