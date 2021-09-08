@@ -1,4 +1,5 @@
 - name: Money Transfer
+  sub_header: Money Transfer
   title: Eko - Online Money Transfer Application (DMT) | Easy Domestic Money Transfer App with Eko Connect
   tag_line: Easiest way to transfer cash to anyone
   social_image: /assets/img/money-transfer/easy-cash-transfer.png
@@ -82,7 +83,8 @@
 
 
 
-- name: Aadhaar Banking / Cash-out
+- name: Aadhaar Banking
+  sub_header: Aadhaar Banking / Cash-out
   title: AePS Aadhaar Enabled Payment System Application | Money Transfer, Cash Withdrawal Banking Portal Provider Company
   tag_line: AePS - Aadhaar Enabled Payment System
   social_image: /assets/img/aadhaar-banking/AePS_hero.png
@@ -180,7 +182,8 @@
 
 
 
-- name: Doorstep Cash Delivery with RWA
+- name: Doorstep Cash Delivery
+  sub_header: Doorstep Cash Delivery with RWA
   title: Eko - ATM at Home | Doorstep Cash Delivery with RWA
   tag_line: Deliver banking services at customer doorstep
   social_image: /assets/img/doorstep-delivery/doorstep-delivery.svg
@@ -259,6 +262,7 @@
 
 
 - name: Utility and Bill Payment
+  sub_header: Utility and Bill Payment
   title: Utility And Bill Payment Portal | Pay Utility Bill Online With Eko Connect
   tag_line: Help your customers pay their utility bills
   social_image: /assets/img/bill-payment/utility-bill-payment.svg
@@ -340,6 +344,7 @@
 
 
 - name: Sell Insurance
+  sub_header: Sell Insurance
   title: Sell Insurance Online Agent | Eko Connect Insurance selling portal
   tag_line: Sell low cost insurance policy at your doorstep
   social_image: /assets/img/sell-insurance/insurance.svg
@@ -410,6 +415,7 @@
 
 
 - name: Indo-Nepal Money Transfer
+  sub_header: Indo-Nepal Money Transfer
   title: Indo-Nepal Money Transfer | Send Money to Nepal Instantly
   tag_line: Transfer money to Nepal, at the click of a button
   social_image: /assets/img/indo-nepal/nepal-money-transfer-opt.svg
