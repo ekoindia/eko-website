@@ -82,7 +82,7 @@
 
 
 
-- name: Aadhaar Banking
+- name: Aadhaar Banking / Cash-out
   title: AePS Aadhaar Enabled Payment System Application | Money Transfer, Cash Withdrawal Banking Portal Provider Company
   tag_line: AePS - Aadhaar Enabled Payment System
   social_image: /assets/img/aadhaar-banking/AePS_hero.png
@@ -180,7 +180,7 @@
 
 
 
-- name: Doorstep Cash Delivery
+- name: Doorstep Cash Delivery with RWA
   title: Eko - ATM at Home | Doorstep Cash Delivery with RWA
   tag_line: Deliver banking services at customer doorstep
   social_image: /assets/img/doorstep-delivery/doorstep-delivery.svg
