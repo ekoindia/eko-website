@@ -1,11 +1,12 @@
 - name: Money Transfer
-  title: Money Transfer
+  sub_header: Money Transfer
+  title: Eko - Online Money Transfer Application (DMT) | Easy Domestic Money Transfer App with Eko Connect
   tag_line: Easiest way to transfer cash to anyone
   social_image: /assets/img/money-transfer/easy-cash-transfer.png
-  keywords: money transfer, DMT, remittance, bank, send cash
+  keywords: Domestic Money Transfer application, Money transfer app, online money transfer, money transfer
   hero_image: /assets/img/money-transfer/money-transfer.svg
   summary: A simple and highly secure direct money transfer ability for your customers using cash with industry-leading success rates
-  description: Eko’s remittance service gives you the feature to turn your own shop into a bank. Customers who do not have bank accounts but still want to transfer money using cash can visit your shop. You can take the cash and transfer digital money to the bank account specified by them. Easy and effective!
+  description: Eko provides the best DMT (Domestic Money Transfer) solution with the highest success rate with Eko money transfer solution you can turn your shop into a Mini Bank.
   signup_label: Sign up
 
   hidden: false
@@ -83,13 +84,14 @@
 
 
 - name: Aadhaar Banking
-  title: Aadhaar Banking / Cash-out
+  sub_header: Aadhaar Banking / Cash-out
+  title: AePS Aadhaar Enabled Payment System Application | Money Transfer, Cash Withdrawal Banking Portal Provider Company
   tag_line: AePS - Aadhaar Enabled Payment System
   social_image: /assets/img/aadhaar-banking/AePS_hero.png
-  keywords: aadhaar banking, cashout, ATM
+  keywords: aadhar payment, aeps, aadhar enabled payment system, aeps service, aadhar payment app, aadhar payment bank, aadhaar atm
   hero_image: /assets/img/aadhaar-banking/AePS_hero.svg
   summary: A simple and highly secure cash withdrawing ability for your customers using Aadhaar and ensuring that you earn more with every transaction.
-  description: Aadhar banking (AePS) helps you turn your own shop into an ATM. It provides you the ability to deliver services such as cash deposit, cash withdrawal, and balance check to your customers. This is particularly useful for customers who do not trust themselves to be able to use an ATM properly. Help them out, help yourself out!
+  description: Aadhar banking (AePS - Aadhaar Enabled Payment System) helps you turn your own shop into an ATM. It provides you the ability to deliver services such as cash deposit, cash withdrawals, and balance check to your customers.
   icon: /assets/img/aadhaar-banking/aadhaar_logo.svg
   learn_more_link: https://www.youtube.com/watch?v=y-zLDNRPnBs&feature=emb_logo
   signup_label: Try for free
@@ -181,13 +183,14 @@
 
 
 - name: Doorstep Cash Delivery
-  title: Doorstep Cash Delivery with RWA
+  sub_header: Doorstep Cash Delivery with RWA
+  title: Eko - ATM at Home | Doorstep Cash Delivery with RWA
   tag_line: Deliver banking services at customer doorstep
   social_image: /assets/img/doorstep-delivery/doorstep-delivery.svg
-  keywords: cashout, home delivery, doorsetp delivery, ATM, cash delivery
+  keywords:  Doorstep Cash Delivery, Cash at doorstep, ATM at home
   hero_image: /assets/img/doorstep-delivery/doorstep-delivery.svg
   summary: Deliver essential banking services to your customers during the COVID-19 pandemic and keep your livelihood secure
-  description: Eko along with RWA is taking an initiative to deliver its Banking Services to every individual. Retailers can deliver cash & give cash-deposit service to every society, apartment, and other residence. Retailers can run their business even during this crisis, while the customers can get these services right at their doorstep.
+  description: With Eko doorstep cash delivery service you can get cash at your doorstep. Eko along with RWA is taking the initiative to deliver its Banking Services to every individual.
   signup_label: Try for free
 
   layout:
@@ -259,13 +262,14 @@
 
 
 - name: Utility and Bill Payment
-  title: Utility & Bill Payments
+  sub_header: Utility and Bill Payment
+  title: Utility And Bill Payment Portal | Pay Utility Bill Online With Eko Connect
   tag_line: Help your customers pay their utility bills
   social_image: /assets/img/bill-payment/utility-bill-payment.svg
-  keywords: bill payment, utility payment
+  keywords: Bill Payment Portal, Utility Payment Portal, bill payment app, mobile banking, electricity bill payment
   hero_image: /assets/img/bill-payment/utility-bill-payment.svg
   summary: Your one-stop shop for online bill payments! Make them easy and hassle free for your customers using cash.
-  description: Eko gives you the opportunity to turn your shop into a one-stop bill payment destination. Collect cash from customers and pay their electricity bill, water bill, gas bill, and phone bills using your Eko wallet!
+  description: Eko gives you the opportunity to turn your shop into a one-stop bill payment destination with Eko utility bill payment solution. Collect cash from customers and pay their electricity bill payment, water bill, gas bill, and phone bills using your Eko wallet!
   signup_label: Try for free
 
   layout:
@@ -340,13 +344,14 @@
 
 
 - name: Sell Insurance
-  title: Sell Insurance
+  sub_header: Sell Insurance
+  title: Sell Insurance Online Agent | Eko Connect Insurance selling portal
   tag_line: Sell low cost insurance policy at your doorstep
   social_image: /assets/img/sell-insurance/insurance.svg
-  keywords: insurance
+  keywords: Sell insurance online, multiple insurance portal, sell insurance online from home
   hero_image: /assets/img/sell-insurance/insurance.svg
   summary: Low cost, simple paperwork and easy claim process makes our insurance policies the best choice for your customers.
-  description: Help your customers secure their lives by becoming an insurance agent. No, not the kind of agent who bothers people by going to their houses only to tell them they could die, but the kind who people themselves approach for their insurance needs.
+  description: Low cost, simple paperwork and easy claim process makes our insurance policies the best choice for your customers. Eko provides retailers the opportunity to earn good money by sell insurance online.
   signup_label: Try for free
 
   layout:
@@ -410,13 +415,14 @@
 
 
 - name: Indo-Nepal Money Transfer
-  title: Indo-Nepal Money Transfer
+  sub_header: Indo-Nepal Money Transfer
+  title: Indo-Nepal Money Transfer | Send Money to Nepal Instantly
   tag_line: Transfer money to Nepal, at the click of a button
   social_image: /assets/img/indo-nepal/nepal-money-transfer-opt.svg
-  keywords: indo-nepal, nepal, money transfer
+  keywords: Nepal money transfer, indo nepal money transfer, indo nepal money transfer near me, transfer money to nepal
   hero_image: /assets/img/indo-nepal/nepal-money-transfer-opt.svg
   summary: Help your customers (mostly Nepali immigrants) send money to their loved-ones in Nepal. Fast, secure money transfer whenever you need to.
-  description: A simple and highly secure direct money transfer ability for your customers to transfer money to Nepal. No Indian bank account needed and no need to visit banks.
+  description: Indo-Nepal Money Transfer is a simple and highly secure direct money transferability for your customers to transfer money to Nepal. No Indian bank account is needed and no need to visit banks.
   signup_label: Try for free
 
   layout:
@@ -476,4 +482,3 @@
       image: /assets/img/become-eko-partner-opt.svg
       button1_text: Get Started
       button2_text: Contact Sales
-

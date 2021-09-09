@@ -5,7 +5,7 @@ business: retail
 {% extends "./base.njk" %}
 
 {# Ideally set through eleventyComputed in front-matter but not working. Bug? #}
-{% set title = product.name + " | Retail" %}
+{% set title = product.title %}
 {% set description = product.summary or product.description %}
 {% set keywords = product.keywords %}
 {% set image = product.social_image or product.image %}
