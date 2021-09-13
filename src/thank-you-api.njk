@@ -1,0 +1,21 @@
+---
+title: Thank You
+---
+
+{% extends "./_layouts/base.njk" %}
+
+{% block main %}
+
+<section class="block bg-shaded1" type="thank_you_page">
+	<center>
+		<div class="one-liner">
+			<img src="/assets/img/developers/merchant-onboarding-icon.svg" alt="thank you page" loading="lazy" width="180px">
+			<h2 style="font-size:32px;">{{ item.title }}</h2>
+			<span class="h2-border"></span>
+			<p class="lh-high p-fw" style="font-size:24px;">Thank you for your submission!</p>
+			<p class="lh-high p-fw ahov" style="font-size:18px;">Our executive will reach to you within the next 24 hours.<br> Please <a href="https://q2p38.app.goo.gl/connect">download our Connect app</a> to complete your registration process.</p>
+		</div>
+	</center>
+</section>
+
+{% endblock %}
