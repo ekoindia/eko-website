@@ -23,6 +23,7 @@ The Eko website & blog built with [Eleventy](https://www.11ty.dev). Uses reusabl
 4. [How to add or edit a Retail-product page?](#-how-to-add-or-edit-a-retail-product-page)
 5. [How to add or edit an API-product page?](#-how-to-add-or-edit-an-api-product-page)
 6. [How to add a custom page?](#-how-to-add-a-custom-page)
+7. [How to add redirections to support old links?](#-how-to-add-redirections-to-support-old-links)
 
 
 ## 🏁 Getting Started (Development Setup)
@@ -121,4 +122,8 @@ The Eko website & blog built with [Eleventy](https://www.11ty.dev). Uses reusabl
 1. For full customization, create a Nunjucks file (.njk) and write any custom HTML.
 1. Add other page info (like description, social image, etc) at the top of the page between the two '---' lines.
 1. Add to navigation menu in the [`src/_includes/navigation.njk`](/src/_includes/navigation.njk) file.
+
+## ❓ How to add redirections to support old links?
+1. Add an entry in the [`src/_redirects`](/src/_redirects) file.
+1. Example and documentation in the file.
 

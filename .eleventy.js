@@ -223,6 +223,7 @@ module.exports = function(eleventyConfig) {
 	eleventyConfig.addPassthroughCopy('src/assets/img');
 	eleventyConfig.addPassthroughCopy('src/assets/js');
 	eleventyConfig.addPassthroughCopy("src/*.pdf");
+	eleventyConfig.addPassthroughCopy("src/_redirects");
 
 	// Add Layouts...
 	eleventyConfig.addLayoutAlias('base', 'base.njk');
