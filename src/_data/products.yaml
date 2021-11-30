@@ -90,7 +90,7 @@
   social_image: /assets/img/aadhaar-banking/AePS_hero.png
   keywords: aadhar payment, aeps, aadhar enabled payment system, aeps service, aadhar payment app, aadhar payment bank, aadhaar atm
   hero_image: /assets/img/aadhaar-banking/AePS_hero.svg
-  summary: A simple and highly secure cash withdrawing ability for your customers using Aadhaar and ensuring that you earn more with every transaction.
+  summary: A simple and highly secure cash withdrawing ability for your customers using Aadhaar Banking (AePS) and ensuring that you earn more with every transaction.
   description: Aadhar banking (AePS - Aadhaar Enabled Payment System) helps you turn your own shop into an ATM. It provides you the ability to deliver services such as cash deposit, cash withdrawals, and balance check to your customers.
   icon: /assets/img/aadhaar-banking/aadhaar_logo.svg
   learn_more_link: https://www.youtube.com/watch?v=y-zLDNRPnBs&feature=emb_logo
@@ -99,11 +99,11 @@
   layout:
     - section: mid_summary
       small_description: Earn with Aadhaar Banking (AePS)
-      header: Turn your shop into an ATM
+      header: Aadhar banking (AePS) Turns your shop into an ATM
 
     - section: single_hero
       title: Easy Cash Withdrawal
-      text: AePS allows you to turn your shop into an ATM and lets your customers withdraw cash using their fingerprint.
+      text: Aadhaar Banking (AePS) allows you to turn your shop into an ATM and lets your customers withdraw cash using their fingerprint.
       image: /assets/img/aadhaar-banking/easy-cash-withdrawal.svg
 
     - section: short_ad
@@ -114,16 +114,16 @@
     - section: alternating_steps
       steps:
       - title: Easy Cash Deposit
-        text: AePS also allows you to turn your shop into a cash deposit machine. Your customers can then deposit cash at your shop with ease.
+        text: Aadhar banking (AePS) also allows you to turn your shop into a cash deposit machine. Your customers can then deposit cash at your shop with ease.
         image: /assets/img/aadhaar-banking/easy-cash-deposit.svg
       - title: Quick Fund Transfer
-        text: With AePS you will never have to go to a Bank or an ATM and you will not need a debit card also. Just transfer funds using your fingerprint.
+        text: With Aadhar banking (AePS) you will never have to go to a Bank or an ATM and you will not need a debit card also. Just transfer funds using your fingerprint.
         image: /assets/img/aadhaar-banking/quick-fund-transfer.svg
       - title: Instant Balance-inquiry
-        text: AePS allows your customers to check their bank balance at your shop instantly.
+        text: Aadhar banking (AePS) allows your customers to check their bank balance at your shop instantly.
         image: /assets/img/aadhaar-banking/instant-balance-inquiry.svg
       - title: Mini Statement
-        text: AePS will also let your customers take the mini statement of their account at your shop
+        text: Aadhar banking (AePS) will also let your customers take the mini statement of their account at your shop
         image: /assets/img/aadhaar-banking/mini-statement.svg
 
     - section: heros_main
@@ -132,7 +132,7 @@
         - type: pair
           # Benefit 1
           title_left: Earn Commission
-          text_left: Earn commission for every cash-deposit, cash-withdrawal or balance-inquiry that your customer does at your shop. More transaction is more commission for you.
+          text_left: Earn commission for every cash-deposit, cash-withdrawal or balance-inquiry that your customer does at your shop Through aadhaar banking (AePS). More transaction is more commission for you.
           image_left: /assets/img/aadhaar-banking/earn-commission.svg
           # Benefit 2
           title_right: Best Success Rate
@@ -145,7 +145,7 @@
       text: You can assure your customers that their money and data is safe. Eko’s trust is unparalleled
 
     - section: step_section
-      header: How to use Aadhaar Banking
+      header: How to use Aadhaar Banking (AePS)
       steps:
       - text: Sign Up on Connect
         link: https://connect.eko.in
@@ -175,7 +175,7 @@
 
     - section: get_started_banner
       small_header: Ready to get started?
-      main_header: Use Aadhaar Banking & Earn More
+      main_header: Use Aadhaar Banking (AePS) & Earn More
       image: /assets/img/become-eko-partner-opt.svg
       button1_text: Get Started
       button2_text: Contact Sales
@@ -185,18 +185,18 @@
 - name: Doorstep Cash Delivery
   sub_header: Doorstep Cash Delivery with RWA
   title: Eko - ATM at Home | Doorstep Cash Delivery with RWA
-  tag_line: Deliver banking services at customer doorstep
+  tag_line: Cash Delivery Service at Customer Doorstep
   social_image: /assets/img/doorstep-delivery/doorstep-delivery.svg
   keywords:  Doorstep Cash Delivery, Cash at doorstep, ATM at home
   hero_image: /assets/img/doorstep-delivery/doorstep-delivery.svg
-  summary: Deliver essential banking services to your customers during the COVID-19 pandemic and keep your livelihood secure
+  summary: Cash Delivery Services for your customers during the COVID-19 pandemic and keep your livelihood secure
   description: With Eko doorstep cash delivery service you can get cash at your doorstep. Eko along with RWA is taking the initiative to deliver its Banking Services to every individual.
   signup_label: Try for free
 
   layout:
     - section: mid_summary
       small_description: An Initiative with RWA
-      header: Home delivery of ATM
+      header: Cash Delivery (ATM)  at your doorstep
 
     - section: alternating_steps
       steps:
@@ -216,12 +216,12 @@
         - type: single
           # Benefit 1
           title: Keep your business running during the lockdown
-          text: Keep earning money eveen during the lockdown. Keep serving these doorstep essential setvices and keep your livelihood secure in the process.
+          text: Keep earning money eveen during the lockdown. Keep serving these doorstep essential services like Cash Delivery, Cash Deposit and keep your livelihood secure in the process.
           image: /assets/img/doorstep-delivery/business-running.svg
         - type: single
           # Benefit 2
           title: Ensuring retailer & customer safety at all steps
-          text: We have made specific guidelines for our retailers to keep themselves and the customers safe while delivering these services.
+          text: We have made specific guidelines for our retailers to keep themselves and the customers safe while delivering Cash, Depositing Cash.
           image: /assets/img/doorstep-delivery/customer-safety.svg
 
     - section: bullet_list
@@ -417,18 +417,18 @@
 - name: Indo-Nepal Money Transfer
   sub_header: Indo-Nepal Money Transfer
   title: Indo-Nepal Money Transfer | Send Money to Nepal Instantly
-  tag_line: Transfer money to Nepal, at the click of a button
+  tag_line: Transfer money from India to Nepal,without having Indian Bank Account
   social_image: /assets/img/indo-nepal/nepal-money-transfer-opt.svg
   keywords: Nepal money transfer, indo nepal money transfer, indo nepal money transfer near me, transfer money to nepal
   hero_image: /assets/img/indo-nepal/nepal-money-transfer-opt.svg
-  summary: Help your customers (mostly Nepali immigrants) send money to their loved-ones in Nepal. Fast, secure money transfer whenever you need to.
+  summary: Help your customers (mostly Nepali immigrants) send money from India to Nepal. Fast, secure money transfer whenever you need to.
   description: Indo-Nepal Money Transfer is a simple and highly secure direct money transferability for your customers to transfer money to Nepal. No Indian bank account is needed and no need to visit banks.
   signup_label: Try for free
 
   layout:
     - section: mid_summary
-      small_description: Easy money transfer to Nepal
-      header: Send money to your loved-ones
+      small_description: Send money to your loved-ones
+      header: Easy money transfer from India to Nepal
 
     - section: alternating_steps
       steps:
@@ -463,7 +463,7 @@
       text: With Eko's 12+ years of experience in leading the money transfer space in India, we assure your customer's hard-earned money reaches the destination
 
     - section: step_section
-      header: How Indo-Nepal Payment Works
+      header: How Indo-Nepal Money Transfer Works
       steps:
       - text: Sign Up on Connect
         link: https://connect.eko.in

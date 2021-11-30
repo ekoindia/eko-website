@@ -84,7 +84,7 @@
 
 - name: AePS Cashout SDK
   title: Aadhaar Enabled Payment System (AePS) Cashout SDK | Whitelabel AePS Portal API Eko
-  tag_line: AePS - Aadhaar Enabled Payment System
+  tag_line: AePS Cash Withdrawal API
   social_image: /assets/img/aadhaar-banking/AePS_hero.png
   keywords: Whitelabel AePS Portal API, Aadhaar Enabled Payment System api, aeps api, aeps api provider bank, aeps api provider, aeps api commission, aeps api provider company, aeps api integration, aeps money transfer api
   hero_image: /assets/img/developers/aeps-main.svg
@@ -99,8 +99,8 @@
       header: Aadhaar Enabled Payment System (AePS)
 
     - section: single_hero
-      title: Easy Cash Withdrawal
-      text: AePS allows your retailers to turn their shop into an ATM and let customers withdraw cash using their Aadhaar & fingerprint.
+      title: Easy AePS Cash Withdrawal
+      text: AePS API allows your retailers to turn their shop into an ATM and let customers withdraw cash using their Aadhaar & fingerprint.
       image: /assets/img/aadhaar-banking/easy-cash-withdrawal.svg
 
     - section: short_ad
@@ -111,16 +111,16 @@
     - section: alternating_steps
       steps:
       - title: Easy Cash Deposit
-        text: AePS also allows retailers to turn their shop into a cash deposit machine. Customers can then deposit cash at their shop with ease.
+        text: AePS API also allows retailers to turn their shop into a cash deposit machine. Customers can then deposit cash at their shop with ease.
         image: /assets/img/aadhaar-banking/easy-cash-deposit.svg
       - title: Quick Fund Transfer
-        text: With AePS customers will never have to go to a Bank or an ATM and they will not need a debit card also. Just transfer funds using fingerprint.
+        text: With AePS API customers will never have to go to a Bank or an ATM and they will not need a debit card also. Just transfer funds using fingerprint.
         image: /assets/img/aadhaar-banking/quick-fund-transfer.svg
       - title: Instant Balance-inquiry
-        text: AePS allows customers to check their bank balance at a retailer’s shop instantly.
+        text: AePS API allows customers to check their bank balance at a retailer’s shop instantly.
         image: /assets/img/aadhaar-banking/instant-balance-inquiry.svg
       - title: Mini Statement
-        text: AePS will also let customers take the mini statement of their account at a retailer’s shop.
+        text: AePS API will also let customers take the mini statement of their account at a retailer’s shop.
         image: /assets/img/aadhaar-banking/mini-statement.svg
 
     - section: icon_list
@@ -143,7 +143,7 @@
       text: We use the same APIs here at Eko! Every API call is secured with one-time-use tokens generated using asymmetric cryptography. Our open-source libraries make it extremely easy & error-proof
 
     - section: step_section
-      header: How to use Aadhaar Banking
+      header: How to use AePS API
       steps:
       - text: Sign Up on Connect
         link: https://connect.eko.in
