@@ -6,7 +6,7 @@ description: >
   we're sure you often wonder about the top, trustworthy, and best AEPS API
   providers in India!
 date: 2022-01-04T12:20:39.667Z
-image: /assets/img/blog/blog.jpg
+image: /assets/img/blog/aeps-api-provider-company-in-india.jpg
 business: api
 tags:
   - AEPS providers
