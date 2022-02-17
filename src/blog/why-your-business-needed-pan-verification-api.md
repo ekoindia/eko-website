@@ -47,8 +47,8 @@ The pan verification API has a wide application in different industries like:
 * Highest Success Rate
 * 24x7 Support
 
-In a nutshell
+**In a nutshell**
 
 The pan card verification API provides an easy way of integrating third-party applications that require the PAN card. It also helps in completely automating the verification process as it has built-in webhooks, which can easily be integrated with various third party applications. The PAN card verification API can also be used by other organizations who are dealing with individuals or anyone in financial capacity for verification.
 
-Reach out to the Eko sales team for any support in regards with the same at **[api.sales@eko.co.in](mailto:api.sales@eko.co.in)** or **08045681131.**
+Reach out to the Eko sales team for any support in regards with the same at **[api.sales@eko.co.in](mailto:api.sales@eko.co.in)** or **[08045681131](tel:08045681131).**
