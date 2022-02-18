@@ -6,7 +6,7 @@ description: Information is the first step to taking action. This article will
   and the requirements to enable this process. There is also a quick walkthrough
   on how to do AePS registration online and generate AePS ID for free.
 date: 2022-02-18T05:15:12.234Z
-image: /assets/img/blog/blog.png
+image: /assets/img/blog/best-aeps-api-service-provider-company-in-india.png
 business: retail
 tags:
   - AePS Registration
