@@ -11,7 +11,6 @@ business: retail
 tags:
   - AePS Registration
   - aeps registration online
-  - ""
 ---
 **A Simple Guide to become an AePS agent on Eko Connect**
 
