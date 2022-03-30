@@ -20,7 +20,7 @@ Creating a business for your new startup can be a daunting task, as it requires 
 
 The platform is easy to work with and people can make upto Rs.50,000 per month by providing financial services through [Eko Connect](https://play.google.com/store/apps/details?id=in.eko.connect&hl=en_IN&gl=US) application.
 
-**2. Create digital products or courses:**\*\* This is another sure fire way to earn money online. Some of the best digital products are:
+**2. Create digital products or courses:** This is another sure fire way to earn money online. Some of the best digital products are:
 
 2. Tutorials on working with WordPress
 3. Social Media Marketing
