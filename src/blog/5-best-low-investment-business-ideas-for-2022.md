@@ -22,10 +22,10 @@ The platform is easy to work with and people can make upto Rs.50,000 per month b
 
 **2. Create digital products or courses:** This is another sure fire way to earn money online. Some of the best digital products are:
 
-2. Tutorials on working with WordPress
-3. Social Media Marketing
-4. How to build a website
-5. How to code HTML, CSS, and JavaScript.
+1. Tutorials on working with WordPress
+2. Social Media Marketing
+3. How to build a website
+4. How to code HTML, CSS, and JavaScript.
 
 Each product requires a certain amount of technical know-how, but they can be created easily by someone who is willing to devote at least a couple of hours per day. Once you've created your repertoire, sell them to people in your niche or other similar communities using an online store or simply promote them on social media. Once you notice some initial traction, you can start charging for your service and become an authority within your industry.
 
