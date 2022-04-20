@@ -17,31 +17,23 @@ Do you own a retail store? Are you looking to increase footfall at your retail s
 
 However, there is nothing to worry about. Everything you require can be found here. In the following sections, we'll go over six crucial recommendations for increasing footfall to retail stores.
 
-
-
 ## Appearance and Communication Skills
 
 The way a storefront appears is the first impression to customers. The storefront should be wide open to make the retail store visible enough. In addition to that, the wall visible from the outside should be well presented. For instance, products with eye-catching packaging should be on display. This way it will give a reason to the customer as to why a prospective customer should enter the store.
 
 Nonetheless, communication skills are also a necessary part of the same thing. A call boy outside the retail store can prove to be beneficial. Not only does it seem attractive, but using captivating lines is also helpful. Using this approach, footfall at retail stores can significantly increase. These activities help to improve retail business.
 
-
-
 ## Store Online Branding
 
-Online branding of the store has been a trend for a while now. Numerous activities like running ads and social media marketing can be highly advantageous. Registering on platforms like [Google My Business](https://g.page/r/CXGalHOeX3CsEAE) can be a great help to grow retail business.
+Online branding of the store has been a trend for a while now. Numerous activities like running ads and social media marketing can be highly advantageous. Registering on platforms like [Google My Business](https://g.page/r/CXGalHOeX3CsEAE), [Justdial](https://www.justdial.com/), [Sulekha](https://www.sulekha.com/), [Yellow Pages](http://yellowpages.in/), [Indiamart ](https://www.indiamart.com/)can be a great help to grow retail business.
 
 Multiple platforms allow businesses to publish a product catalog as well as store information. Afterward, doing its SEO can be a little difficult but worth the resources invested. The conversion to effectively utilizing resources for the same can result in increasing footfall at retail stores.  
 
 Moreover, emphasizing E-mail marketing and social media engagement helps in reminding the customers of the retail store.
 
-
-
 ## Strategic tie up with complimentary services
 
 Signing up on complementary and crucial services like offering Financial help to the vicinity using apps like [Eko Connect](https://play.google.com/store/apps/details?id=in.eko.connect) can lead to an increase in footfall of customers who may or may not be your direct target audiences by default. This will lead to an increase in eyeballs not only of the target audience but also the people who may not have visited the store by default. Eko connect helps you to offer financial services like AePS money transfer, Mobile recharge, Bill payments and so on. This will not only add to your income but also to your stature and skillset making you more digital.
-
-
 
 ## Expansion of Retail Business
 
@@ -55,11 +47,9 @@ Expansion of the store is equally important on digital platforms. Online marketi
 
 An important aspect to grow retail business online is developing an e-commerce website. Afterward, doing its SEO is also a necessary task to do. Even after creating a website, if it does not appear on the top then what is the use of it all. Hence, the activity of running ads on different platforms remains a salient task.
 
-Another trick is to shake hands with existing brands on online marketplace platforms, such as Amazon, Flipkart, JioMart, TATA CliQ, etc. This will help the store to boost interstate sales. Moreover, an online presence can play a crucial role in generating overseas sales as well.
+Another trick is to shake hands with existing brands on online marketplace platforms, such as [Amazon](https://www.amazon.in/), [Flipkart](https://www.flipkart.com/), [JioMart](https://www.jiomart.com/), [TATA CliQ](https://www.tatacliq.com/), [Meesho](https://meesho.com/) etc. This will help the store to boost interstate sales. Moreover, an online presence can play a crucial role in generating overseas sales as well.
 
 The partnership with complementary brands can be helpful in the expansion of the audience. The audience which is being targeted is a crucial aspect of digital marketing. Audience selection should be done based on their needs.
-
-
 
 ## Mobile Application and Marketing
 
@@ -67,14 +57,10 @@ After all of the required steps for expanding retail businesses have been taken,
 
 After building an application, it can be sponsored on the basis of the audience’s search. The use of proper keywords and SEO can be of great use. Moreover, it can boost search results on application stores.
 
-
-
 # Conclusion
 
 It can be stated that the retail environment has been dynamic as it has been ever since. In addition to all the aspects, competition is sky-touching. Even the customers are rapidly changing their approach to making purchases. The industry is pacing to changes at a very high rate. Only the retail businesses that will cope with the trends, will survive.
 
 Henceforth, a list of key pointers on growing retail business and expanding retail stores has been given stated in this article.
-
-
 
 If you are looking to add financial services to your list of products, download [Eko Connect](https://play.google.com/store/apps/details?id=in.eko.connect) application via Google Play store.
