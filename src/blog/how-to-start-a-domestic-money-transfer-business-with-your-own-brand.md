@@ -18,21 +18,19 @@ tags:
 ---
 Starting and growing a domestic money transfers firm can provide several advantages and attractive rewards. Money transfers are made every day from different parts of the country, so you can be certain that there will always be a market for your product. Perhaps most importantly, you will feel a sense of accomplishment knowing that you are assisting folks in meeting their financial obligations.
 
-
-
 **What Is Domestic Money Transfer?**
 
 In the money transfer industry, you have the ability to transmit money rapidly and round the clock to any IMPS bank in India. **[Domestic Money Transfers](https://eko.in/developers/eps/domestic-money-transfer-api)** is a service offered by a variety of organizations that allows you to transfer money from one bank account to another in any region of the country.
 
 Transferring money is a really straightforward process. The person wishing to transmit money must first deposit the funds with a domestic money transfer agent. The amount would then be sent to the sender via NEFT or IMPS technology by the agent to the recipient.
 
- 
+
 
 **Advantages Of Domestic Money Transfer Business:**
 
 There is no need for a physical presence in today's world of online businesses. As a result, you may avoid the expenditures of rent, office furniture, personnel, and other expenses associated with a physical office.
 
- 
+
 
 **Setting Up A Money Transfer Business-**
 
@@ -54,7 +52,7 @@ There are different levels of difficulty in getting a license for a domestic mon
 
 ●     Banking Agent
 
- 
+
 
 **Working capital:**
 
@@ -62,7 +60,7 @@ The next thing you need for your business is working capital. If you choose the 
 
 If you choose the correspondent method, you will be asked to put up a minimal investment that will be added to your pre-paid wallet which will be used for performing the activities required by the clients. Additionally, you will need the IT hardware to perform these activities like a mobile phone and fingerprint scanner.
 
- 
+
 
 **Banking access:**
 
@@ -70,7 +68,7 @@ It is difficult to find a bank ready to collaborate with a Money Service Busines
 
 However, there are multiple providers like **[Eko Connect](https://play.google.com/store/apps/details?id=in.eko.connect),** which can enable you to act on behalf of banks to perform transactions.
 
- 
+
 
 **Compliance Program:**
 
@@ -78,13 +76,13 @@ A well-thought-out, pragmatic, and ever-improving Compliance Program is the foun
 
 Make your compliance program with the best business you can afford. Each legal corridor through which you operate and the transaction/financial model through which your organization operates have their own nuanced features that can make or break a compliance program; this is where expertise comes in.
 
- 
+
 
 **Software and allied services:**
 
 Unless your agreement includes software (to run your money transfer business) and linked services such as ID verification, you will need to make your own arrangements. This work should begin concurrently as soon as possible because the implementation can take some time. The goal is to create a system that can provide both front-office and back-office services, as well as audit records for auditors.
 
- 
+
 
 **Business plan:**
 
@@ -92,7 +90,7 @@ You should be very explicit about the structure of your transaction set. How the
 
 Every last dime must be tracked. You should understand exactly how this works and how much money is deducted at each stage of the journey. You should also be aware of who is holding this money.
 
- 
+
 
 **Money transfer API:**
 
@@ -101,5 +99,7 @@ Every last dime must be tracked. You should understand exactly how this works an
 There are numerous money transfer API providers in India that can give you the right APIs according to your needs. However, before embarking on a partnership with these **[DMT API](https://eko.in/developers/eps/domestic-money-transfer-api)** providers it is wise to do research and make inquiries about the legitimacy of the company.
 
 If you are planning to launch your own money transfer application in India or planning to add this as an additional feature to your pre-existing application, you can take benefit from services like **[Eko Platform Services (EPS)](https://eko.in/developers/eps)**, which can get you started on the required services in the most compliant manner. EPS provides various API’s like, **[AePS API](https://eko.in/developers/eps/aeps-cashout-sdk), [DMT API](https://eko.in/developers/eps/domestic-money-transfer-api), [BBPS API](https://media.eko.in/bbps-electricity-and-water-bill-payment/), mATM API.**
+
+
 
 Reach us at **[api.sales@eko.co.in](mailto:api.sales@eko.co.in)** or **[08045681131](tel:08045681131).**
