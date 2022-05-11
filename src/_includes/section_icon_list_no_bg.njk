@@ -1,0 +1,24 @@
+<section class="block icon-list" type="icon_list">
+	{% if item.header %}
+		<center>
+			{% if item.subtitle %}
+				<div class="subtitle bold txt-center">{{ item.subtitle }}</div>
+			{% endif %}
+			<h2 class="txt-center">{{ item.header }}</h2>
+			<div class="h2-border"></div>
+		</center>
+	{% endif %}
+
+	{% if item.description %}
+		<p class="lh-high txt-center p-fw">{{ item.description }}</p>
+	{% endif %}
+
+	<div class="iconsbox layout horizontal center wrap around-justified">
+		{% for icon in item.icons %}
+			<div class="layout vertical center inline">
+				<img src="{{ icon.image }}" alt="{{ icon.caption }}" loading="lazy">
+				<p class="bold txt-center">{{ icon.caption }}</p>
+			</div>
+		{% endfor %}
+	</div>
+</section>
