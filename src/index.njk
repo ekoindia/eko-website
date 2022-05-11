@@ -69,6 +69,22 @@
 	} %}
 	{% include "section_single_hero.njk" %}
 
+		{# Icon List section #}
+	{% set item = {
+		header: "We proudly make in India",
+		icons: [
+			{
+				image: "/assets/img/Mask_Group_17.png"
+			},
+			{
+				image: "/assets/img/Mask_Group_18.png"
+			},
+			{
+				image: "/assets/img/Mask_Group_19.png"
+			}]
+	} %}
+	{% include "section_icon_list_no_bg.njk" %}
+
 
 	{# Icon List section #}
 	{% set item = {
@@ -88,6 +104,7 @@
 			}]
 	} %}
 	{% include "section_icon_list.njk" %}
+
 
 
 	{# Heros Main section #}
