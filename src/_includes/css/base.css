@@ -961,3 +961,7 @@ padding:12px 32px;
 .ahov a {
     color: #ffb219;
 }
+
+#menu .sub-menu li:nth-child(3) {
+    display: none;
+}
