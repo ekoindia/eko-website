@@ -10,45 +10,45 @@
     - id: 30WYE3urU8g
       label: "Welcome to EkoStore | Eko India"
 
-- section: "कनेक्ट - नए प्रोडक्टस"
-  link: connect-new-products-hindi
-  videos:
-    - id: l5NS6eit_oc
-      label: "EkoStore: अब जादा पैसे कमाने के लिए Shemaroo भक्ति और..."
-    - id: Onz_7u4v4-Q
-      label: "टोकन की ताकत"
-    - id: J_23yz85SaA
-      label: "Eko कैश पिकप"
-    - id: ZQ2nBVrcnNk
-      label: "Eko Shopclues - होलसेल में खरीदें, रिटेल में बेचें"
-    - id: TpzbnXDSXk4
-      label: "EkoStore Self E-value - ख़ुद लोड करें"
+#- section: "कनेक्ट - नए प्रोडक्टस"
+  #link: connect-new-products-hindi
+  #videos:
+    #- id: l5NS6eit_oc
+    #  label: "EkoStore: अब जादा पैसे कमाने के लिए Shemaroo भक्ति और..."
+    #- id: Onz_7u4v4-Q
+    #  label: "टोकन की ताकत"
+    #- id: J_23yz85SaA
+    #  label: "Eko कैश पिकप"
+    #- id: ZQ2nBVrcnNk
+    #  label: "Eko Shopclues - होलसेल में खरीदें, रिटेल में बेचें"
+    #- id: TpzbnXDSXk4
+    #  label: "EkoStore Self E-value - ख़ुद लोड करें"
 
-- section: "Connect New Products"
-  link: connect-new-products
-  videos:
-    - id: HH8-xYNrEQg
-      label: "Power of Token"
-    - id: Yc0y4ZjMMJU
-      label: "How To Apply For Business Loan"
-    - id: Z34n0Ki1650
-      label: "Eko Cash Pick Up"
-    - id: Xl1E2qtD3Yk
-      label: "EkoStore: Now Earn More with Shemaroo Bhakti and Others"
-    - id: 3h1b046ZAXM
-      label: "EkoStore: Self E-value"
-    - id: DcGr0IPWjTY
-      label: "EkoStore: 2-wheeler insurance Easy Policy merchant"
-    - id: CuHxGn_FbyU
-      label: "Eko Shopclues - Buy Products at Wholesale. Sell at Retail."
-    - id: EG1vCu7NvYo
-      label: "ALTBalaji in EkoStore!"
+#- section: "Connect New Products"
+  #link: connect-new-products
+  #videos:
+    #- id: HH8-xYNrEQg
+    #  label: "Power of Token"
+    #- id: Yc0y4ZjMMJU
+    #  label: "How To Apply For Business Loan"
+    #- id: Z34n0Ki1650
+    #  label: "Eko Cash Pick Up"
+    #- id: Xl1E2qtD3Yk
+    #  label: "EkoStore: Now Earn More with Shemaroo Bhakti and Others"
+    #- id: 3h1b046ZAXM
+    #  label: "EkoStore: Self E-value"
+    #- id: DcGr0IPWjTY
+    #  label: "EkoStore: 2-wheeler insurance Easy Policy merchant"
+    #- id: CuHxGn_FbyU
+    #  label: "Eko Shopclues - Buy Products at Wholesale. Sell at Retail."
+    #- id: EG1vCu7NvYo
+    #  label: "ALTBalaji in EkoStore!"
 
-- section: "Connect How To (हिन्दी)"
-  link: connect-how-to-hindi
-  videos:
-    - id: 7xtl7vlpSQs
-      label: "कैसे ALTBalaji की सदस्यता खरीदें और कूपन कोड का उपयोग करें"
+#- section: "Connect How To (हिन्दी)"
+  #link: connect-how-to-hindi
+  #videos:
+  #  - id: 7xtl7vlpSQs
+  #    label: "कैसे ALTBalaji की सदस्यता खरीदें और कूपन कोड का उपयोग करें"
 
 - section: "Connect How to (Tamil)"
   link: connect-how-to-tamil
@@ -75,8 +75,8 @@
 - section: "Connect How to (English)"
   link: connect-how-to
   videos:
-    - id: M-SkvtBGvcU
-      label: "How to buy subscription of ALTBalaji and use coupon code"
+    #- id: M-SkvtBGvcU
+    #  label: "How to buy subscription of ALTBalaji and use coupon code"
     - id: nWDYviAIsiE
       label: "How To Recharge DTH Service On Connect"
     - id: xhgMv39wdUo
