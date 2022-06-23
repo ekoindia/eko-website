@@ -75,7 +75,7 @@ Write to us: Customer Care ,Eko India Financial Services Pvt. Ltd. , 3rd Floor, 
 
 Email ID: grievance@eko.co.in
 
-1. All escalations received with the required details such as reference number provided at Level 1, contact details (both phone & email) would be addressed and  resolved within forty eight (48) hours up to a max of seven (7) days in special cases pertaining to third party transactions.
+1. All escalations received with the required details such as reference number provided at Level 1, contact details (both phone & email) would be addressed and  resolved within 24 hours up to a max of 15 days in special cases pertaining to third party transactions.
 
 ---
 
@@ -173,7 +173,7 @@ Or, [click here](https://connect.eko.in/) and click on 'Need Help' button to rep
 
 ईमेल आईडी: grievance@eko.co.in
 
-1. आवश्यक विवरणों, जैसे कि स्तर 1 पर प्रदान की गई संदर्भ संख्या, संपर्क विवरण (फोन और ईमेल दोनों) के साथ प्राप्त सभी एसकेलेशन का समाधान किया जाएगा और विशेष मामलों, जैसे कि तीसरे पक्ष के लेनदेन के लिए अड़तालीस (48) घंटे से ले कर अधिकतम सात (7) दिनों में इसका हल किया जाएगा।
+1. आवश्यक विवरणों, जैसे कि स्तर 1 पर प्रदान की गई संदर्भ संख्या, संपर्क विवरण (फोन और ईमेल दोनों) के साथ प्राप्त सभी एसकेलेशन का समाधान किया जाएगा और विशेष मामलों, जैसे कि तीसरे पक्ष के लेनदेन के लिए 24 घंटे से ले कर अधिकतम 15 दिनों में इसका हल किया जाएगा।
 
 ---
 
@@ -271,7 +271,7 @@ Or, [click here](https://connect.eko.in/) and click on 'Need Help' button to rep
 
 ई-मेल आयडी: grievance@eko.co.in
 
-1. स्तर 1 वर दिला गेलेला संदर्भ क्रमांक, संपर्क तपशिल ( फोन क्रमांक आणि ई-मेल पत्ता हे दोन्ही)  यासारख्या तपशिलासह मिळालेल्या सर्व एस्कलेशन्सवर अठ्ठेचाळीस (48) तासांपासून ते तृतिय पक्षीय व्यवाहारांच्या बाबतीतल्या विशेष प्रकरणांमध्ये सात (7) दिवसांच्या आत कार्यवाही होऊन त्यांचे निराकरण  केले जाईल.
+1. स्तर 1 वर दिला गेलेला संदर्भ क्रमांक, संपर्क तपशिल ( फोन क्रमांक आणि ई-मेल पत्ता हे दोन्ही)  यासारख्या तपशिलासह मिळालेल्या सर्व एस्कलेशन्सवर 24 तासांपासून ते तृतिय पक्षीय व्यवाहारांच्या बाबतीतल्या विशेष प्रकरणांमध्ये 15 दिवसांच्या आत कार्यवाही होऊन त्यांचे निराकरण  केले जाईल.
 
 ---
 
