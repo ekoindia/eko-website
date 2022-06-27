@@ -73,7 +73,7 @@ In case the customer is not satisfied with the response from customer service ex
 
 Write to us: Customer Care ,Eko India Financial Services Pvt. Ltd. , 3rd Floor, Phase 2 Building,Plot No. 34, Institutional Area Sector 44, Gurgaon-122 003,Haryana
 
-**Grievance Officer : MR.Abhinav Sinha**
+**Grievance Officer : Mr.Abhinav Sinha**
 Email ID: grievance@eko.co.in
 
 1. All escalations received with the required details such as reference number provided at Level 1, contact details (both phone & email) would be addressed and  resolved within 24 hours up to a max of 15 days in special cases pertaining to third party transactions.
