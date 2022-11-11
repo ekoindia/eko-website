@@ -5,7 +5,8 @@
   "scripts": {
     "start": "del-cli _site && eleventy --serve --quiet",
     "build": "del-cli _site && eleventy",
-    "clean": "del-cli _site"
+    "clean": "del-cli _site",
+    "check-updates": "echo 'TO UPDATE, RUN: npm install package-name' && npm outdated --depth=0"
   },
   "contributors": [
     {
@@ -18,29 +19,29 @@
   ],
   "license": "See License in ./LICENSE",
   "devDependencies": {
-    "@11ty/eleventy": "^0.11.1",
-    "@11ty/eleventy-cache-assets": "^2.0.4",
-    "@11ty/eleventy-img": "^0.7.1",
-    "@11ty/eleventy-navigation": "^0.1.6",
-    "@11ty/eleventy-plugin-rss": "^1.0.9",
-    "@babel/core": "7.2.0",
-    "@gerhobbelt/markdown-it-attrs": "^3.0.3-20",
+    "@11ty/eleventy": "^1.0.2",
+    "@11ty/eleventy-cache-assets": "^2.3.0",
+    "@11ty/eleventy-img": "^2.0.1",
+    "@11ty/eleventy-navigation": "^0.3.5",
+    "@11ty/eleventy-plugin-rss": "^1.2.0",
+    "@babel/core": "7.20.2",
     "del-cli": "^3.0.1",
-    "dotenv": "^8.2.0",
+    "dotenv": "^16.0.3",
     "eleventy-plugin-svg-contents": "^0.7.0",
     "embla-carousel": "^4.1.2",
     "js-yaml": "^3.14.1",
     "luxon": "^1.25.0",
     "markdown-it-abbr": "^1.0.4",
-    "markdown-it-anchor": "^6.0.1",
+    "markdown-it-anchor": "^8.6.5",
+    "markdown-it-attrs": "^4.1.4",
     "markdown-it-container": "^3.0.0",
-    "markdown-it-emoji": "^2.0.0",
+    "markdown-it-emoji": "^2.0.2",
     "markdown-it-footnote": "^3.0.2",
     "markdown-it-image-lazy-loading": "^1.0.2",
     "markdown-it-imsize": "^2.0.1",
-    "markdown-it-link-attributes": "^3.0.0",
+    "markdown-it-link-attributes": "^4.0.1",
     "markdown-it-mark": "^3.0.1",
-    "markdown-it-multimd-table": "^4.0.3",
+    "markdown-it-multimd-table": "^4.2.0",
     "markdown-it-sub": "^1.0.0",
     "markdown-it-sup": "^1.0.0",
     "markdown-it-toc-done-right": "^4.2.0",
@@ -51,10 +52,10 @@
   },
   "dependencies": {
     "clean-css": "^4.2.3",
-    "eleventy-plugin-blog-tools": "^0.3.1",
+    "eleventy-plugin-blog-tools": "^0.4.1",
     "eleventy-plugin-seo": "^0.5.1",
     "html-minifier": "^4.0.0",
     "svg-sprite": "^1.5.0",
-    "terser": "^5.5.1"
+    "terser": "^5.15.1"
   }
 }
