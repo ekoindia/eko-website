@@ -222,6 +222,7 @@ module.exports = function(eleventyConfig) {
 	eleventyConfig.addPassthroughCopy('src/assets/ico');
 	eleventyConfig.addPassthroughCopy('src/assets/img');
 	eleventyConfig.addPassthroughCopy('src/assets/js');
+	eleventyConfig.addPassthroughCopy('src/docs');
 	eleventyConfig.addPassthroughCopy("src/*.pdf");
 	eleventyConfig.addPassthroughCopy("src/_redirects");
 
