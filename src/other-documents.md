@@ -6,6 +6,4 @@ excludeFromSitemap: true
 
 **Annual report 18-19 -** [Download](/Full-Annual-report_18-19.pdf)
 
-**List of authorized Agents -** [Download](/List-of-Authorized-agents.pdf)
-
-<br><br><br><br>
+**Annual Return 20-21 -** [Download](/docs/Full-Annual-return_20-21.pdf)
