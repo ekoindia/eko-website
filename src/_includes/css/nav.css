@@ -3,6 +3,15 @@
 nav.topnav {
 	border-bottom: 1px solid var(--divider-color);
 }
+.topnav{
+	position: sticky;
+	top: 0;
+}
+.scrolled {
+	background: #f4f1ed;
+	transition: all ease 200ms;
+	z-index: 2;
+}
 
 nav.topnav .button {
 	margin: 0 !important;
@@ -99,6 +108,7 @@ nav.topnav .button {
 	display: none;
 }
 
+
 #menu input[type="checkbox"]:checked + .sub-menu {
 	display: inline-flex;
 }
@@ -149,9 +159,12 @@ nav.topnav .button {
 	width: 24px;
 	height: 24px;
 }
-
 #toggle-menu label > div {
 	padding: 10px 0 10px 20px;
+}
+.number {
+	padding-right: 5px;
+	font-size: 15px;
 }
 
 

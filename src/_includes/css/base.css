@@ -92,8 +92,8 @@ section.block {
 
 @media (min-width: 1300px) {
 	section.block, nav.topnav, footer {
-		padding-left: calc( (100% - 1100px) / 2 );
-		padding-right: calc( (100% - 1100px) / 2 );
+		/* padding-left: calc( (100% - 1100px) / 2 );
+		padding-right: calc( (100% - 1100px) / 2 ); */
 	}
 }
 
@@ -960,4 +960,33 @@ padding:12px 32px;
 
 .ahov a {
     color: #ffb219;
+}
+
+
+.icon-container {
+	display: none;
+}
+
+@media screen and (max-width: 567px) {
+	.icon-container {
+		display: block;
+		position: fixed;
+		bottom: 100px;
+		right: 4px;
+		margin: 10px;
+		transition: all 0.3s ease-in-out;
+		z-index: 2;
+	}
+
+	.icon-container:hover {
+		transform: scale(1.1);
+	}
+}
+
+.icon-container img {
+	display: block;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	transition: all 0.3s ease-in-out;
 }
