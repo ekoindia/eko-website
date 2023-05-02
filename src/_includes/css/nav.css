@@ -12,15 +12,32 @@ nav.topnav {
 	transition: all ease 200ms;
 	z-index: 2;
 }
-
+.callUs{
+	padding-right: 40px;
+	font-size: 14px;
+	display: flex;
+}
+.callUs span{
+	margin-top: 5px;
+	margin-left: 5px;
+}
+.callUs img{
+	display: block;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+}
 nav.topnav .button {
 	margin: 0 !important;
 	padding: 10px 15px !important;
+	position: absolute;
+	right: 150px;
 }
 
 #menu ul {
 	margin: 0;
 	padding: 0;
+	
 }
 
 #menu .capt {
@@ -35,8 +52,12 @@ nav.topnav .button {
 
 #menu .main-menu {
 	display: none;
+	justify-content: center;
+	margin-top: 10px;
 }
-
+#menu li{
+	margin-top: 10px;
+}
 #tm:checked + .main-menu {
 	display: block;
 }
@@ -162,11 +183,6 @@ nav.topnav .button {
 #toggle-menu label > div {
 	padding: 10px 0 10px 20px;
 }
-.number {
-	padding-right: 5px;
-	font-size: 15px;
-}
-
 
 /* ============= SMALL SCREEN ONLY ============= */
 @media (max-width: 1023px) {

@@ -260,7 +260,7 @@ p.p-fw {
 	cursor: pointer;
 	line-height: 1.43;
 	transition: all 0.3s ease-out;
-	will-change: translate;
+	/* will-change: translate; */
 }
 
 .button:not(.outline):hover {
@@ -985,8 +985,10 @@ padding:12px 32px;
 
 .icon-container img {
 	display: block;
-	width: 50px;
-	height: 50px;
+	width: 40px;
+	height: 40px;
 	border-radius: 50%;
+	border: #dad39b 3px solid;
 	transition: all 0.3s ease-in-out;
+	background-color: #fff;
 }
