@@ -185,7 +185,7 @@ nav.topnav .button {
 }
 
 /* ============= SMALL SCREEN ONLY ============= */
-@media (max-width: 1023px) {
+@media (max-width: 1413px) {
 
 	nav.topnav {
 		padding: 0 !important;
@@ -221,7 +221,7 @@ nav.topnav .button {
 
 
 /* ============= LARGE SCREEN ONLY ============= */
-@media (min-width: 1024px) {
+@media (min-width: 1414px) {
 
 	.mobileonly {
 		display: none !important;

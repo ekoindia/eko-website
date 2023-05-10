@@ -55,6 +55,13 @@ function loadScript(src, _id, onLoadCallback, defer) {
 /**
  * SalesIQ: Open chat widget
  */
+function showChat() {
+	if ($zoho && $zoho.salesiq) {
+		$zoho.salesiq.floatwindow.visible('show');	// show / hide
+	}
+}
+
+
 window.addEventListener("scroll", function() {
   var navbar = document.querySelector(".topnav");
   if (window.scrollY > 50) {
