@@ -18,15 +18,15 @@
 
     - section: alternating_steps
       steps:
-      - title: Easy Cash transfer
-        text: 'Customers can transfer cash to anyone by specifying their bank details right at your doorstep'
-        image: /assets/img/main/easy-cash-transfer-opt.svg
-      - title: Transaction-assurance
-        text: Assure your customers that their money is safe using our transaction assurance option
-        image: /assets/img/money-transfer/transaction-assurance.svg
-      - title: Transaction receipt
-        text: Print transaction-receipt for your customers to give them a sense of safety
-        image: /assets/img/money-transfer/transaction-receipt.svg
+        - title: Easy Cash transfer
+          text: "Customers can transfer cash to anyone by specifying their bank details right at your doorstep"
+          image: /assets/img/main/easy-cash-transfer-opt.svg
+        - title: Transaction-assurance
+          text: Assure your customers that their money is safe using our transaction assurance option
+          image: /assets/img/money-transfer/transaction-assurance.svg
+        - title: Transaction receipt
+          text: Print transaction-receipt for your customers to give them a sense of safety
+          image: /assets/img/money-transfer/transaction-receipt.svg
 
     - section: heros_main
       header: Benefits
@@ -63,11 +63,11 @@
     - section: step_section
       header: How money transfer works
       steps:
-      - text: Sign Up on Connect
-        link: https://connect.eko.in
-      - text: Enter customer mobile number
-      - text: Enter amount and bank details
-      - text: Click send and collect cash
+        - text: Sign Up on Connect
+          link: https://connect.eko.in
+        - text: Enter customer mobile number
+        - text: Enter amount and bank details
+        - text: Click send and collect cash
 
     - section: message
       line1: A customer who wishes to use your service would simply need to provide his mobile number and details of the bank account to transfer money to.
@@ -81,10 +81,8 @@
       button1_text: Get Started
       button2_text: Contact Sales
 
-
-
 - name: Aadhaar Banking
-  sub_header: Aadhaar Banking / Cash-out
+  sub_header: Cash Withdrawal
   title: AePS Aadhaar Enabled Payment System Application | Money Transfer, Cash Withdrawal Banking Portal Provider Company
   tag_line: AePS - Aadhaar Enabled Payment System
   social_image: /assets/img/aadhaar-banking/AePS_hero.png
@@ -113,18 +111,18 @@
 
     - section: alternating_steps
       steps:
-      - title: Easy Cash Deposit
-        text: Aadhar banking (AePS) also allows you to turn your shop into a cash deposit machine. Your customers can then deposit cash at your shop with ease.
-        image: /assets/img/aadhaar-banking/easy-cash-deposit.svg
-      - title: Quick Fund Transfer
-        text: With Aadhar banking (AePS) you will never have to go to a Bank or an ATM and you will not need a debit card also. Just transfer funds using your fingerprint.
-        image: /assets/img/aadhaar-banking/quick-fund-transfer.svg
-      - title: Instant Balance-inquiry
-        text: Aadhar banking (AePS) allows your customers to check their bank balance at your shop instantly.
-        image: /assets/img/aadhaar-banking/instant-balance-inquiry.svg
-      - title: Mini Statement
-        text: Aadhar banking (AePS) will also let your customers take the mini statement of their account at your shop
-        image: /assets/img/aadhaar-banking/mini-statement.svg
+        - title: Easy Cash Deposit
+          text: Aadhar banking (AePS) also allows you to turn your shop into a cash deposit machine. Your customers can then deposit cash at your shop with ease.
+          image: /assets/img/aadhaar-banking/easy-cash-deposit.svg
+        - title: Quick Fund Transfer
+          text: With Aadhar banking (AePS) you will never have to go to a Bank or an ATM and you will not need a debit card also. Just transfer funds using your fingerprint.
+          image: /assets/img/aadhaar-banking/quick-fund-transfer.svg
+        - title: Instant Balance-inquiry
+          text: Aadhar banking (AePS) allows your customers to check their bank balance at your shop instantly.
+          image: /assets/img/aadhaar-banking/instant-balance-inquiry.svg
+        - title: Mini Statement
+          text: Aadhar banking (AePS) will also let your customers take the mini statement of their account at your shop
+          image: /assets/img/aadhaar-banking/mini-statement.svg
 
     - section: heros_main
       header: Benefits
@@ -147,11 +145,11 @@
     - section: step_section
       header: How to use Aadhaar Banking (AePS)
       steps:
-      - text: Sign Up on Connect
-        link: https://connect.eko.in
-      - text: Enable AePS using the Connect app
-      - text: Register your biometric device
-      - text: Start serving your customers
+        - text: Sign Up on Connect
+          link: https://connect.eko.in
+        - text: Enable AePS using the Connect app
+        - text: Register your biometric device
+        - text: Start serving your customers
 
     - section: message
       line1: A customer who wishes to use your service would simply need to provide his aadhar number, name, and account number.
@@ -179,8 +177,6 @@
       image: /assets/img/become-eko-partner-opt.svg
       button1_text: Get Started
       button2_text: Contact Sales
-
-
 
 #- name: Doorstep Cash Delivery
 #  sub_header: Doorstep Cash Delivery with RWA
@@ -259,8 +255,6 @@
 #      button1_text: Get Started
 #      button2_text: Contact Sales
 
-
-
 - name: Utility and Bill Payment
   sub_header: Utility and Bill Payment
   title: Utility And Bill Payment Portal | Pay Utility Bill Online With Eko Connect
@@ -322,11 +316,11 @@
     - section: step_section
       header: How to pay utility bills
       steps:
-      - text: Sign Up on Connect
-        link: https://connect.eko.in
-      - text: Enter customer's mobile number
-      - text: Choose biller & pay amount
-      - text: Collect cash from the customer
+        - text: Sign Up on Connect
+          link: https://connect.eko.in
+        - text: Enter customer's mobile number
+        - text: Choose biller & pay amount
+        - text: Collect cash from the customer
 
     - section: message
       line1: Utility & Bill Payments
@@ -340,8 +334,6 @@
       image: /assets/img/become-eko-partner-opt.svg
       button1_text: Get Started
       button2_text: Contact Sales
-
-
 
 - name: Sell Insurance
   sub_header: Sell Insurance
@@ -393,11 +385,11 @@
     - section: step_section
       header: How to pay utility bills
       steps:
-      - text: Sign Up on Connect
-        link: https://connect.eko.in
-      - text: Go to EkoStore on the left menu
-      - text: Choose the insurance policy
-      - text: Fill the details and you are done
+        - text: Sign Up on Connect
+          link: https://connect.eko.in
+        - text: Go to EkoStore on the left menu
+        - text: Choose the insurance policy
+        - text: Fill the details and you are done
 
     - section: message
       line1: Use your Connect account to tell your customers about the insurance policies available exclusively on Eko’s platform.
@@ -411,8 +403,6 @@
       image: /assets/img/become-eko-partner-opt.svg
       button1_text: Get Started
       button2_text: Contact Sales
-
-
 
 - name: Indo-Nepal Money Transfer
   sub_header: Indo-Nepal Money Transfer
@@ -432,12 +422,12 @@
 
     - section: alternating_steps
       steps:
-      - title: Easy Cash transfer
-        text: Let customers transfer money to any bank account in Nepal by paying in cash
-        image: /assets/img/indo-nepal/indo-nepal.svg
-      - title: Transaction receipt
-        text: Print transaction-receipt for your customers to give them a sense of safety
-        image: /assets/img/indo-nepal/transaction-receipt.svg
+        - title: Easy Cash transfer
+          text: Let customers transfer money to any bank account in Nepal by paying in cash
+          image: /assets/img/indo-nepal/indo-nepal.svg
+        - title: Transaction receipt
+          text: Print transaction-receipt for your customers to give them a sense of safety
+          image: /assets/img/indo-nepal/transaction-receipt.svg
 
     - section: heros_main
       header: Benefits
@@ -465,11 +455,11 @@
     - section: step_section
       header: How Indo-Nepal Money Transfer Works
       steps:
-      - text: Sign Up on Connect
-        link: https://connect.eko.in
-      - text: Select Indo-Nepal in the left menu
-      - text: Enter amount and bank details
-      - text: Collect cash from the customer
+        - text: Sign Up on Connect
+          link: https://connect.eko.in
+        - text: Select Indo-Nepal in the left menu
+        - text: Enter amount and bank details
+        - text: Collect cash from the customer
 
     - section: message
       line1: A customer who wishes to use Indo-Nepal service would simply need to show his ID card and provide bank details to transfer money.

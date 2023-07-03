@@ -135,6 +135,20 @@ business: api
 	} %}
 	{% include "section_product_category_showcase.njk" %}
 
+	{% set item = {
+		title: "Utility Bill Payment",
+		image: "/assets/img/developers/assisted-cash-management-opt.svg",
+		doc_url: "https://developers.eko.in/docs/bbps",
+		products: [
+			{
+				title: "BBPS API",
+				link: "/developers/eps/bbps-api"
+			}
+		]
+	} %}
+	{% include "section_product_category_showcase.njk" %}
+	
+
 
 	{# Signup Form Section #}
 	{% set form = { type: "api", referrername: "eps" } %}

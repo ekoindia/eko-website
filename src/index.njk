@@ -58,71 +58,6 @@
 	} %}
 	{% include "section_carousel.njk" %}
 
-
-	{# Single Hero section #}
-	{# set item = {
-		image: "/assets/img/main/partner-brands.webp",
-		title: "Offer services from our partner brands",
-		text: "Use Eko’s digital and physical infrastructure to reach the 800 million cash earning Indians. Low & Middle Income (LMI) consumers are under-served on digital as well as financial products. Eko provides solutions that help you reach this base in a variety of ways.",
-		link_text: "More About Our Partner Brands",
-		link: "/our-brand-association"
-	} #}
-	{# include "section_single_hero.njk" #}
-
-		{# Icon List section #}
-	{% set item = {
-		header: "We proudly make in India",
-		icons: [
-			{
-				image: "/assets/img/Mask_Group_17.png"
-			},
-			{
-				image: "/assets/img/Mask_Group_18.png"
-			},
-			{
-				image: "/assets/img/Mask_Group_19.png"
-			}]
-	} %}
-	{% include "section_icon_list_no_bg.njk" %}
-
-
-	{# Icon List section #}
-	{% set item = {
-		header: "Benefits",
-		icons: [
-			{
-				image: "/assets/img/main/merchant-onboarding-icon.svg",
-				caption: "Instant retailer onboarding"
-			},
-			{
-				image: "/assets/img/main/success-rate.svg",
-				caption: "Industry-leading success rates"
-			},
-			{
-				image: "/assets/img/main/seamless-integration.svg",
-				caption: "Seamless integration with all the service"
-			}]
-	} %}
-	{% include "section_icon_list.njk" %}
-
-
-
-	{# Heros Main section #}
-	{% set item = {
-		items: [
-			{
-				type: "pair",
-				title_left: "Easy Integration",
-				text_left: "Our API is well-documented and easy to understand. Integrating is as easy as it can get. We provide 24x7 manual integration support just in case, leaving no stone unturned to make the integration process seamless.",
-				image_left: "/assets/img/developers/easy-integration-opt.svg",
-				title_right: "Simple Documentation",
-				text_right: "The documentation for our APIs is comprehensive and comprehensible! We constantly update it to explain the minutest detail. Whether you use Python, Java, PHP, or C#, we have you covered!",
-				image_right: "/assets/img/developers/simple-documentation-opt.svg"
-			}]
-	} %}
-	{% include "section_heros_main.njk" %}
-
-
 	{# One Liner section #}
 	{% set item = {
 		title: "Eko's Trust",
@@ -131,6 +66,24 @@
 	} %}
 	{% include "section_one_liner.njk" %}
 
+	{# Icon List section #}
+	{% set item = {
+		header: "Benefits",
+		icons: [
+			{
+				image: "/assets/img/main/merchant-onboarding-icon.svg",
+				caption: "Instant onboarding!"
+			},
+			{
+				image: "/assets/img/main/success-rate.svg",
+				caption: "Industry-best success rates!"
+			},
+			{
+				image: "/assets/img/main/seamless-integration.svg",
+				caption: "Seamless integration!"
+			}]
+	} %}
+	{% include "section_icon_list.njk" %}
 
 	{# Alternating Steps Section #}
 	{% set item = {
@@ -159,18 +112,31 @@
 	} %}
 	{% include "section_alternating_steps.njk" %}
 
+{# Single Hero section #}
+	{# set item = {
+		image: "/assets/img/main/partner-brands.webp",
+		title: "Offer services from our partner brands",
+		text: "Use Eko’s digital and physical infrastructure to reach the 800 million cash earning Indians. Low & Middle Income (LMI) consumers are under-served on digital as well as financial products. Eko provides solutions that help you reach this base in a variety of ways.",
+		link_text: "More About Our Partner Brands",
+		link: "/our-brand-association"
+	} #}
+	{# include "section_single_hero.njk" #}
 
-	{# One Liner section #}
+		{# Icon List section #}
 	{% set item = {
-		title: "No matter what your business is we’ve got you covered",
-		tags: [
-			{ name: "Individual" },
-			{ name: "Retailers" },
-			{ name: "Distributors" },
-			{ name: "Business" }
-		]
+		header: "We proudly make in India",
+		icons: [
+			{
+				image: "/assets/img/Mask_Group_17.png"
+			},
+			{
+				image: "/assets/img/Mask_Group_18.png"
+			},
+			{
+				image: "/assets/img/Mask_Group_19.png"
+			}]
 	} %}
-	{% include "section_one_liner.njk" %}
+	{% include "section_icon_list_no_bg.njk" %}
 
 
 	{# Gallery / Carousel section #}
@@ -223,6 +189,5 @@
 		caption: "#StayAlertStaySafe"
 	} %}
 	{% include "section_get_started_banner.njk" %} #}
-
 
 {% endblock %}

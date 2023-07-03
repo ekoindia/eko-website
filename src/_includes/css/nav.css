@@ -7,6 +7,9 @@ nav.topnav {
 	position: sticky;
 	top: 0;
 }
+#dev_button{
+	right: 10px;
+}
 .scrolled {
 	background: #f4f1ed;
 	transition: all ease 200ms;
@@ -53,7 +56,7 @@ nav.topnav .button {
 #menu .main-menu {
 	display: none;
 	justify-content: center;
-	margin-top: 10px;
+	
 }
 #menu li{
 	margin-top: 10px;

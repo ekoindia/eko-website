@@ -128,7 +128,7 @@ aside {
 
 
 img {
-  max-width: 100%;
+  max-width: 80%;
 }
 
 
@@ -137,6 +137,13 @@ h1 {
 	font-weight: bold;
 	line-height: 1.4;
 }
+
+h2 {
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 1.2;
+}
+
 
 /* h2 {
   font-size: 16px;
@@ -706,14 +713,14 @@ section.block h3 {
 
 
 .icon-list .iconsbox > div {
-	padding: 20px;
-	max-width: 280px;
+	padding: 50px;
+	max-width: 480px;
 }
 
 
-@media (min-width: 700px) {
+@media (min-width: 750px) {
 	.one-liner, .one-liner .tags-row {
-		width: 70%;
+		width: 80%;
 	}
 }
 

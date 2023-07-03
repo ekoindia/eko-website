@@ -1,0 +1,242 @@
+{% extends "./_layouts/base.njk" %}
+
+{# Include Embla Carousel #}
+{% block custom_script %}
+  {{ js_carousel | jsmin | safe }}
+{% endblock %}
+
+{% block custom_style %}
+  {{ css_carousel | cssmin | safe }}
+{% endblock %}
+
+{% block main %}
+
+	{# Custom HTML code can be added anywhere in this block #}
+	{# Or, add a predefined section component #}
+
+    {# Top Hero Section #}
+	{% set product = {
+		title: "White-Label Solution",
+		tag_line: "eLOKa - Whitelabel Solution",
+		hero_image: "/assets/img/home_page2.png",
+		summary: "Is an end-to-end white-label platform that helps businesses to step into the digital payments world. Here you can manage your agent network while empowering them with all types of digital payment modes from Money Transfer to Bill Payments.",
+		learn_more_link: ""
+	} %}
+	{% include "section_product_page_hero.njk" %}
+
+{# One Liner section #}
+	{% set item = {
+		title: "WHY eLOKa?",
+		tags: [
+		]
+	} %}
+	{% include "section_one_liner.njk" %}
+
+	{# Mid Summary section #}
+	{% set item = {
+		header: "Unlimited Services!",
+		main_text: ""
+	} %}
+	{% include "section_mid_summary.njk" %}
+
+{# Slider / Carousel section #}
+	{% set item = {
+	slides: [
+		{
+			title: "Free Customer Support!",
+			description: "24*7 Customer Support for your network.",
+			image: "/assets/img/new/CS.jpg"
+		},
+		{
+			title: "Free Tech Support!",
+			description: "24*7 Tech Support for your network.",
+			image: "/assets/img/new/TS.png"
+		},
+		{
+			title: "Free Agent Onboarding!",
+			description: "Your network can complete their KYC for free.",
+			image: "/assets/img/new/Onb.jpg"
+		},
+		{
+			title: "Free Data Management!",
+			description: "Unlimited access to your network data.",
+			image: "/assets/img/new/DM.jpg"
+		},
+        {
+			title: "Free Product Maintenance!",
+			description: "Our maintenance team makes sure your product is up and running.",
+			image: "/assets/img/new/PM.jpeg"
+		},
+        {
+			title: "Free Products Expansion!",
+			description: "We bring new products to the platform for free of cost.",
+			image: "/assets/img/new/PA.jpeg"
+		},
+		 {
+			title: "Free Invoicing!",
+			description: "Free agent level invoicing so you don't have to worry about GST and TDS claims.",
+			image: "/assets/img/new/IV.jpg"
+		},
+        {
+			title: "Free SMS Service!",
+			description: "Send your network unlimited messages for free",
+			image: "/assets/img/new/SMS.jpeg"
+		}]
+	} %}
+	{% include "section_carousel.njk" %}
+
+
+	{# Alternating Steps Section #}
+	{% set item = {
+	title: "Exciting Features!",
+	subtitle: "",
+	steps: [
+		{
+			title: "Attractive product stack",
+			text: "* Money Transfer (Upto 2.2 Lakhs)\n* Cash Withdrawal\n* Utility Bill Payment\n* QR Payment\n* CMS - Cash Drop\n* Indo Nepal\n* Flight Tickets\n* Credit Card Bill\n* Balance Inquiry\n* Mini Statement",
+			image: "/assets/img/developers/transaction-alert.svg",
+			more_info: "Learn more"
+		},
+        {
+		    title: "Max commissions and least charges",
+			text: "* DMT charges - 1.7 Rs.\n* AePS commissions - 13.8 Rs",
+			image: "/assets/img/developers/secure-emoney.svg",
+			more_info: "Learn more"
+		},
+        {
+			title: "Business dashboards",
+			text: "To track your business through:\n* Product performance\n* Agent performance\n* Network earnings\n* Onboarding funnel metrics",
+			image: "/assets/img/lending-page/upgrade-business.svg",
+			more_info: "Learn more"
+		},
+        {
+			title: "Wallet Management",
+			text: "Your network can perform:\n* Wallet recharge\n* Wallet settlement",
+			image: "/assets/img/money-transfer/mini-bank.svg",
+			more_info: "Learn more"
+		},
+        {
+			title: "Network Management features",
+			text: "* Lock and Unlock agent account\n* Tracker for network’s transaction history\n* Tracker for support issues raised\n* Access to agent’s KYC documents\n* Update agent role - Distributor, Retailer",
+			image: "/assets/img/developers/salary-disbursal-first-fold.svg",
+			more_info: "Learn more"
+		},
+        {
+			title: "Build your brand with your",
+			text: "* Logo\n* Domain/Subdomain\n* App name\n* Company name\n* Branded notifications",
+			image: "/assets/img/developers/secure-icon.svg",
+			more_info: "Learn more"
+        },
+        {
+			title: "Network Onboarding",
+			text: "* Digital agent onboarding (No charges)\n* Constant access to agent’s KYC documents",
+			image: "/assets/img/developers/enterprise-opt.svg",
+			more_info: "Learn more"
+		}]
+	} %}
+	{% include "section_alternating_steps.njk" %}
+
+
+{# Icon List Section #}
+	{% set item = {
+		header: "Universal platform for all businesses!",
+		icons: [
+			{
+				image: "/assets/img/lending-page/reach-shoppers.svg",
+				caption: "GOVERNMENT AGENCIES "
+			},
+			{
+				image: "/assets/img/lending-page/reach-shoppers.svg",
+				caption: "RETAIL OWNERS"
+			},
+			{
+				image: "/assets/img/lending-page/reach-shoppers.svg",
+				caption: "DISTRIBUTION OWNERS"
+			},
+			{
+				image: "/assets/img/lending-page/reach-shoppers.svg",
+				caption: "SOCIAL ORGANISATIONS"
+			}]
+	} %}
+	{% include "section_custom_icon_list.njk" %}
+
+	{# Single Hero section #}
+	{# set item = {
+		image: "/assets/img/main/partner-brands.webp",
+		title: "Offer services from our partner brands",
+		text: "Use Eko’s digital and physical infrastructure to reach the 800 million cash earning Indians. Low & Middle Income (LMI) consumers are under-served on digital as well as financial products. Eko provides solutions that help you reach this base in a variety of ways.",
+		link_text: "More About Our Partner Brands",
+		link: "/our-brand-association"
+	} #}
+	{# include "section_single_hero.njk" #}
+
+{# Step Section #}
+	{% set item = {
+		header: "How to become a Retailer Partner",
+		steps: [
+			{ text: "Complete your KYC through CONNECT App.", link:"" },
+			{ text: "Provide logo, app name and other details." },
+			{ text: "Choose your plan and Pay your setup fee." },
+			{ text: "Done! You can start earning money." }
+		]
+	} %}
+	{% include "section_step_section.njk" %}
+
+{# Get Started Banner Section #}
+	{% set item = {
+		small_header: "Ready to get started?",
+		main_header: "Let us know now!",
+		image: "/assets/img/become-eko-partner-opt.svg",
+        caption: "Eko Retailer Partner",
+		button1_text: "Try for Free",
+		button2_text: "Contact Sales"
+	} %}
+	{% include "section_get_started_banner.njk" %}
+
+
+	{# Small Heros section #}
+	{% set item = {
+		header: "Trusted Partners!",
+		partner_images: [
+			{ image: "/assets/img/main/partner1.webp", title: "SBI" },
+			{ image: "/assets/img/main/partner2.webp", title: "Yes Bank" },
+			{ image: "/assets/img/main/partner3.webp", title: "Fino Payments Bank" },
+			{ image: "/assets/img/main/partner4.webp", title: "Airtel" },
+			{ image: "/assets/img/main/partner5.webp", title: "Axis Bank" }
+		]
+	} %}
+	{% include "section_small_heros.njk" %}
+
+	{# FAQ Accordion Section #}
+	{% set item = {
+		header: "Frequently Asked Questions",
+		faqs: [
+			{
+				title: "What do I get from Eko when I sign up? ",
+				description: "Our sales team will guide you through your process of finding an ideal product for you."
+			},
+			{
+				title: "How much do I have to pay for this platform? ",
+				description: "Our sales team can guide you through the monthly subscription plans and commercials"
+			},
+			{
+				title: "How can i get a live demo?",
+				description: "Contact our sales team at +91 7303700879 and schedule your demo in no time."
+			}]
+	} %}
+	{% include "section_accordion.njk" %}
+
+	{# Final Ad section #}
+	{# {% set item = {
+		small_header: "Let’s fight Covid-19 together",
+		main_header: "Download Aarogya Setu App",
+		icon1: "/assets/img/main/android-icon.svg",
+		icon1_text: "Android",
+		icon2: "/assets/img/main/ios-icon.svg",
+		icon2_text: "iOS",
+		image: "/assets/img/main/aarogya-setu-logo.webp",
+		caption: "#StayAlertStaySafe"
+	} %}
+	{% include "section_get_started_banner.njk" %} #}
+
+{% endblock %}

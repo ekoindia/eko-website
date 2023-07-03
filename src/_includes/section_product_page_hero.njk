@@ -12,7 +12,7 @@
 		<p class="lh-high">{{ product.summary }}</p>
 
 		<div class="layout horizontal center">
-			<a href="#sectionSignupForm" class="button">{{ product.signup_label or 'Sign up' }}</a>
+			<a href="#sectionSignupForm" class="button">{{ product.signup_label or 'Try for Free' }}</a>
 			{% if product.learn_more_link %}
 				&nbsp;&nbsp;&nbsp;
 				{% linkArrow product.learn_more_link, product.learn_more_label or "Learn More" %}

@@ -13,9 +13,6 @@
 
 		<ul class="main-menu clearfix">
 
-			{# ====================== LENDING MENU ==================== #}
-			<li><a href="/business-loans-from-eko">Lending</a></li>
-
 			{# ====================== PRODUCTS MENU ==================== #}
 			<li><a href="#">
 					<label title="Toggle Drop-down" for="sbmnu1">
@@ -29,44 +26,86 @@
               			<div class="h2-border"></div>
 					</div>
 					<ul>
-						{%- for product in products | rejectattr("hidden") | rejectattr("disabled") -%}
-							<li role="menuitem"><a href="/products/{{ product.name | slug }}">{% dotTag product.sub_header %}</a></li>
-						{%- endfor -%}
+						<li role="menuitem"><a href="/WLC">{% dotTag "White Label Solution" %}</a></li>
+						<li role="menuitem"><a href="/developers/eps">{% dotTag "API Solutions" %}</a></li>
+						<li role="menuitem"><a href="/retailer">{% dotTag "Retailers Banking App" %}</a></li>
 					</ul>
-					<div class="extra-links">
+					{# <div class="extra-links">
 						<img src="/assets/img/product-nav-opt.svg" width="80" height="80" loading="lazy">
 						<div class="sub-menu-h1">Check out our Developer Products</div>
 						<p class="capt">Available as APIs & SDKs</p>
 						<a href="/developers/eps#product-list" class="button outline">Check Developer Products</a>
-					</div>
+					</div> #}
 				</div>
 			</li>
-
-
-			{# ====================== RETAILERS MENU ==================== #}
-			<li><a href="/retailer">Retailers</a></li>
 
 			{# ====================== DEVELOPERS MENU ==================== #}
 			<li><a href="#">
 					<label title="Toggle Drop-down" for="sbmnu2">
-						<div>Developers <span class="drop-icon">▾</span></div>
+						<div>APIs<span class="drop-icon">▾</span></div>
 					</label>
 				</a>
 				<input type="checkbox" id="sbmnu2">
 				<div class="sub-menu layout horizontal">
 					<div>
-						<div class="sub-menu-h1">Developers</div>
+						<div class="sub-menu-h1">APIs</div>
               			<div class="h2-border"></div>
 					</div>
 					<ul>
-						<li class="capt">Develop With</li>
-						<li role="menuitem"><a href="/developers/eps">{% dotTag "Eko Platform Services" %}</a></li>
+						<li class="capt">Payment APIs</li>
+						<li role="menuitem"><a href="/developers/eps/domestic-money-transfer-api/">{% dotTag "Money Transfer" %}</a></li>
+						<li role="menuitem"><a href="/developers/eps/aeps-cashout-sdk/">{% dotTag "Cash Withdrawal" %}</a></li>
+						<li role="menuitem"><a href="/developers/eps/bbps-api/">{% dotTag "Utility Bill Payment" %}</a></li>
+						<li role="menuitem"><a href="/developers/eps/fund-settlement-api/">{% dotTag "Fund Settlement" %}</a></li>
+						<li role="menuitem"><a href="/developers/eps/cash-collection-api/">{% dotTag "Cash Collection" %}</a></li>
+					    <li class="capt">Verification APIs</li>
+					    <li role="menuitem"><a href="/developers/eps/pan-verification-api/">{% dotTag "Pan Verification" %}</a></li>
+					    <li role="menuitem"><a href="/developers/eps/aadhaar-verification-api//">{% dotTag "Aadhaar Verification" %}</a></li>
+						<li role="menuitem"><a href="/developers/eps/account-verification-api/">{% dotTag "Account Verification" %}</a></li>
+					</ul>
+					<ul>
 						<li class="capt">Resources</li>
 						<li role="menuitem"><a href="https://developers.eko.in/reference">{% dotTag "API references" %}</a></li>
 						<li role="menuitem"><a href="https://developers.eko.in/docs">{% dotTag "Developer Guide" %}</a></li>
 					</ul>
 				</div>
 			</li>
+
+
+			{# ====================== RETAILERS MENU ==================== #}
+			<li><a href="#">
+					<label title="Toggle Drop-down" for="sbmnu1">
+						<div>Retail Banking<span class="drop-icon">▾</span></div>
+					</label>
+				</a>
+				<input type="checkbox" id="sbmnu1">
+				<div class="sub-menu layout horizontal">
+					<div>
+						<div class="sub-menu-h1">Banking Services</div>
+              			<div class="h2-border"></div>
+					</div>
+					<ul>
+						    <li class="capt">Commission based services</li>
+						{%- for product in products | rejectattr("hidden") | rejectattr("disabled") -%}
+							<li role="menuitem"><a href="/products/{{ product.name | slug }}">{% dotTag product.sub_header %}</a></li>
+						{%- endfor -%}
+						{# <li role="menuitem"><a href="/retailer">Retailers</a></li> #}
+					</ul>
+					<ul>
+					<li class="capt">Claim other services</li>
+					<li role="menuitem"><a href="/business-loans-from-eko/">{% dotTag "Business Loan" %}</a></li>
+					</ul>
+					{# <div class="extra-links">
+						<img src="/assets/img/product-nav-opt.svg" width="80" height="80" loading="lazy">
+						<div class="sub-menu-h1">Check out our Developer Products</div>
+						<p class="capt">Available as APIs & SDKs</p>
+						<a href="/developers/eps#product-list" class="button outline">Check Developer Products</a>
+					</div> #}
+				</div>
+			</li>
+
+			{# ====================== LENDING MENU ==================== #}
+            <li><a href="/business-loans-from-eko">Business Loan</a></li>
 
 			{# ====================== COMPANY MENU ==================== #}
 			<li><a href="#">
