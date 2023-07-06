@@ -19,22 +19,23 @@
 		title: "White-Label Solution",
 		tag_line: "eLOKa - Whitelabel Solution",
 		hero_image: "/assets/img/home_page2.png",
-		summary: "Is an end-to-end white-label platform that helps businesses to step into the digital payments world. Here you can manage your agent network while empowering them with all types of digital payment modes from Money Transfer to Bill Payments.",
+		summary: "Is an end-to-end white-label portal that helps businesses to step into the digital payments world. Here you can manage your agent network and empower them with all types of payment modes from Money Transfer to Bill Payments.",
 		learn_more_link: ""
 	} %}
 	{% include "section_product_page_hero.njk" %}
 
-{# One Liner section #}
+	{# Get Started Banner Section #}
 	{% set item = {
-		title: "WHY eLOKa?",
-		tags: [
-		]
+		main_header: "Why eLOKa? Let's find out",
+		small_header: "Go live with your portal in 10 mins!",
+		image: "/assets/img/eko-trust.svg"
 	} %}
-	{% include "section_one_liner.njk" %}
+	{% include "section_get_started_banner.njk" %}
+
 
 	{# Mid Summary section #}
 	{% set item = {
-		header: "Unlimited Services!",
+		header: "Unlimited Services",
 		main_text: ""
 	} %}
 	{% include "section_mid_summary.njk" %}
@@ -88,7 +89,7 @@
 
 	{# Alternating Steps Section #}
 	{% set item = {
-	title: "Exciting Features!",
+	title: "Exciting Features",
 	subtitle: "",
 	steps: [
 		{
@@ -132,14 +133,19 @@
 			text: "* Digital agent onboarding (No charges)\n* Constant access to agent’s KYC documents",
 			image: "/assets/img/developers/enterprise-opt.svg",
 			more_info: "Learn more"
-		}]
+		},
+		{
+			title: "Additional free services",
+			text: "* Product Maintenance\n* Product Addition\n* Customer Support 24*7\n* Tech support 24*7\n* Invoicing\n* SMS Service\n* Agent Onboarding\n* All types of Data Management",
+			image: "/assets/img/main/best-success-rate-opt.svg",
+			more_info: "Learn more"
+        }]
 	} %}
 	{% include "section_alternating_steps.njk" %}
 
-
 {# Icon List Section #}
 	{% set item = {
-		header: "Universal platform for all businesses!",
+		header: "Universal platform for all businesses",
 		icons: [
 			{
 				image: "/assets/img/lending-page/reach-shoppers.svg",
@@ -172,7 +178,7 @@
 
 {# Step Section #}
 	{% set item = {
-		header: "How to become a Retailer Partner",
+		header: "Get your platform live in 10 mins",
 		steps: [
 			{ text: "Complete your KYC through CONNECT App.", link:"" },
 			{ text: "Provide logo, app name and other details." },
@@ -182,10 +188,11 @@
 	} %}
 	{% include "section_step_section.njk" %}
 
+
 {# Get Started Banner Section #}
 	{% set item = {
 		small_header: "Ready to get started?",
-		main_header: "Let us know now!",
+		main_header: "Let us know now",
 		image: "/assets/img/become-eko-partner-opt.svg",
         caption: "Eko Retailer Partner",
 		button1_text: "Try for Free",
@@ -193,10 +200,9 @@
 	} %}
 	{% include "section_get_started_banner.njk" %}
 
-
 	{# Small Heros section #}
 	{% set item = {
-		header: "Trusted Partners!",
+		header: "Trusted Partners",
 		partner_images: [
 			{ image: "/assets/img/main/partner1.webp", title: "SBI" },
 			{ image: "/assets/img/main/partner2.webp", title: "Yes Bank" },
@@ -209,7 +215,7 @@
 
 	{# FAQ Accordion Section #}
 	{% set item = {
-		header: "Frequently Asked Questions",
+		header: "FAQ",
 		faqs: [
 			{
 				title: "What do I get from Eko when I sign up? ",
@@ -217,7 +223,7 @@
 			},
 			{
 				title: "How much do I have to pay for this platform? ",
-				description: "Our sales team can guide you through the monthly subscription plans and commercials"
+				description: "Get in touch with our sales team for the monthly subscription plans and commercials."
 			},
 			{
 				title: "How can i get a live demo?",
@@ -238,5 +244,7 @@
 		caption: "#StayAlertStaySafe"
 	} %}
 	{% include "section_get_started_banner.njk" %} #}
+
+
 
 {% endblock %}

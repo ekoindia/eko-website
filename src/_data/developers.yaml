@@ -642,3 +642,76 @@
       image: /assets/img/become-eko-partner-opt.svg
       button1_text: Get Started
       button2_text: Contact Sales
+
+- name: OCR Verification API
+  title: OCR Verification API
+  tag_line: OCR
+  social_image: /assets/img/developers/pan-verification-2-opt.svg
+  keywords: OCR Verification api, OCR Verification api india, OCR api, Image to text api, optical character recognition api, optical character recognition, OCR
+  hero_image: /assets/img/developers/pan-verification-2-opt.svg
+  summary: Optical Character Recognition (OCR) is the process that converts an image of text into a machine-readable text format which is used where data entering is required. The verification process involves reviewing the OCR results and manually correcting any errors or inaccuracies.
+  description: OCR Verification API made customer onboarding & verification easy. Optical Character Recognition (OCR) is the process that converts an image of text into a machine-readable text format which is used where data entering is required. The verification process involves reviewing the OCR results and manually correcting any errors or inaccuracies.
+  documentation_link: https://developers.eko.in/docs/identity
+  
+  layout:
+    - section: icon_list
+      header: How can we use this API?
+      subtitle: 
+      description: OCR APIs are built to extract data from specific documents, this training allows them to be more accurate in extracting specific data from those specific document types such as...
+      icons:
+        - image: /assets/img/New/PanOCR.png
+          caption: Pan Card
+        - image: /assets/img/New/AadhaarOCR.png
+          caption: Aadhaar Card
+        - image: /assets/img/New/PP.png
+          caption: Passport
+        - image: /assets/img/New/DLOCR.png
+          caption: Driving License
+        - image: /assets/img/New/VIII.png
+          caption: Voter ID
+
+    - section: heros_main
+      header: Benefits of our OCR API
+      items:
+        - type: pair # 2 items side-by-side
+          # Benefit 1
+          title_left: Document Digitization
+          text_left: To shift KYC process from physical document verification to digital document verification.
+          image_left: /assets/img/developers/pan-valid-icon.svg
+          # Benefit 2
+          title_right: Document verification
+          text_right: Our API can verify which document type is uploaded and mitigates fraud risk.
+          image_right: /assets/img/developers/check-name-icon.svg
+        - type: pair # 2 items side-by-side
+          # Benefit 3
+          title_left: Text extraction
+          text_left: You can use extracted data from the document to assist the data entry process.
+          image_left: /assets/img/developers/pan-valid-icon.svg
+          # Benefit 4
+          title_right: Fetch your documents anytime!
+          text_right: Record keeping service enabled on request for clients to download the OCR documents anytime. 
+          image_right: /assets/img/New/FD.png
+    - section: documentation_link_banner
+
+    - section: step_section
+      header: How to integrate OCR API
+      steps:
+        - text: Sign Up on Connect.
+        - text: Submit your KYC documents.
+        - text: Complete UAT Testing.
+          link: https://developers.eko.in/reference
+        - text: Finalize your API integration
+        - text: IP whitelisting (Indian only)
+        - text: Go live with your production credentials!
+
+    - section: message
+      line1: "**OCR API** \n\nEko’s OCR API provides an easy solution for all the documentation heavy processes.\n\n**1** - The text from document received from the user will be extracted and sent back in the response.  .\n\n**2** - The Document uploaded will be stored for user to fetch anytime based on a unique reference number. (If data storage is requested by the user)."
+      main_line: For all integration related issues, we provide 24x7 support.
+      button_text: Contact Support
+
+    - section: get_started_banner
+      small_header: Ready to get started?
+      main_header: Integrate our OCR API
+      image: /assets/img/become-eko-partner-opt.svg
+      button1_text: Get Started
+      button2_text: Contact Sales

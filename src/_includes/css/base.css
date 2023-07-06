@@ -773,7 +773,7 @@ section.block.get_started_banner .button {
   display: block;
   padding: 0.2em;
   width: 100%;
-  border: solid 1px #d4d4d4;
+  border: solid 2px #ffcf57;
   border-radius: 4px;
   cursor: pointer;
   margin-bottom: 20px;
