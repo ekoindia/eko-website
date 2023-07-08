@@ -40,7 +40,7 @@ business: api
 				<div>{{ product.sub_header }}</div>
 			{% endif %}
 			{% if product.icon %}
-				<img src="{{ product.icon }}">
+				<img src="{{ product.icon }}" alt="Eloka Logo" style="height:50px">
 			{% endif %}
 		</div>
 
@@ -48,8 +48,8 @@ business: api
 
 		<p class="sub_tag_line">{{ product.sub_tag_line }}</p>
 
-		<p class="lh-high">Welcome to Eloka, an end-to-end <mark>white-label platform</mark> that helps businesses like yours easily step into the digital payments world.</p>
-		<p class="lh-high">Handle payment services like <abbr title="Domestic Money Transfer">DMT</abbr>, <abbr title="Aadhaar Enabled Payment System">AePS</abbr>, <abbr title="Bharat Bill Payments System">BBPS</abbr>, <abbr title="Cash Management Services">CMS</abbr>, Credit Card, Static QR, Indo-Nepal, etc. No API integration or development efforts!</p>
+		<p class="lh-high">Welcome to Eloka, an end-to-end white-label platform that helps businesses like yours to easily step into the digital payments world.</p>
+		<p class="lh-high">Bundled with payment services like <abbr title="Domestic Money Transfer">DMT</abbr>, <abbr title="Aadhaar Enabled Payment System">AePS</abbr>, <abbr title="Bharat Bill Payments System">BBPS</abbr>, <abbr title="Cash Management Services">CMS</abbr>, Credit Card, Static QR, Indo-Nepal, etc. No API integration or development efforts!</p>
 
 		<div class="layout horizontal center">
 			<a href="#sectionSignupForm" class="button">{{ product.signup_label or 'Sign up' }}</a>
@@ -60,7 +60,8 @@ business: api
 		</div>
 	</div>
 	<div class="flex imgbox radial" style="background:radial-gradient(#FFFFFF00,#ffb21820,#ffb21850,#FFFFFF00,#FFFFFF00)">
-		<img src="{{ product.hero_image }}" alt="Eloka preview">
+		{# <img src="{{ product.hero_image }}" alt="Eloka preview"> #}
+		{% Image "" + product.hero_image, "Eloka Preview" %}
 	</div>
 </section>
 <section class="block">
