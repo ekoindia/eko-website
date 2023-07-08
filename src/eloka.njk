@@ -1,0 +1,298 @@
+---
+title: Eloka – Eko's White-Label Solution For Your Agent Network
+description: Welcome to Eloka, an end-to-end white-label platform that helps businesses like yours easily step into the digital payments world. Whether you want to handle payments like DMT, AePS, BBPS, CMS, Credit Card, Static QR or Indo Nepal, Eloka has got you covered. No API integration or development efforts!
+
+keywords: white-label, white label payment solutions, API, developers, enterprise, platform, AePS, DMT, BBPS, CMS, disbursal, cash collection, banking, financial services
+business: api
+---
+
+
+{% extends "./_layouts/base.njk" %}
+
+{# Include Embla Carousel #}
+{# {% block custom_script %}
+  {{ js_carousel | jsmin | safe }}
+{% endblock %} #}
+
+{# {% block custom_style %}
+  {{ css_carousel | cssmin | safe }}
+{% endblock %} #}
+
+{% block main %}
+
+	{# Custom HTML code can be added anywhere in this block #}
+	{# Or, add a predefined section component #}
+
+    {# Top Hero Section #}
+	{% set product = {
+		icon: "/assets/img/eloka/eloka-logo.opt.svg",
+		tag_line: "A Complete White-Label Solution for Your Agent Network",
+		sub_tag_line: "Go-live with your own brand in 10 minutes!",
+		hero_image: "/assets/img/eloka/eloka-hp.png",
+		signup_label: "Start For Free",
+		learn_more_link: "#sectionAccordian"
+	} %}
+	{# {% include "section_product_page_hero.njk" %} #}
+	<section class="block product_page_hero layout vertical horizontal-md center" type="product_page_hero">
+	<div class="descbox layout inline vertical flex wider">
+		<div class="subtitle layout inline horizontal end">
+			{% if product.sub_header %}
+				<div>{{ product.sub_header }}</div>
+			{% endif %}
+			{% if product.icon %}
+				<img src="{{ product.icon }}">
+			{% endif %}
+		</div>
+
+		<h1>{{ product.tag_line }}</h1>
+
+		<p class="sub_tag_line">{{ product.sub_tag_line }}</p>
+
+		<p class="lh-high">Welcome to Eloka, an end-to-end <mark>white-label platform</mark> that helps businesses like yours easily step into the digital payments world.</p>
+		<p class="lh-high">Handle payment services like <abbr title="Domestic Money Transfer">DMT</abbr>, <abbr title="Aadhaar Enabled Payment System">AePS</abbr>, <abbr title="Bharat Bill Payments System">BBPS</abbr>, <abbr title="Cash Management Services">CMS</abbr>, Credit Card, Static QR, Indo-Nepal, etc. No API integration or development efforts!</p>
+
+		<div class="layout horizontal center">
+			<a href="#sectionSignupForm" class="button">{{ product.signup_label or 'Sign up' }}</a>
+			{% if product.learn_more_link %}
+				&nbsp;&nbsp;&nbsp;
+				{% linkArrow product.learn_more_link, product.learn_more_label or "Learn More" %}
+			{% endif %}
+		</div>
+	</div>
+	<div class="flex imgbox radial" style="background:radial-gradient(#FFFFFF00,#ffb21820,#ffb21850,#FFFFFF00,#FFFFFF00)">
+		<img src="{{ product.hero_image }}" alt="Eloka preview">
+	</div>
+</section>
+<section class="block">
+	{% iconScroll %}
+</section>
+
+
+
+
+	{# Get Started Banner Section #}
+	{# {% set item = {
+		main_header: "Why Eloka? Let's find out",
+		small_header: "Go live with your portal in 10 mins!",
+		image: "/assets/img/eko-trust.svg"
+	} %}
+	{% include "section_get_started_banner.njk" %} #}
+
+
+	{# Mid Summary section #}
+	{# {% set item = {
+		header: "Unlimited Services",
+		main_text: ""
+	} %}
+	{% include "section_mid_summary.njk" %} #}
+
+{# Slider / Carousel section #}
+	{# {% set item = {
+	slides: [
+		{
+			title: "Free Customer Support!",
+			description: "24*7 Customer Support for your network.",
+			image: "/assets/img/new/CS.jpg"
+		},
+		{
+			title: "Free Tech Support!",
+			description: "24*7 Tech Support for your network.",
+			image: "/assets/img/new/TS.png"
+		},
+		{
+			title: "Free Agent Onboarding!",
+			description: "Your network can complete their KYC for free.",
+			image: "/assets/img/new/Onb.jpg"
+		},
+		{
+			title: "Free Data Management!",
+			description: "Unlimited access to your network data.",
+			image: "/assets/img/new/DM.jpg"
+		},
+        {
+			title: "Free Product Maintenance!",
+			description: "Our maintenance team makes sure your product is up and running.",
+			image: "/assets/img/new/PM.jpeg"
+		},
+        {
+			title: "Free Products Expansion!",
+			description: "We bring new products to the platform for free of cost.",
+			image: "/assets/img/new/PA.jpeg"
+		},
+		 {
+			title: "Free Invoicing!",
+			description: "Free agent level invoicing so you don't have to worry about GST and TDS claims.",
+			image: "/assets/img/new/IV.jpg"
+		},
+        {
+			title: "Free SMS Service!",
+			description: "Send your network unlimited messages for free",
+			image: "/assets/img/new/SMS.jpeg"
+		}]
+	} %}
+	{% include "section_carousel.njk" %} #}
+
+
+	{# Alternating Steps Section #}
+	{% set item = {
+	title: "Exciting Features",
+	subtitle: "",
+	steps: [
+		{
+			title: "Attractive product stack",
+			text: "* Money Transfer (Upto 2.2 Lakhs)\n* Cash Withdrawal\n* Utility Bill Payment\n* QR Payment\n* CMS - Cash Drop\n* Indo Nepal\n* Flight Tickets\n* Credit Card Bill\n* Balance Inquiry\n* Mini Statement",
+			image: "/assets/img/developers/transaction-alert.svg",
+			more_info: "Learn more"
+		},
+        {
+		    title: "Max commissions and least charges",
+			text: "* DMT charges - 1.7 Rs.\n* AePS commissions - 13.8 Rs",
+			image: "/assets/img/developers/secure-emoney.svg",
+			more_info: "Learn more"
+		},
+        {
+			title: "Business dashboards",
+			text: "To track your business through:\n* Product performance\n* Agent performance\n* Network earnings\n* Onboarding funnel metrics",
+			image: "/assets/img/lending-page/upgrade-business.svg",
+			more_info: "Learn more"
+		},
+        {
+			title: "Wallet Management",
+			text: "Your network can perform:\n* Wallet recharge\n* Wallet settlement",
+			image: "/assets/img/money-transfer/mini-bank.svg",
+			more_info: "Learn more"
+		},
+        {
+			title: "Network Management features",
+			text: "* Lock and Unlock agent account\n* Tracker for network’s transaction history\n* Tracker for support issues raised\n* Access to agent’s KYC documents\n* Update agent role - Distributor, Retailer",
+			image: "/assets/img/developers/salary-disbursal-first-fold.svg",
+			more_info: "Learn more"
+		},
+        {
+			title: "Build your brand with your",
+			text: "* Logo\n* Domain/Subdomain\n* App name\n* Company name\n* Branded notifications",
+			image: "/assets/img/developers/secure-icon.svg",
+			more_info: "Learn more"
+        },
+        {
+			title: "Network Onboarding",
+			text: "* Digital agent onboarding (No charges)\n* Constant access to agent’s KYC documents",
+			image: "/assets/img/developers/enterprise-opt.svg",
+			more_info: "Learn more"
+		},
+		{
+			title: "Additional free services",
+			text: "* Product Maintenance\n* Product Addition\n* Customer Support 24*7\n* Tech support 24*7\n* Invoicing\n* SMS Service\n* Agent Onboarding\n* All types of Data Management",
+			image: "/assets/img/main/best-success-rate-opt.svg",
+			more_info: "Learn more"
+        }]
+	} %}
+	{% include "section_alternating_steps.njk" %}
+
+{# Icon List Section #}
+	{% set item = {
+		header: "Universal platform for all businesses",
+		icons: [
+			{
+				image: "/assets/img/lending-page/reach-shoppers.svg",
+				caption: "GOVERNMENT AGENCIES "
+			},
+			{
+				image: "/assets/img/lending-page/reach-shoppers.svg",
+				caption: "RETAIL OWNERS"
+			},
+			{
+				image: "/assets/img/lending-page/reach-shoppers.svg",
+				caption: "DISTRIBUTION OWNERS"
+			},
+			{
+				image: "/assets/img/lending-page/reach-shoppers.svg",
+				caption: "SOCIAL ORGANISATIONS"
+			}]
+	} %}
+	{% include "section_custom_icon_list.njk" %}
+
+	{# Single Hero section #}
+	{# set item = {
+		image: "/assets/img/main/partner-brands.webp",
+		title: "Offer services from our partner brands",
+		text: "Use Eko’s digital and physical infrastructure to reach the 800 million cash earning Indians. Low & Middle Income (LMI) consumers are under-served on digital as well as financial products. Eko provides solutions that help you reach this base in a variety of ways.",
+		link_text: "More About Our Partner Brands",
+		link: "/our-brand-association"
+	} #}
+	{# include "section_single_hero.njk" #}
+
+{# Step Section #}
+	{% set item = {
+		header: "Get your platform live in 10 mins",
+		steps: [
+			{ text: "Complete your KYC through CONNECT App.", link:"" },
+			{ text: "Provide logo, app name and other details." },
+			{ text: "Choose your plan and Pay your setup fee." },
+			{ text: "Done! You can start earning money." }
+		]
+	} %}
+	{% include "section_step_section.njk" %}
+
+
+{# Get Started Banner Section #}
+	{% set item = {
+		small_header: "Ready to get started?",
+		main_header: "Get your own portal in 10 minutes",
+		image: "/assets/img/eloka/build.svg",
+        caption: "Get Your Own White-Label Portal",
+		button1_text: "Try for Free",
+		button2_text: "Contact Sales"
+	} %}
+	{% include "section_get_started_banner.njk" %}
+
+
+	{# FAQ Accordion Section #}
+	{% set item = {
+		header: "FAQ",
+		faqs: [
+			{
+				title: "How do I get my white-label portal?",
+				description: "To get started, simply signup using the form above. You will be taken to our Connect app for KYC. During signup, select 'White-Label' as your desired product."
+			},
+			{
+				title: "Do I also get a white-label Android app?",
+				description: "Yes! You get both the white-label website and the mobile app."
+			},
+			{
+				title: "Can I customize the portal with my branding?",
+				description: "Yes, Eloka allows you to customize your portal with your own logo, colours, domain, app name, company name, etc."
+			},
+			{
+				title: "Can I use my own domain?",
+				description: "Yes, you can setup your own domain name for free!"
+			},
+			{
+				title: "How much do I have to pay for this platform?",
+				description: "Get in touch with our sales team for the monthly subscription plans and commercials."
+			},
+			{
+				title: "How can I get a live demo?",
+				description: "Contact our sales team at +91 7303700879 and schedule your demo in no time. You can also start a free trial to try it out for yourself!"
+			}]
+	} %}
+	{% include "section_accordion.njk" %}
+
+
+
+	{# Small Heros section #}
+	{% set item = {
+		header: "Trusted Partners",
+		partner_images: [
+			{ image: "/assets/img/main/partner1.webp", title: "SBI" },
+			{ image: "/assets/img/main/partner2.webp", title: "Yes Bank" },
+			{ image: "/assets/img/main/partner3.webp", title: "Fino Payments Bank" },
+			{ image: "/assets/img/main/partner4.webp", title: "Airtel" },
+			{ image: "/assets/img/main/partner5.webp", title: "Axis Bank" }
+		]
+	} %}
+	{% include "section_small_heros.njk" %}
+
+
+
+{% endblock %}
