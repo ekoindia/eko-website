@@ -60,6 +60,7 @@
 					</div>
 					<ul>
 						<li class="capt">Develop With</li>
+						<li role="menuitem"><a href="/eloka">{% dotTag "Eloka – Your White-Label Portal" %}</a></li>
 						<li role="menuitem"><a href="/developers/eps">{% dotTag "Eko Platform Services" %}</a></li>
 						<li class="capt">Resources</li>
 						<li role="menuitem"><a href="https://developers.eko.in/reference">{% dotTag "API references" %}</a></li>
@@ -83,7 +84,7 @@
 					<ul>
 						<li role="menuitem"><a href="/about-us">{% dotTag "About Us" %}</a></li>
 						{# ====================== <li role="menuitem"><a href="/our-brand-association">{% dotTag "Brand Partners" %}</a></li> ==================== #}
-						
+
 						<li role="menuitem"><a href="/blog">{% dotTag "Blogs" %}</a></li>
 						<li role="menuitem"><a href="/eko-university/about-eko">{% dotTag "Eko University" %}</a></li>
 						<li role="menuitem"><a href="/faq">{% dotTag "FAQs" %}</a></li>
@@ -98,11 +99,12 @@
 	</div>
 
 	{# Sign Up Buttons #}
-	<div class="desktoponly layout horizontal center" style="width:310px">
+	<div class="navsignupbox desktoponly">
 		<div class="callUs">
-		<img src="/assets/img/customer-service.png">
-		 <span>+91 7303700879</span>
+			<img src="/assets/img/customer-service.png">
+			<span>+91 7303700879</span>
 		</div>
+
 		<a href="{% getSignupURL website.signup_url, business %}" class="button">Sign Up</a>
 	</div>
 </nav>
