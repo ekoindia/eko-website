@@ -1,6 +1,6 @@
 {
   "name": "eko.in",
-  "version": "1.0.0",
+  "version": "3.0.0",
   "description": "Eko's website & blog",
   "scripts": {
     "start": "del-cli _site && eleventy --serve --quiet",
