@@ -175,20 +175,20 @@
       button1_text: Get Started
       button2_text: Contact Sales
 
-- name: Fund Settlement API
-  title: Fund Settlement API With Highest Success Rate | AePS, DMT, Cashout SDK API Provider Eko
+- name: Payout API
+  title: Payout API With Highest Success Rate | AePS, DMT, Cashout SDK API Provider Eko
   tag_line: Make salary & vendor payments easily
   social_image: /assets/img/developers/salary-disbursal-first-fold-opt.svg
-  keywords: Fund Settlement API, Whitelabel AePS Portal API, Aadhaar Enabled Payment System api, aeps api, aeps api provider bank
+  keywords: Payout API, Whitelabel AePS Portal API, Aadhaar Enabled Payment System api, aeps api, aeps api provider bank
   hero_image: /assets/img/developers/salary-disbursal-first-fold-opt.svg
-  summary: Get our easy-to-use fund settlement API and pay your employees and vendors their payments using your digital wallet balance with ease.
-  description: Get our easy-to-use fund settlement API and pay your employees and vendors their payments using your digital wallet balance with a reliable & secure fund settlement APIs solution.
+  summary: Get our easy-to-use Payout API and pay your employees and vendors their payments using your digital wallet balance with ease.
+  description: Get our easy-to-use Payout API and pay your employees and vendors their payments using your digital wallet balance with a reliable & secure fund settlement APIs solution.
   documentation_link: https://developers.eko.in/docs/fund-transfer
 
   layout:
     - section: mid_summary
-      small_description: Fund Settlement API
-      header: Instant salary disbursal & vendor payment using Eko’s fund settlement API
+      small_description: Payout API
+      header: Instant salary disbursal & vendor payment using Eko’s Payout API
 
     - section: alternating_steps
       steps:
@@ -233,22 +233,22 @@
       text: We use the same APIs here at Eko! Every API call is secured with one-time-use tokens generated using asymmetric cryptography. Our open-source libraries make it extremely easy & error-proof
 
     - section: step_section
-      header: How does Fund Settlement API work
+      header: How does Payout API work
       steps:
         - text: Sign Up on Connect App.
           link: https://connect.eko.in
         - text: Submit necessary documents
-        - text: Integrate Fund Settlement API
+        - text: Integrate Payout API
         - text: Start making payments
 
     - section: message
-      line1: The process of integrating fund settlement API is easy.
+      line1: The process of integrating Payout API is easy.
       main_line: For all integration related issues, we provide 24x7 support.
       button_text: Contact Support
 
     - section: get_started_banner
       small_header: Ready to get started?
-      main_header: Integrate our Fund Settlement API
+      main_header: Integrate our Payout API
       image: /assets/img/become-eko-partner-opt.svg
       button1_text: Get Started
       button2_text: Contact Sales
