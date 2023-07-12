@@ -1,5 +1,5 @@
 <section class="block product_page_hero layout vertical horizontal-md center" type="product_page_hero">
-	<div class="descbox layout inline vertical flex">
+	<div class="descbox layout inline vertical flex {% if product.wider_title %}wider{% endif %}">
 		<div class="subtitle layout inline horizontal end">
 			<div>{{ product.sub_header }}</div>
 			{% if product.icon %}
@@ -9,7 +9,10 @@
 
 		<h1>{{ product.tag_line }}</h1>
 
+		<p class="sub_tag_line">{{ product.sub_tag_line }}</p>
+
 		<p class="lh-high">{{ product.summary }}</p>
+		<p class="lh-high">{{ product.summary2 }}</p>
 
 		<div class="layout horizontal center">
 			<a href="#sectionSignupForm" class="button">{{ product.signup_label or 'Sign up' }}</a>

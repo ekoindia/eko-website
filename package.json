@@ -1,6 +1,6 @@
 {
   "name": "eko.in",
-  "version": "1.0.0",
+  "version": "3.0.0",
   "description": "Eko's website & blog",
   "scripts": {
     "start": "del-cli _site && eleventy --serve --quiet",
@@ -19,12 +19,12 @@
   ],
   "license": "See License in ./LICENSE",
   "devDependencies": {
-    "@11ty/eleventy": "^1.0.2",
+    "@11ty/eleventy": "^2.0.1",
     "@11ty/eleventy-cache-assets": "^2.3.0",
-    "@11ty/eleventy-img": "^2.0.1",
+    "@11ty/eleventy-img": "^3.1.0",
     "@11ty/eleventy-navigation": "^0.3.5",
     "@11ty/eleventy-plugin-rss": "^1.2.0",
-    "@babel/core": "7.20.2",
+    "@babel/core": "^7.20.2",
     "del-cli": "^3.0.1",
     "dotenv": "^16.0.3",
     "eleventy-plugin-svg-contents": "^0.7.0",

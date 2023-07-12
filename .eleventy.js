@@ -30,6 +30,9 @@ const md_link_attrs = require('markdown-it-link-attributes');
 const md_mark = require('markdown-it-mark');
 const md_image_size = require('markdown-it-imsize');
 
+// For safely migrating Eleventy to the latest version
+// const UpgradeHelper = require("@11ty/eleventy-upgrade-help");
+
 
 require('dotenv').config();
 
@@ -197,19 +200,52 @@ module.exports = function(eleventyConfig) {
     }
   });
 
-  eleventyConfig.setBrowserSyncConfig({
-    callbacks: {
-      ready: function(err, bs) {
+//   eleventyConfig.setBrowserSyncConfig({
+//     callbacks: {
+//       ready: function(err, bs) {
 
-        bs.addMiddleware("*", (req, res) => {
-          const content_404 = fs.readFileSync('_site/404.html');
-          res.write(content_404);
-          res.writeHead(404);
-          res.end();
-        });
-      }
-    }
-  });
+//         bs.addMiddleware("*", (req, res) => {
+//           const content_404 = fs.readFileSync('_site/404.html');
+//           res.write(content_404);
+//           res.writeHead(404);
+//           res.end();
+//         });
+//       }
+//     }
+//   });
+
+	eleventyConfig.setServerOptions({
+		// Whether the live reload snippet is used
+		liveReload: true,
+
+		// Whether DOM diffing updates are applied where possible instead of page reloads
+		domDiff: true,
+
+		// The starting port number
+		// Will increment up to (configurable) 10 times if a port is already in use.
+		port: 8080,
+
+		// Additional files to watch that will trigger server updates
+		// Accepts an Array of file paths or globs (passed to `chokidar.watch`).
+		// Works great with a separate bundler writing files to your output folder.
+		// e.g. `watch: ["_site/**/*.css"]`
+		watch: [],
+
+		// Show local network IP addresses for device testing
+		showAllHosts: true,
+
+		// Use a local key/certificate to opt-in to local HTTP/2 with https
+		https: {
+			// key: "./localhost.key",
+			// cert: "./localhost.cert",
+		},
+
+		// Change the default file encoding for reading/serving files
+		encoding: "utf-8",
+
+		// Show the dev server version number on the command line
+		showVersion: false,
+	});
 
 
 	// Add paired shortcode to embed Markdown in templates...
@@ -266,6 +302,12 @@ module.exports = function(eleventyConfig) {
 		});
 		return Object.keys(_tags).sort();
 	});
+
+
+	// To migrating Eleventy to newer versions...
+	// First, `npm install @11ty/eleventy-upgrade-help@2`	Change @2 to latest version
+	// Build & check for errors. If no error, uninstall this module.
+	// eleventyConfig.addPlugin(UpgradeHelper);
 
 
 	return {

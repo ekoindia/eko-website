@@ -1,6 +1,10 @@
 
 {% if form and form.type == "api" %}
-	{% set formurl = env.ZOHO_FORM_API_URL or env.ZOHO_FORM_URL %}
+	{% if form and form.subtype == "whitelabel" %}
+		{% set formurl = env.ZOHO_FORM_WHITELABEL_URL or env.ZOHO_FORM_API_URL or env.ZOHO_FORM_URL %}
+	{% else %}
+		{% set formurl = env.ZOHO_FORM_API_URL or env.ZOHO_FORM_URL %}
+	{% endif %}
 	{% set clsform = form.type %}
 {% elif form and form.type == "retail" %}
 	{% set formurl = env.ZOHO_FORM_RETAIL_URL or env.ZOHO_FORM_URL %}

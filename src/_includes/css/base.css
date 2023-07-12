@@ -74,10 +74,10 @@ section.block {
 	padding-bottom: 20px;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 700px) {
 	section.block, nav.topnav, footer {
-		padding-left: 10%;
-		padding-right: 10%;
+		padding-left: 5%;
+		padding-right: 5%;
 	}
 
 	section.block {
@@ -90,10 +90,17 @@ section.block {
 	}
 }
 
+@media (min-width: 1100px) {
+	section.block, nav.topnav, footer {
+		padding-left: 10%;
+		padding-right: 10%;
+	}
+}
+
 @media (min-width: 1300px) {
 	section.block, nav.topnav, footer {
-		/* padding-left: calc( (100% - 1100px) / 2 );
-		padding-right: calc( (100% - 1100px) / 2 ); */
+		padding-left: calc( (100% - 1100px) / 2 );
+		padding-right: calc( (100% - 1100px) / 2 );
 	}
 }
 
@@ -391,6 +398,12 @@ ul.slim_ul > li::before, .slim_ul ul > li::before {
 }
 
 
+abbr[title] {
+	cursor: help;
+	border-bottom: 2px dotted var(--primary-color);
+	text-decoration: none;
+}
+
 
 /* ========== Zoho SalesIQ Chat-bubble Styling =========== */
 
@@ -497,15 +510,24 @@ section.block h3 {
 	font-size: 30px;
 }
 
+.product_page_hero > .wider {
+	flex-grow: 1;
+}
+
 .product_page_hero .subtitle > div {
 	font-size: 18px;
 	font-weight: bold;
 	line-height: 1.1;
+	margin-right: 10px;
 }
 
 .product_page_hero .subtitle > img {
-	margin-left: 10px;
 	max-height: 50px;
+}
+
+.product_page_hero .sub_tag_line {
+	font-size: 1.4em;
+	font-weight: 100;
 }
 
 @media (min-width: 700px) {
@@ -514,13 +536,25 @@ section.block h3 {
 		font-size: 40px;
 	}
 
+	.product_page_hero > .wider {
+		flex-grow: 2;
+	}
+
 	.product_page_hero .descbox {
 		padding-right: 30px;
 	}
 
-	.product_page_hero .subtitle > img {
-		margin-left: 20px;
+	.product_page_hero .subtitle > div {
+		margin-right: 20px;
 		max-height: 60px;
+	}
+
+	.product_page_hero .subtitle > img {
+		max-height: 60px;
+	}
+
+	.product_page_hero .sub_tag_line {
+		font-size: 1.5em;
 	}
 
 }
@@ -754,6 +788,11 @@ section.block.get_started_banner .button {
 	margin: 0 1em 0 0;
 }
 
+@media (min-width: 700px) {
+	section.block.get_started_banner img {
+		max-width: 400px;
+	}
+}
 
 
 /* ====================== SECTION ACCORDION =================================== */
