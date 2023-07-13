@@ -6,6 +6,10 @@ description: Discover how integrating the Payout API revolutionizes financial
 date: 2023-07-13T09:29:59.556Z
 image: /assets/img/blog/exploring-the-benefits-of-payout-api-in-specific-industries-2-.png
 business: api
+tags:
+  - payout
+  - fundsettlement
+  - salarydisbursal
 ---
 <!--StartFragment-->
 
