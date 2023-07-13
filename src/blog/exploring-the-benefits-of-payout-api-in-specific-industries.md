@@ -7,7 +7,7 @@ description: Discover how integrating the Payout API revolutionizes financial
   Wallets. Automate disbursing salaries, vendor payments, bill payments, and
   batch payments for seamless transactions and enhanced customer experiences.
 date: 2023-07-13T09:29:59.556Z
-image: /assets/img/blog/exploring-the-benefits-of-payout-api-in-specific-industries-2-.png
+image: /assets/img/blog/exploring-the-benefits-of-payout-api-in-specific-industries-3-.png
 business: api
 tags:
   - payout
