@@ -18,12 +18,12 @@
 
     - section: alternating_steps
       steps:
-      - title: Easy Cash transfer
-        text: Your retailers can use this feature to let customers transfer money to any bank account by paying in cash.
-        image: /assets/img/main/easy-cash-transfer-opt.svg
-      - title: Transaction receipt
-        text: Retailers can print transaction-receipt for their customers to give them a sense of safety
-        image: /assets/img/money-transfer/transaction-receipt.svg
+        - title: Easy Cash transfer
+          text: Your retailers can use this feature to let customers transfer money to any bank account by paying in cash.
+          image: /assets/img/main/easy-cash-transfer-opt.svg
+        - title: Transaction receipt
+          text: Retailers can print transaction-receipt for their customers to give them a sense of safety
+          image: /assets/img/money-transfer/transaction-receipt.svg
 
     - section: heros_main
       header: Benefits
@@ -62,11 +62,11 @@
     - section: step_section
       header: How to integrate Money Transfer API
       steps:
-      - text: Sign Up on Connect
-        link: https://connect.eko.in
-      - text: Submit necessary documents
-      - text: Integrate money transfer API
-      - text: Start onboarding Retailers
+        - text: Sign Up on Connect App.
+          link: https://connect.eko.in
+        - text: Submit necessary documents
+        - text: Integrate money transfer API
+        - text: Start onboarding Retailers
 
     - section: message
       line1: The process of integrations is easy.
@@ -79,8 +79,6 @@
       image: /assets/img/become-eko-partner-opt.svg
       button1_text: Get Started
       button2_text: Contact Sales
-
-
 
 - name: AePS Cashout SDK
   title: Aadhaar Enabled Payment System (AePS) Cashout SDK | Whitelabel AePS Portal API Eko
@@ -110,18 +108,18 @@
 
     - section: alternating_steps
       steps:
-      - title: Easy Cash Deposit
-        text: AePS API also allows retailers to turn their shop into a cash deposit machine. Customers can then deposit cash at their shop with ease.
-        image: /assets/img/aadhaar-banking/easy-cash-deposit.svg
-      - title: Quick Fund Transfer
-        text: With AePS API customers will never have to go to a Bank or an ATM and they will not need a debit card also. Just transfer funds using fingerprint.
-        image: /assets/img/aadhaar-banking/quick-fund-transfer.svg
-      - title: Instant Balance-inquiry
-        text: AePS API allows customers to check their bank balance at a retailer’s shop instantly.
-        image: /assets/img/aadhaar-banking/instant-balance-inquiry.svg
-      - title: Mini Statement
-        text: AePS API will also let customers take the mini statement of their account at a retailer’s shop.
-        image: /assets/img/aadhaar-banking/mini-statement.svg
+        - title: Easy Cash Deposit
+          text: AePS API also allows retailers to turn their shop into a cash deposit machine. Customers can then deposit cash at their shop with ease.
+          image: /assets/img/aadhaar-banking/easy-cash-deposit.svg
+        - title: Quick Fund Transfer
+          text: With AePS API customers will never have to go to a Bank or an ATM and they will not need a debit card also. Just transfer funds using fingerprint.
+          image: /assets/img/aadhaar-banking/quick-fund-transfer.svg
+        - title: Instant Balance-inquiry
+          text: AePS API allows customers to check their bank balance at a retailer’s shop instantly.
+          image: /assets/img/aadhaar-banking/instant-balance-inquiry.svg
+        - title: Mini Statement
+          text: AePS API will also let customers take the mini statement of their account at a retailer’s shop.
+          image: /assets/img/aadhaar-banking/mini-statement.svg
 
     - section: icon_list
       header: Benefits
@@ -145,11 +143,11 @@
     - section: step_section
       header: How to use AePS API
       steps:
-      - text: Sign Up on Connect
-        link: https://connect.eko.in
-      - text: Submit necessary documents
-      - text: Integrate our solution
-      - text: Go live instantly
+        - text: Sign Up on Connect App.
+          link: https://connect.eko.in
+        - text: Submit necessary documents
+        - text: Integrate our solution
+        - text: Go live instantly
 
     - section: message
       line1: The integration process is easy.
@@ -177,34 +175,32 @@
       button1_text: Get Started
       button2_text: Contact Sales
 
-
-
-- name: Fund Settlement API
-  title: Fund Settlement API With Highest Success Rate | AePS, DMT, Cashout SDK API Provider Eko
+- name: Payout API
+  title: Payout API With Highest Success Rate | AePS, DMT, Cashout SDK API Provider Eko
   tag_line: Make salary & vendor payments easily
   social_image: /assets/img/developers/salary-disbursal-first-fold-opt.svg
-  keywords: Fund Settlement API, Whitelabel AePS Portal API, Aadhaar Enabled Payment System api, aeps api, aeps api provider bank
+  keywords: Payout API, Whitelabel AePS Portal API, Aadhaar Enabled Payment System api, aeps api, aeps api provider bank
   hero_image: /assets/img/developers/salary-disbursal-first-fold-opt.svg
-  summary: Get our easy-to-use fund settlement API and pay your employees and vendors their payments using your digital wallet balance with ease.
-  description: Get our easy-to-use fund settlement API and pay your employees and vendors their payments using your digital wallet balance with a reliable & secure fund settlement APIs solution.
+  summary: Get our easy-to-use Payout API and pay your employees and vendors their payments using your digital wallet balance with ease.
+  description: Get our easy-to-use Payout API and pay your employees and vendors their payments using your digital wallet balance with a reliable & secure fund settlement APIs solution.
   documentation_link: https://developers.eko.in/docs/fund-transfer
 
   layout:
     - section: mid_summary
-      small_description: Fund Settlement API
-      header: Instant salary disbursal & vendor payment using Eko’s fund settlement API
+      small_description: Payout API
+      header: Instant salary disbursal & vendor payment using Eko’s Payout API
 
     - section: alternating_steps
       steps:
-      - title: Easy Salary Disbursals
-        text: Easily pay wages to your employees, directly into their bank accounts.
-        image: /assets/img/developers/easy-salary-disbursal-small.svg
-      - title: Instant Vendor Payments
-        text: Settle any outstanding dues with your vendors in one go through our hassle-free process.
-        image: /assets/img/developers/instant-vendor-payment-small.svg
-      - title: Track your Payment
-        text: Maintain a record of every vendor payment transaction you have made to avoid conflicts.
-        image: /assets/img/developers/transaction-alert.svg
+        - title: Easy Salary Disbursals
+          text: Easily pay wages to your employees, directly into their bank accounts.
+          image: /assets/img/developers/easy-salary-disbursal-small.svg
+        - title: Instant Vendor Payments
+          text: Settle any outstanding dues with your vendors in one go through our hassle-free process.
+          image: /assets/img/developers/instant-vendor-payment-small.svg
+        - title: Track your Payment
+          text: Maintain a record of every vendor payment transaction you have made to avoid conflicts.
+          image: /assets/img/developers/transaction-alert.svg
 
     - section: heros_main
       header: Benefits
@@ -237,35 +233,151 @@
       text: We use the same APIs here at Eko! Every API call is secured with one-time-use tokens generated using asymmetric cryptography. Our open-source libraries make it extremely easy & error-proof
 
     - section: step_section
-      header: How does Fund Settlement API work
+      header: How does Payout API work
       steps:
-      - text: Sign Up on Connect
-        link: https://connect.eko.in
-      - text: Submit necessary documents
-      - text: Integrate Fund Settlement API
-      - text: Start making payments
+        - text: Sign Up on Connect App.
+          link: https://connect.eko.in
+        - text: Submit necessary documents
+        - text: Integrate Payout API
+        - text: Start making payments
 
     - section: message
-      line1: The process of integrating fund settlement API is easy.
+      line1: The process of integrating Payout API is easy.
       main_line: For all integration related issues, we provide 24x7 support.
       button_text: Contact Support
 
     - section: get_started_banner
       small_header: Ready to get started?
-      main_header: Integrate our Fund Settlement API
+      main_header: Integrate our Payout API
       image: /assets/img/become-eko-partner-opt.svg
       button1_text: Get Started
       button2_text: Contact Sales
 
+- name: BBPS API
+  sub_header:
+  title: BBPS API
+  tag_line: Help customers pay their utility bills!
+  social_image: /assets/img/bill-payment/utility-bill-payment.svg
+  keywords: BBPS, bharat bill pay, BBPS bill pay, BBPS api provider, bbps api, recharge api
+  hero_image: /assets/img/bill-payment/utility-bill-payment.svg
+  summary: The BBPS API (Bharat Bill Payment System API) is a robust and secure platform that enables seamless integration for bill payments in India. Whether you're a financial institution, a fintech company, or a service provider, our API empowers you to offer your customers a convenient and efficient way to pay their bills.
+  description: Eko gives you the opportunity to turn your shop into a one-stop bill payment destination. Collect cash from customers and pay their electricity bill, water bill, gas bill, and phone bills using your wallet!
+  documentation_link: https://developers.eko.in/reference/bbps-1
 
+  layout:
+    # - section: mid_summary
+    #   small_description: BBPS API
+    #   header: Pay all bills at the same place, at the same time
 
-- name: Cash Collection API
-  title: Eko - India’s Most Trusted API Solution Provider | Easy To Use Cash Collection API
-  tag_line: Assisted Cash Management System
+    # - section: alternating_steps
+    #   steps:
+    #     - title: Easy Salary Disbursals
+    #       text: Easily pay wages to your employees, directly into their bank accounts.
+    #       image: /assets/img/developers/easy-salary-disbursal-small.svg
+    #     - title: Instant Vendor Payments
+    #       text: Settle any outstanding dues with your vendors in one go through our hassle-free process.
+    #       image: /assets/img/developers/instant-vendor-payment-small.svg
+    #     - title: Track your Payment
+    #       text: Maintain a record of every vendor payment transaction you have made to avoid conflicts.
+    #       image: /assets/img/developers/transaction-alert.svg
+    #     - title: Instant Vendor Payments
+    #       text: Settle any outstanding dues with your vendors in one go through our hassle-free process.
+    #       image: /assets/img/developers/instant-vendor-payment-small.svg
+    #     - title: Track your Payment
+    #       text: Maintain a record of every vendor payment transaction you have made to avoid conflicts.
+    #       image: /assets/img/developers/transaction-alert.svg
+
+    - section: heros_main
+      header: Benefits
+      items:
+        - type: single # One item on its own in the center of the page
+          title: Simplified Integration
+          text: Easy to read API documents and 24*7 integration support.
+          image: /assets/img/developers/easy-integration-opt.svg
+        - type: pair # 2 items side-by-side
+          title_left: Best Success Rate
+          text_left: We ensure that you get the best success rate for every transaction.
+          image_left: /assets/img/main/best-success-rate-opt.svg
+          title_right: Earn Commission
+          text_right: Earn commission for all types of bill payments.
+          image_right: /assets/img/main/easy-cash-transfer-opt.svg
+        - type: pair # 2 items side-by-side
+          title_left: Transaction Tracking and Reporting
+          text_left: Your transaction data is safe and secure with us.
+          image_left: /assets/img/developers/transaction-alert.svg
+          title_right: Extensive Biller Network
+          text_right: We have an extensive biller network facilitating all types of billing transactions.
+          image_right: /assets/img/bill-payment/one-stop-payment.svg
+
+    - section: icon_list
+      header: Biller Types
+      subtitle:
+      description:
+      icons:
+        - image: /assets/img/bill-payment/mobile-recharge-icon.svg
+          caption: EMI
+        - image: /assets/img/bill-payment/electricity-icon.svg
+          caption: Fastag
+        - image: /assets/img/bill-payment/water-icon.svg
+          caption: Water
+        - image: /assets/img/bill-payment/gas-icon.svg
+          caption: Gas
+        - image: /assets/img/bill-payment/mobile-recharge-icon.svg
+          caption: Insurance
+        - image: /assets/img/bill-payment/electricity-icon.svg
+          caption: Electricity
+        - image: /assets/img/sell-insurance/insurance-policy-icon.svg
+          caption: Credit card
+        - image: /assets/img/bill-payment/mobile-recharge-icon.svg
+          caption: Mobile Recharge
+    - section: documentation_link_banner
+
+    - section: one_liner
+      icon: /assets/img/eko-trust-opt.svg
+      title: Eko's Trust
+      text: You can assure your customers that their money and data is safe. Eko’s trust is unparalleled.
+
+    - section: step_section
+      header: How to get your BBPS API live?
+      steps:
+        - text: Sign Up on Connect App.
+        - text: Submit your KYC documents.
+        - text: Complete UAT Testing.
+          link: https://developers.eko.in/reference
+        - text: Finalize your API integration.
+        - text: IP whitelisting (Indian only)
+        - text: Go live with your production credentials!
+
+    - section: get_started_banner
+      small_header: Ready to get started?
+      main_header: Integrate our BBPS API
+      image: /assets/img/become-eko-partner-opt.svg
+      button1_text: Get Started
+      button2_text: Contact Sales
+
+    - section: accordion
+      header: Frequently Asked Questions
+      faqs:
+        - title: What is BBPS API?
+          description: BBPS API is an online bill payment system in India that enables customers to pay their bills easily and securely through various channels such as internet banking, mobile banking, ATM, etc. The BBPS API allows third-party companies and developers to integrate their payment systems with the BBPS platform and offer bill payment services to their customers.
+        - title: How can I integrate my payment system with BBPS API?
+          description: To integrate your payment system with BBPS API, you need to register as a partner on our connect platform. Simultaneously, you will be provided with access to the BBPS API documentation, which includes technical specifications, sample codes, and other information required to integrate your payment system with the BBPS platform.
+        - title: What are the benefits of integrating with the BBPS API?
+          description: Increased customer reach | Increased revenue streams | Simplified payment processes | Enhanced security and fraud prevention | Improved customer satisfaction | Faster payment settlement
+        - title: What types of bills can be paid through BBPS API?
+          description: BBPS API supports various bill categories, including electricity, water, gas, telecom, DTH, education, insurance, and more. The complete list of bill categories can be found on the BBPS platform website.
+        - title: Is there a fee for using BBPS API?
+          description: Yes, there is an one-time activation fee for using BBPS API.
+        - title: Can you earn commission through BBPS API?
+          description: Yes, We provide commission for every transaction completed through BBPS API based on the transaction amount and type.
+
+- name: CMS - Cash Collection API
+  title: Easy To Use Cash Collection API
+  tag_line: Cash Management System - Cash Collection API
   social_image: /assets/img/developers/assisted-cash-management-opt.svg
-  keywords: e-money, cash management, cash collection, Cash Collection API
+  keywords: Cash management, Cash management system, Cash collection API
   hero_image: /assets/img/developers/assisted-cash-management-opt.svg
-  summary: Eko provides technical service assistance to help you set up a cash management system for your Retailers.
+  summary: 
   description: Eko provides an easy-to-use Cash Collection service which helps you set up a cash management system for your retailers. This system makes e-money transfer hassle-free for you and your retailers. We bear the end-to-end technical burden, reducing your integration task to a mere formality.
   documentation_link: https://developers.eko.in/docs/cash-collection
 
@@ -324,11 +436,6 @@
       - text: Retailers deposit cash into your bank account using a CDM card or a cash deposit slip.
       - text: E-money is credited to the retailer.
 
-    - section: message
-      line1: The process of cash collection from retailers is easy.
-      main_line: For all integration related issues, we provide 24x7 support.
-      button_text: Contact Support
-
     - section: get_started_banner
       small_header: Ready to get started?
       main_header: Ask for our Cash Collection Service
@@ -336,49 +443,161 @@
       button1_text: Get Started
       button2_text: Contact Sales
 
+- name: CMS - Cash Drop API
+  title: CMS - Cash Drop API
+  tag_line: Cash Management System - Cash Drop API
+  social_image: /assets/img/developers/direct-emoney-transfer.svg
+  keywords: Cash drop api, CMS api india, Cash management system api, Instant Cash Drop API, Cash out api
+  hero_image: /assets/img/developers/direct-emoney-transfer.svg
+  summary: Accept EMI collections and payments through CMS API with 50+ billers available.
+  description: PAN Verification API made customer onboarding & verification easy with Real-time onboarding and verification of users is as easy as it gets with PAN Verification API. Just integrate the API and get going.
+  documentation_link: https://developers.eko.in/docs/identity
 
+  layout:
+    - section: icon_list
+      header: Biller Types
+      subtitle:
+      description:
+      icons:
+        - image: /assets/img/bill-payment/mobile-recharge-icon.svg
+          caption: EMI
+        - image: /assets/img/bill-payment/mobile-recharge-icon.svg
+          caption: Loan
+        - image: /assets/img/bill-payment/mobile-recharge-icon.svg
+          caption: Insurance
+        - image: /assets/img/bill-payment/mobile-recharge-icon.svg
+          caption: Bills
+
+    - section: heros_main
+      header: Benefits
+      items:
+        - type: pair # 2 items side-by-side
+          # Benefit 1
+          title_left: Seamless Integration
+          text_left: CMS API is well-documented and easy to understand. We provide 24x7 manual integration support.
+          image_left: /assets/img/developers/easy-integration-opt.svg
+          # Benefit 2
+          title_right: Robust and Authentic Code
+          text_right: Our backend is powered by robust code and is proactively maintained to keep your API up and running.
+          image_right: /assets/img/developers/robust-code-opt.svg
+    - section: documentation_link_banner
+
+    - section: one_liner
+      icon: /assets/img/eko-trust-opt.svg
+      title: Eko's Trust
+      text: We use the same APIs here at Eko! Every API call is secured with one-time-use tokens generated using asymmetric cryptography. Our open-source libraries make it extremely easy & error-proof.
+
+    - section: step_section
+      header: How to integrate Cash Drop API (CMS)
+      steps:
+        - text: Sign Up on Connect App.
+        - text: Submit your KYC documents.
+        - text: Complete UAT Testing.
+          link: https://developers.eko.in/reference
+        - text: Finalize your API integration
+        - text: IP whitelisting (Indian only)
+        - text: Go live with your production credentials!
+
+    - section: message
+      line1: "**CMS - Cash Drop API** \n\nEko’s Cash Drop API provides an easy solution for all the EMI based transactions. The transaction flow is as follows:\n\n**1** - The user is redirected to transaction page where they can add bill details after selecting the biller. \n\n**2** - After the bill is paid, The amount is deducted from user's wallet account while commission is added to the same. \n\n **3** - Response and payload is shared with partner by callback url. As well as they can look at status in transaction history in connect application"
+      main_line: For all integration related issues, we provide 24x7 support.
+      button_text: Contact Support
+
+    - section: get_started_banner
+      small_header: Ready to get started?
+      main_header: Integrate our CMS API
+      image: /assets/img/become-eko-partner-opt.svg
+      button1_text: Get Started
+      button2_text: Contact Sales
+
+- name: QR payment API
+  title: QR payment API
+  tag_line: QR payment API
+  social_image: /assets/img/bill-payment/QR.png
+  keywords: QR payment API, Static QR API, QR payment, Static QR
+  hero_image: /assets/img/bill-payment/QR.png
+  summary: Now you can provide convenient and efficient payment options to enhance customer experience, and streamline transaction processes by leveraging the popularity and widespread use of QR code-based payments.
+  description: Eko provides an easy-to-use Cash Collection service which helps you set up a cash management system for your retailers. This system makes e-money transfer hassle-free for you and your retailers. We bear the end-to-end technical burden, reducing your integration task to a mere formality.
+  documentation_link: https://developers.eko.in/docs/cash-collection
+
+  layout:
+    - section: heros_main
+      header: Benefits
+      items:
+        - type: pair # 2 items side-by-side
+          # Benefit 1
+          title_left: Seamless Integration
+          text_left: QR payment API is well-documented and easy to understand. We provide 24x7 manual integration support.
+          image_left: /assets/img/developers/easy-integration-opt.svg
+          # Benefit 2
+          title_right: Robust and Authentic Code
+          text_right: Our backend is powered by robust code and is proactively maintained to keep your API up and running.
+          image_right: /assets/img/developers/robust-code-opt.svg
+    - section: documentation_link_banner
+
+    - section: one_liner
+      icon: /assets/img/eko-trust-opt.svg
+      title: Eko's Trust
+      text: We use the same APIs here at Eko! Every API call is secured with one-time-use tokens generated using asymmetric cryptography. Our open-source libraries make it extremely easy & error-proof.
+
+    - section: step_section
+      header: How to integrate QR Payment API
+      steps:
+        - text: Sign Up on Connect App.
+        - text: Submit your KYC documents.
+        - text: Complete UAT Testing.
+          link: https://developers.eko.in/reference
+        - text: Finalize your API integration
+        - text: IP whitelisting (Indian only)
+        - text: Go live with your production credentials!
+
+    - section: message
+      line1: "**QR Payment API** \n\nEko’s QR Payment API provides an end-to-end solution from QR code generation to payment collection. The transaction flow is as follows:\n\n**1** - The user provides their mobile number against which their QR code is generated. \n\n**2** - If any payment is made against QR code, the amount is reflected on their wallet. \n\n **3** - Response and payload is shared with partner by callback url. As well as they can look at status in transaction history in connect application"
+      main_line: For all integration related issues, we provide 24x7 support.
+      button_text: Contact Support
+
+    - section: get_started_banner
+      small_header: Ready to get started?
+      main_header: Integrate our QR Payment API
+      image: /assets/img/become-eko-partner-opt.svg
+      button1_text: Get Started
+      button2_text: Contact Sales
 
 - name: PAN Verification API
-  title: Eko - Instant Pan Verification API | Easy To Integrate PAN Verification API
-  tag_line: Customer onboarding & verification made easy
+  title: Pan Verification API
+  tag_line: Pan Verification API
   social_image: /assets/img/developers/pan-verification-2-opt.svg
   keywords: pan verification api, pan verification api india, online pan verification api, Instant PAN Verification API, pan ekyc api, pan kyc api
   hero_image: /assets/img/developers/pan-verification-2-opt.svg
-  summary: Real-time onboarding and verification of users is as easy as it gets with out PAN Verification API. Just integrate the API and get going.
-  description: PAN Verification API made customer onboarding & verification easy with Real-time onboarding and verification of users is as easy as it gets without PAN Verification API. Just integrate the API and get going.
+  summary: Customer onboarding & verification made easy with Pan Verification API. Just integrate and get going.
+  description: PAN Verification API made customer onboarding & verification easy with Real-time onboarding and verification of users is as easy as it gets with PAN Verification API. Just integrate the API and get going.
   documentation_link: https://developers.eko.in/docs/identity
 
   layout:
     - section: icon_list
       header: Real-time Verification
-      subtitle: PAN API
+      subtitle:
       description: Use Eko’s NSDL-powered Pan verification API to validate your customers, employees, and merchants. Our easy-to-use API has made PAN-fraud a thing of the past.
       icons:
         - image: /assets/img/developers/pan-valid-icon.svg
           caption: Check PAN number validity
         - image: /assets/img/developers/check-name-icon.svg
-          caption: Check associated Name
+          caption: Check associated Pan details
         - image: /assets/img/developers/secure-icon.svg
           caption: Secure, simple and robust
 
     - section: heros_main
       header: Benefits
       items:
-        - type: single # One item on its own in the center of the page
-          # Benefit 1 (center)
-          title: Robust and Authentic Code
-          text: Our backend is powered by robust code which makes use of the official NSDL-returned name associated with the entered pan number.
-          image: /assets/img/developers/robust-code-opt.svg
         - type: pair # 2 items side-by-side
-          # Benefit 3
+          # Benefit 1
           title_left: Seamless Integration
-          text_left: PAN API is well-documented and easy to understand. Integrating is as easy as it can get. We provide 24x7 manual integration support just in case, leaving no stone unturned to make the integration process seamless.
+          text_left: Pan API is well-documented and easy to understand. We provide 24x7 manual integration support.
           image_left: /assets/img/developers/easy-integration-opt.svg
-          # Benefit 4
-          title_right: Simple Documentation
-          text_right: The documentation for our APIs is comprehensive and comprehensible! We constantly update it to explain the minutest detail. Whether you use Python, Java, PHP, or C#, we have you covered!
-          image_right: /assets/img/developers/simple-documentation-opt.svg
-
+          # Benefit 2
+          title_right: Robust and Authentic Code
+          text_right: Our backend is powered by robust code and is proactively maintained to keep your API up and running.
+          image_right: /assets/img/developers/robust-code-opt.svg
     - section: documentation_link_banner
 
     - section: one_liner
@@ -389,11 +608,11 @@
     - section: step_section
       header: How to integrate PAN API
       steps:
-      - text: Sign Up on Connect
-        link: https://connect.eko.in
-      - text: Submit necessary documents
-      - text: Integrate PAN API
-      - text: Start onboarding Retailers
+        - text: Sign Up on Connect App.
+          link: https://connect.eko.in
+        - text: Submit necessary documents
+        - text: Integrate PAN API
+        - text: Start onboarding Retailers
 
     - section: message
       line1: "**PAN API** -\n\nEko’s PAN API provides an easy **“Type and Click”** process for pan verification.\n\n**Type -** Enter pan number in a text box.\n\n**Click -** Press the submit button.\n\nAt the backend, the pan number is first sent to NSDL, which returns the name associated with the pan number."
@@ -407,15 +626,13 @@
       button1_text: Get Started
       button2_text: Contact Sales
 
-
-
 - name: Account Verification API
-  title: Eko’s Best Bank Account Verification API | Simple & Easy Way To Verify Bank Account API
-  tag_line: Simple & easy way to verify bank account
+  title: Bank Account Verification API
+  tag_line: Bank Account Verification API
   social_image: /assets/img/developers/bank-verification-opt.svg
   keywords: bank account verification
   hero_image: /assets/img/developers/bank-verification-opt.svg
-  summary: Account verification API to ensure that your money goes exactly where it is supposed to. No IFSC code needed.
+  summary: Simple and easy way to ensure that your money goes exactly where it is supposed to. No IFSC code needed.
   description: Our Account Verification API simple & easy way to verify bank account holder and details. Account verification API to ensure that your money goes exactly where it is supposed to.
   documentation_link: https://developers.eko.in/docs/identity
 
@@ -426,12 +643,12 @@
 
     - section: alternating_steps
       steps:
-      - title: Verify any bank account
-        text: Let your retailers check the validity of any account number without having to remember the IFSC. You can verify employee's salary account as well during onboarding.
-        image: /assets/img/developers/verify-account.svg
-      - title: No IFSC code required
-        text: Only the bank account number needs to be entered, making the process shorter and simpler.
-        image: /assets/img/developers/no-ifsc-code.svg
+        - title: Verify any bank account
+          text: Let your retailers check the validity of any account number without having to remember the IFSC. You can verify employee's salary account as well during onboarding.
+          image: /assets/img/developers/verify-account.svg
+        - title: No IFSC code required
+          text: Only the bank account number needs to be entered, making the process shorter and simpler.
+          image: /assets/img/developers/no-ifsc-code.svg
 
     - section: heros_main
       header: Benefits
@@ -439,7 +656,7 @@
         - type: pair # 2 items side-by-side
           # Benefit 1
           title_left: Seamless Integration
-          text_left: Account verification API is well-documented & easy to understand. Integrating it is easy & we provide 24x7 manual integration support just in case, leaving no stone unturned to make the integration process seamless.
+          text_left: Integrating our API is easy & we provide 24x7 manual integration support just in case, leaving no stone unturned to make the integration process seamless.
           image_left: /assets/img/developers/easy-integration-opt.svg
           # Benefit 2
           title_right: Simple Documentation
@@ -456,11 +673,11 @@
     - section: step_section
       header: How to integrate Account Verification API
       steps:
-      - text: Sign Up on Connect
-        link: https://connect.eko.in
-      - text: Submit necessary documents
-      - text: Integrate account verification API
-      - text: Start verifiying bank accounts
+        - text: Sign Up on Connect App.
+          link: https://connect.eko.in
+        - text: Submit necessary documents
+        - text: Integrate account verification API
+        - text: Start verifiying bank accounts
 
     - section: message
       line1: The process of integrating bank verification API is easy.
@@ -470,6 +687,140 @@
     - section: get_started_banner
       small_header: Ready to get started?
       main_header: Integrate our Account Verification API
+      image: /assets/img/become-eko-partner-opt.svg
+      button1_text: Get Started
+      button2_text: Contact Sales
+
+- name: Aadhaar Verification API
+  sub_header:
+  title: Aadhaar Verification API
+  tag_line: Aadhaar verification API
+  social_image: /assets/img/developers/pan-verification-2-opt.svg
+  keywords: Aadhaar Verification api, Aadhaar Verification api india, online Aadhaar Verification api, Instant PAN Verification API, Aadhaar ekyc api, Aadhaar kyc api
+  hero_image: /assets/img/developers/pan-verification-2-opt.svg
+  summary: Customer onboarding & verification made easy with Aadhaar Verification API. Just integrate and get going.
+  description: Aadhaar Verification API made customer onboarding & verification easy with Real-time onboarding and verification of users is as easy as it gets with Aadhaar Verification API. Just integrate the API and get going.
+  documentation_link: https://developers.eko.in/docs/identity
+
+  layout:
+    - section: icon_list
+      header: Real-time Verification
+      subtitle: 
+      description: Use Eko’s UIDAI-powered Aadhaar verification API to validate your customers, employees, and merchants. With our easy-to-use API you can substantially mitigate Identity-fraud.
+      icons:
+        - image: /assets/img/developers/pan-valid-icon.svg
+          caption: Check Aadhaar number validity
+        - image: /assets/img/developers/check-name-icon.svg
+          caption: Check associated Aadhaar details
+        - image: /assets/img/developers/secure-icon.svg
+          caption: Secure, simple and robust
+
+    - section: heros_main
+      header: Benefits
+      items:
+        - type: pair # 2 items side-by-side
+          # Benefit 1
+          title_left: Seamless Integration
+          text_left: Aadhaar API is well-documented and easy to understand. We provide 24x7 manual integration support just in case, leaving no stone unturned to make the integration process seamless.
+          image_left: /assets/img/developers/easy-integration-opt.svg
+          # Benefit 2
+          title_right: Robust and Authentic Code
+          text_right: Our backend is powered by robust code which makes use of the official UIDAI-returned Aadhaar details associated with the entered Aadhaar number.
+          image_right: /assets/img/developers/robust-code-opt.svg
+    - section: documentation_link_banner
+
+    - section: step_section
+      header: How to integrate Aadhaar API
+      steps:
+        - text: Sign Up on Connect App.
+        - text: Submit your KYC documents.
+        - text: Complete UAT Testing.
+          link: https://developers.eko.in/reference
+        - text: Finalize your API integration.
+        - text: IP whitelisting (Indian only)
+        - text: Go live with your production credentials!
+
+    - section: message
+      line1: "**AADHAAR API** \n\nEko’s Aadhaar API provides an easy **“three step”** process for Aadhaar verification.\n\n**1** - Aadhaar consent is taken from the Aadhaar holder.\n\n**2** - The Aadhaar number is first sent to UIDAI and Authorized through OTP.\n\n**3** - In response we return the Aadhaar details associated with the Aadhaar number."
+      main_line: For all integration related issues, we provide 24x7 support.
+      button_text: Contact Support
+
+    - section: get_started_banner
+      small_header: Ready to get started?
+      main_header: Integrate our Aadhaar API
+      image: /assets/img/become-eko-partner-opt.svg
+      button1_text: Get Started
+      button2_text: Contact Sales
+
+- name: OCR Verification API
+  title: OCR Verification API
+  tag_line: OCR API
+  social_image: /assets/img/developers/pan-verification-2-opt.svg
+  keywords: OCR Verification api, OCR Verification api india, OCR api, Image to text api, optical character recognition api, optical character recognition, OCR
+  hero_image: /assets/img/developers/pan-verification-2-opt.svg
+  summary: Optical Character Recognition (OCR) is the process that converts an image of text into a machine-readable text format which is used where data entering is required. The verification process involves reviewing the OCR results and manually correcting any errors or inaccuracies.
+  description: OCR Verification API made customer onboarding & verification easy. Optical Character Recognition (OCR) is the process that converts an image of text into a machine-readable text format which is used where data entering is required. The verification process involves reviewing the OCR results and manually correcting any errors or inaccuracies.
+  documentation_link: https://developers.eko.in/docs/identity
+  
+  layout:
+    - section: icon_list
+      header: How can we use this API?
+      subtitle: 
+      description: OCR APIs are built to extract data from specific documents, this training allows them to be more accurate in extracting specific data from those specific document types such as...
+      icons:
+        - image: /assets/img/New/PanOCR.png
+          caption: Pan Card
+        - image: /assets/img/New/AadhaarOCR.png
+          caption: Aadhaar Card
+        - image: /assets/img/New/DLOCR.png
+          caption: Driving License
+        - image: /assets/img/New/PP.png
+          caption: Passport
+        - image: /assets/img/New/V.png
+          caption: Voter ID
+
+    - section: heros_main
+      header: Benefits of our OCR API
+      items:
+        - type: pair # 2 items side-by-side
+          # Benefit 1
+          title_left: Document Digitization
+          text_left: To shift KYC process from physical document verification to digital document verification.
+          image_left: /assets/img/developers/pan-valid-icon.svg
+          # Benefit 2
+          title_right: Document verification
+          text_right: Our API can verify which document type is uploaded and mitigates fraud risk.
+          image_right: /assets/img/developers/check-name-icon.svg
+        - type: pair # 2 items side-by-side
+          # Benefit 3
+          title_left: Text extraction
+          text_left: You can use extracted data from the document to assist the data entry process.
+          image_left: /assets/img/developers/pan-valid-icon.svg
+          # Benefit 4
+          title_right: Fetch your documents anytime!
+          text_right: Record keeping service enabled on request for clients to download the OCR documents anytime. 
+          image_right: /assets/img/New/FD.png
+    - section: documentation_link_banner
+
+    - section: step_section
+      header: How to integrate OCR API
+      steps:
+        - text: Sign Up on Connect App.
+        - text: Submit your KYC documents.
+        - text: Complete UAT Testing.
+          link: https://developers.eko.in/reference
+        - text: Finalize your API integration
+        - text: IP whitelisting (Indian only)
+        - text: Go live with your production credentials!
+
+    - section: message
+      line1: "**OCR API** \n\nEko’s OCR API provides an easy solution for all the documentation heavy processes.\n\n**1** - The text from document received from the user will be extracted and sent back in the response.  .\n\n**2** - The Document uploaded will be stored for user to fetch anytime based on a unique reference number. (If data storage is requested by the user)."
+      main_line: For all integration related issues, we provide 24x7 support.
+      button_text: Contact Support
+
+    - section: get_started_banner
+      small_header: Ready to get started?
+      main_header: Integrate our OCR API
       image: /assets/img/become-eko-partner-opt.svg
       button1_text: Get Started
       button2_text: Contact Sales
