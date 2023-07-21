@@ -84,7 +84,7 @@
 
 
 - name: Aadhaar Banking
-  sub_header: Aadhaar Banking / Cash-out
+  sub_header: Cash Withdrawal
   title: AePS Aadhaar Enabled Payment System Application | Money Transfer, Cash Withdrawal Banking Portal Provider Company
   tag_line: AePS - Aadhaar Enabled Payment System
   social_image: /assets/img/aadhaar-banking/AePS_hero.png
@@ -125,7 +125,6 @@
       - title: Mini Statement
         text: Aadhar banking (AePS) will also let your customers take the mini statement of their account at your shop
         image: /assets/img/aadhaar-banking/mini-statement.svg
-
     - section: heros_main
       header: Benefits
       items:
@@ -342,7 +341,7 @@
       button2_text: Contact Sales
 
 
-
+      
 - name: Sell Insurance
   sub_header: Sell Insurance
   title: Sell Insurance Online Agent | Eko Connect Insurance selling portal
