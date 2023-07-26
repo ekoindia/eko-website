@@ -6,6 +6,10 @@ description: The Aadhaar verification API heralds a new era of digital
   across the spectrum.
 date: 2023-07-26T04:20:22.689Z
 image: /assets/img/blog/ezgif.com-gif-maker-18-.jpg
+tags:
+  - AadhaarVerificationAPI
+  - VerificationAPI
+  - AadhaarAPI
 ---
 <!--StartFragment-->
 
