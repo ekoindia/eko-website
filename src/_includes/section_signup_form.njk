@@ -2,7 +2,7 @@
 	<center>
 		<h2>Still got a question?</h2>
 		<div class="h2-border"></div>
-		<p>Write to us for more information</p>
+		<p>Write to us for more information{% if form and form.subtype == "whitelabel" %}&nbsp;or to request a free demo{% endif %}</p>
 
 		{% include "form.njk" %}
 	</center>
