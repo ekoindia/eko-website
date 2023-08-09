@@ -127,3 +127,7 @@ The Eko website & blog built with [Eleventy](https://www.11ty.dev). Uses reusabl
 1. Add an entry in the [`src/_redirects`](/src/_redirects) file.
 1. Example and documentation in the file.
 
+## ❓ How to add a new `env` variable?
+1. Checkout the file [src/_data/env.js](/src/_data/env.js)
+1. Add a new `env` variable name in this file
+1. Now this variable can be accessed anywhere using `env.<VARIABLE_NAME>`
