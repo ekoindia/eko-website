@@ -5,7 +5,7 @@ description: The Aadhaar verification API heralds a new era of digital
   transformation, holding within its grasp the potential to transform industries
   across the spectrum.
 date: 2023-07-26T04:20:22.689Z
-image: /assets/img/blog/ezgif.com-gif-maker-18-.jpg
+image: /assets/img/blog/harnessing-aadhaar-verification-api.jpg
 tags:
   - AadhaarVerificationAPI
   - VerificationAPI
