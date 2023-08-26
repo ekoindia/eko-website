@@ -95,12 +95,6 @@ Since our recent soft-launch, we've already partnered with over 28 organizations
 
 These early adopters have been more than just clients; they've been collaborators. Their invaluable feedback and suggestions have played a crucial role in the ongoing refinement of our platform, for them and future partners alike.
 
-<br>
-
-### **WHAT IS NEXT?**
-
-GENERATIVE AI BASED Experiments (show screenshot of Command bar with a generative AI result)
-
 
 <br>
 
