@@ -8,6 +8,7 @@ tags:
   - white-label
   - saas
 author: Kumar Abhishek
+authorlink: https://abhi.page
 ---
 
 
