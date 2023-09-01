@@ -86,6 +86,14 @@ img.hero {
 	text-decoration: none;
 }
 
+.author {
+	margin-right: 1em;
+}
+/* .author::after {
+	content: '●';
+	margin-left: 1em;
+} */
+
 .blogslist .card {
 	background: white;
 	text-decoration: none;

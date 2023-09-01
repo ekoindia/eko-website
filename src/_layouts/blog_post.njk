@@ -15,13 +15,21 @@
 	<section class="block">
         <h1>{{ title }}</h1>
         <h6>
+			{% if author %}
+				{% if authorlink %}
+					<a class="author" href="{{ authorlink }}" target="_blank">{{ author }}</a>
+				{% else %}
+					<span class="author">{{ author }}</span>
+				{% endif %}
+			{% endif %}
 			<time>{{ date | dateFormat('MMM d, yyyy') }}</time>
 			{% for item in tags %}
 				<a class="blogtag" href="/blog/tags/{{item}}/">#{{ item }}</a>
 			{% endfor %}
 		</h6>
         {% Image image, 'Post Illustration', false, 'hero' %}
-        <p>{{ content | safe }}</p>
+
+		<p>{{ content | safe }}</p>
 
 		<br><br><hr>
 		<a class="button outline" href="/blog/">{% svgico 'arrow-circle-left' %}&nbsp;All Posts</a>
