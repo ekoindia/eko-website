@@ -824,3 +824,66 @@
       image: /assets/img/become-eko-partner-opt.svg
       button1_text: Get Started
       button2_text: Contact Sales
+
+- name: UPI ID Verification API
+  title: UPI ID Verification API
+  tag_line: UPI ID Verification API – Verify UPI ID with Ease!
+  social_image: /assets/img/upi/upi-hero.png
+  keywords: UPI ID verification API, UPI verification API, VPA verification, verify UPI ID, Verify VPA
+  hero_image: /assets/img/upi/upi-hero.png
+  summary: Unleash the power of UPI with our robust UPI ID verification API. Whether you require UPI ID verification or want to verify a UPI ID using a phone number, our API is crafted to simplify your transactions, ensuring heightened efficiency within your payment systems.
+  description: Validate and retrieve UPI ID effortlessly using a phone number, our API is designed to streamline your transactions and enhance the efficiency of your payment systems.
+  documentation_link: https://developers.eko.in/docs/identity
+
+  layout:
+    - section: icon_list
+      header: Real-time Verification
+      subtitle:
+      description: Use Eko’s UPI ID verification API to validate UPI ID and retrieve UPI ID effortlessly using a phone number.
+      icons:
+        - image: /assets/img/developers/pan-valid-icon.svg
+          caption: Check UPI ID
+        - image: /assets/img/developers/check-name-icon.svg
+          caption: Retrieve UPI ID using phone number
+        - image: /assets/img/developers/secure-icon.svg
+          caption: Secure, simple and robust
+
+    - section: heros_main
+      header: Benefits
+      items:
+        - type: pair # 2 items side-by-side
+          # Benefit 1
+          title_left: Seamless Integration
+          text_left: UPI ID verification API is well-documented and easy to understand. We provide 24x7 manual integration support.
+          image_left: /assets/img/developers/easy-integration-opt.svg
+          # Benefit 2
+          title_right: Robust and Authentic Code
+          text_right: Our backend is powered by robust code and is proactively maintained to keep your API up and running.
+          image_right: /assets/img/developers/robust-code-opt.svg
+    - section: documentation_link_banner
+
+    - section: one_liner
+      icon: /assets/img/eko-trust-opt.svg
+      title: Eko's Trust
+      text: We use the same APIs here at Eko! Every API call is secured with one-time-use tokens generated using asymmetric cryptography. Our open-source libraries make it extremely easy & error-proof.
+
+    - section: step_section
+      header: How to integrate UPI ID verification API
+      steps:
+        - text: Sign Up on Connect App.
+          link: https://connect.eko.in
+        - text: Submit necessary documents
+        - text: Integrate UPI ID verification API
+        - text: Start Validating UPI ID
+
+    - section: message
+      line1: "The process of integrating UPI ID verification API is easy."
+      main_line: For all integration related issues, we provide 24x7 support.
+      button_text: Contact Support
+
+    - section: get_started_banner
+      small_header: Ready to get started?
+      main_header: Integrate our UPI ID Verification API
+      image: /assets/img/become-eko-partner-opt.svg
+      button1_text: Get Started
+      button2_text: Contact Sales
