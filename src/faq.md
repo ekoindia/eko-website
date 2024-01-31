@@ -41,7 +41,7 @@ title: FAQs
 
 7. #### Is there a limit on the amount of funds I can add in my Eko Wallet?
 
-   For a full KYC wallet, the limit for amount addition stands at Rs 49500. This limit is applicable on per month basis.
+   For a full KYC wallet, the limit for amount addition stands at ₹49500. This limit is applicable on per month basis.
 
 
 8. #### Is there any validity of the account?

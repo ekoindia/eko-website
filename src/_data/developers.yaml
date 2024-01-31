@@ -831,7 +831,7 @@
   social_image: /assets/img/upi/upi-hero.png
   keywords: UPI ID verification API, UPI verification API, VPA verification, verify UPI ID, Verify VPA
   hero_image: /assets/img/upi/upi-hero.png
-  summary: Unleash the power of UPI with our robust UPI ID verification API. Whether you require UPI ID verification or want to verify a UPI ID using a phone number, our API is crafted to simplify your transactions, ensuring heightened efficiency within your payment systems.
+  summary: Unleash the power of UPI with our robust UPI ID verification API. Whether you require UPI ID verification or want to retrieve a UPI ID using a Phone Number, our API is crafted to simplify your transactions, ensuring heightened efficiency within your payment systems.
   description: Validate and retrieve UPI ID effortlessly using a phone number, our API is designed to streamline your transactions and enhance the efficiency of your payment systems.
   documentation_link: https://developers.eko.in/docs/identity
 
@@ -839,7 +839,7 @@
     - section: icon_list
       header: Real-time Verification
       subtitle:
-      description: Use Eko’s UPI ID verification API to validate UPI ID and retrieve UPI ID effortlessly using a phone number.
+      description: Use Eko’s UPI ID verification API to validate and retrieve a UPI ID effortlessly using a phone number.
       icons:
         - image: /assets/img/developers/pan-valid-icon.svg
           caption: Check UPI ID

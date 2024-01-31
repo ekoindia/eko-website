@@ -18,7 +18,7 @@ Creating a business for your new startup can be a daunting task, as it requires 
 
 **1. Become an Insurance Agent:** There's nothing more lucrative than selling something that people buy with hopes of never using! Insurance agents make money off people who need insurance the most. People can sign up on [Eko Connect](https://play.google.com/store/apps/details?id=in.eko.connect&hl=en_IN&gl=US) application and start to sell various insurance policies available on the platform. 
 
-The platform is easy to work with and people can make upto Rs.50,000 per month by providing financial services through [Eko Connect](https://play.google.com/store/apps/details?id=in.eko.connect&hl=en_IN&gl=US) application.
+The platform is easy to work with and people can make upto ₹50,000 per month by providing financial services through [Eko Connect](https://play.google.com/store/apps/details?id=in.eko.connect&hl=en_IN&gl=US) application.
 
 **2. Create digital products or courses:** This is another sure fire way to earn money online. Some of the best digital products are:
 
