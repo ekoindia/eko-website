@@ -175,20 +175,20 @@
       button1_text: Get Started
       button2_text: Contact Sales
 
-- name: Payout API
-  title: Payout API With Highest Success Rate | AePS, DMT, Cashout SDK API Provider Eko
+- name: Payment API
+  title: Payment API With Highest Success Rate | AePS, DMT, Cashout SDK API Provider Eko
   tag_line: Make salary & vendor payments easily
   social_image: /assets/img/developers/salary-disbursal-first-fold-opt.svg
-  keywords: Payout API, Whitelabel AePS Portal API, Aadhaar Enabled Payment System api, aeps api, aeps api provider bank
+  keywords: Payment API, Whitelabel AePS Portal API, Aadhaar Enabled Payment System api, aeps api, aeps api provider bank
   hero_image: /assets/img/developers/salary-disbursal-first-fold-opt.svg
-  summary: Get our easy-to-use Payout API and pay your employees and vendors their payments using your digital wallet balance with ease.
-  description: Get our easy-to-use Payout API and pay your employees and vendors their payments using your digital wallet balance with a reliable & secure fund settlement APIs solution.
+  summary: Get our easy-to-use Payment API and pay your employees and vendors their payments using your digital wallet balance with ease.
+  description: Get our easy-to-use Payment API and pay your employees and vendors their payments using your digital wallet balance with a reliable & secure fund settlement APIs solution.
   documentation_link: https://developers.eko.in/docs/fund-transfer
 
   layout:
     - section: mid_summary
-      small_description: Payout API
-      header: Instant salary disbursal & vendor payment using Eko’s Payout API
+      small_description: Payment API
+      header: Instant salary disbursal & vendor payment using Eko’s Payment API
 
     - section: alternating_steps
       steps:
@@ -233,22 +233,22 @@
       text: We use the same APIs here at Eko! Every API call is secured with one-time-use tokens generated using asymmetric cryptography. Our open-source libraries make it extremely easy & error-proof
 
     - section: step_section
-      header: How does Payout API work
+      header: How does Payment API work
       steps:
         - text: Sign Up on Connect App.
           link: https://connect.eko.in
         - text: Submit necessary documents
-        - text: Integrate Payout API
+        - text: Integrate Payment API
         - text: Start making payments
 
     - section: message
-      line1: The process of integrating Payout API is easy.
+      line1: The process of integrating Payment API is easy.
       main_line: For all integration related issues, we provide 24x7 support.
       button_text: Contact Support
 
     - section: get_started_banner
       small_header: Ready to get started?
-      main_header: Integrate our Payout API
+      main_header: Integrate our Payment API
       image: /assets/img/become-eko-partner-opt.svg
       button1_text: Get Started
       button2_text: Contact Sales
@@ -377,7 +377,7 @@
   social_image: /assets/img/developers/assisted-cash-management-opt.svg
   keywords: Cash management, Cash management system, Cash collection API
   hero_image: /assets/img/developers/assisted-cash-management-opt.svg
-  summary: 
+  summary:
   description: Eko provides an easy-to-use Cash Collection service which helps you set up a cash management system for your retailers. This system makes e-money transfer hassle-free for you and your retailers. We bear the end-to-end technical burden, reducing your integration task to a mere formality.
   documentation_link: https://developers.eko.in/docs/cash-collection
 
@@ -705,7 +705,7 @@
   layout:
     - section: icon_list
       header: Real-time Verification
-      subtitle: 
+      subtitle:
       description: Use Eko’s UIDAI-powered Aadhaar verification API to validate your customers, employees, and merchants. With our easy-to-use API you can substantially mitigate Identity-fraud.
       icons:
         - image: /assets/img/developers/pan-valid-icon.svg
@@ -761,11 +761,11 @@
   summary: Optical Character Recognition (OCR) is the process that converts an image of text into a machine-readable text format which is used where data entering is required. The verification process involves reviewing the OCR results and manually correcting any errors or inaccuracies.
   description: OCR Verification API made customer onboarding & verification easy. Optical Character Recognition (OCR) is the process that converts an image of text into a machine-readable text format which is used where data entering is required. The verification process involves reviewing the OCR results and manually correcting any errors or inaccuracies.
   documentation_link: https://developers.eko.in/docs/identity
-  
+
   layout:
     - section: icon_list
       header: How can we use this API?
-      subtitle: 
+      subtitle:
       description: OCR APIs are built to extract data from specific documents, this training allows them to be more accurate in extracting specific data from those specific document types such as...
       icons:
         - image: /assets/img/New/PanOCR.png
@@ -798,7 +798,7 @@
           image_left: /assets/img/developers/pan-valid-icon.svg
           # Benefit 4
           title_right: Fetch your documents anytime!
-          text_right: Record keeping service enabled on request for clients to download the OCR documents anytime. 
+          text_right: Record keeping service enabled on request for clients to download the OCR documents anytime.
           image_right: /assets/img/New/FD.png
     - section: documentation_link_banner
 
