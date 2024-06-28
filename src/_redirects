@@ -1,4 +1,4 @@
 # Simple redirects from what the browser requests to what we serve
 # Documentation: https://docs.netlify.com/routing/redirects/
 
-/wp-content/uploads/2015/09/Customer_TC.pdf	/Eko_Customer_TC.pdf
+/wp-content/uploads/2015/09/Customer_TC.pdf	/tnc
