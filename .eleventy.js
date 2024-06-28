@@ -140,14 +140,19 @@ module.exports = function(eleventyConfig) {
 	markdownLib.use(md_attrs, {
 		allowedAttributes: ["class"]
 	});									// https://github.com/GerHobbelt/markdown-it-attrs
-	markdownLib.use(md_link_attrs, {
-		pattern: /^https?:/,
-		attrs: {
-			target: '_blank',
-			rel: 'noopener',
-			class: 'ext-link'
+	markdownLib.use(md_link_attrs, [
+		{
+			// pattern: /^https?:/,
+			matcher(href) {
+				return href.match(/^https?:\/\//i) && !href.match(/^(https?:\/\/)?eko.in/);
+			},
+			attrs: {
+				target: '_blank',
+				rel: 'noopener',
+				class: 'ext-link'
+			}
 		}
-	});								// https://github.com/crookedneighbor/markdown-it-link-attributes
+	]);								// https://github.com/crookedneighbor/markdown-it-link-attributes
 	markdownLib.use(md_lazy_loading);	// https://github.com/ruanyf/markdown-it-image-lazy-loading
 	markdownLib.use(md_abbr);			// https://github.com/markdown-it/markdown-it-abbr
 	markdownLib.use(md_footnote);		// https://github.com/markdown-it/markdown-it-footnote

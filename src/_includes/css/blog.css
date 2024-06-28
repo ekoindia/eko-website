@@ -168,14 +168,6 @@ img.hero {
   padding: 20px;
 } */
 
-a.ext-link {
-	opacity: 0.2;
-}
-
-a.ext-link:hover {
-	opacity: 1;
-}
-
 .blog-button {
   width: 30%;
   color: white;
