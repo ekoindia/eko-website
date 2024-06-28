@@ -15,10 +15,12 @@ columns:
         url: /blog
       - label: FAQs
         url: /faq
-      - label: T&C
-        url: /Eko_Customer_TC.pdf
+      - label: Terms & Conditions
+        url: /tnc
       - label: Privacy Policy
         url: /privacy-policy
+      - label: Refund Policy
+        url: /refund-policy
       - label: Other Documents
         url: /other-documents
       - label: Grievance
