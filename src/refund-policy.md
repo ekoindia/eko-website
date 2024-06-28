@@ -72,6 +72,4 @@ If a chargeback is received for an instantly refunded payment, the processed ref
 Plot 34, Institutional Area, Sector 44, Gurugram, Haryana — 122003.
 Phone: 0124-4566200.
 
-
-![](Aspose.Words.4c85d892-6338-4cd8-b1de-55c0fddff052.005.png)
-
+![Map to Eko's office](/assets/img/eko-map.jpg)
