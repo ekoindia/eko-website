@@ -136,6 +136,10 @@ nav.topnav {
 	-webkit-transition: all .125s ease-in-out;
 }
 
+#menu .nested-sub-menu {
+	padding-left: 40px !important;
+}
+
 /* #menu a:hover {
 	background-color: white;
 	color: #09c;
