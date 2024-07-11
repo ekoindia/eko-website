@@ -1,13 +1,13 @@
 ---
-title: B2B Recharge Portal - Start Your Own Company.
-description: Launch your business with our B2B Recharge Portal. Get started today with our comprehensive platform designed to help you create and manage your own company effortlessly. Join now and take the first step towards entrepreneurial success.
-keywords: white-label,B2B portal, white label payment solutions, API, developers, enterprise, platform, AePS, DMT, BBPS, CMS, disbursal, cash collection, banking, financial services
+title: Eloka – Agent B2B White-label Portal for DMT, AePS, Recharge, Bill Payment and much more
+description: B2B portal designed exclusively for agents looking to kickstart their journey into Digital Money Transfer (DMT), AePS, Recharge, and Bill Payment services under their own brand. Unlock new business opportunities and offer seamless transactions with our platform. A Complete B2B Portal/White-Label Solution For Your Agent Network. Go-live with your own brand DMT/AePS B2B Portal in 10 minutes! Welcome to Eloka, an end-to-end B2B portal/white-label platform that helps businesses like yours to easily step into the digital payments world. Bundled with payment services like DMT, AePS, BBPS, CMS, Credit Card, Static QR, Indo-Nepal, etc with No API integration or development efforts!
+keywords: white-label, white label payment solutions, API, developers, enterprise, platform, AePS, DMT, BBPS, CMS, disbursal, cash collection, banking, financial services
 business: api
 product: whitelabel
 ---
 
 
-{% extends "./_layouts/base.njk" %}
+{% extends "../_layouts/base.njk" %}
 
 {# Include Embla Carousel #}
 {# {% block custom_script %}
@@ -26,9 +26,9 @@ product: whitelabel
     {# Top Hero Section #}
 	{% set product = {
 		icon: "/assets/img/eloka/eloka-logo.opt.svg",
-		tag_line: "B2B Recharge Portal",
-		sub_tag_line: "Empower Your Business with Seamless Recharge Solutions",
-		hero_image: "/assets/img/utility bill/utility-main.svg",
+		tag_line: "A Complete White-Label Solution For Your Agent Network",
+		sub_tag_line: "Go-live with your own brand in 10 minutes!",
+		hero_image: "/assets/img/eloka/eloka-hp.png",
 		signup_label: "Start For Free",
 		learn_more_link: "#sectionAccordian"
 	} %}
@@ -48,9 +48,8 @@ product: whitelabel
 
 		<h1>{{ product.sub_tag_line }}</h1>
 
-		<p class="lh-high">Welcome to Eloka, an end-to-end B2B portal/white-label platform that helps businesses like yours to access the full potential of your agent network.</p>
-		<p class="lh-high">Eloka offers you the opportunity to start your own business with our B2B Recharge Portal. Easily manage mobile, DTH, and utility recharges at the click of a button with your own branded platform.
-</p>
+		<p class="lh-high">Welcome to Eloka, an end-to-end white-label platform that helps businesses like yours to easily step into the digital payments world.</p>
+		<p class="lh-high">Bundled with payment services like <abbr title="Domestic Money Transfer">DMT</abbr>, <abbr title="Aadhaar Enabled Payment System">AePS</abbr>, <abbr title="Bharat Bill Payments System">BBPS</abbr>, <abbr title="Cash Management Services">CMS</abbr>, Credit Card, Static QR, Indo-Nepal, etc. No API integration or development efforts!</p>
 
 		<p class="lh-high"></p>
 
@@ -76,8 +75,8 @@ product: whitelabel
 
 	{# Get Started Banner Section #}
 	{# {% set item = {
-		main_header: "Why Eloka for Travel portal? Let's find out",
-		small_header: "Go live with your Travel portal in 10 mins!",
+		main_header: "Why Eloka? Let's find out",
+		small_header: "Go live with your portal in 10 mins!",
 		image: "/assets/img/eko-trust.svg"
 	} %}
 	{% include "section_get_started_banner.njk" %} #}
@@ -135,54 +134,7 @@ product: whitelabel
 		}]
 	} %}
 	{% include "section_carousel.njk" %} #}
-	
 
-{# Icon List Section #}
-	{% set item = {
-		header: "Products in Insurance Portal",
-		icons: [
-			{
-				image: "/assets/img/utility bill/credit-icon.svg",
-				caption: "Credit Card Bill Payment"
-			},
-			{
-				image: "/assets/img/utility bill/mobile-icon.svg",
-				caption: "Mobile Recharge"
-			},
-			{
-				image: "/assets/img/utility bill/dth-icon.svg",
-				caption: "DTH"
-			},
-			{
-				image: "/assets/img/utility bill/cms-icon.svg",
-				caption: "Cash Management System"
-			}]
-	} %}
-
-	{% include "section_custom_icon_list.njk" %}
-	{# Icon List Section #}
-	{% set item = {
-		icons: [
-			{
-				image: "/assets/img/utility bill/gas-icon.svg",
-				caption: "Gas"
-			},
-			{
-				image: "/assets/img/utility bill/water-icon.svg",
-				caption: "Water"
-			},
-			{
-				image: "/assets/img/utility bill/electricity-icon.svg",
-				caption: "Electricity"
-			},
-			{
-				image: "/assets/img/utility bill/fastag-icon.svg",
-				caption: "Fastag"
-			}]
-	} %}
-	{% include "section_custom_icon_list.njk" %}
-
-	
 
 	{# Alternating Steps Section #}
 	{% set item = {
@@ -190,65 +142,47 @@ product: whitelabel
 	subtitle: "",
 	steps: [
 		{
-			title: "Business Dashboards:",
-			text: "* Keep tabs on product and agent performance\n* Monitor network earnings \n* Analyze metrics within the onboarding funnel",
+			title: "Attractive product stack",
+			text: "* Money Transfer\n* Cash Withdrawal\n* Utility Bill Payment\n* QR Payment\n* CMS - Cash Drop\n* Indo Nepal\n* Flight Tickets\n* Credit Card Bill\n* Balance Inquiry\n* Mini Statement",
 			image: "/assets/img/developers/transaction-alert.svg"
 		},
         {
-		    title: "Wallet Management:",
-			text: "* Seamlessly recharge and settle wallets\n* Strengthen financial control measures",
+		    title: "Max commissions and least charges",
+			text: "* DMT charges - ₹1.7 .\n* AePS commissions - ₹13.8",
 			image: "/assets/img/developers/secure-emoney.svg"
 		},
         {
-			title: "Network Management:",
-			text: "* Lock and unlock agent accounts at your discretion\n* Monitor the transaction history of the network\n* Access agent KYC documents effortlessly\n* Streamline updates to agent roles (Distributor, Retailer)",
+			title: "Business dashboards",
+			text: "To track your business through:\n* Product performance\n* Agent performance\n* Network earnings\n* Onboarding funnel metrics",
 			image: "/assets/img/lending-page/upgrade-business.svg"
 		},
         {
-			title: "Brand Customization:",
-			text: "* Highlight your logo prominently\n* Choose a custom domain or subdomain",
-			image: "/assets/img/money-transfer/transparent-pricing.svg"
+			title: "Wallet Management",
+			text: "Your network can perform:\n* Wallet recharge\n* Wallet settlement",
+			image: "/assets/img/money-transfer/mini-bank.svg"
 		},
         {
-			title: "Network Onboarding:",
-			text: "* Digital agent onboarding\n* Access to agent KYC documents",
+			title: "Network Management features",
+			text: "* Lock and Unlock agent account\n* Tracker for network’s transaction history\n* Tracker for support issues raised\n* Access to agent’s KYC documents\n* Update agent role - Distributor, Retailer",
 			image: "/assets/img/developers/salary-disbursal-first-fold.svg"
 		},
         {
-			title: "Maximize Commissions and Minimize Charges:",
-			text: "* Enjoy the highest commission rates available\n* Benefit from minimal charges, optimizing your financial gains",
+			title: "Build your brand with your",
+			text: "* Logo\n* Domain/Subdomain\n* App name\n* Company name\n* Branded notifications",
 			image: "/assets/img/developers/secure-icon.svg"
         },
+        {
+			title: "Network Onboarding",
+			text: "* Digital agent onboarding (No charges)\n* Constant access to agent’s KYC documents",
+			image: "/assets/img/developers/enterprise-opt.svg"
+		},
 		{
 			title: "Additional free services",
 			text: "* Product Maintenance\n* Product Addition\n* Customer Support 24*7\n* Tech support 24*7\n* Invoicing\n* SMS Service\n* Agent Onboarding\n* All types of Data Management",
-			image: "/assets/img/main/best-s	uccess-rate-opt.svg"
+			image: "/assets/img/main/best-success-rate-opt.svg"
         }]
 	} %}
 	{% include "section_alternating_steps.njk" %}
-
-{# Heros Main section #}
-	{% set item = {
-		header: "Why choose us?",
-		items: [
-			{
-				type: "pair",
-				title_left: "Swift Onboarding",
-				text_left: "Launch your brand effortlessly with our quick onboarding process, allowing you to Start your own BBPS brand/company within 10 minutes.",
-				image_left: "/assets/img/developers/easy-integration-opt.svg",
-				title_right: "User-Friendly Interface",
-				text_right: "Experience the ease of use with our user-friendly interface. Our portal offers versatile services, providing a one-stop solution for various transactions.",
-				image_right: "/assets/img/developers/simple-documentation-opt.svg"
-			},
-			{
-				type: "single",
-                title: "Financial Control and Transparent Pricing",
-         		text: "Take command of your finances with wallet management. Our transparent pricing ensures you understand the costs associated with each transaction.",
-          		image: "/assets/img/money-transfer/mini-bank.svg"
-			}]
-	} %}
-	{% include "section_heros_main.njk" %}
-
 
 {# Icon List Section #}
 	{% set item = {
@@ -342,11 +276,11 @@ product: whitelabel
 		faqs: [
 			{
 				title: "How do I get my white-label portal?",
-				description: "Absolutely! Our portal caters to travel agents of all sizes, offering scalable solutions to meet your business requirements."
+				description: "To get started, simply signup using the form above. You will be taken to our Connect app for KYC. During signup, select 'White-Label' as your desired product."
 			},
 			{
-				title: "How can I contact customer support?",
-				description: "Our customer support is available 24/7 via phone, email, and live chat. We are here to assist you with any questions or concerns."
+				title: "Do I also get a white-label Android app?",
+				description: "Yes! You get both the white-label website and the mobile app."
 			},
 			{
 				title: "Can I customize the portal with my branding?",

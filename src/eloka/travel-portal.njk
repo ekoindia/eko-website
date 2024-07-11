@@ -1,13 +1,13 @@
 ---
-title: Insurance B2B Portal - create/manage your insurance agents network.
-description: Discover our leading Insurance B2B Portal, tailored for agents to enhance efficiency and deliver superior coverage. Elevate your business with our robust platform.
+title: Travel B2B Portal | Elevate Your Agent Network with Eloka
+description: Empower your agents with Eloka's Travel B2B Portal. Easy bookings for bus, train, flights, and hotels. Enjoy comprehensive dashboards, financial control, and 24/7 support. Start your travel agency today!
 keywords: white-label,B2B portal, white label payment solutions, API, developers, enterprise, platform, AePS, DMT, BBPS, CMS, disbursal, cash collection, banking, financial services
 business: api
 product: whitelabel
 ---
 
 
-{% extends "./_layouts/base.njk" %}
+{% extends "../_layouts/base.njk" %}
 
 {# Include Embla Carousel #}
 {# {% block custom_script %}
@@ -23,12 +23,12 @@ product: whitelabel
 	{# Custom HTML code can be added anywhere in this block #}
 	{# Or, add a predefined section component #}
 
- {# Top Hero Section #}
+    {# Top Hero Section #}
 	{% set product = {
 		icon: "/assets/img/eloka/eloka-logo.opt.svg",
-		tag_line: "Insurance B2B Portal",
-		sub_tag_line: "Empowering your Agents network with Seamless Management and Superior Coverage",
-		hero_image: "/assets/img/sell-insurance/insurance-main.svg",
+		tag_line: "Travel B2B Portal",
+		sub_tag_line: "Designed to elevate your Travel Agent Network",
+		hero_image: "/assets/img/travel/travel-main.svg",
 		signup_label: "Start For Free",
 		learn_more_link: "#sectionAccordian"
 	} %}
@@ -48,8 +48,8 @@ product: whitelabel
 
 		<h1>{{ product.sub_tag_line }}</h1>
 
-		<p class="lh-high">Welcome to our Insurance B2B Portal, your ultimate platform designed to empower insurance agents network with seamless and efficient management solutions.</p>
-		<p class="lh-high">Our portal provides you with the opportunity to elevate your business operations with our comprehensive insurance solutions. Effortlessly manage your network of agents, streamline policy processes, and ensure superior coverage for clients on your own branded platform.
+		<p class="lh-high">Welcome to Eloka, an end-to-end B2B portal/white-label platform that helps businesses like yours to access the full potential of your agent network.</p>
+		<p class="lh-high">Eloka gives you the opportunity to start your own travel agency with our Travel Booking portal. Book Bus, Train, Flights, Hotel at a click of a button with your own Branded B2B Travel Portal
 </p>
 
 		<p class="lh-high"></p>
@@ -76,8 +76,8 @@ product: whitelabel
 
 	{# Get Started Banner Section #}
 	{# {% set item = {
-		main_header: "Why Eloka for Insurance Portal? Let's find out",
-		small_header: "Go live with your payment gateway in 10 mins!",
+		main_header: "Why Eloka for Travel portal? Let's find out",
+		small_header: "Go live with your Travel portal in 10 mins!",
 		image: "/assets/img/eko-trust.svg"
 	} %}
 	{% include "section_get_started_banner.njk" %} #}
@@ -138,26 +138,26 @@ product: whitelabel
 
 {# Icon List Section #}
 	{% set item = {
-		header: "Products in Insurance Portal",
+		header: "Products in Travel Portal",
 		icons: [
 			{
-				image: "/assets/img/sell-insurance/health-icon.svg",
-				caption: "Health Insurance "
+				image: "/assets/img/travel/flight-icon.svg",
+				caption: "Flight booking"
 			},
 			{
-				image: "/assets/img/sell-insurance/life-ins-icon.svg",
-				caption: "Life Insurance"
+				image: "/assets/img/travel/train-icon.svg",
+				caption: "IRCTC portal"
 			},
 			{
-				image: "/assets/img/sell-insurance/property-icon.svg",
-				caption: "Property Insurance"
+				image: "/assets/img/travel/hotel-icon.svg",
+				caption: "Hotel booking"
 			},
 			{
-				image: "/assets/img/sell-insurance/vehicle-icon.svg",
-				caption: "Vehicle Insurance"
+				image: "/assets/img/travel/bus-icon.svg",
+				caption: "Bus booking"
 			}]
 	} %}
-	{% include "section_custom_icon_list.njk" %}	  
+	{% include "section_custom_icon_list.njk" %}
 
 	{# Alternating Steps Section #}
 	{% set item = {
@@ -166,7 +166,7 @@ product: whitelabel
 	steps: [
 		{
 			title: "Business Dashboards:",
-			text: "* Keep tabs on policy performance\n* Monitor earnings effectively \n* Analyze metrics within the client acquisition funnel",
+			text: "* Keep tabs on product and agent performance\n* Monitor network earnings effectively\n* Analyze metrics within the onboarding funnel",
 			image: "/assets/img/developers/transaction-alert.svg"
 		},
         {
@@ -176,7 +176,7 @@ product: whitelabel
 		},
         {
 			title: "Network Management:",
-			text: "* Manage agent accounts at your discretion\n* Monitor the comprehensive policy history of the network\n* Effectively handle support issues\n* Streamline updates to agent roles (Distributor, Retailer)",
+			text: "* Lock and unlock agent accounts at your discretion\n* Monitor the transaction history of the network\n* Access agent KYC documents effortlessly\n* Streamline updates to agent roles (Distributor, Retailer)",
 			image: "/assets/img/lending-page/upgrade-business.svg"
 		},
         {
@@ -201,28 +201,6 @@ product: whitelabel
         }]
 	} %}
 	{% include "section_alternating_steps.njk" %}
- 
-{# Heros Main section #}
-	{% set item = {
-		header: "Why choose us?",
-		items: [
-			{
-				type: "pair",
-				title_left: "Swift Onboarding",
-				text_left: "Launch your brand effortlessly with our quick onboarding process, allowing you to Start your own BBPS brand/company within 10 minutes.",
-				image_left: "/assets/img/developers/easy-integration-opt.svg",
-				title_right: "User-Friendly Interface",
-				text_right: "Experience the ease of use with our user-friendly interface. Our portal offers versatile services, providing a one-stop solution for various transactions.",
-				image_right: "/assets/img/developers/simple-documentation-opt.svg"
-			},
-			{
-				type: "single",
-                title: "Financial Control and Transparent Pricing",
-         		text: "Take command of your finances with wallet management. Our transparent pricing ensures you understand the costs associated with each transaction.",
-          		image: "/assets/img/money-transfer/mini-bank.svg"
-			}]
-	} %}
-	{% include "section_heros_main.njk" %}
 
 {# Icon List Section #}
 	{% set item = {
@@ -315,7 +293,7 @@ product: whitelabel
 		header: "FAQ",
 		faqs: [
 			{
-				title: "How do I get my white-label portal?",
+				title: "Is your portal suitable for small travel agencies?",
 				description: "Absolutely! Our portal caters to travel agents of all sizes, offering scalable solutions to meet your business requirements."
 			},
 			{
