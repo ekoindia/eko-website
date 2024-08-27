@@ -1,0 +1,341 @@
+---
+title: Secure Payment Gateway Services | Fast & Reliable Solutions
+description: Get secure, fast, and reliable payment gateway services. Easy integration, multi-currency support, and 24/7 customer support. Enhance your business now!
+keywords: white-label,B2B portal, white label payment solutions, API, developers, enterprise, platform, AePS, DMT, BBPS, CMS, disbursal, cash collection, banking, financial services
+business: api
+product: whitelabel
+---
+
+
+{% extends "../_layouts/base.njk" %}
+
+{# Include Embla Carousel #}
+{# {% block custom_script %}
+  {{ js_carousel | jsmin | safe }}
+{% endblock %} #}
+
+{# {% block custom_style %}
+  {{ css_carousel | cssmin | safe }}
+{% endblock %} #}
+
+{% block main %}
+
+	{# Custom HTML code can be added anywhere in this block #}
+	{# Or, add a predefined section component #}
+
+    {# Top Hero Section #}
+	{% set product = {
+		icon: "/assets/img/eloka/eloka-logo.opt.svg",
+		tag_line: "Payment gateway",
+		sub_tag_line: "Empower Your Business with Effortless Payments, Unmatched Security",
+		hero_image: "/assets/img/PG/pg.png",
+		signup_label: "Start For Free",
+		learn_more_link: "#sectionAccordian"
+	} %}
+	{# {% include "section_product_page_hero.njk" %} #}
+	<section class="block product_page_hero layout vertical horizontal-md center" type="product_page_hero">
+	<div class="descbox layout inline vertical flex wider">
+		<div class="subtitle layout inline horizontal end">
+			{% if product.sub_header %}
+				<div>{{ product.sub_header }}</div>
+			{% endif %}
+			{% if product.icon %}
+				<img src="{{ product.icon }}" alt="Eloka Logo" style="height:50px">
+			{% endif %}
+		</div>
+
+		<p class="sub_tag_line">{{ product.tag_line }}</p>
+
+		<h1>{{ product.sub_tag_line }}</h1>
+
+		<p class="lh-high">Welcome to Eloka, your all-in-one payment gateway platform designed to empower businesses with seamless and secure transaction processing.</p>
+		<p class="lh-high">Eloka provides you with the opportunity to streamline your business operations with our robust payment gateway. Effortlessly manage online transactions, accept various payment methods, and ensure secure payments on your own branded platform.
+</p>
+
+		<p class="lh-high"></p>
+
+		<div class="layout horizontal center">
+			<a href="#sectionSignupForm" class="button">{{ product.signup_label or 'Sign up' }}</a>
+			{% if product.learn_more_link %}
+				&nbsp;&nbsp;&nbsp;
+				{% linkArrow product.learn_more_link, product.learn_more_label or "Learn More" %}
+			{% endif %}
+		</div>
+	</div>
+	<div class="flex imgbox radial" style="background:radial-gradient(#FFFFFF00,#ffb21820,#ffb21850,#FFFFFF00,#FFFFFF00)">
+		{# <img src="{{ product.hero_image }}" alt="Eloka preview"> #}
+		{% Image "" + product.hero_image, "Eloka Preview" %}
+	</div>
+</section>
+<section class="block">
+	{% iconScroll %}
+</section>
+
+
+
+
+	{# Get Started Banner Section #}
+	{# {% set item = {
+		main_header: "Why Eloka for payment gateway? Let's find out",
+		small_header: "Go live with your payment gateway in 10 mins!",
+		image: "/assets/img/PG/pg.png"
+	} %}
+	{% include "section_get_started_banner.njk" %} #}
+
+
+	{# Mid Summary section #}
+	{# {% set item = {
+		header: "Unlimited Services",
+		main_text: ""
+	} %}
+	{% include "section_mid_summary.njk" %} #}
+
+{# Slider / Carousel section #}
+	{# {% set item = {
+	slides: [
+		{
+			title: "Free Customer Support!",
+			description: "24*7 Customer Support for your network.",
+			image: "/assets/img/new/CS.jpg"
+		},
+		{
+			title: "Free Tech Support!",
+			description: "24*7 Tech Support for your network.",
+			image: "/assets/img/new/TS.png"
+		},
+		{
+			title: "Free Agent Onboarding!",
+			description: "Your network can complete their KYC for free.",
+			image: "/assets/img/new/Onb.jpg"
+		},
+		{
+			title: "Free Data Management!",
+			description: "Unlimited access to your network data.",
+			image: "/assets/img/new/DM.jpg"
+		},
+        {
+			title: "Free Product Maintenance!",
+			description: "Our maintenance team makes sure your product is up and running.",
+			image: "/assets/img/new/PM.jpeg"
+		},
+        {
+			title: "Free Products Expansion!",
+			description: "We bring new products to the platform for free of cost.",
+			image: "/assets/img/new/PA.jpeg"
+		},
+		 {
+			title: "Free Invoicing!",
+			description: "Free agent level invoicing so you don't have to worry about GST and TDS claims.",
+			image: "/assets/img/new/IV.jpg"
+		},
+        {
+			title: "Free SMS Service!",
+			description: "Send your network unlimited messages for free",
+			image: "/assets/img/new/SMS.jpeg"
+		}]
+	} %}
+	{% include "section_carousel.njk" %} #}
+
+{# Icon List Section #}
+	{% set item = {
+		header: "Where can you use our Payment Gateway?",
+		icons: [
+			{
+				image: "/assets/img/PG/ticket-booking.svg",
+				caption: "Ticket Booking"
+			},
+			{
+				image: "/assets/img/sell-insurance/life-ins-icon.svg",
+				caption: "Insurance Payments"
+			},
+			{
+				image: "/assets/img/PG/recharge.svg",
+				caption: "Recharge"
+			},
+			{
+				image: "/assets/img/PG/bill-payment.svg",
+				caption: "Bill Payment"
+			}]
+	} %}
+	{% include "section_custom_icon_list.njk" %}	  
+
+	{# Icon List Section #}
+	{% set item = {
+		header: "Exciting Features",
+		icons: [
+			{
+				image: "/assets/img/PG/customization.svg",
+				caption: "Brand Customization"
+			},
+			{
+				image: "/assets/img/PG/user-onboard.svg",
+				caption: "User Onboarding"
+			},
+			{
+				image: "/assets/img/PG/min-charges.svg",
+				caption: "Minimum Charges"
+			},
+			{
+				image: "/assets/img/PG/free-services.svg",
+				caption: "Additional free services"
+			}]
+	} %}
+	{% include "section_custom_icon_list.njk" %}	  
+
+	
+{# Heros Main section #}
+	{% set item = {
+		header: "Why choose us?",
+		items: [
+			{
+				type: "pair",
+				title_left: "Swift Onboarding",
+				text_left: "Launch your brand effortlessly with our quick onboarding process",
+				image_left: "/assets/img/developers/easy-integration-opt.svg",
+				title_right: "User-Friendly Interface",
+				text_right: "Experience the ease of use with our user-friendly interface. Our portal offers versatile services, providing a one-stop solution for various transactions.",
+				image_right: "/assets/img/developers/simple-documentation-opt.svg"
+			},
+			{
+				type: "single",
+                title: "Financial Control and Transparent Pricing",
+         		text: "Our transparent pricing ensures you understand the costs associated with each transaction.",
+          		image: "/assets/img/money-transfer/mini-bank.svg"
+			}]
+	} %}
+	{% include "section_heros_main.njk" %}
+
+	{% set item = {
+		header: "Universal platform for all businesses",
+		icons: [
+			{
+				image: "/assets/img/lending-page/reach-shoppers.svg",
+				caption: "GOVERNMENT AGENCIES "
+			},
+			{
+				image: "/assets/img/lending-page/reach-shoppers.svg",
+				caption: "RETAIL OWNERS"
+			},
+			{
+				image: "/assets/img/lending-page/reach-shoppers.svg",
+				caption: "DISTRIBUTION OWNERS"
+			},
+			{
+				image: "/assets/img/lending-page/reach-shoppers.svg",
+				caption: "SOCIAL ORGANISATIONS"
+			}]
+	} %}
+	{% include "section_custom_icon_list.njk" %}
+
+	{# Single Hero section #}
+	{# set item = {
+		image: "/assets/img/main/partner-brands.webp",
+		title: "Offer services from our partner brands",
+		text: "Use Eko’s digital and physical infrastructure to reach the 800 million cash earning Indians. Low & Middle Income (LMI) consumers are under-served on digital as well as financial products. Eko provides solutions that help you reach this base in a variety of ways.",
+		link_text: "More About Our Partner Brands",
+		link: "/our-brand-association"
+	} #}
+	{# include "section_single_hero.njk" #}
+
+{# Step Section #}
+	{% set item = {
+		header: "Get your platform live in 10 mins",
+		steps: [
+			{ text: "Complete your KYC through CONNECT App.", link:"" },
+			{ text: "Provide logo, app name and other details." },
+			{ text: "Go live with your portal!" }
+		]
+	} %}
+	{% include "section_step_section.njk" %}
+
+
+	{# Get Started Banner Section #}
+	{% set item = {
+		small_header: "Ready to get started?",
+		main_header: "Get your own portal in 10 minutes",
+		image: "/assets/img/eloka/build.svg",
+        caption: "Get Your Own White-Label Portal",
+		button1_text: "Request Free Demo",
+		button2_text: "Contact Sales"
+	} %}
+	{# {% include "section_get_started_banner.njk" %} #}
+	<section class="block bg-shaded get_started_banner" type="get_started_banner">
+		<div class="layout vertical horizontal-reverse-md center">
+
+			<div class="layout horizontal center">
+				<img src="{{ item.image }}" alt="{{ item.caption }}">
+				{% if item.caption_text %}
+					<p>{{ item.caption_text }}</p>
+				{% endif %}
+			</div>
+
+			<div class="flex">
+				<div class="subtitle">{{ item.small_header }}</div>
+				<h2>{{ item.main_header }}</h2>
+				<span class="h2-border"></span>
+				{% if item.button1_text %}
+					<br><br>
+					<div class="btnbox layout horizontal center wrap">
+						<a href="#sectionSignupForm" class="button">{{ item.button1_text }}</a>
+						<a href="{{ website.contact_url }}" class="button outline">{{ item.button2_text }}</a>
+					</div>
+				{% endif %}
+			</div>
+
+		</div>
+	</section>
+
+	{# Signup Form Section #}
+	{% set form = { type: "api", subtype: "whitelabel", referrername: "whitelabel" } %}
+	{% include "section_signup_form.njk" %}
+
+
+	{# FAQ Accordion Section #}
+	{% set item = {
+		header: "FAQ",
+		faqs: [
+			{
+				title: "How do I get my white-label portal?",
+				description: "Absolutely! Our portal caters to travel agents of all sizes, offering scalable solutions to meet your business requirements."
+			},
+			{
+				title: "How can I contact customer support?",
+				description: "Our customer support is available 24/7 via phone, email, and live chat. We are here to assist you with any questions or concerns."
+			},
+			{
+				title: "Can I customize the portal with my branding?",
+				description: "Yes, Eloka allows you to customize your portal with your own logo, colours, domain, app name, company name, etc."
+			},
+			{
+				title: "Can I use my own domain?",
+				description: "Yes, you can setup your own domain name for free!"
+			},
+			{
+				title: "How much do I have to pay for this platform?",
+				description: "Get in touch with our sales team for the monthly subscription plans and commercials."
+			},
+			{
+				title: "How can I get a live demo?",
+				description: "Contact our sales team at +91 9818185320 and schedule your demo in no time. You can also start a free trial to try it out for yourself!"
+			}]
+	} %}
+	{% include "section_accordion.njk" %}
+
+
+
+	{# Small Heros section #}
+	{% set item = {
+		header: "Trusted Partners",
+		partner_images: [
+			{ image: "/assets/img/main/partner1.webp", title: "SBI" },
+			{ image: "/assets/img/main/partner2.webp", title: "Yes Bank" },
+			{ image: "/assets/img/main/partner3.webp", title: "Fino Payments Bank" },
+			{ image: "/assets/img/main/partner4.webp", title: "Airtel" },
+			{ image: "/assets/img/main/partner5.webp", title: "Axis Bank" }
+		]
+	} %}
+	{% include "section_small_heros.njk" %}
+
+
+
+{% endblock %}
