@@ -143,7 +143,7 @@ product: whitelabel
 	steps: [
 		{
 			title: "Attractive product stack",
-			text: "* Money Transfer\n* Cash Withdrawal\n* Utility Bill Payment\n* QR Payment\n* CMS - Cash Drop\n* Indo Nepal\n* Flight Tickets\n* Credit Card Bill\n* Balance Inquiry\n* Mini Statement",
+			text: "* Money Transfer\n* AePS\n* Recharge & Bill Payment\n* QR Payment\n* CMS - Cash Drop\n* Indo Nepal\n* Travel: Ticket Booking\n* Credit Card Bill Payment\n* Lending/Loan Services\n* Insurance\n* Many More",
 			image: "/assets/img/developers/transaction-alert.svg"
 		},
         {
@@ -173,16 +173,38 @@ product: whitelabel
         },
         {
 			title: "Network Onboarding",
-			text: "* Digital agent onboarding (No charges)\n* Constant access to agent’s KYC documents",
+			text: "* Digital agent onboarding \n* Constant access to agent’s KYC documents",
 			image: "/assets/img/developers/enterprise-opt.svg"
 		},
 		{
-			title: "Additional Free Services:",
-			text: "* Product Maintenance\n* Product Addition\n* Customer Support 24*7\n* Tech support 24*7\n* Invoicing\n* SMS Service\n* Agent Onboarding\n* All types of Data Management",
+			title: "Additional Services:",
+			text: "* Product Maintenance\n* Customer Support 24*7\n* Tech support 24*7\n* SMS service\n* Product Addition\n* Invoicing\n* Agent Onboarding\n* All types of Data Management",
 			image: "/assets/img/main/best-success-rate-opt.svg"
         }]
 	} %}
 	{% include "section_alternating_steps.njk" %}
+
+	{# Heros Main section #}
+	{% set item = {
+		header: "We Offer Complete Customization for Your White-Label Portal",
+		items: [
+			{
+				type: "pair",
+				title_left: "Customize Your Industry Focus",
+				text_left: "With Eloka’s white-label solution, you can build a platform tailored to your specific industry needs. Whether you're in financial services, travel, or retail, pick products that align directly with your sector. You can create specialized portals such as an Insurance Portal, Recharge Portal, Travel Portal, AePS Portal and much more.",
+				image_left: "/assets/img/developers/easy-integration-opt.svg",
+				title_right: "Choose the Right Product Mix",
+				text_right: "You have the freedom to select which services you want to offer. From a wide range of products, such as DMT, AePS, Recharge, Bill Payments, Indo-Nepal Money Transfer, and more, you can create a customized offering that meets your business goals without overwhelming your customers with unnecessary options.",
+				image_right: "/assets/img/developers/simple-documentation-opt.svg"
+			},
+			{
+				type: "single",
+                title: "Full Control Over Platform Configuration",
+         		text: "Eloka gives you complete control over your portal’s setup. Configure pricing, set product availability, and even brand the portal to reflect your identity. This ensures a unique user experience that enhances both customer satisfaction and business efficiency.",
+          		image: "/assets/img/money-transfer/mini-bank.svg"
+			}]
+	} %}
+	{% include "section_heros_main.njk" %}
 
 {# Icon List Section #}
 	{% set item = {

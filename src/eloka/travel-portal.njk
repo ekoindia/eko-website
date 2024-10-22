@@ -1,6 +1,6 @@
 ---
-title: Travel B2B Portal | Elevate Your Agent Network with Eloka
-description: Empower your agents with Eloka's Travel B2B Portal. Easy bookings for bus, train, flights, and hotels. Enjoy comprehensive dashboards, financial control, and 24/7 support. Start your travel agency today!
+title: Travel B2B Portal | Best Hotel & Flight Booking Portal for Agents
+description: Empower your agency with the best B2B travel portal. Eloka’s B2B hotel booking portal, flight booking engine, and ticketing platform streamline bookings for travel agents.
 keywords: white-label,B2B portal, white label payment solutions, API, developers, enterprise, platform, AePS, DMT, BBPS, CMS, disbursal, cash collection, banking, financial services
 business: api
 product: whitelabel
@@ -48,8 +48,8 @@ product: whitelabel
 
 		<h1>{{ product.sub_tag_line }}</h1>
 
-		<p class="lh-high">Welcome to Eloka, an end-to-end B2B portal/white-label platform that helps businesses like yours to access the full potential of your agent network.</p>
-		<p class="lh-high">Eloka gives you the opportunity to start your own travel agency with our Travel Booking portal. Book Bus, Train, Flights, Hotel at a click of a button with your own Branded B2B Travel Portal
+		<p class="lh-high">Welcome to our B2B Travel Portal, the ultimate solution designed to empower travel agents and agencies with a comprehensive platform. Whether you need a hotel booking portal, flight booking engine, or a complete ticketing system, our platform is built to meet your business’s specific needs.</p>
+		<p class="lh-high">Our travel portal allows you to deliver top-tier services while growing your travel business with advanced features.
 </p>
 
 		<p class="lh-high"></p>
@@ -159,6 +159,28 @@ product: whitelabel
 	} %}
 	{% include "section_custom_icon_list.njk" %}
 
+	{# Heros Main section #}
+	{% set item = {
+		header: "B2B Train, Hotel, and Flight Booking Portals – Get One or All",
+		items: [
+			{
+				type: "pair",
+				title_left: "B2B Hotel Booking Portal",
+				text_left: "Our B2B hotel booking portal is tailored for travel agents who want to provide seamless hotel booking experiences to their clients. With easy-to-use interfaces, you can manage hotel inventories, pricing, and commissions efficiently.",
+				image_left: "/assets/img/travel/hotel-booking.svg",
+				title_right: "B2B Flight Booking Portal",
+				text_right: "Our B2B flight booking portal enables travel agents to manage and book flights quickly and efficiently. With a b2b flight booking engine integrated into the system, you can offer flight options from multiple airlines, all in one place.",
+				image_right: "/assets/img/travel/flight-booking.svg"
+			},
+			{
+				type: "single",
+                title: "B2B Train Booking Portal",
+         		text: "Our B2B train booking portal is designed for travel agents looking to provide smooth and hassle-free train booking services to their clients. With an intuitive interface, agents can manage train ticket availability, pricing, and commissions with ease. The portal allows for efficient bookings across multiple train services, ensuring a comprehensive offering for your customers.",
+          		image: "/assets/img/travel/train-booking.svg"
+			}]
+	} %}
+	{% include "section_heros_main.njk" %}
+
 	{# Alternating Steps Section #}
 	{% set item = {
 	title: "Exciting Features",
@@ -195,12 +217,34 @@ product: whitelabel
 			image: "/assets/img/developers/secure-icon.svg"
         },
 		{
-			title: "Additional Free Services:",
-			text: "* Product Maintenance\n* Product Addition\n* Customer Support 24*7\n* Tech support 24*7\n* Invoicing\n* SMS Service\n* Agent Onboarding\n* All types of Data Management",
+			title: "Additional Services:",
+			text: "* Product Maintenance\n* Customer Support 24*7\n* Tech support 24*7\n* SMS service\n* Product Addition\n* Invoicing\n* Agent Onboarding\n* All types of Data Management",
 			image: "/assets/img/main/best-s	uccess-rate-opt.svg"
         }]
 	} %}
 	{% include "section_alternating_steps.njk" %}
+
+	{# Heros Main section #}
+	{% set item = {
+		header: "Why choose Our B2B Travel Portal??",
+		items: [
+			{
+				type: "pair",
+				title_left: "Swift Onboarding",
+				text_left: "Launch your brand effortlessly with our quick onboarding process, allowing you to Start your own BBPS brand/company within 10 minutes.",
+				image_left: "/assets/img/developers/easy-integration-opt.svg",
+				title_right: "User-Friendly Interface",
+				text_right: "Experience the ease of use with our user-friendly interface. Our portal offers versatile services, providing a one-stop solution for various transactions.",
+				image_right: "/assets/img/developers/simple-documentation-opt.svg"
+			},
+			{
+				type: "single",
+                title: "Financial Control and Transparent Pricing",
+         		text: "Take command of your finances with wallet management. Our transparent pricing ensures you understand the costs associated with each transaction.",
+          		image: "/assets/img/money-transfer/mini-bank.svg"
+			}]
+	} %}
+	{% include "section_heros_main.njk" %}
 
 {# Icon List Section #}
 	{% set item = {
@@ -284,7 +328,7 @@ product: whitelabel
 	</section>
 
 	{# Signup Form Section #}
-	{% set form = { type: "api", subtype: "whitelabel", referrername: "whitelabel" } %}
+	{% set form = { type: "api", subtype: "whitelabel", referrername: "whitelabel", product: "TravelPortal" } %}
 	{% include "section_signup_form.njk" %}
 
 
@@ -297,8 +341,8 @@ product: whitelabel
 				description: "Absolutely! Our portal caters to travel agents of all sizes, offering scalable solutions to meet your business requirements."
 			},
 			{
-				title: "How can I contact customer support?",
-				description: "Our customer support is available 24/7 via phone, email, and live chat. We are here to assist you with any questions or concerns."
+				title: "How can a B2B travel portal benefit my travel business?",
+				description: "Our platform enables you to streamline operations, improve booking efficiency, and offer more services to your clients, all while managing everything under one roof."
 			},
 			{
 				title: "Can I customize the portal with my branding?",
