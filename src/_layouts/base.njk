@@ -33,6 +33,9 @@
 	{% endif %}
 	<meta name="description" content="{{ (description or website.tag_line) | truncate(150) }}">
 	<meta name="keywords" content="{{ keywords or website.keywords }}{{ keywords_extra }}, {{ website.short_name }}">
+	{% if canonical %}
+		<link rel="canonical" href="{{ canonical }}" />
+	{% endif %}
 
 	{# OpenGraph (Facebook) Social Card #}
 	<meta property="og:title" content="{{ title and title + " | " }}{{ website.title }}">
