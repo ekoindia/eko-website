@@ -65,7 +65,7 @@ Enjoy a robust suite of features that cater to domestic and international travel
 
 <!-- <img src="/assets/img/eloka/eloka_themes_1.png" alt="Themes example" style="max-width:350px;float:right; margin: 0px 0px 15px 15px;"> -->
 
-Customizability lies at the heart of Eloka. Whether it's branding, logo, theme colors, or even product margins, businesses have the flexibility to tailor as per their requirements. Moreover, its versatility allows it to be apt for various business models, be it a bill payment app or a lending app.
+Customizability lies at the heart of Eloka. Whether it's branding, logo, theme colors, or even product margins, businesses have the flexibility to tailor as per their requirements. Moreover, its versatility allows it to be apt for other business models, be it a bill payment app or a lending app.
 
 <figure>
   <img src="/assets/img/eloka/eloka_themes_1.png" alt="Themes example" style="max-width:600px;">
