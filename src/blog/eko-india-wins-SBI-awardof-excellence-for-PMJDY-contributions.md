@@ -1,8 +1,8 @@
 ---
 layout: blog
-title: "Eko India Wins SBI Award of Excellence for PMJDY Contributions"
+title: Eko India Wins SBI Award of Excellence for PMJDY Contribution
 description: Eko India wins SBI Award for PMJDY excellence, empowering women, reaching underserved areas, and driving financial inclusion with innovative solutions.
-date: 2024-12-19
+date: 2024-12-20
 image: /assets/img/blog/financial-inclusion-award.png
 tags:
   - SBI Kiosk
