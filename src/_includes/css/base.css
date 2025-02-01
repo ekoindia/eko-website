@@ -514,6 +514,32 @@ section.block h3 {
 	flex-grow: 1;
 }
 
+.product_page_hero .alert {
+	margin-bottom: 2em;
+	background: #fae1e3;
+	border-radius: 4px;
+	border-left: 6px solid #eb575d;
+	padding: 0.5em 1em;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 1em;
+}
+
+.product_page_hero .alert::before {
+	content: "!";
+	background: #eb575d;
+	color: #fae1e3;
+	font-weight: bold;
+	width: 30px;
+	min-width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+}
+
 .product_page_hero .subtitle > div {
 	font-size: 18px;
 	font-weight: bold;
