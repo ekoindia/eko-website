@@ -12,7 +12,15 @@
 		<p class="sub_tag_line">{{ product.sub_tag_line }}</p>
 
 		<p class="lh-high">{{ product.summary }}</p>
-		<p class="lh-high">{{ product.summary2 }}</p>
+		{% if product.summary2 %}
+			<p class="lh-high">{{ product.summary2 }}</p>
+		{% endif %}
+
+		{% if product.alert %}
+			<div class="alert">
+			{% markdown "lh-high" %}{{ product.alert }}{% endmarkdown %}
+			</div>
+		{% endif %}
 
 		<div class="layout horizontal center">
 			<a href="#sectionSignupForm" class="button">{{ product.signup_label or 'Sign up' }}</a>

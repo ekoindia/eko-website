@@ -254,8 +254,12 @@ module.exports = function(eleventyConfig) {
 
 
 	// Add paired shortcode to embed Markdown in templates...
-	eleventyConfig.addPairedShortcode("markdown", (content) => {
-		return markdownLib.render(content);
+	eleventyConfig.addPairedShortcode("markdown", (content, className="") => {
+		// Render the content as Markdown
+		const renderedContent = markdownLib.render(content);
+
+		// Return the rendered content wrapped in a div with the specified class
+		return `<div class="${className}">${renderedContent}</div>`;
 	});
 
 	// Add Files Passthrough...
