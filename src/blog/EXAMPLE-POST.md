@@ -1,9 +1,10 @@
 ---
 layout: blog
-title: This is page title. It is displayed on top of the blog in large text.
-description: This is a short description of the post (for example, the first paragraph). It is displayed as the short excerpt (preview) of the blog on the blog listing pages. Also helps with the SEO.
+title: "This is Blog Title Displayed on Top of the Blog in Large Text"
+description: "This is a short description of the post (for example, the first paragraph). It is displayed as the short excerpt (preview) of the blog on the blog listing pages. Also helps with the SEO."
 date: 2020-12-23
 image: /assets/img/blog/blog-post-main-image.png
+business: eloka/kiosk/api (optional)
 tags:
   - tag1
   - tag2
@@ -33,11 +34,11 @@ You can format the text as **BOLD** or _ITALICS_ or both ***BOLD & ITALICS***
 
 
 #### Bulleted Lists can be created by starting a line with a '*' like this:
-* point one
-* point two
-  * Sub point one (indent by 2-3 spaces)
-  * Sub point two (indent by 2-3 spaces)
-* point three
+- point one
+- point two
+  - Sub point one (indent by 2-3 spaces)
+  - Sub point two (indent by 2-3 spaces)
+- point three
 
 #### Blockquotes can be added by starting every line of the quote with '> '
 Example:
