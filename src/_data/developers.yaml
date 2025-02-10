@@ -182,7 +182,6 @@
   keywords: Payout API, Whitelabel AePS Portal API, Aadhaar Enabled Payment System api, aeps api, aeps api provider bank
   hero_image: /assets/img/developers/salary-disbursal-first-fold-opt.svg
   summary: Get our easy-to-use Payout API and pay your employees and vendors their payments using your digital wallet balance with ease. Note- Strictly not for gaming, trading, betting and unauthorized activities prohibited.
-  widget: Note- Strictly not for gaming, trading, betting and unauthorized activities prohibited.
   description: Get our easy-to-use Payout API and pay your employees and vendors their payments using your digital wallet balance with a reliable & secure fund settlement APIs solution. 
   alert: "**Strictly not for the following use-cases:** \n Gaming, trading, betting or any unauthorized/illegal activity"
   documentation_link: https://developers.eko.in/docs/fund-transfer
@@ -776,9 +775,9 @@
 - name: GST Verification API
   title: GST Verification API – Instant & Reliable GSTIN Validation for Businesses
   tag_line: GST Verification API
-  social_image: /assets/img/developers/bank-verification-opt.svg
+  social_image: /assets/img/developers/verification/gst-main.png
   keywords: gst verification api
-  hero_image: /assets/img/developers/verification/gst-main.svg
+  hero_image: /assets/img/developers/verification/gst-main.png
   summary: Power your business with instant GSTIN verification to ensure compliance and prevent fraud. Our GST Verification API enables businesses to authenticate GST numbers in real-time, fetch legal business details, and streamline tax compliance effortlessly.
   description: Verify GST numbers instantly with our GST Verification API. Ensure compliance, prevent fraud, and fetch accurate business details in real-time. Easy integration, bulk verification, and 24/7 uptime. Get started today!
   documentation_link: https://developers.eko.in/docs/identity
@@ -792,10 +791,10 @@
       steps:
         - title: Comprehensive Data Access
           text: The GST Verification API provides detailed business information in a single request, including legal business name, principal address, GST status, registration date, taxpayer type, and jurisdiction details. This ensures seamless compliance, vendor verification, and record-keeping.
-          image: /assets/img/developers/verification/comp-data-access.svg
+          image: /assets/img/developers/verification/comp-data-access.png
         - title: Lightning-Fast Response
           text: With lightning-fast response times, the API delivers real-time GST verification in milliseconds, enabling instant data retrieval for bulk verifications, merchant onboarding, and automated tax compliance. With 99.9% uptime, businesses can ensure uninterrupted verification.
-          image: /assets/img/developers/verification/fast-response.svg
+          image: /assets/img/developers/verification/fast-response.png
         - title: Fraud Prevention
           text: Fraud prevention is key, and our API helps detect inactive, blacklisted, or fake GST numbers, reducing financial risks. By identifying canceled registrations and discrepancies, businesses can prevent fraud, avoid tax evasion risks, and stay compliant with regulatory requirements.
           image: /assets/img/developers/verification/fraud-prevention.png
@@ -857,9 +856,9 @@
 - name: RC Verification API
   title: RC Verification API | Instant Vehicle RC Status & Owner Details
   tag_line: RC Verification API
-  social_image: /assets/img/developers/bank-verification-opt.svg
+  social_image: /assets/img/developers/bank-verification-opt.png
   keywords: rc verification api
-  hero_image: /assets/img/developers/verification/rc-verification.svg
+  hero_image: /assets/img/developers/verification/rc-verification.png
   summary: Ultimate solution for instant and accurate vehicle registration certificate verification. Designed to streamline processes across industries, our API provides comprehensive vehicle data to ensure authenticity and compliance.
   description: Verify vehicle registration details instantly with our RC Verification API. Get real-time access to owner details, RC status, insurance validity, vehicle specifications, and more. Ensure compliance, prevent fraud & streamline vehicle verification effortlessly.
   documentation_link: https://developers.eko.in/docs/identity
@@ -873,10 +872,10 @@
       steps:
         - title: Comprehensive Data Access
           text: Get access to over 30 essential vehicle details, including owner information, RC status, insurance validity, chassis and engine numbers, financer details, and more. Ensure complete transparency and accuracy in vehicle verification.
-          image: /assets/img/developers/verification/comp-data-access.svg
+          image: /assets/img/developers/verification/comp-data-access.png
         - title: Instant Verification
           text: Our real-time API fetches vehicle registration data instantly, eliminating manual checks and reducing processing time. Accelerate decision-making for insurance, loans, compliance, and security verification
-          image: /assets/img/developers/verification/fast-response.svg
+          image: /assets/img/developers/verification/fast-response.png
         - title: Fraud Prevention
           text: Detect fraudulent activities by authenticating vehicle details directly from government databases. Prevent fake registrations, stolen vehicles, and blacklisted status issues before onboarding vehicles.
           image: /assets/img/developers/verification/fraud-prevention.png
@@ -937,9 +936,9 @@
 - name: DL Verification API
   title: DL Verification API | Instant Driving License Validation
   tag_line: DL Verification API
-  social_image: /assets/img/developers/verification/dl-verification.svg
+  social_image: /assets/img/developers/verification/dl-verification.png
   keywords: dl verification api
-  hero_image: /assets/img/developers/verification/dl-verification.svg
+  hero_image: /assets/img/developers/verification/dl-verification.png
   summary: Ensure seamless identity verification and prevent fraud with our Driving License (DL) Verification API. Instantly fetch details like license holder name, date of birth, issue date, expiry date, license status, vehicle class, and more directly from authoritative databases.
   description: Verify driving licenses instantly with our DL Verification API. Fetch DOB, validity, badge details, father’s/husband’s name, issue date, COV details, and more in real time. Prevent fraud & ensure compliance effortlessly!
   documentation_link: https://developers.eko.in/docs/identity
@@ -953,10 +952,10 @@
       steps:
         - title: Comprehensive Data Access
           text: Get detailed license holder information, including DOB, DL validity, badge details, issue date, father’s/husband’s name, class of vehicle (COV), and registered address. Access everything you need for accurate identity verification in a single API call.
-          image: /assets/img/developers/verification/comp-data-access.svg
+          image: /assets/img/developers/verification/comp-data-access.png
         - title: Lightning-Fast Response
           text: Experience millisecond-level API response times, enabling instant DL verification. Speed up KYC processes, reduce onboarding delays, and enhance customer experience with real-time license validation.
-          image: /assets/img/developers/verification/fast-response.svg
+          image: /assets/img/developers/verification/fast-response.png
         - title: Fraud Prevention
           text: Detect and prevent fraudulent activities with real-time license validation. Our API helps businesses identify fake, blacklisted, or expired licenses, reducing risks in financial transactions, insurance claims, and driver onboarding. Stay compliant and secure with verified, tamper-proof data.
           image: /assets/img/developers/verification/fraud-prevention.png
@@ -1018,9 +1017,9 @@
 - name: Passport Verification API
   title: Passport Verification API | Real-Time Passport Authentication
   tag_line: Passport Verification API
-  social_image: /assets/img/developers/verification/passport-verification.svg
+  social_image: /assets/img/developers/verification/passport-verification.png
   keywords: passport verification api
-  hero_image: /assets/img/developers/verification/passport-verification.svg
+  hero_image: /assets/img/developers/verification/passport-verification.png
   summary: Our Passport Verification API enables businesses to validate passport details in real-time, ensuring seamless identity verification and fraud prevention. Retrieve key details such as passport holder’s name, date of birth, file number, application type, and application received date directly from authoritative sources.
   description: Verify passport details instantly with our Passport Verification API. Fetch name, DOB, file number, application type, and application received date in real time. Prevent fraud, ensure compliance & streamline KYC effortlessly!
   documentation_link: https://developers.eko.in/docs/identity
@@ -1034,10 +1033,10 @@
       steps:
         - title: Comprehensive Data Access
           text: Get essential passport details, including holder’s name, DOB, file number, application type, and application date, for seamless identity verification.
-          image: /assets/img/developers/verification/comp-data-access.svg
+          image: /assets/img/developers/verification/comp-data-access.png
         - title: Lightning-Fast Response
           text: Experience millisecond-level API response times, reducing verification delays and ensuring quick onboarding & authentication.
-          image: /assets/img/developers/verification/fast-response.svg
+          image: /assets/img/developers/verification/fast-response.png
         - title: Fraud Prevention
           text: Detect fake, expired, or unauthorized passports before onboarding customers, issuing visas, or approving transactions. Ensure compliance and mitigate risks with real-time validation.
           image: /assets/img/developers/verification/fraud-prevention.png
@@ -1098,9 +1097,9 @@
 - name: CIN Verification API
   title: CIN Verification API | Real-Time Company Identification & Compliance
   tag_line: CIN Verification API
-  social_image: /assets/img/developers/verification/cin-verification.svg
+  social_image: /assets/img/developers/verification/cin-verification.png
   keywords: cin verification api
-  hero_image: /assets/img/developers/verification/cin-verification.svg
+  hero_image: /assets/img/developers/verification/cin-verification.png
   summary: Our CIN Verification API allows businesses to instantly verify Company Identification Numbers (CIN) and fetch critical company details. Retrieve key information such as company name, registration number, incorporation details, CIN status, director details, and registered email directly from authoritative sources.
   description: Verify company details instantly with our CIN Verification API. Retrieve company name, directors, registration number, CIN status, and email in real-time. Prevent fraud, ensure compliance & streamline business verification effortlessly!
   documentation_link: https://developers.eko.in/docs/identity
@@ -1114,10 +1113,10 @@
       steps:
         - title: Comprehensive Data Access
           text: Fetch complete company details, including registration number, directors, CIN status, and registered email, ensuring accurate validation.
-          image: /assets/img/developers/verification/comp-data-access.svg
+          image: /assets/img/developers/verification/comp-data-access.png
         - title: Lightning-Fast Response
           text: Get CIN verification results in milliseconds, enabling quick business onboarding and fraud prevention.
-          image: /assets/img/developers/verification/fast-response.svg
+          image: /assets/img/developers/verification/fast-response.png
         - title: Fraud Prevention
           text: Detect fake companies, inactive businesses, or shell entities before onboarding them into your system. Reduce risk and enhance compliance with real-time validation.
           image: /assets/img/developers/verification/fraud-prevention.png
@@ -1178,9 +1177,9 @@
 - name: Reverse Geocoding API
   title: Reverse Geocoding API – Convert Coordinates into Precise Addresses
   tag_line: Reverse Geocoding API
-  social_image: /assets/img/developers/verification/reverse-geocoding.svg
+  social_image: /assets/img/developers/verification/reverse-geocoding.png
   keywords: reverse geocoding api
-  hero_image: /assets/img/developers/verification/reverse-geocoding.svg
+  hero_image: /assets/img/developers/verification/reverse-geocoding.png
   summary: Our Reverse Geocoding API enables businesses to convert latitude & longitude into accurate addresses, helping power location-based services, logistics, ride-hailing, and navigation apps. Retrieve address, city, state, and PIN code in real-time with seamless integration and high precision.
   description: Convert latitude & longitude into accurate addresses with our Reverse Geocoding API. Fetch address, city, state, and PIN code in real-time. Enhance location-based services, logistics, and navigation with precise geospatial data!
   documentation_link: https://developers.eko.in/docs/identity
@@ -1194,10 +1193,10 @@
       steps:
         - title: Comprehensive Data Access
           text: Fetch complete company details, including registration number, directors, CIN status, and registered email, ensuring accurate validation.
-          image: /assets/img/developers/verification/comp-data-access.svg
+          image: /assets/img/developers/verification/comp-data-access.png
         - title: Lightning-Fast Response
           text: Get CIN verification results in milliseconds, enabling quick business onboarding and fraud prevention.
-          image: /assets/img/developers/verification/fast-response.svg
+          image: /assets/img/developers/verification/fast-response.png
         - title: Fraud Prevention
           text: Detect fake companies, inactive businesses, or shell entities before onboarding them into your system. Reduce risk and enhance compliance with real-time validation.
           image: /assets/img/developers/verification/fraud-prevention.png
