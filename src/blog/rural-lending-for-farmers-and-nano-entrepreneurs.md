@@ -12,7 +12,7 @@ tags:
 
 # From EMI to Empowerment: Rethinking Rural Lending for Farmers and Nano Entrepreneurs
 
-First and foremost, a warm thanks to the Government of India, the public-sector banks, and the Indian Banks’ Association (IBA) for spearheading the forthcoming “Grameen Credit Score” system, as reported in *Mint* today. This initiative marks a critical step toward bridging India’s rural credit gap and fostering financial inclusion for farmers, self-help groups (SHGs), and rural entrepreneurs.
+First and foremost, a warm thanks to the Government of India, the public-sector banks, and the Indian Banks’ Association (IBA) for spearheading the forthcoming “Grameen Credit Score” system, as reported in the [*Mint*](https://www.livemint.com/news/india/union-govt-to-roll-out-credit-rating-for-rural-borrowers-in-six-months-11739871972932.html). This initiative marks a critical step toward bridging India’s rural credit gap and fostering financial inclusion for farmers, self-help groups (SHGs), and rural entrepreneurs.
 
 ![Gramin Credit Score System](/assets/img/blog/rural-lending-for-farmers-and-nano-entrepreneurs/01.png)
 
@@ -79,6 +79,6 @@ The upcoming Grameen Credit Score, as reported in *Mint*, is a welcome developme
 By introducing more **flexible credit products** and harnessing the power of AI-driven tools, we can build an ecosystem that not only aids farmers and SHGs but also catalyzes the growth of micro and nano enterprises. Ultimately, this will drive the kind of sustainable, inclusive growth that the nation envisions under the banner of “Viksit Bharat.”
 
 
-> *Cited Article: “Centre to Roll Out Credit Rating for Rural Borrowers,” Subhash Narayan & Rhik Kundu, Mint (New Delhi Edition), February 20, 2025.*
+> *Cited Article: [“Govt to roll out credit rating for rural borrowers in six months,”](https://www.livemint.com/news/india/union-govt-to-roll-out-credit-rating-for-rural-borrowers-in-six-months-11739871972932.html) Subhash Narayan & Rhik Kundu, Mint, February 19, 2025.*
 
 > *Disclaimer: Data points cited on MSMEs, micro enterprises, and women-owned establishments are based on publicly available information from sources like the RBI, the Ministry of MSME, and the Sixth Economic Census.*
