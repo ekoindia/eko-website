@@ -10,8 +10,6 @@ tags:
   - MicroEntrepreneurs
 ---
 
-# From EMI to Empowerment: Rethinking Rural Lending for Farmers and Nano Entrepreneurs
-
 First and foremost, a warm thanks to the Government of India, the public-sector banks, and the Indian Banks’ Association (IBA) for spearheading the forthcoming “Grameen Credit Score” system, as reported in the [*Mint*](https://www.livemint.com/news/india/union-govt-to-roll-out-credit-rating-for-rural-borrowers-in-six-months-11739871972932.html). This initiative marks a critical step toward bridging India’s rural credit gap and fostering financial inclusion for farmers, self-help groups (SHGs), and rural entrepreneurs.
 
 ![Gramin Credit Score System](/assets/img/blog/rural-lending-for-farmers-and-nano-entrepreneurs/01.png)
