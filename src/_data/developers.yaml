@@ -181,7 +181,7 @@
   social_image: /assets/img/developers/salary-disbursal-first-fold-opt.svg
   keywords: Payout API, Whitelabel AePS Portal API, Aadhaar Enabled Payment System api, aeps api, aeps api provider bank
   hero_image: /assets/img/developers/salary-disbursal-first-fold-opt.svg
-  summary: Get our easy-to-use Payout API and pay your employees and vendors their payments using your digital wallet balance with ease. Note- Strictly not for gaming, trading, betting and unauthorized activities prohibited.
+  summary: Get our easy-to-use Payout API and pay your employees and vendors their payments using your digital wallet balance with ease.
   description: Get our easy-to-use Payout API and pay your employees and vendors their payments using your digital wallet balance with a reliable & secure fund settlement APIs solution. 
   alert: "**Strictly not for the following use-cases:** \n Gaming, trading, betting or any unauthorized/illegal activity"
   documentation_link: https://developers.eko.in/docs/fund-transfer
