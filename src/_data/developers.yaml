@@ -176,20 +176,20 @@
       button2_text: Contact Sales
 
 - name: Payment API
-  title: Payment API With Highest Success Rate | AePS, DMT, Cashout SDK API Provider Eko
+  title: Payout API With Highest Success Rate | AePS, DMT, Cashout SDK API Provider Eko
   tag_line: Make salary & vendor payments easily
   social_image: /assets/img/developers/salary-disbursal-first-fold-opt.svg
-  keywords: Payment API, Whitelabel AePS Portal API, Aadhaar Enabled Payment System api, aeps api, aeps api provider bank
+  keywords: Payout API, Whitelabel AePS Portal API, Aadhaar Enabled Payment System api, aeps api, aeps api provider bank
   hero_image: /assets/img/developers/salary-disbursal-first-fold-opt.svg
-  summary: Get our easy-to-use Payment API and pay your employees and vendors their payments using your digital wallet balance with ease.
-  description: Get our easy-to-use Payment API and pay your employees and vendors their payments using your digital wallet balance with a reliable & secure fund settlement APIs solution.
+  summary: Get our easy-to-use Payout API and pay your employees and vendors their payments using your digital wallet balance with ease. Note- Strictly not for gaming, trading, betting and unauthorized activities prohibited.
+  description: Get our easy-to-use Payout API and pay your employees and vendors their payments using your digital wallet balance with a reliable & secure fund settlement APIs solution. 
   alert: "**Strictly not for the following use-cases:** \n Gaming, trading, betting or any unauthorized/illegal activity"
   documentation_link: https://developers.eko.in/docs/fund-transfer
 
   layout:
     - section: mid_summary
-      small_description: Payment API
-      header: Instant salary disbursal & vendor payment using Eko’s Payment API
+      small_description: Payout API
+      header: Instant salary disbursal & vendor payment using Eko’s Payout API
 
     - section: alternating_steps
       steps:
@@ -234,25 +234,105 @@
       text: We use the same APIs here at Eko! Every API call is secured with one-time-use tokens generated using asymmetric cryptography. Our open-source libraries make it extremely easy & error-proof
 
     - section: step_section
-      header: How does Payment API work
+      header: How does Payout API work
       steps:
         - text: Sign Up on Connect App.
           link: https://connect.eko.in
         - text: Submit necessary documents
-        - text: Integrate Payment API
+        - text: Integrate Payout API
         - text: Start making payments
 
     - section: message
-      line1: The process of integrating Payment API is easy.
+      line1: The process of integrating Payout API is easy.
       main_line: For all integration related issues, we provide 24x7 support.
       button_text: Contact Support
 
     - section: get_started_banner
       small_header: Ready to get started?
-      main_header: Integrate our Payment API
+      main_header: Integrate our Payout API
       image: /assets/img/become-eko-partner-opt.svg
       button1_text: Get Started
       button2_text: Contact Sales
+
+- name: UPI Payout API
+  title: UPI Payout API | AePS, DMT, Cashout SDK API Provider Eko
+  tag_line: Empower your business with seamless UPI payouts for instant, error-free transactions.
+  social_image: /assets/img/developers/salary-disbursal-first-fold-opt.svg
+  keywords: UPI Payout API, Whitelabel AePS Portal API, Aadhaar Enabled Payment System api, aeps api, aeps api provider bank
+  hero_image: /assets/img/developers/salary-disbursal-first-fold-opt.svg
+  summary: Discover the UPI Payout API for seamless, real-time payouts. Automate refunds, vendor payments, and salaries with fast and secure UPI integration. Get started today.
+  description: Discover the UPI Payout API for seamless, real-time payouts. Automate refunds, vendor payments, and salaries with fast and secure UPI integration. Get started today.
+  alert: "**Strictly not for the following use-cases:** \n Gaming, trading, betting or any unauthorized/illegal activity"
+  documentation_link: https://developers.eko.in/docs/fund-transfer
+
+  layout:
+    - section: mid_summary
+      small_description: UPI Payout API
+      header: Key Features of Our UPI Payout API
+
+    - section: alternating_steps
+      steps:
+        - title: Real-Time Payouts
+          text: Transfer money instantly to any UPI ID without delays.
+          image: /assets/img/developers/easy-salary-disbursal-small.svg
+        - title: Bulk Transfers
+          text: Simplify large-scale transactions with efficient bulk payout processing.
+          image: /assets/img/developers/instant-vendor-payment-small.svg
+        - title: Track your Payment
+          text: Maintain a record of every vendor payment transaction you have made to avoid conflicts.
+          image: /assets/img/developers/transaction-alert.svg
+
+    - section: heros_main
+      header: Benefits
+      items:
+        - type: single # One item on its own in the center of the page
+          # Benefit 1 (center)
+          title: Business Scalability
+          text: Handle thousands of transactions per second with confidence.
+          image: /assets/img/developers/use-emoney-opt.svg
+        - type: single # One item on its own in the center of the page
+          # Benefit 2 (center)
+          title: Wide Coverage
+          text: Compatible with all major UPI-enabled apps and banks in India.
+          image: /assets/img/developers/24-x-7-avaialble.svg
+        - type: pair # 2 items side-by-side
+          # Benefit 3
+          title_left: Best Success Rate
+          text_left: Transaction failures occur rarely with our services. We ensure that you get the best success rate for every transaction. We are as reliable as banks themselves.
+          image_left: /assets/img/main/best-success-rate-opt.svg
+          # Benefit 4
+          title_right: Simple Documentation
+          text_right: The documentation for our APIs is comprehensive! We constantly update it to explain the minutest detail, and of course, we provide technical support.
+          image_right: /assets/img/developers/simple-documentation-opt.svg
+
+    - section: documentation_link_banner
+
+    - section: one_liner
+      icon: /assets/img/eko-trust-opt.svg
+      title: Eko's Trust
+      text: We use the same APIs here at Eko! Every API call is secured with one-time-use tokens generated using asymmetric cryptography. Our open-source libraries make it extremely easy & error-proof
+
+    - section: step_section
+      header: How does UPI Payout API work
+      steps:
+        - text: Sign Up on Connect App.
+          link: https://connect.eko.in
+        - text: Submit necessary documents
+        - text: Integrate UPI Payout API
+        - text: Start making payments
+
+    - section: message
+      line1: The process of integrating UPI Payout API is easy.
+      main_line: For all integration related issues, we provide 24x7 support.
+      button_text: Contact Support
+
+    - section: get_started_banner
+      small_header: Ready to get started?
+      main_header: Integrate our UPI Payout API
+      image: /assets/img/become-eko-partner-opt.svg
+      button1_text: Get Started
+      button2_text: Contact Sales
+
 
 - name: BBPS API
   sub_header:
@@ -692,21 +772,503 @@
       button1_text: Get Started
       button2_text: Contact Sales
 
+- name: GST Verification API
+  title: GST Verification API – Instant & Reliable GSTIN Validation for Businesses
+  tag_line: GST Verification API
+  social_image: /assets/img/developers/verification/gst-main.png
+  keywords: gst verification api
+  hero_image: /assets/img/developers/verification/gst-main.png
+  summary: Power your business with instant GSTIN verification to ensure compliance and prevent fraud. Our GST Verification API enables businesses to authenticate GST numbers in real-time, fetch legal business details, and streamline tax compliance effortlessly.
+  description: Verify GST numbers instantly with our GST Verification API. Ensure compliance, prevent fraud, and fetch accurate business details in real-time. Easy integration, bulk verification, and 24/7 uptime. Get started today!
+  documentation_link: https://developers.eko.in/docs/identity
+
+  layout:
+    - section: mid_summary
+      small_description: GST Verification API
+      header: Why Use GST Verification API?
+
+    - section: alternating_steps
+      steps:
+        - title: Comprehensive Data Access
+          text: The GST Verification API provides detailed business information in a single request, including legal business name, principal address, GST status, registration date, taxpayer type, and jurisdiction details. This ensures seamless compliance, vendor verification, and record-keeping.
+          image: /assets/img/developers/verification/comp-data-access.png
+        - title: Lightning-Fast Response
+          text: With lightning-fast response times, the API delivers real-time GST verification in milliseconds, enabling instant data retrieval for bulk verifications, merchant onboarding, and automated tax compliance. With 99.9% uptime, businesses can ensure uninterrupted verification.
+          image: /assets/img/developers/verification/fast-response.png
+        - title: Fraud Prevention
+          text: Fraud prevention is key, and our API helps detect inactive, blacklisted, or fake GST numbers, reducing financial risks. By identifying canceled registrations and discrepancies, businesses can prevent fraud, avoid tax evasion risks, and stay compliant with regulatory requirements.
+          image: /assets/img/developers/verification/fraud-prevention.png
+
+    - section: heros_main
+      header: Benefits
+      items:
+        - type: pair # 2 items side-by-side
+          # Benefit 1
+          title_left: Seamless Integration
+          text_left: Integrating our API is easy & we provide 24x7 manual integration support just in case, leaving no stone unturned to make the integration process seamless.
+          image_left: /assets/img/developers/easy-integration-opt.svg
+          # Benefit 2
+          title_right: Simple Documentation
+          text_right: The documentation for our APIs is comprehensive! We constantly update it to explain the minutest detail. Whether you use Python, Java, PHP, or C#, we have you covered!
+          image_right: /assets/img/developers/simple-documentation-opt.svg
+
+    - section: accordion
+      header: Frequently Asked Questions
+      faqs:
+        - title: What details does GST Verification API return?
+          description:  The GST Verification API provides comprehensive details for a given GST number or company name, ensuring accurate business verification. It returns the GST Number (GSTIN), legal name of the business, principal and split address, date of registration, and cancellation date (if applicable). The API also fetches the taxpayer type, GST status (Active/Inactive/Cancelled), nature of business activities, and jurisdiction details (state and center). Additionally, it includes a status code and last update timestamp, ensuring real-time and up-to-date information for seamless compliance and fraud prevention.
+        - title: Can I verify multiple GST numbers at once?
+          description: Yes! We support bulk GST verification via API
+        - title: Is this API GSTN-compliant?
+          description: Absolutely! Our API fetches data directly from GSTN for 100% compliance.
+        - title: Who can use this API?
+          description: The GST Verification API is valuable for banks and NBFCs to ensure KYC compliance and prevent fraudulent activities. E-commerce platforms and marketplaces use it to validate sellers before onboarding, ensuring authenticity. Fintech companies and payment processors rely on it for seamless GST verification in transactions. B2B service providers can check the legitimacy of suppliers and vendors, reducing the risk of dealing with non-compliant entities. Tax and accounting firms benefit from the API for accurate GST compliance and filing, ensuring businesses adhere to regulatory requirements effortlessly. API supports various bill categories, including electricity, water, gas, telecom, DTH, education, insurance, and more. The complete list of bill categories can be found on the BBPS platform website.
+        
+
+    - section: documentation_link_banner
+
+    - section: one_liner
+      icon: /assets/img/eko-trust-opt.svg
+      title: Eko's Trust
+      text: We use the same APIs here at Eko! Every API call is secured with one-time-use tokens generated using asymmetric cryptography. Our open-source libraries make it extremely easy & error-proof.
+
+    - section: step_section
+      header: How to integrate GST Verification API
+      steps:
+        - text: Sign Up on Connect App.
+          link: https://connect.eko.in
+        - text: Submit necessary documents
+        - text: Integrate GST verification API
+        - text: Start verifiying GSTIN number
+
+    - section: message
+      line1: The process of integrating GST verification API is easy.
+      main_line: For all integration related issues, we provide 24x7 support.
+      button_text: Contact Support
+
+    - section: get_started_banner
+      small_header: Ready to get started?
+      main_header: Integrate our GST Verification API
+      image: /assets/img/become-eko-partner-opt.svg
+      button1_text: Get Started
+      button2_text: Contact Sales
+
+- name: RC Verification API
+  title: RC Verification API | Instant Vehicle RC Status & Owner Details
+  tag_line: RC Verification API
+  social_image: /assets/img/developers/verification/rc-verification.png
+  keywords: rc verification api
+  hero_image: /assets/img/developers/verification/rc-verification.png
+  summary: Ultimate solution for instant and accurate vehicle registration certificate verification. Designed to streamline processes across industries, our API provides comprehensive vehicle data to ensure authenticity and compliance.
+  description: Verify vehicle registration details instantly with our RC Verification API. Get real-time access to owner details, RC status, insurance validity, vehicle specifications, and more. Ensure compliance, prevent fraud & streamline vehicle verification effortlessly.
+  documentation_link: https://developers.eko.in/docs/identity
+
+  layout:
+    - section: mid_summary
+      small_description: RC Verification API
+      header: Why Choose Our RC Verification API?
+
+    - section: alternating_steps
+      steps:
+        - title: Comprehensive Data Access
+          text: Get access to over 30 essential vehicle details, including owner information, RC status, insurance validity, chassis and engine numbers, financer details, and more. Ensure complete transparency and accuracy in vehicle verification.
+          image: /assets/img/developers/verification/comp-data-access.png
+        - title: Instant Verification
+          text: Our real-time API fetches vehicle registration data instantly, eliminating manual checks and reducing processing time. Accelerate decision-making for insurance, loans, compliance, and security verification
+          image: /assets/img/developers/verification/fast-response.png
+        - title: Fraud Prevention
+          text: Detect fraudulent activities by authenticating vehicle details directly from government databases. Prevent fake registrations, stolen vehicles, and blacklisted status issues before onboarding vehicles.
+          image: /assets/img/developers/verification/fraud-prevention.png
+
+    - section: heros_main
+      header: Benefits
+      items:
+        - type: pair # 2 items side-by-side
+          # Benefit 1
+          title_left: Seamless Integration
+          text_left: Integrating our API is easy & we provide 24x7 manual integration support just in case, leaving no stone unturned to make the integration process seamless.
+          image_left: /assets/img/developers/easy-integration-opt.svg
+          # Benefit 2
+          title_right: Simple Documentation
+          text_right: The documentation for our APIs is comprehensive! We constantly update it to explain the minutest detail. Whether you use Python, Java, PHP, or C#, we have you covered!
+          image_right: /assets/img/developers/simple-documentation-opt.svg
+  
+    - section: accordion
+      header: Frequently Asked Questions
+      faqs:
+        - title: What details does the RC Verification API return?
+          description:  The API provides comprehensive vehicle details, including vehicle category, owner name, address, RC status, chassis number, engine number, vehicle color, body type, manufacturer, model, RC expiry date, vehicle tax validity, insurance details, state jurisdiction, blacklisted status, and financing details.
+        - title: Who can use the RC Verification API?
+          description: The API is useful for banks, NBFCs, insurance companies, vehicle marketplaces, logistics providers, ride-sharing platforms, and law enforcement agencies to verify vehicle details, assess ownership, detect fraud, and streamline compliance.
+        - title: How does the RC Verification API work?
+          description: By entering a vehicle registration number, the API fetches real-time data from official transport records. It instantly provides detailed RC information, helping businesses authenticate vehicle ownership and ensure regulatory compliance.
+        - title: Does the API provide insurance details?
+          description: Yes, the API returns insurance company name and insurance validity date, ensuring businesses and insurers can check the policy status and prevent fraudulent claims.
+
+    - section: documentation_link_banner
+
+    - section: one_liner
+      icon: /assets/img/eko-trust-opt.svg
+      title: Eko's Trust
+      text: We use the same APIs here at Eko! Every API call is secured with one-time-use tokens generated using asymmetric cryptography. Our open-source libraries make it extremely easy & error-proof.
+
+    - section: step_section
+      header: How to integrate RC Verification API
+      steps:
+        - text: Sign Up on Connect App.
+          link: https://connect.eko.in
+        - text: Submit necessary documents
+        - text: Integrate RC verification API
+        - text: Start verifiying vehicle's RC
+
+    - section: message
+      line1: The process of integrating RC verification API is easy.
+      main_line: For all integration related issues, we provide 24x7 support.
+      button_text: Contact Support
+
+    - section: get_started_banner
+      small_header: Ready to get started?
+      main_header: Integrate our RC Verification API
+      image: /assets/img/become-eko-partner-opt.svg
+      button1_text: Get Started
+      button2_text: Contact Sales
+
+- name: DL Verification API
+  title: DL Verification API | Instant Driving License Validation
+  tag_line: DL Verification API
+  social_image: /assets/img/developers/verification/dl-verification.png
+  keywords: dl verification api
+  hero_image: /assets/img/developers/verification/dl-verification.png
+  summary: Ensure seamless identity verification and prevent fraud with our Driving License (DL) Verification API. Instantly fetch details like license holder name, date of birth, issue date, expiry date, license status, vehicle class, and more directly from authoritative databases.
+  description: Verify driving licenses instantly with our DL Verification API. Fetch DOB, validity, badge details, father’s/husband’s name, issue date, COV details, and more in real time. Prevent fraud & ensure compliance effortlessly!
+  documentation_link: https://developers.eko.in/docs/identity
+
+  layout:
+    - section: mid_summary
+      small_description: DL Verification API
+      header: Why Choose Our DL Verification API?
+
+    - section: alternating_steps
+      steps:
+        - title: Comprehensive Data Access
+          text: Get detailed license holder information, including DOB, DL validity, badge details, issue date, father’s/husband’s name, class of vehicle (COV), and registered address. Access everything you need for accurate identity verification in a single API call.
+          image: /assets/img/developers/verification/comp-data-access.png
+        - title: Lightning-Fast Response
+          text: Experience millisecond-level API response times, enabling instant DL verification. Speed up KYC processes, reduce onboarding delays, and enhance customer experience with real-time license validation.
+          image: /assets/img/developers/verification/fast-response.png
+        - title: Fraud Prevention
+          text: Detect and prevent fraudulent activities with real-time license validation. Our API helps businesses identify fake, blacklisted, or expired licenses, reducing risks in financial transactions, insurance claims, and driver onboarding. Stay compliant and secure with verified, tamper-proof data.
+          image: /assets/img/developers/verification/fraud-prevention.png
+
+    - section: heros_main
+      header: Benefits
+      items:
+        - type: pair # 2 items side-by-side
+          # Benefit 1
+          title_left: Seamless Integration
+          text_left: Integrating our API is easy & we provide 24x7 manual integration support just in case, leaving no stone unturned to make the integration process seamless.
+          image_left: /assets/img/developers/easy-integration-opt.svg
+          # Benefit 2
+          title_right: Simple Documentation
+          text_right: The documentation for our APIs is comprehensive! We constantly update it to explain the minutest detail. Whether you use Python, Java, PHP, or C#, we have you covered!
+          image_right: /assets/img/developers/simple-documentation-opt.svg
+
+    - section: accordion
+      header: Frequently Asked Questions
+      faqs:
+        - title: What details does the DL Verification API return?
+          description:  The API provides comprehensive details, including badge details, DOB, DL validity, father’s/husband’s name, COV details (types of vehicles permitted), registered address, and the date of issue of the driving license.
+        - title: Who can use the DL Verification API?
+          description: The API is useful for banks, NBFCs, insurance companies, vehicle marketplaces, logistics providers, ride-sharing platforms, and law enforcement agencies to verify vehicle details, assess ownership, detect fraud, and streamline compliance.
+        - title: How does the DL Verification API work?
+          description: By entering a driving license number, the API fetches real-time data from official government transport records, providing verified details instantly.
+        - title: Does the API provide insurance details?
+          description: Yes, the API returns insurance company name and insurance validity date, ensuring businesses and insurers can check the policy status and prevent fraudulent claims.
+
+
+    - section: documentation_link_banner
+
+    - section: one_liner
+      icon: /assets/img/eko-trust-opt.svg
+      title: Eko's Trust
+      text: We use the same APIs here at Eko! Every API call is secured with one-time-use tokens generated using asymmetric cryptography. Our open-source libraries make it extremely easy & error-proof.
+
+    - section: step_section
+      header: How to integrate DL Verification API
+      steps:
+        - text: Sign Up on Connect App.
+          link: https://connect.eko.in
+        - text: Submit necessary documents
+        - text: Integrate DL verification API
+        - text: Start verifiying DL
+
+    - section: message
+      line1: The process of integrating DL verification API is easy.
+      main_line: For all integration related issues, we provide 24x7 support.
+      button_text: Contact Support
+
+    - section: get_started_banner
+      small_header: Ready to get started?
+      main_header: Integrate our DL Verification API
+      image: /assets/img/become-eko-partner-opt.svg
+      button1_text: Get Started
+      button2_text: Contact Sales
+
+- name: Passport Verification API
+  title: Passport Verification API | Real-Time Passport Authentication
+  tag_line: Passport Verification API
+  social_image: /assets/img/developers/verification/passport-verification.png
+  keywords: passport verification api
+  hero_image: /assets/img/developers/verification/passport-verification.png
+  summary: Our Passport Verification API enables businesses to validate passport details in real-time, ensuring seamless identity verification and fraud prevention. Retrieve key details such as passport holder’s name, date of birth, file number, application type, and application received date directly from authoritative sources.
+  description: Verify passport details instantly with our Passport Verification API. Fetch name, DOB, file number, application type, and application received date in real time. Prevent fraud, ensure compliance & streamline KYC effortlessly!
+  documentation_link: https://developers.eko.in/docs/identity
+
+  layout:
+    - section: mid_summary
+      small_description: Passport Verification API
+      header: Why Choose Our Passport Verification API?
+
+    - section: alternating_steps
+      steps:
+        - title: Comprehensive Data Access
+          text: Get essential passport details, including holder’s name, DOB, file number, application type, and application date, for seamless identity verification.
+          image: /assets/img/developers/verification/comp-data-access.png
+        - title: Lightning-Fast Response
+          text: Experience millisecond-level API response times, reducing verification delays and ensuring quick onboarding & authentication.
+          image: /assets/img/developers/verification/fast-response.png
+        - title: Fraud Prevention
+          text: Detect fake, expired, or unauthorized passports before onboarding customers, issuing visas, or approving transactions. Ensure compliance and mitigate risks with real-time validation.
+          image: /assets/img/developers/verification/fraud-prevention.png
+
+    - section: heros_main
+      header: Benefits
+      items:
+        - type: pair # 2 items side-by-side
+          # Benefit 1
+          title_left: Seamless Integration
+          text_left: Integrating our API is easy & we provide 24x7 manual integration support just in case, leaving no stone unturned to make the integration process seamless.
+          image_left: /assets/img/developers/easy-integration-opt.svg
+          # Benefit 2
+          title_right: Simple Documentation
+          text_right: The documentation for our APIs is comprehensive! We constantly update it to explain the minutest detail. Whether you use Python, Java, PHP, or C#, we have you covered!
+          image_right: /assets/img/developers/simple-documentation-opt.svg
+
+    - section: accordion
+      header: Frequently Asked Questions
+      faqs:
+        - title: What details does the Passport Verification API return?
+          description:  The API provides key details, including file number, passport holder’s name, date of birth (DOB), application type, and application received date, ensuring accurate identity verification for businesses.
+        - title: Who can use the Passport Verification API?
+          description: This API is beneficial for banks, NBFCs, travel & visa agencies, fintech companies, airlines, immigration services, corporate HR departments, and law enforcement agencies that require identity authentication and fraud prevention in financial transactions, employment verification, and international travel processes.
+        - title: How does the Passport Verification API work?
+          description: By entering a passport number, the API fetches real-time data from official records and returns verified passport holder details, allowing businesses to authenticate identity instantly.
+        - title: How does this API help prevent fraud?
+          description: The Passport Verification API ensures only genuine passport details are accepted, reducing the risks of identity theft, document forgery, and fraudulent transactions. This is crucial for businesses handling sensitive financial or immigration-related processes.
+
+    - section: documentation_link_banner
+
+    - section: one_liner
+      icon: /assets/img/eko-trust-opt.svg
+      title: Eko's Trust
+      text: We use the same APIs here at Eko! Every API call is secured with one-time-use tokens generated using asymmetric cryptography. Our open-source libraries make it extremely easy & error-proof.
+
+    - section: step_section
+      header: How to integrate Passport Verification API
+      steps:
+        - text: Sign Up on Connect App.
+          link: https://connect.eko.in
+        - text: Submit necessary documents
+        - text: Integrate passport verification API
+        - text: Start verifiying passports
+
+    - section: message
+      line1: The process of integrating passport verification API is easy.
+      main_line: For all integration related issues, we provide 24x7 support.
+      button_text: Contact Support
+
+    - section: get_started_banner
+      small_header: Ready to get started?
+      main_header: Integrate our Passport Verification API
+      image: /assets/img/become-eko-partner-opt.svg
+      button1_text: Get Started
+      button2_text: Contact Sales
+
+- name: CIN Verification API
+  title: CIN Verification API | Real-Time Company Identification & Compliance
+  tag_line: CIN Verification API
+  social_image: /assets/img/developers/verification/cin-verification.png
+  keywords: cin verification api
+  hero_image: /assets/img/developers/verification/cin-verification.png
+  summary: Our CIN Verification API allows businesses to instantly verify Company Identification Numbers (CIN) and fetch critical company details. Retrieve key information such as company name, registration number, incorporation details, CIN status, director details, and registered email directly from authoritative sources.
+  description: Verify company details instantly with our CIN Verification API. Retrieve company name, directors, registration number, CIN status, and email in real-time. Prevent fraud, ensure compliance & streamline business verification effortlessly!
+  documentation_link: https://developers.eko.in/docs/identity
+
+  layout:
+    - section: mid_summary
+      small_description: Passport Verification API
+      header: Why Choose Our Passport Verification API?
+
+    - section: alternating_steps
+      steps:
+        - title: Comprehensive Data Access
+          text: Fetch complete company details, including registration number, directors, CIN status, and registered email, ensuring accurate validation.
+          image: /assets/img/developers/verification/comp-data-access.png
+        - title: Lightning-Fast Response
+          text: Get CIN verification results in milliseconds, enabling quick business onboarding and fraud prevention.
+          image: /assets/img/developers/verification/fast-response.png
+        - title: Fraud Prevention
+          text: Detect fake companies, inactive businesses, or shell entities before onboarding them into your system. Reduce risk and enhance compliance with real-time validation.
+          image: /assets/img/developers/verification/fraud-prevention.png
+
+    - section: heros_main
+      header: Benefits
+      items:
+        - type: pair # 2 items side-by-side
+          # Benefit 1
+          title_left: Seamless Integration
+          text_left: Integrating our API is easy & we provide 24x7 manual integration support just in case, leaving no stone unturned to make the integration process seamless.
+          image_left: /assets/img/developers/easy-integration-opt.svg
+          # Benefit 2
+          title_right: Simple Documentation
+          text_right: The documentation for our APIs is comprehensive! We constantly update it to explain the minutest detail. Whether you use Python, Java, PHP, or C#, we have you covered!
+          image_right: /assets/img/developers/simple-documentation-opt.svg
+
+    - section: accordion
+      header: Frequently Asked Questions
+      faqs:
+        - title: What details does the CIN Verification API return?
+          description:  The API provides key company information, including director details, registration number, incorporation number, CIN status, registered email, and legal company name, ensuring accurate corporate verification.
+        - title: Who can use the CIN Verification API?
+          description: This API is beneficial for banks, NBFCs, legal firms, financial service providers, B2B marketplaces, corporate compliance teams, tax & accounting firms, and government agencies that need to verify businesses before engaging in financial transactions or partnerships.
+        - title: How does the CIN Verification API work?
+          description: By entering a Company Identification Number (CIN), the API fetches real-time company details from official records, allowing businesses to verify registration details, legal status, and company ownership instantly.
+        - title: How does this API help prevent fraud?
+          description: The CIN Verification API helps businesses detect fraudulent or shell companies, inactive businesses, and fake registrations, ensuring they engage only with legitimate and legally registered entities.
+
+    - section: documentation_link_banner
+
+    - section: one_liner
+      icon: /assets/img/eko-trust-opt.svg
+      title: Eko's Trust
+      text: We use the same APIs here at Eko! Every API call is secured with one-time-use tokens generated using asymmetric cryptography. Our open-source libraries make it extremely easy & error-proof.
+
+    - section: step_section
+      header: How to integrate CIN Verification API
+      steps:
+        - text: Sign Up on Connect App.
+          link: https://connect.eko.in
+        - text: Submit necessary documents
+        - text: Integrate CIN verification API
+        - text: Start verifiying CIN number
+
+    - section: message
+      line1: The process of integrating CIN verification API is easy.
+      main_line: For all integration related issues, we provide 24x7 support.
+      button_text: Contact Support
+
+    - section: get_started_banner
+      small_header: Ready to get started?
+      main_header: Integrate our CIN Verification API
+      image: /assets/img/become-eko-partner-opt.svg
+      button1_text: Get Started
+      button2_text: Contact Sales
+
+- name: Reverse Geocoding API
+  title: Reverse Geocoding API – Convert Coordinates into Precise Addresses
+  tag_line: Reverse Geocoding API
+  social_image: /assets/img/developers/verification/reverse-geocoding.png
+  keywords: reverse geocoding api
+  hero_image: /assets/img/developers/verification/reverse-geocoding.png
+  summary: Our Reverse Geocoding API enables businesses to convert latitude & longitude into accurate addresses, helping power location-based services, logistics, ride-hailing, and navigation apps. Retrieve address, city, state, and PIN code in real-time with seamless integration and high precision.
+  description: Convert latitude & longitude into accurate addresses with our Reverse Geocoding API. Fetch address, city, state, and PIN code in real-time. Enhance location-based services, logistics, and navigation with precise geospatial data!
+  documentation_link: https://developers.eko.in/docs/identity
+
+  layout:
+    - section: mid_summary
+      small_description: Reverse Geocoding API
+      header: Why Choose Our Reverse Geocoding API?
+
+    - section: alternating_steps
+      steps:
+        - title: Comprehensive Data Access
+          text: Fetch complete company details, including registration number, directors, CIN status, and registered email, ensuring accurate validation.
+          image: /assets/img/developers/verification/comp-data-access.png
+        - title: Lightning-Fast Response
+          text: Get CIN verification results in milliseconds, enabling quick business onboarding and fraud prevention.
+          image: /assets/img/developers/verification/fast-response.png
+        - title: Fraud Prevention
+          text: Detect fake companies, inactive businesses, or shell entities before onboarding them into your system. Reduce risk and enhance compliance with real-time validation.
+          image: /assets/img/developers/verification/fraud-prevention.png
+
+    - section: heros_main
+      header: Benefits
+      items:
+        - type: pair # 2 items side-by-side
+          # Benefit 1
+          title_left: Seamless Integration
+          text_left: Integrating our API is easy & we provide 24x7 manual integration support just in case, leaving no stone unturned to make the integration process seamless.
+          image_left: /assets/img/developers/easy-integration-opt.svg
+          # Benefit 2
+          title_right: Simple Documentation
+          text_right: The documentation for our APIs is comprehensive! We constantly update it to explain the minutest detail. Whether you use Python, Java, PHP, or C#, we have you covered!
+          image_right: /assets/img/developers/simple-documentation-opt.svg
+
+    - section: accordion
+      header: Frequently Asked Questions
+      faqs:
+        - title: What details does the Reverse Geocoding API return?
+          description: The API returns structured address information, including street address, city, state, and PIN code, derived from the provided latitude and longitude coordinates.
+        - title: Who can use the Reverse Geocoding API?
+          description: The API is beneficial for ride-hailing & delivery services, logistics & supply chain management, e-commerce, fintech & fraud prevention systems, emergency services, and mapping applications that require accurate address information from GPS coordinates.
+        - title: How does the Reverse Geocoding API work?
+          description: By entering latitude and longitude, the API fetches and returns the corresponding address details from global geolocation databases, allowing businesses to obtain precise location information instantly.
+        - title: How does this API help prevent fraud?
+          description: The API can validate user location data, preventing fraud in fintech and e-commerce by ensuring that addresses match the actual geolocation. It is also useful for detecting suspicious or inconsistent location entries.
+
+    - section: documentation_link_banner
+
+    - section: one_liner
+      icon: /assets/img/eko-trust-opt.svg
+      title: Eko's Trust
+      text: We use the same APIs here at Eko! Every API call is secured with one-time-use tokens generated using asymmetric cryptography. Our open-source libraries make it extremely easy & error-proof.
+
+    - section: step_section
+      header: How to integrate Reverse Geocoding API
+      steps:
+        - text: Sign Up on Connect App.
+          link: https://connect.eko.in
+        - text: Submit necessary documents
+        - text: Integrate Reverse Geocoding API
+        - text: Start Reverse Geocoding
+
+    - section: message
+      line1: The process of integrating Reverse Geocoding API is easy.
+      main_line: For all integration related issues, we provide 24x7 support.
+      button_text: Contact Support
+
+    - section: get_started_banner
+      small_header: Ready to get started?
+      main_header: Integrate our Reverse Geocoding API
+      image: /assets/img/become-eko-partner-opt.svg
+      button1_text: Get Started
+      button2_text: Contact Sales
+
 - name: Aadhaar Verification API
-  sub_header:
+  sub_header: Aadhaar Verification API
   title: Aadhaar Verification API
-  tag_line: Aadhaar verification API
+  tag_line: Fast and Secure Aadhaar Verification API for Real-Time KYC Compliance
   social_image: /assets/img/developers/pan-verification-2-opt.svg
   keywords: Aadhaar Verification api, Aadhaar Verification api india, online Aadhaar Verification api, Instant PAN Verification API, Aadhaar ekyc api, Aadhaar kyc api
   hero_image: /assets/img/developers/pan-verification-2-opt.svg
-  summary: Customer onboarding & verification made easy with Aadhaar Verification API. Just integrate and get going.
+  summary: The Aadhaar Verification API enables businesses to verify an individual's Aadhaar details in real-time. It ensures seamless KYC processes by securely connecting with UIDAI's database for instant validation.
   description: Aadhaar Verification API made customer onboarding & verification easy with Real-time onboarding and verification of users is as easy as it gets with Aadhaar Verification API. Just integrate the API and get going.
   documentation_link: https://developers.eko.in/docs/identity
 
   layout:
     - section: icon_list
-      header: Real-time Verification
-      subtitle:
+      header: Real-time Verification using Aadhaar
+      subtitle: 
       description: Use Eko’s UIDAI-powered Aadhaar verification API to validate your customers, employees, and merchants. With our easy-to-use API you can substantially mitigate Identity-fraud.
       icons:
         - image: /assets/img/developers/pan-valid-icon.svg
@@ -715,6 +1277,11 @@
           caption: Check associated Aadhaar details
         - image: /assets/img/developers/secure-icon.svg
           caption: Secure, simple and robust
+
+    - section: message
+      line1: "**Aadhaar Verification API Use Cases** \n\nThere are mutiple use cases for aadhaar Verifcation API.\n\n**1** - Banks and financial institutions for KYC compliance\n\n**2** - Telecom providers for new customer onboarding.\n\n**3** - Insurance companies for policyholder verification.\n\n**4** - Fintech companies for fraud prevention.\n\n**5** - Government or enterprise workflows requiring Aadhaar validation."
+      main_line: For all integration related issues, we provide 24x7 support.
+      button_text: Contact Support
 
     - section: heros_main
       header: Benefits
@@ -742,7 +1309,7 @@
         - text: Go live with your production credentials!
 
     - section: message
-      line1: "**AADHAAR API** \n\nEko’s Aadhaar API provides an easy **“three step”** process for Aadhaar verification.\n\n**1** - Aadhaar consent is taken from the Aadhaar holder.\n\n**2** - The Aadhaar number is first sent to UIDAI and Authorized through OTP.\n\n**3** - In response we return the Aadhaar details associated with the Aadhaar number."
+      line1: "**Aadhaar verification Process.** \n\nEko’s Aadhaar API provides an easy **“three step”** process for Aadhaar verification.\n\n**1** - Aadhaar consent is taken from the Aadhaar holder.\n\n**2** - The Aadhaar number is first sent to UIDAI and Authorized through OTP.\n\n**3** - In response we return the Aadhaar details associated with the Aadhaar number."
       main_line: For all integration related issues, we provide 24x7 support.
       button_text: Contact Support
 
@@ -802,7 +1369,7 @@
           text_right: Record keeping service enabled on request for clients to download the OCR documents anytime.
           image_right: /assets/img/New/FD.png
     - section: documentation_link_banner
-
+    
     - section: step_section
       header: How to integrate OCR API
       steps:
