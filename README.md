@@ -17,13 +17,17 @@ The Eko website & blog built with [Eleventy](https://www.11ty.dev). Uses reusabl
 1. Simple stack. Minification/bundling using internal 11ty plugins.
 
 ## 🔗 Table Of Contents
-1. [Getting Started](#-getting-started-development-setup)
-2. [Project Structure](#-project-structure)
-3. [How to add a new blog post?](#-how-to-add-a-new-blog-post)
-4. [How to add or edit a Retail-product page?](#-how-to-add-or-edit-a-retail-product-page)
-5. [How to add or edit an API-product page?](#-how-to-add-or-edit-an-api-product-page)
-6. [How to add a custom page?](#-how-to-add-a-custom-page)
-7. [How to add redirections to support old links?](#-how-to-add-redirections-to-support-old-links)
+- [🌟 Features](#-features)
+- [🔗 Table Of Contents](#-table-of-contents)
+- [🏁 Getting Started (Development Setup)](#-getting-started-development-setup)
+- [🔁 Pull Request Guidelines (Making Changes)](#-pull-request-guidelines-making-changes)
+- [🗃 Project Structure](#-project-structure)
+- [❓ How to add a new blog post?](#-how-to-add-a-new-blog-post)
+- [❓ How to add or edit a Retail-product page?](#-how-to-add-or-edit-a-retail-product-page)
+- [❓ How to add or edit an API-product page?](#-how-to-add-or-edit-an-api-product-page)
+- [❓ How to add a custom page?](#-how-to-add-a-custom-page)
+- [❓ How to add redirections to support old links?](#-how-to-add-redirections-to-support-old-links)
+- [❓ How to add a new `env` variable?](#-how-to-add-a-new-env-variable)
 
 
 ## 🏁 Getting Started (Development Setup)
@@ -36,6 +40,14 @@ The Eko website & blog built with [Eleventy](https://www.11ty.dev). Uses reusabl
 1. Build and host locally for local development: `npm start`
    Checkout in the browser: `localhost:8080`
 
+## 🔁 Pull Request Guidelines (Making Changes)
+1. Fork this repository
+2. Create a new branch: `git checkout -b my-new-feature`
+3. Make your changes
+4. Test your changes: `npm run build` and `npm start`
+5. Commit your changes: `git commit -am 'Add some feature'`
+6. Push to the branch: `git push origin my-new-feature`
+7. Submit a pull request in this repository
 
 ## 🗃 Project Structure
 * 📄🔧 [**.eleventy.js**](.eleventy.js)  `All project technical configurations go here`
