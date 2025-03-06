@@ -5,6 +5,7 @@ h1 {
 	line-height: 1.6;
 	color: var(--header-color);
 	border-bottom: 1px solid var(--divider-color);
+	text-wrap: balance;
 }
 h2 { font-size: 1.5em; }
 h3 { font-size: 1.17em; }
@@ -122,6 +123,7 @@ img.hero {
 
 .blogslist h4 {
 	margin: 0.2em 0;
+	text-wrap: balance;
 }
 
 .blogslist p {
