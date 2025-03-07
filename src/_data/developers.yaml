@@ -182,7 +182,7 @@
   keywords: Payout API, Whitelabel AePS Portal API, Aadhaar Enabled Payment System api, aeps api, aeps api provider bank
   hero_image: /assets/img/developers/salary-disbursal-first-fold-opt.svg
   summary: Get our easy-to-use Payout API and pay your employees and vendors their payments using your digital wallet balance with ease.
-  description: Get our easy-to-use Payout API and pay your employees and vendors their payments using your digital wallet balance with a reliable & secure fund settlement APIs solution.
+  description: Get our easy-to-use Payout API and pay your employees and vendors their payments using your digital wallet balance with a reliable & secure fund settlement APIs solution. 
   alert: "**Strictly not for the following use-cases:** \n Gaming, trading, betting or any unauthorized/illegal activity"
   documentation_link: https://developers.eko.in/docs/fund-transfer
 
@@ -823,7 +823,7 @@
           description: Absolutely! Our API fetches data directly from GSTN for 100% compliance.
         - title: Who can use this API?
           description: The GST Verification API is valuable for banks and NBFCs to ensure KYC compliance and prevent fraudulent activities. E-commerce platforms and marketplaces use it to validate sellers before onboarding, ensuring authenticity. Fintech companies and payment processors rely on it for seamless GST verification in transactions. B2B service providers can check the legitimacy of suppliers and vendors, reducing the risk of dealing with non-compliant entities. Tax and accounting firms benefit from the API for accurate GST compliance and filing, ensuring businesses adhere to regulatory requirements effortlessly. API supports various bill categories, including electricity, water, gas, telecom, DTH, education, insurance, and more. The complete list of bill categories can be found on the BBPS platform website.
-
+        
 
     - section: documentation_link_banner
 
@@ -853,10 +853,253 @@
       button1_text: Get Started
       button2_text: Contact Sales
 
+- name: Voter ID Verification API
+  title: Voter ID Verification API | Instant & Secure Voter Authentication
+  tag_line: Voter ID Verification API – Instant & Reliable Voter Identity Authentication
+  social_image: /assets/img/developers/verification/voter_id.png
+  keywords: voter id verification api
+  hero_image: /assets/img/developers/verification/voter_id.png
+  summary: Verify Voter ID Details Instantly & Ensure Secure Authentication The Voter ID Verification API enables businesses, government bodies, and organizations to instantly verify voter details using the EPIC (Election Photo Identity Card) number. Retrieve key information such as name, DOB, gender, address, parent/guardian details, constituency information, and polling station details, ensuring seamless identity verification, fraud prevention, and regulatory compliance.
+  description: Verify voter ID details instantly with our Voter ID Verification API. Retrieve name, DOB, gender, address, constituency, polling station, and more in real-time using an EPIC number. Ensure KYC compliance, fraud prevention & seamless identity verification today!
+  documentation_link: https://developers.eko.in/docs/identity
+
+  layout:
+    - section: mid_summary
+      small_description: Voter ID Verification API
+      header: Why Use Voter ID Verification API?
+
+    - section: alternating_steps
+      steps:
+        - title: Comprehensive Data Access
+          text: The Voter ID Verification API provides detailed voter information with just an EPIC number, eliminating manual verification. It retrieves name, date of birth, gender, address, parent/guardian details, and polling station information in both English and regional languages. The API also provides assembly and parliamentary constituency details, ensuring businesses and government agencies have access to all necessary voter information in a single request.
+          image: /assets/img/developers/verification/comp-data-access.png
+        - title: Lightning-Fast Response
+          text: Speed is essential in identity verification, and our Voter ID Verification API delivers real-time results in milliseconds. Whether you need to onboard users, validate electoral details, or automate KYC compliance, our API ensures instant and seamless voter verification. With 99.9% uptime, businesses can conduct bulk identity checks efficiently without delays.
+          image: /assets/img/developers/verification/fast-response.png
+        - title: Fraud Prevention
+          text: The API plays a crucial role in detecting fraudulent voter IDs, ensuring businesses and government agencies deal only with authentic and active voter registrations. By cross-checking details such as DOB, parent/guardian names, and constituency data, the API helps eliminate fake, duplicated, or manipulated voter IDs, reducing risks in KYC processes, elections, and financial transactions.
+          image: /assets/img/developers/verification/fraud-prevention.png
+
+    - section: heros_main
+      header: Benefits
+      items:
+        - type: pair # 2 items side-by-side
+          # Benefit 1
+          title_left: Seamless Integration
+          text_left: Integrating our API is easy & we provide 24x7 manual integration support just in case, leaving no stone unturned to make the integration process seamless.
+          image_left: /assets/img/developers/easy-integration-opt.svg
+          # Benefit 2
+          title_right: Simple Documentation
+          text_right: The documentation for our APIs is comprehensive! We constantly update it to explain the minutest detail. Whether you use Python, Java, PHP, or C#, we have you covered!
+          image_right: /assets/img/developers/simple-documentation-opt.svg
+
+    - section: accordion
+      header: Frequently Asked Questions
+      faqs:
+        - title: What details does the voter ID verification API return?
+          description:  The API provides name, name in regional language, age, date of birth (DOB), gender, address, father’s or guardian’s name, assembly constituency details, parliamentary constituency details, polling station, and voter part details.
+        - title: How does this API help prevent fraud?
+          description: The API ensures only genuine voter details are verified, reducing the risk of identity fraud, document forgery, and electoral fraud.
+        - title: How does the API work?
+          description: By entering the EPIC number, the API fetches voter details instantly from official databases, allowing businesses to validate identity, address, and electoral information.
+        - title: Who can use this API?
+          description: The API is useful for banks, fintech firms, government agencies, corporate HR teams, election management platforms, and KYC service providers to verify voter identity, ensure compliance, and prevent fraudulent activities.
+        
+
+    - section: documentation_link_banner
+
+    - section: one_liner
+      icon: /assets/img/eko-trust-opt.svg
+      title: Eko's Trust
+      text: We use the same APIs here at Eko! Every API call is secured with one-time-use tokens generated using asymmetric cryptography. Our open-source libraries make it extremely easy & error-proof.
+
+    - section: step_section
+      header: How to integrate Voter ID Verification API
+      steps:
+        - text: Sign Up on Connect App.
+          link: https://connect.eko.in
+        - text: Submit necessary documents
+        - text: Integrate Voter ID Verification API
+        - text: Start verifiying GSTIN number
+
+    - section: message
+      line1: The process of integrating Voter ID Verification API is easy.
+      main_line: For all integration related issues, we provide 24x7 support.
+      button_text: Contact Support
+
+    - section: get_started_banner
+      small_header: Ready to get started?
+      main_header: Integrate our Voter ID Verification API
+      image: /assets/img/become-eko-partner-opt.svg
+      button1_text: Get Started
+      button2_text: Contact Sales
+
+- name: DigiLocker API
+  title: DigiLocker API | Secure & Instant Aadhaar XML Retrieval for KYC
+  tag_line: DigiLocker API – Secure & Instant Aadhaar XML Retrieval
+  social_image: /assets/img/developers/verification/digilocker.png
+  keywords: DigiLocker API
+  hero_image: /assets/img/developers/verification/digilocker.png
+  summary: The DigiLocker API enables businesses to securely access Aadhaar XML files in real-time by authenticating users via mobile number or username with OTP verification. This API ensures fast, paperless, and legally valid Aadhaar verification for KYC, identity authentication, and regulatory compliance, eliminating manual paperwork and reducing fraud risks.
+  description: Integrate the DigiLocker API to fetch Aadhaar XML files securely using OTP-based login via mobile number or username. Enable paperless KYC, real-time Aadhaar verification, and fraud prevention with a secure, encrypted API. Start integrating today!
+  documentation_link: https://developers.eko.in/docs/identity
+
+  layout:
+    - section: mid_summary
+      small_description: DigiLocker API
+      header: Why Use DigiLocker API?
+
+    - section: alternating_steps
+      steps:
+        - title: Comprehensive Data Access
+          text: The DigiLocker API retrieves officially issued Aadhaar XML files directly from DigiLocker, ensuring legally valid, tamper-proof document access. The API facilitates instant KYC authentication with government-approved digital Aadhaar data, eliminating the need for physical document submission.
+          image: /assets/img/developers/verification/comp-data-access.png
+        - title: Lightning-Fast Response
+          text: Designed for high-speed data retrieval, the API delivers Aadhaar XML files in milliseconds, enabling real-time KYC, onboarding, and verification. With 99.9% uptime, businesses can seamlessly integrate Aadhaar verification into their platforms, ensuring smooth user authentication and compliance processes.
+          image: /assets/img/developers/verification/fast-response.png
+        - title: Fraud Prevention
+          text: By fetching Aadhaar XML files directly from DigiLocker, the API ensures tamper-proof and verified identity authentication, reducing the risks of forged documents, identity theft, and fraudulent transactions. The secure OTP-based access mechanism guarantees that only the rightful Aadhaar holder can share their information.
+          image: /assets/img/developers/verification/fraud-prevention.png
+
+    - section: heros_main
+      header: Benefits
+      items:
+        - type: pair # 2 items side-by-side
+          # Benefit 1
+          title_left: Seamless Integration
+          text_left: Integrating our API is easy & we provide 24x7 manual integration support just in case, leaving no stone unturned to make the integration process seamless.
+          image_left: /assets/img/developers/easy-integration-opt.svg
+          # Benefit 2
+          title_right: Simple Documentation
+          text_right: The documentation for our APIs is comprehensive! We constantly update it to explain the minutest detail. Whether you use Python, Java, PHP, or C#, we have you covered!
+          image_right: /assets/img/developers/simple-documentation-opt.svg
+
+    - section: accordion
+      header: Frequently Asked Questions
+      faqs:
+        - title: What details does the DigiLocker API return?
+          description:  The API provides the Aadhaar XML file, containing official, government-verified Aadhaar data for KYC and authentication purposes.
+        - title: How does this API help prevent fraud?
+          description: The API ensures that only authentic Aadhaar XML files are retrieved, reducing risks of forged or tampered Aadhaar documents, ensuring a secure KYC process.
+        - title: How does the API work?
+          description: The API requires the user’s mobile number or username, sends an OTP for authentication, and retrieves the Aadhaar XML file after user consent, ensuring secure identity verification.
+        - title: Who can use this API?
+          description: The API is useful for banks, NBFCs, fintech companies, e-commerce, government agencies, and corporate HR teams for seamless Aadhaar-based authentication and compliance.
+        
+
+    - section: documentation_link_banner
+
+    - section: one_liner
+      icon: /assets/img/eko-trust-opt.svg
+      title: Eko's Trust
+      text: We use the same APIs here at Eko! Every API call is secured with one-time-use tokens generated using asymmetric cryptography. Our open-source libraries make it extremely easy & error-proof.
+
+    - section: step_section
+      header: How to integrate DigiLocker API
+      steps:
+        - text: Sign Up on Connect App.
+          link: https://connect.eko.in
+        - text: Submit necessary documents
+        - text: Integrate DigiLocker API
+        - text: Start verifiying GSTIN number
+
+    - section: message
+      line1: The process of integrating DigiLocker API is easy.
+      main_line: For all integration related issues, we provide 24x7 support.
+      button_text: Contact Support
+
+    - section: get_started_banner
+      small_header: Ready to get started?
+      main_header: Integrate our DigiLocker API
+      image: /assets/img/become-eko-partner-opt.svg
+      button1_text: Get Started
+      button2_text: Contact Sales
+
+- name: Employee Verification API
+  title: Employee Verification API | Instant & Secure Employment History Check
+  tag_line: Employee Verification API – Instant & Reliable Employment History Validation
+  social_image: /assets/img/developers/verification/employee-verification.png
+  keywords: employee verification api
+  hero_image: /assets/img/developers/verification/employee-verification.png
+  summary: The Employee Verification API enables businesses to instantly verify employment details using an employee’s phone number as input. Retrieve key employment information such as employee name, date of birth (DOB), PAN number, UAN (Universal Account Number), Member ID, joining and exit dates, exit reason, provident fund (PF) filing details, and company name. This API helps HR teams, background verification agencies, and financial institutions ensure seamless, accurate, and compliant employee verification while preventing fraud.
+  description: Verify employee details instantly with our Employee Verification API. Retrieve name, DOB, PAN, UAN, joining & exit dates, PF details, and employer info using a phone number. Enhance hiring, background verification, and fraud prevention today!
+  documentation_link: https://developers.eko.in/docs/identity
+
+  layout:
+    - section: mid_summary
+      small_description: Employee Verification API
+      header: Why Use Employee Verification API?
+
+    - section: alternating_steps
+      steps:
+        - title: Comprehensive Data Access
+          text: The Employee Verification API retrieves detailed employment records directly from authoritative sources, ensuring verified employment history. Businesses can access essential employee details such as name, PAN, UAN, Member ID, joining & exit dates, exit reason, and PF filing history, making hiring, loan approvals, and background verification seamless.
+          image: /assets/img/developers/verification/comp-data-access.png
+        - title: Lightning-Fast Response
+          text: Speed is crucial in employee verification, and our API provides instant access to employment records within milliseconds. Whether you're hiring, performing KYC checks, or processing financial applications, our high-speed verification ensures no delays, helping organizations make quick and informed decisions.
+          image: /assets/img/developers/verification/fast-response.png
+        - title: Fraud Prevention
+          text: By fetching real-time employment data, the API eliminates risks associated with false employment claims, fake experience certificates, and identity fraud. Employers and financial institutions can authenticate past employment records, ensuring only genuine employees are onboarded or granted financial services.
+          image: /assets/img/developers/verification/fraud-prevention.png
+
+    - section: heros_main
+      header: Benefits
+      items:
+        - type: pair # 2 items side-by-side
+          # Benefit 1
+          title_left: Seamless Integration
+          text_left: Integrating our API is easy & we provide 24x7 manual integration support just in case, leaving no stone unturned to make the integration process seamless.
+          image_left: /assets/img/developers/easy-integration-opt.svg
+          # Benefit 2
+          title_right: Simple Documentation
+          text_right: The documentation for our APIs is comprehensive! We constantly update it to explain the minutest detail. Whether you use Python, Java, PHP, or C#, we have you covered!
+          image_right: /assets/img/developers/simple-documentation-opt.svg
+
+    - section: accordion
+      header: Frequently Asked Questions
+      faqs:
+        - title: What details does the employee verification API return?
+          description:  The API provides verified employment details, including DOB, employee name, PAN number, UAN, Member ID, joining & exit dates, exit reason, PF filing details, and employer name.
+        - title: How does this API help prevent fraud?
+          description: The API eliminates false employment claims and identity fraud by fetching verified employment records from authoritative databases, ensuring only genuine employees are onboarded.
+        - title: How does the API work?
+          description: By entering an employee’s phone number, the API fetches real-time employment records from verified sources, allowing businesses to authenticate employment details instantly.
+        - title: Who can use this API?
+          description: The API is useful for HR teams, recruitment agencies, banks, NBFCs, insurance providers, government bodies, and background verification firms to validate employee details.
+        
+
+    - section: documentation_link_banner
+
+    - section: one_liner
+      icon: /assets/img/eko-trust-opt.svg
+      title: Eko's Trust
+      text: We use the same APIs here at Eko! Every API call is secured with one-time-use tokens generated using asymmetric cryptography. Our open-source libraries make it extremely easy & error-proof.
+
+    - section: step_section
+      header: How to Integrate Employee Verification API
+      steps:
+        - text: Sign Up on Connect App.
+          link: https://connect.eko.in
+        - text: Submit necessary documents
+        - text: Integrate Employee Verification API
+        - text: Start verifiying GSTIN number
+
+    - section: message
+      line1: The process of integrating Employee Verification API is easy.
+      main_line: For all integration related issues, we provide 24x7 support.
+      button_text: Contact Support
+
+    - section: get_started_banner
+      small_header: Ready to get started?
+      main_header: Integrate our Employee Verification API
+      image: /assets/img/become-eko-partner-opt.svg
+      button1_text: Get Started
+      button2_text: Contact Sales
+
 - name: RC Verification API
   title: RC Verification API | Instant Vehicle RC Status & Owner Details
   tag_line: RC Verification API
-  social_image: /assets/img/developers/bank-verification-opt.svg
+  social_image: /assets/img/developers/verification/rc-verification.png
   keywords: rc verification api
   hero_image: /assets/img/developers/verification/rc-verification.png
   summary: Ultimate solution for instant and accurate vehicle registration certificate verification. Designed to streamline processes across industries, our API provides comprehensive vehicle data to ensure authenticity and compliance.
@@ -892,7 +1135,7 @@
           title_right: Simple Documentation
           text_right: The documentation for our APIs is comprehensive! We constantly update it to explain the minutest detail. Whether you use Python, Java, PHP, or C#, we have you covered!
           image_right: /assets/img/developers/simple-documentation-opt.svg
-
+  
     - section: accordion
       header: Frequently Asked Questions
       faqs:
@@ -1268,7 +1511,7 @@
   layout:
     - section: icon_list
       header: Real-time Verification using Aadhaar
-      subtitle:
+      subtitle: 
       description: Use Eko’s UIDAI-powered Aadhaar verification API to validate your customers, employees, and merchants. With our easy-to-use API you can substantially mitigate Identity-fraud.
       icons:
         - image: /assets/img/developers/pan-valid-icon.svg
@@ -1369,7 +1612,7 @@
           text_right: Record keeping service enabled on request for clients to download the OCR documents anytime.
           image_right: /assets/img/New/FD.png
     - section: documentation_link_banner
-
+    
     - section: step_section
       header: How to integrate OCR API
       steps:
