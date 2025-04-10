@@ -1,0 +1,40 @@
+---
+pagination:
+  data: collections.eloka-admin-announcement
+  size: 10
+  alias: posts
+  reverse: true
+  filter:
+    - all
+    - blog
+eleventyExcludeFromCollections: true
+---
+
+{% extends "../_layouts/embed_base.njk" %}
+
+{% block head %}
+	{% if pagination.pageNumber > 0 %}
+		<link rel="prev" href="{{ env.BASE_URL }}{{ pagination.href.previous }}">
+	{% endif %}
+	{% if pagination.pageNumber < pagination.pages.length - 1 %}
+	<link rel="next" href="{{ env.BASE_URL }}{{ pagination.href.next }}">
+	{% endif %}
+{% endblock %}
+
+{% block custom_style %}
+	{{ css_blog | cssmin | safe }}
+{% endblock %}
+
+{% block main %}
+
+	{# <section class="block">
+		<header>
+			<h1>News &amp; Announcements</h1>
+		</header>
+	</section> #}
+
+	{% set blogposts = posts %}
+	{% include "announcement_list.njk" %}
+
+
+{% endblock %}

@@ -1,0 +1,26 @@
+{% extends "./embed_base.njk" %}
+
+{# Ideally set through eleventyComputed in front-matter but not working. Bug? #}
+{% set description = description or page.excerpt | trim %}
+
+{% block custom_style %}
+	{{ css_blog | cssmin | safe }}
+{% endblock %}
+
+{% block main %}
+	<section class="block announcementpage">
+        <h1>{{ title }}</h1>
+        <div class="blog-post-tools">
+			<time>{{ date | dateFormat('MMM d, yyyy') }}</time>
+			<div style="flex:1"></div>
+			<a class="button outline" href="https://chatgpt.com/?q={{ ("Summarize the linked article: " ~ env.BASE_URL ~ page.url) | url | encodeURIComponent }}" target="_blank">AI Summary</a>
+		</div>
+
+        {% Image image, 'Post Illustration', false, 'hero' %}
+
+		<p>{{ content | safe }}</p>
+
+		<br><br><hr>
+		<a class="button outline" href="/eloka-admin-announcement/">{% svgico 'arrow-circle-left' %}&nbsp;All Announcements</a>
+    </section>
+{% endblock %}

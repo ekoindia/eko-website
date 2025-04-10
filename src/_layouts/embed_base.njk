@@ -1,0 +1,103 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	{# SEO... #}
+	<title>{{ title }}</title>
+
+	<meta name="description" content="{{ description | truncate(150) }}">
+	{% if canonical %}
+		<link rel="canonical" href="{{ canonical }}" />
+	{% endif %}
+
+	{# OpenGraph (Facebook) Social Card #}
+	<meta property="og:title" content="{{ title and title + " | " }}{{ website.title }}">
+	<meta property="og:description" content="{{ description or website.tag_line }}">
+	<meta property="og:image" content="{{ env.BASE_URL }}{% SocialImagePath image or website.image %}">
+    <meta property="og:type" content="website">
+	<meta property="og:url" content="{{ env.BASE_URL }}{{ page.url }}">
+    <meta property="og:site_name" content="{{ website.title }}">
+
+	{% block head %}{% endblock %}
+
+
+    {# DEFINE Main CSS Files (common to all sections & pages) #}
+    {% set css_main %}
+	  {% include "css/flex.css" %}
+      {% include "css/base.css" %}
+	  {% include "css/nav.css" %}
+	  {% include "css/footer.css" %}
+    {% endset %}
+
+	{# DEFINE PureCSS.io Grid System CSS #}
+    {% set css_pure %}
+	  {# read more: https://purecss.io #}
+      {% include "css/purecss/base-min.css" %}
+	  {% include "css/purecss/grids-min.css" %}
+	  {% include "css/purecss/grids-responsive-min.css" %}
+    {% endset %}
+
+	{# DEFINE CSS for Blog section (included in blog template and the blog listing pages) #}
+	{% set css_blog %}
+      {% include "css/blog.css" %}
+    {% endset %}
+
+	{# DEFINE CSS for embedded pages #}
+	{% set css_embed %}
+      {% include "css/embed.css" %}
+    {% endset %}
+
+	<style>
+      {{ css_pure | cssmin | safe }}
+      {{ css_main | cssmin | safe }}
+	  {{ css_embed | cssmin | safe }}
+	  {% block custom_style %}{% endblock %}
+    </style>
+
+  </head>
+
+  <body>
+
+	<main>
+		{% block main%}{% endblock %}
+	</main>
+
+	{% set netlify_cms %}
+      {% include "js/netlify_cms.js" %}
+    {% endset %}
+
+    <script>
+		{{ js_main | jsmin | safe }}
+		{{ netlify_cms | jsmin | safe }}
+    </script>
+
+
+	{# ~~~~~ Zoho PageSense Analytics ~~~~~ #}
+	{% if env.ZOHO_PAGESENSE_URL %}
+		<script>addLoadEvent(function() { loadScript("{{env.ZOHO_PAGESENSE_URL}}", null, null, true); });</script>
+    {% endif %}
+
+	{# ~~~~~ Zoho CRM ZCGA Script ~~~~~ #}
+	{% if env.ZOHO_CRM_ZCGA_SCRIPT_URL %}
+		<script>addLoadEvent(function() {
+			loadScript("{{env.ZOHO_CRM_ZCGA_SCRIPT_URL}}", null, null, true);
+			loadScript("/assets/js/zoho_crm_utm_script.js", null, null, true);
+		});</script>
+    {% endif %}
+
+	{# ~~~~~ Global site tag (gtag.js) - Google Analytics / Tag Manager ~~~~~ #}
+	{% if env.GA_KEY %}
+		{% set google %}
+			{% include "js/google_analytics.js" %}
+		{% endset %}
+		<script>
+			{{ google | jsmin | safe }}
+			googleAnalytics('{{ env.GA_KEY }}');
+			addLoadEvent(function() { loadScript("https://www.googletagmanager.com/gtag/js?id={{ env.GA_KEY }}", null, null, true); });
+		</script>
+    {% endif %}
+
+  </body>
+</html>

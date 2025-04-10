@@ -1,0 +1,21 @@
+---
+permalink: /eloka-admin-announcement-posts.json
+eleventyExcludeFromCollections: true
+---
+{
+	"posts": [
+		{%- for post in collections["eloka-admin-announcement"] -%}
+		{
+			"title": "{{ post.data.title | escape }}",
+			"date": "{{ post.date | dateFormat('yyyy-mm-dd') }}",
+			"url": "{{ env.BASE_URL }}{{ post.url | url }}",
+			"image": "{{ env.BASE_URL }}{{ post.data.image }}",
+			"usecases": [
+				{%- for tag in post.data.usecases -%}
+				"{{ tag | escape }}"{% if not loop.last %}, {% endif %}
+				{%- endfor -%}
+			]
+		}{%- if not loop.last -%},{%- endif -%}
+		{%- endfor -%}
+	]
+}

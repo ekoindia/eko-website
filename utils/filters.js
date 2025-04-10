@@ -43,4 +43,12 @@ module.exports = {
 		}
 		return array;
 	},
+
+	// Encode a string using `encodeURIComponent`
+	encodeURIComponent: str => {
+		if (str) {
+			return encodeURIComponent(str);
+		}
+		return str;
+	},
 }
