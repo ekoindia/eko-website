@@ -60,6 +60,10 @@ Example (external link): [Link text](https://www.example.com)
 Example: ![Image Title](image-url.jpg)
 
 
+#### Inserting Youtube Video
+Example: {% youtube "youtube-video-id" %}
+
+
 #### Tables can be created like this:
 
 | Column 1 | Centered Column | Right Aligned | Column 4 |
