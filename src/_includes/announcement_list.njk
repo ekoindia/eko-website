@@ -22,11 +22,11 @@
 {% if pagination.pages.length > 1 %}
 	<section class="block pagination layout horizontal around-justified flex wrap center-center" aria-labelledby="pagination">
 		{# <a href="{{ pagination.href.first }}">&lt;&lt; First</a> #}
-		<a class="icolink" href="{{ pagination.href.previous }}"{% if pagination.pageNumber == 0 %} disabled{% endif %}>{% svgico 'arrow-circle-left' %}&nbsp;Previous</a>
+		<a class="icolink" href="{{ pagination.href.previous }}"{% if pagination.pageNumber == 0 %} disabled{% endif %}>{% svgico 'arrow-circle-left' %}Previous</a>
 
 		<span>Page {{ pagination.pageNumber + 1 }} of {{ pagination.pages.length }}</span>
 
-		<a class="icolink" href="{{ pagination.href.next }}"{% if pagination.pageNumber == pagination.pages.length - 1 %} disabled{% endif %}>Next&nbsp;{% svgico 'arrow-circle-right' %}</a>
+		<a class="icolink" href="{{ pagination.href.next }}"{% if pagination.pageNumber == pagination.pages.length - 1 %} disabled{% endif %}>Next{% svgico 'arrow-circle-right' %}</a>
 		{# <a href="{{ pagination.href.last }}">Last &gt;&gt;</a> #}
 	</section>
 {% endif %}
