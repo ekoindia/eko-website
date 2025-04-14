@@ -182,7 +182,7 @@
   keywords: Payout API, Whitelabel AePS Portal API, Aadhaar Enabled Payment System api, aeps api, aeps api provider bank
   hero_image: /assets/img/developers/salary-disbursal-first-fold-opt.svg
   summary: Get our easy-to-use Payout API and pay your employees and vendors their payments using your digital wallet balance with ease.
-  description: Get our easy-to-use Payout API and pay your employees and vendors their payments using your digital wallet balance with a reliable & secure fund settlement APIs solution. 
+  description: Get our easy-to-use Payout API and pay your employees and vendors their payments using your digital wallet balance with a reliable & secure fund settlement APIs solution.
   alert: "**Strictly not for the following use-cases:** \n Gaming, trading, betting or any unauthorized/illegal activity"
   documentation_link: https://developers.eko.in/docs/fund-transfer
 
@@ -823,7 +823,6 @@
           description: Absolutely! Our API fetches data directly from GSTN for 100% compliance.
         - title: Who can use this API?
           description: The GST Verification API is valuable for banks and NBFCs to ensure KYC compliance and prevent fraudulent activities. E-commerce platforms and marketplaces use it to validate sellers before onboarding, ensuring authenticity. Fintech companies and payment processors rely on it for seamless GST verification in transactions. B2B service providers can check the legitimacy of suppliers and vendors, reducing the risk of dealing with non-compliant entities. Tax and accounting firms benefit from the API for accurate GST compliance and filing, ensuring businesses adhere to regulatory requirements effortlessly. API supports various bill categories, including electricity, water, gas, telecom, DTH, education, insurance, and more. The complete list of bill categories can be found on the BBPS platform website.
-        
 
     - section: documentation_link_banner
 
@@ -1135,7 +1134,6 @@
           title_right: Simple Documentation
           text_right: The documentation for our APIs is comprehensive! We constantly update it to explain the minutest detail. Whether you use Python, Java, PHP, or C#, we have you covered!
           image_right: /assets/img/developers/simple-documentation-opt.svg
-  
     - section: accordion
       header: Frequently Asked Questions
       faqs:
@@ -1511,7 +1509,7 @@
   layout:
     - section: icon_list
       header: Real-time Verification using Aadhaar
-      subtitle: 
+      subtitle:
       description: Use Eko’s UIDAI-powered Aadhaar verification API to validate your customers, employees, and merchants. With our easy-to-use API you can substantially mitigate Identity-fraud.
       icons:
         - image: /assets/img/developers/pan-valid-icon.svg
@@ -1612,7 +1610,6 @@
           text_right: Record keeping service enabled on request for clients to download the OCR documents anytime.
           image_right: /assets/img/New/FD.png
     - section: documentation_link_banner
-    
     - section: step_section
       header: How to integrate OCR API
       steps:
