@@ -904,7 +904,6 @@
         - title: Who can use this API?
           description: The API is useful for banks, fintech firms, government agencies, corporate HR teams, election management platforms, and KYC service providers to verify voter identity, ensure compliance, and prevent fraudulent activities.
         
-
     - section: documentation_link_banner
 
     - section: one_liner
@@ -985,7 +984,6 @@
         - title: Who can use this API?
           description: The API is useful for banks, NBFCs, fintech companies, e-commerce, government agencies, and corporate HR teams for seamless Aadhaar-based authentication and compliance.
         
-
     - section: documentation_link_banner
 
     - section: one_liner
@@ -1065,7 +1063,6 @@
           description: By entering an employee’s phone number, the API fetches real-time employment records from verified sources, allowing businesses to authenticate employment details instantly.
         - title: Who can use this API?
           description: The API is useful for HR teams, recruitment agencies, banks, NBFCs, insurance providers, government bodies, and background verification firms to validate employee details.
-        
 
     - section: documentation_link_banner
 
@@ -1225,7 +1222,6 @@
           description: By entering a driving license number, the API fetches real-time data from official government transport records, providing verified details instantly.
         - title: Does the API provide insurance details?
           description: Yes, the API returns insurance company name and insurance validity date, ensuring businesses and insurers can check the policy status and prevent fraudulent claims.
-
 
     - section: documentation_link_banner
 
