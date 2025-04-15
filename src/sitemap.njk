@@ -6,10 +6,10 @@ eleventyExcludeFromCollections: true
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 {%- for item in collections.all -%}
-{%- if not item.data.excludeFromSitemap and item.url and item.url != '/admin/' -%}
+{%- if not item.data.excludeFromSitemap and item.url and item.url != '/admin/' and "eloka-admin-announcement" not in item.url -%}
 <url>
 <loc>{{ env.BASE_URL }}{{ item.url }}</loc>
-<lastmod>{{ item.date | dateFormat('yyyy-MM-dd') }}</lastmod>
+<lastmod>{{ item.date | dateFormat('yyyy-mm-dd') }}</lastmod>
 </url>
 {%- endif -%}
 {%- endfor -%}

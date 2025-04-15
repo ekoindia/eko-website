@@ -1,5 +1,9 @@
 /* ================ Blog Posts & Listing ================ */
 
+section.announcementpage {
+	background: #FFF;
+}
+
 h1 {
 	font-size: 2em;
 	line-height: 1.6;
@@ -28,6 +32,13 @@ h1, h2, h3, h4, h5, h6 {
 main a {
 	text-decoration: underline;
 	color: var(--primary-color);
+}
+
+main a.button {
+	display: inline-flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 0.4em;
 }
 
 /* p {
@@ -68,6 +79,7 @@ img.hero {
     display: block;
     margin: 2rem auto;
 	max-width: 100%;
+	max-height: 500px;
 	border-radius: 5px;
 }
 
@@ -106,6 +118,13 @@ img.hero {
 	flex-direction: column;
 	position: relative;
 	transition: all .1s ease-out;
+	max-width: 450px;
+}
+
+@media (max-width: 700px) {
+	.blogslist .card {
+		max-width: 100%;
+	}
 }
 
 .blogslist .card:hover {
@@ -197,6 +216,13 @@ figure {
 figure > figcaption {
 	margin-top: 0.5em;
 	font-size: 0.8em;
+}
+
+.blog-post-tools {
+	display: flex;
+	align-items: center;
+	margin: 1em 0;
+	font-size: .75em;
 }
 
 

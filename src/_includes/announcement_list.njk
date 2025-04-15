@@ -6,11 +6,6 @@
 				<h4>{{ blog.data.title }}</h4>
 				<p>
 					{{ (blog.data.page.excerpt or blog.data.description) | truncate(250) }}
-					<div class="taglist flex">
-						{% for tag in blog.data.tags %}
-							<span class="post-tag">#{{ tag }}</span>
-						{% endfor %}
-					</div>
 				</p>
 				<div class="layout horizontal center">
 					<div class="flex">

@@ -250,6 +250,16 @@ module.exports = function(eleventyConfig) {
 
 		// Show the dev server version number on the command line
 		showVersion: false,
+
+		// onRequest: {
+		// 	"eloka-admin-announcement-posts.json": function ({ url }) {
+		// 		return {
+		// 			headers: {
+		// 				"Access-Control-Allow-Origin": "*", // Handle CORS in dev envoirnment
+		// 			},
+		// 		};
+		// 	},
+		// },
 	});
 
 
@@ -277,6 +287,7 @@ module.exports = function(eleventyConfig) {
 	eleventyConfig.addLayoutAlias('product_page', 'product_page.njk');
 	eleventyConfig.addLayoutAlias('developer_page', 'developer_page.njk');
 	eleventyConfig.addLayoutAlias('blog', 'blog_post.njk');
+	eleventyConfig.addLayoutAlias('announcement', 'announcement_post.njk');
 	eleventyConfig.addLayoutAlias('career_post', 'career_post.njk');
 	eleventyConfig.addLayoutAlias('ekoUniversity', 'ekoUniversity.njk');
 
@@ -292,6 +303,11 @@ module.exports = function(eleventyConfig) {
 	});
 	// TODO: add a front-matter config "disabled" and append a 'disabledFilter' to hide any disabled post.
 	// TODO: Specially for "Career" section
+
+	// Collection of announcement posts for Eloka Admins
+	eleventyConfig.addCollection("eloka-admin-announcement", function(collection) {
+		return collection.getFilteredByGlob('src/eloka-admin-announcement/*.md');
+	});
 
 	// Collection of career posts [WIP]
 	// eleventyConfig.addCollection("career", function(collection) {
@@ -310,6 +326,20 @@ module.exports = function(eleventyConfig) {
 			}
 		});
 		return Object.keys(_tags).sort();
+	});
+
+	// Collection of Eloka-Admin-Announcements by usecase tags...
+	eleventyConfig.addCollection("eloka-admin-announcement-usecases", function (collection) {
+		let _usecases = {};
+		collection.getFilteredByGlob('src/eloka-admin-announcement/*.md').map(item => {
+			if ("usecase" in item.data) {
+				// TODO: optionally filter tags
+				for (let usecase of item.data.usecases) {
+					_usecases[usecase] = 1;
+				}
+			}
+		});
+		return Object.keys(_usecases).sort();
 	});
 
 

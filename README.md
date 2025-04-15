@@ -100,7 +100,11 @@ The Eko website & blog built with [Eleventy](https://www.11ty.dev). Uses reusabl
    1. Make the first paragraph of the post an excerpt by add a `<!-- excerpt -->` comment after it. This will be shown as the post description.
    1. Alternatively, add a `description` field in the top section of the page between the two '---' lines.
    1. Check [EXAMPLE-POST.md](/src/blog/EXAMPLE-POST.md) for a quick example.
-1. You can also use the graphical admin interface (provided by Netlify CMS) to easily add/edit blog posts.
+1. To add a Youtube video in the blogpost, use the following syntax:
+   ```
+   {% youtube "youtube-video-id" %}
+   ```
+   1. Example: `{% youtube "CM4ajkVe4to" %}`
 
 
 ## ❓ How to add or edit a Retail-product page?

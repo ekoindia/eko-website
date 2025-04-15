@@ -172,6 +172,7 @@ a.icolink {		/* A short link with an icon inside */
 	align-items: center;
 	fill: currentColor;
 	text-decoration: none;
+	gap: 0.4em;
 }
 
 a:hover {
