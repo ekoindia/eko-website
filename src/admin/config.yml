@@ -17,7 +17,7 @@ collections:
       - {label: "Title", name: "title", widget: "string", hint: "Title of the article that will show on top of the page"}
       - {label: "Description", name: "description", widget: "text", hint: "A short description of this article. Or, adding <!-- excerpt --> after the first paragraph will make that the description!"}
       - {label: "Date", name: "date", widget: "datetime"}
-      - {label: "Image", name: "image", widget: "image"}
+      - {label: "Cover Image", name: "image", widget: "image"}
       - {label: "Business", name: "business", widget: "select", hint: "What business audience does this article target? Retailors or API Enterprise partners?", required: false, options: [ "api", "retail" ] }
       - {label: "Tags", name: "tags", widget: "list", hint: "Enter one or more tags associated with this article. Separate tags with comma. Ex: technology, finance", required: false}
       - {label: "Body", name: "body", widget: "markdown"}
@@ -32,8 +32,8 @@ collections:
       - {label: "Description", name: "description", widget: "text", hint: "A short description of this article. Or, adding <!-- excerpt --> after the first paragraph will make that the description!"}
       - {label: "Date", name: "date", widget: "datetime"}
       - {label: "Cover Image", name: "image", widget: "image"}
-      - {label: "Business", name: "business", widget: "select", hint: "What business audience does this article target? Retailors or API Enterprise partners?", required: false, options: [ "api", "retail" ] }
-      - { label: 'Eloka Use-Cases', name: 'select', widget: 'select', options: ['all'], multiple: true }
+      - { label: "Eloka Use-Cases", name: "select", widget: "select", options: ["all"], multiple: true, default: ["all"] }
+      - {label: "Body", name: "body", widget: "markdown"}
   # - name: "settings"
   #   label: "Settings"
   #   files:
