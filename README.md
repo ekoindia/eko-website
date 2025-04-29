@@ -39,6 +39,10 @@ The Eko website & blog built with [Eleventy](https://www.11ty.dev). Uses reusabl
 1. Copy [`.env.example`](.env.example) to a new `.env` file and setup your own defaults
 1. Build and host locally for local development: `npm start`
    Checkout in the browser: `localhost:8080`
+2. _How to open Admin panel locally to add blog-posts:_
+   1. Run the Admin local server: `npm run local-admin`
+   2. Open the Admin URL: `localhost:8080/admin`
+   3. Click on the login button.
 
 ## 🔁 Pull Request Guidelines (Making Changes)
 1. Fork this repository

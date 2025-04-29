@@ -6,6 +6,7 @@
     "start": "del-cli _site && eleventy --serve --quiet",
     "build": "del-cli _site && eleventy",
     "clean": "del-cli _site",
+    "local-admin": "npx decap-server",
     "check-updates": "echo 'TO UPDATE, RUN: npm install package-name' && npm outdated --depth=0"
   },
   "contributors": [
