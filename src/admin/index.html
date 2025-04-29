@@ -5,9 +5,38 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Content Manager</title>
+
 </head>
 <body>
   <!-- Include the script that builds the page and powers Netlify CMS -->
   <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+  <script>
+    CMS.registerEditorComponent({
+      id: "youtube",
+      label: "YouTube",
+      fields: [
+        {
+          name: "id",
+          label: "YouTube Video ID",
+          widget: "string",
+          required: true,
+          pattern: /^[a-zA-Z0-9_-]{6,}$/,
+          hint: "The ID of the YouTube video (e.g., 'dQw4w9WgXcQ').",
+        },
+      ],
+      pattern: /^\{\%\s*youtube\s+"?([a-zA-Z0-9_-]{6,})"?\s*\%\}$/,
+      fromBlock: function (match) {
+        return {
+          id: match[1],
+        };
+      },
+      toBlock: function (obj) {
+        return `{% youtube "${obj.id}" %}`;
+      },
+      toPreview: function (obj) {
+        return `<img style="display:block;margin:0 auto;" src="https://img.youtube.com/vi/${obj.id}/hqdefault.jpg" alt="YouTube Video Preview"/>`;
+      },
+    });
+  </script>
 </body>
 </html>

@@ -3,6 +3,8 @@ backend:
   branch: master
   # name: test-repo
 
+local_backend: true
+
 media_folder: "src/assets/img/blog"
 public_folder: "/assets/img/blog"
 
@@ -32,7 +34,7 @@ collections:
       - {label: "Description", name: "description", widget: "text", hint: "A short description of this article. Or, adding <!-- excerpt --> after the first paragraph will make that the description!"}
       - {label: "Date", name: "date", widget: "datetime"}
       - {label: "Cover Image", name: "image", widget: "image"}
-      - { label: "Eloka Use-Cases", name: "select", widget: "select", options: ["all"], multiple: true, default: ["all"] }
+      - { label: "Eloka Use-Cases", name: "usecases", widget: "select", options: ["all"], multiple: true, default: ["all"] }
       - {label: "Body", name: "body", widget: "markdown"}
   # - name: "settings"
   #   label: "Settings"
