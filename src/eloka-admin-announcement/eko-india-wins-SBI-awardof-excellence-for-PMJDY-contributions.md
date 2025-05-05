@@ -23,8 +23,6 @@ Eko India Financial Services, a proud partner of the State Bank of India (SBI), 
 
 India’s unbanked population has significantly reduced, dropping from 557 million in 2011 to 190 million by 2021 (World Bank Global Findex). Eko has contributed to this transformation by establishing a widespread network of CSPs (Customer Service Points), 45% of which are led by women. These CSPs have been instrumental in bringing banking services to marginalized communities, enabling many to access financial services for the first time.
 
-{% youtube "CM4ajkVe4to" %}
-
 #### Making Numbers Count
 
 * Women’s Empowerment: Eko facilitated the opening of over 4.8 mn accounts for women under PMJDY, directly improving their access to savings, credit, and insurance.
