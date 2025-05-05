@@ -32,7 +32,7 @@ This recognition reaffirms Eloka's mission to deliver a plug-and-play, white-lab
 
 This achievement would not have been possible without the unwavering support of our partners and team members. Your trust and collaboration continue to drive us forward.
 
-![](/assets/img/blog/certificate.jpg)
+![Eloka Fintech Product of the Year Certificate](/assets/img/blog/certificate.jpg)
 
 <br>
 
