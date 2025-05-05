@@ -9,7 +9,7 @@ image: /assets/img/blog/eloka-award.jpg
 usecases:
   - all
 ---
-### **Proud Moment at the 32nd Convergence India Expo!**
+### Proud Moment at the 32nd Convergence India Expo!
 
 We are excited to announce that **Eloka** has been awarded the prestigious **"Fintech Product of the Year"** at the 32nd Convergence India Expo.
 
