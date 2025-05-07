@@ -1,6 +1,7 @@
 section.block[type] {
 	position: relative;
 	outline:1px solid #666;
+	z-index: -1;
 }
 section.block[type]::before {
 	content: "🧩 section_" attr(type) ".njk";
