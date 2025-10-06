@@ -4,7 +4,7 @@ title: Terms & Conditions
 ---
 
 
-The following terms and conditions (“**T&C’s**”) constitute a binding agreement between you (“**You**”) and Eko India Financial Services Private Limited (“**Eko**”). By using **Eko**’s services, you agree to be bound by these **T&C’s.**
+The following terms and conditions (“**T&C’s**”) constitute a binding agreement between you (“**You**”) and {{ website.company_detailed_legal_name }} (“**Eko**”). By using **Eko**’s services, you agree to be bound by these **T&C’s.**
 
 
 ### 1. Working Procedure

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Eko India Financial Services Private Limited Customer Grievance Redressal Mechanisms
+title: Eko Customer Grievance Redressal Mechanisms
 excludeFromSitemap: true
 ---
 
@@ -8,7 +8,7 @@ excludeFromSitemap: true
 
 ## Customer Grievance Policy
 
-In today's competitive era and constantly evolving business, we at Eko India Financial Services Pvt. Ltd. ('Company') take pride in keeping our customers at the centre of all our strategies and initiatives, and are committed to deliver best in class customer service to all our existing and new customers at all times.
+In today's competitive era and constantly evolving business, we at **{{ website.company_detailed_legal_name }}** _('Company')_ take pride in keeping our customers at the centre of all our strategies and initiatives, and are committed to deliver best in class customer service to all our existing and new customers at all times.
 
 As a service organization we promote "Excellence in Delivery" and hence feedback from our valued customers forms an integral part of all decisions taken by the Company. The feedback provided by our customers is treated as an asset to the Company, evaluated and customized to improve our products and services.
 
@@ -71,7 +71,7 @@ As "Customer Delight" our priority, we are committed to provide Best Payment Sol
 
 In case the customer is not satisfied with the response from customer service executive, escalation to Level 2 can be triggered.
 
-Write to us: Customer Care ,Eko India Financial Services Pvt. Ltd. , 3rd Floor, Phase 2 Building,Plot No. 34, Institutional Area Sector 44, Gurgaon-122 003,Haryana
+Write to us: Customer Care, {{ website.company_name }}, {{ website.company_address }}
 
 **Grievance Officer : Mr.Abhinav Sinha**
 Email ID: grievance@eko.co.in
@@ -88,7 +88,7 @@ In case the customer is still not satisfied with the resolution provided or dela
 **nodaldesk@eko.co.in**
 **+91-9654280988**
 
-Write to us: Nodal Officer, Eko India Financial Services Pvt. Ltd., 3rd Floor, Phase 2 Building, Plot No. 34, Institutional Area Sector 44, Gurgaon-122003, Haryana
+Write to us: Nodal Officer, {{ website.company_name}}, {{ website.company_address }}
 Email ID: nodaldesk@eko.co.in
 Mobile No: +91-9654280988
 
@@ -109,7 +109,7 @@ Or, [click here](https://connect.eko.in/) and click on 'Need Help' button to rep
 
 ## ग्राहक शिकायत नीति
 
-आज के प्रतिस्पर्धी युग और लगातार विकसित हो रहे व्यवसाय में हम, Eko India फिनान्शियल सर्विसेज प्राइवेट लिमिटेड ('कंपनी'), अपने ग्राहकों को अपनी सभी रणनीतियों और पहल के केंद्र में रखने में गर्व महसूस करते हैं, और हमारे मौजूदा और नए ग्राहकों को हर समय सर्वोत्तम ग्राहक सेवा देने के लिए प्रतिबद्ध हैं।
+आज के प्रतिस्पर्धी युग और लगातार विकसित हो रहे व्यवसाय में हम, {{ website.company_name_hi }} ('कंपनी'), अपने ग्राहकों को अपनी सभी रणनीतियों और पहल के केंद्र में रखने में गर्व महसूस करते हैं, और हमारे मौजूदा और नए ग्राहकों को हर समय सर्वोत्तम ग्राहक सेवा देने के लिए प्रतिबद्ध हैं।
 
 एक सेवा संगठन के रूप में हम "सुपुर्दगी में उत्कृष्टता" को बढ़ावा देते हैं, और इसलिए कंपनी द्वारा लिए गए सभी निर्णयों का एक अभिन्न हिस्सा हमारे मूल्यवान ग्राहकों की प्रतिक्रिया है। हमारे ग्राहकों द्वारा प्रदान की गई प्रतिक्रिया को कंपनी के लिए एक संपत्ति माना जाता है, और उसका मूल्यांकन करने के बाद उसे अनुकूलित करके  हमारे उत्पादों और सेवाओं को बेहतर बनाने के लिए उसका उपयोग किया जाता है।
 
@@ -170,7 +170,7 @@ Or, [click here](https://connect.eko.in/) and click on 'Need Help' button to rep
 
 ग्राहक सेवा अधिकारी की प्रतिक्रिया से यदि ग्राहक संतुष्ट नहीं हैं, तो वे शिकायत को एसकेलेशन स्तर 2 तक ले जा सकते हैं।
 
-हमें लिखें: कस्टमर केयर, Eko India फाइनेंशियल सर्विसेज प्राइवेट लिमिटेड, तीसरा तल, फेज 2 भवन, प्लॉट नंबर 34, इंस्टीट्यूशनल एरिया सेक्टर 44, गुड़गाँव -122 003, हरियाणा
+हमें लिखें: कस्टमर केयर, {{ website.company_name_hi }}, {{ website.company_address_hi }}
 
 **ग्रीवन्स अधिकारी: श्री अभिनव सिन्हा**
 ईमेल आईडी: grievance@eko.co.in
@@ -187,7 +187,7 @@ Or, [click here](https://connect.eko.in/) and click on 'Need Help' button to rep
 **nodaldesk@eko.co.in**
 **+91-9654280988**
 
-हमें लिखें: नोडल अधिकारी, Eko India फाइनेंशियल सर्विसेज प्राइवेट लिमिटेड, तीसरा तल, फेज 2 भवन, प्लॉट नंबर 34, इंस्टीट्यूशनल एरिया सेक्टर 44, गुड़गाँव-122003, हरियाणा
+हमें लिखें: नोडल अधिकारी, {{ website.company_name_hi }}, {{ website.company_address_hi }}
 ईमेल आईडी: nodaldesk@eko.co.in
 मोबाइल नंबर: +91-9654280988
 
@@ -208,7 +208,7 @@ Or, [click here](https://connect.eko.in/) and click on 'Need Help' button to rep
 
 ## ग्राहक तक्रार धोरण
 
-आजच्या स्पर्धात्मक युगात आणि सातत्याने बदलणार्‍या व्यावसायिक वातावरणात एको इंडिया फिनान्शियल सर्विसेस प्रा. लि. (कंपनी) मध्ये आम्ही आमच्या ग्राहकाला आमच्या धोरणांमध्ये आणि उपक्रमांमध्ये केंद्रस्थानी ठेवण्यात अभिमान बाळगतो आणि आमच्या सध्याच्या आणि नव्या ग्राहकांना आमच्या क्षेत्रातली सर्वोत्तम ग्राहक सेवा देण्यास वचनबद्ध आहोत.
+आजच्या स्पर्धात्मक युगात आणि सातत्याने बदलणार्‍या व्यावसायिक वातावरणात {{ website.company_name_mr }} (कंपनी) मध्ये आम्ही आमच्या ग्राहकाला आमच्या धोरणांमध्ये आणि उपक्रमांमध्ये केंद्रस्थानी ठेवण्यात अभिमान बाळगतो आणि आमच्या सध्याच्या आणि नव्या ग्राहकांना आमच्या क्षेत्रातली सर्वोत्तम ग्राहक सेवा देण्यास वचनबद्ध आहोत.
 
 एक सेवा देणारी संस्था म्हणून आम्ही "सेवेत उत्कृष्टता” (“एक्सलन्स इन डिलिव्हरी”) चा पुरस्कार करतो आणि म्हणूनच आमच्या सन्माननीय ग्राहकांकडून मिळणारा अभिप्राय कंपनीकडून घेतल्या जाणार्‍या सर्व निर्णयांचा अविभाज्य भाग असतो.  आमच्या ग्राहकांनी दिलेला अभिप्राय कंपनीची ठेवा मानला जातो आणि आमच्या उत्पादनांमध्ये आणि सेवांमध्ये सुधारणा घडवून आणण्यासाठी त्याचे मूल्यमापन आणि सानुकूलन केले जाते.
 
@@ -269,7 +269,7 @@ Or, [click here](https://connect.eko.in/) and click on 'Need Help' button to rep
 
 जर ग्राहक ग्राहकसेवा अधिकार्‍याकडून मिळालेल्या प्रतिसादाबद्दल ग्राहक समाधानी नसेल तर दुसर्‍या स्तरावरील एस्कलेशन सुरू होईल.
 
-आम्हाला येथे लिहा: कस्टमर केयर, एको इंडिया फिनंशियल सर्व्हिसेस प्रा. लि., 3रा मजला, फेज 2, बिल्डिंग, प्लॉट क्र. 34, औद्योगिक प्रभाग सेक्टर 44, गुरगाव-122003, हरयाना
+आम्हाला येथे लिहा: कस्टमर केयर, {{ website.company_name_mr }}, {{ website.company_address_mr }}
 
 **नोडल अधिकारी: श्री.अभिनव सिन्हा**
 ई-मेल आयडी: grievance@eko.co.in
@@ -286,7 +286,7 @@ Or, [click here](https://connect.eko.in/) and click on 'Need Help' button to rep
 **nodaldesk@eko.co.in**
 **+91-9654280988**
 
-आम्हाला येथे लिहा: कस्टमर केयर, एको इंडिया फिनंशियल सर्व्हिसेस प्रा. लि., 3रा मजला, फेज 2, बिल्डिंग, प्लॉट क्र. 34, औद्योगिक प्रभाग सेक्टर 44, गुरगाव,-122003, हरयाना
+आम्हाला येथे लिहा: कस्टमर केयर, {{ website.company_name_mr }}, {{ website.company_address_mr }}
 ई-मेल आयडी: nodaldesk@eko.co.in
 मोबाईल क्रमांक +91-9654280988
 

@@ -4,7 +4,7 @@ title: Refund & Cancellation
 ---
 
 
-By accessing and using products/services of Eko India Financial Services Private Limited (henceforth referred to as “**Eko**”), you accept and agree to the terms, conditions and rules without limitation and or qualification.
+By accessing and using products/services of {{ website.company_name }} (henceforth referred to as “**Eko**”), you accept and agree to the terms, conditions and rules without limitation and or qualification.
 
 We reserve the right to modify the terms at any time without giving you any prior notice. Your use of **Eko** following any such modification constitutes your agreement to follow and be bound by the terms as modified. Any additional terms and conditions, disclaimers, privacy policies and other policies applicable in general and/ or to specific areas of this website, **Eko** or to a particular service are also considered as terms.
 
@@ -67,9 +67,8 @@ If a chargeback is received for an instantly refunded payment, the processed ref
 
 
 ## Our Address
-**Eko India Financial Services Private Limited**
-
-Plot 34, Institutional Area, Sector 44, Gurugram, Haryana — 122003.
+**{{ website.company_name }}**,
+{{ website.company_address }}.
 Phone: 0124-4566200.
 
 ![Map to Eko's office](/assets/img/eko-map.jpg)
