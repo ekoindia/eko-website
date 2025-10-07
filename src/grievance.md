@@ -39,7 +39,7 @@ All customers have the right to share their feedback or complaint in case they f
 ### Escalation: Level 1
 
 **Our customers can inquire, insist, or complain through the following mediums:**
-* **Phone - Customer Engagement Centre:** Our customers & agents  can call us at Help Line: [0124-456-6200](tel:+911244566200) from 8 AM to 8 PM on all working days except Government and Public Holidays.
+* **Phone - Customer Engagement Centre:** Our customers & agents  can call us at Help Line: **{{ website.customer_care_number }}** from 8 AM to 8 PM on all working days except Government and Public Holidays.
 * **Email - Customers can e-mail us at cs@eko.co.in**
 * These aforesaid mechanisms are dedicated for redressing our customer complaints, providing online resolution wherever possible, and capturing valuable feedback regarding our services.
 
@@ -140,8 +140,8 @@ Or, [click here](https://connect.eko.in/) and click on 'Need Help' button to rep
 ### एसकेलेशन: स्तर 1
 
 **हमारे ग्राहक निम्नलिखित माध्यमों से पूछताछ, आग्रह या शिकायत कर सकते हैं:**
-* **फोन - ग्राहक सेवा केंद्र:** हमारे ग्राहक और एजेंट सरकारी और सार्वजनिक अवकाशों को छोड़कर सभी कार्य दिवसों में सुबह 8 से शाम 8 बजे तक सहायता सेवा नम्बर: [0124-456-6200](tel:+911244566200) पर हमें फोन कर सकते हैं।
-* **ईमेल - ग्राहक हमें cs@eko.co.in पर ई-मेल कर सकते हैं**
+* **फोन - ग्राहक सेवा केंद्र:** हमारे ग्राहक और एजेंट सरकारी और सार्वजनिक अवकाशों को छोड़कर सभी कार्य दिवसों में सुबह 8 से शाम 8 बजे तक सहायता सेवा नम्बर: **{{ website.customer_care_number }}** पर हमें फोन कर सकते हैं।
+* **ईमेल:** - ग्राहक हमें **cs@eko.co.in** पर ई-मेल कर सकते हैं
 * ये उपरोक्त तंत्र हमारे ग्राहक की शिकायतों के निवारण के लिए समर्पित हैं, जहाँ भी संभव हो ऑनलाइन समाधान प्रदान करते हैं, और हमारी सेवाओं के बारे में मूल्यवान प्रतिक्रिया को दर्ज करते हैं।
 
 ग्राहकों की प्रतिक्रिया / शिकायत / प्रश्न प्राप्त करने पर हमारे अधिकारी ग्राहक से संपर्क करेंगे और यह सुनिश्चित करेंगे कि सभी शिकायतों को नीचे दी गई समय के अनुसार निपटाया जाएँ।
@@ -239,8 +239,8 @@ Or, [click here](https://connect.eko.in/) and click on 'Need Help' button to rep
 ### एस्कलेशन: स्तर 1
 
 **आमचे ग्राहक खालील मार्गांनी चौकशी करू शकतील, आग्रह धरू शकतील किंवा तक्रार नोंदवू शकतील.**
-* **फोन - ग्राहक संवाद केंद्र** आमचे ग्राहक आणि एजंट् आम्हाला खालील हेल्प-लाईन क्रमांकांवर फोन करू शकतात. [0124-456-6200](tel:+911244566200) वर सकाळी 8 ते रात्री 8 शासकीय आणि सार्वजनिक सुट्ट्या वगळता सर्व कामाच्या दिवसांदरम्यान
-* **ई-मेल- ग्राहक आम्हाला cs@eko.co.in वर ई-मेल पाठवू शकतात.**
+* **फोन - ग्राहक संवाद केंद्र:** आमचे ग्राहक आणि एजंट् आम्हाला खालील हेल्प-लाईन क्रमांकांवर फोन करू शकतात. **{{ website.customer_care_number }}** वर सकाळी 8 ते रात्री 8 शासकीय आणि सार्वजनिक सुट्ट्या वगळता सर्व कामाच्या दिवसांदरम्यान
+* **ई-मेल:** ग्राहक आम्हाला **cs@eko.co.in** वर ई-मेल पाठवू शकतात.
 * वर नमूद केलेले मार्ग आमच्या ग्राहकांच्या तक्रारींचे निराकरण करण्यासाठी खास ठेवलेले  आहेत, ज्यात शक्य असेल तेथे ऑन-लाईन निराकरण  करून आमच्या सेवेच्या संदर्भात मोलाचा असणारा अभिप्राय नोंदवला जाईल.
 
 ग्राहकाकडून अभिप्राय / तक्रार/ चौकशी प्राप्त झाल्यानंतर आमचे अधिकारी ग्राहकाशी संपर्क साधतील आणि खाली नमूद केलेल्या कालावधीच्या आत सर्व तक्रारींचे निराकरण केले जाईल याची खातरजमा करतील.

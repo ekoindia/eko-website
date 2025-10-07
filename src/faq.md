@@ -61,11 +61,11 @@ title: FAQs
 
 
 
-**For any query contact customer care @ 0124-438-5445 between 7:00 am to 11:00 pm or write to us at cs@eko.co.in.**
+**For any query contact customer care @ {{ website.customer_care_number }} between 7:00 am to 11:00 pm or write to us at cs@eko.co.in.**
 
 
 
-**For more details Kindly go through terms and conditions page at https://eko.co.in/wp-content/uploads/Customer_TC.pdf**
+**For more details, kindly go through our [Terms and Conditions](https://eko.co.in/wp-content/uploads/Customer_TC.pdf)**
 
 
 <br><br>
@@ -131,9 +131,9 @@ title: FAQs
     डोमेस्टिक मनी ट्रांसफर के लिए ईको शुल्क 1% तक है।
 
 
-**किसी भी जानकारी के लिए ग्राहक सेवा से संपर्क करें @ 0124-438-5445 सुबह 7:00 बजे से 11:00 बजे के बीच या हमें cs@eko.co.in पर लिखें।**
+**किसी भी जानकारी के लिए ग्राहक सेवा से संपर्क करें @ {{ website.customer_care_number }} सुबह 7:00 बजे से 11:00 बजे के बीच या हमें cs@eko.co.in पर लिखें।**
 
-**अधिक जानकारी के लिए कृपया नियम और शर्तों के पेज पर जाएं: https://eko.co.in/wp-content/uploads/Customer_TC.pdf**
+**अधिक जानकारी के लिए कृपया [नियम और शर्तों के पेज](https://eko.co.in/wp-content/uploads/Customer_TC.pdf) पर जाएं।**
 
 
 
@@ -191,6 +191,6 @@ title: FAQs
 
     घरगुती मनी ट्रान्सफरसाठी एको शुल्क 1% पर्यंत आहे.
 
-**कोणत्याही प्रश्नासाठी ग्राहक सेवा @ 0124-438-5445 वर सकाळी 7.00 ते संध्याकाळी 11.00 वाजता संपर्क साधा किंवा आम्हाला cs@eko.co.in वर लिहा.**
+**कोणत्याही प्रश्नासाठी ग्राहक सेवा @ {{ website.customer_care_number }} वर सकाळी 7.00 ते संध्याकाळी 11.00 वाजता संपर्क साधा किंवा आम्हाला cs@eko.co.in वर लिहा.**
 
-**अधिक तपशीलांसाठी कृपया https://eko.co.in/wp-content/uploads/Customer_TC.pdf वर अटी व शर्ती पृष्ठाद्वारे जा.**
+**अधिक तपशीलांसाठी कृपया [अटी व शर्ती पृष्ठाद्वारे](https://eko.co.in/wp-content/uploads/Customer_TC.pdf) जा.**

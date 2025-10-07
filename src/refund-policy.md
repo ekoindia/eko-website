@@ -63,12 +63,12 @@ For the prevention of chargebacks, **Eko** only does source refunds. It means th
 
 If a chargeback is received for an instantly refunded payment, the processed refund will have a UTR (Unique Transfer Reference) in the callback. The UTR serves as a proof of refund completed between you and **Eko**.
 
-> For any query on payment related issues, contact us directly on **+91 124 456 6200**
+> For any query on payment related issues, contact us directly on **{{ website.customer_care_number }}**
 
 
 ## Our Address
 **{{ website.company_name }}**,
 {{ website.company_address }}.
-Phone: 0124-4566200.
+Phone: {{ website.customer_care_number }}
 
 ![Map to Eko's office](/assets/img/eko-map.jpg)
