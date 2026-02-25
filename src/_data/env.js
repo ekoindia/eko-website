@@ -12,6 +12,8 @@ module.exports = {
 	MS_CLARITY_TAG: process.env.MS_CLARITY_TAG || '',
 	FACEBOOK_PIXEL_ID: process.env.FACEBOOK_PIXEL_ID || '',
 
+	GTM_KEY: process.env.GTM_KEY || '', // New key to add GTM script in the project (replaces GA_KEY & FACEBOOK_PIXEL_ID)
+
 	ZOHO_SALESIQ: process.env.ZOHO_SALESIQ || '',
 	ZOHO_PAGESENSE_URL: process.env.ZOHO_PAGESENSE_URL || '',
 
