@@ -20,6 +20,15 @@
 		{# Ignoring <noscript> for normal font load when Javascript is disabled. Fallback font will be used #}
 	{% endif %}
 
+	{# Google Tag Manager #}
+	{% if env.GTM_KEY %}
+		<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','{{ env.GA_KEY }}');</script>
+	{% endif %}
+
 
 	{# SEO... #}
 	<title>{{ title and title + " | " }}{{ website.title }}</title>
@@ -187,7 +196,7 @@
 		<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id={{env.FACEBOOK_PIXEL_ID}}&ev=PageView&noscript=1"/></noscript>
 	{% endif %}
 
-	{# ~~~~~ Global site tag (gtag.js) - Google Analytics / Tag Manager ~~~~~ #}
+	{# ~~~~~ Global site tag (gtag.js) - Old Implementation - Google Analytics / Tag Manager (New Tag Manager Implementation in Head & Body) ~~~~~ #}
 	{% if env.GA_KEY %}
 		{% set google %}
 			{% include "js/google_analytics.js" %}
@@ -198,6 +207,12 @@
 			addLoadEvent(function() { loadScript("https://www.googletagmanager.com/gtag/js?id={{ env.GA_KEY }}", null, null, true); });
 		</script>
     {% endif %}
+
+	{# Google Tag Manager Intagration - Part 2 - NoScript #}
+	{% if env.GTM_KEY %}
+		<noscript><iframe src="https://www.googletagmanager.com/ns.html?id={{ env.GA_KEY }}"
+		height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	{% endif %}
 
 
 	{# ~~~~~ Microsoft Clarity (Analytics) ~~~~~ #}
