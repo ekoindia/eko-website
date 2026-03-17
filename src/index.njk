@@ -48,33 +48,53 @@
 
 
 	{# New Websites section #}
-	<section class="block" type="new_websites">
+	<style>
+		.website-card {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			min-width: 180px;
+			padding: 24px 28px;
+			border: 1px solid #e0e0e0;
+			border-radius: 8px;
+			box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+			text-decoration: none;
+			background: #fff;
+			transition: transform 0.2s ease, box-shadow 0.2s ease;
+		}
+		.website-card:hover {
+			transform: translateY(-4px);
+			box-shadow: 0 8px 24px rgba(0,0,0,0.13);
+		}
+	</style>
+	<section class="block bg-shaded get_started_banner" type="new_websites">
 		<center>
 			<h2>Checkout our new websites</h2>
 			<span class="h2-border"></span>
 		</center>
 		<div class="layout horizontal center wrap around-justified" style="margin-top:30px;gap:10px">
-			<a href="https://about.eko.in" target="_blank" rel="noopener noreferrer" style="display:flex;flex-direction:column;align-items:center;justify-content:center;min-width:180px;padding:24px 28px;border:1px solid #e0e0e0;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.07);text-decoration:none;background:#fff;transition:box-shadow 0.2s">
+			<a href="https://about.eko.in" target="_blank" rel="noopener noreferrer" class="website-card">
 				<div style="font-size:1.15rem;font-weight:600;color:#666;margin-bottom:4px">Corporate</div>
 				<div style="font-size:0.8rem;color:#777;margin-bottom:8px">Eko's Corporate Website</div>
 				<div style="font-size:0.9rem;color:var(--primary-color);font-weight:500">about.eko.in</div>
 			</a>
-			<a href="https://kiosk.eko.in" target="_blank" rel="noopener noreferrer" style="display:flex;flex-direction:column;align-items:center;justify-content:center;min-width:180px;padding:24px 28px;border:1px solid #e0e0e0;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.07);text-decoration:none;background:#fff;transition:box-shadow 0.2s">
+			<a href="https://kiosk.eko.in" target="_blank" rel="noopener noreferrer" class="website-card">
 				<div style="font-size:1.15rem;font-weight:600;color:#666;margin-bottom:4px">Kiosk</div>
 				<div style="font-size:0.8rem;color:#777;margin-bottom:8px">Retail Banking Solutions</div>
 				<div style="font-size:0.9rem;color:var(--primary-color);font-weight:500">kiosk.eko.in</div>
 			</a>
-			<a href="https://eloka.eko.in" target="_blank" rel="noopener noreferrer" style="display:flex;flex-direction:column;align-items:center;justify-content:center;min-width:180px;padding:24px 28px;border:1px solid #e0e0e0;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.07);text-decoration:none;background:#fff;transition:box-shadow 0.2s">
+			<a href="https://eloka.eko.in" target="_blank" rel="noopener noreferrer" class="website-card">
 				<div style="font-size:1.15rem;font-weight:600;color:#666;margin-bottom:4px">Eloka</div>
 				<div style="font-size:0.8rem;color:#777;margin-bottom:8px">Entrepreneur Platform</div>
 				<div style="font-size:0.9rem;color:var(--primary-color);font-weight:500">eloka.eko.in</div>
 			</a>
-			<a href="https://eps.eko.in" target="_blank" rel="noopener noreferrer" style="display:flex;flex-direction:column;align-items:center;justify-content:center;min-width:180px;padding:24px 28px;border:1px solid #e0e0e0;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.07);text-decoration:none;background:#fff;transition:box-shadow 0.2s">
+			<a href="https://eps.eko.in" target="_blank" rel="noopener noreferrer" class="website-card">
 				<div style="font-size:1.15rem;font-weight:600;color:#666;margin-bottom:4px">EPS</div>
 				<div style="font-size:0.8rem;color:#777;margin-bottom:8px">API Platform</div>
 				<div style="font-size:0.9rem;color:var(--primary-color);font-weight:500">eps.eko.in</div>
 			</a>
-			<a href="https://ekoglobal.tech" target="_blank" rel="noopener noreferrer" style="display:flex;flex-direction:column;align-items:center;justify-content:center;min-width:180px;padding:24px 28px;border:1px solid #e0e0e0;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.07);text-decoration:none;background:#fff;transition:box-shadow 0.2s">
+			<a href="https://ekoglobal.tech" target="_blank" rel="noopener noreferrer" class="website-card">
 				<div style="font-size:1.15rem;font-weight:600;color:#666;margin-bottom:4px">Enterprise</div>
 				<div style="font-size:0.8rem;color:#777;margin-bottom:8px">Enterprise Solutions</div>
 				<div style="font-size:0.9rem;color:var(--primary-color);font-weight:500">ekoglobal.tech</div>
