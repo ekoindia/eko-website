@@ -821,6 +821,66 @@ section.block.get_started_banner .button {
 	}
 }
 
+/* New Websites Section */
+.new_websites_banner > div {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	gap: 1em;
+	margin-top: 30px;
+}
+
+.new_websites_banner .website-card {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	min-width: 180px;
+	max-width: 280px;
+	padding: 24px 28px;
+	border: 1px solid #e0e0e0;
+	border-radius: 8px;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+	text-decoration: none;
+	text-align: center;
+	background: #fff;
+	transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.new_websites_banner .website-card:hover {
+	transform: translateY(-4px);
+	box-shadow: 0 8px 24px rgba(0, 0, 0, 0.13);
+}
+
+.new_websites_banner .website-card-title {
+	font-size: 1.15rem;
+	font-weight: 600;
+	color: #666;
+	margin-bottom: 4px;
+}
+
+.new_websites_banner .website-card-subtitle {
+	font-size: 0.8rem;
+	color: #777;
+	margin-bottom: 8px;
+}
+
+.new_websites_banner .website-card-link {
+	font-size: 0.9rem;
+	font-weight: 500;
+	color: var(--primary-color);
+	letter-spacing: 1px;
+}
+
+@media (max-width: 440px) {
+	/* Full width of cards on very small screens */
+	.new_websites_banner .website-card {
+		width: 100%;
+	}
+}
+
 
 /* ====================== SECTION ACCORDION =================================== */
 .accordion a {
