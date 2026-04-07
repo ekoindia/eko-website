@@ -176,6 +176,7 @@
       button2_text: Contact Sales
 
 - name: Payment API
+  hidden: true
   title: Payout API With Highest Success Rate | AePS, DMT, Cashout SDK API Provider Eko
   tag_line: Make salary & vendor payments easily
   social_image: /assets/img/developers/salary-disbursal-first-fold-opt.svg
@@ -255,6 +256,7 @@
       button2_text: Contact Sales
 
 - name: UPI Payout API
+  hidden: true
   title: UPI Payout API | AePS, DMT, Cashout SDK API Provider Eko
   tag_line: Empower your business with seamless UPI payouts for instant, error-free transactions.
   social_image: /assets/img/developers/salary-disbursal-first-fold-opt.svg
@@ -592,6 +594,7 @@
       button2_text: Contact Sales
 
 - name: QR payment API
+  hidden: true
   title: QR payment API
   tag_line: QR payment API
   social_image: /assets/img/bill-payment/QR.png
@@ -903,7 +906,7 @@
           description: By entering the EPIC number, the API fetches voter details instantly from official databases, allowing businesses to validate identity, address, and electoral information.
         - title: Who can use this API?
           description: The API is useful for banks, fintech firms, government agencies, corporate HR teams, election management platforms, and KYC service providers to verify voter identity, ensure compliance, and prevent fraudulent activities.
-        
+
     - section: documentation_link_banner
 
     - section: one_liner
@@ -983,7 +986,7 @@
           description: The API requires the user’s mobile number or username, sends an OTP for authentication, and retrieves the Aadhaar XML file after user consent, ensuring secure identity verification.
         - title: Who can use this API?
           description: The API is useful for banks, NBFCs, fintech companies, e-commerce, government agencies, and corporate HR teams for seamless Aadhaar-based authentication and compliance.
-        
+
     - section: documentation_link_banner
 
     - section: one_liner
