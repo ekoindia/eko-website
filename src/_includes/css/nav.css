@@ -320,6 +320,67 @@ nav.topnav {
 		min-width: 260px;
 	}
 
+	/* ===== Nav CTA Card ===== */
+	.nav-cta-card {
+		display: flex !important;
+		gap: 12px;
+		flex-direction: column;
+		background: linear-gradient(135deg, var(--primary-color), var(--primary-dark-20-color));
+		border-radius: 12px;
+		padding: 20px;
+		margin-top: 16px;
+		width: 200px;
+		color: #fff !important;
+		text-decoration: none !important;
+		transition: transform 0.2s ease, box-shadow 0.2s ease;
+	}
+	.nav-cta-card:hover {
+		transform: translateY(-3px);
+		box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+	}
+	.nav-cta-badge-row {
+		display: flex;
+		align-items: center;
+		gap: 8px;
+		margin-bottom: 10px;
+	}
+	.nav-cta-badge {
+		background: var(--tag-color);
+		color: var(--primary-dark-40-color);
+		font-size: 11px;
+		font-weight: 700;
+		padding: 3px 10px;
+		border-radius: 20px;
+		letter-spacing: 0.5px;
+	}
+	.nav-cta-sparkle {
+		font-size: 16px;
+	}
+	.nav-cta-title {
+		font-size: 16px;
+		font-weight: 700;
+		margin-bottom: 6px;
+		line-height: 1.3;
+	}
+	.nav-cta-desc {
+		font-size: 13px;
+		line-height: 1.4;
+		opacity: 0.85;
+		margin: 0 0 14px;
+	}
+	.nav-cta-btn {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background: rgba(255, 255, 255, 0.2);
+		border: 1px solid rgba(255, 255, 255, 0.5);
+		color: #fff;
+		font-size: 13px;
+		font-weight: 600;
+		padding: 8px 16px;
+		border-radius: 8px;
+	}
+
 	#menu .sub-menu,
 	#menu input[type="checkbox"]:checked + .sub-menu {
 		display: none;
