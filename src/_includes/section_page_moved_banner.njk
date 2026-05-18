@@ -1,0 +1,46 @@
+<section class="block page-moved-banner" type="page_moved_banner">
+	<div class="page-moved-banner__inner">
+		<div class="page-moved-banner__icon">ℹ️</div>
+		<div class="page-moved-banner__content">
+			<p class="page-moved-banner__title">This page has moved to a new location</p>
+			<p class="page-moved-banner__text">We've migrated this product to our new EPS platform. Please visit the new page for the latest information.</p>
+			<a href="{{ moved_url }}" class="button page-moved-banner__link">Visit New Page →</a>
+		</div>
+	</div>
+</section>
+
+<style>
+.page-moved-banner {
+	padding: 0 1.5rem;
+}
+.page-moved-banner__inner {
+	display: flex;
+	align-items: flex-start;
+	gap: 1rem;
+	background: #e8f4fd;
+	border: 1px solid #b3d9f2;
+	border-left: 4px solid #1a8cd8;
+	border-radius: 8px;
+	padding: 1.5rem 2rem;
+	max-width: 900px;
+	margin: 0 auto;
+}
+.page-moved-banner__icon {
+	font-size: 1.5rem;
+	line-height: 1;
+}
+.page-moved-banner__title {
+	font-weight: 700;
+	font-size: 1.1rem;
+	margin: 0 0 0.4rem;
+	color: #0d4f7a;
+}
+.page-moved-banner__text {
+	margin: 0 0 1rem;
+	color: #1a5276;
+	line-height: 1.5;
+}
+.page-moved-banner__link {
+	display: inline-block;
+}
+</style>

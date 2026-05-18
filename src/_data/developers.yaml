@@ -9,6 +9,7 @@
   description: Eko’s money transfer API allows your retailers to turn their shop into mini bank. Customers who need assistance for transferring money using cash can visit these retailer shops. Integrate with us to increase the growth of your business and that of your retailers.
   documentation_link: https://developers.eko.in/docs/money-transfer
 
+  redirect: https://eps.eko.in/products/dmt-api
   hidden: false
 
   layout:
@@ -90,6 +91,8 @@
   description: AePS allows a customer to use Aadhaar and access their bank account to perform basic banking transactions like cash-deposit, cash-withdrawal, intrabank or interbank fund-transfer, balance-inquiry, and access their mini statement with just their fingerprint.
   icon: /assets/img/aadhaar-banking/aadhaar_logo.svg
   documentation_link: https://developers.eko.in/docs/aeps
+
+  redirect: https://eps.eko.in/products/aeps-api
 
   layout:
     - section: mid_summary
@@ -347,6 +350,8 @@
   description: Eko gives you the opportunity to turn your shop into a one-stop bill payment destination. Collect cash from customers and pay their electricity bill, water bill, gas bill, and phone bills using your wallet!
   documentation_link: https://developers.eko.in/reference/bbps-1
 
+  redirect: https://eps.eko.in/products/bbps-api
+
   layout:
     # - section: mid_summary
     #   small_description: BBPS API
@@ -464,6 +469,8 @@
   description: Eko provides an easy-to-use Cash Collection service which helps you set up a cash management system for your retailers. This system makes e-money transfer hassle-free for you and your retailers. We bear the end-to-end technical burden, reducing your integration task to a mere formality.
   documentation_link: https://developers.eko.in/docs/cash-collection
 
+  redirect: https://eps.eko.in/products/cms-api
+
   layout:
     - section: mid_summary
       small_description: Cash Collection Service
@@ -535,6 +542,8 @@
   summary: Accept EMI collections and payments through CMS API with 50+ billers available.
   description: PAN Verification API made customer onboarding & verification easy with Real-time onboarding and verification of users is as easy as it gets with PAN Verification API. Just integrate the API and get going.
   documentation_link: https://developers.eko.in/docs/identity
+
+  redirect: https://eps.eko.in/products/cms-api
 
   layout:
     - section: icon_list
@@ -657,6 +666,8 @@
   description: PAN Verification API made customer onboarding & verification easy with Real-time onboarding and verification of users is as easy as it gets with PAN Verification API. Just integrate the API and get going.
   documentation_link: https://developers.eko.in/docs/identity
 
+  redirect: https://eps.eko.in/products/pan-verification-api
+
   layout:
     - section: icon_list
       header: Real-time Verification
@@ -719,6 +730,8 @@
   summary: Simple and easy way to ensure that your money goes exactly where it is supposed to. No IFSC code needed.
   description: Our Account Verification API simple & easy way to verify bank account holder and details. Account verification API to ensure that your money goes exactly where it is supposed to.
   documentation_link: https://developers.eko.in/docs/identity
+
+  redirect: https://eps.eko.in/products/bank-verification-api
 
   layout:
     - section: mid_summary
@@ -784,6 +797,8 @@
   summary: Power your business with instant GSTIN verification to ensure compliance and prevent fraud. Our GST Verification API enables businesses to authenticate GST numbers in real-time, fetch legal business details, and streamline tax compliance effortlessly.
   description: Verify GST numbers instantly with our GST Verification API. Ensure compliance, prevent fraud, and fetch accurate business details in real-time. Easy integration, bulk verification, and 24/7 uptime. Get started today!
   documentation_link: https://developers.eko.in/docs/identity
+
+  redirect: https://eps.eko.in/products/gst-verification-api
 
   layout:
     - section: mid_summary
@@ -865,6 +880,8 @@
   description: Verify voter ID details instantly with our Voter ID Verification API. Retrieve name, DOB, gender, address, constituency, polling station, and more in real-time using an EPIC number. Ensure KYC compliance, fraud prevention & seamless identity verification today!
   documentation_link: https://developers.eko.in/docs/identity
 
+  redirect:
+
   layout:
     - section: mid_summary
       small_description: Voter ID Verification API
@@ -944,6 +961,8 @@
   summary: The DigiLocker API enables businesses to securely access Aadhaar XML files in real-time by authenticating users via mobile number or username using OTP verification. This API ensures instant, paperless, and legally valid Aadhaar verification for KYC, identity authentication, and regulatory compliance—eliminating manual paperwork and reducing fraud risks.
   description: Integrate the DigiLocker API to fetch Aadhaar XML files securely using OTP-based login via mobile number or username. Enable secure, paperless KYC, real-time Aadhaar verification, and fraud prevention with our encrypted API. Start integrating today!
   documentation_link: https://developers.eko.in/docs/identity
+
+  redirect: https://eps.eko.in/products/digilocker-api
 
   layout:
     - section: mid_summary
@@ -1025,6 +1044,8 @@
   description: Verify employee details instantly with our Employee Verification API. Retrieve name, date of birth, PAN, UAN, joining and exit dates, PF details, and employer information using a phone number. Enhance hiring, background verification, and fraud prevention today!
   documentation_link: https://developers.eko.in/docs/identity
 
+  redirect: https://eps.eko.in/products/employee-verification-api
+
   layout:
     - section: mid_summary
       small_description: Employee Verification API
@@ -1105,6 +1126,8 @@
   description: Verify vehicle registration details instantly with our RC Verification API. Get real-time access to owner details, RC status, insurance validity, vehicle specifications, and more. Ensure compliance, prevent fraud & streamline vehicle verification effortlessly.
   documentation_link: https://developers.eko.in/docs/identity
 
+  redirect: https://eps.eko.in/products/vehicle-rc-verification-api
+
   layout:
     - section: mid_summary
       small_description: RC Verification API
@@ -1183,6 +1206,8 @@
   summary: Ensure seamless identity verification and prevent fraud with our Driving License (DL) Verification API. Instantly fetch details like license holder name, date of birth, issue date, expiry date, license status, vehicle class, and more directly from authoritative databases.
   description: Verify driving licenses instantly with our DL Verification API. Fetch DOB, validity, badge details, father’s/husband’s name, issue date, COV details, and more in real time. Prevent fraud & ensure compliance effortlessly!
   documentation_link: https://developers.eko.in/docs/identity
+
+  redirect: https://eps.eko.in/products/dl-verification-api
 
   layout:
     - section: mid_summary
@@ -1264,6 +1289,8 @@
   description: Verify passport details instantly with our Passport Verification API. Fetch name, DOB, file number, application type, and application received date in real time. Prevent fraud, ensure compliance & streamline KYC effortlessly!
   documentation_link: https://developers.eko.in/docs/identity
 
+  redirect:
+
   layout:
     - section: mid_summary
       small_description: Passport Verification API
@@ -1343,6 +1370,8 @@
   summary: Our CIN Verification API allows businesses to instantly verify Company Identification Numbers (CIN) and fetch critical company details. Retrieve key information such as company name, registration number, incorporation details, CIN status, director details, and registered email directly from authoritative sources.
   description: Verify company details instantly with our CIN Verification API. Retrieve company name, directors, registration number, CIN status, and email in real-time. Prevent fraud, ensure compliance & streamline business verification effortlessly!
   documentation_link: https://developers.eko.in/docs/identity
+
+  redirect:
 
   layout:
     - section: mid_summary
@@ -1424,6 +1453,8 @@
   description: Convert latitude & longitude into accurate addresses with our Reverse Geocoding API. Fetch address, city, state, and PIN code in real-time. Enhance location-based services, logistics, and navigation with precise geospatial data!
   documentation_link: https://developers.eko.in/docs/identity
 
+  redirect: https://eps.eko.in/products/reverse-geocoding-api
+
   layout:
     - section: mid_summary
       small_description: Reverse Geocoding API
@@ -1495,6 +1526,7 @@
       button2_text: Contact Sales
 
 - name: Aadhaar Verification API
+  hidden: true
   sub_header: Aadhaar Verification API
   title: Aadhaar Verification API
   tag_line: Fast and Secure Aadhaar Verification API for Real-Time KYC Compliance
@@ -1570,6 +1602,8 @@
   description: OCR Verification API made customer onboarding & verification easy. Optical Character Recognition (OCR) is the process that converts an image of text into a machine-readable text format which is used where data entering is required. The verification process involves reviewing the OCR results and manually correcting any errors or inaccuracies.
   documentation_link: https://developers.eko.in/docs/identity
 
+  redirect:
+
   layout:
     - section: icon_list
       header: How can we use this API?
@@ -1641,6 +1675,8 @@
   summary: Unleash the power of UPI with our robust UPI ID verification API. Whether you require UPI ID verification or want to retrieve a UPI ID using a Phone Number, our API is crafted to simplify your transactions, ensuring heightened efficiency within your payment systems.
   description: Validate and retrieve UPI ID effortlessly using a phone number, our API is designed to streamline your transactions and enhance the efficiency of your payment systems.
   documentation_link: https://developers.eko.in/docs/identity
+
+  redirect:
 
   layout:
     - section: icon_list
