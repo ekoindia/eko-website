@@ -9,12 +9,19 @@ business: api
 {% set description = developer.description or  developer.summary %}
 {% set keywords = developer.keywords %}
 {% set image = developer.social_image or developer.image %}
+{% if developer.redirect %}
+	{% set canonical = developer.redirect %}
+{% endif %}
 
 {% block main %}
 
 	{% set product = developer|mergeObjectFilter({learn_more_link: developer.documentation_link, learn_more_label: "View Documentation"}) %}
 	{% include "section_product_page_hero.njk" %}
 
+	{% if developer.redirect %}
+		{% set moved_url = developer.redirect %}
+		{% include "section_page_moved_banner.njk" %}
+	{% endif %}
 
 	{% for i in range(0, product.layout | length) %}
 		{% set item = product.layout[i] %}
