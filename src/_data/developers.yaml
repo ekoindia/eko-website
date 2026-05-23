@@ -460,6 +460,7 @@
           description: Yes, We provide commission for every transaction completed through BBPS API based on the transaction amount and type.
 
 - name: CMS - Cash Collection API
+  hidden: true
   title: Easy To Use Cash Collection API
   tag_line: Cash Management System - Cash Collection API
   social_image: /assets/img/developers/assisted-cash-management-opt.svg
@@ -534,6 +535,7 @@
       button2_text: Contact Sales
 
 - name: CMS - Cash Drop API
+  hidden: true
   title: CMS - Cash Drop API
   tag_line: Cash Management System - Cash Drop API
   social_image: /assets/img/developers/direct-emoney-transfer.svg
