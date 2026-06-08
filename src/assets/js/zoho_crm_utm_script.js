@@ -211,6 +211,15 @@ ZFAdvLead.prototype.zfautm_iframeSprt = function () {
 					}
 				}
 			}
+			// Append current full page URL (incl. all query params) as Website param
+			if (zf_src.indexOf('Website=') < 0) {
+				var websiteVal = encodeURIComponent(document.location.href);
+				if (zf_src.indexOf('?') > 0) {
+					zf_src = zf_src + '&Website=' + websiteVal;
+				} else {
+					zf_src = zf_src + '?Website=' + websiteVal;
+				}
+			}
 			if (zf_frame[i].src.length < zf_src.length) {
 				zf_frame[i].src = zf_src;
 			}
