@@ -1,0 +1,13 @@
+---
+permalink: /_redirects
+eleventyExcludeFromCollections: true
+---
+# Simple redirects from what the browser requests to what we serve
+# Documentation: https://docs.netlify.com/routing/redirects/
+
+/wp-content/uploads/2015/09/Customer_TC.pdf	/tnc
+{% for item in developers -%}
+{% if item.redirect_301 and item.redirect %}
+/developers/eps/{{ item.name | slug }}/	{{ item.redirect }}	301
+{% endif -%}
+{%- endfor %}

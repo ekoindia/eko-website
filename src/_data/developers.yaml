@@ -669,6 +669,7 @@
   documentation_link: https://developers.eko.in/docs/identity
 
   redirect: https://eps.eko.in/products/pan-verification-api
+  redirect_301: true
 
   layout:
     - section: icon_list
@@ -734,6 +735,7 @@
   documentation_link: https://developers.eko.in/docs/identity
 
   redirect: https://eps.eko.in/products/bank-verification-api
+  redirect_301: true
 
   layout:
     - section: mid_summary
@@ -801,6 +803,7 @@
   documentation_link: https://developers.eko.in/docs/identity
 
   redirect: https://eps.eko.in/products/gst-verification-api
+  redirect_301: true
 
   layout:
     - section: mid_summary
@@ -1456,6 +1459,7 @@
   documentation_link: https://developers.eko.in/docs/identity
 
   redirect: https://eps.eko.in/products/reverse-geocoding-api
+  redirect_301: true
 
   layout:
     - section: mid_summary

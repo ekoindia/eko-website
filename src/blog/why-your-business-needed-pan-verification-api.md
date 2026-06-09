@@ -38,7 +38,7 @@ The pan verification API has a wide application in different industries like:
 5. **Private Tax filing platforms:** Private tax filing platforms have to verify the pan card details as per government norms. A system that uses the pan verification API is integrated with their systems for ease of processing.
 6. **Payments & Fintech Companies:** The fund transfer and payments industry is a hot market right now. Companies like PayTM and other digital payment platforms have to verify the pan details of the user. A system that uses the pan verification API is integrated with their systems for ease of processing.
 
-**Benefits of Eko’s PAN Verification API-** 
+**Benefits of Eko’s PAN Verification API-**
 
 * Instant Merchant Onboarding
 * Easy and developer-friendly documentation
@@ -51,4 +51,4 @@ The pan verification API has a wide application in different industries like:
 
 The pan card verification API provides an easy way of integrating third-party applications that require the PAN card. It also helps in completely automating the verification process as it has built-in webhooks, which can easily be integrated with various third party applications. The PAN card verification API can also be used by other organizations who are dealing with individuals or anyone in financial capacity for verification.
 
-Reach out to the Eko sales team for any support in regards with the same at **[api.sales@eko.co.in](mailto:api.sales@eko.co.in)** or **[08045681131](tel:08045681131).**
+Reach out to the Eko sales team for any support in regards with the same at **[eps@eko.in](mailto:eps@eko.in)** or **[+91 951 318 1707](tel:+919513181707).**

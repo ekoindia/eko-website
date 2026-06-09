@@ -12,7 +12,7 @@
 
 			{% if col.type == "api" %}
 				{% for item in developers | rejectattr("hidden") | rejectattr("disabled") -%}
-					<a href="{{ item.redirect or ('/developers/eps/' + (item.name | slug)) }}">{{item.title_short or item.name}}</a>
+					<a href="{{ item.redirect or ((item.name | slug) | epsLink) }}">{{item.title_short or item.name}}</a>
 					<br>
 				{%- endfor %}
 			{% endif %}

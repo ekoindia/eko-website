@@ -50,6 +50,16 @@ module.exports = function(eleventyConfig) {
 		eleventyConfig.addFilter(filterName, filters[filterName]);
 	});
 
+	// Resolves a developer API menu link: returns the external 301 target when
+	// `redirect_301` is set on the entry, otherwise the local /developers/eps/<slug>/ page.
+	// Uses the built-in `slug` filter so the computed slug matches permalinks exactly.
+	const epsDevelopers = yaml.safeLoad(fs.readFileSync('./src/_data/developers.yaml', 'utf8'));
+	eleventyConfig.addFilter('epsLink', function (slug) {
+		const slugify = eleventyConfig.getFilter('slug');
+		const match = epsDevelopers.find(dev => dev.redirect_301 && dev.redirect && slugify(dev.name) === slug);
+		return match ? match.redirect : `/developers/eps/${slug}/`;
+	});
+
 	// Add Universal Shortcodes
 	Object.keys(shortcodes).forEach((shortcodeName) => {
 		eleventyConfig.addShortcode(shortcodeName, shortcodes[shortcodeName](eleventyConfig));
@@ -279,7 +289,6 @@ module.exports = function(eleventyConfig) {
 	eleventyConfig.addPassthroughCopy('src/assets/js');
 	eleventyConfig.addPassthroughCopy('src/docs');
 	eleventyConfig.addPassthroughCopy("src/*.pdf");
-	eleventyConfig.addPassthroughCopy("src/_redirects");
 
 	// Add Layouts...
 	eleventyConfig.addLayoutAlias('base', 'base.njk');
