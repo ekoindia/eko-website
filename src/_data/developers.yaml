@@ -10,6 +10,7 @@
   documentation_link: https://developers.eko.in/docs/money-transfer
 
   redirect: https://eps.eko.in/products/dmt-api
+  redirect_301: true
   hidden: false
 
   layout:
@@ -93,6 +94,7 @@
   documentation_link: https://developers.eko.in/docs/aeps
 
   redirect: https://eps.eko.in/products/aeps-api
+  redirect_301: true
 
   layout:
     - section: mid_summary
@@ -351,6 +353,7 @@
   documentation_link: https://developers.eko.in/reference/bbps-1
 
   redirect: https://eps.eko.in/products/bbps-api
+  redirect_301: true
 
   layout:
     # - section: mid_summary
@@ -968,6 +971,7 @@
   documentation_link: https://developers.eko.in/docs/identity
 
   redirect: https://eps.eko.in/products/digilocker-api
+  redirect_301: true
 
   layout:
     - section: mid_summary
@@ -1050,6 +1054,7 @@
   documentation_link: https://developers.eko.in/docs/identity
 
   redirect: https://eps.eko.in/products/employee-verification-api
+  redirect_301: true
 
   layout:
     - section: mid_summary
@@ -1132,6 +1137,7 @@
   documentation_link: https://developers.eko.in/docs/identity
 
   redirect: https://eps.eko.in/products/vehicle-rc-verification-api
+  redirect_301: true
 
   layout:
     - section: mid_summary
@@ -1213,6 +1219,7 @@
   documentation_link: https://developers.eko.in/docs/identity
 
   redirect: https://eps.eko.in/products/dl-verification-api
+  redirect_301: true
 
   layout:
     - section: mid_summary
