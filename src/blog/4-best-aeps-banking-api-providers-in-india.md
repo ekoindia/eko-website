@@ -41,4 +41,4 @@ They created a simple, secure and efficient way to send or receive money on Airt
 Eko provides end-to-end solutions from payments to cross-border transactions by streamlining the entire transaction procedure. With the instant settlement, Eko is one of the best AePS API providers in the market right now.
 
 **\
-If you’re looking forward to getting a Banking API solution for your fintech, reach out to our team at [api.sales@eko.co.in](mailto:api.sales@eko.co.in).**
+If you’re looking forward to getting a Banking API solution for your fintech, reach out to our team at [eps@eko.in](mailto:eps@eko.in).**

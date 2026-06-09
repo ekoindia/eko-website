@@ -102,4 +102,4 @@ If you are planning to launch your own money transfer application in India or pl
 
 
 
-Reach us at **[api.sales@eko.co.in](mailto:api.sales@eko.co.in)** or **[08045681131](tel:08045681131).**
+Reach us at **[eps@eko.in](mailto:eps@eko.in)** or **[+91 951 318 1707](tel:+919513181707).**

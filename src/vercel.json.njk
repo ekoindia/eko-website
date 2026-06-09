@@ -1,0 +1,15 @@
+---
+permalink: /vercel.json
+eleventyExcludeFromCollections: true
+---
+{
+  "redirects": [
+{%- for item in developers | selectattr("redirect_301") %}
+    {
+      "source": "/developers/eps/{{ item.name | slug }}",
+      "destination": "{{ item.redirect }}",
+      "statusCode": 301
+    }{% if not loop.last %},{% endif %}
+{%- endfor %}
+  ]
+}

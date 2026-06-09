@@ -5,7 +5,7 @@
     size: 1,
     alias: "developer",
     before: function(paginationData) {
-      return paginationData.filter(item => !item.hidden);
+      return paginationData.filter(item => !item.hidden && !item.redirect_301);
     }
   },
   layout: "developer_page",
