@@ -11,3 +11,8 @@ eleventyExcludeFromCollections: true
 /developers/eps/{{ item.name | slug }}/	{{ item.redirect }}	301
 {% endif -%}
 {%- endfor %}
+{% for item in products -%}
+{% if item.redirect_301 and item.redirect %}
+/products/{{ item.name | slug }}/	{{ item.redirect }}	301
+{% endif -%}
+{%- endfor %}

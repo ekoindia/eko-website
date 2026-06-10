@@ -4,12 +4,21 @@ eleventyExcludeFromCollections: true
 ---
 {
   "redirects": [
-{%- for item in developers | selectattr("redirect_301") %}
-    {
+{%- set devRedirects = developers | selectattr("redirect_301") | list %}
+{%- set productRedirects = products | selectattr("redirect_301") | list %}
+{%- for item in devRedirects %}
+    {% if not loop.first %},{% endif %}{
       "source": "/developers/eps/{{ item.name | slug }}",
       "destination": "{{ item.redirect }}",
       "statusCode": 301
-    }{% if not loop.last %},{% endif %}
+    }
+{%- endfor %}
+{%- for item in productRedirects %}
+    {% if not loop.first or devRedirects | length > 0 %},{% endif %}{
+      "source": "/products/{{ item.name | slug }}",
+      "destination": "{{ item.redirect }}",
+      "statusCode": 301
+    }
 {%- endfor %}
   ]
 }
