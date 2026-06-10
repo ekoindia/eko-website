@@ -100,22 +100,14 @@ business: api
 
 	{# Product Category Showcase Section - Collections #}
 	{% set item = {
-		title: "Cash Management and Bill Payments",
+		title: "Bill Payments",
 		image: "/assets/img/developers/assisted-cash-management-opt.svg",
 		doc_url: "https://developers.eko.in/docs/cash-collection",
 		products: [
 			{
 				title: "Utility Bill Payments API",
 				link: ('bbps-api' | epsLink)
-		    },
-			{
-				title: "Cash Drop API",
-				link: ('cms-cash-drop-api' | epsLink)
-		    },
-			{
-				title: "Cash Collection API",
-				link: ('cash-collection-api' | epsLink)
-			}
+		    }
 		]
 	} %}
 	{% include "section_product_category_showcase.njk" %}
