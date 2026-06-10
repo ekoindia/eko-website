@@ -6,15 +6,24 @@ eleventyExcludeFromCollections: true
   "redirects": [
 {%- set devRedirects = developers | selectattr("redirect_301") | list %}
 {%- set productRedirects = products | selectattr("redirect_301") | list %}
+    {
+      "source": "/sign-up-api",
+      "destination": "https://eps.eko.in/signup",
+      "statusCode": 301
+    },{
+      "source": "/developers/eps",
+      "destination": "https://eps.eko.in/products",
+      "statusCode": 301
+    }
 {%- for item in devRedirects %}
-    {% if not loop.first %},{% endif %}{
+    ,{
       "source": "/developers/eps/{{ item.name | slug }}",
       "destination": "{{ item.redirect }}",
       "statusCode": 301
     }
 {%- endfor %}
 {%- for item in productRedirects %}
-    {% if not loop.first or devRedirects | length > 0 %},{% endif %}{
+    ,{
       "source": "/products/{{ item.name | slug }}",
       "destination": "{{ item.redirect }}",
       "statusCode": 301
