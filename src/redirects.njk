@@ -6,8 +6,17 @@ eleventyExcludeFromCollections: true
 # Documentation: https://docs.netlify.com/routing/redirects/
 
 /wp-content/uploads/2015/09/Customer_TC.pdf	/tnc
+
+# Static redirects to the new EPS site (force flag overrides existing pages)
+/sign-up-api	https://eps.eko.in/signup	301!
+/developers/eps	https://eps.eko.in/products	301!
 {% for item in developers -%}
 {% if item.redirect_301 and item.redirect %}
-/developers/eps/{{ item.name | slug }}/	{{ item.redirect }}	301
+/developers/eps/{{ item.name | slug }}/	{{ item.redirect }}	301!
+{% endif -%}
+{%- endfor %}
+{% for item in products -%}
+{% if item.redirect_301 and item.redirect %}
+/products/{{ item.name | slug }}/	{{ item.redirect }}	301!
 {% endif -%}
 {%- endfor %}
